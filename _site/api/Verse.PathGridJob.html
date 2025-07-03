@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct PathGridJob </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct PathGridJob ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.PathGridJob">
+
+
+
+  <h1 id="Verse_PathGridJob" data-uid="Verse.PathGridJob" class="text-break">Struct PathGridJob</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Unity.Jobs.IJobParallelFor.html">IJobParallelFor</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_PathGridJob_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile(CompileSynchronously = true)]
+public struct PathGridJob : IJobParallelFor</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Verse_PathGridJob_Cost_AvoidFog" data-uid="Verse.PathGridJob.Cost_AvoidFog">Cost_AvoidFog</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int Cost_AvoidFog = 600</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_Cost_OutsideAllowedArea" data-uid="Verse.PathGridJob.Cost_OutsideAllowedArea">Cost_OutsideAllowedArea</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int Cost_OutsideAllowedArea = 600</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_allowedGrid" data-uid="Verse.PathGridJob.allowedGrid">allowedGrid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly allowedGrid</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_avoidGrid" data-uid="Verse.PathGridJob.avoidGrid">avoidGrid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeArray&lt;byte&gt;.ReadOnly avoidGrid</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_building" data-uid="Verse.PathGridJob.building">building</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly building</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_buildingDestroyable" data-uid="Verse.PathGridJob.buildingDestroyable">buildingDestroyable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly buildingDestroyable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_buildingHitPoints" data-uid="Verse.PathGridJob.buildingHitPoints">buildingHitPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeArray&lt;ushort&gt;.ReadOnly buildingHitPoints</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_custom" data-uid="Verse.PathGridJob.custom">custom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeArray&lt;ushort&gt;.ReadOnly custom</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_darknessDanger" data-uid="Verse.PathGridJob.darknessDanger">darknessDanger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly darknessDanger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_factionCosts" data-uid="Verse.PathGridJob.factionCosts">factionCosts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeArray&lt;ushort&gt;.ReadOnly factionCosts</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_fence" data-uid="Verse.PathGridJob.fence">fence</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly fence</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_fogged" data-uid="Verse.PathGridJob.fogged">fogged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly fogged</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_grid" data-uid="Verse.PathGridJob.grid">grid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;int&gt; grid</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_indicies" data-uid="Verse.PathGridJob.indicies">indicies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public CellIndices indicies</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CellIndices.html">CellIndices</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_lordGrid" data-uid="Verse.PathGridJob.lordGrid">lordGrid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly lordGrid</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_pathGridDirect" data-uid="Verse.PathGridJob.pathGridDirect">pathGridDirect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeArray&lt;int&gt;.ReadOnly pathGridDirect</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_perceptualCost" data-uid="Verse.PathGridJob.perceptualCost">perceptualCost</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeArray&lt;ushort&gt;.ReadOnly perceptualCost</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a>&gt;.<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_persistentDanger" data-uid="Verse.PathGridJob.persistentDanger">persistentDanger</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly persistentDanger</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_player" data-uid="Verse.PathGridJob.player">player</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly player</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_traverseParams" data-uid="Verse.PathGridJob.traverseParams">traverseParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public PathFinder.UnmanagedGridTraverseParams traverseParams</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PathFinder.html">PathFinder</a>.<a class="xref" href="Verse.PathFinder.UnmanagedGridTraverseParams.html">UnmanagedGridTraverseParams</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_tuning" data-uid="Verse.PathGridJob.tuning">tuning</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public PathFinderCostTuning tuning</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PathFinderCostTuning.html">PathFinderCostTuning</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_PathGridJob_water" data-uid="Verse.PathGridJob.water">water</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ReadOnly]
+public NativeBitArray.ReadOnly water</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeBitArray.html">NativeBitArray</a>.<a class="xref" href="Unity.Collections.NativeBitArray.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_PathGridJob_Execute_" data-uid="Verse.PathGridJob.Execute*"></a>
+  <h4 id="Verse_PathGridJob_Execute_System_Int32_" data-uid="Verse.PathGridJob.Execute(System.Int32)">Execute(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public void Execute(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Unity.Jobs.IJobParallelFor.html">IJobParallelFor</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

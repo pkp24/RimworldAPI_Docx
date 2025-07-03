@@ -1,0 +1,2157 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class JobDriver </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class JobDriver ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.AI.JobDriver">
+
+
+
+  <h1 id="Verse_AI_JobDriver" data-uid="Verse.AI.JobDriver" class="text-break">Class JobDriver</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">JobDriver</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_AbsorbXenogerm.html">JobDriver_AbsorbXenogerm</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_AcceptRole.html">JobDriver_AcceptRole</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ActivateMonolith.html">JobDriver_ActivateMonolith</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ActivityDormant.html">JobDriver_ActivityDormant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ActivityGoPassive.html">JobDriver_ActivityGoPassive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ActivitySuppression.html">JobDriver_ActivitySuppression</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_AffectFloor.html">JobDriver_AffectFloor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_AffectRoof.html">JobDriver_AffectRoof</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ApplyTechprint.html">JobDriver_ApplyTechprint</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_BeatFire.html">JobDriver_BeatFire</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_BestowingCeremony.html">JobDriver_BestowingCeremony</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Blind.html">JobDriver_Blind</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_BringBabyToSafety.html">JobDriver_BringBabyToSafety</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_BuildCubeSculpture.html">JobDriver_BuildCubeSculpture</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_BuildSnowman.html">JobDriver_BuildSnowman</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CarryDownedPawn.html">JobDriver_CarryDownedPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CarryGenepackToContainer.html">JobDriver_CarryGenepackToContainer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CarryToBiosculpterPod.html">JobDriver_CarryToBiosculpterPod</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CarryToBuilding.html">JobDriver_CarryToBuilding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CarryToCryptosleepCasket.html">JobDriver_CarryToCryptosleepCasket</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CarryToEntityHolder.html">JobDriver_CarryToEntityHolder</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CarryToEntityHolderAlreadyHolding.html">JobDriver_CarryToEntityHolderAlreadyHolding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ChangeTreeMode.html">JobDriver_ChangeTreeMode</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ChatWithPrisoner.html">JobDriver_ChatWithPrisoner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ChimeraSwitchToAttackMode.html">JobDriver_ChimeraSwitchToAttackMode</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CleanFilth.html">JobDriver_CleanFilth</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ClearPollution.html">JobDriver_ClearPollution</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ClearSnowAndSand.html">JobDriver_ClearSnowAndSand</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ConstructFinishFrame.html">JobDriver_ConstructFinishFrame</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ControlMech.html">JobDriver_ControlMech</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ConvertPrisoner.html">JobDriver_ConvertPrisoner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CreateAndEnterDryadHolder.html">JobDriver_CreateAndEnterDryadHolder</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_CreateXenogerm.html">JobDriver_CreateXenogerm</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Dance.html">JobDriver_Dance</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Deathrest.html">JobDriver_Deathrest</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_DeliverPawnToAltar.html">JobDriver_DeliverPawnToAltar</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_DeliverPawnToCell.html">JobDriver_DeliverPawnToCell</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_DevourerDigest.html">JobDriver_DevourerDigest</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_DisassembleMech.html">JobDriver_DisassembleMech</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_DismissTrader.html">JobDriver_DismissTrader</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_DropEquipment.html">JobDriver_DropEquipment</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_DyeHair.html">JobDriver_DyeHair</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EatAtCannibalPlatter.html">JobDriver_EatAtCannibalPlatter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EjectFuel.html">JobDriver_EjectFuel</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EmptyThingContainer.html">JobDriver_EmptyThingContainer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EnslaveOrReduceWillPrisoner.html">JobDriver_EnslaveOrReduceWillPrisoner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EnterBiosculpterPod.html">JobDriver_EnterBiosculpterPod</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EnterBuilding.html">JobDriver_EnterBuilding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EnterCryptosleepCasket.html">JobDriver_EnterCryptosleepCasket</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EnterPortal.html">JobDriver_EnterPortal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_EnterTransporter.html">JobDriver_EnterTransporter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Execute.html">JobDriver_Execute</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ExecuteEntity.html">JobDriver_ExecuteEntity</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ExecuteGuiltyColonist.html">JobDriver_ExecuteGuiltyColonist</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ExecuteSlave.html">JobDriver_ExecuteSlave</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ExtinguishFiresNearby.html">JobDriver_ExtinguishFiresNearby</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ExtinguishSelf.html">JobDriver_ExtinguishSelf</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ExtractBioferrite.html">JobDriver_ExtractBioferrite</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ExtractSkull.html">JobDriver_ExtractSkull</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ExtractTree.html">JobDriver_ExtractTree</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Feed.html">JobDriver_Feed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_FeedBaby.html">JobDriver_FeedBaby</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_FertilizeOvum.html">JobDriver_FertilizeOvum</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_FillFermentingBarrel.html">JobDriver_FillFermentingBarrel</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Fish.html">JobDriver_Fish</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_FishAnimal.html">JobDriver_FishAnimal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_FixBrokenDownBuilding.html">JobDriver_FixBrokenDownBuilding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Flee.html">JobDriver_Flee</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Flick.html">JobDriver_Flick</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Floordrawing.html">JobDriver_Floordrawing</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_FoodDeliver.html">JobDriver_FoodDeliver</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_FoodFeedPatient.html">JobDriver_FoodFeedPatient</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Forage.html">JobDriver_Forage</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ForceTargetWear.html">JobDriver_ForceTargetWear</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GatherAnimalBodyResources.html">JobDriver_GatherAnimalBodyResources</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GetNeuralSupercharge.html">JobDriver_GetNeuralSupercharge</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GetReimplanted.html">JobDriver_GetReimplanted</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GiveSpeech.html">JobDriver_GiveSpeech</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GiveToPackAnimal.html">JobDriver_GiveToPackAnimal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GiveToPawn.html">JobDriver_GiveToPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GoForWalk.html">JobDriver_GoForWalk</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GoSwimming.html">JobDriver_GoSwimming</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GotoAndStandSociallyActive.html">JobDriver_GotoAndStandSociallyActive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_GotoPatrolDest.html">JobDriver_GotoPatrolDest</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Hack.html">JobDriver_Hack</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_HateChant.html">JobDriver_HateChant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_HaulCorpseToPublicPlace.html">JobDriver_HaulCorpseToPublicPlace</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Hunt.html">JobDriver_Hunt</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Ignite.html">JobDriver_Ignite</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Ingest.html">JobDriver_Ingest</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_InspectGravEngine.html">JobDriver_InspectGravEngine</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_InstallImplant.html">JobDriver_InstallImplant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_InstallRelic.html">JobDriver_InstallRelic</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Insult.html">JobDriver_Insult</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_InteractAnimal.html">JobDriver_InteractAnimal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_InteractThing.html">JobDriver_InteractThing</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_InterrogatePrisoner.html">JobDriver_InterrogatePrisoner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_InvestigateMonolith.html">JobDriver_InvestigateMonolith</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_LayDown.html">JobDriver_LayDown</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_LayEgg.html">JobDriver_LayEgg</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Lessongiving.html">JobDriver_Lessongiving</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Lessontaking.html">JobDriver_Lessontaking</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_LinkPsylinkable.html">JobDriver_LinkPsylinkable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Lovin.html">JobDriver_Lovin</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Maintain.html">JobDriver_Maintain</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ManTurret.html">JobDriver_ManTurret</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_MarryAdjacentPawn.html">JobDriver_MarryAdjacentPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Mate.html">JobDriver_Mate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_MechCharge.html">JobDriver_MechCharge</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Meditate.html">JobDriver_Meditate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_MergeIntoGaumakerPod.html">JobDriver_MergeIntoGaumakerPod</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Mine.html">JobDriver_Mine</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_NatureRunning.html">JobDriver_NatureRunning</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_NociosphereDepart.html">JobDriver_NociosphereDepart</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Nuzzle.html">JobDriver_Nuzzle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_OfferHelp.html">JobDriver_OfferHelp</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Open.html">JobDriver_Open</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_OperateDeepDrill.html">JobDriver_OperateDeepDrill</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_OperateScanner.html">JobDriver_OperateScanner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PaintBuilding.html">JobDriver_PaintBuilding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PaintFloor.html">JobDriver_PaintFloor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PilotConsole.html">JobDriver_PilotConsole</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PlaceNoCostFrame.html">JobDriver_PlaceNoCostFrame</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PlantSeed.html">JobDriver_PlantSeed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PlantSow.html">JobDriver_PlantSow</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PlantWork.html">JobDriver_PlantWork</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PlayBilliards.html">JobDriver_PlayBilliards</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PlayGoldenCube.html">JobDriver_PlayGoldenCube</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PredatorHunt.html">JobDriver_PredatorHunt</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PrepareCaravan_GatherItems.html">JobDriver_PrepareCaravan_GatherItems</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PrisonerBloodfeed.html">JobDriver_PrisonerBloodfeed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PruneGauranlenTre.html">JobDriver_PruneGauranlenTre</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_PutApparelOnOutfitStand.html">JobDriver_PutApparelOnOutfitStand</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Radiotalking.html">JobDriver_Radiotalking</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Reading.html">JobDriver_Reading</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RecolorApparel.html">JobDriver_RecolorApparel</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Refuel.html">JobDriver_Refuel</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RefuelAtomic.html">JobDriver_RefuelAtomic</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RelaxAlone.html">JobDriver_RelaxAlone</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ReleaseAnimalToWild.html">JobDriver_ReleaseAnimalToWild</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ReleaseEntity.html">JobDriver_ReleaseEntity</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ReleaseMechs.html">JobDriver_ReleaseMechs</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Reload.html">JobDriver_Reload</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RemoveApparel.html">JobDriver_RemoveApparel</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RemoveBuilding.html">JobDriver_RemoveBuilding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RemoveMechlink.html">JobDriver_RemoveMechlink</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RemovePaintBuilding.html">JobDriver_RemovePaintBuilding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RemovePaintFloor.html">JobDriver_RemovePaintFloor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Repair.html">JobDriver_Repair</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RepairMech.html">JobDriver_RepairMech</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Research.html">JobDriver_Research</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Resurrect.html">JobDriver_Resurrect</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ResurrectMech.html">JobDriver_ResurrectMech</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_ReturnToGauranlenTree.html">JobDriver_ReturnToGauranlenTree</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RevenantAttack.html">JobDriver_RevenantAttack</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RevenantEscape.html">JobDriver_RevenantEscape</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RevenantSleep.html">JobDriver_RevenantSleep</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RevenantWander.html">JobDriver_RevenantWander</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Romance.html">JobDriver_Romance</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_RopeToDestination.html">JobDriver_RopeToDestination</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Sacrifice.html">JobDriver_Sacrifice</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Scarify.html">JobDriver_Scarify</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Seal.html">JobDriver_Seal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_SelfDetonate.html">JobDriver_SelfDetonate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_SelfShutdown.html">JobDriver_SelfShutdown</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_SingleInteraction.html">JobDriver_SingleInteraction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_SitFacingBuilding.html">JobDriver_SitFacingBuilding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Skydreaming.html">JobDriver_Skydreaming</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Skygaze.html">JobDriver_Skygaze</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Slaughter.html">JobDriver_Slaughter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_SmoothWall.html">JobDriver_SmoothWall</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_SocialRelax.html">JobDriver_SocialRelax</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Spectate.html">JobDriver_Spectate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_StandAndBeSociallyActive.html">JobDriver_StandAndBeSociallyActive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Strip.html">JobDriver_Strip</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_StudyInteract.html">JobDriver_StudyInteract</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_StudyItem.html">JobDriver_StudyItem</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_SuppressSlave.html">JobDriver_SuppressSlave</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TakeAndExitMap.html">JobDriver_TakeAndExitMap</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TakeBeerOutOfFermentingBarrel.html">JobDriver_TakeBeerOutOfFermentingBarrel</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TakeBioferriteOutOfHarvester.html">JobDriver_TakeBioferriteOutOfHarvester</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TakeCountToInventory.html">JobDriver_TakeCountToInventory</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TakeFromOtherInventory.html">JobDriver_TakeFromOtherInventory</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TakeToBed.html">JobDriver_TakeToBed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TalkCreepJoiner.html">JobDriver_TalkCreepJoiner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TendEntity.html">JobDriver_TendEntity</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TendPatient.html">JobDriver_TendPatient</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TradeWithPawn.html">JobDriver_TradeWithPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_TransferBetweenEntityHolders.html">JobDriver_TransferBetweenEntityHolders</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_UnloadInventory.html">JobDriver_UnloadInventory</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_UnloadYourInventory.html">JobDriver_UnloadYourInventory</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_UnnaturalCorpseAttack.html">JobDriver_UnnaturalCorpseAttack</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_UnnaturalCorpseSkip.html">JobDriver_UnnaturalCorpseSkip</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Unrope.html">JobDriver_Unrope</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_UseCommsConsole.html">JobDriver_UseCommsConsole</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_UseItem.html">JobDriver_UseItem</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_UseOutfitStand.html">JobDriver_UseOutfitStand</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_VisitJoyThing.html">JobDriver_VisitJoyThing</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_VisitSickPawn.html">JobDriver_VisitSickPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Vomit.html">JobDriver_Vomit</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_WatchBuilding.html">JobDriver_WatchBuilding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Wear.html">JobDriver_Wear</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.JobDriver_Workwatching.html">JobDriver_Workwatching</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_AttackMelee.html">JobDriver_AttackMelee</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_AttackStatic.html">JobDriver_AttackStatic</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_BabyPassive.html">JobDriver_BabyPassive</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_BabyPlay.html">JobDriver_BabyPlay</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_Carried.html">JobDriver_Carried</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_CastVerbOnce.html">JobDriver_CastVerbOnce</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_DoBill.html">JobDriver_DoBill</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_EmancipateSlave.html">JobDriver_EmancipateSlave</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_Equip.html">JobDriver_Equip</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_ExitMapFlying.html">JobDriver_ExitMapFlying</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_ExtractToInventory.html">JobDriver_ExtractToInventory</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_Follow.html">JobDriver_Follow</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_FollowClose.html">JobDriver_FollowClose</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_FollowRoper.html">JobDriver_FollowRoper</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_Goto.html">JobDriver_Goto</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_HaulMechToCharger.html">JobDriver_HaulMechToCharger</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_HaulToAtomizer.html">JobDriver_HaulToAtomizer</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_HaulToCell.html">JobDriver_HaulToCell</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_HaulToContainer.html">JobDriver_HaulToContainer</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_IdleWhileDespawned.html">JobDriver_IdleWhileDespawned</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_Kill.html">JobDriver_Kill</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_OpenStylingStationDialog.html">JobDriver_OpenStylingStationDialog</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_PickupToHold.html">JobDriver_PickupToHold</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_ReleasePrisoner.html">JobDriver_ReleasePrisoner</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_TakeInventory.html">JobDriver_TakeInventory</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_UseStylingStation.html">JobDriver_UseStylingStation</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_UseStylingStationAutomatic.html">JobDriver_UseStylingStationAutomatic</a></div>
+      <div class="level2"><a class="xref" href="Verse.AI.JobDriver_Wait.html">JobDriver_Wait</a></div>
+      <div class="level2"><a class="xref" href="Verse.JobDriver_CastAbilityWorld.html">JobDriver_CastAbilityWorld</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.AI.IJobEndable.html">IJobEndable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a>.<a class="xref" href="Verse.AI.html">AI</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_AI_JobDriver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class JobDriver : IExposable, IJobEndable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Verse_AI_JobDriver__ctor_" data-uid="Verse.AI.JobDriver.#ctor*"></a>
+  <h4 id="Verse_AI_JobDriver__ctor" data-uid="Verse.AI.JobDriver.#ctor">JobDriver()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected JobDriver()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Verse_AI_JobDriver_PlaceInInventoryDuration" data-uid="Verse.AI.JobDriver.PlaceInInventoryDuration">PlaceInInventoryDuration</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int PlaceInInventoryDuration = 25</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_asleep" data-uid="Verse.AI.JobDriver.asleep">asleep</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool asleep</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_collideWithPawns" data-uid="Verse.AI.JobDriver.collideWithPawns">collideWithPawns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool collideWithPawns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_debugTicksSpentThisToil" data-uid="Verse.AI.JobDriver.debugTicksSpentThisToil">debugTicksSpentThisToil</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int debugTicksSpentThisToil</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_ended" data-uid="Verse.AI.JobDriver.ended">ended</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ended</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_globalFailConditions" data-uid="Verse.AI.JobDriver.globalFailConditions">globalFailConditions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Func&lt;JobCondition&gt;&gt; globalFailConditions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="Verse.AI.JobCondition.html">JobCondition</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_globalFinishActions" data-uid="Verse.AI.JobDriver.globalFinishActions">globalFinishActions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Action&lt;JobCondition&gt;&gt; globalFinishActions</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Verse.AI.JobCondition.html">JobCondition</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_job" data-uid="Verse.AI.JobDriver.job">job</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Job job</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Job.html">Job</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_locomotionUrgencySameAs" data-uid="Verse.AI.JobDriver.locomotionUrgencySameAs">locomotionUrgencySameAs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pawn locomotionUrgencySameAs</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_pawn" data-uid="Verse.AI.JobDriver.pawn">pawn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pawn pawn</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_rotateToFace" data-uid="Verse.AI.JobDriver.rotateToFace">rotateToFace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TargetIndex rotateToFace</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.TargetIndex.html">TargetIndex</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_startTick" data-uid="Verse.AI.JobDriver.startTick">startTick</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int startTick</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_ticksLeftThisToil" data-uid="Verse.AI.JobDriver.ticksLeftThisToil">ticksLeftThisToil</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ticksLeftThisToil</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_AI_JobDriver_uninstallWorkLeft" data-uid="Verse.AI.JobDriver.uninstallWorkLeft">uninstallWorkLeft</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float uninstallWorkLeft</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Verse_AI_JobDriver_ActiveSkill_" data-uid="Verse.AI.JobDriver.ActiveSkill*"></a>
+  <h4 id="Verse_AI_JobDriver_ActiveSkill" data-uid="Verse.AI.JobDriver.ActiveSkill">ActiveSkill</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkillDef ActiveSkill { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.SkillDef.html">SkillDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_CurToil_" data-uid="Verse.AI.JobDriver.CurToil*"></a>
+  <h4 id="Verse_AI_JobDriver_CurToil" data-uid="Verse.AI.JobDriver.CurToil">CurToil</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Toil CurToil { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Toil.html">Toil</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_CurToilIndex_" data-uid="Verse.AI.JobDriver.CurToilIndex*"></a>
+  <h4 id="Verse_AI_JobDriver_CurToilIndex" data-uid="Verse.AI.JobDriver.CurToilIndex">CurToilIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurToilIndex { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_CurToilString_" data-uid="Verse.AI.JobDriver.CurToilString*"></a>
+  <h4 id="Verse_AI_JobDriver_CurToilString" data-uid="Verse.AI.JobDriver.CurToilString">CurToilString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CurToilString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_ForcedBodyOffset_" data-uid="Verse.AI.JobDriver.ForcedBodyOffset*"></a>
+  <h4 id="Verse_AI_JobDriver_ForcedBodyOffset" data-uid="Verse.AI.JobDriver.ForcedBodyOffset">ForcedBodyOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 ForcedBodyOffset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_ForcedLayingRotation_" data-uid="Verse.AI.JobDriver.ForcedLayingRotation*"></a>
+  <h4 id="Verse_AI_JobDriver_ForcedLayingRotation" data-uid="Verse.AI.JobDriver.ForcedLayingRotation">ForcedLayingRotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Rot4 ForcedLayingRotation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_HandlingFacing_" data-uid="Verse.AI.JobDriver.HandlingFacing*"></a>
+  <h4 id="Verse_AI_JobDriver_HandlingFacing" data-uid="Verse.AI.JobDriver.HandlingFacing">HandlingFacing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HandlingFacing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_HaveCurToil_" data-uid="Verse.AI.JobDriver.HaveCurToil*"></a>
+  <h4 id="Verse_AI_JobDriver_HaveCurToil" data-uid="Verse.AI.JobDriver.HaveCurToil">HaveCurToil</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool HaveCurToil { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_Map_" data-uid="Verse.AI.JobDriver.Map*"></a>
+  <h4 id="Verse_AI_JobDriver_Map" data-uid="Verse.AI.JobDriver.Map">Map</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Map Map { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_OnLastToil_" data-uid="Verse.AI.JobDriver.OnLastToil*"></a>
+  <h4 id="Verse_AI_JobDriver_OnLastToil" data-uid="Verse.AI.JobDriver.OnLastToil">OnLastToil</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnLastToil { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_PlayerInterruptable_" data-uid="Verse.AI.JobDriver.PlayerInterruptable*"></a>
+  <h4 id="Verse_AI_JobDriver_PlayerInterruptable" data-uid="Verse.AI.JobDriver.PlayerInterruptable">PlayerInterruptable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool PlayerInterruptable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetA_" data-uid="Verse.AI.JobDriver.TargetA*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetA" data-uid="Verse.AI.JobDriver.TargetA">TargetA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LocalTargetInfo TargetA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetB_" data-uid="Verse.AI.JobDriver.TargetB*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetB" data-uid="Verse.AI.JobDriver.TargetB">TargetB</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LocalTargetInfo TargetB { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetC_" data-uid="Verse.AI.JobDriver.TargetC*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetC" data-uid="Verse.AI.JobDriver.TargetC">TargetC</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LocalTargetInfo TargetC { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetLocA_" data-uid="Verse.AI.JobDriver.TargetLocA*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetLocA" data-uid="Verse.AI.JobDriver.TargetLocA">TargetLocA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IntVec3 TargetLocA { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetPawnA_" data-uid="Verse.AI.JobDriver.TargetPawnA*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetPawnA" data-uid="Verse.AI.JobDriver.TargetPawnA">TargetPawnA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Pawn TargetPawnA { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetPawnB_" data-uid="Verse.AI.JobDriver.TargetPawnB*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetPawnB" data-uid="Verse.AI.JobDriver.TargetPawnB">TargetPawnB</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Pawn TargetPawnB { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetPawnC_" data-uid="Verse.AI.JobDriver.TargetPawnC*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetPawnC" data-uid="Verse.AI.JobDriver.TargetPawnC">TargetPawnC</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Pawn TargetPawnC { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetThingA_" data-uid="Verse.AI.JobDriver.TargetThingA*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetThingA" data-uid="Verse.AI.JobDriver.TargetThingA">TargetThingA</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Thing TargetThingA { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetThingB_" data-uid="Verse.AI.JobDriver.TargetThingB*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetThingB" data-uid="Verse.AI.JobDriver.TargetThingB">TargetThingB</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Thing TargetThingB { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TargetThingC_" data-uid="Verse.AI.JobDriver.TargetThingC*"></a>
+  <h4 id="Verse_AI_JobDriver_TargetThingC" data-uid="Verse.AI.JobDriver.TargetThingC">TargetThingC</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Thing TargetThingC { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_AI_JobDriver_AddEndCondition_" data-uid="Verse.AI.JobDriver.AddEndCondition*"></a>
+  <h4 id="Verse_AI_JobDriver_AddEndCondition_System_Func_Verse_AI_JobCondition__" data-uid="Verse.AI.JobDriver.AddEndCondition(System.Func{Verse.AI.JobCondition})">AddEndCondition(Func&lt;JobCondition&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddEndCondition(Func&lt;JobCondition&gt; newEndCondition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="Verse.AI.JobCondition.html">JobCondition</a>&gt;</td>
+        <td><span class="parametername">newEndCondition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_AddFailCondition_" data-uid="Verse.AI.JobDriver.AddFailCondition*"></a>
+  <h4 id="Verse_AI_JobDriver_AddFailCondition_System_Func_System_Boolean__" data-uid="Verse.AI.JobDriver.AddFailCondition(System.Func{System.Boolean})">AddFailCondition(Func&lt;bool&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFailCondition(Func&lt;bool&gt; newFailCondition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">newFailCondition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_AddFinishAction_" data-uid="Verse.AI.JobDriver.AddFinishAction*"></a>
+  <h4 id="Verse_AI_JobDriver_AddFinishAction_System_Action_Verse_AI_JobCondition__" data-uid="Verse.AI.JobDriver.AddFinishAction(System.Action{Verse.AI.JobCondition})">AddFinishAction(Action&lt;JobCondition&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddFinishAction(Action&lt;JobCondition&gt; newAct)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Verse.AI.JobCondition.html">JobCondition</a>&gt;</td>
+        <td><span class="parametername">newAct</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_CanBeginNowWhileLyingDown_" data-uid="Verse.AI.JobDriver.CanBeginNowWhileLyingDown*"></a>
+  <h4 id="Verse_AI_JobDriver_CanBeginNowWhileLyingDown" data-uid="Verse.AI.JobDriver.CanBeginNowWhileLyingDown">CanBeginNowWhileLyingDown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanBeginNowWhileLyingDown()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_Cleanup_" data-uid="Verse.AI.JobDriver.Cleanup*"></a>
+  <h4 id="Verse_AI_JobDriver_Cleanup_Verse_AI_JobCondition_" data-uid="Verse.AI.JobDriver.Cleanup(Verse.AI.JobCondition)">Cleanup(JobCondition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cleanup(JobCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.JobCondition.html">JobCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_ClearToils_" data-uid="Verse.AI.JobDriver.ClearToils*"></a>
+  <h4 id="Verse_AI_JobDriver_ClearToils" data-uid="Verse.AI.JobDriver.ClearToils">ClearToils()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearToils()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_DesiredSocialMode_" data-uid="Verse.AI.JobDriver.DesiredSocialMode*"></a>
+  <h4 id="Verse_AI_JobDriver_DesiredSocialMode" data-uid="Verse.AI.JobDriver.DesiredSocialMode">DesiredSocialMode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual RandomSocialMode DesiredSocialMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.RandomSocialMode.html">RandomSocialMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_DriverTick_" data-uid="Verse.AI.JobDriver.DriverTick*"></a>
+  <h4 id="Verse_AI_JobDriver_DriverTick" data-uid="Verse.AI.JobDriver.DriverTick">DriverTick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DriverTick()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_DriverTickInterval_" data-uid="Verse.AI.JobDriver.DriverTickInterval*"></a>
+  <h4 id="Verse_AI_JobDriver_DriverTickInterval_System_Int32_" data-uid="Verse.AI.JobDriver.DriverTickInterval(System.Int32)">DriverTickInterval(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DriverTickInterval(int delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_EndJobWith_" data-uid="Verse.AI.JobDriver.EndJobWith*"></a>
+  <h4 id="Verse_AI_JobDriver_EndJobWith_Verse_AI_JobCondition_" data-uid="Verse.AI.JobDriver.EndJobWith(Verse.AI.JobCondition)">EndJobWith(JobCondition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndJobWith(JobCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.JobCondition.html">JobCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_ExposeData_" data-uid="Verse.AI.JobDriver.ExposeData*"></a>
+  <h4 id="Verse_AI_JobDriver_ExposeData" data-uid="Verse.AI.JobDriver.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ExposeData()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_GetActor_" data-uid="Verse.AI.JobDriver.GetActor*"></a>
+  <h4 id="Verse_AI_JobDriver_GetActor" data-uid="Verse.AI.JobDriver.GetActor">GetActor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pawn GetActor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_GetFinalizerJob_" data-uid="Verse.AI.JobDriver.GetFinalizerJob*"></a>
+  <h4 id="Verse_AI_JobDriver_GetFinalizerJob_Verse_AI_JobCondition_" data-uid="Verse.AI.JobDriver.GetFinalizerJob(Verse.AI.JobCondition)">GetFinalizerJob(JobCondition)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Job GetFinalizerJob(JobCondition condition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.JobCondition.html">JobCondition</a></td>
+        <td><span class="parametername">condition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Job.html">Job</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_GetReport_" data-uid="Verse.AI.JobDriver.GetReport*"></a>
+  <h4 id="Verse_AI_JobDriver_GetReport" data-uid="Verse.AI.JobDriver.GetReport">GetReport()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetReport()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_GetReportStringOverride_" data-uid="Verse.AI.JobDriver.GetReportStringOverride*"></a>
+  <h4 id="Verse_AI_JobDriver_GetReportStringOverride" data-uid="Verse.AI.JobDriver.GetReportStringOverride">GetReportStringOverride()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetReportStringOverride()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_IsContinuation_" data-uid="Verse.AI.JobDriver.IsContinuation*"></a>
+  <h4 id="Verse_AI_JobDriver_IsContinuation_Verse_AI_Job_" data-uid="Verse.AI.JobDriver.IsContinuation(Verse.AI.Job)">IsContinuation(Job)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsContinuation(Job j)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Job.html">Job</a></td>
+        <td><span class="parametername">j</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_IsSameJobAs_" data-uid="Verse.AI.JobDriver.IsSameJobAs*"></a>
+  <h4 id="Verse_AI_JobDriver_IsSameJobAs_Verse_AI_Job_" data-uid="Verse.AI.JobDriver.IsSameJobAs(Verse.AI.Job)">IsSameJobAs(Job)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool? IsSameJobAs(Job j)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Job.html">Job</a></td>
+        <td><span class="parametername">j</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_JumpToToil_" data-uid="Verse.AI.JobDriver.JumpToToil*"></a>
+  <h4 id="Verse_AI_JobDriver_JumpToToil_Verse_AI_Toil_" data-uid="Verse.AI.JobDriver.JumpToToil(Verse.AI.Toil)">JumpToToil(Toil)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JumpToToil(Toil to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Toil.html">Toil</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_MakeNewToils_" data-uid="Verse.AI.JobDriver.MakeNewToils*"></a>
+  <h4 id="Verse_AI_JobDriver_MakeNewToils" data-uid="Verse.AI.JobDriver.MakeNewToils">MakeNewToils()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IEnumerable&lt;Toil&gt; MakeNewToils()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.AI.Toil.html">Toil</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_ModifyCarriedThingDrawPos_" data-uid="Verse.AI.JobDriver.ModifyCarriedThingDrawPos*"></a>
+  <h4 id="Verse_AI_JobDriver_ModifyCarriedThingDrawPos_UnityEngine_Vector3__System_Boolean__" data-uid="Verse.AI.JobDriver.ModifyCarriedThingDrawPos(UnityEngine.Vector3@,System.Boolean@)">ModifyCarriedThingDrawPos(ref Vector3, ref bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ModifyCarriedThingDrawPos(ref Vector3 drawPos, ref bool flip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">drawPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">flip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_Notify_DamageTaken_" data-uid="Verse.AI.JobDriver.Notify_DamageTaken*"></a>
+  <h4 id="Verse_AI_JobDriver_Notify_DamageTaken_Verse_DamageInfo_" data-uid="Verse.AI.JobDriver.Notify_DamageTaken(Verse.DamageInfo)">Notify_DamageTaken(DamageInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_DamageTaken(DamageInfo dinfo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a></td>
+        <td><span class="parametername">dinfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_Notify_PatherArrived_" data-uid="Verse.AI.JobDriver.Notify_PatherArrived*"></a>
+  <h4 id="Verse_AI_JobDriver_Notify_PatherArrived" data-uid="Verse.AI.JobDriver.Notify_PatherArrived">Notify_PatherArrived()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_PatherArrived()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_Notify_PatherFailed_" data-uid="Verse.AI.JobDriver.Notify_PatherFailed*"></a>
+  <h4 id="Verse_AI_JobDriver_Notify_PatherFailed" data-uid="Verse.AI.JobDriver.Notify_PatherFailed">Notify_PatherFailed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_PatherFailed()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_Notify_StanceChanged_" data-uid="Verse.AI.JobDriver.Notify_StanceChanged*"></a>
+  <h4 id="Verse_AI_JobDriver_Notify_StanceChanged" data-uid="Verse.AI.JobDriver.Notify_StanceChanged">Notify_StanceChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_StanceChanged()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_Notify_Starting_" data-uid="Verse.AI.JobDriver.Notify_Starting*"></a>
+  <h4 id="Verse_AI_JobDriver_Notify_Starting" data-uid="Verse.AI.JobDriver.Notify_Starting">Notify_Starting()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_Starting()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_ReadyForNextToil_" data-uid="Verse.AI.JobDriver.ReadyForNextToil*"></a>
+  <h4 id="Verse_AI_JobDriver_ReadyForNextToil" data-uid="Verse.AI.JobDriver.ReadyForNextToil">ReadyForNextToil()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadyForNextToil()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_ReportStringProcessed_" data-uid="Verse.AI.JobDriver.ReportStringProcessed*"></a>
+  <h4 id="Verse_AI_JobDriver_ReportStringProcessed_System_String_" data-uid="Verse.AI.JobDriver.ReportStringProcessed(System.String)">ReportStringProcessed(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string ReportStringProcessed(string str)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">str</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_SetFinalizerJob_" data-uid="Verse.AI.JobDriver.SetFinalizerJob*"></a>
+  <h4 id="Verse_AI_JobDriver_SetFinalizerJob_System_Func_Verse_AI_JobCondition_Verse_AI_Job__" data-uid="Verse.AI.JobDriver.SetFinalizerJob(System.Func{Verse.AI.JobCondition,Verse.AI.Job})">SetFinalizerJob(Func&lt;JobCondition, Job&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetFinalizerJob(Func&lt;JobCondition, Job&gt; finalizerJobFactory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Verse.AI.JobCondition.html">JobCondition</a>, <a class="xref" href="Verse.AI.Job.html">Job</a>&gt;</td>
+        <td><span class="parametername">finalizerJobFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_SetInitialPosture_" data-uid="Verse.AI.JobDriver.SetInitialPosture*"></a>
+  <h4 id="Verse_AI_JobDriver_SetInitialPosture" data-uid="Verse.AI.JobDriver.SetInitialPosture">SetInitialPosture()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetInitialPosture()</code></pre>
+  </div>
+
+
+  <a id="Verse_AI_JobDriver_TaleParameters_" data-uid="Verse.AI.JobDriver.TaleParameters*"></a>
+  <h4 id="Verse_AI_JobDriver_TaleParameters" data-uid="Verse.AI.JobDriver.TaleParameters">TaleParameters()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual object[] TaleParameters()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_AI_JobDriver_TryMakePreToilReservations_" data-uid="Verse.AI.JobDriver.TryMakePreToilReservations*"></a>
+  <h4 id="Verse_AI_JobDriver_TryMakePreToilReservations_System_Boolean_" data-uid="Verse.AI.JobDriver.TryMakePreToilReservations(System.Boolean)">TryMakePreToilReservations(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool TryMakePreToilReservations(bool errorOnFailed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">errorOnFailed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.IJobEndable.html">IJobEndable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.JobInBedUtility.html#RimWorld_JobInBedUtility_KeepLyingDown_Verse_AI_JobDriver_Verse_AI_TargetIndex_">JobInBedUtility.KeepLyingDown(JobDriver, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_EndOnDespawnedOrNull__1___0_Verse_AI_TargetIndex_Verse_AI_JobCondition_">ToilFailConditions.EndOnDespawnedOrNull&lt;T&gt;(T, TargetIndex, JobCondition)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_EndOnNoTargetInQueue__1___0_Verse_AI_TargetIndex_Verse_AI_JobCondition_">ToilFailConditions.EndOnNoTargetInQueue&lt;T&gt;(T, TargetIndex, JobCondition)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnAggroMentalStateAndHostile__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnAggroMentalStateAndHostile&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnAggroMentalState__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnAggroMentalState&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnBurningImmobile__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnBurningImmobile&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnCannotTouch__1___0_Verse_AI_TargetIndex_Verse_AI_PathEndMode_">ToilFailConditions.FailOnCannotTouch&lt;T&gt;(T, TargetIndex, PathEndMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnCellMissingDesignation__1___0_Verse_AI_TargetIndex_Verse_DesignationDef_">ToilFailConditions.FailOnCellMissingDesignation&lt;T&gt;(T, TargetIndex, DesignationDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnChildLearningConditions__1___0_">ToilFailConditions.FailOnChildLearningConditions&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDespawnedNullOrForbidden__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDespawnedNullOrForbidden&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDespawnedOrNull__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDespawnedOrNull&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDestroyedNullOrForbidden__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDestroyedNullOrForbidden&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDestroyedOrNull__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDestroyedOrNull&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDowned__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDowned&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnForbidden__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnForbidden&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnIncapable__1___0_Verse_PawnCapacityDef_">ToilFailConditions.FailOnIncapable&lt;T&gt;(T, PawnCapacityDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnInvalidOrDestroyed__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnInvalidOrDestroyed&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnMentalState__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnMentalState&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnMobile__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnMobile&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnNotAwake__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnNotAwake&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnNotCasualInterruptible__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnNotCasualInterruptible&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnNotDowned__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnNotDowned&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnSelfAndParentsDespawnedOrNull__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnSelfAndParentsDespawnedOrNull&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnSomeonePhysicallyInteracting__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnSomeonePhysicallyInteracting&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnThingHavingDesignation__1___0_Verse_AI_TargetIndex_Verse_DesignationDef_">ToilFailConditions.FailOnThingHavingDesignation&lt;T&gt;(T, TargetIndex, DesignationDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnThingMissingDesignation__1___0_Verse_AI_TargetIndex_Verse_DesignationDef_">ToilFailConditions.FailOnThingMissingDesignation&lt;T&gt;(T, TargetIndex, DesignationDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOn__1___0_System_Func_System_Boolean__">ToilFailConditions.FailOn&lt;T&gt;(T, Func&lt;bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

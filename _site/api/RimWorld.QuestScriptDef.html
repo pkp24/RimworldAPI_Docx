@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class QuestScriptDef </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class QuestScriptDef ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.QuestScriptDef">
+
+
+
+  <h1 id="RimWorld_QuestScriptDef" data-uid="RimWorld.QuestScriptDef" class="text-break">Class QuestScriptDef</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.Editable.html">Editable</a></div>
+    <div class="level2"><a class="xref" href="Verse.Def.html">Def</a></div>
+    <div class="level3"><span class="xref">QuestScriptDef</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Verse.Def.html">Def</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_defName">Def.defName</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_label">Def.label</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_description">Def.description</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_descriptionHyperlinks">Def.descriptionHyperlinks</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ignoreConfigErrors">Def.ignoreConfigErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ignoreIllegalLabelCharacterConfigError">Def.ignoreIllegalLabelCharacterConfigError</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_modExtensions">Def.modExtensions</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_shortHash">Def.shortHash</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_index">Def.index</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_modContentPack">Def.modContentPack</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_fileName">Def.fileName</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_defNameHash">Def.defNameHash</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_cachedLabelCap">Def.cachedLabelCap</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_generated">Def.generated</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_debugRandomId">Def.debugRandomId</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_DefaultDefName">Def.DefaultDefName</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_SpecialDisplayStats_RimWorld_StatRequest_">Def.SpecialDisplayStats(StatRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ResolveReferences">Def.ResolveReferences()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_PostSetIndices">Def.PostSetIndices()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ClearCachedData">Def.ClearCachedData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ToString">Def.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ResolveDefNameHash">Def.ResolveDefNameHash()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_GetHashCode">Def.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_GetModExtension__1">Def.GetModExtension&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_HasModExtension__1">Def.HasModExtension&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_Equals_Verse_Def_">Def.Equals(Def)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_LabelCap">Def.LabelCap</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Editable.html#Verse_Editable_PostLoad">Editable.PostLoad()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_QuestScriptDef_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class QuestScriptDef : Def, IEquatable&lt;Def&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_QuestScriptDef__ctor_" data-uid="RimWorld.QuestScriptDef.#ctor*"></a>
+  <h4 id="RimWorld_QuestScriptDef__ctor" data-uid="RimWorld.QuestScriptDef.#ctor">QuestScriptDef()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestScriptDef()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_QuestScriptDef_affectedByPoints" data-uid="RimWorld.QuestScriptDef.affectedByPoints">affectedByPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool affectedByPoints</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_affectedByPopulation" data-uid="RimWorld.QuestScriptDef.affectedByPopulation">affectedByPopulation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool affectedByPopulation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_autoAccept" data-uid="RimWorld.QuestScriptDef.autoAccept">autoAccept</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool autoAccept</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_canGiveRoyalFavor" data-uid="RimWorld.QuestScriptDef.canGiveRoyalFavor">canGiveRoyalFavor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canGiveRoyalFavor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_canOccurOnAllPlanetLayers" data-uid="RimWorld.QuestScriptDef.canOccurOnAllPlanetLayers">canOccurOnAllPlanetLayers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool canOccurOnAllPlanetLayers</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_decreeSelectionWeight" data-uid="RimWorld.QuestScriptDef.decreeSelectionWeight">decreeSelectionWeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float decreeSelectionWeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_decreeTags" data-uid="RimWorld.QuestScriptDef.decreeTags">decreeTags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; decreeTags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_defaultChallengeRating" data-uid="RimWorld.QuestScriptDef.defaultChallengeRating">defaultChallengeRating</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int defaultChallengeRating</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_defaultCharity" data-uid="RimWorld.QuestScriptDef.defaultCharity">defaultCharity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool defaultCharity</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_defaultHidden" data-uid="RimWorld.QuestScriptDef.defaultHidden">defaultHidden</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool defaultHidden</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_endOnColonyMove" data-uid="RimWorld.QuestScriptDef.endOnColonyMove">endOnColonyMove</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool endOnColonyMove</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_epic" data-uid="RimWorld.QuestScriptDef.epic">epic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool epic</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_epicParent" data-uid="RimWorld.QuestScriptDef.epicParent">epicParent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestScriptDef epicParent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestScriptDef.html">QuestScriptDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_everAcceptableInSpace" data-uid="RimWorld.QuestScriptDef.everAcceptableInSpace">everAcceptableInSpace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool everAcceptableInSpace</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_expireDaysRange" data-uid="RimWorld.QuestScriptDef.expireDaysRange">expireDaysRange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FloatRange expireDaysRange</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.FloatRange.html">FloatRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_failedOrExpiredHistoryEvent" data-uid="RimWorld.QuestScriptDef.failedOrExpiredHistoryEvent">failedOrExpiredHistoryEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HistoryEventDef failedOrExpiredHistoryEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.HistoryEventDef.html">HistoryEventDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_givenBy" data-uid="RimWorld.QuestScriptDef.givenBy">givenBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;QuestGiverTag&gt; givenBy</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.QuestGiverTag.html">QuestGiverTag</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_hideInvolvedFactionsInfo" data-uid="RimWorld.QuestScriptDef.hideInvolvedFactionsInfo">hideInvolvedFactionsInfo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hideInvolvedFactionsInfo</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_hideOnCleanup" data-uid="RimWorld.QuestScriptDef.hideOnCleanup">hideOnCleanup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hideOnCleanup</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_isRootSpecial" data-uid="RimWorld.QuestScriptDef.isRootSpecial">isRootSpecial</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isRootSpecial</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_layerBlacklist" data-uid="RimWorld.QuestScriptDef.layerBlacklist">layerBlacklist</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PlanetLayerDef&gt; layerBlacklist</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.PlanetLayerDef.html">PlanetLayerDef</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_layerWhitelist" data-uid="RimWorld.QuestScriptDef.layerWhitelist">layerWhitelist</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PlanetLayerDef&gt; layerWhitelist</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.PlanetLayerDef.html">PlanetLayerDef</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_minRefireDays" data-uid="RimWorld.QuestScriptDef.minRefireDays">minRefireDays</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float minRefireDays</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_nameMustBeUnique" data-uid="RimWorld.QuestScriptDef.nameMustBeUnique">nameMustBeUnique</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool nameMustBeUnique</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_questAvailableLetterDef" data-uid="RimWorld.QuestScriptDef.questAvailableLetterDef">questAvailableLetterDef</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LetterDef questAvailableLetterDef</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LetterDef.html">LetterDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_questAvailableLetterLabel" data-uid="RimWorld.QuestScriptDef.questAvailableLetterLabel">questAvailableLetterLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string questAvailableLetterLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_questAvailableLetterTextIsDescription" data-uid="RimWorld.QuestScriptDef.questAvailableLetterTextIsDescription">questAvailableLetterTextIsDescription</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool questAvailableLetterTextIsDescription</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_questContentRules" data-uid="RimWorld.QuestScriptDef.questContentRules">questContentRules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulePack questContentRules</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Grammar.RulePack.html">RulePack</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_questDescriptionAndNameRules" data-uid="RimWorld.QuestScriptDef.questDescriptionAndNameRules">questDescriptionAndNameRules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulePack questDescriptionAndNameRules</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Grammar.RulePack.html">RulePack</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_questDescriptionRules" data-uid="RimWorld.QuestScriptDef.questDescriptionRules">questDescriptionRules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulePack questDescriptionRules</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Grammar.RulePack.html">RulePack</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_questNameRules" data-uid="RimWorld.QuestScriptDef.questNameRules">questNameRules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulePack questNameRules</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Grammar.RulePack.html">RulePack</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_questSubjectRules" data-uid="RimWorld.QuestScriptDef.questSubjectRules">questSubjectRules</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RulePack questSubjectRules</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Grammar.RulePack.html">RulePack</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_randomlySelectable" data-uid="RimWorld.QuestScriptDef.randomlySelectable">randomlySelectable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool randomlySelectable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_root" data-uid="RimWorld.QuestScriptDef.root">root</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestNode root</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestGen.QuestNode.html">QuestNode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_rootEarliestDay" data-uid="RimWorld.QuestScriptDef.rootEarliestDay">rootEarliestDay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int rootEarliestDay</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_rootIncreasesPopulation" data-uid="RimWorld.QuestScriptDef.rootIncreasesPopulation">rootIncreasesPopulation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool rootIncreasesPopulation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_rootMinPoints" data-uid="RimWorld.QuestScriptDef.rootMinPoints">rootMinPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rootMinPoints</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_rootMinProgressScore" data-uid="RimWorld.QuestScriptDef.rootMinProgressScore">rootMinProgressScore</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rootMinProgressScore</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_rootSelectionWeight" data-uid="RimWorld.QuestScriptDef.rootSelectionWeight">rootSelectionWeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rootSelectionWeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_rootSelectionWeightFactorFromPointsCurve" data-uid="RimWorld.QuestScriptDef.rootSelectionWeightFactorFromPointsCurve">rootSelectionWeightFactorFromPointsCurve</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SimpleCurve rootSelectionWeightFactorFromPointsCurve</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.SimpleCurve.html">SimpleCurve</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_sendAvailableLetter" data-uid="RimWorld.QuestScriptDef.sendAvailableLetter">sendAvailableLetter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool sendAvailableLetter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestScriptDef_successHistoryEvent" data-uid="RimWorld.QuestScriptDef.successHistoryEvent">successHistoryEvent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HistoryEventDef successHistoryEvent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.HistoryEventDef.html">HistoryEventDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_QuestScriptDef_IsEpic_" data-uid="RimWorld.QuestScriptDef.IsEpic*"></a>
+  <h4 id="RimWorld_QuestScriptDef_IsEpic" data-uid="RimWorld.QuestScriptDef.IsEpic">IsEpic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEpic { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestScriptDef_IsRootAny_" data-uid="RimWorld.QuestScriptDef.IsRootAny*"></a>
+  <h4 id="RimWorld_QuestScriptDef_IsRootAny" data-uid="RimWorld.QuestScriptDef.IsRootAny">IsRootAny</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRootAny { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestScriptDef_IsRootDecree_" data-uid="RimWorld.QuestScriptDef.IsRootDecree*"></a>
+  <h4 id="RimWorld_QuestScriptDef_IsRootDecree" data-uid="RimWorld.QuestScriptDef.IsRootDecree">IsRootDecree</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRootDecree { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestScriptDef_IsRootRandomSelected_" data-uid="RimWorld.QuestScriptDef.IsRootRandomSelected*"></a>
+  <h4 id="RimWorld_QuestScriptDef_IsRootRandomSelected" data-uid="RimWorld.QuestScriptDef.IsRootRandomSelected">IsRootRandomSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRootRandomSelected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_QuestScriptDef_CanRun_" data-uid="RimWorld.QuestScriptDef.CanRun*"></a>
+  <h4 id="RimWorld_QuestScriptDef_CanRun_RimWorld_QuestGen_Slate_RimWorld_IIncidentTarget_" data-uid="RimWorld.QuestScriptDef.CanRun(RimWorld.QuestGen.Slate,RimWorld.IIncidentTarget)">CanRun(Slate, IIncidentTarget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRun(Slate slate, IIncidentTarget target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestGen.Slate.html">Slate</a></td>
+        <td><span class="parametername">slate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.IIncidentTarget.html">IIncidentTarget</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestScriptDef_CanRun_" data-uid="RimWorld.QuestScriptDef.CanRun*"></a>
+  <h4 id="RimWorld_QuestScriptDef_CanRun_System_Single_RimWorld_IIncidentTarget_" data-uid="RimWorld.QuestScriptDef.CanRun(System.Single,RimWorld.IIncidentTarget)">CanRun(float, IIncidentTarget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanRun(float points, IIncidentTarget target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.IIncidentTarget.html">IIncidentTarget</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestScriptDef_ConfigErrors_" data-uid="RimWorld.QuestScriptDef.ConfigErrors*"></a>
+  <h4 id="RimWorld_QuestScriptDef_ConfigErrors" data-uid="RimWorld.QuestScriptDef.ConfigErrors">ConfigErrors()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(QuestScriptDef.&lt;ConfigErrors&gt;d__58))]
+public override IEnumerable&lt;string&gt; ConfigErrors()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Def.html#Verse_Def_ConfigErrors">Def.ConfigErrors()</a></div>
+
+
+  <a id="RimWorld_QuestScriptDef_InitializeRules_" data-uid="RimWorld.QuestScriptDef.InitializeRules*"></a>
+  <h4 id="RimWorld_QuestScriptDef_InitializeRules" data-uid="RimWorld.QuestScriptDef.InitializeRules">InitializeRules()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeRules()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_QuestScriptDef_Run_" data-uid="RimWorld.QuestScriptDef.Run*"></a>
+  <h4 id="RimWorld_QuestScriptDef_Run" data-uid="RimWorld.QuestScriptDef.Run">Run()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Run()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

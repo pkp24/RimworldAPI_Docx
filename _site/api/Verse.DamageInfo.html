@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct DamageInfo </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct DamageInfo ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.DamageInfo">
+
+
+
+  <h1 id="Verse_DamageInfo" data-uid="Verse.DamageInfo" class="text-break">Struct DamageInfo</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_DamageInfo_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct DamageInfo</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Verse_DamageInfo__ctor_" data-uid="Verse.DamageInfo.#ctor*"></a>
+  <h4 id="Verse_DamageInfo__ctor_Verse_DamageDef_System_Single_System_Single_System_Single_Verse_Thing_Verse_BodyPartRecord_Verse_ThingDef_Verse_DamageInfo_SourceCategory_Verse_Thing_System_Boolean_System_Boolean_RimWorld_QualityCategory_System_Boolean_System_Boolean_" data-uid="Verse.DamageInfo.#ctor(Verse.DamageDef,System.Single,System.Single,System.Single,Verse.Thing,Verse.BodyPartRecord,Verse.ThingDef,Verse.DamageInfo.SourceCategory,Verse.Thing,System.Boolean,System.Boolean,RimWorld.QualityCategory,System.Boolean,System.Boolean)">DamageInfo(DamageDef, float, float, float, Thing, BodyPartRecord, ThingDef, SourceCategory, Thing, bool, bool, QualityCategory, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DamageInfo(DamageDef def, float amount, float armorPenetration = 0, float angle = -1, Thing instigator = null, BodyPartRecord hitPart = null, ThingDef weapon = null, DamageInfo.SourceCategory category = SourceCategory.ThingOrUnknown, Thing intendedTarget = null, bool instigatorGuilty = true, bool spawnFilth = true, QualityCategory weaponQuality = QualityCategory.Normal, bool checkForJobOverride = true, bool preventCascade = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageDef.html">DamageDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">amount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">armorPenetration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">angle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">instigator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartRecord.html">BodyPartRecord</a></td>
+        <td><span class="parametername">hitPart</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">weapon</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a>.<a class="xref" href="Verse.DamageInfo.SourceCategory.html">SourceCategory</a></td>
+        <td><span class="parametername">category</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">intendedTarget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">instigatorGuilty</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">spawnFilth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QualityCategory.html">QualityCategory</a></td>
+        <td><span class="parametername">weaponQuality</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">checkForJobOverride</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">preventCascade</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo__ctor_" data-uid="Verse.DamageInfo.#ctor*"></a>
+  <h4 id="Verse_DamageInfo__ctor_Verse_DamageInfo_" data-uid="Verse.DamageInfo.#ctor(Verse.DamageInfo)">DamageInfo(DamageInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DamageInfo(DamageInfo cloneSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a></td>
+        <td><span class="parametername">cloneSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Verse_DamageInfo_intendedTargetInt" data-uid="Verse.DamageInfo.intendedTargetInt">intendedTargetInt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thing intendedTargetInt</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Verse_DamageInfo_AllowDamagePropagation_" data-uid="Verse.DamageInfo.AllowDamagePropagation*"></a>
+  <h4 id="Verse_DamageInfo_AllowDamagePropagation" data-uid="Verse.DamageInfo.AllowDamagePropagation">AllowDamagePropagation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowDamagePropagation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Amount_" data-uid="Verse.DamageInfo.Amount*"></a>
+  <h4 id="Verse_DamageInfo_Amount" data-uid="Verse.DamageInfo.Amount">Amount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Amount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Angle_" data-uid="Verse.DamageInfo.Angle*"></a>
+  <h4 id="Verse_DamageInfo_Angle" data-uid="Verse.DamageInfo.Angle">Angle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Angle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_ApplyAllDamage_" data-uid="Verse.DamageInfo.ApplyAllDamage*"></a>
+  <h4 id="Verse_DamageInfo_ApplyAllDamage" data-uid="Verse.DamageInfo.ApplyAllDamage">ApplyAllDamage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ApplyAllDamage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_ArmorPenetrationInt_" data-uid="Verse.DamageInfo.ArmorPenetrationInt*"></a>
+  <h4 id="Verse_DamageInfo_ArmorPenetrationInt" data-uid="Verse.DamageInfo.ArmorPenetrationInt">ArmorPenetrationInt</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ArmorPenetrationInt { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Category_" data-uid="Verse.DamageInfo.Category*"></a>
+  <h4 id="Verse_DamageInfo_Category" data-uid="Verse.DamageInfo.Category">Category</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DamageInfo.SourceCategory Category { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a>.<a class="xref" href="Verse.DamageInfo.SourceCategory.html">SourceCategory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_CheckForJobOverride_" data-uid="Verse.DamageInfo.CheckForJobOverride*"></a>
+  <h4 id="Verse_DamageInfo_CheckForJobOverride" data-uid="Verse.DamageInfo.CheckForJobOverride">CheckForJobOverride</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CheckForJobOverride { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_DamagePropagationPartsRange_" data-uid="Verse.DamageInfo.DamagePropagationPartsRange*"></a>
+  <h4 id="Verse_DamageInfo_DamagePropagationPartsRange" data-uid="Verse.DamageInfo.DamagePropagationPartsRange">DamagePropagationPartsRange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntRange DamagePropagationPartsRange { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Def_" data-uid="Verse.DamageInfo.Def*"></a>
+  <h4 id="Verse_DamageInfo_Def" data-uid="Verse.DamageInfo.Def">Def</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DamageDef Def { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageDef.html">DamageDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Depth_" data-uid="Verse.DamageInfo.Depth*"></a>
+  <h4 id="Verse_DamageInfo_Depth" data-uid="Verse.DamageInfo.Depth">Depth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyPartDepth Depth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartDepth.html">BodyPartDepth</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Height_" data-uid="Verse.DamageInfo.Height*"></a>
+  <h4 id="Verse_DamageInfo_Height" data-uid="Verse.DamageInfo.Height">Height</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyPartHeight Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartHeight.html">BodyPartHeight</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_HitPart_" data-uid="Verse.DamageInfo.HitPart*"></a>
+  <h4 id="Verse_DamageInfo_HitPart" data-uid="Verse.DamageInfo.HitPart">HitPart</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyPartRecord HitPart { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartRecord.html">BodyPartRecord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_IgnoreArmor_" data-uid="Verse.DamageInfo.IgnoreArmor*"></a>
+  <h4 id="Verse_DamageInfo_IgnoreArmor" data-uid="Verse.DamageInfo.IgnoreArmor">IgnoreArmor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoreArmor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_IgnoreInstantKillProtection_" data-uid="Verse.DamageInfo.IgnoreInstantKillProtection*"></a>
+  <h4 id="Verse_DamageInfo_IgnoreInstantKillProtection" data-uid="Verse.DamageInfo.IgnoreInstantKillProtection">IgnoreInstantKillProtection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IgnoreInstantKillProtection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_InstantPermanentInjury_" data-uid="Verse.DamageInfo.InstantPermanentInjury*"></a>
+  <h4 id="Verse_DamageInfo_InstantPermanentInjury" data-uid="Verse.DamageInfo.InstantPermanentInjury">InstantPermanentInjury</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InstantPermanentInjury { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Instigator_" data-uid="Verse.DamageInfo.Instigator*"></a>
+  <h4 id="Verse_DamageInfo_Instigator" data-uid="Verse.DamageInfo.Instigator">Instigator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thing Instigator { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_InstigatorGuilty_" data-uid="Verse.DamageInfo.InstigatorGuilty*"></a>
+  <h4 id="Verse_DamageInfo_InstigatorGuilty" data-uid="Verse.DamageInfo.InstigatorGuilty">InstigatorGuilty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InstigatorGuilty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_IntendedTarget_" data-uid="Verse.DamageInfo.IntendedTarget*"></a>
+  <h4 id="Verse_DamageInfo_IntendedTarget" data-uid="Verse.DamageInfo.IntendedTarget">IntendedTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thing IntendedTarget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_PreventCascade_" data-uid="Verse.DamageInfo.PreventCascade*"></a>
+  <h4 id="Verse_DamageInfo_PreventCascade" data-uid="Verse.DamageInfo.PreventCascade">PreventCascade</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PreventCascade { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SpawnFilth_" data-uid="Verse.DamageInfo.SpawnFilth*"></a>
+  <h4 id="Verse_DamageInfo_SpawnFilth" data-uid="Verse.DamageInfo.SpawnFilth">SpawnFilth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SpawnFilth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Tool_" data-uid="Verse.DamageInfo.Tool*"></a>
+  <h4 id="Verse_DamageInfo_Tool" data-uid="Verse.DamageInfo.Tool">Tool</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tool Tool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Tool.html">Tool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_Weapon_" data-uid="Verse.DamageInfo.Weapon*"></a>
+  <h4 id="Verse_DamageInfo_Weapon" data-uid="Verse.DamageInfo.Weapon">Weapon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingDef Weapon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_WeaponBodyPartGroup_" data-uid="Verse.DamageInfo.WeaponBodyPartGroup*"></a>
+  <h4 id="Verse_DamageInfo_WeaponBodyPartGroup" data-uid="Verse.DamageInfo.WeaponBodyPartGroup">WeaponBodyPartGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodyPartGroupDef WeaponBodyPartGroup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartGroupDef.html">BodyPartGroupDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_WeaponLinkedHediff_" data-uid="Verse.DamageInfo.WeaponLinkedHediff*"></a>
+  <h4 id="Verse_DamageInfo_WeaponLinkedHediff" data-uid="Verse.DamageInfo.WeaponLinkedHediff">WeaponLinkedHediff</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HediffDef WeaponLinkedHediff { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.HediffDef.html">HediffDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_WeaponQuality_" data-uid="Verse.DamageInfo.WeaponQuality*"></a>
+  <h4 id="Verse_DamageInfo_WeaponQuality" data-uid="Verse.DamageInfo.WeaponQuality">WeaponQuality</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QualityCategory WeaponQuality { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QualityCategory.html">QualityCategory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_DamageInfo_SetAllowDamagePropagation_" data-uid="Verse.DamageInfo.SetAllowDamagePropagation*"></a>
+  <h4 id="Verse_DamageInfo_SetAllowDamagePropagation_System_Boolean_" data-uid="Verse.DamageInfo.SetAllowDamagePropagation(System.Boolean)">SetAllowDamagePropagation(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllowDamagePropagation(bool val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetAllowDamagePropagation_" data-uid="Verse.DamageInfo.SetAllowDamagePropagation*"></a>
+  <h4 id="Verse_DamageInfo_SetAllowDamagePropagation_System_Boolean_Verse_IntRange_" data-uid="Verse.DamageInfo.SetAllowDamagePropagation(System.Boolean,Verse.IntRange)">SetAllowDamagePropagation(bool, IntRange)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllowDamagePropagation(bool val, IntRange partsRange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">partsRange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetAmount_" data-uid="Verse.DamageInfo.SetAmount*"></a>
+  <h4 id="Verse_DamageInfo_SetAmount_System_Single_" data-uid="Verse.DamageInfo.SetAmount(System.Single)">SetAmount(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAmount(float newAmount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">newAmount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetAngle_" data-uid="Verse.DamageInfo.SetAngle*"></a>
+  <h4 id="Verse_DamageInfo_SetAngle_UnityEngine_Vector3_" data-uid="Verse.DamageInfo.SetAngle(UnityEngine.Vector3)">SetAngle(Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAngle(Vector3 vec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">vec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetApplyAllDamage_" data-uid="Verse.DamageInfo.SetApplyAllDamage*"></a>
+  <h4 id="Verse_DamageInfo_SetApplyAllDamage_System_Boolean_" data-uid="Verse.DamageInfo.SetApplyAllDamage(System.Boolean)">SetApplyAllDamage(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetApplyAllDamage(bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetBodyRegion_" data-uid="Verse.DamageInfo.SetBodyRegion*"></a>
+  <h4 id="Verse_DamageInfo_SetBodyRegion_Verse_BodyPartHeight_Verse_BodyPartDepth_" data-uid="Verse.DamageInfo.SetBodyRegion(Verse.BodyPartHeight,Verse.BodyPartDepth)">SetBodyRegion(BodyPartHeight, BodyPartDepth)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBodyRegion(BodyPartHeight height = BodyPartHeight.Undefined, BodyPartDepth depth = BodyPartDepth.Undefined)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartHeight.html">BodyPartHeight</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartDepth.html">BodyPartDepth</a></td>
+        <td><span class="parametername">depth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetHitPart_" data-uid="Verse.DamageInfo.SetHitPart*"></a>
+  <h4 id="Verse_DamageInfo_SetHitPart_Verse_BodyPartRecord_" data-uid="Verse.DamageInfo.SetHitPart(Verse.BodyPartRecord)">SetHitPart(BodyPartRecord)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHitPart(BodyPartRecord forceHitPart)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartRecord.html">BodyPartRecord</a></td>
+        <td><span class="parametername">forceHitPart</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetIgnoreArmor_" data-uid="Verse.DamageInfo.SetIgnoreArmor*"></a>
+  <h4 id="Verse_DamageInfo_SetIgnoreArmor_System_Boolean_" data-uid="Verse.DamageInfo.SetIgnoreArmor(System.Boolean)">SetIgnoreArmor(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIgnoreArmor(bool ignoreArmor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreArmor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetIgnoreInstantKillProtection_" data-uid="Verse.DamageInfo.SetIgnoreInstantKillProtection*"></a>
+  <h4 id="Verse_DamageInfo_SetIgnoreInstantKillProtection_System_Boolean_" data-uid="Verse.DamageInfo.SetIgnoreInstantKillProtection(System.Boolean)">SetIgnoreInstantKillProtection(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIgnoreInstantKillProtection(bool ignore)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignore</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetInstantPermanentInjury_" data-uid="Verse.DamageInfo.SetInstantPermanentInjury*"></a>
+  <h4 id="Verse_DamageInfo_SetInstantPermanentInjury_System_Boolean_" data-uid="Verse.DamageInfo.SetInstantPermanentInjury(System.Boolean)">SetInstantPermanentInjury(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInstantPermanentInjury(bool val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetTool_" data-uid="Verse.DamageInfo.SetTool*"></a>
+  <h4 id="Verse_DamageInfo_SetTool_Verse_Tool_" data-uid="Verse.DamageInfo.SetTool(Verse.Tool)">SetTool(Tool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTool(Tool tool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Tool.html">Tool</a></td>
+        <td><span class="parametername">tool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetWeaponBodyPartGroup_" data-uid="Verse.DamageInfo.SetWeaponBodyPartGroup*"></a>
+  <h4 id="Verse_DamageInfo_SetWeaponBodyPartGroup_Verse_BodyPartGroupDef_" data-uid="Verse.DamageInfo.SetWeaponBodyPartGroup(Verse.BodyPartGroupDef)">SetWeaponBodyPartGroup(BodyPartGroupDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWeaponBodyPartGroup(BodyPartGroupDef gr)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartGroupDef.html">BodyPartGroupDef</a></td>
+        <td><span class="parametername">gr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetWeaponHediff_" data-uid="Verse.DamageInfo.SetWeaponHediff*"></a>
+  <h4 id="Verse_DamageInfo_SetWeaponHediff_Verse_HediffDef_" data-uid="Verse.DamageInfo.SetWeaponHediff(Verse.HediffDef)">SetWeaponHediff(HediffDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWeaponHediff(HediffDef hd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.HediffDef.html">HediffDef</a></td>
+        <td><span class="parametername">hd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_SetWeaponQuality_" data-uid="Verse.DamageInfo.SetWeaponQuality*"></a>
+  <h4 id="Verse_DamageInfo_SetWeaponQuality_RimWorld_QualityCategory_" data-uid="Verse.DamageInfo.SetWeaponQuality(RimWorld.QualityCategory)">SetWeaponQuality(QualityCategory)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWeaponQuality(QualityCategory weaponQuality)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QualityCategory.html">QualityCategory</a></td>
+        <td><span class="parametername">weaponQuality</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_DamageInfo_ToString_" data-uid="Verse.DamageInfo.ToString*"></a>
+  <h4 id="Verse_DamageInfo_ToString" data-uid="Verse.DamageInfo.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CollectionHelper </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CollectionHelper ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Unity.Collections.CollectionHelper">
+
+
+
+  <h1 id="Unity_Collections_CollectionHelper" data-uid="Unity.Collections.CollectionHelper" class="text-break">Class CollectionHelper</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">CollectionHelper</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Unity.html">Unity</a>.<a class="xref" href="Unity.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: Unity.Collections.dll</h6>
+  <h5 id="Unity_Collections_CollectionHelper_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility]
+public static class CollectionHelper</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Unity_Collections_CollectionHelper_CacheLineSize" data-uid="Unity.Collections.CollectionHelper.CacheLineSize">CacheLineSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int CacheLineSize = 64</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Unity_Collections_CollectionHelper_Align_" data-uid="Unity.Collections.CollectionHelper.Align*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_Align_System_Int32_System_Int32_" data-uid="Unity.Collections.CollectionHelper.Align(System.Int32,System.Int32)">Align(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Align(int size, int alignmentPowerOfTwo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">alignmentPowerOfTwo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_Align_" data-uid="Unity.Collections.CollectionHelper.Align*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_Align_System_UInt64_System_UInt64_" data-uid="Unity.Collections.CollectionHelper.Align(System.UInt64,System.UInt64)">Align(ulong, ulong)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong Align(ulong size, ulong alignmentPowerOfTwo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">alignmentPowerOfTwo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_CheckReflectionDataCorrect_" data-uid="Unity.Collections.CollectionHelper.CheckReflectionDataCorrect*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_CheckReflectionDataCorrect__1_System_IntPtr_" data-uid="Unity.Collections.CollectionHelper.CheckReflectionDataCorrect``1(System.IntPtr)">CheckReflectionDataCorrect&lt;T&gt;(IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;ENABLE_UNITY_COLLECTIONS_CHECKS&quot;, GenericTypeArguments = new Type[] { typeof(CollectionHelper.DummyJob) })]
+[Conditional(&quot;ENABLE_UNITY_COLLECTIONS_CHECKS&quot;)]
+[Conditional(&quot;UNITY_DOTS_DEBUG&quot;)]
+public static void CheckReflectionDataCorrect&lt;T&gt;(IntPtr reflectionData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.intptr">IntPtr</a></td>
+        <td><span class="parametername">reflectionData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_ConvertExistingDataToNativeArray_" data-uid="Unity.Collections.CollectionHelper.ConvertExistingDataToNativeArray*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_ConvertExistingDataToNativeArray__1_System_Void__System_Int32_Unity_Collections_AllocatorManager_AllocatorHandle_System_Boolean_" data-uid="Unity.Collections.CollectionHelper.ConvertExistingDataToNativeArray``1(System.Void*,System.Int32,Unity.Collections.AllocatorManager.AllocatorHandle,System.Boolean)">ConvertExistingDataToNativeArray&lt;T&gt;(void*, int, AllocatorHandle, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static NativeArray&lt;T&gt; ConvertExistingDataToNativeArray&lt;T&gt;(void* dataPointer, int length, AllocatorManager.AllocatorHandle allocator, bool setTempMemoryHandle = false) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">dataPointer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.AllocatorManager.html">AllocatorManager</a>.<a class="xref" href="Unity.Collections.AllocatorManager.AllocatorHandle.html">AllocatorHandle</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">setTempMemoryHandle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_ConvertExistingNativeListToNativeArray_" data-uid="Unity.Collections.CollectionHelper.ConvertExistingNativeListToNativeArray*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_ConvertExistingNativeListToNativeArray__1_Unity_Collections_NativeList___0___System_Int32_Unity_Collections_AllocatorManager_AllocatorHandle_" data-uid="Unity.Collections.CollectionHelper.ConvertExistingNativeListToNativeArray``1(Unity.Collections.NativeList{``0}@,System.Int32,Unity.Collections.AllocatorManager.AllocatorHandle)">ConvertExistingNativeListToNativeArray&lt;T&gt;(ref NativeList&lt;T&gt;, int, AllocatorHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static NativeArray&lt;T&gt; ConvertExistingNativeListToNativeArray&lt;T&gt;(ref NativeList&lt;T&gt; nativeList, int length, AllocatorManager.AllocatorHandle allocator) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">nativeList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.AllocatorManager.html">AllocatorManager</a>.<a class="xref" href="Unity.Collections.AllocatorManager.AllocatorHandle.html">AllocatorHandle</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_CreateNativeArray_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_CreateNativeArray__1_System_Int32_Unity_Collections_AllocatorManager_AllocatorHandle_Unity_Collections_NativeArrayOptions_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray``1(System.Int32,Unity.Collections.AllocatorManager.AllocatorHandle,Unity.Collections.NativeArrayOptions)">CreateNativeArray&lt;T&gt;(int, AllocatorHandle, NativeArrayOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static NativeArray&lt;T&gt; CreateNativeArray&lt;T&gt;(int length, AllocatorManager.AllocatorHandle allocator, NativeArrayOptions options = NativeArrayOptions.ClearMemory) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.AllocatorManager.html">AllocatorManager</a>.<a class="xref" href="Unity.Collections.AllocatorManager.AllocatorHandle.html">AllocatorHandle</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArrayOptions.html">NativeArrayOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_CreateNativeArray_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_CreateNativeArray__1_Unity_Collections_NativeArray___0__Unity_Collections_AllocatorManager_AllocatorHandle_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray``1(Unity.Collections.NativeArray{``0},Unity.Collections.AllocatorManager.AllocatorHandle)">CreateNativeArray&lt;T&gt;(NativeArray&lt;T&gt;, AllocatorHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static NativeArray&lt;T&gt; CreateNativeArray&lt;T&gt;(NativeArray&lt;T&gt; array, AllocatorManager.AllocatorHandle allocator) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.AllocatorManager.html">AllocatorManager</a>.<a class="xref" href="Unity.Collections.AllocatorManager.AllocatorHandle.html">AllocatorHandle</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_CreateNativeArray_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_CreateNativeArray__1___0___Unity_Collections_AllocatorManager_AllocatorHandle_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray``1(``0[],Unity.Collections.AllocatorManager.AllocatorHandle)">CreateNativeArray&lt;T&gt;(T[], AllocatorHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromBurstCompatTesting(&quot;Managed array&quot;)]
+public static NativeArray&lt;T&gt; CreateNativeArray&lt;T&gt;(T[] array, AllocatorManager.AllocatorHandle allocator) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.AllocatorManager.html">AllocatorManager</a>.<a class="xref" href="Unity.Collections.AllocatorManager.AllocatorHandle.html">AllocatorHandle</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_CreateNativeArray_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_CreateNativeArray__2_System_Int32___1__Unity_Collections_NativeArrayOptions_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray``2(System.Int32,``1@,Unity.Collections.NativeArrayOptions)">CreateNativeArray&lt;T, U&gt;(int, ref U, NativeArrayOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(AllocatorManager.AllocatorHandle) })]
+public static NativeArray&lt;T&gt; CreateNativeArray&lt;T, U&gt;(int length, ref U allocator, NativeArrayOptions options = NativeArrayOptions.ClearMemory) where T : unmanaged where U : unmanaged, AllocatorManager.IAllocator</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArrayOptions.html">NativeArrayOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_CreateNativeArray_" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_CreateNativeArray__2___0_____1__" data-uid="Unity.Collections.CollectionHelper.CreateNativeArray``2(``0[],``1@)">CreateNativeArray&lt;T, U&gt;(T[], ref U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromBurstCompatTesting(&quot;Managed array&quot;)]
+public static NativeArray&lt;T&gt; CreateNativeArray&lt;T, U&gt;(T[] array, ref U allocator) where T : unmanaged where U : unmanaged, AllocatorManager.IAllocator</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_CreateNativeParallelMultiHashMap_" data-uid="Unity.Collections.CollectionHelper.CreateNativeParallelMultiHashMap*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_CreateNativeParallelMultiHashMap__3_System_Int32___2__" data-uid="Unity.Collections.CollectionHelper.CreateNativeParallelMultiHashMap``3(System.Int32,``2@)">CreateNativeParallelMultiHashMap&lt;TKey, TValue, U&gt;(int, ref U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(int), typeof(AllocatorManager.AllocatorHandle) })]
+public static NativeParallelMultiHashMap&lt;TKey, TValue&gt; CreateNativeParallelMultiHashMap&lt;TKey, TValue, U&gt;(int length, ref U allocator) where TKey : unmanaged, IEquatable&lt;TKey&gt; where TValue : unmanaged where U : unmanaged, AllocatorManager.IAllocator</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeParallelMultiHashMap-2.html">NativeParallelMultiHashMap</a>&lt;TKey, TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_DisposeNativeArray_" data-uid="Unity.Collections.CollectionHelper.DisposeNativeArray*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_DisposeNativeArray__1_Unity_Collections_NativeArray___0__Unity_Collections_AllocatorManager_AllocatorHandle_" data-uid="Unity.Collections.CollectionHelper.DisposeNativeArray``1(Unity.Collections.NativeArray{``0},Unity.Collections.AllocatorManager.AllocatorHandle)">DisposeNativeArray&lt;T&gt;(NativeArray&lt;T&gt;, AllocatorHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static void DisposeNativeArray&lt;T&gt;(NativeArray&lt;T&gt; nativeArray, AllocatorManager.AllocatorHandle allocator) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">nativeArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.AllocatorManager.html">AllocatorManager</a>.<a class="xref" href="Unity.Collections.AllocatorManager.AllocatorHandle.html">AllocatorHandle</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_Dispose_" data-uid="Unity.Collections.CollectionHelper.Dispose*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_Dispose__1_Unity_Collections_NativeArray___0__" data-uid="Unity.Collections.CollectionHelper.Dispose``1(Unity.Collections.NativeArray{``0})">Dispose&lt;T&gt;(NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static void Dispose&lt;T&gt;(NativeArray&lt;T&gt; nativeArray) where T : unmanaged</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">nativeArray</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_Hash_" data-uid="Unity.Collections.CollectionHelper.Hash*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_Hash_System_Void__System_Int32_" data-uid="Unity.Collections.CollectionHelper.Hash(System.Void*,System.Int32)">Hash(void*, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static uint Hash(void* ptr, int bytes)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">bytes</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_IsAligned_" data-uid="Unity.Collections.CollectionHelper.IsAligned*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_IsAligned_System_UInt64_System_Int32_" data-uid="Unity.Collections.CollectionHelper.IsAligned(System.UInt64,System.Int32)">IsAligned(ulong, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAligned(ulong offset, int alignmentPowerOfTwo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">alignmentPowerOfTwo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_IsAligned_" data-uid="Unity.Collections.CollectionHelper.IsAligned*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_IsAligned_System_Void__System_Int32_" data-uid="Unity.Collections.CollectionHelper.IsAligned(System.Void*,System.Int32)">IsAligned(void*, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAligned(void* p, int alignmentPowerOfTwo)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.void">void</a>*</td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">alignmentPowerOfTwo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_IsPowerOfTwo_" data-uid="Unity.Collections.CollectionHelper.IsPowerOfTwo*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_IsPowerOfTwo_System_Int32_" data-uid="Unity.Collections.CollectionHelper.IsPowerOfTwo(System.Int32)">IsPowerOfTwo(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPowerOfTwo(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_Log2Ceil_" data-uid="Unity.Collections.CollectionHelper.Log2Ceil*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_Log2Ceil_System_Int32_" data-uid="Unity.Collections.CollectionHelper.Log2Ceil(System.Int32)">Log2Ceil(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Log2Ceil(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_CollectionHelper_Log2Floor_" data-uid="Unity.Collections.CollectionHelper.Log2Floor*"></a>
+  <h4 id="Unity_Collections_CollectionHelper_Log2Floor_System_Int32_" data-uid="Unity.Collections.CollectionHelper.Log2Floor(System.Int32)">Log2Floor(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Log2Floor(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,4487 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PawnUtility </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PawnUtility ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.PawnUtility">
+
+
+
+  <h1 id="RimWorld_PawnUtility" data-uid="RimWorld.PawnUtility" class="text-break">Class PawnUtility</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">PawnUtility</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_PawnUtility_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PawnUtility</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_PawnUtility_AnyPawnBlockingPathAt_" data-uid="RimWorld.PawnUtility.AnyPawnBlockingPathAt*"></a>
+  <h4 id="RimWorld_PawnUtility_AnyPawnBlockingPathAt_Verse_IntVec3_Verse_Pawn_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="RimWorld.PawnUtility.AnyPawnBlockingPathAt(Verse.IntVec3,Verse.Pawn,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">AnyPawnBlockingPathAt(IntVec3, Pawn, bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool AnyPawnBlockingPathAt(IntVec3 c, Pawn forPawn, bool actAsIfHadCollideWithPawnsJob = false, bool collideOnlyWithStandingPawns = false, bool forPathFinder = false, bool useId = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">forPawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">actAsIfHadCollideWithPawnsJob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">collideOnlyWithStandingPawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forPathFinder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_BodyResourceGrowthSpeed_" data-uid="RimWorld.PawnUtility.BodyResourceGrowthSpeed*"></a>
+  <h4 id="RimWorld_PawnUtility_BodyResourceGrowthSpeed_Verse_Pawn_" data-uid="RimWorld.PawnUtility.BodyResourceGrowthSpeed(Verse.Pawn)">BodyResourceGrowthSpeed(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float BodyResourceGrowthSpeed(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_CanBeBuried_" data-uid="RimWorld.PawnUtility.CanBeBuried*"></a>
+  <h4 id="RimWorld_PawnUtility_CanBeBuried_Verse_Thing_" data-uid="RimWorld.PawnUtility.CanBeBuried(Verse.Thing)">CanBeBuried(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanBeBuried(this Thing t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_CanCasuallyInteractNow_" data-uid="RimWorld.PawnUtility.CanCasuallyInteractNow*"></a>
+  <h4 id="RimWorld_PawnUtility_CanCasuallyInteractNow_Verse_Pawn_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="RimWorld.PawnUtility.CanCasuallyInteractNow(Verse.Pawn,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">CanCasuallyInteractNow(Pawn, bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanCasuallyInteractNow(this Pawn p, bool twoWayInteraction = false, bool canInteractWhileSleeping = false, bool canInteractWhileRoaming = false, bool canInteractWhileDrafted = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">twoWayInteraction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canInteractWhileSleeping</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canInteractWhileRoaming</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canInteractWhileDrafted</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_CanPickUp_" data-uid="RimWorld.PawnUtility.CanPickUp*"></a>
+  <h4 id="RimWorld_PawnUtility_CanPickUp_Verse_Pawn_Verse_ThingDef_" data-uid="RimWorld.PawnUtility.CanPickUp(Verse.Pawn,Verse.ThingDef)">CanPickUp(Pawn, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanPickUp(Pawn pawn, ThingDef thingDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_CanTakeDrug_" data-uid="RimWorld.PawnUtility.CanTakeDrug*"></a>
+  <h4 id="RimWorld_PawnUtility_CanTakeDrug_Verse_Pawn_Verse_ThingDef_" data-uid="RimWorld.PawnUtility.CanTakeDrug(Verse.Pawn,Verse.ThingDef)">CanTakeDrug(Pawn, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanTakeDrug(this Pawn pawn, ThingDef drug)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">drug</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_CanTakeDrugForDependency_" data-uid="RimWorld.PawnUtility.CanTakeDrugForDependency*"></a>
+  <h4 id="RimWorld_PawnUtility_CanTakeDrugForDependency_Verse_Pawn_Verse_ThingDef_" data-uid="RimWorld.PawnUtility.CanTakeDrugForDependency(Verse.Pawn,Verse.ThingDef)">CanTakeDrugForDependency(Pawn, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanTakeDrugForDependency(Pawn pawn, ThingDef drug)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">drug</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ChangePsylinkLevel_" data-uid="RimWorld.PawnUtility.ChangePsylinkLevel*"></a>
+  <h4 id="RimWorld_PawnUtility_ChangePsylinkLevel_Verse_Pawn_System_Int32_System_Boolean_" data-uid="RimWorld.PawnUtility.ChangePsylinkLevel(Verse.Pawn,System.Int32,System.Boolean)">ChangePsylinkLevel(Pawn, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ChangePsylinkLevel(this Pawn pawn, int levelOffset, bool sendLetter = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">levelOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">sendLetter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_DestroyStartingColonistFamily_" data-uid="RimWorld.PawnUtility.DestroyStartingColonistFamily*"></a>
+  <h4 id="RimWorld_PawnUtility_DestroyStartingColonistFamily_Verse_Pawn_" data-uid="RimWorld.PawnUtility.DestroyStartingColonistFamily(Verse.Pawn)">DestroyStartingColonistFamily(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DestroyStartingColonistFamily(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_DutyActiveWhenDown_" data-uid="RimWorld.PawnUtility.DutyActiveWhenDown*"></a>
+  <h4 id="RimWorld_PawnUtility_DutyActiveWhenDown_Verse_Pawn_System_Boolean_" data-uid="RimWorld.PawnUtility.DutyActiveWhenDown(Verse.Pawn,System.Boolean)">DutyActiveWhenDown(Pawn, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DutyActiveWhenDown(this Pawn pawn, bool onlyInBed = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">onlyInBed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_DutyLocation_" data-uid="RimWorld.PawnUtility.DutyLocation*"></a>
+  <h4 id="RimWorld_PawnUtility_DutyLocation_Verse_Pawn_" data-uid="RimWorld.PawnUtility.DutyLocation(Verse.Pawn)">DutyLocation(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntVec3 DutyLocation(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_EnemiesAreNearby_" data-uid="RimWorld.PawnUtility.EnemiesAreNearby*"></a>
+  <h4 id="RimWorld_PawnUtility_EnemiesAreNearby_Verse_Pawn_System_Int32_System_Boolean_System_Single_System_Int32_System_Boolean_" data-uid="RimWorld.PawnUtility.EnemiesAreNearby(Verse.Pawn,System.Int32,System.Boolean,System.Single,System.Int32,System.Boolean)">EnemiesAreNearby(Pawn, int, bool, float, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EnemiesAreNearby(Pawn pawn, int regionsToScan = 9, bool passDoors = false, float maxDistance = -1, int maxCount = 1, bool invisible = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">regionsToScan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">passDoors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">maxDistance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">invisible</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_EverBeenColonistOrTameAnimal_" data-uid="RimWorld.PawnUtility.EverBeenColonistOrTameAnimal*"></a>
+  <h4 id="RimWorld_PawnUtility_EverBeenColonistOrTameAnimal_Verse_Pawn_" data-uid="RimWorld.PawnUtility.EverBeenColonistOrTameAnimal(Verse.Pawn)">EverBeenColonistOrTameAnimal(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EverBeenColonistOrTameAnimal(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_EverBeenPrisoner_" data-uid="RimWorld.PawnUtility.EverBeenPrisoner*"></a>
+  <h4 id="RimWorld_PawnUtility_EverBeenPrisoner_Verse_Pawn_" data-uid="RimWorld.PawnUtility.EverBeenPrisoner(Verse.Pawn)">EverBeenPrisoner(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EverBeenPrisoner(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_EverBeenQuestLodger_" data-uid="RimWorld.PawnUtility.EverBeenQuestLodger*"></a>
+  <h4 id="RimWorld_PawnUtility_EverBeenQuestLodger_Verse_Pawn_" data-uid="RimWorld.PawnUtility.EverBeenQuestLodger(Verse.Pawn)">EverBeenQuestLodger(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EverBeenQuestLodger(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_FertileMateTarget_" data-uid="RimWorld.PawnUtility.FertileMateTarget*"></a>
+  <h4 id="RimWorld_PawnUtility_FertileMateTarget_Verse_Pawn_Verse_Pawn_" data-uid="RimWorld.PawnUtility.FertileMateTarget(Verse.Pawn,Verse.Pawn)">FertileMateTarget(Pawn, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool FertileMateTarget(Pawn male, Pawn female)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">male</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">female</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_FirstVeneratedAnimalOnMapOrCaravan_" data-uid="RimWorld.PawnUtility.FirstVeneratedAnimalOnMapOrCaravan*"></a>
+  <h4 id="RimWorld_PawnUtility_FirstVeneratedAnimalOnMapOrCaravan_Verse_Pawn_" data-uid="RimWorld.PawnUtility.FirstVeneratedAnimalOnMapOrCaravan(Verse.Pawn)">FirstVeneratedAnimalOnMapOrCaravan(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Pawn FirstVeneratedAnimalOnMapOrCaravan(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ForSaleBySettlement_" data-uid="RimWorld.PawnUtility.ForSaleBySettlement*"></a>
+  <h4 id="RimWorld_PawnUtility_ForSaleBySettlement_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ForSaleBySettlement(Verse.Pawn)">ForSaleBySettlement(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ForSaleBySettlement(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ForceEjectFromContainer_" data-uid="RimWorld.PawnUtility.ForceEjectFromContainer*"></a>
+  <h4 id="RimWorld_PawnUtility_ForceEjectFromContainer_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ForceEjectFromContainer(Verse.Pawn)">ForceEjectFromContainer(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForceEjectFromContainer(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ForceWait_" data-uid="RimWorld.PawnUtility.ForceWait*"></a>
+  <h4 id="RimWorld_PawnUtility_ForceWait_Verse_Pawn_System_Int32_Verse_Thing_System_Boolean_System_Boolean_" data-uid="RimWorld.PawnUtility.ForceWait(Verse.Pawn,System.Int32,Verse.Thing,System.Boolean,System.Boolean)">ForceWait(Pawn, int, Thing, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ForceWait(Pawn pawn, int ticks, Thing faceTarget = null, bool maintainPosture = false, bool maintainSleep = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">ticks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">faceTarget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">maintainPosture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">maintainSleep</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GainComfortFromCellIfPossible_" data-uid="RimWorld.PawnUtility.GainComfortFromCellIfPossible*"></a>
+  <h4 id="RimWorld_PawnUtility_GainComfortFromCellIfPossible_Verse_Pawn_System_Int32_System_Boolean_" data-uid="RimWorld.PawnUtility.GainComfortFromCellIfPossible(Verse.Pawn,System.Int32,System.Boolean)">GainComfortFromCellIfPossible(Pawn, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GainComfortFromCellIfPossible(this Pawn p, int delta, bool chairsOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">chairsOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GainComfortFromThingIfPossible_" data-uid="RimWorld.PawnUtility.GainComfortFromThingIfPossible*"></a>
+  <h4 id="RimWorld_PawnUtility_GainComfortFromThingIfPossible_Verse_Pawn_Verse_Thing_System_Int32_" data-uid="RimWorld.PawnUtility.GainComfortFromThingIfPossible(Verse.Pawn,Verse.Thing,System.Int32)">GainComfortFromThingIfPossible(Pawn, Thing, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GainComfortFromThingIfPossible(Pawn p, Thing from, int delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetCombatPawnKindsForPoints_" data-uid="RimWorld.PawnUtility.GetCombatPawnKindsForPoints*"></a>
+  <h4 id="RimWorld_PawnUtility_GetCombatPawnKindsForPoints_System_Func_Verse_PawnKindDef_System_Boolean__System_Single_System_Func_Verse_PawnKindDef_System_Single__" data-uid="RimWorld.PawnUtility.GetCombatPawnKindsForPoints(System.Func{Verse.PawnKindDef,System.Boolean},System.Single,System.Func{Verse.PawnKindDef,System.Single})">GetCombatPawnKindsForPoints(Func&lt;PawnKindDef, bool&gt;, float, Func&lt;PawnKindDef, float&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(PawnUtility.&lt;GetCombatPawnKindsForPoints&gt;d__92))]
+public static IEnumerable&lt;PawnKindDef&gt; GetCombatPawnKindsForPoints(Func&lt;PawnKindDef, bool&gt; selector, float points, Func&lt;PawnKindDef, float&gt; selectionWeight = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">points</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">selectionWeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetFactionLeaderFaction_" data-uid="RimWorld.PawnUtility.GetFactionLeaderFaction*"></a>
+  <h4 id="RimWorld_PawnUtility_GetFactionLeaderFaction_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetFactionLeaderFaction(Verse.Pawn)">GetFactionLeaderFaction(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Faction GetFactionLeaderFaction(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetMainPsylinkSource_" data-uid="RimWorld.PawnUtility.GetMainPsylinkSource*"></a>
+  <h4 id="RimWorld_PawnUtility_GetMainPsylinkSource_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetMainPsylinkSource(Verse.Pawn)">GetMainPsylinkSource(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Hediff_Psylink GetMainPsylinkSource(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Hediff_Psylink.html">Hediff_Psylink</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetManhunterChanceFactorForInstigator_" data-uid="RimWorld.PawnUtility.GetManhunterChanceFactorForInstigator*"></a>
+  <h4 id="RimWorld_PawnUtility_GetManhunterChanceFactorForInstigator_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetManhunterChanceFactorForInstigator(Verse.Pawn)">GetManhunterChanceFactorForInstigator(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetManhunterChanceFactorForInstigator(Pawn instigator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">instigator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetManhunterOnDamageChance_" data-uid="RimWorld.PawnUtility.GetManhunterOnDamageChance*"></a>
+  <h4 id="RimWorld_PawnUtility_GetManhunterOnDamageChance_Verse_Pawn_Verse_Thing_System_Single_" data-uid="RimWorld.PawnUtility.GetManhunterOnDamageChance(Verse.Pawn,Verse.Thing,System.Single)">GetManhunterOnDamageChance(Pawn, Thing, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetManhunterOnDamageChance(Pawn pawn, Thing instigator = null, float distance = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">instigator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetManhunterOnDamageChance_" data-uid="RimWorld.PawnUtility.GetManhunterOnDamageChance*"></a>
+  <h4 id="RimWorld_PawnUtility_GetManhunterOnDamageChance_Verse_ThingDef_" data-uid="RimWorld.PawnUtility.GetManhunterOnDamageChance(Verse.ThingDef)">GetManhunterOnDamageChance(ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetManhunterOnDamageChance(ThingDef def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetManhunterOnDamageChanceExplanation_" data-uid="RimWorld.PawnUtility.GetManhunterOnDamageChanceExplanation*"></a>
+  <h4 id="RimWorld_PawnUtility_GetManhunterOnDamageChanceExplanation_Verse_ThingDef_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetManhunterOnDamageChanceExplanation(Verse.ThingDef,Verse.Pawn)">GetManhunterOnDamageChanceExplanation(ThingDef, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetManhunterOnDamageChanceExplanation(ThingDef def, Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetManhunterOnTameFailChance_" data-uid="RimWorld.PawnUtility.GetManhunterOnTameFailChance*"></a>
+  <h4 id="RimWorld_PawnUtility_GetManhunterOnTameFailChance_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetManhunterOnTameFailChance(Verse.Pawn)">GetManhunterOnTameFailChance(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetManhunterOnTameFailChance(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetManhunterOnTameFailChance_" data-uid="RimWorld.PawnUtility.GetManhunterOnTameFailChance*"></a>
+  <h4 id="RimWorld_PawnUtility_GetManhunterOnTameFailChance_Verse_ThingDef_" data-uid="RimWorld.PawnUtility.GetManhunterOnTameFailChance(Verse.ThingDef)">GetManhunterOnTameFailChance(ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float GetManhunterOnTameFailChance(ThingDef def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetManhunterOnTameFailChanceExplanation_" data-uid="RimWorld.PawnUtility.GetManhunterOnTameFailChanceExplanation*"></a>
+  <h4 id="RimWorld_PawnUtility_GetManhunterOnTameFailChanceExplanation_Verse_ThingDef_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetManhunterOnTameFailChanceExplanation(Verse.ThingDef,Verse.Pawn)">GetManhunterOnTameFailChanceExplanation(ThingDef, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetManhunterOnTameFailChanceExplanation(ThingDef def, Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetMaxAllowedToPickUp_" data-uid="RimWorld.PawnUtility.GetMaxAllowedToPickUp*"></a>
+  <h4 id="RimWorld_PawnUtility_GetMaxAllowedToPickUp_Verse_Pawn_Verse_ThingDef_" data-uid="RimWorld.PawnUtility.GetMaxAllowedToPickUp(Verse.Pawn,Verse.ThingDef)">GetMaxAllowedToPickUp(Pawn, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMaxAllowedToPickUp(Pawn pawn, ThingDef thingDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetMaxAllowedToPickUp_" data-uid="RimWorld.PawnUtility.GetMaxAllowedToPickUp*"></a>
+  <h4 id="RimWorld_PawnUtility_GetMaxAllowedToPickUp_Verse_ThingDef_Verse_Map_" data-uid="RimWorld.PawnUtility.GetMaxAllowedToPickUp(Verse.ThingDef,Verse.Map)">GetMaxAllowedToPickUp(ThingDef, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMaxAllowedToPickUp(ThingDef thingDef, Map map = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetMaxPsylinkLevel_" data-uid="RimWorld.PawnUtility.GetMaxPsylinkLevel*"></a>
+  <h4 id="RimWorld_PawnUtility_GetMaxPsylinkLevel_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetMaxPsylinkLevel(Verse.Pawn)">GetMaxPsylinkLevel(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMaxPsylinkLevel(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetMaxPsylinkLevelByTitle_" data-uid="RimWorld.PawnUtility.GetMaxPsylinkLevelByTitle*"></a>
+  <h4 id="RimWorld_PawnUtility_GetMaxPsylinkLevelByTitle_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetMaxPsylinkLevelByTitle(Verse.Pawn)">GetMaxPsylinkLevelByTitle(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetMaxPsylinkLevelByTitle(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetMaxPsylinkLevelTitle_" data-uid="RimWorld.PawnUtility.GetMaxPsylinkLevelTitle*"></a>
+  <h4 id="RimWorld_PawnUtility_GetMaxPsylinkLevelTitle_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetMaxPsylinkLevelTitle(Verse.Pawn)">GetMaxPsylinkLevelTitle(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static RoyalTitle GetMaxPsylinkLevelTitle(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.RoyalTitle.html">RoyalTitle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetPosture_" data-uid="RimWorld.PawnUtility.GetPosture*"></a>
+  <h4 id="RimWorld_PawnUtility_GetPosture_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetPosture(Verse.Pawn)">GetPosture(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PawnPosture GetPosture(this Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.PawnPosture.html">PawnPosture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GetPsylinkLevel_" data-uid="RimWorld.PawnUtility.GetPsylinkLevel*"></a>
+  <h4 id="RimWorld_PawnUtility_GetPsylinkLevel_Verse_Pawn_" data-uid="RimWorld.PawnUtility.GetPsylinkLevel(Verse.Pawn)">GetPsylinkLevel(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetPsylinkLevel(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_GiveAllStartingPlayerPawnsThought_" data-uid="RimWorld.PawnUtility.GiveAllStartingPlayerPawnsThought*"></a>
+  <h4 id="RimWorld_PawnUtility_GiveAllStartingPlayerPawnsThought_RimWorld_ThoughtDef_" data-uid="RimWorld.PawnUtility.GiveAllStartingPlayerPawnsThought(RimWorld.ThoughtDef)">GiveAllStartingPlayerPawnsThought(ThoughtDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GiveAllStartingPlayerPawnsThought(ThoughtDef thought)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThoughtDef.html">ThoughtDef</a></td>
+        <td><span class="parametername">thought</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_HasClothingNotRequiredByKind_" data-uid="RimWorld.PawnUtility.HasClothingNotRequiredByKind*"></a>
+  <h4 id="RimWorld_PawnUtility_HasClothingNotRequiredByKind_Verse_Pawn_" data-uid="RimWorld.PawnUtility.HasClothingNotRequiredByKind(Verse.Pawn)">HasClothingNotRequiredByKind(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HasClothingNotRequiredByKind(Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_InValidState_" data-uid="RimWorld.PawnUtility.InValidState*"></a>
+  <h4 id="RimWorld_PawnUtility_InValidState_Verse_Pawn_" data-uid="RimWorld.PawnUtility.InValidState(Verse.Pawn)">InValidState(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool InValidState(Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsArtificiallyBlind_" data-uid="RimWorld.PawnUtility.IsArtificiallyBlind*"></a>
+  <h4 id="RimWorld_PawnUtility_IsArtificiallyBlind_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsArtificiallyBlind(Verse.Pawn)">IsArtificiallyBlind(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsArtificiallyBlind(Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsAttacking_" data-uid="RimWorld.PawnUtility.IsAttacking*"></a>
+  <h4 id="RimWorld_PawnUtility_IsAttacking_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsAttacking(Verse.Pawn)">IsAttacking(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAttacking(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsBeingArrested_" data-uid="RimWorld.PawnUtility.IsBeingArrested*"></a>
+  <h4 id="RimWorld_PawnUtility_IsBeingArrested_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsBeingArrested(Verse.Pawn)">IsBeingArrested(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBeingArrested(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsBiologicallyBlind_" data-uid="RimWorld.PawnUtility.IsBiologicallyBlind*"></a>
+  <h4 id="RimWorld_PawnUtility_IsBiologicallyBlind_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsBiologicallyBlind(Verse.Pawn)">IsBiologicallyBlind(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBiologicallyBlind(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsBiologicallyOrArtificiallyBlind_" data-uid="RimWorld.PawnUtility.IsBiologicallyOrArtificiallyBlind*"></a>
+  <h4 id="RimWorld_PawnUtility_IsBiologicallyOrArtificiallyBlind_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsBiologicallyOrArtificiallyBlind(Verse.Pawn)">IsBiologicallyOrArtificiallyBlind(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsBiologicallyOrArtificiallyBlind(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsCarrying_" data-uid="RimWorld.PawnUtility.IsCarrying*"></a>
+  <h4 id="RimWorld_PawnUtility_IsCarrying_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsCarrying(Verse.Pawn)">IsCarrying(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCarrying(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsCarryingPawn_" data-uid="RimWorld.PawnUtility.IsCarryingPawn*"></a>
+  <h4 id="RimWorld_PawnUtility_IsCarryingPawn_Verse_Pawn_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsCarryingPawn(Verse.Pawn,Verse.Pawn)">IsCarryingPawn(Pawn, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCarryingPawn(this Pawn pawn, Pawn carryPawn = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">carryPawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsCarryingThing_" data-uid="RimWorld.PawnUtility.IsCarryingThing*"></a>
+  <h4 id="RimWorld_PawnUtility_IsCarryingThing_Verse_Pawn_Verse_Thing_" data-uid="RimWorld.PawnUtility.IsCarryingThing(Verse.Pawn,Verse.Thing)">IsCarryingThing(Pawn, Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCarryingThing(this Pawn pawn, Thing carriedThing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">carriedThing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsCombatant_" data-uid="RimWorld.PawnUtility.IsCombatant*"></a>
+  <h4 id="RimWorld_PawnUtility_IsCombatant_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsCombatant(Verse.Pawn)">IsCombatant(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsCombatant(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsExitingMap_" data-uid="RimWorld.PawnUtility.IsExitingMap*"></a>
+  <h4 id="RimWorld_PawnUtility_IsExitingMap_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsExitingMap(Verse.Pawn)">IsExitingMap(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsExitingMap(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsFactionLeader_" data-uid="RimWorld.PawnUtility.IsFactionLeader*"></a>
+  <h4 id="RimWorld_PawnUtility_IsFactionLeader_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsFactionLeader(Verse.Pawn)">IsFactionLeader(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFactionLeader(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsFighting_" data-uid="RimWorld.PawnUtility.IsFighting*"></a>
+  <h4 id="RimWorld_PawnUtility_IsFighting_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsFighting(Verse.Pawn)">IsFighting(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFighting(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsInteractionBlocked_" data-uid="RimWorld.PawnUtility.IsInteractionBlocked*"></a>
+  <h4 id="RimWorld_PawnUtility_IsInteractionBlocked_Verse_Pawn_RimWorld_InteractionDef_System_Boolean_System_Boolean_" data-uid="RimWorld.PawnUtility.IsInteractionBlocked(Verse.Pawn,RimWorld.InteractionDef,System.Boolean,System.Boolean)">IsInteractionBlocked(Pawn, InteractionDef, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsInteractionBlocked(this Pawn pawn, InteractionDef interaction, bool isInitiator, bool isRandom)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.InteractionDef.html">InteractionDef</a></td>
+        <td><span class="parametername">interaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isInitiator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isRandom</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsKidnappedPawn_" data-uid="RimWorld.PawnUtility.IsKidnappedPawn*"></a>
+  <h4 id="RimWorld_PawnUtility_IsKidnappedPawn_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsKidnappedPawn(Verse.Pawn)">IsKidnappedPawn(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsKidnappedPawn(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsPermanentCombatant_" data-uid="RimWorld.PawnUtility.IsPermanentCombatant*"></a>
+  <h4 id="RimWorld_PawnUtility_IsPermanentCombatant_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsPermanentCombatant(Verse.Pawn)">IsPermanentCombatant(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPermanentCombatant(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsPotentiallyPredator_" data-uid="RimWorld.PawnUtility.IsPotentiallyPredator*"></a>
+  <h4 id="RimWorld_PawnUtility_IsPotentiallyPredator_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsPotentiallyPredator(Verse.Pawn)">IsPotentiallyPredator(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPotentiallyPredator(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsPrisonerInPrisonCell_" data-uid="RimWorld.PawnUtility.IsPrisonerInPrisonCell*"></a>
+  <h4 id="RimWorld_PawnUtility_IsPrisonerInPrisonCell_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsPrisonerInPrisonCell(Verse.Pawn)">IsPrisonerInPrisonCell(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsPrisonerInPrisonCell(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsProsthophobe_" data-uid="RimWorld.PawnUtility.IsProsthophobe*"></a>
+  <h4 id="RimWorld_PawnUtility_IsProsthophobe_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsProsthophobe(Verse.Pawn)">IsProsthophobe(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsProsthophobe(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsTeetotaler_" data-uid="RimWorld.PawnUtility.IsTeetotaler*"></a>
+  <h4 id="RimWorld_PawnUtility_IsTeetotaler_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsTeetotaler(Verse.Pawn)">IsTeetotaler(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTeetotaler(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsTravelingInTransportPodWorldObject_" data-uid="RimWorld.PawnUtility.IsTravelingInTransportPodWorldObject*"></a>
+  <h4 id="RimWorld_PawnUtility_IsTravelingInTransportPodWorldObject_Verse_Pawn_" data-uid="RimWorld.PawnUtility.IsTravelingInTransportPodWorldObject(Verse.Pawn)">IsTravelingInTransportPodWorldObject(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTravelingInTransportPodWorldObject(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_IsWorkTypeDisabledByAge_" data-uid="RimWorld.PawnUtility.IsWorkTypeDisabledByAge*"></a>
+  <h4 id="RimWorld_PawnUtility_IsWorkTypeDisabledByAge_Verse_Pawn_Verse_WorkTypeDef_System_Int32__" data-uid="RimWorld.PawnUtility.IsWorkTypeDisabledByAge(Verse.Pawn,Verse.WorkTypeDef,System.Int32@)">IsWorkTypeDisabledByAge(Pawn, WorkTypeDef, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsWorkTypeDisabledByAge(this Pawn pawn, WorkTypeDef workType, out int minAgeRequired)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.WorkTypeDef.html">WorkTypeDef</a></td>
+        <td><span class="parametername">workType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minAgeRequired</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_KnownDangerAt_" data-uid="RimWorld.PawnUtility.KnownDangerAt*"></a>
+  <h4 id="RimWorld_PawnUtility_KnownDangerAt_Verse_IntVec3_Verse_Map_Verse_Pawn_" data-uid="RimWorld.PawnUtility.KnownDangerAt(Verse.IntVec3,Verse.Map,Verse.Pawn)">KnownDangerAt(IntVec3, Map, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool KnownDangerAt(IntVec3 c, Map map, Pawn forPawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">forPawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ManhunterStateFor_" data-uid="RimWorld.PawnUtility.ManhunterStateFor*"></a>
+  <h4 id="RimWorld_PawnUtility_ManhunterStateFor_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ManhunterStateFor(Verse.Pawn)">ManhunterStateFor(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MentalStateDef ManhunterStateFor(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.MentalStateDef.html">MentalStateDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_Mated_" data-uid="RimWorld.PawnUtility.Mated*"></a>
+  <h4 id="RimWorld_PawnUtility_Mated_Verse_Pawn_Verse_Pawn_" data-uid="RimWorld.PawnUtility.Mated(Verse.Pawn,Verse.Pawn)">Mated(Pawn, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Mated(Pawn male, Pawn female)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">male</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">female</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnBlockedBy_" data-uid="RimWorld.PawnUtility.PawnBlockedBy*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnBlockedBy_Verse_Pawn_Verse_Pawn_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="RimWorld.PawnUtility.PawnBlockedBy(Verse.Pawn,Verse.Pawn,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">PawnBlockedBy(Pawn, Pawn, bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PawnBlockedBy(Pawn forPawn, Pawn other, bool collideOnlyWithStandingPawns = false, bool collideWithNonHostile = false, bool forPathFinder = false, bool useId = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">forPawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">collideOnlyWithStandingPawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">collideWithNonHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forPathFinder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnBlockingPathAt_" data-uid="RimWorld.PawnUtility.PawnBlockingPathAt*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnBlockingPathAt_Verse_IntVec3_Verse_Pawn_System_Boolean_System_Boolean_System_Boolean_System_Boolean_" data-uid="RimWorld.PawnUtility.PawnBlockingPathAt(Verse.IntVec3,Verse.Pawn,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">PawnBlockingPathAt(IntVec3, Pawn, bool, bool, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Pawn PawnBlockingPathAt(IntVec3 c, Pawn forPawn, bool actAsIfHadCollideWithPawnsJob = false, bool collideOnlyWithStandingPawns = false, bool forPathFinder = false, bool useId = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">forPawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">actAsIfHadCollideWithPawnsJob</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">collideOnlyWithStandingPawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forPathFinder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnHadFuneral_" data-uid="RimWorld.PawnUtility.PawnHadFuneral*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnHadFuneral_Verse_Pawn_" data-uid="RimWorld.PawnUtility.PawnHadFuneral(Verse.Pawn)">PawnHadFuneral(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PawnHadFuneral(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnKindsToCommaList_" data-uid="RimWorld.PawnUtility.PawnKindsToCommaList*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnKindsToCommaList_System_Collections_Generic_IEnumerable_Verse_PawnKindDef__System_Boolean_" data-uid="RimWorld.PawnUtility.PawnKindsToCommaList(System.Collections.Generic.IEnumerable{Verse.PawnKindDef},System.Boolean)">PawnKindsToCommaList(IEnumerable&lt;PawnKindDef&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PawnKindsToCommaList(IEnumerable&lt;PawnKindDef&gt; pawnKinds, bool useAnd = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a>&gt;</td>
+        <td><span class="parametername">pawnKinds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useAnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnKindsToCommaList_" data-uid="RimWorld.PawnUtility.PawnKindsToCommaList*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnKindsToCommaList_System_Collections_Generic_IEnumerable_Verse_Pawn__System_Boolean_" data-uid="RimWorld.PawnUtility.PawnKindsToCommaList(System.Collections.Generic.IEnumerable{Verse.Pawn},System.Boolean)">PawnKindsToCommaList(IEnumerable&lt;Pawn&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PawnKindsToCommaList(IEnumerable&lt;Pawn&gt; pawns, bool useAnd = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useAnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnKindsToLineList_" data-uid="RimWorld.PawnUtility.PawnKindsToLineList*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnKindsToLineList_System_Collections_Generic_IEnumerable_Verse_PawnKindDef__System_String_" data-uid="RimWorld.PawnUtility.PawnKindsToLineList(System.Collections.Generic.IEnumerable{Verse.PawnKindDef},System.String)">PawnKindsToLineList(IEnumerable&lt;PawnKindDef&gt;, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PawnKindsToLineList(IEnumerable&lt;PawnKindDef&gt; pawnKinds, string prefix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a>&gt;</td>
+        <td><span class="parametername">pawnKinds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">prefix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnKindsToLineList_" data-uid="RimWorld.PawnUtility.PawnKindsToLineList*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnKindsToLineList_System_Collections_Generic_IEnumerable_Verse_PawnKindDef__System_String_UnityEngine_Color_" data-uid="RimWorld.PawnUtility.PawnKindsToLineList(System.Collections.Generic.IEnumerable{Verse.PawnKindDef},System.String,UnityEngine.Color)">PawnKindsToLineList(IEnumerable&lt;PawnKindDef&gt;, string, Color)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string PawnKindsToLineList(IEnumerable&lt;PawnKindDef&gt; pawnKinds, string prefix, Color color)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a>&gt;</td>
+        <td><span class="parametername">pawnKinds</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Color.html">Color</a></td>
+        <td><span class="parametername">color</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnKindsToList_" data-uid="RimWorld.PawnUtility.PawnKindsToList*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnKindsToList_System_Collections_Generic_IEnumerable_Verse_PawnKindDef__" data-uid="RimWorld.PawnUtility.PawnKindsToList(System.Collections.Generic.IEnumerable{Verse.PawnKindDef})">PawnKindsToList(IEnumerable&lt;PawnKindDef&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; PawnKindsToList(IEnumerable&lt;PawnKindDef&gt; pawnKinds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a>&gt;</td>
+        <td><span class="parametername">pawnKinds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PawnWouldBeUnhappyTakingDrug_" data-uid="RimWorld.PawnUtility.PawnWouldBeUnhappyTakingDrug*"></a>
+  <h4 id="RimWorld_PawnUtility_PawnWouldBeUnhappyTakingDrug_Verse_Pawn_Verse_ThingDef_" data-uid="RimWorld.PawnUtility.PawnWouldBeUnhappyTakingDrug(Verse.Pawn,Verse.ThingDef)">PawnWouldBeUnhappyTakingDrug(Pawn, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PawnWouldBeUnhappyTakingDrug(this Pawn pawn, ThingDef drug)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">drug</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PlayerAnimalBodySizePerCapita_" data-uid="RimWorld.PawnUtility.PlayerAnimalBodySizePerCapita*"></a>
+  <h4 id="RimWorld_PawnUtility_PlayerAnimalBodySizePerCapita" data-uid="RimWorld.PawnUtility.PlayerAnimalBodySizePerCapita">PlayerAnimalBodySizePerCapita()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PlayerAnimalBodySizePerCapita()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PlayerForcedJobNowOrSoon_" data-uid="RimWorld.PawnUtility.PlayerForcedJobNowOrSoon*"></a>
+  <h4 id="RimWorld_PawnUtility_PlayerForcedJobNowOrSoon_Verse_Pawn_" data-uid="RimWorld.PawnUtility.PlayerForcedJobNowOrSoon(Verse.Pawn)">PlayerForcedJobNowOrSoon(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PlayerForcedJobNowOrSoon(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PlayerHasReproductivePair_" data-uid="RimWorld.PawnUtility.PlayerHasReproductivePair*"></a>
+  <h4 id="RimWorld_PawnUtility_PlayerHasReproductivePair_Verse_PawnKindDef_" data-uid="RimWorld.PawnUtility.PlayerHasReproductivePair(Verse.PawnKindDef)">PlayerHasReproductivePair(PawnKindDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool PlayerHasReproductivePair(PawnKindDef pawnKindDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a></td>
+        <td><span class="parametername">pawnKindDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_PlayerVeneratedAnimalBodySizePerCapitaOnMapOrCaravan_" data-uid="RimWorld.PawnUtility.PlayerVeneratedAnimalBodySizePerCapitaOnMapOrCaravan*"></a>
+  <h4 id="RimWorld_PawnUtility_PlayerVeneratedAnimalBodySizePerCapitaOnMapOrCaravan_Verse_Pawn_" data-uid="RimWorld.PawnUtility.PlayerVeneratedAnimalBodySizePerCapitaOnMapOrCaravan(Verse.Pawn)">PlayerVeneratedAnimalBodySizePerCapitaOnMapOrCaravan(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float PlayerVeneratedAnimalBodySizePerCapitaOnMapOrCaravan(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_RecoverFromUnwalkablePositionOrKill_" data-uid="RimWorld.PawnUtility.RecoverFromUnwalkablePositionOrKill*"></a>
+  <h4 id="RimWorld_PawnUtility_RecoverFromUnwalkablePositionOrKill_Verse_IntVec3_Verse_Map_" data-uid="RimWorld.PawnUtility.RecoverFromUnwalkablePositionOrKill(Verse.IntVec3,Verse.Map)">RecoverFromUnwalkablePositionOrKill(IntVec3, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RecoverFromUnwalkablePositionOrKill(IntVec3 c, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ResolveLocomotion_" data-uid="RimWorld.PawnUtility.ResolveLocomotion*"></a>
+  <h4 id="RimWorld_PawnUtility_ResolveLocomotion_Verse_Pawn_Verse_AI_LocomotionUrgency_" data-uid="RimWorld.PawnUtility.ResolveLocomotion(Verse.Pawn,Verse.AI.LocomotionUrgency)">ResolveLocomotion(Pawn, LocomotionUrgency)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocomotionUrgency ResolveLocomotion(Pawn pawn, LocomotionUrgency secondPriority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.AI.LocomotionUrgency.html">LocomotionUrgency</a></td>
+        <td><span class="parametername">secondPriority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.LocomotionUrgency.html">LocomotionUrgency</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ResolveLocomotion_" data-uid="RimWorld.PawnUtility.ResolveLocomotion*"></a>
+  <h4 id="RimWorld_PawnUtility_ResolveLocomotion_Verse_Pawn_Verse_AI_LocomotionUrgency_Verse_AI_LocomotionUrgency_" data-uid="RimWorld.PawnUtility.ResolveLocomotion(Verse.Pawn,Verse.AI.LocomotionUrgency,Verse.AI.LocomotionUrgency)">ResolveLocomotion(Pawn, LocomotionUrgency, LocomotionUrgency)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LocomotionUrgency ResolveLocomotion(Pawn pawn, LocomotionUrgency secondPriority, LocomotionUrgency thirdPriority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.AI.LocomotionUrgency.html">LocomotionUrgency</a></td>
+        <td><span class="parametername">secondPriority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.AI.LocomotionUrgency.html">LocomotionUrgency</a></td>
+        <td><span class="parametername">thirdPriority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.LocomotionUrgency.html">LocomotionUrgency</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ResolveMaxDanger_" data-uid="RimWorld.PawnUtility.ResolveMaxDanger*"></a>
+  <h4 id="RimWorld_PawnUtility_ResolveMaxDanger_Verse_Pawn_Verse_Danger_" data-uid="RimWorld.PawnUtility.ResolveMaxDanger(Verse.Pawn,Verse.Danger)">ResolveMaxDanger(Pawn, Danger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Danger ResolveMaxDanger(Pawn pawn, Danger secondPriority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Danger.html">Danger</a></td>
+        <td><span class="parametername">secondPriority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Danger.html">Danger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ResolveMaxDanger_" data-uid="RimWorld.PawnUtility.ResolveMaxDanger*"></a>
+  <h4 id="RimWorld_PawnUtility_ResolveMaxDanger_Verse_Pawn_Verse_Danger_Verse_Danger_" data-uid="RimWorld.PawnUtility.ResolveMaxDanger(Verse.Pawn,Verse.Danger,Verse.Danger)">ResolveMaxDanger(Pawn, Danger, Danger)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Danger ResolveMaxDanger(Pawn pawn, Danger secondPriority, Danger thirdPriority)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Danger.html">Danger</a></td>
+        <td><span class="parametername">secondPriority</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Danger.html">Danger</a></td>
+        <td><span class="parametername">thirdPriority</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Danger.html">Danger</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ShouldBeSlaughtered_" data-uid="RimWorld.PawnUtility.ShouldBeSlaughtered*"></a>
+  <h4 id="RimWorld_PawnUtility_ShouldBeSlaughtered_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ShouldBeSlaughtered(Verse.Pawn)">ShouldBeSlaughtered(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShouldBeSlaughtered(this Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ShouldCollideWithPawns_" data-uid="RimWorld.PawnUtility.ShouldCollideWithPawns*"></a>
+  <h4 id="RimWorld_PawnUtility_ShouldCollideWithPawns_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ShouldCollideWithPawns(Verse.Pawn)">ShouldCollideWithPawns(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShouldCollideWithPawns(Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ShouldDisplayActionInInspectString_" data-uid="RimWorld.PawnUtility.ShouldDisplayActionInInspectString*"></a>
+  <h4 id="RimWorld_PawnUtility_ShouldDisplayActionInInspectString_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ShouldDisplayActionInInspectString(Verse.Pawn)">ShouldDisplayActionInInspectString(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Lord and job report display validation is now checked separately.&quot;)]
+public static bool ShouldDisplayActionInInspectString(Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ShouldDisplayFactionInInspectString_" data-uid="RimWorld.PawnUtility.ShouldDisplayFactionInInspectString*"></a>
+  <h4 id="RimWorld_PawnUtility_ShouldDisplayFactionInInspectString_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ShouldDisplayFactionInInspectString(Verse.Pawn)">ShouldDisplayFactionInInspectString(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShouldDisplayFactionInInspectString(Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ShouldDisplayJobReport_" data-uid="RimWorld.PawnUtility.ShouldDisplayJobReport*"></a>
+  <h4 id="RimWorld_PawnUtility_ShouldDisplayJobReport_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ShouldDisplayJobReport(Verse.Pawn)">ShouldDisplayJobReport(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShouldDisplayJobReport(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ShouldDisplayLordReport_" data-uid="RimWorld.PawnUtility.ShouldDisplayLordReport*"></a>
+  <h4 id="RimWorld_PawnUtility_ShouldDisplayLordReport_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ShouldDisplayLordReport(Verse.Pawn)">ShouldDisplayLordReport(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShouldDisplayLordReport(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ShouldGetThoughtAbout_" data-uid="RimWorld.PawnUtility.ShouldGetThoughtAbout*"></a>
+  <h4 id="RimWorld_PawnUtility_ShouldGetThoughtAbout_Verse_Pawn_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ShouldGetThoughtAbout(Verse.Pawn,Verse.Pawn)">ShouldGetThoughtAbout(Pawn, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShouldGetThoughtAbout(Pawn pawn, Pawn subject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">subject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_ShouldSendNotificationAbout_" data-uid="RimWorld.PawnUtility.ShouldSendNotificationAbout*"></a>
+  <h4 id="RimWorld_PawnUtility_ShouldSendNotificationAbout_Verse_Pawn_" data-uid="RimWorld.PawnUtility.ShouldSendNotificationAbout(Verse.Pawn)">ShouldSendNotificationAbout(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ShouldSendNotificationAbout(Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_SpawnedMasteredPawns_" data-uid="RimWorld.PawnUtility.SpawnedMasteredPawns*"></a>
+  <h4 id="RimWorld_PawnUtility_SpawnedMasteredPawns_Verse_Pawn_" data-uid="RimWorld.PawnUtility.SpawnedMasteredPawns(Verse.Pawn)">SpawnedMasteredPawns(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(PawnUtility.&lt;SpawnedMasteredPawns&gt;d__14))]
+public static IEnumerable&lt;Pawn&gt; SpawnedMasteredPawns(Pawn master)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">master</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_TryDestroyStartingColonistFamily_" data-uid="RimWorld.PawnUtility.TryDestroyStartingColonistFamily*"></a>
+  <h4 id="RimWorld_PawnUtility_TryDestroyStartingColonistFamily_Verse_Pawn_" data-uid="RimWorld.PawnUtility.TryDestroyStartingColonistFamily(Verse.Pawn)">TryDestroyStartingColonistFamily(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TryDestroyStartingColonistFamily(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_TryGetAvoidGrid_" data-uid="RimWorld.PawnUtility.TryGetAvoidGrid*"></a>
+  <h4 id="RimWorld_PawnUtility_TryGetAvoidGrid_Verse_Pawn_Verse_AI_AvoidGrid__System_Boolean_" data-uid="RimWorld.PawnUtility.TryGetAvoidGrid(Verse.Pawn,Verse.AI.AvoidGrid@,System.Boolean)">TryGetAvoidGrid(Pawn, out AvoidGrid, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetAvoidGrid(this Pawn p, out AvoidGrid grid, bool onlyIfLordAllows = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.AI.AvoidGrid.html">AvoidGrid</a></td>
+        <td><span class="parametername">grid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">onlyIfLordAllows</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_TryGetChemicalDependencyGene_" data-uid="RimWorld.PawnUtility.TryGetChemicalDependencyGene*"></a>
+  <h4 id="RimWorld_PawnUtility_TryGetChemicalDependencyGene_Verse_Pawn_Verse_Gene_ChemicalDependency__" data-uid="RimWorld.PawnUtility.TryGetChemicalDependencyGene(Verse.Pawn,Verse.Gene_ChemicalDependency@)">TryGetChemicalDependencyGene(Pawn, out Gene_ChemicalDependency)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetChemicalDependencyGene(Pawn pawn, out Gene_ChemicalDependency gene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Gene_ChemicalDependency.html">Gene_ChemicalDependency</a></td>
+        <td><span class="parametername">gene</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_TrySpawnHatchedOrBornPawn_" data-uid="RimWorld.PawnUtility.TrySpawnHatchedOrBornPawn*"></a>
+  <h4 id="RimWorld_PawnUtility_TrySpawnHatchedOrBornPawn_Verse_Pawn_Verse_Thing_System_Nullable_Verse_IntVec3__" data-uid="RimWorld.PawnUtility.TrySpawnHatchedOrBornPawn(Verse.Pawn,Verse.Thing,System.Nullable{Verse.IntVec3})">TrySpawnHatchedOrBornPawn(Pawn, Thing, IntVec3?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySpawnHatchedOrBornPawn(Pawn pawn, Thing motherOrEgg, IntVec3? positionOverride = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">motherOrEgg</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a>?</td>
+        <td><span class="parametername">positionOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PawnUtility_WillSoonHaveBasicNeed_" data-uid="RimWorld.PawnUtility.WillSoonHaveBasicNeed*"></a>
+  <h4 id="RimWorld_PawnUtility_WillSoonHaveBasicNeed_Verse_Pawn_System_Single_" data-uid="RimWorld.PawnUtility.WillSoonHaveBasicNeed(Verse.Pawn,System.Single)">WillSoonHaveBasicNeed(Pawn, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool WillSoonHaveBasicNeed(Pawn p, float thresholdOffset = 0.05)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">thresholdOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

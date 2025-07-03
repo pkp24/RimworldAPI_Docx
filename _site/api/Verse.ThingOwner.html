@@ -1,0 +1,2338 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ThingOwner </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ThingOwner ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.ThingOwner">
+
+
+
+  <h1 id="Verse_ThingOwner" data-uid="Verse.ThingOwner" class="text-break">Class ThingOwner</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ThingOwner</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.PortalContainerProxy.html">PortalContainerProxy</a></div>
+      <div class="level2"><a class="xref" href="Verse.ThingOwner-1.html">ThingOwner&lt;T&gt;</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_ThingOwner_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DefaultMember(&quot;Item&quot;)]
+public abstract class ThingOwner : IExposable, IList&lt;Thing&gt;, ICollection&lt;Thing&gt;, IEnumerable&lt;Thing&gt;, IEnumerable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Verse_ThingOwner__ctor_" data-uid="Verse.ThingOwner.#ctor*"></a>
+  <h4 id="Verse_ThingOwner__ctor" data-uid="Verse.ThingOwner.#ctor">ThingOwner()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingOwner()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingOwner__ctor_" data-uid="Verse.ThingOwner.#ctor*"></a>
+  <h4 id="Verse_ThingOwner__ctor_Verse_IThingHolder_" data-uid="Verse.ThingOwner.#ctor(Verse.IThingHolder)">ThingOwner(IThingHolder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingOwner(IThingHolder owner)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IThingHolder.html">IThingHolder</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner__ctor_" data-uid="Verse.ThingOwner.#ctor*"></a>
+  <h4 id="Verse_ThingOwner__ctor_Verse_IThingHolder_System_Boolean_Verse_LookMode_System_Boolean_" data-uid="Verse.ThingOwner.#ctor(Verse.IThingHolder,System.Boolean,Verse.LookMode,System.Boolean)">ThingOwner(IThingHolder, bool, LookMode, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingOwner(IThingHolder owner, bool oneStackOnly, LookMode contentsLookMode = LookMode.Deep, bool removeContentsIfDestroyed = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IThingHolder.html">IThingHolder</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">oneStackOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LookMode.html">LookMode</a></td>
+        <td><span class="parametername">contentsLookMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeContentsIfDestroyed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner__ctor_" data-uid="Verse.ThingOwner.#ctor*"></a>
+  <h4 id="Verse_ThingOwner__ctor_Verse_IThingHolder_Verse_LookMode_System_Boolean_" data-uid="Verse.ThingOwner.#ctor(Verse.IThingHolder,Verse.LookMode,System.Boolean)">ThingOwner(IThingHolder, LookMode, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingOwner(IThingHolder owner, LookMode contentsLookMode = LookMode.Deep, bool removeContentsIfDestroyed = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IThingHolder.html">IThingHolder</a></td>
+        <td><span class="parametername">owner</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LookMode.html">LookMode</a></td>
+        <td><span class="parametername">contentsLookMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">removeContentsIfDestroyed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Verse_ThingOwner_contentsLookMode" data-uid="Verse.ThingOwner.contentsLookMode">contentsLookMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LookMode contentsLookMode</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LookMode.html">LookMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_ThingOwner_dontTickContents" data-uid="Verse.ThingOwner.dontTickContents">dontTickContents</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool dontTickContents</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_ThingOwner_maxStacks" data-uid="Verse.ThingOwner.maxStacks">maxStacks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int maxStacks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_ThingOwner_owner" data-uid="Verse.ThingOwner.owner">owner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IThingHolder owner</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IThingHolder.html">IThingHolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_ThingOwner_removeContentsIfDestroyed" data-uid="Verse.ThingOwner.removeContentsIfDestroyed">removeContentsIfDestroyed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool removeContentsIfDestroyed</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Verse_ThingOwner_Any_" data-uid="Verse.ThingOwner.Any*"></a>
+  <h4 id="Verse_ThingOwner_Any" data-uid="Verse.ThingOwner.Any">Any</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Any { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_ContentsString_" data-uid="Verse.ThingOwner.ContentsString*"></a>
+  <h4 id="Verse_ThingOwner_ContentsString" data-uid="Verse.ThingOwner.ContentsString">ContentsString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentsString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Count_" data-uid="Verse.ThingOwner.Count*"></a>
+  <h4 id="Verse_ThingOwner_Count" data-uid="Verse.ThingOwner.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Item_" data-uid="Verse.ThingOwner.Item*"></a>
+  <h4 id="Verse_ThingOwner_Item_System_Int32_" data-uid="Verse.ThingOwner.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thing this[int index] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Owner_" data-uid="Verse.ThingOwner.Owner*"></a>
+  <h4 id="Verse_ThingOwner_Owner" data-uid="Verse.ThingOwner.Owner">Owner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IThingHolder Owner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IThingHolder.html">IThingHolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TotalStackCount_" data-uid="Verse.ThingOwner.TotalStackCount*"></a>
+  <h4 id="Verse_ThingOwner_TotalStackCount" data-uid="Verse.ThingOwner.TotalStackCount">TotalStackCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalStackCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_ThingOwner_CanAcceptAnyOf_" data-uid="Verse.ThingOwner.CanAcceptAnyOf*"></a>
+  <h4 id="Verse_ThingOwner_CanAcceptAnyOf_Verse_Thing_System_Boolean_" data-uid="Verse.ThingOwner.CanAcceptAnyOf(Verse.Thing,System.Boolean)">CanAcceptAnyOf(Thing, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanAcceptAnyOf(Thing item, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Clear_" data-uid="Verse.ThingOwner.Clear*"></a>
+  <h4 id="Verse_ThingOwner_Clear" data-uid="Verse.ThingOwner.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingOwner_ClearAndDestroyContents_" data-uid="Verse.ThingOwner.ClearAndDestroyContents*"></a>
+  <h4 id="Verse_ThingOwner_ClearAndDestroyContents_Verse_DestroyMode_" data-uid="Verse.ThingOwner.ClearAndDestroyContents(Verse.DestroyMode)">ClearAndDestroyContents(DestroyMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAndDestroyContents(DestroyMode mode = DestroyMode.Vanish)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DestroyMode.html">DestroyMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_ClearAndDestroyContentsOrPassToWorld_" data-uid="Verse.ThingOwner.ClearAndDestroyContentsOrPassToWorld*"></a>
+  <h4 id="Verse_ThingOwner_ClearAndDestroyContentsOrPassToWorld_Verse_DestroyMode_" data-uid="Verse.ThingOwner.ClearAndDestroyContentsOrPassToWorld(Verse.DestroyMode)">ClearAndDestroyContentsOrPassToWorld(DestroyMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearAndDestroyContentsOrPassToWorld(DestroyMode mode = DestroyMode.Vanish)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DestroyMode.html">DestroyMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Contains_" data-uid="Verse.ThingOwner.Contains*"></a>
+  <h4 id="Verse_ThingOwner_Contains_Verse_Thing_" data-uid="Verse.ThingOwner.Contains(Verse.Thing)">Contains(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(Thing item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Contains_" data-uid="Verse.ThingOwner.Contains*"></a>
+  <h4 id="Verse_ThingOwner_Contains_Verse_ThingDef_" data-uid="Verse.ThingOwner.Contains(Verse.ThingDef)">Contains(ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(ThingDef def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Contains_" data-uid="Verse.ThingOwner.Contains*"></a>
+  <h4 id="Verse_ThingOwner_Contains_Verse_ThingDef_System_Int32_" data-uid="Verse.ThingOwner.Contains(Verse.ThingDef,System.Int32)">Contains(ThingDef, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(ThingDef def, int minCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_DoTick_" data-uid="Verse.ThingOwner.DoTick*"></a>
+  <h4 id="Verse_ThingOwner_DoTick" data-uid="Verse.ThingOwner.DoTick">DoTick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoTick()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingOwner_ExposeData_" data-uid="Verse.ThingOwner.ExposeData*"></a>
+  <h4 id="Verse_ThingOwner_ExposeData" data-uid="Verse.ThingOwner.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ExposeData()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingOwner_GetAt_" data-uid="Verse.ThingOwner.GetAt*"></a>
+  <h4 id="Verse_ThingOwner_GetAt_System_Int32_" data-uid="Verse.ThingOwner.GetAt(System.Int32)">GetAt(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Thing GetAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_GetCountCanAccept_" data-uid="Verse.ThingOwner.GetCountCanAccept*"></a>
+  <h4 id="Verse_ThingOwner_GetCountCanAccept_Verse_Thing_System_Boolean_" data-uid="Verse.ThingOwner.GetCountCanAccept(Verse.Thing,System.Boolean)">GetCountCanAccept(Thing, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int GetCountCanAccept(Thing item, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_IndexOf_" data-uid="Verse.ThingOwner.IndexOf*"></a>
+  <h4 id="Verse_ThingOwner_IndexOf_Verse_Thing_" data-uid="Verse.ThingOwner.IndexOf(Verse.Thing)">IndexOf(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int IndexOf(Thing item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_NotifyAdded_" data-uid="Verse.ThingOwner.NotifyAdded*"></a>
+  <h4 id="Verse_ThingOwner_NotifyAdded_Verse_Thing_" data-uid="Verse.ThingOwner.NotifyAdded(Verse.Thing)">NotifyAdded(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void NotifyAdded(Thing item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_NotifyAddedAndMergedWith_" data-uid="Verse.ThingOwner.NotifyAddedAndMergedWith*"></a>
+  <h4 id="Verse_ThingOwner_NotifyAddedAndMergedWith_Verse_Thing_System_Int32_" data-uid="Verse.ThingOwner.NotifyAddedAndMergedWith(Verse.Thing,System.Int32)">NotifyAddedAndMergedWith(Thing, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void NotifyAddedAndMergedWith(Thing item, int mergedCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mergedCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_NotifyRemoved_" data-uid="Verse.ThingOwner.NotifyRemoved*"></a>
+  <h4 id="Verse_ThingOwner_NotifyRemoved_Verse_Thing_" data-uid="Verse.ThingOwner.NotifyRemoved(Verse.Thing)">NotifyRemoved(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void NotifyRemoved(Thing item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Notify_ContainedItemDestroyed_" data-uid="Verse.ThingOwner.Notify_ContainedItemDestroyed*"></a>
+  <h4 id="Verse_ThingOwner_Notify_ContainedItemDestroyed_Verse_Thing_" data-uid="Verse.ThingOwner.Notify_ContainedItemDestroyed(Verse.Thing)">Notify_ContainedItemDestroyed(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify_ContainedItemDestroyed(Thing t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Remove_" data-uid="Verse.ThingOwner.Remove*"></a>
+  <h4 id="Verse_ThingOwner_Remove_Verse_Thing_" data-uid="Verse.ThingOwner.Remove(Verse.Thing)">Remove(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool Remove(Thing item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_RemoveAll_" data-uid="Verse.ThingOwner.RemoveAll*"></a>
+  <h4 id="Verse_ThingOwner_RemoveAll_System_Predicate_Verse_Thing__" data-uid="Verse.ThingOwner.RemoveAll(System.Predicate{Verse.Thing})">RemoveAll(Predicate&lt;Thing&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveAll(Predicate&lt;Thing&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_RemoveAt_" data-uid="Verse.ThingOwner.RemoveAt*"></a>
+  <h4 id="Verse_ThingOwner_RemoveAt_System_Int32_" data-uid="Verse.ThingOwner.RemoveAt(System.Int32)">RemoveAt(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Take_" data-uid="Verse.ThingOwner.Take*"></a>
+  <h4 id="Verse_ThingOwner_Take_Verse_Thing_" data-uid="Verse.ThingOwner.Take(Verse.Thing)">Take(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thing Take(Thing thing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_Take_" data-uid="Verse.ThingOwner.Take*"></a>
+  <h4 id="Verse_ThingOwner_Take_Verse_Thing_System_Int32_" data-uid="Verse.ThingOwner.Take(Verse.Thing,System.Int32)">Take(Thing, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thing Take(Thing thing, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TotalStackCountOfDef_" data-uid="Verse.ThingOwner.TotalStackCountOfDef*"></a>
+  <h4 id="Verse_ThingOwner_TotalStackCountOfDef_Verse_ThingDef_" data-uid="Verse.ThingOwner.TotalStackCountOfDef(Verse.ThingDef)">TotalStackCountOfDef(ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TotalStackCountOfDef(ThingDef def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryAdd_" data-uid="Verse.ThingOwner.TryAdd*"></a>
+  <h4 id="Verse_ThingOwner_TryAdd_Verse_Thing_System_Boolean_" data-uid="Verse.ThingOwner.TryAdd(Verse.Thing,System.Boolean)">TryAdd(Thing, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool TryAdd(Thing item, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryAdd_" data-uid="Verse.ThingOwner.TryAdd*"></a>
+  <h4 id="Verse_ThingOwner_TryAdd_Verse_Thing_System_Int32_System_Boolean_" data-uid="Verse.ThingOwner.TryAdd(Verse.Thing,System.Int32,System.Boolean)">TryAdd(Thing, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract int TryAdd(Thing item, int count, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryAddOrTransfer_" data-uid="Verse.ThingOwner.TryAddOrTransfer*"></a>
+  <h4 id="Verse_ThingOwner_TryAddOrTransfer_Verse_Thing_System_Boolean_" data-uid="Verse.ThingOwner.TryAddOrTransfer(Verse.Thing,System.Boolean)">TryAddOrTransfer(Thing, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryAddOrTransfer(Thing item, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryAddOrTransfer_" data-uid="Verse.ThingOwner.TryAddOrTransfer*"></a>
+  <h4 id="Verse_ThingOwner_TryAddOrTransfer_Verse_Thing_System_Int32_System_Boolean_" data-uid="Verse.ThingOwner.TryAddOrTransfer(Verse.Thing,System.Int32,System.Boolean)">TryAddOrTransfer(Thing, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryAddOrTransfer(Thing item, int count, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryAddRangeOrTransfer_" data-uid="Verse.ThingOwner.TryAddRangeOrTransfer*"></a>
+  <h4 id="Verse_ThingOwner_TryAddRangeOrTransfer_System_Collections_Generic_IEnumerable_Verse_Thing__System_Boolean_System_Boolean_" data-uid="Verse.ThingOwner.TryAddRangeOrTransfer(System.Collections.Generic.IEnumerable{Verse.Thing},System.Boolean,System.Boolean)">TryAddRangeOrTransfer(IEnumerable&lt;Thing&gt;, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryAddRangeOrTransfer(IEnumerable&lt;Thing&gt; things, bool canMergeWithExistingStacks = true, bool destroyLeftover = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">things</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">destroyLeftover</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryDrop_" data-uid="Verse.ThingOwner.TryDrop*"></a>
+  <h4 id="Verse_ThingOwner_TryDrop_Verse_Thing_Verse_IntVec3_Verse_Map_Verse_ThingPlaceMode_System_Int32_Verse_Thing__System_Action_Verse_Thing_System_Int32__System_Predicate_Verse_IntVec3__" data-uid="Verse.ThingOwner.TryDrop(Verse.Thing,Verse.IntVec3,Verse.Map,Verse.ThingPlaceMode,System.Int32,Verse.Thing@,System.Action{Verse.Thing,System.Int32},System.Predicate{Verse.IntVec3})">TryDrop(Thing, IntVec3, Map, ThingPlaceMode, int, out Thing, Action&lt;Thing, int&gt;, Predicate&lt;IntVec3&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryDrop(Thing thing, IntVec3 dropLoc, Map map, ThingPlaceMode mode, int count, out Thing resultingThing, Action&lt;Thing, int&gt; placedAction = null, Predicate&lt;IntVec3&gt; nearPlaceValidator = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">dropLoc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingPlaceMode.html">ThingPlaceMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">resultingThing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">placedAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>&gt;</td>
+        <td><span class="parametername">nearPlaceValidator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryDrop_" data-uid="Verse.ThingOwner.TryDrop*"></a>
+  <h4 id="Verse_ThingOwner_TryDrop_Verse_Thing_Verse_IntVec3_Verse_Map_Verse_ThingPlaceMode_Verse_Thing__System_Action_Verse_Thing_System_Int32__System_Predicate_Verse_IntVec3__System_Boolean_" data-uid="Verse.ThingOwner.TryDrop(Verse.Thing,Verse.IntVec3,Verse.Map,Verse.ThingPlaceMode,Verse.Thing@,System.Action{Verse.Thing,System.Int32},System.Predicate{Verse.IntVec3},System.Boolean)">TryDrop(Thing, IntVec3, Map, ThingPlaceMode, out Thing, Action&lt;Thing, int&gt;, Predicate&lt;IntVec3&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryDrop(Thing thing, IntVec3 dropLoc, Map map, ThingPlaceMode mode, out Thing lastResultingThing, Action&lt;Thing, int&gt; placedAction = null, Predicate&lt;IntVec3&gt; nearPlaceValidator = null, bool playDropSound = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">dropLoc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingPlaceMode.html">ThingPlaceMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">lastResultingThing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">placedAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>&gt;</td>
+        <td><span class="parametername">nearPlaceValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">playDropSound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryDrop_" data-uid="Verse.ThingOwner.TryDrop*"></a>
+  <h4 id="Verse_ThingOwner_TryDrop_Verse_Thing_Verse_ThingPlaceMode_System_Int32_Verse_Thing__System_Action_Verse_Thing_System_Int32__System_Predicate_Verse_IntVec3__" data-uid="Verse.ThingOwner.TryDrop(Verse.Thing,Verse.ThingPlaceMode,System.Int32,Verse.Thing@,System.Action{Verse.Thing,System.Int32},System.Predicate{Verse.IntVec3})">TryDrop(Thing, ThingPlaceMode, int, out Thing, Action&lt;Thing, int&gt;, Predicate&lt;IntVec3&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryDrop(Thing thing, ThingPlaceMode mode, int count, out Thing lastResultingThing, Action&lt;Thing, int&gt; placedAction = null, Predicate&lt;IntVec3&gt; nearPlaceValidator = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingPlaceMode.html">ThingPlaceMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">lastResultingThing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">placedAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>&gt;</td>
+        <td><span class="parametername">nearPlaceValidator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryDrop_" data-uid="Verse.ThingOwner.TryDrop*"></a>
+  <h4 id="Verse_ThingOwner_TryDrop_Verse_Thing_Verse_ThingPlaceMode_Verse_Thing__System_Action_Verse_Thing_System_Int32__System_Predicate_Verse_IntVec3__" data-uid="Verse.ThingOwner.TryDrop(Verse.Thing,Verse.ThingPlaceMode,Verse.Thing@,System.Action{Verse.Thing,System.Int32},System.Predicate{Verse.IntVec3})">TryDrop(Thing, ThingPlaceMode, out Thing, Action&lt;Thing, int&gt;, Predicate&lt;IntVec3&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryDrop(Thing thing, ThingPlaceMode mode, out Thing lastResultingThing, Action&lt;Thing, int&gt; placedAction = null, Predicate&lt;IntVec3&gt; nearPlaceValidator = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingPlaceMode.html">ThingPlaceMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">lastResultingThing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">placedAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>&gt;</td>
+        <td><span class="parametername">nearPlaceValidator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryDropAll_" data-uid="Verse.ThingOwner.TryDropAll*"></a>
+  <h4 id="Verse_ThingOwner_TryDropAll_Verse_IntVec3_Verse_Map_Verse_ThingPlaceMode_System_Action_Verse_Thing_System_Int32__System_Predicate_Verse_IntVec3__System_Boolean_" data-uid="Verse.ThingOwner.TryDropAll(Verse.IntVec3,Verse.Map,Verse.ThingPlaceMode,System.Action{Verse.Thing,System.Int32},System.Predicate{Verse.IntVec3},System.Boolean)">TryDropAll(IntVec3, Map, ThingPlaceMode, Action&lt;Thing, int&gt;, Predicate&lt;IntVec3&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryDropAll(IntVec3 dropLoc, Map map, ThingPlaceMode mode, Action&lt;Thing, int&gt; placeAction = null, Predicate&lt;IntVec3&gt; nearPlaceValidator = null, bool playDropSound = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">dropLoc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingPlaceMode.html">ThingPlaceMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">placeAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>&gt;</td>
+        <td><span class="parametername">nearPlaceValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">playDropSound</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryTransferAllToContainer_" data-uid="Verse.ThingOwner.TryTransferAllToContainer*"></a>
+  <h4 id="Verse_ThingOwner_TryTransferAllToContainer_Verse_ThingOwner_System_Boolean_" data-uid="Verse.ThingOwner.TryTransferAllToContainer(Verse.ThingOwner,System.Boolean)">TryTransferAllToContainer(ThingOwner, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryTransferAllToContainer(ThingOwner other, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingOwner.html">ThingOwner</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryTransferToContainer_" data-uid="Verse.ThingOwner.TryTransferToContainer*"></a>
+  <h4 id="Verse_ThingOwner_TryTransferToContainer_Verse_Thing_Verse_ThingOwner_System_Boolean_" data-uid="Verse.ThingOwner.TryTransferToContainer(Verse.Thing,Verse.ThingOwner,System.Boolean)">TryTransferToContainer(Thing, ThingOwner, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryTransferToContainer(Thing item, ThingOwner otherContainer, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingOwner.html">ThingOwner</a></td>
+        <td><span class="parametername">otherContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryTransferToContainer_" data-uid="Verse.ThingOwner.TryTransferToContainer*"></a>
+  <h4 id="Verse_ThingOwner_TryTransferToContainer_Verse_Thing_Verse_ThingOwner_System_Int32_System_Boolean_" data-uid="Verse.ThingOwner.TryTransferToContainer(Verse.Thing,Verse.ThingOwner,System.Int32,System.Boolean)">TryTransferToContainer(Thing, ThingOwner, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryTransferToContainer(Thing item, ThingOwner otherContainer, int count, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingOwner.html">ThingOwner</a></td>
+        <td><span class="parametername">otherContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingOwner_TryTransferToContainer_" data-uid="Verse.ThingOwner.TryTransferToContainer*"></a>
+  <h4 id="Verse_ThingOwner_TryTransferToContainer_Verse_Thing_Verse_ThingOwner_System_Int32_Verse_Thing__System_Boolean_" data-uid="Verse.ThingOwner.TryTransferToContainer(Verse.Thing,Verse.ThingOwner,System.Int32,Verse.Thing@,System.Boolean)">TryTransferToContainer(Thing, ThingOwner, int, out Thing, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TryTransferToContainer(Thing item, ThingOwner otherContainer, int count, out Thing resultingTransferredItem, bool canMergeWithExistingStacks = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">item</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingOwner.html">ThingOwner</a></td>
+        <td><span class="parametername">otherContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">resultingTransferredItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canMergeWithExistingStacks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="Verse_ThingOwner_OnContentsChanged" data-uid="Verse.ThingOwner.OnContentsChanged">OnContentsChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action OnContentsChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_AverageWeighted__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__System_Func___0_System_Single__">GenCollection.AverageWeighted&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, float&gt;, Func&lt;T, float&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_ConcatIfNotNull__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__">GenCollection.ConcatIfNotNull&lt;TSource&gt;(IEnumerable&lt;TSource&gt;, IEnumerable&lt;TSource&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_Concat__1_System_Collections_Generic_IEnumerable___0____0_">GenCollection.Concat&lt;T&gt;(IEnumerable&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_CopyToList__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_List___0__System_Boolean_">GenCollection.CopyToList&lt;T&gt;(IEnumerable&lt;T&gt;, List&lt;T&gt;, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_Cross__2_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___1__">GenCollection.Cross&lt;T, V&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;V&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_EnumerableNullOrEmpty__1_System_Collections_Generic_IEnumerable___0__">GenCollection.EnumerableNullOrEmpty&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_Except__1_System_Collections_Generic_IEnumerable___0____0_">GenCollection.Except&lt;T&gt;(IEnumerable&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_FirstIndexOf__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">GenCollection.FirstIndexOf&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_FirstOrFallback__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean____0_">GenCollection.FirstOrFallback&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, bool&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_FirstOrFallback__1_System_Collections_Generic_IEnumerable___0____0_">GenCollection.FirstOrFallback&lt;T&gt;(IEnumerable&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_InRandomOrder__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IList___0__">GenCollection.InRandomOrder&lt;T&gt;(IEnumerable&lt;T&gt;, IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_MaxByWithFallback__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IComparer___1____0_">GenCollection.MaxByWithFallback&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IComparer&lt;TKey&gt;, TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_MaxByWithFallback__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1____0_">GenCollection.MaxByWithFallback&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_MaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">GenCollection.MaxBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_MaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IComparer___1__">GenCollection.MaxBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IComparer&lt;TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_MinBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__">GenCollection.MinBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_MinBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IComparer___1__">GenCollection.MinBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IComparer&lt;TKey&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_OrElseEmptyEnumerable__1_System_Collections_Generic_IEnumerable___0__">GenCollection.OrElseEmptyEnumerable&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_Pairwise__1_System_Collections_Generic_IEnumerable___0__">GenCollection.Pairwise&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_Percent__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__">GenCollection.Percent&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_RandomElementByWeightWithDefault__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__System_Single_">GenCollection.RandomElementByWeightWithDefault&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, float&gt;, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_RandomElementByWeightWithFallback__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single____0_">GenCollection.RandomElementByWeightWithFallback&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, float&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_RandomElementByWeight__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single__">GenCollection.RandomElementByWeight&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, float&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_RandomElementWithFallback__1_System_Collections_Generic_IEnumerable___0____0_">GenCollection.RandomElementWithFallback&lt;T&gt;(IEnumerable&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_RandomElement__1_System_Collections_Generic_IEnumerable___0__">GenCollection.RandomElement&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_SharesElementWith__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__">GenCollection.SharesElementWith&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_TakeRandomDistinct__1_System_Collections_Generic_IEnumerable___0__System_Int32_">GenCollection.TakeRandomDistinct&lt;T&gt;(IEnumerable&lt;T&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_TryMaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IComparer___1____0__">GenCollection.TryMaxBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IComparer&lt;TKey&gt;, out TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_TryMaxBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1____0__">GenCollection.TryMaxBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, out TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_TryMinBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1__System_Collections_Generic_IComparer___1____0__">GenCollection.TryMinBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, IComparer&lt;TKey&gt;, out TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_TryMinBy__2_System_Collections_Generic_IEnumerable___0__System_Func___0___1____0__">GenCollection.TryMinBy&lt;TSource, TKey&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, out TSource)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_TryRandomElementByWeight__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Single____0__">GenCollection.TryRandomElementByWeight&lt;T&gt;(IEnumerable&lt;T&gt;, Func&lt;T, float&gt;, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_TryRandomElement__1_System_Collections_Generic_IEnumerable___0__System_Predicate___0____0__">GenCollection.TryRandomElement&lt;T&gt;(IEnumerable&lt;T&gt;, Predicate&lt;T&gt;, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_TryRandomElement__1_System_Collections_Generic_IEnumerable___0____0__">GenCollection.TryRandomElement&lt;T&gt;(IEnumerable&lt;T&gt;, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_ContainsAny__1_System_Collections_Generic_IList___0__System_Func___0_System_Boolean__">GenCollection.ContainsAny&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_RemoveWhere__1_System_Collections_Generic_IList___0__System_Func___0_System_Boolean__">GenCollection.RemoveWhere&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_Replace__1_System_Collections_Generic_IList___0____0___0_">GenCollection.Replace&lt;T&gt;(IList&lt;T&gt;, T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_SortStable__1_System_Collections_Generic_IList___0__System_Func___0___0_System_Int32__">GenCollection.SortStable&lt;T&gt;(IList&lt;T&gt;, Func&lt;T, T, int&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_CountAllowNull__1_System_Collections_Generic_IList___0__">GenList.CountAllowNull&lt;T&gt;(IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_GetLast__1_System_Collections_Generic_IList___0__">GenList.GetLast&lt;T&gt;(IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_HasData__1_System_Collections_Generic_IList___0__">GenList.HasData&lt;T&gt;(IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_InsertionSort__1_System_Collections_Generic_IList___0__System_Comparison___0__">GenList.InsertionSort&lt;T&gt;(IList&lt;T&gt;, Comparison&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_NotNullAndContainsAnyElement__1_System_Collections_Generic_IList___0__System_Collections_Generic_IList___0__">GenList.NotNullAndContainsAnyElement&lt;T&gt;(IList&lt;T&gt;, IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_NotNullAndContains__1_System_Collections_Generic_IList___0____0_">GenList.NotNullAndContains&lt;T&gt;(IList&lt;T&gt;, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_NullOrEmpty__1_System_Collections_Generic_IList___0__">GenList.NullOrEmpty&lt;T&gt;(IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_Shuffle__1_System_Collections_Generic_IList___0__">GenList.Shuffle&lt;T&gt;(IList&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenList.html#Verse_GenList_Swap__1_System_Collections_Generic_IList___0__System_Int32_System_Int32_">GenList.Swap&lt;T&gt;(IList&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafeEnumerable_System_Collections_IEnumerable_">Gen.ToStringSafeEnumerable(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_EnumerableCount_System_Collections_IEnumerable_">GenCollection.EnumerableCount(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenCollection.html#Verse_GenCollection_ExecuteEnumerable_System_Collections_IEnumerable_">GenCollection.ExecuteEnumerable(IEnumerable)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

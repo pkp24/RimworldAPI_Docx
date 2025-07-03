@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GenSpawn </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GenSpawn ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.GenSpawn">
+
+
+
+  <h1 id="Verse_GenSpawn" data-uid="Verse.GenSpawn" class="text-break">Class GenSpawn</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">GenSpawn</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_GenSpawn_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class GenSpawn</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_GenSpawn_CanSpawnAt_" data-uid="Verse.GenSpawn.CanSpawnAt*"></a>
+  <h4 id="Verse_GenSpawn_CanSpawnAt_Verse_ThingDef_Verse_IntVec3_Verse_Map_System_Nullable_Verse_Rot4__System_Boolean_" data-uid="Verse.GenSpawn.CanSpawnAt(Verse.ThingDef,Verse.IntVec3,Verse.Map,System.Nullable{Verse.Rot4},System.Boolean)">CanSpawnAt(ThingDef, IntVec3, Map, Rot4?, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanSpawnAt(ThingDef thingDef, IntVec3 c, Map map, Rot4? rot = null, bool canWipeEdifices = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a>?</td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canWipeEdifices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_CheckMoveItemsAside_" data-uid="Verse.GenSpawn.CheckMoveItemsAside*"></a>
+  <h4 id="Verse_GenSpawn_CheckMoveItemsAside_Verse_IntVec3_Verse_Rot4_Verse_ThingDef_Verse_Map_" data-uid="Verse.GenSpawn.CheckMoveItemsAside(Verse.IntVec3,Verse.Rot4,Verse.ThingDef,Verse.Map)">CheckMoveItemsAside(IntVec3, Rot4, ThingDef, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void CheckMoveItemsAside(IntVec3 thingPos, Rot4 thingRot, ThingDef thingDef, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">thingPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">thingRot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_Refund_" data-uid="Verse.GenSpawn.Refund*"></a>
+  <h4 id="Verse_GenSpawn_Refund_Verse_Thing_Verse_Map_Verse_CellRect_System_Boolean_System_Boolean_" data-uid="Verse.GenSpawn.Refund(Verse.Thing,Verse.Map,Verse.CellRect,System.Boolean,System.Boolean)">Refund(Thing, Map, CellRect, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Refund(Thing thing, Map map, CellRect avoidThisRect, bool forbid = false, bool willReplace = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">avoidThisRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forbid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">willReplace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_Spawn_" data-uid="Verse.GenSpawn.Spawn*"></a>
+  <h4 id="Verse_GenSpawn_Spawn_Verse_Thing_Verse_IntVec3_Verse_Map_Verse_Rot4_Verse_WipeMode_System_Boolean_System_Boolean_" data-uid="Verse.GenSpawn.Spawn(Verse.Thing,Verse.IntVec3,Verse.Map,Verse.Rot4,Verse.WipeMode,System.Boolean,System.Boolean)">Spawn(Thing, IntVec3, Map, Rot4, WipeMode, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Thing Spawn(Thing newThing, IntVec3 loc, Map map, Rot4 rot, WipeMode wipeMode = WipeMode.Vanish, bool respawningAfterLoad = false, bool forbidLeavings = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">newThing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">loc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.WipeMode.html">WipeMode</a></td>
+        <td><span class="parametername">wipeMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">respawningAfterLoad</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forbidLeavings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_Spawn_" data-uid="Verse.GenSpawn.Spawn*"></a>
+  <h4 id="Verse_GenSpawn_Spawn_Verse_Thing_Verse_IntVec3_Verse_Map_Verse_WipeMode_" data-uid="Verse.GenSpawn.Spawn(Verse.Thing,Verse.IntVec3,Verse.Map,Verse.WipeMode)">Spawn(Thing, IntVec3, Map, WipeMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Thing Spawn(Thing newThing, IntVec3 loc, Map map, WipeMode wipeMode = WipeMode.Vanish)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">newThing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">loc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.WipeMode.html">WipeMode</a></td>
+        <td><span class="parametername">wipeMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_Spawn_" data-uid="Verse.GenSpawn.Spawn*"></a>
+  <h4 id="Verse_GenSpawn_Spawn_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Rot4_Verse_WipeMode_" data-uid="Verse.GenSpawn.Spawn(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Rot4,Verse.WipeMode)">Spawn(ThingDef, IntVec3, Map, Rot4, WipeMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Thing Spawn(ThingDef def, IntVec3 loc, Map map, Rot4 rot, WipeMode wipeMode = WipeMode.Vanish)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">loc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.WipeMode.html">WipeMode</a></td>
+        <td><span class="parametername">wipeMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_Spawn_" data-uid="Verse.GenSpawn.Spawn*"></a>
+  <h4 id="Verse_GenSpawn_Spawn_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_WipeMode_" data-uid="Verse.GenSpawn.Spawn(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.WipeMode)">Spawn(ThingDef, IntVec3, Map, WipeMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Thing Spawn(ThingDef def, IntVec3 loc, Map map, WipeMode wipeMode = WipeMode.Vanish)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">loc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.WipeMode.html">WipeMode</a></td>
+        <td><span class="parametername">wipeMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_SpawnBuildingAsPossible_" data-uid="Verse.GenSpawn.SpawnBuildingAsPossible*"></a>
+  <h4 id="Verse_GenSpawn_SpawnBuildingAsPossible_Verse_Building_Verse_Map_System_Boolean_" data-uid="Verse.GenSpawn.SpawnBuildingAsPossible(Verse.Building,Verse.Map,System.Boolean)">SpawnBuildingAsPossible(Building, Map, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnBuildingAsPossible(Building building, Map map, bool respawningAfterLoad = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Building.html">Building</a></td>
+        <td><span class="parametername">building</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">respawningAfterLoad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_SpawnIrregularLump_" data-uid="Verse.GenSpawn.SpawnIrregularLump*"></a>
+  <h4 id="Verse_GenSpawn_SpawnIrregularLump_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_IntRange_Verse_IntRange_Verse_WipeMode_System_Predicate_Verse_IntVec3__System_Collections_Generic_List_Verse_IntVec3__System_Collections_Generic_List_Verse_Thing__Verse_ThingDef_RimWorld_Faction_" data-uid="Verse.GenSpawn.SpawnIrregularLump(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.IntRange,Verse.IntRange,Verse.WipeMode,System.Predicate{Verse.IntVec3},System.Collections.Generic.List{Verse.IntVec3},System.Collections.Generic.List{Verse.Thing},Verse.ThingDef,RimWorld.Faction)">SpawnIrregularLump(ThingDef, IntVec3, Map, IntRange, IntRange, WipeMode, Predicate&lt;IntVec3&gt;, List&lt;IntVec3&gt;, List&lt;Thing&gt;, ThingDef, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnIrregularLump(ThingDef thing, IntVec3 pos, Map map, IntRange countRange, IntRange distRange, WipeMode wipeMode = WipeMode.Vanish, Predicate&lt;IntVec3&gt; validator = null, List&lt;IntVec3&gt; area = null, List&lt;Thing&gt; spawned = null, ThingDef stuff = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">countRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">distRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.WipeMode.html">WipeMode</a></td>
+        <td><span class="parametername">wipeMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>&gt;</td>
+        <td><span class="parametername">area</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_SpawningWipes_" data-uid="Verse.GenSpawn.SpawningWipes*"></a>
+  <h4 id="Verse_GenSpawn_SpawningWipes_Verse_BuildableDef_Verse_BuildableDef_System_Boolean_" data-uid="Verse.GenSpawn.SpawningWipes(Verse.BuildableDef,Verse.BuildableDef,System.Boolean)">SpawningWipes(BuildableDef, BuildableDef, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool SpawningWipes(BuildableDef newEntDef, BuildableDef oldEntDef, bool ignoreDestroyable = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BuildableDef.html">BuildableDef</a></td>
+        <td><span class="parametername">newEntDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BuildableDef.html">BuildableDef</a></td>
+        <td><span class="parametername">oldEntDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ignoreDestroyable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_TrySpawn_" data-uid="Verse.GenSpawn.TrySpawn*"></a>
+  <h4 id="Verse_GenSpawn_TrySpawn_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Rot4_Verse_Thing__Verse_WipeMode_System_Boolean_" data-uid="Verse.GenSpawn.TrySpawn(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Rot4,Verse.Thing@,Verse.WipeMode,System.Boolean)">TrySpawn(ThingDef, IntVec3, Map, Rot4, out Thing, WipeMode, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySpawn(ThingDef def, IntVec3 loc, Map map, Rot4 rot, out Thing thing, WipeMode wipeMode = WipeMode.Vanish, bool canWipeEdifices = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">loc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.WipeMode.html">WipeMode</a></td>
+        <td><span class="parametername">wipeMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canWipeEdifices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_TrySpawn_" data-uid="Verse.GenSpawn.TrySpawn*"></a>
+  <h4 id="Verse_GenSpawn_TrySpawn_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Thing__Verse_WipeMode_System_Boolean_" data-uid="Verse.GenSpawn.TrySpawn(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Thing@,Verse.WipeMode,System.Boolean)">TrySpawn(ThingDef, IntVec3, Map, out Thing, WipeMode, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySpawn(ThingDef def, IntVec3 loc, Map map, out Thing thing, WipeMode wipeMode = WipeMode.Vanish, bool canWipeEdifices = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">loc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.WipeMode.html">WipeMode</a></td>
+        <td><span class="parametername">wipeMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">canWipeEdifices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_WipeAndRefundExistingThings_" data-uid="Verse.GenSpawn.WipeAndRefundExistingThings*"></a>
+  <h4 id="Verse_GenSpawn_WipeAndRefundExistingThings_Verse_IntVec3_Verse_Rot4_Verse_BuildableDef_Verse_Map_System_Boolean_" data-uid="Verse.GenSpawn.WipeAndRefundExistingThings(Verse.IntVec3,Verse.Rot4,Verse.BuildableDef,Verse.Map,System.Boolean)">WipeAndRefundExistingThings(IntVec3, Rot4, BuildableDef, Map, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WipeAndRefundExistingThings(IntVec3 thingPos, Rot4 thingRot, BuildableDef thingDef, Map map, bool forbid)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">thingPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">thingRot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BuildableDef.html">BuildableDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forbid</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_WipeExistingThings_" data-uid="Verse.GenSpawn.WipeExistingThings*"></a>
+  <h4 id="Verse_GenSpawn_WipeExistingThings_Verse_IntVec3_Verse_Rot4_Verse_BuildableDef_Verse_Map_Verse_DestroyMode_" data-uid="Verse.GenSpawn.WipeExistingThings(Verse.IntVec3,Verse.Rot4,Verse.BuildableDef,Verse.Map,Verse.DestroyMode)">WipeExistingThings(IntVec3, Rot4, BuildableDef, Map, DestroyMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WipeExistingThings(IntVec3 thingPos, Rot4 thingRot, BuildableDef thingDef, Map map, DestroyMode mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">thingPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">thingRot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BuildableDef.html">BuildableDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.DestroyMode.html">DestroyMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_WouldWipeAnythingWith_" data-uid="Verse.GenSpawn.WouldWipeAnythingWith*"></a>
+  <h4 id="Verse_GenSpawn_WouldWipeAnythingWith_Verse_CellRect_Verse_BuildableDef_Verse_Map_System_Predicate_Verse_Thing__" data-uid="Verse.GenSpawn.WouldWipeAnythingWith(Verse.CellRect,Verse.BuildableDef,Verse.Map,System.Predicate{Verse.Thing})">WouldWipeAnythingWith(CellRect, BuildableDef, Map, Predicate&lt;Thing&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool WouldWipeAnythingWith(CellRect cellRect, BuildableDef thingDef, Map map, Predicate&lt;Thing&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">cellRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BuildableDef.html">BuildableDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_GenSpawn_WouldWipeAnythingWith_" data-uid="Verse.GenSpawn.WouldWipeAnythingWith*"></a>
+  <h4 id="Verse_GenSpawn_WouldWipeAnythingWith_Verse_IntVec3_Verse_Rot4_Verse_BuildableDef_Verse_Map_System_Predicate_Verse_Thing__" data-uid="Verse.GenSpawn.WouldWipeAnythingWith(Verse.IntVec3,Verse.Rot4,Verse.BuildableDef,Verse.Map,System.Predicate{Verse.Thing})">WouldWipeAnythingWith(IntVec3, Rot4, BuildableDef, Map, Predicate&lt;Thing&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool WouldWipeAnythingWith(IntVec3 thingPos, Rot4 thingRot, BuildableDef thingDef, Map map, Predicate&lt;Thing&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">thingPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">thingRot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BuildableDef.html">BuildableDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

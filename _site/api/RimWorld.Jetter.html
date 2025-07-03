@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Jetter </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Jetter ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Jetter">
+
+
+
+  <h1 id="RimWorld_Jetter" data-uid="RimWorld.Jetter" class="text-break">Class Jetter</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.Entity.html">Entity</a></div>
+    <div class="level2"><a class="xref" href="Verse.Thing.html">Thing</a></div>
+    <div class="level3"><span class="xref">Jetter</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.ISelectable.html">ISelectable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+    <div><a class="xref" href="RimWorld.ISignalReceiver.html">ISignalReceiver</a></div>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_def">Thing.def</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_thingIDNumber">Thing.thingIDNumber</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_stackCount">Thing.stackCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_factionInt">Thing.factionInt</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_styleGraphicInt">Thing.styleGraphicInt</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_holdingOwner">Thing.holdingOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_questTags">Thing.questTags</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_spawnedTick">Thing.spawnedTick</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_despawnedTick">Thing.despawnedTick</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_overrideGraphicIndex">Thing.overrideGraphicIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_debugRotLocked">Thing.debugRotLocked</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_shouldHighlightCached">Thing.shouldHighlightCached</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_shouldHighlightCachedTick">Thing.shouldHighlightCachedTick</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_highlightColorCached">Thing.highlightColorCached</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_highlightColorCachedTick">Thing.highlightColorCachedTick</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_UnspawnedState">Thing.UnspawnedState</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_allowDestroyNonDestroyable">Thing.allowDestroyNonDestroyable</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_showingGizmosForRitualsTmp">Thing.showingGizmosForRitualsTmp</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SmeltCostRecoverFraction">Thing.SmeltCostRecoverFraction</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_IDNumberFromThingID_System_String_">Thing.IDNumberFromThingID(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DoTick">Thing.DoTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PostMake">Thing.PostMake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PostPostMake">Thing.PostPostMake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PostQualitySet">Thing.PostQualitySet()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetUniqueLoadID">Thing.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SpawnSetup_Verse_Map_System_Boolean_">Thing.SpawnSetup(Map, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DeSpawnOrDeselect_Verse_DestroyMode_">Thing.DeSpawnOrDeselect(DestroyMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DeSpawn_Verse_DestroyMode_">Thing.DeSpawn(DestroyMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Kill_System_Nullable_Verse_DamageInfo__Verse_Hediff_">Thing.Kill(DamageInfo?, Hediff)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PreTraded_RimWorld_TradeAction_Verse_Pawn_RimWorld_ITrader_">Thing.PreTraded(TradeAction, Pawn, ITrader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PostGeneratedForTrader_RimWorld_TraderKindDef_RimWorld_Planet_PlanetTile_RimWorld_Faction_">Thing.PostGeneratedForTrader(TraderKindDef, PlanetTile, Faction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetBeauty_System_Boolean_">Thing.GetBeauty(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_MyMapRemoved">Thing.Notify_MyMapRemoved()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_LordDestroyed">Thing.Notify_LordDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_AbandonedAtTile_RimWorld_Planet_PlanetTile_">Thing.Notify_AbandonedAtTile(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_KilledLeavingsLeft_System_Collections_Generic_List_Verse_Thing__">Thing.Notify_KilledLeavingsLeft(List&lt;Thing&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_Studied_Verse_Pawn_System_Single_RimWorld_KnowledgeCategoryDef_">Thing.Notify_Studied(Pawn, float, KnowledgeCategoryDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_Unfogged">Thing.Notify_Unfogged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_ForceSetStateToUnspawned">Thing.ForceSetStateToUnspawned()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DecrementMapIndex">Thing.DecrementMapIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_ExposeData">Thing.ExposeData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PostMapInit">Thing.PostMapInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawNowAt_UnityEngine_Vector3_System_Boolean_">Thing.DrawNowAt(Vector3, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DynamicDrawPhase_Verse_DrawPhase_">Thing.DynamicDrawPhase(DrawPhase)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DynamicDrawPhaseAt_Verse_DrawPhase_UnityEngine_Vector3_System_Boolean_">Thing.DynamicDrawPhaseAt(DrawPhase, Vector3, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawAt_UnityEngine_Vector3_System_Boolean_">Thing.DrawAt(Vector3, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Print_Verse_SectionLayer_">Thing.Print(SectionLayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DirtyMapMesh_Verse_Map_">Thing.DirtyMapMesh(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawGUIOverlay">Thing.DrawGUIOverlay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawExtraSelectionOverlays">Thing.DrawExtraSelectionOverlays()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetInspectString">Thing.GetInspectString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetInspectStringLowPriority">Thing.GetInspectStringLowPriority()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetGizmos">Thing.GetGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetFloatMenuOptions_Verse_Pawn_">Thing.GetFloatMenuOptions(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetMultiSelectFloatMenuOptions_System_Collections_Generic_IEnumerable_Verse_Pawn__">Thing.GetMultiSelectFloatMenuOptions(IEnumerable&lt;Pawn&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetInspectTabs">Thing.GetInspectTabs()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetCustomLabelNoCount_System_Boolean_">Thing.GetCustomLabelNoCount(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_TakeDamage_Verse_DamageInfo_">Thing.TakeDamage(DamageInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PreApplyDamage_Verse_DamageInfo__System_Boolean__">Thing.PreApplyDamage(ref DamageInfo, out bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_CanStackWith_Verse_Thing_">Thing.CanStackWith(Thing)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_TryAbsorbStack_Verse_Thing_System_Boolean_">Thing.TryAbsorbStack(Thing, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SplitOff_System_Int32_">Thing.SplitOff(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SpecialDisplayStats">Thing.SpecialDisplayStats()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_ColorChanged">Thing.Notify_ColorChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_Equipped_Verse_Pawn_">Thing.Notify_Equipped(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_Unequipped_Verse_Pawn_">Thing.Notify_Unequipped(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_UsedVerb_Verse_Pawn_Verse_Verb_">Thing.Notify_UsedVerb(Pawn, Verb)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_UsedWeapon_Verse_Pawn_">Thing.Notify_UsedWeapon(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_DebugSpawned">Thing.Notify_DebugSpawned()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_RecipeProduced_Verse_Pawn_">Thing.Notify_RecipeProduced(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_SignalReceived_RimWorld_Signal_">Thing.Notify_SignalReceived(Signal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_Explosion_Verse_Explosion_">Thing.Notify_Explosion(Explosion)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_BulletImpactNearby_RimWorld_BulletImpactData_">Thing.Notify_BulletImpactNearby(BulletImpactData)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_ThingSelected">Thing.Notify_ThingSelected()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetTooltip">Thing.GetTooltip()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_BlocksPawn_Verse_Pawn_">Thing.BlocksPawn(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SetFactionDirect_RimWorld_Faction_">Thing.SetFactionDirect(Faction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SetFaction_RimWorld_Faction_Verse_Pawn_">Thing.SetFaction(Faction, Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_ClaimableBy_RimWorld_Faction_">Thing.ClaimableBy(Faction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_AdoptableBy_RimWorld_Faction_System_Text_StringBuilder_">Thing.AdoptableBy(Faction, StringBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_FactionPreventsClaimingOrAdopting_RimWorld_Faction_System_Boolean_System_String__">Thing.FactionPreventsClaimingOrAdopting(Faction, bool, out string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SetPositionDirect_Verse_IntVec3_">Thing.SetPositionDirect(IntVec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SetStuffDirect_Verse_ThingDef_">Thing.SetStuffDirect(ThingDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_ToString">Thing.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Equals_Verse_Thing_">Thing.Equals(Thing)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_GetHashCode">Thing.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Discard_System_Boolean_">Thing.Discard(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_DefsHotReloaded">Thing.Notify_DefsHotReloaded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_ButcherProducts_Verse_Pawn_System_Single_">Thing.ButcherProducts(Pawn, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SmeltProducts_System_Single_">Thing.SmeltProducts(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Ingested_Verse_Pawn_System_Single_">Thing.Ingested(Pawn, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PrePostIngested_Verse_Pawn_">Thing.PrePostIngested(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PostIngested_Verse_Pawn_">Thing.PostIngested(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_IngestedCalculateAmounts_Verse_Pawn_System_Single_System_Int32__System_Single__">Thing.IngestedCalculateAmounts(Pawn, float, out int, out float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PreventPlayerSellingThingsNearby_System_String__">Thing.PreventPlayerSellingThingsNearby(out string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PreSwapMap">Thing.PreSwapMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PostSwapMap">Thing.PostSwapMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Notify_LeftBehind">Thing.Notify_LeftBehind()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_HitPoints">Thing.HitPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_MaxHitPoints">Thing.MaxHitPoints</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_MarketValue">Thing.MarketValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_RoyalFavorValue">Thing.RoyalFavorValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_OverrideGraphicIndex">Thing.OverrideGraphicIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_UIIconOverride">Thing.UIIconOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_EverSeenByPlayer">Thing.EverSeenByPlayer</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_StyleDef">Thing.StyleDef</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_StyleSourcePrecept">Thing.StyleSourcePrecept</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_FlammableNow">Thing.FlammableNow</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_FireBulwark">Thing.FireBulwark</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Destroyed">Thing.Destroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Discarded">Thing.Discarded</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Spawned">Thing.Spawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SpawnedOrAnyParentSpawned">Thing.SpawnedOrAnyParentSpawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_SpawnedParentOrMe">Thing.SpawnedParentOrMe</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_TickSpawned">Thing.TickSpawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_TickDeSpawned">Thing.TickDeSpawned</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Map">Thing.Map</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_MapHeld">Thing.MapHeld</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Position">Thing.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_PositionHeld">Thing.PositionHeld</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Rotation">Thing.Rotation</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Smeltable">Thing.Smeltable</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_BurnableByRecipe">Thing.BurnableByRecipe</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_ParentHolder">Thing.ParentHolder</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Faction">Thing.Faction</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_ThingID">Thing.ThingID</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_RotatedSize">Thing.RotatedSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_CustomRectForSelector">Thing.CustomRectForSelector</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Label">Thing.Label</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_LabelNoCount">Thing.LabelNoCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_LabelCap">Thing.LabelCap</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_LabelCapNoCount">Thing.LabelCapNoCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_LabelShort">Thing.LabelShort</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_LabelNoParenthesis">Thing.LabelNoParenthesis</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_LabelNoParenthesisCap">Thing.LabelNoParenthesisCap</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_ContentSource">Thing.ContentSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_IngestibleNow">Thing.IngestibleNow</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Stuff">Thing.Stuff</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DefaultGraphic">Thing.DefaultGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Graphic">Thing.Graphic</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_InteractionCells">Thing.InteractionCells</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_InteractionCell">Thing.InteractionCell</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_AmbientTemperature">Thing.AmbientTemperature</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Tile">Thing.Tile</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_Suspended">Thing.Suspended</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_InCryptosleep">Thing.InCryptosleep</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DescriptionDetailed">Thing.DescriptionDetailed</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DescriptionFlavor">Thing.DescriptionFlavor</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_IsOnHoldingPlatform">Thing.IsOnHoldingPlatform</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_TerrainAffordanceNeeded">Thing.TerrainAffordanceNeeded</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_BeingTransportedOnGravship">Thing.BeingTransportedOnGravship</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_MinTickIntervalRate">Thing.MinTickIntervalRate</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_MaxTickIntervalRate">Thing.MaxTickIntervalRate</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_UpdateRateTickOffset">Thing.UpdateRateTickOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_UpdateRateTicks">Thing.UpdateRateTicks</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawPosHeld">Thing.DrawPosHeld</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawPos">Thing.DrawPos</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawSize">Thing.DrawSize</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawColor">Thing.DrawColor</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DrawColorTwo">Thing.DrawColorTwo</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Thing.html#Verse_Thing_DescriptionHyperlinks">Thing.DescriptionHyperlinks</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Entity.html#Verse_Entity_TickInterval_System_Int32_">Entity.TickInterval(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Entity.html#Verse_Entity_TickRare">Entity.TickRare()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Entity.html#Verse_Entity_TickLong">Entity.TickLong()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Entity.html#Verse_Entity_LabelMouseover">Entity.LabelMouseover</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Entity.html#Verse_Entity_LabelShortCap">Entity.LabelShortCap</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Jetter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Jetter : Thing, ISelectable, ILoadReferenceable, ISignalReceiver, IExposable, IEquatable&lt;Thing&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Jetter__ctor_" data-uid="RimWorld.Jetter.#ctor*"></a>
+  <h4 id="RimWorld_Jetter__ctor" data-uid="RimWorld.Jetter.#ctor">Jetter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Jetter()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_Jetter_jetSoundSustainer" data-uid="RimWorld.Jetter.jetSoundSustainer">jetSoundSustainer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Sustainer jetSoundSustainer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Sound.Sustainer.html">Sustainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Jetter_wickSoundSustainer" data-uid="RimWorld.Jetter.wickSoundSustainer">wickSoundSustainer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Sustainer wickSoundSustainer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Sound.Sustainer.html">Sustainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Jetter_Destroy_" data-uid="RimWorld.Jetter.Destroy*"></a>
+  <h4 id="RimWorld_Jetter_Destroy_Verse_DestroyMode_" data-uid="RimWorld.Jetter.Destroy(Verse.DestroyMode)">Destroy(DestroyMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Destroy(DestroyMode mode = DestroyMode.Vanish)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DestroyMode.html">DestroyMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Thing.html#Verse_Thing_Destroy_Verse_DestroyMode_">Thing.Destroy(DestroyMode)</a></div>
+
+
+  <a id="RimWorld_Jetter_MoveJetter_" data-uid="RimWorld.Jetter.MoveJetter*"></a>
+  <h4 id="RimWorld_Jetter_MoveJetter" data-uid="RimWorld.Jetter.MoveJetter">MoveJetter()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void MoveJetter()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Jetter_PostApplyDamage_" data-uid="RimWorld.Jetter.PostApplyDamage*"></a>
+  <h4 id="RimWorld_Jetter_PostApplyDamage_Verse_DamageInfo_System_Single_" data-uid="RimWorld.Jetter.PostApplyDamage(Verse.DamageInfo,System.Single)">PostApplyDamage(DamageInfo, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PostApplyDamage(DamageInfo dinfo, float totalDamageDealt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a></td>
+        <td><span class="parametername">dinfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">totalDamageDealt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Thing.html#Verse_Thing_PostApplyDamage_Verse_DamageInfo_System_Single_">Thing.PostApplyDamage(DamageInfo, float)</a></div>
+
+
+  <a id="RimWorld_Jetter_StartJetting_" data-uid="RimWorld.Jetter.StartJetting*"></a>
+  <h4 id="RimWorld_Jetter_StartJetting" data-uid="RimWorld.Jetter.StartJetting">StartJetting()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void StartJetting()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Jetter_StartWick_" data-uid="RimWorld.Jetter.StartWick*"></a>
+  <h4 id="RimWorld_Jetter_StartWick" data-uid="RimWorld.Jetter.StartWick">StartWick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void StartWick()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Jetter_Tick_" data-uid="RimWorld.Jetter.Tick*"></a>
+  <h4 id="RimWorld_Jetter_Tick" data-uid="RimWorld.Jetter.Tick">Tick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Tick()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Entity.html#Verse_Entity_Tick">Entity.Tick()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.ISelectable.html">ISelectable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ISignalReceiver.html">ISignalReceiver</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.BreakdownableUtility.html#RimWorld_BreakdownableUtility_IsBrokenDown_Verse_Thing_">BreakdownableUtility.IsBrokenDown(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.CostListCalculator.html#RimWorld_CostListCalculator_CostListAdjusted_Verse_Thing_">CostListCalculator.CostListAdjusted(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.FactionUtility.html#RimWorld_FactionUtility_IsPoliticallyProper_Verse_Thing_Verse_Pawn_">FactionUtility.IsPoliticallyProper(Thing, Pawn)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.FireUtility.html#RimWorld_FireUtility_CanEverAttachFire_Verse_Thing_">FireUtility.CanEverAttachFire(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.FireUtility.html#RimWorld_FireUtility_IsBurning_Verse_Thing_">FireUtility.IsBurning(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.FireUtility.html#RimWorld_FireUtility_TryAttachFire_Verse_Thing_System_Single_Verse_Thing_">FireUtility.TryAttachFire(Thing, float, Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ForbidUtility.html#RimWorld_ForbidUtility_IsForbidden_Verse_Thing_RimWorld_Faction_">ForbidUtility.IsForbidden(Thing, Faction)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ForbidUtility.html#RimWorld_ForbidUtility_IsForbidden_Verse_Thing_Verse_Pawn_">ForbidUtility.IsForbidden(Thing, Pawn)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ForbidUtility.html#RimWorld_ForbidUtility_IsForbiddenHeld_Verse_Thing_Verse_Pawn_">ForbidUtility.IsForbiddenHeld(Thing, Pawn)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ForbidUtility.html#RimWorld_ForbidUtility_SetForbidden_Verse_Thing_System_Boolean_System_Boolean_">ForbidUtility.SetForbidden(Thing, bool, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ForbidUtility.html#RimWorld_ForbidUtility_SetForbiddenIfOutsideHomeArea_Verse_Thing_">ForbidUtility.SetForbiddenIfOutsideHomeArea(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ForbidUtility.html#RimWorld_ForbidUtility_TrySetForbidden_Verse_Thing_System_Boolean_">ForbidUtility.TrySetForbidden(Thing, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.GenHostility.html#RimWorld_GenHostility_HostileTo_Verse_Thing_RimWorld_Faction_">GenHostility.HostileTo(Thing, Faction)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.GenHostility.html#RimWorld_GenHostility_HostileTo_Verse_Thing_Verse_Thing_">GenHostility.HostileTo(Thing, Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.GenLabel.html#RimWorld_GenLabel_MultipleItemsPerCellDrawn_Verse_Thing_">GenLabel.MultipleItemsPerCellDrawn(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.GenThing.html#RimWorld_GenThing_TrueCenter_Verse_Thing_">GenThing.TrueCenter(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.HackUtility.html#RimWorld_HackUtility_IsHackable_Verse_Thing_">HackUtility.IsHackable(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.HackUtility.html#RimWorld_HackUtility_IsHacked_Verse_Thing_">HackUtility.IsHacked(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.MinifyUtility.html#RimWorld_MinifyUtility_GetInnerIfMinified_Verse_Thing_">MinifyUtility.GetInnerIfMinified(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.MinifyUtility.html#RimWorld_MinifyUtility_MakeMinified_Verse_Thing_Verse_DestroyMode_">MinifyUtility.MakeMinified(Thing, DestroyMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.MinifyUtility.html#RimWorld_MinifyUtility_TryMakeMinified_Verse_Thing_">MinifyUtility.TryMakeMinified(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.MinifyUtility.html#RimWorld_MinifyUtility_Uninstall_Verse_Thing_">MinifyUtility.Uninstall(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.PawnUtility.html#RimWorld_PawnUtility_CanBeBuried_Verse_Thing_">PawnUtility.CanBeBuried(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.Planet.CaravanUtility.html#RimWorld_Planet_CaravanUtility_GetCaravan_Verse_Thing_">CaravanUtility.GetCaravan(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.Planet.CaravanUtility.html#RimWorld_Planet_CaravanUtility_IsInCaravan_Verse_Thing_">CaravanUtility.IsInCaravan(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.QualityUtility.html#RimWorld_QualityUtility_TryGetQuality_Verse_Thing_RimWorld_QualityCategory__">QualityUtility.TryGetQuality(Thing, out QualityCategory)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ReliquaryUtility.html#RimWorld_ReliquaryUtility_IsRelic_Verse_Thing_">ReliquaryUtility.IsRelic(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.RitualUtility.html#RimWorld_RitualUtility_IsRitualTarget_Verse_Thing_">RitualUtility.IsRitualTarget(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.RitualUtility.html#RimWorld_RitualUtility_TargetOfRitual_Verse_Thing_">RitualUtility.TargetOfRitual(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.RottableUtility.html#RimWorld_RottableUtility_GetRotStage_Verse_Thing_">RottableUtility.GetRotStage(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.RottableUtility.html#RimWorld_RottableUtility_IsDessicated_Verse_Thing_">RottableUtility.IsDessicated(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.RottableUtility.html#RimWorld_RottableUtility_IsNotFresh_Verse_Thing_">RottableUtility.IsNotFresh(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.SocialProperness.html#RimWorld_SocialProperness_IsSociallyProper_Verse_Thing_Verse_Pawn_">SocialProperness.IsSociallyProper(Thing, Pawn)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.SocialProperness.html#RimWorld_SocialProperness_IsSociallyProper_Verse_Thing_Verse_Pawn_System_Boolean_System_Boolean_">SocialProperness.IsSociallyProper(Thing, Pawn, bool, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StatExtension.html#RimWorld_StatExtension_GetStatValue_Verse_Thing_RimWorld_StatDef_System_Boolean_System_Int32_">StatExtension.GetStatValue(Thing, StatDef, bool, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StatExtension.html#RimWorld_StatExtension_GetStatValueForPawn_Verse_Thing_RimWorld_StatDef_Verse_Pawn_System_Boolean_">StatExtension.GetStatValueForPawn(Thing, StatDef, Pawn, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StorageGroupUtility.html#RimWorld_StorageGroupUtility_IsHopper_Verse_Thing_">StorageGroupUtility.IsHopper(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StoreUtility.html#RimWorld_StoreUtility_GetSlotGroup_Verse_Thing_">StoreUtility.GetSlotGroup(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StoreUtility.html#RimWorld_StoreUtility_IsInAnyStorage_Verse_Thing_">StoreUtility.IsInAnyStorage(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StoreUtility.html#RimWorld_StoreUtility_IsInValidBestStorage_Verse_Thing_">StoreUtility.IsInValidBestStorage(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StoreUtility.html#RimWorld_StoreUtility_IsInValidStorage_Verse_Thing_">StoreUtility.IsInValidStorage(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StoreUtility.html#RimWorld_StoreUtility_StoringThing_Verse_Thing_">StoreUtility.StoringThing(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.StoreUtility.html#RimWorld_StoreUtility_TryGetValidStoragePriority_Verse_Thing_RimWorld_StoragePriority__">StoreUtility.TryGetValidStoragePriority(Thing, out StoragePriority)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ThingStyleHelper.html#RimWorld_ThingStyleHelper_GetEverSeenByPlayer_Verse_Thing_">ThingStyleHelper.GetEverSeenByPlayer(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ThingStyleHelper.html#RimWorld_ThingStyleHelper_GetStyleDef_Verse_Thing_">ThingStyleHelper.GetStyleDef(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ThingStyleHelper.html#RimWorld_ThingStyleHelper_GetStyleSourcePrecept_Verse_Thing_">ThingStyleHelper.GetStyleSourcePrecept(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ThingStyleHelper.html#RimWorld_ThingStyleHelper_SetEverSeenByPlayer_Verse_Thing_System_Boolean_">ThingStyleHelper.SetEverSeenByPlayer(Thing, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ThingStyleHelper.html#RimWorld_ThingStyleHelper_SetStyleDef_Verse_Thing_Verse_ThingStyleDef_">ThingStyleHelper.SetStyleDef(Thing, ThingStyleDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.ThingStyleHelper.html#RimWorld_ThingStyleHelper_SetStyleSourcePrecept_Verse_Thing_RimWorld_Precept_ThingStyle_">ThingStyleHelper.SetStyleSourcePrecept(Thing, Precept_ThingStyle)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.AttackTargetFinder.html#Verse_AI_AttackTargetFinder_CanSee_Verse_Thing_Verse_Thing_System_Func_Verse_IntVec3_System_Boolean__">AttackTargetFinder.CanSee(Thing, Thing, Func&lt;IntVec3, bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AttachmentUtility.html#Verse_AttachmentUtility_GetAttachment_Verse_Thing_Verse_ThingDef_">AttachmentUtility.GetAttachment(Thing, ThingDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AttachmentUtility.html#Verse_AttachmentUtility_HasAttachment_Verse_Thing_Verse_ThingDef_">AttachmentUtility.HasAttachment(Thing, ThingDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.CompColorableUtility.html#Verse_CompColorableUtility_SetColor_Verse_Thing_UnityEngine_Color_System_Boolean_">CompColorableUtility.SetColor(Thing, Color, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.CompressibilityDeciderUtility.html#Verse_CompressibilityDeciderUtility_IsSaveCompressible_Verse_Thing_">CompressibilityDeciderUtility.IsSaveCompressible(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ContainmentUtility.html#Verse_ContainmentUtility_SafelyContains_Verse_Thing_Verse_Thing_">ContainmentUtility.SafelyContains(Thing, Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.CoverUtility.html#Verse_CoverUtility_BaseBlockChance_Verse_Thing_">CoverUtility.BaseBlockChance(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_HashOffset_Verse_Thing_">Gen.HashOffset(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_HashOffsetTicks_Verse_Thing_">Gen.HashOffsetTicks(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_IsHashIntervalTick_Verse_Thing_System_Int32_">Gen.IsHashIntervalTick(Thing, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_IsHashIntervalTick_Verse_Thing_System_Int32_System_Int32_">Gen.IsHashIntervalTick(Thing, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_IsNestedHashIntervalTick_Verse_Thing_System_Int32_System_Int32_">Gen.IsNestedHashIntervalTick(Thing, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenAdj.html#Verse_GenAdj_AdjacentTo8WayOrInside_Verse_Thing_Verse_Thing_">GenAdj.AdjacentTo8WayOrInside(Thing, Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenAdj.html#Verse_GenAdj_CellsAdjacent8WayAndInside_Verse_Thing_">GenAdj.CellsAdjacent8WayAndInside(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenAdj.html#Verse_GenAdj_DrawBounds_Verse_Thing_">GenAdj.DrawBounds(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenAdj.html#Verse_GenAdj_IsAdjacentToCardinalOrInside_Verse_Thing_Verse_Thing_">GenAdj.IsAdjacentToCardinalOrInside(Thing, Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenAdj.html#Verse_GenAdj_OccupiedDrawRect_Verse_Thing_">GenAdj.OccupiedDrawRect(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenAdj.html#Verse_GenAdj_OccupiedRect_Verse_Thing_">GenAdj.OccupiedRect(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenAdj.html#Verse_GenAdj_RandomAdjacentCell8Way_Verse_Thing_">GenAdj.RandomAdjacentCell8Way(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenAdj.html#Verse_GenAdj_RandomAdjacentCellCardinal_Verse_Thing_">GenAdj.RandomAdjacentCellCardinal(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GridsUtility.html#Verse_GridsUtility_Fogged_Verse_Thing_">GridsUtility.Fogged(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Rand.html#Verse_Rand_RandSeedForHour_Verse_Thing_System_Int32_">Rand.RandSeedForHour(Thing, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.RegionAndRoomQuery.html#Verse_RegionAndRoomQuery_GetDistrict_Verse_Thing_Verse_RegionType_">RegionAndRoomQuery.GetDistrict(Thing, RegionType)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.RegionAndRoomQuery.html#Verse_RegionAndRoomQuery_GetRegion_Verse_Thing_Verse_RegionType_">RegionAndRoomQuery.GetRegion(Thing, RegionType)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.RegionAndRoomQuery.html#Verse_RegionAndRoomQuery_GetRegionHeld_Verse_Thing_Verse_RegionType_">RegionAndRoomQuery.GetRegionHeld(Thing, RegionType)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.RegionAndRoomQuery.html#Verse_RegionAndRoomQuery_GetRoom_Verse_Thing_Verse_RegionType_">RegionAndRoomQuery.GetRoom(Thing, RegionType)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.RegionAndRoomQuery.html#Verse_RegionAndRoomQuery_IsOutside_Verse_Thing_">RegionAndRoomQuery.IsOutside(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ThingCompUtility.html#Verse_ThingCompUtility_HasComp__1_Verse_Thing_">ThingCompUtility.HasComp&lt;T&gt;(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ThingCompUtility.html#Verse_ThingCompUtility_TryGetComp_Verse_Thing_Verse_CompProperties_">ThingCompUtility.TryGetComp(Thing, CompProperties)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ThingCompUtility.html#Verse_ThingCompUtility_TryGetComp__1_Verse_Thing_">ThingCompUtility.TryGetComp&lt;T&gt;(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ThingCompUtility.html#Verse_ThingCompUtility_TryGetComp__1_Verse_Thing___0__">ThingCompUtility.TryGetComp&lt;T&gt;(Thing, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ThingOwnerUtility.html#Verse_ThingOwnerUtility_TryGetInnerInteractableThingOwner_Verse_Thing_">ThingOwnerUtility.TryGetInnerInteractableThingOwner(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ThingUtility.html#Verse_ThingUtility_DestroyOrPassToWorld_Verse_Thing_Verse_DestroyMode_">ThingUtility.DestroyOrPassToWorld(Thing, DestroyMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ThingUtility.html#Verse_ThingUtility_DestroyedOrNull_Verse_Thing_">ThingUtility.DestroyedOrNull(Thing)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ThingUtility.html#Verse_ThingUtility_HasThingCategory_Verse_Thing_Verse_ThingCategoryDef_">ThingUtility.HasThingCategory(Thing, ThingCategoryDef)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PsychicRitualDef </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PsychicRitualDef ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.PsychicRitualDef">
+
+
+
+  <h1 id="RimWorld_PsychicRitualDef" data-uid="RimWorld.PsychicRitualDef" class="text-break">Class PsychicRitualDef</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.Editable.html">Editable</a></div>
+    <div class="level2"><a class="xref" href="Verse.Def.html">Def</a></div>
+    <div class="level3"><span class="xref">PsychicRitualDef</span></div>
+      <div class="level4"><a class="xref" href="RimWorld.PsychicRitualDef_InvocationCircle.html">PsychicRitualDef_InvocationCircle</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Verse.Def.html">Def</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_defName">Def.defName</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_label">Def.label</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_description">Def.description</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_descriptionHyperlinks">Def.descriptionHyperlinks</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ignoreConfigErrors">Def.ignoreConfigErrors</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ignoreIllegalLabelCharacterConfigError">Def.ignoreIllegalLabelCharacterConfigError</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_modExtensions">Def.modExtensions</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_shortHash">Def.shortHash</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_index">Def.index</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_modContentPack">Def.modContentPack</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_fileName">Def.fileName</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_defNameHash">Def.defNameHash</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_cachedLabelCap">Def.cachedLabelCap</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_generated">Def.generated</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_debugRandomId">Def.debugRandomId</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_DefaultDefName">Def.DefaultDefName</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_SpecialDisplayStats_RimWorld_StatRequest_">Def.SpecialDisplayStats(StatRequest)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ResolveReferences">Def.ResolveReferences()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ConfigErrors">Def.ConfigErrors()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_PostSetIndices">Def.PostSetIndices()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ClearCachedData">Def.ClearCachedData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ToString">Def.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_ResolveDefNameHash">Def.ResolveDefNameHash()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_GetHashCode">Def.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_GetModExtension__1">Def.GetModExtension&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_HasModExtension__1">Def.HasModExtension&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_Equals_Verse_Def_">Def.Equals(Def)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Def.html#Verse_Def_LabelCap">Def.LabelCap</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_PsychicRitualDef_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PsychicRitualDef : Def, IEquatable&lt;Def&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_PsychicRitualDef__ctor_" data-uid="RimWorld.PsychicRitualDef.#ctor*"></a>
+  <h4 id="RimWorld_PsychicRitualDef__ctor" data-uid="RimWorld.PsychicRitualDef.#ctor">PsychicRitualDef()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PsychicRitualDef()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_aiCastable" data-uid="RimWorld.PsychicRitualDef.aiCastable">aiCastable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool aiCastable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_allowsDrafting" data-uid="RimWorld.PsychicRitualDef.allowsDrafting">allowsDrafting</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool allowsDrafting</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_allowsFloatMenu" data-uid="RimWorld.PsychicRitualDef.allowsFloatMenu">allowsFloatMenu</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool allowsFloatMenu</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_castableOnPocketMaps" data-uid="RimWorld.PsychicRitualDef.castableOnPocketMaps">castableOnPocketMaps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool castableOnPocketMaps</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_cooldownHours" data-uid="RimWorld.PsychicRitualDef.cooldownHours">cooldownHours</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int cooldownHours</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_iconPath" data-uid="RimWorld.PsychicRitualDef.iconPath">iconPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NoTranslate]
+public string iconPath</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_layerWhitelist" data-uid="RimWorld.PsychicRitualDef.layerWhitelist">layerWhitelist</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PlanetLayerDef&gt; layerWhitelist</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.PlanetLayerDef.html">PlanetLayerDef</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_letterAIArrivedText" data-uid="RimWorld.PsychicRitualDef.letterAIArrivedText">letterAIArrivedText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MustTranslate]
+public string letterAIArrivedText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_letterAICompleteLabel" data-uid="RimWorld.PsychicRitualDef.letterAICompleteLabel">letterAICompleteLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MustTranslate]
+public string letterAICompleteLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_letterAICompleteText" data-uid="RimWorld.PsychicRitualDef.letterAICompleteText">letterAICompleteText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MustTranslate]
+public string letterAICompleteText</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_minThreatPoints" data-uid="RimWorld.PsychicRitualDef.minThreatPoints">minThreatPoints</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float minThreatPoints</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_nonRequiredPawnsMayLeave" data-uid="RimWorld.PsychicRitualDef.nonRequiredPawnsMayLeave">nonRequiredPawnsMayLeave</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool nonRequiredPawnsMayLeave</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_playerCastable" data-uid="RimWorld.PsychicRitualDef.playerCastable">playerCastable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool playerCastable</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_researchPrerequisite" data-uid="RimWorld.PsychicRitualDef.researchPrerequisite">researchPrerequisite</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ResearchProjectDef researchPrerequisite</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ResearchProjectDef.html">ResearchProjectDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_rolePowerFactor" data-uid="RimWorld.PsychicRitualDef.rolePowerFactor">rolePowerFactor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float rolePowerFactor</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_PsychicRitualDef_uiIcon" data-uid="RimWorld.PsychicRitualDef.uiIcon">uiIcon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D uiIcon</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture2D.html">Texture2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_PsychicRitualDef_Roles_" data-uid="RimWorld.PsychicRitualDef.Roles*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_Roles" data-uid="RimWorld.PsychicRitualDef.Roles">Roles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;PsychicRitualRoleDef&gt; Roles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.PsychicRitualRoleDef.html">PsychicRitualRoleDef</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_Visible_" data-uid="RimWorld.PsychicRitualDef.Visible*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_Visible" data-uid="RimWorld.PsychicRitualDef.Visible">Visible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Visible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_PsychicRitualDef_AbilityAllowed_" data-uid="RimWorld.PsychicRitualDef.AbilityAllowed*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_AbilityAllowed_RimWorld_Ability_" data-uid="RimWorld.PsychicRitualDef.AbilityAllowed(RimWorld.Ability)">AbilityAllowed(Ability)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AcceptanceReport AbilityAllowed(Ability ability)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Ability.html">Ability</a></td>
+        <td><span class="parametername">ability</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AcceptanceReport.html">AcceptanceReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_AllowsDrafting_" data-uid="RimWorld.PsychicRitualDef.AllowsDrafting*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_AllowsDrafting_Verse_Pawn_" data-uid="RimWorld.PsychicRitualDef.AllowsDrafting(Verse.Pawn)">AllowsDrafting(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AcceptanceReport AllowsDrafting(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AcceptanceReport.html">AcceptanceReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_AllowsFloatMenu_" data-uid="RimWorld.PsychicRitualDef.AllowsFloatMenu*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_AllowsFloatMenu_Verse_Pawn_" data-uid="RimWorld.PsychicRitualDef.AllowsFloatMenu(Verse.Pawn)">AllowsFloatMenu(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AcceptanceReport AllowsFloatMenu(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AcceptanceReport.html">AcceptanceReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_BlockingIssues_" data-uid="RimWorld.PsychicRitualDef.BlockingIssues*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_BlockingIssues_Verse_AI_Group_PsychicRitualRoleAssignments_Verse_Map_" data-uid="RimWorld.PsychicRitualDef.BlockingIssues(Verse.AI.Group.PsychicRitualRoleAssignments,Verse.Map)">BlockingIssues(PsychicRitualRoleAssignments, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;string&gt; BlockingIssues(PsychicRitualRoleAssignments assignments, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualRoleAssignments.html">PsychicRitualRoleAssignments</a></td>
+        <td><span class="parametername">assignments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_BlocksSocialInteraction_" data-uid="RimWorld.PsychicRitualDef.BlocksSocialInteraction*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_BlocksSocialInteraction_Verse_Pawn_" data-uid="RimWorld.PsychicRitualDef.BlocksSocialInteraction(Verse.Pawn)">BlocksSocialInteraction(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool BlocksSocialInteraction(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_BuildRoleAssignments_" data-uid="RimWorld.PsychicRitualDef.BuildRoleAssignments*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_BuildRoleAssignments_Verse_TargetInfo_" data-uid="RimWorld.PsychicRitualDef.BuildRoleAssignments(Verse.TargetInfo)">BuildRoleAssignments(TargetInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PsychicRitualRoleAssignments BuildRoleAssignments(TargetInfo target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TargetInfo.html">TargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualRoleAssignments.html">PsychicRitualRoleAssignments</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_CalculateMaxPower_" data-uid="RimWorld.PsychicRitualDef.CalculateMaxPower*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_CalculateMaxPower_Verse_AI_Group_PsychicRitualRoleAssignments_System_Collections_Generic_List_RimWorld_QualityFactor__System_Single__" data-uid="RimWorld.PsychicRitualDef.CalculateMaxPower(Verse.AI.Group.PsychicRitualRoleAssignments,System.Collections.Generic.List{RimWorld.QualityFactor},System.Single@)">CalculateMaxPower(PsychicRitualRoleAssignments, List&lt;QualityFactor&gt;, out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateMaxPower(PsychicRitualRoleAssignments assignments, List&lt;QualityFactor&gt; powerFactorsOut, out float power)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualRoleAssignments.html">PsychicRitualRoleAssignments</a></td>
+        <td><span class="parametername">assignments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.QualityFactor.html">QualityFactor</a>&gt;</td>
+        <td><span class="parametername">powerFactorsOut</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">power</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_CheckPsychicRitualCancelConditions_" data-uid="RimWorld.PsychicRitualDef.CheckPsychicRitualCancelConditions*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_CheckPsychicRitualCancelConditions_Verse_AI_Group_PsychicRitual_" data-uid="RimWorld.PsychicRitualDef.CheckPsychicRitualCancelConditions(Verse.AI.Group.PsychicRitual)">CheckPsychicRitualCancelConditions(PsychicRitual)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CheckPsychicRitualCancelConditions(PsychicRitual psychicRitual)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitual.html">PsychicRitual</a></td>
+        <td><span class="parametername">psychicRitual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_CreateGraph_" data-uid="RimWorld.PsychicRitualDef.CreateGraph*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_CreateGraph" data-uid="RimWorld.PsychicRitualDef.CreateGraph">CreateGraph()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PsychicRitualGraph CreateGraph()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualGraph.html">PsychicRitualGraph</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_CreateToils_" data-uid="RimWorld.PsychicRitualDef.CreateToils*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_CreateToils_Verse_AI_Group_PsychicRitual_Verse_AI_Group_PsychicRitualGraph_" data-uid="RimWorld.PsychicRitualDef.CreateToils(Verse.AI.Group.PsychicRitual,Verse.AI.Group.PsychicRitualGraph)">CreateToils(PsychicRitual, PsychicRitualGraph)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;PsychicRitualToil&gt; CreateToils(PsychicRitual psychicRitual, PsychicRitualGraph parent)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitual.html">PsychicRitual</a></td>
+        <td><span class="parametername">psychicRitual</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualGraph.html">PsychicRitualGraph</a></td>
+        <td><span class="parametername">parent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.AI.Group.PsychicRitualToil.html">PsychicRitualToil</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_FindCandidatePool_" data-uid="RimWorld.PsychicRitualDef.FindCandidatePool*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_FindCandidatePool" data-uid="RimWorld.PsychicRitualDef.FindCandidatePool">FindCandidatePool()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual PsychicRitualCandidatePool FindCandidatePool()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualCandidatePool.html">PsychicRitualCandidatePool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_GetBestStandableRolePosition_" data-uid="RimWorld.PsychicRitualDef.GetBestStandableRolePosition*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_GetBestStandableRolePosition_System_Boolean_Verse_IntVec3_Verse_IntVec3_Verse_Map_System_Single_" data-uid="RimWorld.PsychicRitualDef.GetBestStandableRolePosition(System.Boolean,Verse.IntVec3,Verse.IntVec3,Verse.Map,System.Single)">GetBestStandableRolePosition(bool, IntVec3, IntVec3, Map, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IntVec3 GetBestStandableRolePosition(bool playerRitual, IntVec3 origin, IntVec3 ritualPosition, Map map, float radius = 8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">playerRitual</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">ritualPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_GetPawnReport_" data-uid="RimWorld.PsychicRitualDef.GetPawnReport*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_GetPawnReport_Verse_AI_Group_PsychicRitual_Verse_Pawn_" data-uid="RimWorld.PsychicRitualDef.GetPawnReport(Verse.AI.Group.PsychicRitual,Verse.Pawn)">GetPawnReport(PsychicRitual, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetPawnReport(PsychicRitual psychicRitual, Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitual.html">PsychicRitual</a></td>
+        <td><span class="parametername">psychicRitual</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_GetPawnTooltipExtras_" data-uid="RimWorld.PsychicRitualDef.GetPawnTooltipExtras*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_GetPawnTooltipExtras_Verse_Pawn_" data-uid="RimWorld.PsychicRitualDef.GetPawnTooltipExtras(Verse.Pawn)">GetPawnTooltipExtras(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(PsychicRitualDef.&lt;GetPawnTooltipExtras&gt;d__49))]
+public virtual IEnumerable&lt;string&gt; GetPawnTooltipExtras(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_InitializeCast_" data-uid="RimWorld.PsychicRitualDef.InitializeCast*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_InitializeCast_Verse_Map_" data-uid="RimWorld.PsychicRitualDef.InitializeCast(Verse.Map)">InitializeCast(Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void InitializeCast(Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_InvalidTargetReason_" data-uid="RimWorld.PsychicRitualDef.InvalidTargetReason*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_InvalidTargetReason_Verse_AnyEnum_" data-uid="RimWorld.PsychicRitualDef.InvalidTargetReason(Verse.AnyEnum)">InvalidTargetReason(AnyEnum)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TaggedString InvalidTargetReason(AnyEnum reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AnyEnum.html">AnyEnum</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_IsValidTarget_" data-uid="RimWorld.PsychicRitualDef.IsValidTarget*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_IsValidTarget_Verse_TargetInfo_Verse_AnyEnum__" data-uid="RimWorld.PsychicRitualDef.IsValidTarget(Verse.TargetInfo,Verse.AnyEnum@)">IsValidTarget(TargetInfo, out AnyEnum)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsValidTarget(TargetInfo target, out AnyEnum reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TargetInfo.html">TargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.AnyEnum.html">AnyEnum</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_LeftPsychicRitualMessage_" data-uid="RimWorld.PsychicRitualDef.LeftPsychicRitualMessage*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_LeftPsychicRitualMessage_Verse_Pawn_Verse_TaggedString_" data-uid="RimWorld.PsychicRitualDef.LeftPsychicRitualMessage(Verse.Pawn,Verse.TaggedString)">LeftPsychicRitualMessage(Pawn, TaggedString)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TaggedString LeftPsychicRitualMessage(Pawn pawn, TaggedString reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_MakeNewLord_" data-uid="RimWorld.PsychicRitualDef.MakeNewLord*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_MakeNewLord_Verse_AI_Group_PsychicRitualRoleAssignments_" data-uid="RimWorld.PsychicRitualDef.MakeNewLord(Verse.AI.Group.PsychicRitualRoleAssignments)">MakeNewLord(PsychicRitualRoleAssignments)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Lord MakeNewLord(PsychicRitualRoleAssignments assignments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualRoleAssignments.html">PsychicRitualRoleAssignments</a></td>
+        <td><span class="parametername">assignments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.Lord.html">Lord</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_OfferingReachable_" data-uid="RimWorld.PsychicRitualDef.OfferingReachable*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_OfferingReachable_Verse_Map_System_Collections_Generic_List_Verse_Pawn__Verse_IngredientCount_System_Int32__" data-uid="RimWorld.PsychicRitualDef.OfferingReachable(Verse.Map,System.Collections.Generic.List{Verse.Pawn},Verse.IngredientCount,System.Int32@)">OfferingReachable(Map, List&lt;Pawn&gt;, IngredientCount, out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool OfferingReachable(Map map, List&lt;Pawn&gt; pawns, IngredientCount offering, out int reachableCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IngredientCount.html">IngredientCount</a></td>
+        <td><span class="parametername">offering</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">reachableCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_OutcomeDescription_" data-uid="RimWorld.PsychicRitualDef.OutcomeDescription*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_OutcomeDescription_Verse_FloatRange_System_String_Verse_AI_Group_PsychicRitualRoleAssignments_" data-uid="RimWorld.PsychicRitualDef.OutcomeDescription(Verse.FloatRange,System.String,Verse.AI.Group.PsychicRitualRoleAssignments)">OutcomeDescription(FloatRange, string, PsychicRitualRoleAssignments)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TaggedString OutcomeDescription(FloatRange qualityRange, string qualityNumber, PsychicRitualRoleAssignments assignments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.FloatRange.html">FloatRange</a></td>
+        <td><span class="parametername">qualityRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">qualityNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualRoleAssignments.html">PsychicRitualRoleAssignments</a></td>
+        <td><span class="parametername">assignments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_OutcomeWarnings_" data-uid="RimWorld.PsychicRitualDef.OutcomeWarnings*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_OutcomeWarnings_Verse_AI_Group_PsychicRitualRoleAssignments_" data-uid="RimWorld.PsychicRitualDef.OutcomeWarnings(Verse.AI.Group.PsychicRitualRoleAssignments)">OutcomeWarnings(PsychicRitualRoleAssignments)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;TaggedString&gt; OutcomeWarnings(PsychicRitualRoleAssignments assignments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualRoleAssignments.html">PsychicRitualRoleAssignments</a></td>
+        <td><span class="parametername">assignments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.TaggedString.html">TaggedString</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_PostLoad_" data-uid="RimWorld.PsychicRitualDef.PostLoad*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_PostLoad" data-uid="RimWorld.PsychicRitualDef.PostLoad">PostLoad()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PostLoad()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Editable.html#Verse_Editable_PostLoad">Editable.PostLoad()</a></div>
+
+
+  <a id="RimWorld_PsychicRitualDef_PsychicRitualBegunMessage_" data-uid="RimWorld.PsychicRitualDef.PsychicRitualBegunMessage*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_PsychicRitualBegunMessage_Verse_AI_Group_PsychicRitualRoleAssignments_" data-uid="RimWorld.PsychicRitualDef.PsychicRitualBegunMessage(Verse.AI.Group.PsychicRitualRoleAssignments)">PsychicRitualBegunMessage(PsychicRitualRoleAssignments)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TaggedString PsychicRitualBegunMessage(PsychicRitualRoleAssignments assignments)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitualRoleAssignments.html">PsychicRitualRoleAssignments</a></td>
+        <td><span class="parametername">assignments</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_PsychicRitualCanceledMessage_" data-uid="RimWorld.PsychicRitualDef.PsychicRitualCanceledMessage*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_PsychicRitualCanceledMessage_Verse_TaggedString_" data-uid="RimWorld.PsychicRitualDef.PsychicRitualCanceledMessage(Verse.TaggedString)">PsychicRitualCanceledMessage(TaggedString)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TaggedString PsychicRitualCanceledMessage(TaggedString reason)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td><span class="parametername">reason</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_PsychicRitualCompletedMessage_" data-uid="RimWorld.PsychicRitualDef.PsychicRitualCompletedMessage*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_PsychicRitualCompletedMessage" data-uid="RimWorld.PsychicRitualDef.PsychicRitualCompletedMessage">PsychicRitualCompletedMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TaggedString PsychicRitualCompletedMessage()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_RemoveIncapablePawns_" data-uid="RimWorld.PsychicRitualDef.RemoveIncapablePawns*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_RemoveIncapablePawns_Verse_AI_Group_PsychicRitual_" data-uid="RimWorld.PsychicRitualDef.RemoveIncapablePawns(Verse.AI.Group.PsychicRitual)">RemoveIncapablePawns(PsychicRitual)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void RemoveIncapablePawns(PsychicRitual psychicRitual)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AI.Group.PsychicRitual.html">PsychicRitual</a></td>
+        <td><span class="parametername">psychicRitual</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_PsychicRitualDef_TimeAndOfferingLabel_" data-uid="RimWorld.PsychicRitualDef.TimeAndOfferingLabel*"></a>
+  <h4 id="RimWorld_PsychicRitualDef_TimeAndOfferingLabel" data-uid="RimWorld.PsychicRitualDef.TimeAndOfferingLabel">TimeAndOfferingLabel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TaggedString TimeAndOfferingLabel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

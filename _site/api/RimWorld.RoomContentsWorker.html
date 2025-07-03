@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RoomContentsWorker </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RoomContentsWorker ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.RoomContentsWorker">
+
+
+
+  <h1 id="RimWorld_RoomContentsWorker" data-uid="RimWorld.RoomContentsWorker" class="text-break">Class RoomContentsWorker</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RoomContentsWorker</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_AbandonedCamp.html">RoomContents_AbandonedCamp</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_AncientRacks.html">RoomContents_AncientRacks</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_AnimalCorpses.html">RoomContents_AnimalCorpses</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Animals.html">RoomContents_Animals</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_ChemfuelStorage.html">RoomContents_ChemfuelStorage</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_ComputerRoom.html">RoomContents_ComputerRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_ControlRoom.html">RoomContents_ControlRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Corridor.html">RoomContents_Corridor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_CryptosleepCasket.html">RoomContents_CryptosleepCasket</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_CryptosleepCaskets.html">RoomContents_CryptosleepCaskets</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_DeadBody.html">RoomContents_DeadBody</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_DiningHall.html">RoomContents_DiningHall</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_EndlessPit.html">RoomContents_EndlessPit</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Etchings.html">RoomContents_Etchings</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_FuelRoom.html">RoomContents_FuelRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_GrayBox.html">RoomContents_GrayBox</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Harbinger.html">RoomContents_Harbinger</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_HermeticCrate.html">RoomContents_HermeticCrate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_HighValueStoreRoom.html">RoomContents_HighValueStoreRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Hydroponics.html">RoomContents_Hydroponics</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_IndustrialStorage.html">RoomContents_IndustrialStorage</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_InnerCourtyard.html">RoomContents_InnerCourtyard</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_InnerCourtyardRooms.html">RoomContents_InnerCourtyardRooms</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Kitchen.html">RoomContents_Kitchen</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_LaunchPad.html">RoomContents_LaunchPad</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_MechChargingRoom.html">RoomContents_MechChargingRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_NarrowHalls.html">RoomContents_NarrowHalls</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Obelisk.html">RoomContents_Obelisk</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_OperatingRoom.html">RoomContents_OperatingRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Ramblings.html">RoomContents_Ramblings</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Reactor.html">RoomContents_Reactor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_SecurityRoom_Reactor.html">RoomContents_SecurityRoom_Reactor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_SecurityRoom_Stockpile.html">RoomContents_SecurityRoom_Stockpile</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_SleepingFleshbeast.html">RoomContents_SleepingFleshbeast</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Stabilizer.html">RoomContents_Stabilizer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_StatueTeleporter.html">RoomContents_StatueTeleporter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Stockpile.html">RoomContents_Stockpile</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_StockpileEntrance.html">RoomContents_StockpileEntrance</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_StockpileHermeticCrateRoom.html">RoomContents_StockpileHermeticCrateRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Terraformer.html">RoomContents_Terraformer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_ToxicWaterRoom.html">RoomContents_ToxicWaterRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_TransportRoom.html">RoomContents_TransportRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.RoomContents_Trees.html">RoomContents_Trees</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_RoomContentsWorker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RoomContentsWorker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_RoomContentsWorker__ctor_" data-uid="RimWorld.RoomContentsWorker.#ctor*"></a>
+  <h4 id="RimWorld_RoomContentsWorker__ctor" data-uid="RimWorld.RoomContentsWorker.#ctor">RoomContentsWorker()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RoomContentsWorker()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_RoomContentsWorker_RoomDef_" data-uid="RimWorld.RoomContentsWorker.RoomDef*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_RoomDef" data-uid="RimWorld.RoomContentsWorker.RoomDef">RoomDef</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LayoutRoomDef RoomDef { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoomDef.html">LayoutRoomDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_ThreatSignal_" data-uid="RimWorld.RoomContentsWorker.ThreatSignal*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_ThreatSignal" data-uid="RimWorld.RoomContentsWorker.ThreatSignal">ThreatSignal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string ThreatSignal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_RoomContentsWorker_CanRemoveWall_" data-uid="RimWorld.RoomContentsWorker.CanRemoveWall*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_CanRemoveWall_Verse_IntVec3_Verse_Map_RimWorld_LayoutRoom_" data-uid="RimWorld.RoomContentsWorker.CanRemoveWall(Verse.IntVec3,Verse.Map,RimWorld.LayoutRoom)">CanRemoveWall(IntVec3, Map, LayoutRoom)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CanRemoveWall(IntVec3 cell, Map map, LayoutRoom room)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_FillRoom_" data-uid="RimWorld.RoomContentsWorker.FillRoom*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_FillRoom_Verse_Map_RimWorld_LayoutRoom_RimWorld_Faction_System_Nullable_System_Single__" data-uid="RimWorld.RoomContentsWorker.FillRoom(Verse.Map,RimWorld.LayoutRoom,RimWorld.Faction,System.Nullable{System.Single})">FillRoom(Map, LayoutRoom, Faction, float?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FillRoom(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_Initialize_" data-uid="RimWorld.RoomContentsWorker.Initialize*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_Initialize_RimWorld_LayoutRoomDef_" data-uid="RimWorld.RoomContentsWorker.Initialize(RimWorld.LayoutRoomDef)">Initialize(LayoutRoomDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(LayoutRoomDef roomDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoomDef.html">LayoutRoomDef</a></td>
+        <td><span class="parametername">roomDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_IsValidCellBase_" data-uid="RimWorld.RoomContentsWorker.IsValidCellBase*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_IsValidCellBase_Verse_ThingDef_Verse_ThingDef_Verse_IntVec3_RimWorld_LayoutRoom_Verse_Map_" data-uid="RimWorld.RoomContentsWorker.IsValidCellBase(Verse.ThingDef,Verse.ThingDef,Verse.IntVec3,RimWorld.LayoutRoom,Verse.Map)">IsValidCellBase(ThingDef, ThingDef, IntVec3, LayoutRoom, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsValidCellBase(ThingDef thing, ThingDef stuff, IntVec3 cell, LayoutRoom room, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_IsValidFillEdgeCell_" data-uid="RimWorld.RoomContentsWorker.IsValidFillEdgeCell*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_IsValidFillEdgeCell_RimWorld_LayoutFillEdgesParms_Verse_IntVec3_Verse_Rot4_RimWorld_LayoutRoom_Verse_Map_" data-uid="RimWorld.RoomContentsWorker.IsValidFillEdgeCell(RimWorld.LayoutFillEdgesParms,Verse.IntVec3,Verse.Rot4,RimWorld.LayoutRoom,Verse.Map)">IsValidFillEdgeCell(LayoutFillEdgesParms, IntVec3, Rot4, LayoutRoom, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsValidFillEdgeCell(LayoutFillEdgesParms parms, IntVec3 cell, Rot4 rot, LayoutRoom room, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutFillEdgesParms.html">LayoutFillEdgesParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_IsValidFillInteriorCell_" data-uid="RimWorld.RoomContentsWorker.IsValidFillInteriorCell*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_IsValidFillInteriorCell_RimWorld_LayoutFillInteriorParms_Verse_IntVec3_Verse_Rot4_RimWorld_LayoutRoom_Verse_Map_" data-uid="RimWorld.RoomContentsWorker.IsValidFillInteriorCell(RimWorld.LayoutFillInteriorParms,Verse.IntVec3,Verse.Rot4,RimWorld.LayoutRoom,Verse.Map)">IsValidFillInteriorCell(LayoutFillInteriorParms, IntVec3, Rot4, LayoutRoom, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsValidFillInteriorCell(LayoutFillInteriorParms parms, IntVec3 cell, Rot4 rot, LayoutRoom room, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutFillInteriorParms.html">LayoutFillInteriorParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_IsValidPrefabRect_" data-uid="RimWorld.RoomContentsWorker.IsValidPrefabRect*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_IsValidPrefabRect_RimWorld_LayoutPrefabParms_Verse_IntVec3_Verse_Rot4_RimWorld_LayoutRoom_Verse_Map_" data-uid="RimWorld.RoomContentsWorker.IsValidPrefabRect(RimWorld.LayoutPrefabParms,Verse.IntVec3,Verse.Rot4,RimWorld.LayoutRoom,Verse.Map)">IsValidPrefabRect(LayoutPrefabParms, IntVec3, Rot4, LayoutRoom, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsValidPrefabRect(LayoutPrefabParms parms, IntVec3 cell, Rot4 rot, LayoutRoom room, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutPrefabParms.html">LayoutPrefabParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_IsValidScatterCell_" data-uid="RimWorld.RoomContentsWorker.IsValidScatterCell*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_IsValidScatterCell_RimWorld_LayoutScatterParms_Verse_IntVec3_RimWorld_LayoutRoom_Verse_Map_" data-uid="RimWorld.RoomContentsWorker.IsValidScatterCell(RimWorld.LayoutScatterParms,Verse.IntVec3,RimWorld.LayoutRoom,Verse.Map)">IsValidScatterCell(LayoutScatterParms, IntVec3, LayoutRoom, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsValidScatterCell(LayoutScatterParms parms, IntVec3 cell, LayoutRoom room, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutScatterParms.html">LayoutScatterParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_IsValidWallAttachmentCell_" data-uid="RimWorld.RoomContentsWorker.IsValidWallAttachmentCell*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_IsValidWallAttachmentCell_RimWorld_LayoutWallAttatchmentParms_Verse_IntVec3_Verse_Rot4_RimWorld_LayoutRoom_Verse_Map_" data-uid="RimWorld.RoomContentsWorker.IsValidWallAttachmentCell(RimWorld.LayoutWallAttatchmentParms,Verse.IntVec3,Verse.Rot4,RimWorld.LayoutRoom,Verse.Map)">IsValidWallAttachmentCell(LayoutWallAttatchmentParms, IntVec3, Rot4, LayoutRoom, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool IsValidWallAttachmentCell(LayoutWallAttatchmentParms parms, IntVec3 cell, Rot4 rot, LayoutRoom room, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutWallAttatchmentParms.html">LayoutWallAttatchmentParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_PostFillRooms_" data-uid="RimWorld.RoomContentsWorker.PostFillRooms*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_PostFillRooms_Verse_Map_RimWorld_LayoutRoom_RimWorld_Faction_System_Nullable_System_Single__" data-uid="RimWorld.RoomContentsWorker.PostFillRooms(Verse.Map,RimWorld.LayoutRoom,RimWorld.Faction,System.Nullable{System.Single})">PostFillRooms(Map, LayoutRoom, Faction, float?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostFillRooms(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_PreFillRooms_" data-uid="RimWorld.RoomContentsWorker.PreFillRooms*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_PreFillRooms_Verse_Map_RimWorld_LayoutRoom_RimWorld_Faction_System_Nullable_System_Single__" data-uid="RimWorld.RoomContentsWorker.PreFillRooms(Verse.Map,RimWorld.LayoutRoom,RimWorld.Faction,System.Nullable{System.Single})">PreFillRooms(Map, LayoutRoom, Faction, float?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PreFillRooms(Map map, LayoutRoom room, Faction faction, float? threatPoints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomContentsWorker_SpawnRoof_" data-uid="RimWorld.RoomContentsWorker.SpawnRoof*"></a>
+  <h4 id="RimWorld_RoomContentsWorker_SpawnRoof_Verse_Map_Verse_IntVec3_" data-uid="RimWorld.RoomContentsWorker.SpawnRoof(Verse.Map,Verse.IntVec3)">SpawnRoof(Map, IntVec3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SpawnRoof(Map map, IntVec3 cell)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

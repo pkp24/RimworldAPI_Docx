@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Zone_Growing </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Zone_Growing ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Zone_Growing">
+
+
+
+  <h1 id="RimWorld_Zone_Growing" data-uid="RimWorld.Zone_Growing" class="text-break">Class Zone_Growing</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.Zone.html">Zone</a></div>
+    <div class="level2"><span class="xref">Zone_Growing</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ISelectable.html">ISelectable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+    <div><a class="xref" href="Verse.IRenameable.html">IRenameable</a></div>
+    <div><a class="xref" href="RimWorld.IHideable.html">IHideable</a></div>
+    <div><a class="xref" href="RimWorld.IPlantToGrowSettable.html">IPlantToGrowSettable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_zoneManager">Zone.zoneManager</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_ID">Zone.ID</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_label">Zone.label</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_cells">Zone.cells</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_color">Zone.color</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_CreateMaterial">Zone.CreateMaterial()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_GetEnumerator">Zone.GetEnumerator()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_RemoveCell_Verse_IntVec3_">Zone.RemoveCell(IntVec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_Delete">Zone.Delete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_Delete_System_Boolean_">Zone.Delete(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_Deregister">Zone.Deregister()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_PostRegister">Zone.PostRegister()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_PostDeregister">Zone.PostDeregister()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_ContainsCell_Verse_IntVec3_">Zone.ContainsCell(IntVec3)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_GetInspectTabs">Zone.GetInspectTabs()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_CheckContiguous">Zone.CheckContiguous()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_GetFloatMenuOptions_Verse_Pawn_">Zone.GetFloatMenuOptions(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_ToString">Zone.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_GetUniqueLoadID">Zone.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_RenamableLabel">Zone.RenamableLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_BaseLabel">Zone.BaseLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_InspectLabel">Zone.InspectLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_Map">Zone.Map</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_Position">Zone.Position</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_Hidden">Zone.Hidden</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_Material">Zone.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_Cells">Zone.Cells</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_CellCount">Zone.CellCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_HeldThingsCount">Zone.HeldThingsCount</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_AllContainedThings">Zone.AllContainedThings</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Zone.html#Verse_Zone_ContainsStaticFire">Zone.ContainsStaticFire</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Zone_Growing_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Zone_Growing : Zone, IExposable, ISelectable, ILoadReferenceable, IRenameable, IHideable, IPlantToGrowSettable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Zone_Growing__ctor_" data-uid="RimWorld.Zone_Growing.#ctor*"></a>
+  <h4 id="RimWorld_Zone_Growing__ctor" data-uid="RimWorld.Zone_Growing.#ctor">Zone_Growing()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zone_Growing()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Zone_Growing__ctor_" data-uid="RimWorld.Zone_Growing.#ctor*"></a>
+  <h4 id="RimWorld_Zone_Growing__ctor_Verse_ZoneManager_" data-uid="RimWorld.Zone_Growing.#ctor(Verse.ZoneManager)">Zone_Growing(ZoneManager)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Zone_Growing(ZoneManager zoneManager)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ZoneManager.html">ZoneManager</a></td>
+        <td><span class="parametername">zoneManager</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_Zone_Growing_allowCut" data-uid="RimWorld.Zone_Growing.allowCut">allowCut</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool allowCut</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Zone_Growing_allowSow" data-uid="RimWorld.Zone_Growing.allowSow">allowSow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool allowSow</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_Zone_Growing_IsMultiselectable_" data-uid="RimWorld.Zone_Growing.IsMultiselectable*"></a>
+  <h4 id="RimWorld_Zone_Growing_IsMultiselectable" data-uid="RimWorld.Zone_Growing.IsMultiselectable">IsMultiselectable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsMultiselectable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Zone.html#Verse_Zone_IsMultiselectable">Zone.IsMultiselectable</a></div>
+
+
+  <a id="RimWorld_Zone_Growing_NextZoneColor_" data-uid="RimWorld.Zone_Growing.NextZoneColor*"></a>
+  <h4 id="RimWorld_Zone_Growing_NextZoneColor" data-uid="RimWorld.Zone_Growing.NextZoneColor">NextZoneColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Color NextZoneColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Zone.html#Verse_Zone_NextZoneColor">Zone.NextZoneColor</a></div>
+
+
+  <a id="RimWorld_Zone_Growing_PlantDefToGrow_" data-uid="RimWorld.Zone_Growing.PlantDefToGrow*"></a>
+  <h4 id="RimWorld_Zone_Growing_PlantDefToGrow" data-uid="RimWorld.Zone_Growing.PlantDefToGrow">PlantDefToGrow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingDef PlantDefToGrow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Zone_Growing_AddCell_" data-uid="RimWorld.Zone_Growing.AddCell*"></a>
+  <h4 id="RimWorld_Zone_Growing_AddCell_Verse_IntVec3_" data-uid="RimWorld.Zone_Growing.AddCell(Verse.IntVec3)">AddCell(IntVec3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void AddCell(IntVec3 c)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">c</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Zone.html#Verse_Zone_AddCell_Verse_IntVec3_">Zone.AddCell(IntVec3)</a></div>
+
+
+  <a id="RimWorld_Zone_Growing_CanAcceptSowNow_" data-uid="RimWorld.Zone_Growing.CanAcceptSowNow*"></a>
+  <h4 id="RimWorld_Zone_Growing_CanAcceptSowNow" data-uid="RimWorld.Zone_Growing.CanAcceptSowNow">CanAcceptSowNow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanAcceptSowNow()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Zone_Growing_ContentsStatistics_" data-uid="RimWorld.Zone_Growing.ContentsStatistics*"></a>
+  <h4 id="RimWorld_Zone_Growing_ContentsStatistics_System_Int32__System_Single__System_Int32__System_Single__System_Single__" data-uid="RimWorld.Zone_Growing.ContentsStatistics(System.Int32@,System.Single@,System.Int32@,System.Single@,System.Single@)">ContentsStatistics(out int, out float, out int, out float, out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ContentsStatistics(out int totalPlants, out float averagePlantAgeTicks, out int oldestPlantAgeTicks, out float averagePlantGrowth, out float maxPlantGrowth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">totalPlants</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">averagePlantAgeTicks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">oldestPlantAgeTicks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">averagePlantGrowth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">maxPlantGrowth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Zone_Growing_ExposeData_" data-uid="RimWorld.Zone_Growing.ExposeData*"></a>
+  <h4 id="RimWorld_Zone_Growing_ExposeData" data-uid="RimWorld.Zone_Growing.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExposeData()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Zone.html#Verse_Zone_ExposeData">Zone.ExposeData()</a></div>
+
+
+  <a id="RimWorld_Zone_Growing_GetGizmos_" data-uid="RimWorld.Zone_Growing.GetGizmos*"></a>
+  <h4 id="RimWorld_Zone_Growing_GetGizmos" data-uid="RimWorld.Zone_Growing.GetGizmos">GetGizmos()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(Zone_Growing.&lt;GetGizmos&gt;d__18))]
+public override IEnumerable&lt;Gizmo&gt; GetGizmos()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Gizmo.html">Gizmo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Zone.html#Verse_Zone_GetGizmos">Zone.GetGizmos()</a></div>
+
+
+  <a id="RimWorld_Zone_Growing_GetInspectString_" data-uid="RimWorld.Zone_Growing.GetInspectString*"></a>
+  <h4 id="RimWorld_Zone_Growing_GetInspectString" data-uid="RimWorld.Zone_Growing.GetInspectString">GetInspectString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetInspectString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Zone.html#Verse_Zone_GetInspectString">Zone.GetInspectString()</a></div>
+
+
+  <a id="RimWorld_Zone_Growing_GetPlantDefToGrow_" data-uid="RimWorld.Zone_Growing.GetPlantDefToGrow*"></a>
+  <h4 id="RimWorld_Zone_Growing_GetPlantDefToGrow" data-uid="RimWorld.Zone_Growing.GetPlantDefToGrow">GetPlantDefToGrow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingDef GetPlantDefToGrow()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Zone_Growing_GetZoneAddGizmos_" data-uid="RimWorld.Zone_Growing.GetZoneAddGizmos*"></a>
+  <h4 id="RimWorld_Zone_Growing_GetZoneAddGizmos" data-uid="RimWorld.Zone_Growing.GetZoneAddGizmos">GetZoneAddGizmos()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(Zone_Growing.&lt;GetZoneAddGizmos&gt;d__19))]
+public override IEnumerable&lt;Gizmo&gt; GetZoneAddGizmos()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Gizmo.html">Gizmo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Zone.html#Verse_Zone_GetZoneAddGizmos">Zone.GetZoneAddGizmos()</a></div>
+
+
+  <a id="RimWorld_Zone_Growing_GrowingQuadrumsDescription_" data-uid="RimWorld.Zone_Growing.GrowingQuadrumsDescription*"></a>
+  <h4 id="RimWorld_Zone_Growing_GrowingQuadrumsDescription_RimWorld_Planet_PlanetTile_Verse_ThingDef_" data-uid="RimWorld.Zone_Growing.GrowingQuadrumsDescription(RimWorld.Planet.PlanetTile,Verse.ThingDef)">GrowingQuadrumsDescription(PlanetTile, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GrowingQuadrumsDescription(PlanetTile tile, ThingDef plantDef = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">plantDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Zone_Growing_SetPlantDefToGrow_" data-uid="RimWorld.Zone_Growing.SetPlantDefToGrow*"></a>
+  <h4 id="RimWorld_Zone_Growing_SetPlantDefToGrow_Verse_ThingDef_" data-uid="RimWorld.Zone_Growing.SetPlantDefToGrow(Verse.ThingDef)">SetPlantDefToGrow(ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlantDefToGrow(ThingDef plantDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">plantDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ISelectable.html">ISelectable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.IRenameable.html">IRenameable</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.IHideable.html">IHideable</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.IPlantToGrowSettable.html">IPlantToGrowSettable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

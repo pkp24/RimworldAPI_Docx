@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CompInteractable </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CompInteractable ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.CompInteractable">
+
+
+
+  <h1 id="RimWorld_CompInteractable" data-uid="RimWorld.CompInteractable" class="text-break">Class CompInteractable</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.ThingComp.html">ThingComp</a></div>
+    <div class="level2"><span class="xref">CompInteractable</span></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompAnalyzable.html">CompAnalyzable</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompCerebrexCore.html">CompCerebrexCore</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompDestroyHeart.html">CompDestroyHeart</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompDisableUnnaturalCorpse.html">CompDisableUnnaturalCorpse</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompFloorEtchingRambling.html">CompFloorEtchingRambling</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompGoldenCube.html">CompGoldenCube</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompInteractableFoamTurret.html">CompInteractableFoamTurret</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompInteractableRocketswarmLauncher.html">CompInteractableRocketswarmLauncher</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompInteractable_GravshipShieldGenerator.html">CompInteractable_GravshipShieldGenerator</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompLabyrinthDoor.html">CompLabyrinthDoor</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompNociosphere.html">CompNociosphere</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompObeliskDeactivationInteractor.html">CompObeliskDeactivationInteractor</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompObeliskTriggerInteractor.html">CompObeliskTriggerInteractor</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompObelisk_Labyrinth.html">CompObelisk_Labyrinth</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompRevenantSpine.html">CompRevenantSpine</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompVoidNode.html">CompVoidNode</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.CompVoidStructure.html">CompVoidStructure</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="RimWorld.ITargetingSource.html">ITargetingSource</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_parent">ThingComp.parent</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_props">ThingComp.props</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Initialize_Verse_CompProperties_">ThingComp.Initialize(CompProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_ReceiveCompSignal_System_String_">ThingComp.ReceiveCompSignal(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostMapInit">ThingComp.PostMapInit()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostDeSpawn_Verse_Map_Verse_DestroyMode_">ThingComp.PostDeSpawn(Map, DestroyMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostPostMake">ThingComp.PostPostMake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompTickInterval_System_Int32_">ThingComp.CompTickInterval(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompTickRare">ThingComp.CompTickRare()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompTickLong">ThingComp.CompTickLong()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostPreApplyDamage_Verse_DamageInfo__System_Boolean__">ThingComp.PostPreApplyDamage(ref DamageInfo, out bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostPostApplyDamage_Verse_DamageInfo_System_Single_">ThingComp.PostPostApplyDamage(DamageInfo, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_DrawAt_UnityEngine_Vector3_System_Boolean_">ThingComp.DrawAt(Vector3, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostDraw">ThingComp.PostDraw()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostDrawExtraSelectionOverlays">ThingComp.PostDrawExtraSelectionOverlays()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostPrintOnto_Verse_SectionLayer_">ThingComp.PostPrintOnto(SectionLayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompPrintForPowerGrid_Verse_SectionLayer_">ThingComp.CompPrintForPowerGrid(SectionLayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PreAbsorbStack_Verse_Thing_System_Int32_">ThingComp.PreAbsorbStack(Thing, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostSplitOff_Verse_Thing_">ThingComp.PostSplitOff(Thing)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_TransformLabel_System_String_">ThingComp.TransformLabel(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompGetWornGizmosExtra">ThingComp.CompGetWornGizmosExtra()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_AllowStackWith_Verse_Thing_">ThingComp.AllowStackWith(Thing)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompTipStringExtra">ThingComp.CompTipStringExtra()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_GetDescriptionPart">ThingComp.GetDescriptionPart()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompMultiSelectFloatMenuOptions_System_Collections_Generic_IEnumerable_Verse_Pawn__">ThingComp.CompMultiSelectFloatMenuOptions(IEnumerable&lt;Pawn&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PrePreTraded_RimWorld_TradeAction_Verse_Pawn_RimWorld_ITrader_">ThingComp.PrePreTraded(TradeAction, Pawn, ITrader)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PrePostIngested_Verse_Pawn_">ThingComp.PrePostIngested(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostIngested_Verse_Pawn_">ThingComp.PostIngested(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostPostGeneratedForTrader_RimWorld_TraderKindDef_RimWorld_Planet_PlanetTile_RimWorld_Faction_">ThingComp.PostPostGeneratedForTrader(TraderKindDef, PlanetTile, Faction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_SignalReceived_RimWorld_Signal_">ThingComp.Notify_SignalReceived(Signal)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_LordDestroyed">ThingComp.Notify_LordDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_MapRemoved">ThingComp.Notify_MapRemoved()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_DrawGUIOverlay">ThingComp.DrawGUIOverlay()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_SpecialDisplayStats">ThingComp.SpecialDisplayStats()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_Equipped_Verse_Pawn_">ThingComp.Notify_Equipped(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_Unequipped_Verse_Pawn_">ThingComp.Notify_Unequipped(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_UsedVerb_Verse_Pawn_Verse_Verb_">ThingComp.Notify_UsedVerb(Pawn, Verb)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_UsedWeapon_Verse_Pawn_">ThingComp.Notify_UsedWeapon(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_Killed_Verse_Map_System_Nullable_Verse_DamageInfo__">ThingComp.Notify_Killed(Map, DamageInfo?)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_KilledPawn_Verse_Pawn_">ThingComp.Notify_KilledPawn(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_PassedToWorld">ThingComp.Notify_PassedToWorld()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_WearerDied">ThingComp.Notify_WearerDied()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_Downed">ThingComp.Notify_Downed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_Released">ThingComp.Notify_Released()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_DefsHotReloaded">ThingComp.Notify_DefsHotReloaded()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_AddBedThoughts_Verse_Pawn_">ThingComp.Notify_AddBedThoughts(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_AbandonedAtTile_RimWorld_Planet_PlanetTile_">ThingComp.Notify_AbandonedAtTile(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_KilledLeavingsLeft_System_Collections_Generic_List_Verse_Thing__">ThingComp.Notify_KilledLeavingsLeft(List&lt;Thing&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_Arrested_System_Boolean_">ThingComp.Notify_Arrested(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_PrisonBreakout">ThingComp.Notify_PrisonBreakout()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_Hacked_Verse_Pawn_">ThingComp.Notify_Hacked(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_ColorChanged">ThingComp.Notify_ColorChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_GetAdditionalLeavings_Verse_Map_Verse_DestroyMode_">ThingComp.GetAdditionalLeavings(Map, DestroyMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_GetAdditionalHarvestYield">ThingComp.GetAdditionalHarvestYield()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompDrawWornExtras">ThingComp.CompDrawWornExtras()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompAllowVerbCast_Verse_Verb_">ThingComp.CompAllowVerbCast(Verb)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompPreventClaimingBy_RimWorld_Faction_">ThingComp.CompPreventClaimingBy(Faction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompForceDeconstructable">ThingComp.CompForceDeconstructable()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompGetSpecialApparelScoreOffset">ThingComp.CompGetSpecialApparelScoreOffset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_RecipeProduced_Verse_Pawn_">ThingComp.Notify_RecipeProduced(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_DuplicatedFrom_Verse_Pawn_">ThingComp.Notify_DuplicatedFrom(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_BecameVisible">ThingComp.Notify_BecameVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_BecameInvisible">ThingComp.Notify_BecameInvisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_Notify_ForcedVisible">ThingComp.Notify_ForcedVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_GetStatFactor_RimWorld_StatDef_">ThingComp.GetStatFactor(StatDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_GetStatOffset_RimWorld_StatDef_">ThingComp.GetStatOffset(StatDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_GetStatsExplanation_RimWorld_StatDef_System_Text_StringBuilder_System_String_">ThingComp.GetStatsExplanation(StatDef, StringBuilder, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PreSwapMap">ThingComp.PreSwapMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostSwapMap">ThingComp.PostSwapMap()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_ForceColor">ThingComp.ForceColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_DontDrawParent">ThingComp.DontDrawParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_WantHoldWeapon_Verse_Pawn_">ThingComp.WantHoldWeapon(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompRenderNodes">ThingComp.CompRenderNodes()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_ToString">ThingComp.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_ParentHolder">ThingComp.ParentHolder</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_CompInteractable_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class CompInteractable : ThingComp, ITargetingSource</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_CompInteractable__ctor_" data-uid="RimWorld.CompInteractable.#ctor*"></a>
+  <h4 id="RimWorld_CompInteractable__ctor" data-uid="RimWorld.CompInteractable.#ctor">CompInteractable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CompInteractable()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_CompInteractable_InteractedSignal" data-uid="RimWorld.CompInteractable.InteractedSignal">InteractedSignal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string InteractedSignal = &quot;Interacted&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_CompInteractable_cooldownTicks" data-uid="RimWorld.CompInteractable.cooldownTicks">cooldownTicks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int cooldownTicks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_CompInteractable_interactionEffecter" data-uid="RimWorld.CompInteractable.interactionEffecter">interactionEffecter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Unsaved(false)]
+public Effecter interactionEffecter</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Effecter.html">Effecter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_CompInteractable_power" data-uid="RimWorld.CompInteractable.power">power</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Unsaved(false)]
+protected CompPowerTrader power</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.CompPowerTrader.html">CompPowerTrader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_CompInteractable_progress" data-uid="RimWorld.CompInteractable.progress">progress</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float progress</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_CompInteractable_ActivateOptionLabel_" data-uid="RimWorld.CompInteractable.ActivateOptionLabel*"></a>
+  <h4 id="RimWorld_CompInteractable_ActivateOptionLabel" data-uid="RimWorld.CompInteractable.ActivateOptionLabel">ActivateOptionLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string ActivateOptionLabel { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_Active_" data-uid="RimWorld.CompInteractable.Active*"></a>
+  <h4 id="RimWorld_CompInteractable_Active" data-uid="RimWorld.CompInteractable.Active">Active</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Active { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_CanCooldown_" data-uid="RimWorld.CompInteractable.CanCooldown*"></a>
+  <h4 id="RimWorld_CompInteractable_CanCooldown" data-uid="RimWorld.CompInteractable.CanCooldown">CanCooldown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanCooldown { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_Caster_" data-uid="RimWorld.CompInteractable.Caster*"></a>
+  <h4 id="RimWorld_CompInteractable_Caster" data-uid="RimWorld.CompInteractable.Caster">Caster</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Thing Caster { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_CasterIsPawn_" data-uid="RimWorld.CompInteractable.CasterIsPawn*"></a>
+  <h4 id="RimWorld_CompInteractable_CasterIsPawn" data-uid="RimWorld.CompInteractable.CasterIsPawn">CasterIsPawn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CasterIsPawn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_CasterPawn_" data-uid="RimWorld.CompInteractable.CasterPawn*"></a>
+  <h4 id="RimWorld_CompInteractable_CasterPawn" data-uid="RimWorld.CompInteractable.CasterPawn">CasterPawn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Pawn CasterPawn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_DestinationSelector_" data-uid="RimWorld.CompInteractable.DestinationSelector*"></a>
+  <h4 id="RimWorld_CompInteractable_DestinationSelector" data-uid="RimWorld.CompInteractable.DestinationSelector">DestinationSelector</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual ITargetingSource DestinationSelector { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.ITargetingSource.html">ITargetingSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_ExposeKey_" data-uid="RimWorld.CompInteractable.ExposeKey*"></a>
+  <h4 id="RimWorld_CompInteractable_ExposeKey" data-uid="RimWorld.CompInteractable.ExposeKey">ExposeKey</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ExposeKey { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_ExtraNamedArg_" data-uid="RimWorld.CompInteractable.ExtraNamedArg*"></a>
+  <h4 id="RimWorld_CompInteractable_ExtraNamedArg" data-uid="RimWorld.CompInteractable.ExtraNamedArg">ExtraNamedArg</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual NamedArgument? ExtraNamedArg { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.NamedArgument.html">NamedArgument</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_GetVerb_" data-uid="RimWorld.CompInteractable.GetVerb*"></a>
+  <h4 id="RimWorld_CompInteractable_GetVerb" data-uid="RimWorld.CompInteractable.GetVerb">GetVerb</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Verb GetVerb { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Verb.html">Verb</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_HideInteraction_" data-uid="RimWorld.CompInteractable.HideInteraction*"></a>
+  <h4 id="RimWorld_CompInteractable_HideInteraction" data-uid="RimWorld.CompInteractable.HideInteraction">HideInteraction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HideInteraction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_HidePawnTooltips_" data-uid="RimWorld.CompInteractable.HidePawnTooltips*"></a>
+  <h4 id="RimWorld_CompInteractable_HidePawnTooltips" data-uid="RimWorld.CompInteractable.HidePawnTooltips">HidePawnTooltips</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HidePawnTooltips { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_IsMeleeAttack_" data-uid="RimWorld.CompInteractable.IsMeleeAttack*"></a>
+  <h4 id="RimWorld_CompInteractable_IsMeleeAttack" data-uid="RimWorld.CompInteractable.IsMeleeAttack">IsMeleeAttack</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsMeleeAttack { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_MultiSelect_" data-uid="RimWorld.CompInteractable.MultiSelect*"></a>
+  <h4 id="RimWorld_CompInteractable_MultiSelect" data-uid="RimWorld.CompInteractable.MultiSelect">MultiSelect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MultiSelect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_OnCooldown_" data-uid="RimWorld.CompInteractable.OnCooldown*"></a>
+  <h4 id="RimWorld_CompInteractable_OnCooldown" data-uid="RimWorld.CompInteractable.OnCooldown">OnCooldown</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool OnCooldown { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_Props_" data-uid="RimWorld.CompInteractable.Props*"></a>
+  <h4 id="RimWorld_CompInteractable_Props" data-uid="RimWorld.CompInteractable.Props">Props</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompProperties_Interactable Props { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.CompProperties_Interactable.html">CompProperties_Interactable</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_Targetable_" data-uid="RimWorld.CompInteractable.Targetable*"></a>
+  <h4 id="RimWorld_CompInteractable_Targetable" data-uid="RimWorld.CompInteractable.Targetable">Targetable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Targetable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_TicksToActivate_" data-uid="RimWorld.CompInteractable.TicksToActivate*"></a>
+  <h4 id="RimWorld_CompInteractable_TicksToActivate" data-uid="RimWorld.CompInteractable.TicksToActivate">TicksToActivate</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int TicksToActivate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_UIIcon_" data-uid="RimWorld.CompInteractable.UIIcon*"></a>
+  <h4 id="RimWorld_CompInteractable_UIIcon" data-uid="RimWorld.CompInteractable.UIIcon">UIIcon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Texture2D UIIcon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture2D.html">Texture2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_targetParams_" data-uid="RimWorld.CompInteractable.targetParams*"></a>
+  <h4 id="RimWorld_CompInteractable_targetParams" data-uid="RimWorld.CompInteractable.targetParams">targetParams</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TargetingParameters targetParams { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.TargetingParameters.html">TargetingParameters</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_CompInteractable_CanHitTarget_" data-uid="RimWorld.CompInteractable.CanHitTarget*"></a>
+  <h4 id="RimWorld_CompInteractable_CanHitTarget_Verse_LocalTargetInfo_" data-uid="RimWorld.CompInteractable.CanHitTarget(Verse.LocalTargetInfo)">CanHitTarget(LocalTargetInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanHitTarget(LocalTargetInfo target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_CanInteract_" data-uid="RimWorld.CompInteractable.CanInteract*"></a>
+  <h4 id="RimWorld_CompInteractable_CanInteract_Verse_Pawn_System_Boolean_" data-uid="RimWorld.CompInteractable.CanInteract(Verse.Pawn,System.Boolean)">CanInteract(Pawn, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AcceptanceReport CanInteract(Pawn activateBy = null, bool checkOptionalItems = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">activateBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">checkOptionalItems</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AcceptanceReport.html">AcceptanceReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_CompFloatMenuOptions_" data-uid="RimWorld.CompInteractable.CompFloatMenuOptions*"></a>
+  <h4 id="RimWorld_CompInteractable_CompFloatMenuOptions_Verse_Pawn_" data-uid="RimWorld.CompInteractable.CompFloatMenuOptions(Verse.Pawn)">CompFloatMenuOptions(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(CompInteractable.&lt;CompFloatMenuOptions&gt;d__64))]
+public override IEnumerable&lt;FloatMenuOption&gt; CompFloatMenuOptions(Pawn selPawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">selPawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.FloatMenuOption.html">FloatMenuOption</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompFloatMenuOptions_Verse_Pawn_">ThingComp.CompFloatMenuOptions(Pawn)</a></div>
+
+
+  <a id="RimWorld_CompInteractable_CompGetGizmosExtra_" data-uid="RimWorld.CompInteractable.CompGetGizmosExtra*"></a>
+  <h4 id="RimWorld_CompInteractable_CompGetGizmosExtra" data-uid="RimWorld.CompInteractable.CompGetGizmosExtra">CompGetGizmosExtra()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(CompInteractable.&lt;CompGetGizmosExtra&gt;d__62))]
+public override IEnumerable&lt;Gizmo&gt; CompGetGizmosExtra()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Gizmo.html">Gizmo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompGetGizmosExtra">ThingComp.CompGetGizmosExtra()</a></div>
+
+
+  <a id="RimWorld_CompInteractable_CompInspectStringExtra_" data-uid="RimWorld.CompInteractable.CompInspectStringExtra*"></a>
+  <h4 id="RimWorld_CompInteractable_CompInspectStringExtra" data-uid="RimWorld.CompInteractable.CompInspectStringExtra">CompInspectStringExtra()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string CompInspectStringExtra()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompInspectStringExtra">ThingComp.CompInspectStringExtra()</a></div>
+
+
+  <a id="RimWorld_CompInteractable_CompTick_" data-uid="RimWorld.CompInteractable.CompTick*"></a>
+  <h4 id="RimWorld_CompInteractable_CompTick" data-uid="RimWorld.CompInteractable.CompTick">CompTick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CompTick()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_CompTick">ThingComp.CompTick()</a></div>
+
+
+  <a id="RimWorld_CompInteractable_CooldownEnded_" data-uid="RimWorld.CompInteractable.CooldownEnded*"></a>
+  <h4 id="RimWorld_CompInteractable_CooldownEnded_System_Boolean_" data-uid="RimWorld.CompInteractable.CooldownEnded(System.Boolean)">CooldownEnded(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void CooldownEnded(bool sendMessage = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">sendMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_Deactivate_" data-uid="RimWorld.CompInteractable.Deactivate*"></a>
+  <h4 id="RimWorld_CompInteractable_Deactivate" data-uid="RimWorld.CompInteractable.Deactivate">Deactivate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Deactivate()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_CompInteractable_DrawHighlight_" data-uid="RimWorld.CompInteractable.DrawHighlight*"></a>
+  <h4 id="RimWorld_CompInteractable_DrawHighlight_Verse_LocalTargetInfo_" data-uid="RimWorld.CompInteractable.DrawHighlight(Verse.LocalTargetInfo)">DrawHighlight(LocalTargetInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawHighlight(LocalTargetInfo target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_Interact_" data-uid="RimWorld.CompInteractable.Interact*"></a>
+  <h4 id="RimWorld_CompInteractable_Interact_Verse_Pawn_System_Boolean_" data-uid="RimWorld.CompInteractable.Interact(Verse.Pawn,System.Boolean)">Interact(Pawn, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Interact(Pawn caster, bool force = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">caster</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">force</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_Notify_InteractionEnded_" data-uid="RimWorld.CompInteractable.Notify_InteractionEnded*"></a>
+  <h4 id="RimWorld_CompInteractable_Notify_InteractionEnded" data-uid="RimWorld.CompInteractable.Notify_InteractionEnded">Notify_InteractionEnded()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify_InteractionEnded()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_CompInteractable_Notify_InteractionStarted_" data-uid="RimWorld.CompInteractable.Notify_InteractionStarted*"></a>
+  <h4 id="RimWorld_CompInteractable_Notify_InteractionStarted" data-uid="RimWorld.CompInteractable.Notify_InteractionStarted">Notify_InteractionStarted()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify_InteractionStarted()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_CompInteractable_OnGUI_" data-uid="RimWorld.CompInteractable.OnGUI*"></a>
+  <h4 id="RimWorld_CompInteractable_OnGUI_Verse_LocalTargetInfo_" data-uid="RimWorld.CompInteractable.OnGUI(Verse.LocalTargetInfo)">OnGUI(LocalTargetInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnGUI(LocalTargetInfo target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_OnInteracted_" data-uid="RimWorld.CompInteractable.OnInteracted*"></a>
+  <h4 id="RimWorld_CompInteractable_OnInteracted_Verse_Pawn_" data-uid="RimWorld.CompInteractable.OnInteracted(Verse.Pawn)">OnInteracted(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnInteracted(Pawn caster)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">caster</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_OrderForceTarget_" data-uid="RimWorld.CompInteractable.OrderForceTarget*"></a>
+  <h4 id="RimWorld_CompInteractable_OrderForceTarget_Verse_LocalTargetInfo_" data-uid="RimWorld.CompInteractable.OrderForceTarget(Verse.LocalTargetInfo)">OrderForceTarget(LocalTargetInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OrderForceTarget(LocalTargetInfo target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_PostDestroy_" data-uid="RimWorld.CompInteractable.PostDestroy*"></a>
+  <h4 id="RimWorld_CompInteractable_PostDestroy_Verse_DestroyMode_Verse_Map_" data-uid="RimWorld.CompInteractable.PostDestroy(Verse.DestroyMode,Verse.Map)">PostDestroy(DestroyMode, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PostDestroy(DestroyMode mode, Map previousMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DestroyMode.html">DestroyMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">previousMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostDestroy_Verse_DestroyMode_Verse_Map_">ThingComp.PostDestroy(DestroyMode, Map)</a></div>
+
+
+  <a id="RimWorld_CompInteractable_PostExposeData_" data-uid="RimWorld.CompInteractable.PostExposeData*"></a>
+  <h4 id="RimWorld_CompInteractable_PostExposeData" data-uid="RimWorld.CompInteractable.PostExposeData">PostExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PostExposeData()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostExposeData">ThingComp.PostExposeData()</a></div>
+
+
+  <a id="RimWorld_CompInteractable_PostSpawnSetup_" data-uid="RimWorld.CompInteractable.PostSpawnSetup*"></a>
+  <h4 id="RimWorld_CompInteractable_PostSpawnSetup_System_Boolean_" data-uid="RimWorld.CompInteractable.PostSpawnSetup(System.Boolean)">PostSpawnSetup(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PostSpawnSetup(bool respawningAfterLoad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">respawningAfterLoad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.ThingComp.html#Verse_ThingComp_PostSpawnSetup_System_Boolean_">ThingComp.PostSpawnSetup(bool)</a></div>
+
+
+  <a id="RimWorld_CompInteractable_ResetCooldown_" data-uid="RimWorld.CompInteractable.ResetCooldown*"></a>
+  <h4 id="RimWorld_CompInteractable_ResetCooldown_System_Boolean_" data-uid="RimWorld.CompInteractable.ResetCooldown(System.Boolean)">ResetCooldown(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetCooldown(bool sendMessage = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">sendMessage</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_SendDeactivateMessage_" data-uid="RimWorld.CompInteractable.SendDeactivateMessage*"></a>
+  <h4 id="RimWorld_CompInteractable_SendDeactivateMessage" data-uid="RimWorld.CompInteractable.SendDeactivateMessage">SendDeactivateMessage()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SendDeactivateMessage()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_CompInteractable_ShouldDeactivate_" data-uid="RimWorld.CompInteractable.ShouldDeactivate*"></a>
+  <h4 id="RimWorld_CompInteractable_ShouldDeactivate" data-uid="RimWorld.CompInteractable.ShouldDeactivate">ShouldDeactivate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool ShouldDeactivate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_StartCooldown_" data-uid="RimWorld.CompInteractable.StartCooldown*"></a>
+  <h4 id="RimWorld_CompInteractable_StartCooldown" data-uid="RimWorld.CompInteractable.StartCooldown">StartCooldown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void StartCooldown()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_CompInteractable_TryInteractTick_" data-uid="RimWorld.CompInteractable.TryInteractTick*"></a>
+  <h4 id="RimWorld_CompInteractable_TryInteractTick" data-uid="RimWorld.CompInteractable.TryInteractTick">TryInteractTick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TryInteractTick()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_CompInteractable_ValidateTarget_" data-uid="RimWorld.CompInteractable.ValidateTarget*"></a>
+  <h4 id="RimWorld_CompInteractable_ValidateTarget_Verse_LocalTargetInfo_System_Boolean_" data-uid="RimWorld.CompInteractable.ValidateTarget(Verse.LocalTargetInfo,System.Boolean)">ValidateTarget(LocalTargetInfo, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ValidateTarget(LocalTargetInfo target, bool showMessages = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">showMessages</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="RimWorld.ITargetingSource.html">ITargetingSource</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

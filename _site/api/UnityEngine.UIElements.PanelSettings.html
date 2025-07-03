@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PanelSettings </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PanelSettings ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.UIElements.PanelSettings">
+
+
+
+  <h1 id="UnityEngine_UIElements_PanelSettings" data-uid="UnityEngine.UIElements.PanelSettings" class="text-break">Class PanelSettings</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="UnityEngine.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="UnityEngine.ScriptableObject.html">ScriptableObject</a></div>
+    <div class="level3"><span class="xref">PanelSettings</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.ScriptableObject.html#UnityEngine_ScriptableObject_SetDirty">ScriptableObject.SetDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.ScriptableObject.html#UnityEngine_ScriptableObject_CreateInstance_System_String_">ScriptableObject.CreateInstance(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.ScriptableObject.html#UnityEngine_ScriptableObject_CreateInstance_System_Type_">ScriptableObject.CreateInstance(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.ScriptableObject.html#UnityEngine_ScriptableObject_CreateInstance__1">ScriptableObject.CreateInstance&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_GetInstanceID">Object.GetInstanceID()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Equals_System_Object_">Object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_">Object.InstantiateAsync&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Transform_">Object.InstantiateAsync&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_System_ReadOnlySpan_UnityEngine_Vector3__System_ReadOnlySpan_UnityEngine_Quaternion__">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_System_ReadOnlySpan_UnityEngine_Vector3__System_ReadOnlySpan_UnityEngine_Quaternion__">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.Instantiate(Object, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_">Object.Instantiate(Object, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_">Object.Instantiate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_SceneManagement_Scene_">Object.Instantiate(Object, Scene)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Transform_">Object.Instantiate(Object, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Transform_System_Boolean_">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_">Object.Instantiate&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Transform_">Object.Instantiate&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Transform_System_Boolean_">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Destroy_UnityEngine_Object_System_Single_">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Destroy_UnityEngine_Object_">Object.Destroy(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyImmediate_UnityEngine_Object_System_Boolean_">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyImmediate_UnityEngine_Object_">Object.DestroyImmediate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType_System_Type_">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType_System_Type_System_Boolean_">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType_System_Type_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType_System_Type_UnityEngine_FindObjectsInactive_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DontDestroyOnLoad_UnityEngine_Object_">Object.DontDestroyOnLoad(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyObject_UnityEngine_Object_System_Single_">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyObject_UnityEngine_Object_">Object.DestroyObject(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindSceneObjectsOfType_System_Type_">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfTypeIncludingAssets_System_Type_">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType__1">Object.FindObjectsOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType__1_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType__1_System_Boolean_">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType__1_UnityEngine_FindObjectsInactive_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType__1">Object.FindObjectOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType__1_System_Boolean_">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType__1">Object.FindFirstObjectByType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType__1">Object.FindAnyObjectByType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType__1_UnityEngine_FindObjectsInactive_">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType__1_UnityEngine_FindObjectsInactive_">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfTypeAll_System_Type_">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType_System_Type_">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType_System_Type_">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType_System_Type_">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType_System_Type_System_Boolean_">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType_System_Type_UnityEngine_FindObjectsInactive_">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType_System_Type_UnityEngine_FindObjectsInactive_">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_name">Object.name</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_hideFlags">Object.hideFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UIElements.html">UIElements</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.UIElementsModule.dll</h6>
+  <h5 id="UnityEngine_UIElements_PanelSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HelpURL(&quot;UIE-Runtime-Panel-Settings&quot;)]
+public class PanelSettings : ScriptableObject</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="UnityEngine_UIElements_PanelSettings_textSettings" data-uid="UnityEngine.UIElements.PanelSettings.textSettings">textSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+public PanelTextSettings textSettings</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.PanelTextSettings.html">PanelTextSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_clearColor_" data-uid="UnityEngine.UIElements.PanelSettings.clearColor*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_clearColor" data-uid="UnityEngine.UIElements.PanelSettings.clearColor">clearColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool clearColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_clearDepthStencil_" data-uid="UnityEngine.UIElements.PanelSettings.clearDepthStencil*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_clearDepthStencil" data-uid="UnityEngine.UIElements.PanelSettings.clearDepthStencil">clearDepthStencil</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool clearDepthStencil { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_colorClearValue_" data-uid="UnityEngine.UIElements.PanelSettings.colorClearValue*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_colorClearValue" data-uid="UnityEngine.UIElements.PanelSettings.colorClearValue">colorClearValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color colorClearValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_depthClearValue_" data-uid="UnityEngine.UIElements.PanelSettings.depthClearValue*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_depthClearValue" data-uid="UnityEngine.UIElements.PanelSettings.depthClearValue">depthClearValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float depthClearValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_dynamicAtlasSettings_" data-uid="UnityEngine.UIElements.PanelSettings.dynamicAtlasSettings*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_dynamicAtlasSettings" data-uid="UnityEngine.UIElements.PanelSettings.dynamicAtlasSettings">dynamicAtlasSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicAtlasSettings dynamicAtlasSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.DynamicAtlasSettings.html">DynamicAtlasSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_fallbackDpi_" data-uid="UnityEngine.UIElements.PanelSettings.fallbackDpi*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_fallbackDpi" data-uid="UnityEngine.UIElements.PanelSettings.fallbackDpi">fallbackDpi</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fallbackDpi { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_match_" data-uid="UnityEngine.UIElements.PanelSettings.match*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_match" data-uid="UnityEngine.UIElements.PanelSettings.match">match</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float match { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_referenceDpi_" data-uid="UnityEngine.UIElements.PanelSettings.referenceDpi*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_referenceDpi" data-uid="UnityEngine.UIElements.PanelSettings.referenceDpi">referenceDpi</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float referenceDpi { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_referenceResolution_" data-uid="UnityEngine.UIElements.PanelSettings.referenceResolution*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_referenceResolution" data-uid="UnityEngine.UIElements.PanelSettings.referenceResolution">referenceResolution</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2Int referenceResolution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector2Int.html">Vector2Int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_referenceSpritePixelsPerUnit_" data-uid="UnityEngine.UIElements.PanelSettings.referenceSpritePixelsPerUnit*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_referenceSpritePixelsPerUnit" data-uid="UnityEngine.UIElements.PanelSettings.referenceSpritePixelsPerUnit">referenceSpritePixelsPerUnit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float referenceSpritePixelsPerUnit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_scale_" data-uid="UnityEngine.UIElements.PanelSettings.scale*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_scale" data-uid="UnityEngine.UIElements.PanelSettings.scale">scale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_scaleMode_" data-uid="UnityEngine.UIElements.PanelSettings.scaleMode*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_scaleMode" data-uid="UnityEngine.UIElements.PanelSettings.scaleMode">scaleMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PanelScaleMode scaleMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.PanelScaleMode.html">PanelScaleMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_screenMatchMode_" data-uid="UnityEngine.UIElements.PanelSettings.screenMatchMode*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_screenMatchMode" data-uid="UnityEngine.UIElements.PanelSettings.screenMatchMode">screenMatchMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PanelScreenMatchMode screenMatchMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.PanelScreenMatchMode.html">PanelScreenMatchMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_sortingOrder_" data-uid="UnityEngine.UIElements.PanelSettings.sortingOrder*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_sortingOrder" data-uid="UnityEngine.UIElements.PanelSettings.sortingOrder">sortingOrder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float sortingOrder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_targetDisplay_" data-uid="UnityEngine.UIElements.PanelSettings.targetDisplay*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_targetDisplay" data-uid="UnityEngine.UIElements.PanelSettings.targetDisplay">targetDisplay</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int targetDisplay { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_targetTexture_" data-uid="UnityEngine.UIElements.PanelSettings.targetTexture*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_targetTexture" data-uid="UnityEngine.UIElements.PanelSettings.targetTexture">targetTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTexture targetTexture { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_themeStyleSheet_" data-uid="UnityEngine.UIElements.PanelSettings.themeStyleSheet*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_themeStyleSheet" data-uid="UnityEngine.UIElements.PanelSettings.themeStyleSheet">themeStyleSheet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThemeStyleSheet themeStyleSheet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.ThemeStyleSheet.html">ThemeStyleSheet</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_UIElements_PanelSettings_SetScreenToPanelSpaceFunction_" data-uid="UnityEngine.UIElements.PanelSettings.SetScreenToPanelSpaceFunction*"></a>
+  <h4 id="UnityEngine_UIElements_PanelSettings_SetScreenToPanelSpaceFunction_System_Func_UnityEngine_Vector2_UnityEngine_Vector2__" data-uid="UnityEngine.UIElements.PanelSettings.SetScreenToPanelSpaceFunction(System.Func{UnityEngine.Vector2,UnityEngine.Vector2})">SetScreenToPanelSpaceFunction(Func&lt;Vector2, Vector2&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScreenToPanelSpaceFunction(Func&lt;Vector2, Vector2&gt; screentoPanelSpaceFunction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="UnityEngine.Vector2.html">Vector2</a>, <a class="xref" href="UnityEngine.Vector2.html">Vector2</a>&gt;</td>
+        <td><span class="parametername">screentoPanelSpaceFunction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

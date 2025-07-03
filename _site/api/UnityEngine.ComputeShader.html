@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ComputeShader </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ComputeShader ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.ComputeShader">
+
+
+
+  <h1 id="UnityEngine_ComputeShader" data-uid="UnityEngine.ComputeShader" class="text-break">Class ComputeShader</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="UnityEngine.Object.html">Object</a></div>
+    <div class="level2"><span class="xref">ComputeShader</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_GetInstanceID">Object.GetInstanceID()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Equals_System_Object_">Object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_">Object.InstantiateAsync&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Transform_">Object.InstantiateAsync&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_System_ReadOnlySpan_UnityEngine_Vector3__System_ReadOnlySpan_UnityEngine_Quaternion__">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_System_ReadOnlySpan_UnityEngine_Vector3__System_ReadOnlySpan_UnityEngine_Quaternion__">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.Instantiate(Object, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_">Object.Instantiate(Object, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_">Object.Instantiate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_SceneManagement_Scene_">Object.Instantiate(Object, Scene)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Transform_">Object.Instantiate(Object, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Transform_System_Boolean_">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_">Object.Instantiate&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Transform_">Object.Instantiate&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Transform_System_Boolean_">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Destroy_UnityEngine_Object_System_Single_">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Destroy_UnityEngine_Object_">Object.Destroy(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyImmediate_UnityEngine_Object_System_Boolean_">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyImmediate_UnityEngine_Object_">Object.DestroyImmediate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType_System_Type_">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType_System_Type_System_Boolean_">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType_System_Type_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType_System_Type_UnityEngine_FindObjectsInactive_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DontDestroyOnLoad_UnityEngine_Object_">Object.DontDestroyOnLoad(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyObject_UnityEngine_Object_System_Single_">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyObject_UnityEngine_Object_">Object.DestroyObject(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindSceneObjectsOfType_System_Type_">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfTypeIncludingAssets_System_Type_">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType__1">Object.FindObjectsOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType__1_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType__1_System_Boolean_">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType__1_UnityEngine_FindObjectsInactive_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType__1">Object.FindObjectOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType__1_System_Boolean_">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType__1">Object.FindFirstObjectByType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType__1">Object.FindAnyObjectByType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType__1_UnityEngine_FindObjectsInactive_">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType__1_UnityEngine_FindObjectsInactive_">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfTypeAll_System_Type_">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType_System_Type_">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType_System_Type_">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType_System_Type_">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType_System_Type_System_Boolean_">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType_System_Type_UnityEngine_FindObjectsInactive_">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType_System_Type_UnityEngine_FindObjectsInactive_">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_name">Object.name</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_hideFlags">Object.hideFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.CoreModule.dll</h6>
+  <h5 id="UnityEngine_ComputeShader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class ComputeShader : Object</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="UnityEngine_ComputeShader_enabledKeywords_" data-uid="UnityEngine.ComputeShader.enabledKeywords*"></a>
+  <h4 id="UnityEngine_ComputeShader_enabledKeywords" data-uid="UnityEngine.ComputeShader.enabledKeywords">enabledKeywords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalKeyword[] enabledKeywords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.LocalKeyword.html">LocalKeyword</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_keywordSpace_" data-uid="UnityEngine.ComputeShader.keywordSpace*"></a>
+  <h4 id="UnityEngine_ComputeShader_keywordSpace" data-uid="UnityEngine.ComputeShader.keywordSpace">keywordSpace</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalKeywordSpace keywordSpace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.LocalKeywordSpace.html">LocalKeywordSpace</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_shaderKeywords_" data-uid="UnityEngine.ComputeShader.shaderKeywords*"></a>
+  <h4 id="UnityEngine_ComputeShader_shaderKeywords" data-uid="UnityEngine.ComputeShader.shaderKeywords">shaderKeywords</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string[] shaderKeywords { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_ComputeShader_DisableKeyword_" data-uid="UnityEngine.ComputeShader.DisableKeyword*"></a>
+  <h4 id="UnityEngine_ComputeShader_DisableKeyword_System_String_" data-uid="UnityEngine.ComputeShader.DisableKeyword(System.String)">DisableKeyword(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableKeyword(string keyword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">keyword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_DisableKeyword_" data-uid="UnityEngine.ComputeShader.DisableKeyword*"></a>
+  <h4 id="UnityEngine_ComputeShader_DisableKeyword_UnityEngine_Rendering_LocalKeyword__" data-uid="UnityEngine.ComputeShader.DisableKeyword(UnityEngine.Rendering.LocalKeyword@)">DisableKeyword(in LocalKeyword)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableKeyword(in LocalKeyword keyword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.LocalKeyword.html">LocalKeyword</a></td>
+        <td><span class="parametername">keyword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_Dispatch_" data-uid="UnityEngine.ComputeShader.Dispatch*"></a>
+  <h4 id="UnityEngine_ComputeShader_Dispatch_System_Int32_System_Int32_System_Int32_System_Int32_" data-uid="UnityEngine.ComputeShader.Dispatch(System.Int32,System.Int32,System.Int32,System.Int32)">Dispatch(int, int, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispatch(int kernelIndex, int threadGroupsX, int threadGroupsY, int threadGroupsZ)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">threadGroupsX</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">threadGroupsY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">threadGroupsZ</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_DispatchIndirect_" data-uid="UnityEngine.ComputeShader.DispatchIndirect*"></a>
+  <h4 id="UnityEngine_ComputeShader_DispatchIndirect_System_Int32_UnityEngine_ComputeBuffer_" data-uid="UnityEngine.ComputeShader.DispatchIndirect(System.Int32,UnityEngine.ComputeBuffer)">DispatchIndirect(int, ComputeBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromDocs]
+public void DispatchIndirect(int kernelIndex, ComputeBuffer argsBuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.ComputeBuffer.html">ComputeBuffer</a></td>
+        <td><span class="parametername">argsBuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_DispatchIndirect_" data-uid="UnityEngine.ComputeShader.DispatchIndirect*"></a>
+  <h4 id="UnityEngine_ComputeShader_DispatchIndirect_System_Int32_UnityEngine_ComputeBuffer_System_UInt32_" data-uid="UnityEngine.ComputeShader.DispatchIndirect(System.Int32,UnityEngine.ComputeBuffer,System.UInt32)">DispatchIndirect(int, ComputeBuffer, uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DispatchIndirect(int kernelIndex, ComputeBuffer argsBuffer, uint argsOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.ComputeBuffer.html">ComputeBuffer</a></td>
+        <td><span class="parametername">argsBuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">argsOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_DispatchIndirect_" data-uid="UnityEngine.ComputeShader.DispatchIndirect*"></a>
+  <h4 id="UnityEngine_ComputeShader_DispatchIndirect_System_Int32_UnityEngine_GraphicsBuffer_" data-uid="UnityEngine.ComputeShader.DispatchIndirect(System.Int32,UnityEngine.GraphicsBuffer)">DispatchIndirect(int, GraphicsBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromDocs]
+public void DispatchIndirect(int kernelIndex, GraphicsBuffer argsBuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.GraphicsBuffer.html">GraphicsBuffer</a></td>
+        <td><span class="parametername">argsBuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_DispatchIndirect_" data-uid="UnityEngine.ComputeShader.DispatchIndirect*"></a>
+  <h4 id="UnityEngine_ComputeShader_DispatchIndirect_System_Int32_UnityEngine_GraphicsBuffer_System_UInt32_" data-uid="UnityEngine.ComputeShader.DispatchIndirect(System.Int32,UnityEngine.GraphicsBuffer,System.UInt32)">DispatchIndirect(int, GraphicsBuffer, uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DispatchIndirect(int kernelIndex, GraphicsBuffer argsBuffer, uint argsOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.GraphicsBuffer.html">GraphicsBuffer</a></td>
+        <td><span class="parametername">argsBuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">argsOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_EnableKeyword_" data-uid="UnityEngine.ComputeShader.EnableKeyword*"></a>
+  <h4 id="UnityEngine_ComputeShader_EnableKeyword_System_String_" data-uid="UnityEngine.ComputeShader.EnableKeyword(System.String)">EnableKeyword(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableKeyword(string keyword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">keyword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_EnableKeyword_" data-uid="UnityEngine.ComputeShader.EnableKeyword*"></a>
+  <h4 id="UnityEngine_ComputeShader_EnableKeyword_UnityEngine_Rendering_LocalKeyword__" data-uid="UnityEngine.ComputeShader.EnableKeyword(UnityEngine.Rendering.LocalKeyword@)">EnableKeyword(in LocalKeyword)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableKeyword(in LocalKeyword keyword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.LocalKeyword.html">LocalKeyword</a></td>
+        <td><span class="parametername">keyword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_FindKernel_" data-uid="UnityEngine.ComputeShader.FindKernel*"></a>
+  <h4 id="UnityEngine_ComputeShader_FindKernel_System_String_" data-uid="UnityEngine.ComputeShader.FindKernel(System.String)">FindKernel(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FindKernel(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_GetKernelThreadGroupSizes_" data-uid="UnityEngine.ComputeShader.GetKernelThreadGroupSizes*"></a>
+  <h4 id="UnityEngine_ComputeShader_GetKernelThreadGroupSizes_System_Int32_System_UInt32__System_UInt32__System_UInt32__" data-uid="UnityEngine.ComputeShader.GetKernelThreadGroupSizes(System.Int32,System.UInt32@,System.UInt32@,System.UInt32@)">GetKernelThreadGroupSizes(int, out uint, out uint, out uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetKernelThreadGroupSizes(int kernelIndex, out uint x, out uint y, out uint z)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">x</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">y</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">z</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_HasKernel_" data-uid="UnityEngine.ComputeShader.HasKernel*"></a>
+  <h4 id="UnityEngine_ComputeShader_HasKernel_System_String_" data-uid="UnityEngine.ComputeShader.HasKernel(System.String)">HasKernel(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasKernel(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_IsKeywordEnabled_" data-uid="UnityEngine.ComputeShader.IsKeywordEnabled*"></a>
+  <h4 id="UnityEngine_ComputeShader_IsKeywordEnabled_System_String_" data-uid="UnityEngine.ComputeShader.IsKeywordEnabled(System.String)">IsKeywordEnabled(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsKeywordEnabled(string keyword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">keyword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_IsKeywordEnabled_" data-uid="UnityEngine.ComputeShader.IsKeywordEnabled*"></a>
+  <h4 id="UnityEngine_ComputeShader_IsKeywordEnabled_UnityEngine_Rendering_LocalKeyword__" data-uid="UnityEngine.ComputeShader.IsKeywordEnabled(UnityEngine.Rendering.LocalKeyword@)">IsKeywordEnabled(in LocalKeyword)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsKeywordEnabled(in LocalKeyword keyword)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.LocalKeyword.html">LocalKeyword</a></td>
+        <td><span class="parametername">keyword</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_IsSupported_" data-uid="UnityEngine.ComputeShader.IsSupported*"></a>
+  <h4 id="UnityEngine_ComputeShader_IsSupported_System_Int32_" data-uid="UnityEngine.ComputeShader.IsSupported(System.Int32)">IsSupported(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSupported(int kernelIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetBool_" data-uid="UnityEngine.ComputeShader.SetBool*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetBool_System_Int32_System_Boolean_" data-uid="UnityEngine.ComputeShader.SetBool(System.Int32,System.Boolean)">SetBool(int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBool(int nameID, bool val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetBool_" data-uid="UnityEngine.ComputeShader.SetBool*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetBool_System_String_System_Boolean_" data-uid="UnityEngine.ComputeShader.SetBool(System.String,System.Boolean)">SetBool(string, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBool(string name, bool val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetBuffer_" data-uid="UnityEngine.ComputeShader.SetBuffer*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetBuffer_System_Int32_System_Int32_UnityEngine_ComputeBuffer_" data-uid="UnityEngine.ComputeShader.SetBuffer(System.Int32,System.Int32,UnityEngine.ComputeBuffer)">SetBuffer(int, int, ComputeBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBuffer(int kernelIndex, int nameID, ComputeBuffer buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.ComputeBuffer.html">ComputeBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetBuffer_" data-uid="UnityEngine.ComputeShader.SetBuffer*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetBuffer_System_Int32_System_Int32_UnityEngine_GraphicsBuffer_" data-uid="UnityEngine.ComputeShader.SetBuffer(System.Int32,System.Int32,UnityEngine.GraphicsBuffer)">SetBuffer(int, int, GraphicsBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBuffer(int kernelIndex, int nameID, GraphicsBuffer buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.GraphicsBuffer.html">GraphicsBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetBuffer_" data-uid="UnityEngine.ComputeShader.SetBuffer*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetBuffer_System_Int32_System_String_UnityEngine_ComputeBuffer_" data-uid="UnityEngine.ComputeShader.SetBuffer(System.Int32,System.String,UnityEngine.ComputeBuffer)">SetBuffer(int, string, ComputeBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBuffer(int kernelIndex, string name, ComputeBuffer buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.ComputeBuffer.html">ComputeBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetBuffer_" data-uid="UnityEngine.ComputeShader.SetBuffer*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetBuffer_System_Int32_System_String_UnityEngine_GraphicsBuffer_" data-uid="UnityEngine.ComputeShader.SetBuffer(System.Int32,System.String,UnityEngine.GraphicsBuffer)">SetBuffer(int, string, GraphicsBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBuffer(int kernelIndex, string name, GraphicsBuffer buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.GraphicsBuffer.html">GraphicsBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetConstantBuffer_" data-uid="UnityEngine.ComputeShader.SetConstantBuffer*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetConstantBuffer_System_Int32_UnityEngine_ComputeBuffer_System_Int32_System_Int32_" data-uid="UnityEngine.ComputeShader.SetConstantBuffer(System.Int32,UnityEngine.ComputeBuffer,System.Int32,System.Int32)">SetConstantBuffer(int, ComputeBuffer, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConstantBuffer(int nameID, ComputeBuffer buffer, int offset, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.ComputeBuffer.html">ComputeBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetConstantBuffer_" data-uid="UnityEngine.ComputeShader.SetConstantBuffer*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetConstantBuffer_System_Int32_UnityEngine_GraphicsBuffer_System_Int32_System_Int32_" data-uid="UnityEngine.ComputeShader.SetConstantBuffer(System.Int32,UnityEngine.GraphicsBuffer,System.Int32,System.Int32)">SetConstantBuffer(int, GraphicsBuffer, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConstantBuffer(int nameID, GraphicsBuffer buffer, int offset, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.GraphicsBuffer.html">GraphicsBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetConstantBuffer_" data-uid="UnityEngine.ComputeShader.SetConstantBuffer*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetConstantBuffer_System_String_UnityEngine_ComputeBuffer_System_Int32_System_Int32_" data-uid="UnityEngine.ComputeShader.SetConstantBuffer(System.String,UnityEngine.ComputeBuffer,System.Int32,System.Int32)">SetConstantBuffer(string, ComputeBuffer, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConstantBuffer(string name, ComputeBuffer buffer, int offset, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.ComputeBuffer.html">ComputeBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetConstantBuffer_" data-uid="UnityEngine.ComputeShader.SetConstantBuffer*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetConstantBuffer_System_String_UnityEngine_GraphicsBuffer_System_Int32_System_Int32_" data-uid="UnityEngine.ComputeShader.SetConstantBuffer(System.String,UnityEngine.GraphicsBuffer,System.Int32,System.Int32)">SetConstantBuffer(string, GraphicsBuffer, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetConstantBuffer(string name, GraphicsBuffer buffer, int offset, int size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.GraphicsBuffer.html">GraphicsBuffer</a></td>
+        <td><span class="parametername">buffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetFloat_" data-uid="UnityEngine.ComputeShader.SetFloat*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetFloat_System_Int32_System_Single_" data-uid="UnityEngine.ComputeShader.SetFloat(System.Int32,System.Single)">SetFloat(int, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloat(int nameID, float val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetFloat_" data-uid="UnityEngine.ComputeShader.SetFloat*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetFloat_System_String_System_Single_" data-uid="UnityEngine.ComputeShader.SetFloat(System.String,System.Single)">SetFloat(string, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloat(string name, float val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetFloats_" data-uid="UnityEngine.ComputeShader.SetFloats*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetFloats_System_Int32_System_Single___" data-uid="UnityEngine.ComputeShader.SetFloats(System.Int32,System.Single[])">SetFloats(int, params float[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloats(int nameID, params float[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetFloats_" data-uid="UnityEngine.ComputeShader.SetFloats*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetFloats_System_String_System_Single___" data-uid="UnityEngine.ComputeShader.SetFloats(System.String,System.Single[])">SetFloats(string, params float[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFloats(string name, params float[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetInt_" data-uid="UnityEngine.ComputeShader.SetInt*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetInt_System_Int32_System_Int32_" data-uid="UnityEngine.ComputeShader.SetInt(System.Int32,System.Int32)">SetInt(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInt(int nameID, int val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetInt_" data-uid="UnityEngine.ComputeShader.SetInt*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetInt_System_String_System_Int32_" data-uid="UnityEngine.ComputeShader.SetInt(System.String,System.Int32)">SetInt(string, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInt(string name, int val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetInts_" data-uid="UnityEngine.ComputeShader.SetInts*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetInts_System_Int32_System_Int32___" data-uid="UnityEngine.ComputeShader.SetInts(System.Int32,System.Int32[])">SetInts(int, params int[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInts(int nameID, params int[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetInts_" data-uid="UnityEngine.ComputeShader.SetInts*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetInts_System_String_System_Int32___" data-uid="UnityEngine.ComputeShader.SetInts(System.String,System.Int32[])">SetInts(string, params int[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetInts(string name, params int[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetKeyword_" data-uid="UnityEngine.ComputeShader.SetKeyword*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetKeyword_UnityEngine_Rendering_LocalKeyword__System_Boolean_" data-uid="UnityEngine.ComputeShader.SetKeyword(UnityEngine.Rendering.LocalKeyword@,System.Boolean)">SetKeyword(in LocalKeyword, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKeyword(in LocalKeyword keyword, bool value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.LocalKeyword.html">LocalKeyword</a></td>
+        <td><span class="parametername">keyword</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetMatrix_" data-uid="UnityEngine.ComputeShader.SetMatrix*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetMatrix_System_Int32_UnityEngine_Matrix4x4_" data-uid="UnityEngine.ComputeShader.SetMatrix(System.Int32,UnityEngine.Matrix4x4)">SetMatrix(int, Matrix4x4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix(int nameID, Matrix4x4 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetMatrix_" data-uid="UnityEngine.ComputeShader.SetMatrix*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetMatrix_System_String_UnityEngine_Matrix4x4_" data-uid="UnityEngine.ComputeShader.SetMatrix(System.String,UnityEngine.Matrix4x4)">SetMatrix(string, Matrix4x4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrix(string name, Matrix4x4 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetMatrixArray_" data-uid="UnityEngine.ComputeShader.SetMatrixArray*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetMatrixArray_System_Int32_UnityEngine_Matrix4x4___" data-uid="UnityEngine.ComputeShader.SetMatrixArray(System.Int32,UnityEngine.Matrix4x4[])">SetMatrixArray(int, Matrix4x4[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrixArray(int nameID, Matrix4x4[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetMatrixArray_" data-uid="UnityEngine.ComputeShader.SetMatrixArray*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetMatrixArray_System_String_UnityEngine_Matrix4x4___" data-uid="UnityEngine.ComputeShader.SetMatrixArray(System.String,UnityEngine.Matrix4x4[])">SetMatrixArray(string, Matrix4x4[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMatrixArray(string name, Matrix4x4[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetTexture_" data-uid="UnityEngine.ComputeShader.SetTexture*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetTexture_System_Int32_System_Int32_UnityEngine_RenderTexture_System_Int32_UnityEngine_Rendering_RenderTextureSubElement_" data-uid="UnityEngine.ComputeShader.SetTexture(System.Int32,System.Int32,UnityEngine.RenderTexture,System.Int32,UnityEngine.Rendering.RenderTextureSubElement)">SetTexture(int, int, RenderTexture, int, RenderTextureSubElement)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(int kernelIndex, int nameID, RenderTexture texture, int mipLevel, RenderTextureSubElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RenderTextureSubElement.html">RenderTextureSubElement</a></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetTexture_" data-uid="UnityEngine.ComputeShader.SetTexture*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetTexture_System_Int32_System_Int32_UnityEngine_Texture_" data-uid="UnityEngine.ComputeShader.SetTexture(System.Int32,System.Int32,UnityEngine.Texture)">SetTexture(int, int, Texture)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(int kernelIndex, int nameID, Texture texture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetTexture_" data-uid="UnityEngine.ComputeShader.SetTexture*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetTexture_System_Int32_System_Int32_UnityEngine_Texture_System_Int32_" data-uid="UnityEngine.ComputeShader.SetTexture(System.Int32,System.Int32,UnityEngine.Texture,System.Int32)">SetTexture(int, int, Texture, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(int kernelIndex, int nameID, Texture texture, int mipLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetTexture_" data-uid="UnityEngine.ComputeShader.SetTexture*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetTexture_System_Int32_System_String_UnityEngine_RenderTexture_System_Int32_UnityEngine_Rendering_RenderTextureSubElement_" data-uid="UnityEngine.ComputeShader.SetTexture(System.Int32,System.String,UnityEngine.RenderTexture,System.Int32,UnityEngine.Rendering.RenderTextureSubElement)">SetTexture(int, string, RenderTexture, int, RenderTextureSubElement)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(int kernelIndex, string name, RenderTexture texture, int mipLevel, RenderTextureSubElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RenderTextureSubElement.html">RenderTextureSubElement</a></td>
+        <td><span class="parametername">element</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetTexture_" data-uid="UnityEngine.ComputeShader.SetTexture*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetTexture_System_Int32_System_String_UnityEngine_Texture_" data-uid="UnityEngine.ComputeShader.SetTexture(System.Int32,System.String,UnityEngine.Texture)">SetTexture(int, string, Texture)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(int kernelIndex, string name, Texture texture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetTexture_" data-uid="UnityEngine.ComputeShader.SetTexture*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetTexture_System_Int32_System_String_UnityEngine_Texture_System_Int32_" data-uid="UnityEngine.ComputeShader.SetTexture(System.Int32,System.String,UnityEngine.Texture,System.Int32)">SetTexture(int, string, Texture, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTexture(int kernelIndex, string name, Texture texture, int mipLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture.html">Texture</a></td>
+        <td><span class="parametername">texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mipLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetTextureFromGlobal_" data-uid="UnityEngine.ComputeShader.SetTextureFromGlobal*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetTextureFromGlobal_System_Int32_System_Int32_System_Int32_" data-uid="UnityEngine.ComputeShader.SetTextureFromGlobal(System.Int32,System.Int32,System.Int32)">SetTextureFromGlobal(int, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextureFromGlobal(int kernelIndex, int nameID, int globalTextureNameID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">globalTextureNameID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetTextureFromGlobal_" data-uid="UnityEngine.ComputeShader.SetTextureFromGlobal*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetTextureFromGlobal_System_Int32_System_String_System_String_" data-uid="UnityEngine.ComputeShader.SetTextureFromGlobal(System.Int32,System.String,System.String)">SetTextureFromGlobal(int, string, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextureFromGlobal(int kernelIndex, string name, string globalTextureName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">kernelIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">globalTextureName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetVector_" data-uid="UnityEngine.ComputeShader.SetVector*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetVector_System_Int32_UnityEngine_Vector4_" data-uid="UnityEngine.ComputeShader.SetVector(System.Int32,UnityEngine.Vector4)">SetVector(int, Vector4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector(int nameID, Vector4 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector4.html">Vector4</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetVector_" data-uid="UnityEngine.ComputeShader.SetVector*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetVector_System_String_UnityEngine_Vector4_" data-uid="UnityEngine.ComputeShader.SetVector(System.String,UnityEngine.Vector4)">SetVector(string, Vector4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVector(string name, Vector4 val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector4.html">Vector4</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetVectorArray_" data-uid="UnityEngine.ComputeShader.SetVectorArray*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetVectorArray_System_Int32_UnityEngine_Vector4___" data-uid="UnityEngine.ComputeShader.SetVectorArray(System.Int32,UnityEngine.Vector4[])">SetVectorArray(int, Vector4[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVectorArray(int nameID, Vector4[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">nameID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector4.html">Vector4</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_ComputeShader_SetVectorArray_" data-uid="UnityEngine.ComputeShader.SetVectorArray*"></a>
+  <h4 id="UnityEngine_ComputeShader_SetVectorArray_System_String_UnityEngine_Vector4___" data-uid="UnityEngine.ComputeShader.SetVectorArray(System.String,UnityEngine.Vector4[])">SetVectorArray(string, Vector4[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVectorArray(string name, Vector4[] values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector4.html">Vector4</a>[]</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

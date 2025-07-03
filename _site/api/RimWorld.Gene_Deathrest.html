@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Gene_Deathrest </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Gene_Deathrest ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Gene_Deathrest">
+
+
+
+  <h1 id="RimWorld_Gene_Deathrest" data-uid="RimWorld.Gene_Deathrest" class="text-break">Class Gene_Deathrest</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.Gene.html">Gene</a></div>
+    <div class="level2"><span class="xref">Gene_Deathrest</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_def">Gene.def</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_pawn">Gene.pawn</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_loadID">Gene.loadID</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_overriddenByGene">Gene.overriddenByGene</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_passionPreAdd">Gene.passionPreAdd</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_PostMake">Gene.PostMake()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_Tick">Gene.Tick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_OverrideBy_Verse_Gene_">Gene.OverrideBy(Gene)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_NewPassionForOnRemoval_RimWorld_SkillRecord_">Gene.NewPassionForOnRemoval(SkillRecord)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_Notify_IngestedThing_Verse_Thing_System_Int32_">Gene.Notify_IngestedThing(Thing, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_GetUniqueLoadID">Gene.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_Label">Gene.Label</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_LabelCap">Gene.LabelCap</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_Overridden">Gene.Overridden</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_Active">Gene.Active</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Gene.html#Verse_Gene_DisabledWorkTypes">Gene.DisabledWorkTypes</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Gene_Deathrest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Gene_Deathrest : Gene, IExposable, ILoadReferenceable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Gene_Deathrest__ctor_" data-uid="RimWorld.Gene_Deathrest.#ctor*"></a>
+  <h4 id="RimWorld_Gene_Deathrest__ctor" data-uid="RimWorld.Gene_Deathrest.#ctor">Gene_Deathrest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gene_Deathrest()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_Gene_Deathrest_BaseDeathrestTicksWithoutInterruptedHediff" data-uid="RimWorld.Gene_Deathrest.BaseDeathrestTicksWithoutInterruptedHediff">BaseDeathrestTicksWithoutInterruptedHediff</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int BaseDeathrestTicksWithoutInterruptedHediff = 240000</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Gene_Deathrest_PresencePercentRequiredToApply" data-uid="RimWorld.Gene_Deathrest.PresencePercentRequiredToApply">PresencePercentRequiredToApply</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float PresencePercentRequiredToApply = 0.75</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Gene_Deathrest_adjustedDeathrestTicks" data-uid="RimWorld.Gene_Deathrest.adjustedDeathrestTicks">adjustedDeathrestTicks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float adjustedDeathrestTicks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Gene_Deathrest_autoWake" data-uid="RimWorld.Gene_Deathrest.autoWake">autoWake</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool autoWake</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Gene_Deathrest_chamberThoughtIndex" data-uid="RimWorld.Gene_Deathrest.chamberThoughtIndex">chamberThoughtIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int chamberThoughtIndex</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Gene_Deathrest_deathrestTicks" data-uid="RimWorld.Gene_Deathrest.deathrestTicks">deathrestTicks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int deathrestTicks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_Gene_Deathrest_AtBuildingCapacityLimit_" data-uid="RimWorld.Gene_Deathrest.AtBuildingCapacityLimit*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_AtBuildingCapacityLimit" data-uid="RimWorld.Gene_Deathrest.AtBuildingCapacityLimit">AtBuildingCapacityLimit</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AtBuildingCapacityLimit { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_BoundBuildings_" data-uid="RimWorld.Gene_Deathrest.BoundBuildings*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_BoundBuildings" data-uid="RimWorld.Gene_Deathrest.BoundBuildings">BoundBuildings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Thing&gt; BoundBuildings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_BoundComps_" data-uid="RimWorld.Gene_Deathrest.BoundComps*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_BoundComps" data-uid="RimWorld.Gene_Deathrest.BoundComps">BoundComps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;CompDeathrestBindable&gt; BoundComps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.CompDeathrestBindable.html">CompDeathrestBindable</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_CurrentCapacity_" data-uid="RimWorld.Gene_Deathrest.CurrentCapacity*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_CurrentCapacity" data-uid="RimWorld.Gene_Deathrest.CurrentCapacity">CurrentCapacity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentCapacity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_DeathrestCapacity_" data-uid="RimWorld.Gene_Deathrest.DeathrestCapacity*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_DeathrestCapacity" data-uid="RimWorld.Gene_Deathrest.DeathrestCapacity">DeathrestCapacity</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DeathrestCapacity { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_DeathrestEfficiency_" data-uid="RimWorld.Gene_Deathrest.DeathrestEfficiency*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_DeathrestEfficiency" data-uid="RimWorld.Gene_Deathrest.DeathrestEfficiency">DeathrestEfficiency</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DeathrestEfficiency { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_DeathrestNeed_" data-uid="RimWorld.Gene_Deathrest.DeathrestNeed*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_DeathrestNeed" data-uid="RimWorld.Gene_Deathrest.DeathrestNeed">DeathrestNeed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Need_Deathrest DeathrestNeed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Need_Deathrest.html">Need_Deathrest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_DeathrestPercent_" data-uid="RimWorld.Gene_Deathrest.DeathrestPercent*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_DeathrestPercent" data-uid="RimWorld.Gene_Deathrest.DeathrestPercent">DeathrestPercent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DeathrestPercent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_MinDeathrestTicks_" data-uid="RimWorld.Gene_Deathrest.MinDeathrestTicks*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_MinDeathrestTicks" data-uid="RimWorld.Gene_Deathrest.MinDeathrestTicks">MinDeathrestTicks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MinDeathrestTicks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_ShowWakeAlert_" data-uid="RimWorld.Gene_Deathrest.ShowWakeAlert*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_ShowWakeAlert" data-uid="RimWorld.Gene_Deathrest.ShowWakeAlert">ShowWakeAlert</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ShowWakeAlert { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Gene_Deathrest_BindTo_" data-uid="RimWorld.Gene_Deathrest.BindTo*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_BindTo_RimWorld_CompDeathrestBindable_" data-uid="RimWorld.Gene_Deathrest.BindTo(RimWorld.CompDeathrestBindable)">BindTo(CompDeathrestBindable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BindTo(CompDeathrestBindable bindComp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.CompDeathrestBindable.html">CompDeathrestBindable</a></td>
+        <td><span class="parametername">bindComp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_BindingWillExceedStackLimit_" data-uid="RimWorld.Gene_Deathrest.BindingWillExceedStackLimit*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_BindingWillExceedStackLimit_RimWorld_CompDeathrestBindable_" data-uid="RimWorld.Gene_Deathrest.BindingWillExceedStackLimit(RimWorld.CompDeathrestBindable)">BindingWillExceedStackLimit(CompDeathrestBindable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool BindingWillExceedStackLimit(CompDeathrestBindable bindComp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.CompDeathrestBindable.html">CompDeathrestBindable</a></td>
+        <td><span class="parametername">bindComp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_CanBindToBindable_" data-uid="RimWorld.Gene_Deathrest.CanBindToBindable*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_CanBindToBindable_RimWorld_CompDeathrestBindable_" data-uid="RimWorld.Gene_Deathrest.CanBindToBindable(RimWorld.CompDeathrestBindable)">CanBindToBindable(CompDeathrestBindable)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanBindToBindable(CompDeathrestBindable bindComp)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.CompDeathrestBindable.html">CompDeathrestBindable</a></td>
+        <td><span class="parametername">bindComp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_ExposeData_" data-uid="RimWorld.Gene_Deathrest.ExposeData*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_ExposeData" data-uid="RimWorld.Gene_Deathrest.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExposeData()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_ExposeData">Gene.ExposeData()</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_GetGizmos_" data-uid="RimWorld.Gene_Deathrest.GetGizmos*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_GetGizmos" data-uid="RimWorld.Gene_Deathrest.GetGizmos">GetGizmos()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(Gene_Deathrest.&lt;GetGizmos&gt;d__58))]
+public override IEnumerable&lt;Gizmo&gt; GetGizmos()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Gizmo.html">Gizmo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_GetGizmos">Gene.GetGizmos()</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_Notify_BoundBuildingDeSpawned_" data-uid="RimWorld.Gene_Deathrest.Notify_BoundBuildingDeSpawned*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_Notify_BoundBuildingDeSpawned_Verse_Thing_" data-uid="RimWorld.Gene_Deathrest.Notify_BoundBuildingDeSpawned(Verse.Thing)">Notify_BoundBuildingDeSpawned(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify_BoundBuildingDeSpawned(Thing building)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">building</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_Notify_DeathrestEnded_" data-uid="RimWorld.Gene_Deathrest.Notify_DeathrestEnded*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_Notify_DeathrestEnded" data-uid="RimWorld.Gene_Deathrest.Notify_DeathrestEnded">Notify_DeathrestEnded()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify_DeathrestEnded()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Gene_Deathrest_Notify_DeathrestStarted_" data-uid="RimWorld.Gene_Deathrest.Notify_DeathrestStarted*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_Notify_DeathrestStarted" data-uid="RimWorld.Gene_Deathrest.Notify_DeathrestStarted">Notify_DeathrestStarted()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify_DeathrestStarted()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Gene_Deathrest_Notify_NewColony_" data-uid="RimWorld.Gene_Deathrest.Notify_NewColony*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_Notify_NewColony" data-uid="RimWorld.Gene_Deathrest.Notify_NewColony">Notify_NewColony()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Notify_NewColony()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_Notify_NewColony">Gene.Notify_NewColony()</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_Notify_PawnDied_" data-uid="RimWorld.Gene_Deathrest.Notify_PawnDied*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_Notify_PawnDied_System_Nullable_Verse_DamageInfo__Verse_Hediff_" data-uid="RimWorld.Gene_Deathrest.Notify_PawnDied(System.Nullable{Verse.DamageInfo},Verse.Hediff)">Notify_PawnDied(DamageInfo?, Hediff)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Notify_PawnDied(DamageInfo? dinfo, Hediff culprit = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a>?</td>
+        <td><span class="parametername">dinfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Hediff.html">Hediff</a></td>
+        <td><span class="parametername">culprit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_Notify_PawnDied_System_Nullable_Verse_DamageInfo__Verse_Hediff_">Gene.Notify_PawnDied(DamageInfo?, Hediff)</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_OffsetCapacity_" data-uid="RimWorld.Gene_Deathrest.OffsetCapacity*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_OffsetCapacity_System_Int32_System_Boolean_" data-uid="RimWorld.Gene_Deathrest.OffsetCapacity(System.Int32,System.Boolean)">OffsetCapacity(int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OffsetCapacity(int offset, bool sendNotification = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">sendNotification</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_PostAdd_" data-uid="RimWorld.Gene_Deathrest.PostAdd*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_PostAdd" data-uid="RimWorld.Gene_Deathrest.PostAdd">PostAdd()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PostAdd()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_PostAdd">Gene.PostAdd()</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_PostRemove_" data-uid="RimWorld.Gene_Deathrest.PostRemove*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_PostRemove" data-uid="RimWorld.Gene_Deathrest.PostRemove">PostRemove()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void PostRemove()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_PostRemove">Gene.PostRemove()</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_RemoveOldDeathrestBonuses_" data-uid="RimWorld.Gene_Deathrest.RemoveOldDeathrestBonuses*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_RemoveOldDeathrestBonuses" data-uid="RimWorld.Gene_Deathrest.RemoveOldDeathrestBonuses">RemoveOldDeathrestBonuses()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveOldDeathrestBonuses()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Gene_Deathrest_Reset_" data-uid="RimWorld.Gene_Deathrest.Reset*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_Reset" data-uid="RimWorld.Gene_Deathrest.Reset">Reset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_Reset">Gene.Reset()</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_SpecialDisplayStats_" data-uid="RimWorld.Gene_Deathrest.SpecialDisplayStats*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_SpecialDisplayStats" data-uid="RimWorld.Gene_Deathrest.SpecialDisplayStats">SpecialDisplayStats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(Gene_Deathrest.&lt;SpecialDisplayStats&gt;d__59))]
+public override IEnumerable&lt;StatDrawEntry&gt; SpecialDisplayStats()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.StatDrawEntry.html">StatDrawEntry</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_SpecialDisplayStats">Gene.SpecialDisplayStats()</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_TickDeathresting_" data-uid="RimWorld.Gene_Deathrest.TickDeathresting*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_TickDeathresting_System_Boolean_System_Int32_" data-uid="RimWorld.Gene_Deathrest.TickDeathresting(System.Boolean,System.Int32)">TickDeathresting(bool, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TickDeathresting(bool paused, int delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">paused</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Gene_Deathrest_TickInterval_" data-uid="RimWorld.Gene_Deathrest.TickInterval*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_TickInterval_System_Int32_" data-uid="RimWorld.Gene_Deathrest.TickInterval(System.Int32)">TickInterval(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void TickInterval(int delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Gene.html#Verse_Gene_TickInterval_System_Int32_">Gene.TickInterval(int)</a></div>
+
+
+  <a id="RimWorld_Gene_Deathrest_TryLinkToNearbyDeathrestBuildings_" data-uid="RimWorld.Gene_Deathrest.TryLinkToNearbyDeathrestBuildings*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_TryLinkToNearbyDeathrestBuildings" data-uid="RimWorld.Gene_Deathrest.TryLinkToNearbyDeathrestBuildings">TryLinkToNearbyDeathrestBuildings()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryLinkToNearbyDeathrestBuildings()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Gene_Deathrest_Wake_" data-uid="RimWorld.Gene_Deathrest.Wake*"></a>
+  <h4 id="RimWorld_Gene_Deathrest_Wake" data-uid="RimWorld.Gene_Deathrest.Wake">Wake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Wake()</code></pre>
+  </div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

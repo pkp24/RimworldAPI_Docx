@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CameraDriver </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CameraDriver ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.CameraDriver">
+
+
+
+  <h1 id="Verse_CameraDriver" data-uid="Verse.CameraDriver" class="text-break">Class CameraDriver</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="UnityEngine.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="UnityEngine.Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="UnityEngine.Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="UnityEngine.MonoBehaviour.html">MonoBehaviour</a></div>
+    <div class="level5"><span class="xref">CameraDriver</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_IsInvoking">MonoBehaviour.IsInvoking()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_CancelInvoke">MonoBehaviour.CancelInvoke()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_Invoke_System_String_System_Single_">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_InvokeRepeating_System_String_System_Single_System_Single_">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_CancelInvoke_System_String_">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_IsInvoking_System_String_">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_StartCoroutine_System_String_">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_StartCoroutine_System_String_System_Object_">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_StartCoroutine_System_Collections_IEnumerator_">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_StartCoroutine_Auto_System_Collections_IEnumerator_">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_StopCoroutine_System_Collections_IEnumerator_">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_StopCoroutine_UnityEngine_Coroutine_">MonoBehaviour.StopCoroutine(Coroutine)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_StopCoroutine_System_String_">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_StopAllCoroutines">MonoBehaviour.StopAllCoroutines()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_print_System_Object_">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_destroyCancellationToken">MonoBehaviour.destroyCancellationToken</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.MonoBehaviour.html#UnityEngine_MonoBehaviour_useGUILayout">MonoBehaviour.useGUILayout</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Behaviour.html#UnityEngine_Behaviour_enabled">Behaviour.enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Behaviour.html#UnityEngine_Behaviour_isActiveAndEnabled">Behaviour.isActiveAndEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponent_System_Type_">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponent__1">Component.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_TryGetComponent_System_Type_UnityEngine_Component__">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_TryGetComponent__1___0__">Component.TryGetComponent&lt;T&gt;(out T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponent_System_String_">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInChildren_System_Type_System_Boolean_">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInChildren_System_Type_">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInChildren__1_System_Boolean_">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInChildren__1">Component.GetComponentInChildren&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren_System_Type_System_Boolean_">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren_System_Type_">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren__1_System_Boolean_">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren__1_System_Boolean_System_Collections_Generic_List___0__">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren__1">Component.GetComponentsInChildren&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren__1_System_Collections_Generic_List___0__">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInParent_System_Type_System_Boolean_">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInParent_System_Type_">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInParent__1_System_Boolean_">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInParent__1">Component.GetComponentInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent_System_Type_System_Boolean_">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent_System_Type_">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent__1_System_Boolean_">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent__1_System_Boolean_System_Collections_Generic_List___0__">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent__1">Component.GetComponentsInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponents_System_Type_">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponents_System_Type_System_Collections_Generic_List_UnityEngine_Component__">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponents__1_System_Collections_Generic_List___0__">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponents__1">Component.GetComponents&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentIndex">Component.GetComponentIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_CompareTag_System_String_">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessageUpwards_System_String_System_Object_UnityEngine_SendMessageOptions_">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessageUpwards_System_String_System_Object_">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessageUpwards_System_String_">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessageUpwards_System_String_UnityEngine_SendMessageOptions_">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessage_System_String_System_Object_">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessage_System_String_">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessage_System_String_System_Object_UnityEngine_SendMessageOptions_">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessage_System_String_UnityEngine_SendMessageOptions_">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_BroadcastMessage_System_String_System_Object_UnityEngine_SendMessageOptions_">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_BroadcastMessage_System_String_System_Object_">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_BroadcastMessage_System_String_">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_BroadcastMessage_System_String_UnityEngine_SendMessageOptions_">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_transform">Component.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_gameObject">Component.gameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_tag">Component.tag</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_GetInstanceID">Object.GetInstanceID()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Equals_System_Object_">Object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_">Object.InstantiateAsync&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Transform_">Object.InstantiateAsync&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_System_ReadOnlySpan_UnityEngine_Vector3__System_ReadOnlySpan_UnityEngine_Quaternion__">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_System_ReadOnlySpan_UnityEngine_Vector3__System_ReadOnlySpan_UnityEngine_Quaternion__">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.Instantiate(Object, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_">Object.Instantiate(Object, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_">Object.Instantiate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_SceneManagement_Scene_">Object.Instantiate(Object, Scene)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Transform_">Object.Instantiate(Object, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Transform_System_Boolean_">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_">Object.Instantiate&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Transform_">Object.Instantiate&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Transform_System_Boolean_">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Destroy_UnityEngine_Object_System_Single_">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Destroy_UnityEngine_Object_">Object.Destroy(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyImmediate_UnityEngine_Object_System_Boolean_">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyImmediate_UnityEngine_Object_">Object.DestroyImmediate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType_System_Type_">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType_System_Type_System_Boolean_">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType_System_Type_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType_System_Type_UnityEngine_FindObjectsInactive_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DontDestroyOnLoad_UnityEngine_Object_">Object.DontDestroyOnLoad(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyObject_UnityEngine_Object_System_Single_">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyObject_UnityEngine_Object_">Object.DestroyObject(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindSceneObjectsOfType_System_Type_">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfTypeIncludingAssets_System_Type_">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType__1">Object.FindObjectsOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType__1_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType__1_System_Boolean_">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType__1_UnityEngine_FindObjectsInactive_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType__1">Object.FindObjectOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType__1_System_Boolean_">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType__1">Object.FindFirstObjectByType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType__1">Object.FindAnyObjectByType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType__1_UnityEngine_FindObjectsInactive_">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType__1_UnityEngine_FindObjectsInactive_">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfTypeAll_System_Type_">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType_System_Type_">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType_System_Type_">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType_System_Type_">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType_System_Type_System_Boolean_">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType_System_Type_UnityEngine_FindObjectsInactive_">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType_System_Type_UnityEngine_FindObjectsInactive_">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_name">Object.name</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_hideFlags">Object.hideFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_CameraDriver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CameraDriver : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Verse_CameraDriver__ctor_" data-uid="Verse.CameraDriver.#ctor*"></a>
+  <h4 id="Verse_CameraDriver__ctor" data-uid="Verse.CameraDriver.#ctor">CameraDriver()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraDriver()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Verse_CameraDriver_FullDurationPanDistance" data-uid="Verse.CameraDriver.FullDurationPanDistance">FullDurationPanDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float FullDurationPanDistance = 70</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_CameraDriver_MaxDeltaTime" data-uid="Verse.CameraDriver.MaxDeltaTime">MaxDeltaTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MaxDeltaTime = 0.1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_CameraDriver_MinAltitude" data-uid="Verse.CameraDriver.MinAltitude">MinAltitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float MinAltitude = 15</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_CameraDriver_StartingSize" data-uid="Verse.CameraDriver.StartingSize">StartingSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float StartingSize = 24</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_CameraDriver_config" data-uid="Verse.CameraDriver.config">config</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraMapConfig config</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CameraMapConfig.html">CameraMapConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_CameraDriver_shaker" data-uid="Verse.CameraDriver.shaker">shaker</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraShaker shaker</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CameraShaker.html">CameraShaker</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Verse_CameraDriver_CellSizePixels_" data-uid="Verse.CameraDriver.CellSizePixels*"></a>
+  <h4 id="Verse_CameraDriver_CellSizePixels" data-uid="Verse.CameraDriver.CellSizePixels">CellSizePixels</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CellSizePixels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_CurrentViewRect_" data-uid="Verse.CameraDriver.CurrentViewRect*"></a>
+  <h4 id="Verse_CameraDriver_CurrentViewRect" data-uid="Verse.CameraDriver.CurrentViewRect">CurrentViewRect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CellRect CurrentViewRect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_CurrentZoom_" data-uid="Verse.CameraDriver.CurrentZoom*"></a>
+  <h4 id="Verse_CameraDriver_CurrentZoom" data-uid="Verse.CameraDriver.CurrentZoom">CurrentZoom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraZoomRange CurrentZoom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CameraZoomRange.html">CameraZoomRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_HitchReduceFactor_" data-uid="Verse.CameraDriver.HitchReduceFactor*"></a>
+  <h4 id="Verse_CameraDriver_HitchReduceFactor" data-uid="Verse.CameraDriver.HitchReduceFactor">HitchReduceFactor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float HitchReduceFactor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_InverseFovScale_" data-uid="Verse.CameraDriver.InverseFovScale*"></a>
+  <h4 id="Verse_CameraDriver_InverseFovScale" data-uid="Verse.CameraDriver.InverseFovScale">InverseFovScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 InverseFovScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_MapPosition_" data-uid="Verse.CameraDriver.MapPosition*"></a>
+  <h4 id="Verse_CameraDriver_MapPosition" data-uid="Verse.CameraDriver.MapPosition">MapPosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntVec3 MapPosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_RootSize_" data-uid="Verse.CameraDriver.RootSize*"></a>
+  <h4 id="Verse_CameraDriver_RootSize" data-uid="Verse.CameraDriver.RootSize">RootSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RootSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_ViewSpacePosition_" data-uid="Verse.CameraDriver.ViewSpacePosition*"></a>
+  <h4 id="Verse_CameraDriver_ViewSpacePosition" data-uid="Verse.CameraDriver.ViewSpacePosition">ViewSpacePosition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 ViewSpacePosition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_ZoomRootSize_" data-uid="Verse.CameraDriver.ZoomRootSize*"></a>
+  <h4 id="Verse_CameraDriver_ZoomRootSize" data-uid="Verse.CameraDriver.ZoomRootSize">ZoomRootSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ZoomRootSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_CameraDriver_Awake_" data-uid="Verse.CameraDriver.Awake*"></a>
+  <h4 id="Verse_CameraDriver_Awake" data-uid="Verse.CameraDriver.Awake">Awake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Awake()</code></pre>
+  </div>
+
+
+  <a id="Verse_CameraDriver_CameraDriverOnGUI_" data-uid="Verse.CameraDriver.CameraDriverOnGUI*"></a>
+  <h4 id="Verse_CameraDriver_CameraDriverOnGUI" data-uid="Verse.CameraDriver.CameraDriverOnGUI">CameraDriverOnGUI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CameraDriverOnGUI()</code></pre>
+  </div>
+
+
+  <a id="Verse_CameraDriver_Expose_" data-uid="Verse.CameraDriver.Expose*"></a>
+  <h4 id="Verse_CameraDriver_Expose" data-uid="Verse.CameraDriver.Expose">Expose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Expose()</code></pre>
+  </div>
+
+
+  <a id="Verse_CameraDriver_GetExtraVelocityFromReleasingDragButton_" data-uid="Verse.CameraDriver.GetExtraVelocityFromReleasingDragButton*"></a>
+  <h4 id="Verse_CameraDriver_GetExtraVelocityFromReleasingDragButton_System_Collections_Generic_List_Verse_CameraDriver_DragTimeStamp__System_Single_" data-uid="Verse.CameraDriver.GetExtraVelocityFromReleasingDragButton(System.Collections.Generic.List{Verse.CameraDriver.DragTimeStamp},System.Single)">GetExtraVelocityFromReleasingDragButton(List&lt;DragTimeStamp&gt;, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetExtraVelocityFromReleasingDragButton(List&lt;CameraDriver.DragTimeStamp&gt; dragTimeStamps, float velocityFromMouseDragInitialFactor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.CameraDriver.html">CameraDriver</a>.<a class="xref" href="Verse.CameraDriver.DragTimeStamp.html">DragTimeStamp</a>&gt;</td>
+        <td><span class="parametername">dragTimeStamps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">velocityFromMouseDragInitialFactor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_InViewOf_" data-uid="Verse.CameraDriver.InViewOf*"></a>
+  <h4 id="Verse_CameraDriver_InViewOf_Verse_Thing_" data-uid="Verse.CameraDriver.InViewOf(Verse.Thing)">InViewOf(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InViewOf(Thing thing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_JumpToCurrentMapLoc_" data-uid="Verse.CameraDriver.JumpToCurrentMapLoc*"></a>
+  <h4 id="Verse_CameraDriver_JumpToCurrentMapLoc_UnityEngine_Vector3_" data-uid="Verse.CameraDriver.JumpToCurrentMapLoc(UnityEngine.Vector3)">JumpToCurrentMapLoc(Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JumpToCurrentMapLoc(Vector3 loc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">loc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_JumpToCurrentMapLoc_" data-uid="Verse.CameraDriver.JumpToCurrentMapLoc*"></a>
+  <h4 id="Verse_CameraDriver_JumpToCurrentMapLoc_Verse_IntVec3_" data-uid="Verse.CameraDriver.JumpToCurrentMapLoc(Verse.IntVec3)">JumpToCurrentMapLoc(IntVec3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JumpToCurrentMapLoc(IntVec3 cell)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_OnPreCull_" data-uid="Verse.CameraDriver.OnPreCull*"></a>
+  <h4 id="Verse_CameraDriver_OnPreCull" data-uid="Verse.CameraDriver.OnPreCull">OnPreCull()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OnPreCull()</code></pre>
+  </div>
+
+
+  <a id="Verse_CameraDriver_PanToMapLoc_" data-uid="Verse.CameraDriver.PanToMapLoc*"></a>
+  <h4 id="Verse_CameraDriver_PanToMapLoc_Verse_IntVec3_" data-uid="Verse.CameraDriver.PanToMapLoc(Verse.IntVec3)">PanToMapLoc(IntVec3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PanToMapLoc(IntVec3 cell)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_PanToMapLocAndSize_" data-uid="Verse.CameraDriver.PanToMapLocAndSize*"></a>
+  <h4 id="Verse_CameraDriver_PanToMapLocAndSize_UnityEngine_Vector3_System_Single_System_Single_Verse_PanCompletionCallback_" data-uid="Verse.CameraDriver.PanToMapLocAndSize(UnityEngine.Vector3,System.Single,System.Single,Verse.PanCompletionCallback)">PanToMapLocAndSize(Vector3, float, float, PanCompletionCallback)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PanToMapLocAndSize(Vector3 loc, float size, float duration = 0.25, PanCompletionCallback onComplete = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">loc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PanCompletionCallback.html">PanCompletionCallback</a></td>
+        <td><span class="parametername">onComplete</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_ResetSize_" data-uid="Verse.CameraDriver.ResetSize*"></a>
+  <h4 id="Verse_CameraDriver_ResetSize" data-uid="Verse.CameraDriver.ResetSize">ResetSize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetSize()</code></pre>
+  </div>
+
+
+  <a id="Verse_CameraDriver_SetRootPosAndSize_" data-uid="Verse.CameraDriver.SetRootPosAndSize*"></a>
+  <h4 id="Verse_CameraDriver_SetRootPosAndSize_UnityEngine_Vector3_System_Single_" data-uid="Verse.CameraDriver.SetRootPosAndSize(UnityEngine.Vector3,System.Single)">SetRootPosAndSize(Vector3, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRootPosAndSize(Vector3 rootPos, float rootSize)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">rootPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">rootSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_SetRootSize_" data-uid="Verse.CameraDriver.SetRootSize*"></a>
+  <h4 id="Verse_CameraDriver_SetRootSize_System_Single_" data-uid="Verse.CameraDriver.SetRootSize(System.Single)">SetRootSize(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRootSize(float size)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_CameraDriver_Update_" data-uid="Verse.CameraDriver.Update*"></a>
+  <h4 id="Verse_CameraDriver_Update" data-uid="Verse.CameraDriver.Update">Update()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Update()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

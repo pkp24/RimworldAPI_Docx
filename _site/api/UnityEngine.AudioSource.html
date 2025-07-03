@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class AudioSource </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class AudioSource ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.AudioSource">
+
+
+
+  <h1 id="UnityEngine_AudioSource" data-uid="UnityEngine.AudioSource" class="text-break">Class AudioSource</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="UnityEngine.Object.html">Object</a></div>
+    <div class="level2"><a class="xref" href="UnityEngine.Component.html">Component</a></div>
+    <div class="level3"><a class="xref" href="UnityEngine.Behaviour.html">Behaviour</a></div>
+    <div class="level4"><a class="xref" href="UnityEngine.AudioBehaviour.html">AudioBehaviour</a></div>
+    <div class="level5"><span class="xref">AudioSource</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.Behaviour.html#UnityEngine_Behaviour_enabled">Behaviour.enabled</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Behaviour.html#UnityEngine_Behaviour_isActiveAndEnabled">Behaviour.isActiveAndEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponent_System_Type_">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponent__1">Component.GetComponent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_TryGetComponent_System_Type_UnityEngine_Component__">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_TryGetComponent__1___0__">Component.TryGetComponent&lt;T&gt;(out T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponent_System_String_">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInChildren_System_Type_System_Boolean_">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInChildren_System_Type_">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInChildren__1_System_Boolean_">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInChildren__1">Component.GetComponentInChildren&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren_System_Type_System_Boolean_">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren_System_Type_">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren__1_System_Boolean_">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren__1_System_Boolean_System_Collections_Generic_List___0__">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren__1">Component.GetComponentsInChildren&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInChildren__1_System_Collections_Generic_List___0__">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInParent_System_Type_System_Boolean_">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInParent_System_Type_">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInParent__1_System_Boolean_">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentInParent__1">Component.GetComponentInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent_System_Type_System_Boolean_">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent_System_Type_">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent__1_System_Boolean_">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent__1_System_Boolean_System_Collections_Generic_List___0__">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentsInParent__1">Component.GetComponentsInParent&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponents_System_Type_">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponents_System_Type_System_Collections_Generic_List_UnityEngine_Component__">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponents__1_System_Collections_Generic_List___0__">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponents__1">Component.GetComponents&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_GetComponentIndex">Component.GetComponentIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_CompareTag_System_String_">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessageUpwards_System_String_System_Object_UnityEngine_SendMessageOptions_">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessageUpwards_System_String_System_Object_">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessageUpwards_System_String_">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessageUpwards_System_String_UnityEngine_SendMessageOptions_">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessage_System_String_System_Object_">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessage_System_String_">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessage_System_String_System_Object_UnityEngine_SendMessageOptions_">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_SendMessage_System_String_UnityEngine_SendMessageOptions_">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_BroadcastMessage_System_String_System_Object_UnityEngine_SendMessageOptions_">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_BroadcastMessage_System_String_System_Object_">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_BroadcastMessage_System_String_">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_BroadcastMessage_System_String_UnityEngine_SendMessageOptions_">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_transform">Component.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_gameObject">Component.gameObject</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Component.html#UnityEngine_Component_tag">Component.tag</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_GetInstanceID">Object.GetInstanceID()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Equals_System_Object_">Object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_">Object.InstantiateAsync&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Transform_">Object.InstantiateAsync&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_System_ReadOnlySpan_UnityEngine_Vector3__System_ReadOnlySpan_UnityEngine_Quaternion__">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_InstantiateAsync__1___0_System_Int32_UnityEngine_Transform_System_ReadOnlySpan_UnityEngine_Vector3__System_ReadOnlySpan_UnityEngine_Quaternion__">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.Instantiate(Object, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_">Object.Instantiate(Object, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_">Object.Instantiate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_SceneManagement_Scene_">Object.Instantiate(Object, Scene)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Transform_">Object.Instantiate(Object, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate_UnityEngine_Object_UnityEngine_Transform_System_Boolean_">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_">Object.Instantiate&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Vector3_UnityEngine_Quaternion_UnityEngine_Transform_">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Transform_">Object.Instantiate&lt;T&gt;(T, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Instantiate__1___0_UnityEngine_Transform_System_Boolean_">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Destroy_UnityEngine_Object_System_Single_">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_Destroy_UnityEngine_Object_">Object.Destroy(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyImmediate_UnityEngine_Object_System_Boolean_">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyImmediate_UnityEngine_Object_">Object.DestroyImmediate(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType_System_Type_">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType_System_Type_System_Boolean_">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType_System_Type_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType_System_Type_UnityEngine_FindObjectsInactive_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DontDestroyOnLoad_UnityEngine_Object_">Object.DontDestroyOnLoad(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyObject_UnityEngine_Object_System_Single_">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_DestroyObject_UnityEngine_Object_">Object.DestroyObject(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindSceneObjectsOfType_System_Type_">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfTypeIncludingAssets_System_Type_">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType__1">Object.FindObjectsOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType__1_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfType__1_System_Boolean_">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsByType__1_UnityEngine_FindObjectsInactive_UnityEngine_FindObjectsSortMode_">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType__1">Object.FindObjectOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType__1_System_Boolean_">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType__1">Object.FindFirstObjectByType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType__1">Object.FindAnyObjectByType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType__1_UnityEngine_FindObjectsInactive_">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType__1_UnityEngine_FindObjectsInactive_">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectsOfTypeAll_System_Type_">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType_System_Type_">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType_System_Type_">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType_System_Type_">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindObjectOfType_System_Type_System_Boolean_">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindFirstObjectByType_System_Type_UnityEngine_FindObjectsInactive_">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_FindAnyObjectByType_System_Type_UnityEngine_FindObjectsInactive_">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_ToString">Object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_name">Object.name</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.Object.html#UnityEngine_Object_hideFlags">Object.hideFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.AudioModule.dll</h6>
+  <h5 id="UnityEngine_AudioSource_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(Transform))]
+public sealed class AudioSource : AudioBehaviour</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="UnityEngine_AudioSource__ctor_" data-uid="UnityEngine.AudioSource.#ctor*"></a>
+  <h4 id="UnityEngine_AudioSource__ctor" data-uid="UnityEngine.AudioSource.#ctor">AudioSource()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioSource()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="UnityEngine_AudioSource_bypassEffects_" data-uid="UnityEngine.AudioSource.bypassEffects*"></a>
+  <h4 id="UnityEngine_AudioSource_bypassEffects" data-uid="UnityEngine.AudioSource.bypassEffects">bypassEffects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bypassEffects { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_bypassListenerEffects_" data-uid="UnityEngine.AudioSource.bypassListenerEffects*"></a>
+  <h4 id="UnityEngine_AudioSource_bypassListenerEffects" data-uid="UnityEngine.AudioSource.bypassListenerEffects">bypassListenerEffects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bypassListenerEffects { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_bypassReverbZones_" data-uid="UnityEngine.AudioSource.bypassReverbZones*"></a>
+  <h4 id="UnityEngine_AudioSource_bypassReverbZones" data-uid="UnityEngine.AudioSource.bypassReverbZones">bypassReverbZones</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bypassReverbZones { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_clip_" data-uid="UnityEngine.AudioSource.clip*"></a>
+  <h4 id="UnityEngine_AudioSource_clip" data-uid="UnityEngine.AudioSource.clip">clip</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioClip clip { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioClip.html">AudioClip</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_dopplerLevel_" data-uid="UnityEngine.AudioSource.dopplerLevel*"></a>
+  <h4 id="UnityEngine_AudioSource_dopplerLevel" data-uid="UnityEngine.AudioSource.dopplerLevel">dopplerLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float dopplerLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_ignoreListenerPause_" data-uid="UnityEngine.AudioSource.ignoreListenerPause*"></a>
+  <h4 id="UnityEngine_AudioSource_ignoreListenerPause" data-uid="UnityEngine.AudioSource.ignoreListenerPause">ignoreListenerPause</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ignoreListenerPause { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_ignoreListenerVolume_" data-uid="UnityEngine.AudioSource.ignoreListenerVolume*"></a>
+  <h4 id="UnityEngine_AudioSource_ignoreListenerVolume" data-uid="UnityEngine.AudioSource.ignoreListenerVolume">ignoreListenerVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ignoreListenerVolume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_isPlaying_" data-uid="UnityEngine.AudioSource.isPlaying*"></a>
+  <h4 id="UnityEngine_AudioSource_isPlaying" data-uid="UnityEngine.AudioSource.isPlaying">isPlaying</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isPlaying { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_isVirtual_" data-uid="UnityEngine.AudioSource.isVirtual*"></a>
+  <h4 id="UnityEngine_AudioSource_isVirtual" data-uid="UnityEngine.AudioSource.isVirtual">isVirtual</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isVirtual { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_loop_" data-uid="UnityEngine.AudioSource.loop*"></a>
+  <h4 id="UnityEngine_AudioSource_loop" data-uid="UnityEngine.AudioSource.loop">loop</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool loop { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_maxDistance_" data-uid="UnityEngine.AudioSource.maxDistance*"></a>
+  <h4 id="UnityEngine_AudioSource_maxDistance" data-uid="UnityEngine.AudioSource.maxDistance">maxDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float maxDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_maxVolume_" data-uid="UnityEngine.AudioSource.maxVolume*"></a>
+  <h4 id="UnityEngine_AudioSource_maxVolume" data-uid="UnityEngine.AudioSource.maxVolume">maxVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;maxVolume is not supported anymore. Use min-, maxDistance and rolloffMode instead.&quot;, true)]
+public float maxVolume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_minDistance_" data-uid="UnityEngine.AudioSource.minDistance*"></a>
+  <h4 id="UnityEngine_AudioSource_minDistance" data-uid="UnityEngine.AudioSource.minDistance">minDistance</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float minDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_minVolume_" data-uid="UnityEngine.AudioSource.minVolume*"></a>
+  <h4 id="UnityEngine_AudioSource_minVolume" data-uid="UnityEngine.AudioSource.minVolume">minVolume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;minVolume is not supported anymore. Use min-, maxDistance and rolloffMode instead.&quot;, true)]
+public float minVolume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_mute_" data-uid="UnityEngine.AudioSource.mute*"></a>
+  <h4 id="UnityEngine_AudioSource_mute" data-uid="UnityEngine.AudioSource.mute">mute</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool mute { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_outputAudioMixerGroup_" data-uid="UnityEngine.AudioSource.outputAudioMixerGroup*"></a>
+  <h4 id="UnityEngine_AudioSource_outputAudioMixerGroup" data-uid="UnityEngine.AudioSource.outputAudioMixerGroup">outputAudioMixerGroup</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioMixerGroup outputAudioMixerGroup { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Audio.AudioMixerGroup.html">AudioMixerGroup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_panStereo_" data-uid="UnityEngine.AudioSource.panStereo*"></a>
+  <h4 id="UnityEngine_AudioSource_panStereo" data-uid="UnityEngine.AudioSource.panStereo">panStereo</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float panStereo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_pitch_" data-uid="UnityEngine.AudioSource.pitch*"></a>
+  <h4 id="UnityEngine_AudioSource_pitch" data-uid="UnityEngine.AudioSource.pitch">pitch</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float pitch { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_playOnAwake_" data-uid="UnityEngine.AudioSource.playOnAwake*"></a>
+  <h4 id="UnityEngine_AudioSource_playOnAwake" data-uid="UnityEngine.AudioSource.playOnAwake">playOnAwake</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool playOnAwake { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_priority_" data-uid="UnityEngine.AudioSource.priority*"></a>
+  <h4 id="UnityEngine_AudioSource_priority" data-uid="UnityEngine.AudioSource.priority">priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int priority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_reverbZoneMix_" data-uid="UnityEngine.AudioSource.reverbZoneMix*"></a>
+  <h4 id="UnityEngine_AudioSource_reverbZoneMix" data-uid="UnityEngine.AudioSource.reverbZoneMix">reverbZoneMix</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float reverbZoneMix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_rolloffFactor_" data-uid="UnityEngine.AudioSource.rolloffFactor*"></a>
+  <h4 id="UnityEngine_AudioSource_rolloffFactor" data-uid="UnityEngine.AudioSource.rolloffFactor">rolloffFactor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;rolloffFactor is not supported anymore. Use min-, maxDistance and rolloffMode instead.&quot;, true)]
+public float rolloffFactor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_rolloffMode_" data-uid="UnityEngine.AudioSource.rolloffMode*"></a>
+  <h4 id="UnityEngine_AudioSource_rolloffMode" data-uid="UnityEngine.AudioSource.rolloffMode">rolloffMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioRolloffMode rolloffMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioRolloffMode.html">AudioRolloffMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_spatialBlend_" data-uid="UnityEngine.AudioSource.spatialBlend*"></a>
+  <h4 id="UnityEngine_AudioSource_spatialBlend" data-uid="UnityEngine.AudioSource.spatialBlend">spatialBlend</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float spatialBlend { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_spatialize_" data-uid="UnityEngine.AudioSource.spatialize*"></a>
+  <h4 id="UnityEngine_AudioSource_spatialize" data-uid="UnityEngine.AudioSource.spatialize">spatialize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool spatialize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_spatializePostEffects_" data-uid="UnityEngine.AudioSource.spatializePostEffects*"></a>
+  <h4 id="UnityEngine_AudioSource_spatializePostEffects" data-uid="UnityEngine.AudioSource.spatializePostEffects">spatializePostEffects</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool spatializePostEffects { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_spread_" data-uid="UnityEngine.AudioSource.spread*"></a>
+  <h4 id="UnityEngine_AudioSource_spread" data-uid="UnityEngine.AudioSource.spread">spread</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float spread { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_time_" data-uid="UnityEngine.AudioSource.time*"></a>
+  <h4 id="UnityEngine_AudioSource_time" data-uid="UnityEngine.AudioSource.time">time</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float time { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_timeSamples_" data-uid="UnityEngine.AudioSource.timeSamples*"></a>
+  <h4 id="UnityEngine_AudioSource_timeSamples" data-uid="UnityEngine.AudioSource.timeSamples">timeSamples</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int timeSamples { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_velocityUpdateMode_" data-uid="UnityEngine.AudioSource.velocityUpdateMode*"></a>
+  <h4 id="UnityEngine_AudioSource_velocityUpdateMode" data-uid="UnityEngine.AudioSource.velocityUpdateMode">velocityUpdateMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AudioVelocityUpdateMode velocityUpdateMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioVelocityUpdateMode.html">AudioVelocityUpdateMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_volume_" data-uid="UnityEngine.AudioSource.volume*"></a>
+  <h4 id="UnityEngine_AudioSource_volume" data-uid="UnityEngine.AudioSource.volume">volume</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float volume { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_AudioSource_GetAmbisonicDecoderFloat_" data-uid="UnityEngine.AudioSource.GetAmbisonicDecoderFloat*"></a>
+  <h4 id="UnityEngine_AudioSource_GetAmbisonicDecoderFloat_System_Int32_System_Single__" data-uid="UnityEngine.AudioSource.GetAmbisonicDecoderFloat(System.Int32,System.Single@)">GetAmbisonicDecoderFloat(int, out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetAmbisonicDecoderFloat(int index, out float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_GetCustomCurve_" data-uid="UnityEngine.AudioSource.GetCustomCurve*"></a>
+  <h4 id="UnityEngine_AudioSource_GetCustomCurve_UnityEngine_AudioSourceCurveType_" data-uid="UnityEngine.AudioSource.GetCustomCurve(UnityEngine.AudioSourceCurveType)">GetCustomCurve(AudioSourceCurveType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnimationCurve GetCustomCurve(AudioSourceCurveType type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioSourceCurveType.html">AudioSourceCurveType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AnimationCurve.html">AnimationCurve</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_GetOutputData_" data-uid="UnityEngine.AudioSource.GetOutputData*"></a>
+  <h4 id="UnityEngine_AudioSource_GetOutputData_System_Int32_System_Int32_" data-uid="UnityEngine.AudioSource.GetOutputData(System.Int32,System.Int32)">GetOutputData(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;GetOutputData returning a float[] is deprecated, use GetOutputData and pass a pre allocated array instead.&quot;)]
+public float[] GetOutputData(int numSamples, int channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">numSamples</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_GetOutputData_" data-uid="UnityEngine.AudioSource.GetOutputData*"></a>
+  <h4 id="UnityEngine_AudioSource_GetOutputData_System_Single___System_Int32_" data-uid="UnityEngine.AudioSource.GetOutputData(System.Single[],System.Int32)">GetOutputData(float[], int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetOutputData(float[] samples, int channel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td><span class="parametername">samples</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_GetSpatializerFloat_" data-uid="UnityEngine.AudioSource.GetSpatializerFloat*"></a>
+  <h4 id="UnityEngine_AudioSource_GetSpatializerFloat_System_Int32_System_Single__" data-uid="UnityEngine.AudioSource.GetSpatializerFloat(System.Int32,System.Single@)">GetSpatializerFloat(int, out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetSpatializerFloat(int index, out float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_GetSpectrumData_" data-uid="UnityEngine.AudioSource.GetSpectrumData*"></a>
+  <h4 id="UnityEngine_AudioSource_GetSpectrumData_System_Int32_System_Int32_UnityEngine_FFTWindow_" data-uid="UnityEngine.AudioSource.GetSpectrumData(System.Int32,System.Int32,UnityEngine.FFTWindow)">GetSpectrumData(int, int, FFTWindow)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;GetSpectrumData returning a float[] is deprecated, use GetSpectrumData and pass a pre allocated array instead.&quot;)]
+public float[] GetSpectrumData(int numSamples, int channel, FFTWindow window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">numSamples</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.FFTWindow.html">FFTWindow</a></td>
+        <td><span class="parametername">window</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_GetSpectrumData_" data-uid="UnityEngine.AudioSource.GetSpectrumData*"></a>
+  <h4 id="UnityEngine_AudioSource_GetSpectrumData_System_Single___System_Int32_UnityEngine_FFTWindow_" data-uid="UnityEngine.AudioSource.GetSpectrumData(System.Single[],System.Int32,UnityEngine.FFTWindow)">GetSpectrumData(float[], int, FFTWindow)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetSpectrumData(float[] samples, int channel, FFTWindow window)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>[]</td>
+        <td><span class="parametername">samples</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">channel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.FFTWindow.html">FFTWindow</a></td>
+        <td><span class="parametername">window</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_Pause_" data-uid="UnityEngine.AudioSource.Pause*"></a>
+  <h4 id="UnityEngine_AudioSource_Pause" data-uid="UnityEngine.AudioSource.Pause">Pause()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_AudioSource_Play_" data-uid="UnityEngine.AudioSource.Play*"></a>
+  <h4 id="UnityEngine_AudioSource_Play" data-uid="UnityEngine.AudioSource.Play">Play()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromDocs]
+public void Play()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_AudioSource_Play_" data-uid="UnityEngine.AudioSource.Play*"></a>
+  <h4 id="UnityEngine_AudioSource_Play_System_UInt64_" data-uid="UnityEngine.AudioSource.Play(System.UInt64)">Play(ulong)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play(ulong delay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">delay</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_PlayClipAtPoint_" data-uid="UnityEngine.AudioSource.PlayClipAtPoint*"></a>
+  <h4 id="UnityEngine_AudioSource_PlayClipAtPoint_UnityEngine_AudioClip_UnityEngine_Vector3_" data-uid="UnityEngine.AudioSource.PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3)">PlayClipAtPoint(AudioClip, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromDocs]
+public static void PlayClipAtPoint(AudioClip clip, Vector3 position)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioClip.html">AudioClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_PlayClipAtPoint_" data-uid="UnityEngine.AudioSource.PlayClipAtPoint*"></a>
+  <h4 id="UnityEngine_AudioSource_PlayClipAtPoint_UnityEngine_AudioClip_UnityEngine_Vector3_System_Single_" data-uid="UnityEngine.AudioSource.PlayClipAtPoint(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single)">PlayClipAtPoint(AudioClip, Vector3, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void PlayClipAtPoint(AudioClip clip, Vector3 position, float volume)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioClip.html">AudioClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">volume</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_PlayDelayed_" data-uid="UnityEngine.AudioSource.PlayDelayed*"></a>
+  <h4 id="UnityEngine_AudioSource_PlayDelayed_System_Single_" data-uid="UnityEngine.AudioSource.PlayDelayed(System.Single)">PlayDelayed(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayDelayed(float delay)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">delay</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_PlayOneShot_" data-uid="UnityEngine.AudioSource.PlayOneShot*"></a>
+  <h4 id="UnityEngine_AudioSource_PlayOneShot_UnityEngine_AudioClip_" data-uid="UnityEngine.AudioSource.PlayOneShot(UnityEngine.AudioClip)">PlayOneShot(AudioClip)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[ExcludeFromDocs]
+public void PlayOneShot(AudioClip clip)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioClip.html">AudioClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_PlayOneShot_" data-uid="UnityEngine.AudioSource.PlayOneShot*"></a>
+  <h4 id="UnityEngine_AudioSource_PlayOneShot_UnityEngine_AudioClip_System_Single_" data-uid="UnityEngine.AudioSource.PlayOneShot(UnityEngine.AudioClip,System.Single)">PlayOneShot(AudioClip, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayOneShot(AudioClip clip, float volumeScale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioClip.html">AudioClip</a></td>
+        <td><span class="parametername">clip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">volumeScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_PlayScheduled_" data-uid="UnityEngine.AudioSource.PlayScheduled*"></a>
+  <h4 id="UnityEngine_AudioSource_PlayScheduled_System_Double_" data-uid="UnityEngine.AudioSource.PlayScheduled(System.Double)">PlayScheduled(double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayScheduled(double time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_SetAmbisonicDecoderFloat_" data-uid="UnityEngine.AudioSource.SetAmbisonicDecoderFloat*"></a>
+  <h4 id="UnityEngine_AudioSource_SetAmbisonicDecoderFloat_System_Int32_System_Single_" data-uid="UnityEngine.AudioSource.SetAmbisonicDecoderFloat(System.Int32,System.Single)">SetAmbisonicDecoderFloat(int, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetAmbisonicDecoderFloat(int index, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_SetCustomCurve_" data-uid="UnityEngine.AudioSource.SetCustomCurve*"></a>
+  <h4 id="UnityEngine_AudioSource_SetCustomCurve_UnityEngine_AudioSourceCurveType_UnityEngine_AnimationCurve_" data-uid="UnityEngine.AudioSource.SetCustomCurve(UnityEngine.AudioSourceCurveType,UnityEngine.AnimationCurve)">SetCustomCurve(AudioSourceCurveType, AnimationCurve)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCustomCurve(AudioSourceCurveType type, AnimationCurve curve)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AudioSourceCurveType.html">AudioSourceCurveType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.AnimationCurve.html">AnimationCurve</a></td>
+        <td><span class="parametername">curve</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_SetScheduledEndTime_" data-uid="UnityEngine.AudioSource.SetScheduledEndTime*"></a>
+  <h4 id="UnityEngine_AudioSource_SetScheduledEndTime_System_Double_" data-uid="UnityEngine.AudioSource.SetScheduledEndTime(System.Double)">SetScheduledEndTime(double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScheduledEndTime(double time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_SetScheduledStartTime_" data-uid="UnityEngine.AudioSource.SetScheduledStartTime*"></a>
+  <h4 id="UnityEngine_AudioSource_SetScheduledStartTime_System_Double_" data-uid="UnityEngine.AudioSource.SetScheduledStartTime(System.Double)">SetScheduledStartTime(double)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScheduledStartTime(double time)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">time</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_SetSpatializerFloat_" data-uid="UnityEngine.AudioSource.SetSpatializerFloat*"></a>
+  <h4 id="UnityEngine_AudioSource_SetSpatializerFloat_System_Int32_System_Single_" data-uid="UnityEngine.AudioSource.SetSpatializerFloat(System.Int32,System.Single)">SetSpatializerFloat(int, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetSpatializerFloat(int index, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_AudioSource_Stop_" data-uid="UnityEngine.AudioSource.Stop*"></a>
+  <h4 id="UnityEngine_AudioSource_Stop" data-uid="UnityEngine.AudioSource.Stop">Stop()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_AudioSource_UnPause_" data-uid="UnityEngine.AudioSource.UnPause*"></a>
+  <h4 id="UnityEngine_AudioSource_UnPause" data-uid="UnityEngine.AudioSource.UnPause">UnPause()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnPause()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

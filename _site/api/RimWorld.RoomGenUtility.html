@@ -1,0 +1,2786 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class RoomGenUtility </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class RoomGenUtility ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.RoomGenUtility">
+
+
+
+  <h1 id="RimWorld_RoomGenUtility" data-uid="RimWorld.RoomGenUtility" class="text-break">Class RoomGenUtility</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">RoomGenUtility</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_RoomGenUtility_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class RoomGenUtility</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_RoomGenUtility_CanPlace_" data-uid="RimWorld.RoomGenUtility.CanPlace*"></a>
+  <h4 id="RimWorld_RoomGenUtility_CanPlace_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Rot4_" data-uid="RimWorld.RoomGenUtility.CanPlace(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Rot4)">CanPlace(ThingDef, IntVec3, Map, Rot4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanPlace(ThingDef thingDef, IntVec3 cell, Map map, Rot4 rot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_CanPlaceWallAttachment_" data-uid="RimWorld.RoomGenUtility.CanPlaceWallAttachment*"></a>
+  <h4 id="RimWorld_RoomGenUtility_CanPlaceWallAttachment_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Rot4__System_Boolean_Verse_Predicate_Verse_IntVec3_Verse_Rot4__" data-uid="RimWorld.RoomGenUtility.CanPlaceWallAttachment(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Rot4@,System.Boolean,Verse.Predicate{Verse.IntVec3,Verse.Rot4})">CanPlaceWallAttachment(ThingDef, IntVec3, Map, out Rot4, bool, Predicate&lt;IntVec3, Rot4&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CanPlaceWallAttachment(ThingDef thingDef, IntVec3 cell, Map map, out Rot4 rotation, bool avoidEdifices = true, Predicate&lt;IntVec3, Rot4&gt; validator = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">avoidEdifices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Predicate-2.html">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_FillAroundEdges_" data-uid="RimWorld.RoomGenUtility.FillAroundEdges*"></a>
+  <h4 id="RimWorld_RoomGenUtility_FillAroundEdges_Verse_ThingDef_System_Int32_Verse_IntRange_RimWorld_LayoutRoom_Verse_Map_System_Func_Verse_IntVec3_Verse_Rot4_Verse_CellRect_System_Boolean__System_Collections_Generic_List_Verse_Thing__System_Int32_System_Int32_Verse_ThingDef_System_Boolean_Verse_RotationDirection_System_Func_Verse_IntVec3_Verse_Rot4_Verse_Map_Verse_Thing__RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.FillAroundEdges(Verse.ThingDef,System.Int32,Verse.IntRange,RimWorld.LayoutRoom,Verse.Map,System.Func{Verse.IntVec3,Verse.Rot4,Verse.CellRect,System.Boolean},System.Collections.Generic.List{Verse.Thing},System.Int32,System.Int32,Verse.ThingDef,System.Boolean,Verse.RotationDirection,System.Func{Verse.IntVec3,Verse.Rot4,Verse.Map,Verse.Thing},RimWorld.Faction)">FillAroundEdges(ThingDef, int, IntRange, LayoutRoom, Map, Func&lt;IntVec3, Rot4, CellRect, bool&gt;, List&lt;Thing&gt;, int, int, ThingDef, bool, RotationDirection, Func&lt;IntVec3, Rot4, Map, Thing&gt;, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillAroundEdges(ThingDef thing, int count, IntRange groupCountRange, LayoutRoom room, Map map, Func&lt;IntVec3, Rot4, CellRect, bool&gt; validator = null, List&lt;Thing&gt; spawned = null, int contractedBy = 1, int padding = 0, ThingDef stuff = null, bool avoidDoors = true, RotationDirection rotationDirectionOffset = RotationDirection.Opposite, Func&lt;IntVec3, Rot4, Map, Thing&gt; spawnAction = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">groupCountRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="Verse.CellRect.html">CellRect</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">contractedBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">padding</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">avoidDoors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.RotationDirection.html">RotationDirection</a></td>
+        <td><span class="parametername">rotationDirectionOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="Verse.Map.html">Map</a>, <a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawnAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_FillAroundEdges_" data-uid="RimWorld.RoomGenUtility.FillAroundEdges*"></a>
+  <h4 id="RimWorld_RoomGenUtility_FillAroundEdges_Verse_ThingDef_Verse_FloatRange_Verse_IntRange_RimWorld_LayoutRoom_Verse_Map_System_Func_Verse_IntVec3_Verse_Rot4_Verse_CellRect_System_Boolean__System_Collections_Generic_List_Verse_Thing__System_Int32_System_Int32_Verse_ThingDef_System_Boolean_Verse_RotationDirection_System_Func_Verse_IntVec3_Verse_Rot4_Verse_Map_Verse_Thing__RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.FillAroundEdges(Verse.ThingDef,Verse.FloatRange,Verse.IntRange,RimWorld.LayoutRoom,Verse.Map,System.Func{Verse.IntVec3,Verse.Rot4,Verse.CellRect,System.Boolean},System.Collections.Generic.List{Verse.Thing},System.Int32,System.Int32,Verse.ThingDef,System.Boolean,Verse.RotationDirection,System.Func{Verse.IntVec3,Verse.Rot4,Verse.Map,Verse.Thing},RimWorld.Faction)">FillAroundEdges(ThingDef, FloatRange, IntRange, LayoutRoom, Map, Func&lt;IntVec3, Rot4, CellRect, bool&gt;, List&lt;Thing&gt;, int, int, ThingDef, bool, RotationDirection, Func&lt;IntVec3, Rot4, Map, Thing&gt;, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillAroundEdges(ThingDef thing, FloatRange groupsPerTenEdgeCells, IntRange groupCountRange, LayoutRoom room, Map map, Func&lt;IntVec3, Rot4, CellRect, bool&gt; validator = null, List&lt;Thing&gt; spawned = null, int contractedBy = 1, int padding = 0, ThingDef stuff = null, bool avoidDoors = true, RotationDirection rotationDirectionOffset = RotationDirection.Opposite, Func&lt;IntVec3, Rot4, Map, Thing&gt; spawnAction = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.FloatRange.html">FloatRange</a></td>
+        <td><span class="parametername">groupsPerTenEdgeCells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">groupCountRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="Verse.CellRect.html">CellRect</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">contractedBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">padding</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">avoidDoors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.RotationDirection.html">RotationDirection</a></td>
+        <td><span class="parametername">rotationDirectionOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="Verse.Map.html">Map</a>, <a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawnAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_FillPrefabs_" data-uid="RimWorld.RoomGenUtility.FillPrefabs*"></a>
+  <h4 id="RimWorld_RoomGenUtility_FillPrefabs_RimWorld_LayoutPrefabParms_System_Int32_RimWorld_LayoutRoom_Verse_Map_System_Func_Verse_IntVec3_Verse_Rot4_System_Boolean__System_Int32_System_Collections_Generic_List_Verse_Thing__System_Boolean_System_Boolean_RimWorld_Faction_System_Func_RimWorld_PrefabThingData_System_Tuple_Verse_ThingDef_Verse_ThingDef___" data-uid="RimWorld.RoomGenUtility.FillPrefabs(RimWorld.LayoutPrefabParms,System.Int32,RimWorld.LayoutRoom,Verse.Map,System.Func{Verse.IntVec3,Verse.Rot4,System.Boolean},System.Int32,System.Collections.Generic.List{Verse.Thing},System.Boolean,System.Boolean,RimWorld.Faction,System.Func{RimWorld.PrefabThingData,System.Tuple{Verse.ThingDef,Verse.ThingDef}})">FillPrefabs(LayoutPrefabParms, int, LayoutRoom, Map, Func&lt;IntVec3, Rot4, bool&gt;, int, List&lt;Thing&gt;, bool, bool, Faction, Func&lt;PrefabThingData, Tuple&lt;ThingDef, ThingDef&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillPrefabs(LayoutPrefabParms parms, int count, LayoutRoom room, Map map, Func&lt;IntVec3, Rot4, bool&gt; validator = null, int contractedBy = 1, List&lt;Thing&gt; spawned = null, bool alignWithRect = false, bool snapToGrid = false, Faction faction = null, Func&lt;PrefabThingData, Tuple&lt;ThingDef, ThingDef&gt;&gt; overrideSpawnData = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutPrefabParms.html">LayoutPrefabParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">contractedBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">alignWithRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">snapToGrid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="RimWorld.PrefabThingData.html">PrefabThingData</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="Verse.ThingDef.html">ThingDef</a>, <a class="xref" href="Verse.ThingDef.html">ThingDef</a>&gt;&gt;</td>
+        <td><span class="parametername">overrideSpawnData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_FillPrefabsAroundEdges_" data-uid="RimWorld.RoomGenUtility.FillPrefabsAroundEdges*"></a>
+  <h4 id="RimWorld_RoomGenUtility_FillPrefabsAroundEdges_RimWorld_LayoutPrefabParms_System_Int32_RimWorld_LayoutRoom_Verse_Map_System_Func_Verse_IntVec3_Verse_Rot4_System_Boolean__System_Collections_Generic_List_Verse_Thing__System_Int32_System_Boolean_RimWorld_Faction_System_Func_RimWorld_PrefabThingData_System_Tuple_Verse_ThingDef_Verse_ThingDef___" data-uid="RimWorld.RoomGenUtility.FillPrefabsAroundEdges(RimWorld.LayoutPrefabParms,System.Int32,RimWorld.LayoutRoom,Verse.Map,System.Func{Verse.IntVec3,Verse.Rot4,System.Boolean},System.Collections.Generic.List{Verse.Thing},System.Int32,System.Boolean,RimWorld.Faction,System.Func{RimWorld.PrefabThingData,System.Tuple{Verse.ThingDef,Verse.ThingDef}})">FillPrefabsAroundEdges(LayoutPrefabParms, int, LayoutRoom, Map, Func&lt;IntVec3, Rot4, bool&gt;, List&lt;Thing&gt;, int, bool, Faction, Func&lt;PrefabThingData, Tuple&lt;ThingDef, ThingDef&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillPrefabsAroundEdges(LayoutPrefabParms parms, int count, LayoutRoom room, Map map, Func&lt;IntVec3, Rot4, bool&gt; validator = null, List&lt;Thing&gt; spawned = null, int contractedBy = 1, bool avoidDoors = true, Faction faction = null, Func&lt;PrefabThingData, Tuple&lt;ThingDef, ThingDef&gt;&gt; overrideSpawnData = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutPrefabParms.html">LayoutPrefabParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">contractedBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">avoidDoors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="RimWorld.PrefabThingData.html">PrefabThingData</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.tuple-2">Tuple</a>&lt;<a class="xref" href="Verse.ThingDef.html">ThingDef</a>, <a class="xref" href="Verse.ThingDef.html">ThingDef</a>&gt;&gt;</td>
+        <td><span class="parametername">overrideSpawnData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_FillWithPadding_" data-uid="RimWorld.RoomGenUtility.FillWithPadding*"></a>
+  <h4 id="RimWorld_RoomGenUtility_FillWithPadding_Verse_ThingDef_System_Int32_RimWorld_LayoutRoom_Verse_Map_System_Nullable_Verse_Rot4__System_Func_Verse_IntVec3_Verse_Rot4_Verse_CellRect_System_Boolean__System_Collections_Generic_List_Verse_Thing__System_Int32_Verse_ThingDef_System_Boolean_System_Boolean_System_Func_Verse_IntVec3_Verse_Rot4_Verse_Map_Verse_Thing__RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.FillWithPadding(Verse.ThingDef,System.Int32,RimWorld.LayoutRoom,Verse.Map,System.Nullable{Verse.Rot4},System.Func{Verse.IntVec3,Verse.Rot4,Verse.CellRect,System.Boolean},System.Collections.Generic.List{Verse.Thing},System.Int32,Verse.ThingDef,System.Boolean,System.Boolean,System.Func{Verse.IntVec3,Verse.Rot4,Verse.Map,Verse.Thing},RimWorld.Faction)">FillWithPadding(ThingDef, int, LayoutRoom, Map, Rot4?, Func&lt;IntVec3, Rot4, CellRect, bool&gt;, List&lt;Thing&gt;, int, ThingDef, bool, bool, Func&lt;IntVec3, Rot4, Map, Thing&gt;, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillWithPadding(ThingDef thing, int count, LayoutRoom room, Map map, Rot4? fixedRot = null, Func&lt;IntVec3, Rot4, CellRect, bool&gt; validator = null, List&lt;Thing&gt; spawned = null, int contractedBy = 1, ThingDef stuff = null, bool alignWithRect = false, bool snapToGrid = false, Func&lt;IntVec3, Rot4, Map, Thing&gt; spawnAction = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a>?</td>
+        <td><span class="parametername">fixedRot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="Verse.CellRect.html">CellRect</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">contractedBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">alignWithRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">snapToGrid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="Verse.Map.html">Map</a>, <a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawnAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_FillWithPadding_" data-uid="RimWorld.RoomGenUtility.FillWithPadding*"></a>
+  <h4 id="RimWorld_RoomGenUtility_FillWithPadding_Verse_ThingDef_Verse_FloatRange_RimWorld_LayoutRoom_Verse_Map_System_Nullable_Verse_Rot4__System_Func_Verse_IntVec3_Verse_Rot4_Verse_CellRect_System_Boolean__System_Collections_Generic_List_Verse_Thing__System_Int32_Verse_ThingDef_System_Boolean_System_Boolean_System_Func_Verse_IntVec3_Verse_Rot4_Verse_Map_Verse_Thing__RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.FillWithPadding(Verse.ThingDef,Verse.FloatRange,RimWorld.LayoutRoom,Verse.Map,System.Nullable{Verse.Rot4},System.Func{Verse.IntVec3,Verse.Rot4,Verse.CellRect,System.Boolean},System.Collections.Generic.List{Verse.Thing},System.Int32,Verse.ThingDef,System.Boolean,System.Boolean,System.Func{Verse.IntVec3,Verse.Rot4,Verse.Map,Verse.Thing},RimWorld.Faction)">FillWithPadding(ThingDef, FloatRange, LayoutRoom, Map, Rot4?, Func&lt;IntVec3, Rot4, CellRect, bool&gt;, List&lt;Thing&gt;, int, ThingDef, bool, bool, Func&lt;IntVec3, Rot4, Map, Thing&gt;, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void FillWithPadding(ThingDef thing, FloatRange countPer100Cells, LayoutRoom room, Map map, Rot4? fixedRot = null, Func&lt;IntVec3, Rot4, CellRect, bool&gt; validator = null, List&lt;Thing&gt; spawned = null, int contractedBy = 1, ThingDef stuff = null, bool alignWithRect = false, bool snapToGrid = false, Func&lt;IntVec3, Rot4, Map, Thing&gt; spawnAction = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.FloatRange.html">FloatRange</a></td>
+        <td><span class="parametername">countPer100Cells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a>?</td>
+        <td><span class="parametername">fixedRot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="Verse.CellRect.html">CellRect</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">contractedBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">alignWithRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">snapToGrid</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-4">Func</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>, <a class="xref" href="Verse.Map.html">Map</a>, <a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">spawnAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_GenerateRows_" data-uid="RimWorld.RoomGenUtility.GenerateRows*"></a>
+  <h4 id="RimWorld_RoomGenUtility_GenerateRows_Verse_ThingDef_RimWorld_LayoutRoom_Verse_Map_Verse_ThingDef_" data-uid="RimWorld.RoomGenUtility.GenerateRows(Verse.ThingDef,RimWorld.LayoutRoom,Verse.Map,Verse.ThingDef)">GenerateRows(ThingDef, LayoutRoom, Map, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateRows(ThingDef thingDef, LayoutRoom room, Map map, ThingDef stuff = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsAdjacentTo_" data-uid="RimWorld.RoomGenUtility.IsAdjacentTo*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsAdjacentTo_Verse_IntVec3_System_Predicate_Verse_IntVec3__System_Boolean_" data-uid="RimWorld.RoomGenUtility.IsAdjacentTo(Verse.IntVec3,System.Predicate{Verse.IntVec3},System.Boolean)">IsAdjacentTo(IntVec3, Predicate&lt;IntVec3&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsAdjacentTo(IntVec3 cell, Predicate&lt;IntVec3&gt; predicate, bool cardinalOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">cardinalOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsClearAndNotAdjacentToDoor_" data-uid="RimWorld.RoomGenUtility.IsClearAndNotAdjacentToDoor*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsClearAndNotAdjacentToDoor_Verse_CellRect_Verse_Map_" data-uid="RimWorld.RoomGenUtility.IsClearAndNotAdjacentToDoor(Verse.CellRect,Verse.Map)">IsClearAndNotAdjacentToDoor(CellRect, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsClearAndNotAdjacentToDoor(CellRect rect, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsClearAndNotAdjacentToDoor_" data-uid="RimWorld.RoomGenUtility.IsClearAndNotAdjacentToDoor*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsClearAndNotAdjacentToDoor_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Rot4_" data-uid="RimWorld.RoomGenUtility.IsClearAndNotAdjacentToDoor(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Rot4)">IsClearAndNotAdjacentToDoor(ThingDef, IntVec3, Map, Rot4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsClearAndNotAdjacentToDoor(ThingDef def, IntVec3 pos, Map map, Rot4 rot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsDoorAdjacentTo_" data-uid="RimWorld.RoomGenUtility.IsDoorAdjacentTo*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsDoorAdjacentTo_Verse_IntVec3_Verse_Map_System_Boolean_" data-uid="RimWorld.RoomGenUtility.IsDoorAdjacentTo(Verse.IntVec3,Verse.Map,System.Boolean)">IsDoorAdjacentTo(IntVec3, Map, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDoorAdjacentTo(IntVec3 cell, Map map, bool cardinalOnly = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">cardinalOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsGoodForDoor_" data-uid="RimWorld.RoomGenUtility.IsGoodForDoor*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsGoodForDoor_Verse_IntVec3_Verse_Map_" data-uid="RimWorld.RoomGenUtility.IsGoodForDoor(Verse.IntVec3,Verse.Map)">IsGoodForDoor(IntVec3, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsGoodForDoor(IntVec3 p, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsGoodForHorizontalDoor_" data-uid="RimWorld.RoomGenUtility.IsGoodForHorizontalDoor*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsGoodForHorizontalDoor_Verse_IntVec3_Verse_Map_" data-uid="RimWorld.RoomGenUtility.IsGoodForHorizontalDoor(Verse.IntVec3,Verse.Map)">IsGoodForHorizontalDoor(IntVec3, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsGoodForHorizontalDoor(IntVec3 p, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsGoodForVerticalDoor_" data-uid="RimWorld.RoomGenUtility.IsGoodForVerticalDoor*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsGoodForVerticalDoor_Verse_IntVec3_Verse_Map_" data-uid="RimWorld.RoomGenUtility.IsGoodForVerticalDoor(Verse.IntVec3,Verse.Map)">IsGoodForVerticalDoor(IntVec3, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsGoodForVerticalDoor(IntVec3 p, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsValidCrateCell_" data-uid="RimWorld.RoomGenUtility.IsValidCrateCell*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsValidCrateCell_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Rot4_" data-uid="RimWorld.RoomGenUtility.IsValidCrateCell(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Rot4)">IsValidCrateCell(ThingDef, IntVec3, Map, Rot4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidCrateCell(ThingDef crate, IntVec3 pos, Map map, Rot4 rot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">crate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_IsWallAt_" data-uid="RimWorld.RoomGenUtility.IsWallAt*"></a>
+  <h4 id="RimWorld_RoomGenUtility_IsWallAt_Verse_IntVec3_Verse_Map_" data-uid="RimWorld.RoomGenUtility.IsWallAt(Verse.IntVec3,Verse.Map)">IsWallAt(IntVec3, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsWallAt(IntVec3 position, Map map)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnCorpse_" data-uid="RimWorld.RoomGenUtility.SpawnCorpse*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnCorpse_Verse_IntVec3_Verse_PawnKindDef_System_Int32_Verse_Map_Verse_DamageDef_System_Nullable_System_Single__System_Boolean_Verse_ThingDef_Verse_Tool_System_Nullable_Verse_IntRange__Verse_BodyPartDef_" data-uid="RimWorld.RoomGenUtility.SpawnCorpse(Verse.IntVec3,Verse.PawnKindDef,System.Int32,Verse.Map,Verse.DamageDef,System.Nullable{System.Single},System.Boolean,Verse.ThingDef,Verse.Tool,System.Nullable{Verse.IntRange},Verse.BodyPartDef)">SpawnCorpse(IntVec3, PawnKindDef, int, Map, DamageDef, float?, bool, ThingDef, Tool, IntRange?, BodyPartDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Corpse SpawnCorpse(IntVec3 cell, PawnKindDef kind, int deadTicks, Map map, DamageDef damageType, float? fixedAge = null, bool forceNoGear = false, ThingDef killerThing = null, Tool toolUsed = null, IntRange? bloodFilthRange = null, BodyPartDef idealPart = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">deadTicks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.DamageDef.html">DamageDef</a></td>
+        <td><span class="parametername">damageType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">fixedAge</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forceNoGear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">killerThing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Tool.html">Tool</a></td>
+        <td><span class="parametername">toolUsed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">bloodFilthRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartDef.html">BodyPartDef</a></td>
+        <td><span class="parametername">idealPart</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Corpse.html">Corpse</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnCorpses_" data-uid="RimWorld.RoomGenUtility.SpawnCorpses*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnCorpses_RimWorld_LayoutRoom_Verse_Map_Verse_IntRange_Verse_PawnKindDef_Verse_DamageDef_Verse_ThingDef_Verse_Tool_System_Nullable_Verse_FloatRange__System_Nullable_Verse_IntRange__System_Nullable_System_Int32__System_Boolean_" data-uid="RimWorld.RoomGenUtility.SpawnCorpses(RimWorld.LayoutRoom,Verse.Map,Verse.IntRange,Verse.PawnKindDef,Verse.DamageDef,Verse.ThingDef,Verse.Tool,System.Nullable{Verse.FloatRange},System.Nullable{Verse.IntRange},System.Nullable{System.Int32},System.Boolean)">SpawnCorpses(LayoutRoom, Map, IntRange, PawnKindDef, DamageDef, ThingDef, Tool, FloatRange?, IntRange?, int?, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnCorpses(LayoutRoom room, Map map, IntRange countRange, PawnKindDef kind, DamageDef damageType, ThingDef killerThing = null, Tool toolUsed = null, FloatRange? ageDaysRange = null, IntRange? bloodFilthRange = null, int? fixedAge = null, bool forceNoGear = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">countRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a></td>
+        <td><span class="parametername">kind</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.DamageDef.html">DamageDef</a></td>
+        <td><span class="parametername">damageType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">killerThing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Tool.html">Tool</a></td>
+        <td><span class="parametername">toolUsed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.FloatRange.html">FloatRange</a>?</td>
+        <td><span class="parametername">ageDaysRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">bloodFilthRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</td>
+        <td><span class="parametername">fixedAge</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">forceNoGear</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnCrate_" data-uid="RimWorld.RoomGenUtility.SpawnCrate*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnCrate_Verse_ThingDef_Verse_IntVec3_Verse_Map_RimWorld_ThingSetMakerDef_System_Boolean_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnCrate(Verse.ThingDef,Verse.IntVec3,Verse.Map,RimWorld.ThingSetMakerDef,System.Boolean,System.String)">SpawnCrate(ThingDef, IntVec3, Map, ThingSetMakerDef, bool, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Building_Crate SpawnCrate(ThingDef crateDef, IntVec3 cell, Map map, ThingSetMakerDef rewardMaker, bool addRewards = true, string signal = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">crateDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">rewardMaker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addRewards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Building_Crate.html">Building_Crate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnCrate_" data-uid="RimWorld.RoomGenUtility.SpawnCrate*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnCrate_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Rot4_RimWorld_ThingSetMakerDef_System_Boolean_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnCrate(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Rot4,RimWorld.ThingSetMakerDef,System.Boolean,System.String)">SpawnCrate(ThingDef, IntVec3, Map, Rot4, ThingSetMakerDef, bool, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Building_Crate SpawnCrate(ThingDef crateDef, IntVec3 cell, Map map, Rot4 rot, ThingSetMakerDef rewardMaker, bool addRewards = true, string signal = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">crateDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">rewardMaker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addRewards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Building_Crate.html">Building_Crate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnCrateInRoom_" data-uid="RimWorld.RoomGenUtility.SpawnCrateInRoom*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnCrateInRoom_Verse_ThingDef_RimWorld_LayoutRoom_Verse_Map_RimWorld_ThingSetMakerDef_System_Boolean_System_String_System_Nullable_Verse_Rot4__" data-uid="RimWorld.RoomGenUtility.SpawnCrateInRoom(Verse.ThingDef,RimWorld.LayoutRoom,Verse.Map,RimWorld.ThingSetMakerDef,System.Boolean,System.String,System.Nullable{Verse.Rot4})">SpawnCrateInRoom(ThingDef, LayoutRoom, Map, ThingSetMakerDef, bool, string, Rot4?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnCrateInRoom(ThingDef crateDef, LayoutRoom room, Map map, ThingSetMakerDef rewardMaker, bool addRewards = true, string signal = null, Rot4? rot = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">crateDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">rewardMaker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addRewards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a>?</td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnCratesInRoom_" data-uid="RimWorld.RoomGenUtility.SpawnCratesInRoom*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnCratesInRoom_Verse_ThingDef_RimWorld_LayoutRoom_Verse_Map_RimWorld_ThingSetMakerDef_Verse_IntRange_System_Boolean_System_String_System_Nullable_Verse_Rot4__" data-uid="RimWorld.RoomGenUtility.SpawnCratesInRoom(Verse.ThingDef,RimWorld.LayoutRoom,Verse.Map,RimWorld.ThingSetMakerDef,Verse.IntRange,System.Boolean,System.String,System.Nullable{Verse.Rot4})">SpawnCratesInRoom(ThingDef, LayoutRoom, Map, ThingSetMakerDef, IntRange, bool, string, Rot4?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnCratesInRoom(ThingDef crateDef, LayoutRoom room, Map map, ThingSetMakerDef rewardMaker, IntRange countRange, bool addRewards = true, string signal = null, Rot4? rot = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">crateDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">rewardMaker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">countRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addRewards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a>?</td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnCryptoCasket_" data-uid="RimWorld.RoomGenUtility.SpawnCryptoCasket*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnCryptoCasket_Verse_IntVec3_Verse_Map_Verse_Rot4_System_Int32_RimWorld_PodContentsType_RimWorld_ThingSetMakerDef_" data-uid="RimWorld.RoomGenUtility.SpawnCryptoCasket(Verse.IntVec3,Verse.Map,Verse.Rot4,System.Int32,RimWorld.PodContentsType,RimWorld.ThingSetMakerDef)">SpawnCryptoCasket(IntVec3, Map, Rot4, int, PodContentsType, ThingSetMakerDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Building_AncientCryptosleepCasket SpawnCryptoCasket(IntVec3 cell, Map map, Rot4 rot, int groupID, PodContentsType type, ThingSetMakerDef thingSetMakerDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">groupID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.PodContentsType.html">PodContentsType</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">thingSetMakerDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Building_AncientCryptosleepCasket.html">Building_AncientCryptosleepCasket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnDoorBarricades_" data-uid="RimWorld.RoomGenUtility.SpawnDoorBarricades*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnDoorBarricades_Verse_ThingDef_RimWorld_LayoutRoom_Verse_Map_System_Single_Verse_ThingDef_System_Int32_System_Int32_" data-uid="RimWorld.RoomGenUtility.SpawnDoorBarricades(Verse.ThingDef,RimWorld.LayoutRoom,Verse.Map,System.Single,Verse.ThingDef,System.Int32,System.Int32)">SpawnDoorBarricades(ThingDef, LayoutRoom, Map, float, ThingDef, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnDoorBarricades(ThingDef def, LayoutRoom room, Map map, float chancePerDoor = 0.75, ThingDef stuff = null, int steps = 2, int offset = 2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">chancePerDoor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">steps</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">offset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnDormantInsectCluster_" data-uid="RimWorld.RoomGenUtility.SpawnDormantInsectCluster*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnDormantInsectCluster_RimWorld_LayoutRoom_Verse_Map_System_Single_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnDormantInsectCluster(RimWorld.LayoutRoom,Verse.Map,System.Single,System.String)">SpawnDormantInsectCluster(LayoutRoom, Map, float, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnDormantInsectCluster(LayoutRoom room, Map map, float threatPoints, string signalTag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signalTag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnDormantMechCluster_" data-uid="RimWorld.RoomGenUtility.SpawnDormantMechCluster*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnDormantMechCluster_RimWorld_LayoutRoom_Verse_Map_System_Single_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnDormantMechCluster(RimWorld.LayoutRoom,Verse.Map,System.Single,System.String)">SpawnDormantMechCluster(LayoutRoom, Map, float, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnDormantMechCluster(LayoutRoom room, Map map, float threatPoints, string signalTag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signalTag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnDormantThreatCluster_" data-uid="RimWorld.RoomGenUtility.SpawnDormantThreatCluster*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnDormantThreatCluster_RimWorld_LayoutRoom_Verse_Map_RimWorld_Faction_System_Func_Verse_PawnKindDef_System_Boolean__System_Single_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnDormantThreatCluster(RimWorld.LayoutRoom,Verse.Map,RimWorld.Faction,System.Func{Verse.PawnKindDef,System.Boolean},System.Single,System.String)">SpawnDormantThreatCluster(LayoutRoom, Map, Faction, Func&lt;PawnKindDef, bool&gt;, float, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnDormantThreatCluster(LayoutRoom room, Map map, Faction faction, Func&lt;PawnKindDef, bool&gt; selector, float threatPoints, string signalTag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Verse.PawnKindDef.html">PawnKindDef</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">selector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signalTag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnDormantThreatCluster_" data-uid="RimWorld.RoomGenUtility.SpawnDormantThreatCluster*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnDormantThreatCluster_RimWorld_LayoutRoom_Verse_Map_System_Single_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnDormantThreatCluster(RimWorld.LayoutRoom,Verse.Map,System.Single,System.String)">SpawnDormantThreatCluster(LayoutRoom, Map, float, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnDormantThreatCluster(LayoutRoom room, Map map, float threatPoints, string signalTag = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signalTag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnHermeticCrate_" data-uid="RimWorld.RoomGenUtility.SpawnHermeticCrate*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnHermeticCrate_Verse_IntVec3_Verse_Map_RimWorld_ThingSetMakerDef_System_Boolean_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnHermeticCrate(Verse.IntVec3,Verse.Map,RimWorld.ThingSetMakerDef,System.Boolean,System.String)">SpawnHermeticCrate(IntVec3, Map, ThingSetMakerDef, bool, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Building_Crate SpawnHermeticCrate(IntVec3 cell, Map map, ThingSetMakerDef setMaker, bool addRewards = true, string signal = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">setMaker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addRewards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Building_Crate.html">Building_Crate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnHermeticCrate_" data-uid="RimWorld.RoomGenUtility.SpawnHermeticCrate*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnHermeticCrate_Verse_IntVec3_Verse_Map_Verse_Rot4_RimWorld_ThingSetMakerDef_System_Boolean_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnHermeticCrate(Verse.IntVec3,Verse.Map,Verse.Rot4,RimWorld.ThingSetMakerDef,System.Boolean,System.String)">SpawnHermeticCrate(IntVec3, Map, Rot4, ThingSetMakerDef, bool, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Building_Crate SpawnHermeticCrate(IntVec3 cell, Map map, Rot4 rot, ThingSetMakerDef setMaker, bool addRewards = true, string signal = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">setMaker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addRewards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Building_Crate.html">Building_Crate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnHermeticCrateInRoom_" data-uid="RimWorld.RoomGenUtility.SpawnHermeticCrateInRoom*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnHermeticCrateInRoom_RimWorld_LayoutRoom_Verse_Map_RimWorld_ThingSetMakerDef_System_Boolean_System_String_System_Nullable_Verse_Rot4__" data-uid="RimWorld.RoomGenUtility.SpawnHermeticCrateInRoom(RimWorld.LayoutRoom,Verse.Map,RimWorld.ThingSetMakerDef,System.Boolean,System.String,System.Nullable{Verse.Rot4})">SpawnHermeticCrateInRoom(LayoutRoom, Map, ThingSetMakerDef, bool, string, Rot4?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnHermeticCrateInRoom(LayoutRoom room, Map map, ThingSetMakerDef rewardMaker, bool addRewards = true, string signal = null, Rot4? rot = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">rewardMaker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addRewards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a>?</td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnHermeticCratesInRoom_" data-uid="RimWorld.RoomGenUtility.SpawnHermeticCratesInRoom*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnHermeticCratesInRoom_RimWorld_LayoutRoom_Verse_Map_RimWorld_ThingSetMakerDef_Verse_IntRange_System_Boolean_System_String_System_Nullable_Verse_Rot4__" data-uid="RimWorld.RoomGenUtility.SpawnHermeticCratesInRoom(RimWorld.LayoutRoom,Verse.Map,RimWorld.ThingSetMakerDef,Verse.IntRange,System.Boolean,System.String,System.Nullable{Verse.Rot4})">SpawnHermeticCratesInRoom(LayoutRoom, Map, ThingSetMakerDef, IntRange, bool, string, Rot4?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnHermeticCratesInRoom(LayoutRoom room, Map map, ThingSetMakerDef rewardMaker, IntRange countRange, bool addRewards = true, string signal = null, Rot4? rot = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ThingSetMakerDef.html">ThingSetMakerDef</a></td>
+        <td><span class="parametername">rewardMaker</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">countRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addRewards</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a>?</td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnInCorners_" data-uid="RimWorld.RoomGenUtility.SpawnInCorners*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnInCorners_Verse_ThingDef_RimWorld_LayoutRoom_Verse_Map_Verse_ThingDef_System_Single_Verse_Rot4_" data-uid="RimWorld.RoomGenUtility.SpawnInCorners(Verse.ThingDef,RimWorld.LayoutRoom,Verse.Map,Verse.ThingDef,System.Single,Verse.Rot4)">SpawnInCorners(ThingDef, LayoutRoom, Map, ThingDef, float, Rot4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnInCorners(ThingDef thing, LayoutRoom room, Map map, ThingDef stuff = null, float spawnChance = 1, Rot4 rot = default)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">spawnChance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">rot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnOpenCryptoCasketSignal_" data-uid="RimWorld.RoomGenUtility.SpawnOpenCryptoCasketSignal*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnOpenCryptoCasketSignal_RimWorld_Building_AncientCryptosleepCasket_Verse_Map_System_String_" data-uid="RimWorld.RoomGenUtility.SpawnOpenCryptoCasketSignal(RimWorld.Building_AncientCryptosleepCasket,Verse.Map,System.String)">SpawnOpenCryptoCasketSignal(Building_AncientCryptosleepCasket, Map, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SignalAction_OpenCasket SpawnOpenCryptoCasketSignal(Building_AncientCryptosleepCasket pod, Map map, string signalTag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Building_AncientCryptosleepCasket.html">Building_AncientCryptosleepCasket</a></td>
+        <td><span class="parametername">pod</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signalTag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.SignalAction_OpenCasket.html">SignalAction_OpenCasket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnWallAttatchments_" data-uid="RimWorld.RoomGenUtility.SpawnWallAttatchments*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnWallAttatchments_Verse_ThingDef_Verse_Map_RimWorld_LayoutRoom_System_Single_System_Single_Verse_Predicate_Verse_IntVec3_Verse_Rot4__Verse_ThingDef_RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.SpawnWallAttatchments(Verse.ThingDef,Verse.Map,RimWorld.LayoutRoom,System.Single,System.Single,Verse.Predicate{Verse.IntVec3,Verse.Rot4},Verse.ThingDef,RimWorld.Faction)">SpawnWallAttatchments(ThingDef, Map, LayoutRoom, float, float, Predicate&lt;IntVec3, Rot4&gt;, ThingDef, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnWallAttatchments(ThingDef thingDef, Map map, LayoutRoom room, float chance = 1, float thingsPerSide10Cells = 1, Predicate&lt;IntVec3, Rot4&gt; validator = null, ThingDef stuff = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">chance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">thingsPerSide10Cells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Predicate-2.html">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnWallAttatchments_" data-uid="RimWorld.RoomGenUtility.SpawnWallAttatchments*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnWallAttatchments_Verse_ThingDef_Verse_Map_RimWorld_LayoutRoom_Verse_IntRange_Verse_Predicate_Verse_IntVec3_Verse_Rot4__Verse_ThingDef_RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.SpawnWallAttatchments(Verse.ThingDef,Verse.Map,RimWorld.LayoutRoom,Verse.IntRange,Verse.Predicate{Verse.IntVec3,Verse.Rot4},Verse.ThingDef,RimWorld.Faction)">SpawnWallAttatchments(ThingDef, Map, LayoutRoom, IntRange, Predicate&lt;IntVec3, Rot4&gt;, ThingDef, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnWallAttatchments(ThingDef thingDef, Map map, LayoutRoom room, IntRange count, Predicate&lt;IntVec3, Rot4&gt; validator = null, ThingDef stuff = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Predicate-2.html">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnWallAttatchments_" data-uid="RimWorld.RoomGenUtility.SpawnWallAttatchments*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnWallAttatchments_Verse_ThingDef_Verse_Map_System_Collections_Generic_List_Verse_CellRect__System_Single_System_Single_Verse_Predicate_Verse_IntVec3_Verse_Rot4__Verse_ThingDef_RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.SpawnWallAttatchments(Verse.ThingDef,Verse.Map,System.Collections.Generic.List{Verse.CellRect},System.Single,System.Single,Verse.Predicate{Verse.IntVec3,Verse.Rot4},Verse.ThingDef,RimWorld.Faction)">SpawnWallAttatchments(ThingDef, Map, List&lt;CellRect&gt;, float, float, Predicate&lt;IntVec3, Rot4&gt;, ThingDef, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnWallAttatchments(ThingDef thingDef, Map map, List&lt;CellRect&gt; rects, float chance = 1, float thingsPerSide10Cells = 1, Predicate&lt;IntVec3, Rot4&gt; validator = null, ThingDef stuff = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">rects</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">chance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">thingsPerSide10Cells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Predicate-2.html">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SpawnWallAttatchments_" data-uid="RimWorld.RoomGenUtility.SpawnWallAttatchments*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SpawnWallAttatchments_Verse_ThingDef_Verse_Map_System_Collections_Generic_List_Verse_CellRect__Verse_IntRange_Verse_Predicate_Verse_IntVec3_Verse_Rot4__Verse_ThingDef_RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.SpawnWallAttatchments(Verse.ThingDef,Verse.Map,System.Collections.Generic.List{Verse.CellRect},Verse.IntRange,Verse.Predicate{Verse.IntVec3,Verse.Rot4},Verse.ThingDef,RimWorld.Faction)">SpawnWallAttatchments(ThingDef, Map, List&lt;CellRect&gt;, IntRange, Predicate&lt;IntVec3, Rot4&gt;, ThingDef, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnWallAttatchments(ThingDef thingDef, Map map, List&lt;CellRect&gt; rects, IntRange count, Predicate&lt;IntVec3, Rot4&gt; validator = null, ThingDef stuff = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">rects</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Predicate-2.html">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_SubdividedIntoRooms_" data-uid="RimWorld.RoomGenUtility.SubdividedIntoRooms*"></a>
+  <h4 id="RimWorld_RoomGenUtility_SubdividedIntoRooms_Verse_Map_Verse_CellRect_System_Int32_System_Int32_System_Int32_System_Int32_Verse_ThingDef_Verse_ThingDef_" data-uid="RimWorld.RoomGenUtility.SubdividedIntoRooms(Verse.Map,Verse.CellRect,System.Int32,System.Int32,System.Int32,System.Int32,Verse.ThingDef,Verse.ThingDef)">SubdividedIntoRooms(Map, CellRect, int, int, int, int, ThingDef, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Queue&lt;CellRect&gt; SubdividedIntoRooms(Map map, CellRect rect, int innerWallsContract = 3, int minRoomSize = 5, int wallMoveRange = 1, int maxRooms = 2, ThingDef wall = null, ThingDef wallStuff = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">innerWallsContract</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minRoomSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">wallMoveRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxRooms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">wall</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">wallStuff</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.queue-1">Queue</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_TryPlaceInRandomCorner_" data-uid="RimWorld.RoomGenUtility.TryPlaceInRandomCorner*"></a>
+  <h4 id="RimWorld_RoomGenUtility_TryPlaceInRandomCorner_Verse_Map_RimWorld_LayoutRoom_Verse_ThingDef_RimWorld_Faction_Verse_ThingDef_" data-uid="RimWorld.RoomGenUtility.TryPlaceInRandomCorner(Verse.Map,RimWorld.LayoutRoom,Verse.ThingDef,RimWorld.Faction,Verse.ThingDef)">TryPlaceInRandomCorner(Map, LayoutRoom, ThingDef, Faction, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void TryPlaceInRandomCorner(Map map, LayoutRoom room, ThingDef thingDef, Faction faction, ThingDef stuff = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.LayoutRoom.html">LayoutRoom</a></td>
+        <td><span class="parametername">room</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_RoomGenUtility_TrySpawnWallAttatchment_" data-uid="RimWorld.RoomGenUtility.TrySpawnWallAttatchment*"></a>
+  <h4 id="RimWorld_RoomGenUtility_TrySpawnWallAttatchment_Verse_ThingDef_Verse_IntVec3_Verse_Map_Verse_Thing__System_Boolean_Verse_Predicate_Verse_IntVec3_Verse_Rot4__Verse_ThingDef_RimWorld_Faction_" data-uid="RimWorld.RoomGenUtility.TrySpawnWallAttatchment(Verse.ThingDef,Verse.IntVec3,Verse.Map,Verse.Thing@,System.Boolean,Verse.Predicate{Verse.IntVec3,Verse.Rot4},Verse.ThingDef,RimWorld.Faction)">TrySpawnWallAttatchment(ThingDef, IntVec3, Map, out Thing, bool, Predicate&lt;IntVec3, Rot4&gt;, ThingDef, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TrySpawnWallAttatchment(ThingDef thingDef, IntVec3 cell, Map map, out Thing spawned, bool avoidEdifices = true, Predicate&lt;IntVec3, Rot4&gt; validator = null, ThingDef stuff = null, Faction faction = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">spawned</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">avoidEdifices</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Predicate-2.html">Predicate</a>&lt;<a class="xref" href="Verse.IntVec3.html">IntVec3</a>, <a class="xref" href="Verse.Rot4.html">Rot4</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

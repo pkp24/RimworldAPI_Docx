@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Scroller </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Scroller ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.UIElements.Scroller">
+
+
+
+  <h1 id="UnityEngine_UIElements_Scroller" data-uid="UnityEngine.UIElements.Scroller" class="text-break">Class Scroller</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html">CallbackEventHandler</a></div>
+    <div class="level2"><a class="xref" href="UnityEngine.UIElements.Focusable.html">Focusable</a></div>
+    <div class="level3"><a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a></div>
+    <div class="level4"><span class="xref">Scroller</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.UIElements.IEventHandler.html">IEventHandler</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.IResolvedStyle.html">IResolvedStyle</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.ITransform.html">ITransform</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.Experimental.ITransitionAnimations.html">ITransitionAnimations</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.IExperimentalFeatures.html">IExperimentalFeatures</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.IVisualElementScheduler.html">IVisualElementScheduler</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_disabledUssClassName">VisualElement.disabledUssClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ExecuteDefaultAction_UnityEngine_UIElements_EventBase_">VisualElement.ExecuteDefaultAction(EventBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Focus">VisualElement.Focus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_SendEvent_UnityEngine_UIElements_EventBase_">VisualElement.SendEvent(EventBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_SetEnabledFromHierarchy_System_Boolean_">VisualElement.SetEnabledFromHierarchy(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_SetEnabled_System_Boolean_">VisualElement.SetEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_MarkDirtyRepaint">VisualElement.MarkDirtyRepaint()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ContainsPoint_UnityEngine_Vector2_">VisualElement.ContainsPoint(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Overlaps_UnityEngine_Rect_">VisualElement.Overlaps(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_DoMeasure_System_Single_UnityEngine_UIElements_VisualElement_MeasureMode_System_Single_UnityEngine_UIElements_VisualElement_MeasureMode_">VisualElement.DoMeasure(float, VisualElement.MeasureMode, float, VisualElement.MeasureMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ToString">VisualElement.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_GetClasses">VisualElement.GetClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ClearClassList">VisualElement.ClearClassList()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_AddToClassList_System_String_">VisualElement.AddToClassList(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_RemoveFromClassList_System_String_">VisualElement.RemoveFromClassList(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ToggleInClassList_System_String_">VisualElement.ToggleInClassList(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_EnableInClassList_System_String_System_Boolean_">VisualElement.EnableInClassList(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ClassListContains_System_String_">VisualElement.ClassListContains(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_FindAncestorUserData">VisualElement.FindAncestorUserData()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Add_UnityEngine_UIElements_VisualElement_">VisualElement.Add(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Insert_System_Int32_UnityEngine_UIElements_VisualElement_">VisualElement.Insert(int, VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Remove_UnityEngine_UIElements_VisualElement_">VisualElement.Remove(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_RemoveAt_System_Int32_">VisualElement.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Clear">VisualElement.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ElementAt_System_Int32_">VisualElement.ElementAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_IndexOf_UnityEngine_UIElements_VisualElement_">VisualElement.IndexOf(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Children">VisualElement.Children()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Sort_System_Comparison_UnityEngine_UIElements_VisualElement__">VisualElement.Sort(Comparison&lt;VisualElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_BringToFront">VisualElement.BringToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_SendToBack">VisualElement.SendToBack()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_PlaceBehind_UnityEngine_UIElements_VisualElement_">VisualElement.PlaceBehind(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_PlaceInFront_UnityEngine_UIElements_VisualElement_">VisualElement.PlaceInFront(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_RemoveFromHierarchy">VisualElement.RemoveFromHierarchy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_GetFirstOfType__1">VisualElement.GetFirstOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_GetFirstAncestorOfType__1">VisualElement.GetFirstAncestorOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Contains_UnityEngine_UIElements_VisualElement_">VisualElement.Contains(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_FindCommonAncestor_UnityEngine_UIElements_VisualElement_">VisualElement.FindCommonAncestor(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_resolvedStyle">VisualElement.resolvedStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_viewDataKey">VisualElement.viewDataKey</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_userData">VisualElement.userData</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_canGrabFocus">VisualElement.canGrabFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_focusController">VisualElement.focusController</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_usageHints">VisualElement.usageHints</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_transform">VisualElement.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_layout">VisualElement.layout</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_contentRect">VisualElement.contentRect</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_paddingRect">VisualElement.paddingRect</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_worldBound">VisualElement.worldBound</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_localBound">VisualElement.localBound</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_worldTransform">VisualElement.worldTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_pickingMode">VisualElement.pickingMode</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_name">VisualElement.name</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_enabledInHierarchy">VisualElement.enabledInHierarchy</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_enabledSelf">VisualElement.enabledSelf</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_languageDirection">VisualElement.languageDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_visible">VisualElement.visible</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_generateVisualContent">VisualElement.generateVisualContent</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_experimental">VisualElement.experimental</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_hierarchy">VisualElement.hierarchy</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_cacheAsBitmap">VisualElement.cacheAsBitmap</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_parent">VisualElement.parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_panel">VisualElement.panel</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_contentContainer">VisualElement.contentContainer</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_visualTreeAssetSource">VisualElement.visualTreeAssetSource</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Item_System_Int32_">VisualElement.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_childCount">VisualElement.childCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_schedule">VisualElement.schedule</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_style">VisualElement.style</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_customStyle">VisualElement.customStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_styleSheets">VisualElement.styleSheets</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_tooltip">VisualElement.tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.Focusable.html#UnityEngine_UIElements_Focusable_Blur">Focusable.Blur()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.Focusable.html#UnityEngine_UIElements_Focusable_focusable">Focusable.focusable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.Focusable.html#UnityEngine_UIElements_Focusable_tabIndex">Focusable.tabIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.Focusable.html#UnityEngine_UIElements_Focusable_delegatesFocus">Focusable.delegatesFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_RegisterCallback__1_UnityEngine_UIElements_EventCallback___0__UnityEngine_UIElements_TrickleDown_">CallbackEventHandler.RegisterCallback&lt;TEventType&gt;(EventCallback&lt;TEventType&gt;, TrickleDown)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_RegisterCallback__2_UnityEngine_UIElements_EventCallback___0___1____1_UnityEngine_UIElements_TrickleDown_">CallbackEventHandler.RegisterCallback&lt;TEventType, TUserArgsType&gt;(EventCallback&lt;TEventType, TUserArgsType&gt;, TUserArgsType, TrickleDown)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_UnregisterCallback__1_UnityEngine_UIElements_EventCallback___0__UnityEngine_UIElements_TrickleDown_">CallbackEventHandler.UnregisterCallback&lt;TEventType&gt;(EventCallback&lt;TEventType&gt;, TrickleDown)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_UnregisterCallback__2_UnityEngine_UIElements_EventCallback___0___1__UnityEngine_UIElements_TrickleDown_">CallbackEventHandler.UnregisterCallback&lt;TEventType, TUserArgsType&gt;(EventCallback&lt;TEventType, TUserArgsType&gt;, TrickleDown)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_HandleEvent_UnityEngine_UIElements_EventBase_">CallbackEventHandler.HandleEvent(EventBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_HasTrickleDownHandlers">CallbackEventHandler.HasTrickleDownHandlers()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_HasBubbleUpHandlers">CallbackEventHandler.HasBubbleUpHandlers()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_ExecuteDefaultActionAtTarget_UnityEngine_UIElements_EventBase_">CallbackEventHandler.ExecuteDefaultActionAtTarget(EventBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UIElements.html">UIElements</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.UIElementsModule.dll</h6>
+  <h5 id="UnityEngine_UIElements_Scroller_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Scroller : VisualElement, IEventHandler, IResolvedStyle, ITransform, ITransitionAnimations, IExperimentalFeatures, IVisualElementScheduler</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="UnityEngine_UIElements_Scroller__ctor_" data-uid="UnityEngine.UIElements.Scroller.#ctor*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller__ctor" data-uid="UnityEngine.UIElements.Scroller.#ctor">Scroller()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scroller()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_UIElements_Scroller__ctor_" data-uid="UnityEngine.UIElements.Scroller.#ctor*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller__ctor_System_Single_System_Single_System_Action_System_Single__UnityEngine_UIElements_SliderDirection_" data-uid="UnityEngine.UIElements.Scroller.#ctor(System.Single,System.Single,System.Action{System.Single},UnityEngine.UIElements.SliderDirection)">Scroller(float, float, Action&lt;float&gt;, SliderDirection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scroller(float lowValue, float highValue, Action&lt;float&gt; valueChanged, SliderDirection direction = SliderDirection.Vertical)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">lowValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">highValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td><span class="parametername">valueChanged</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.SliderDirection.html">SliderDirection</a></td>
+        <td><span class="parametername">direction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="UnityEngine_UIElements_Scroller_highButtonUssClassName" data-uid="UnityEngine.UIElements.Scroller.highButtonUssClassName">highButtonUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string highButtonUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_Scroller_horizontalVariantUssClassName" data-uid="UnityEngine.UIElements.Scroller.horizontalVariantUssClassName">horizontalVariantUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string horizontalVariantUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_Scroller_lowButtonUssClassName" data-uid="UnityEngine.UIElements.Scroller.lowButtonUssClassName">lowButtonUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string lowButtonUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_Scroller_sliderUssClassName" data-uid="UnityEngine.UIElements.Scroller.sliderUssClassName">sliderUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string sliderUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_Scroller_ussClassName" data-uid="UnityEngine.UIElements.Scroller.ussClassName">ussClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ussClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_Scroller_verticalVariantUssClassName" data-uid="UnityEngine.UIElements.Scroller.verticalVariantUssClassName">verticalVariantUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string verticalVariantUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="UnityEngine_UIElements_Scroller_direction_" data-uid="UnityEngine.UIElements.Scroller.direction*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_direction" data-uid="UnityEngine.UIElements.Scroller.direction">direction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SliderDirection direction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.SliderDirection.html">SliderDirection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_Scroller_highButton_" data-uid="UnityEngine.UIElements.Scroller.highButton*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_highButton" data-uid="UnityEngine.UIElements.Scroller.highButton">highButton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RepeatButton highButton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.RepeatButton.html">RepeatButton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_Scroller_highValue_" data-uid="UnityEngine.UIElements.Scroller.highValue*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_highValue" data-uid="UnityEngine.UIElements.Scroller.highValue">highValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float highValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_Scroller_lowButton_" data-uid="UnityEngine.UIElements.Scroller.lowButton*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_lowButton" data-uid="UnityEngine.UIElements.Scroller.lowButton">lowButton</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RepeatButton lowButton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.RepeatButton.html">RepeatButton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_Scroller_lowValue_" data-uid="UnityEngine.UIElements.Scroller.lowValue*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_lowValue" data-uid="UnityEngine.UIElements.Scroller.lowValue">lowValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lowValue { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_Scroller_slider_" data-uid="UnityEngine.UIElements.Scroller.slider*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_slider" data-uid="UnityEngine.UIElements.Scroller.slider">slider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Slider slider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.Slider.html">Slider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_Scroller_value_" data-uid="UnityEngine.UIElements.Scroller.value*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_value" data-uid="UnityEngine.UIElements.Scroller.value">value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_UIElements_Scroller_Adjust_" data-uid="UnityEngine.UIElements.Scroller.Adjust*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_Adjust_System_Single_" data-uid="UnityEngine.UIElements.Scroller.Adjust(System.Single)">Adjust(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Adjust(float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">factor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_Scroller_ScrollPageDown_" data-uid="UnityEngine.UIElements.Scroller.ScrollPageDown*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_ScrollPageDown" data-uid="UnityEngine.UIElements.Scroller.ScrollPageDown">ScrollPageDown()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollPageDown()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_UIElements_Scroller_ScrollPageDown_" data-uid="UnityEngine.UIElements.Scroller.ScrollPageDown*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_ScrollPageDown_System_Single_" data-uid="UnityEngine.UIElements.Scroller.ScrollPageDown(System.Single)">ScrollPageDown(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollPageDown(float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">factor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_Scroller_ScrollPageUp_" data-uid="UnityEngine.UIElements.Scroller.ScrollPageUp*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_ScrollPageUp" data-uid="UnityEngine.UIElements.Scroller.ScrollPageUp">ScrollPageUp()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollPageUp()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_UIElements_Scroller_ScrollPageUp_" data-uid="UnityEngine.UIElements.Scroller.ScrollPageUp*"></a>
+  <h4 id="UnityEngine_UIElements_Scroller_ScrollPageUp_System_Single_" data-uid="UnityEngine.UIElements.Scroller.ScrollPageUp(System.Single)">ScrollPageUp(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollPageUp(float factor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">factor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="UnityEngine_UIElements_Scroller_valueChanged" data-uid="UnityEngine.UIElements.Scroller.valueChanged">valueChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;float&gt; valueChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IEventHandler.html">IEventHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IResolvedStyle.html">IResolvedStyle</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.ITransform.html">ITransform</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.Experimental.ITransitionAnimations.html">ITransitionAnimations</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IExperimentalFeatures.html">IExperimentalFeatures</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IVisualElementScheduler.html">IVisualElementScheduler</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.MouseCaptureController.html#UnityEngine_UIElements_MouseCaptureController_CaptureMouse_UnityEngine_UIElements_IEventHandler_">MouseCaptureController.CaptureMouse(IEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.MouseCaptureController.html#UnityEngine_UIElements_MouseCaptureController_HasMouseCapture_UnityEngine_UIElements_IEventHandler_">MouseCaptureController.HasMouseCapture(IEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.MouseCaptureController.html#UnityEngine_UIElements_MouseCaptureController_ReleaseMouse_UnityEngine_UIElements_IEventHandler_">MouseCaptureController.ReleaseMouse(IEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.PointerCaptureHelper.html#UnityEngine_UIElements_PointerCaptureHelper_CapturePointer_UnityEngine_UIElements_IEventHandler_System_Int32_">PointerCaptureHelper.CapturePointer(IEventHandler, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.PointerCaptureHelper.html#UnityEngine_UIElements_PointerCaptureHelper_HasPointerCapture_UnityEngine_UIElements_IEventHandler_System_Int32_">PointerCaptureHelper.HasPointerCapture(IEventHandler, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.PointerCaptureHelper.html#UnityEngine_UIElements_PointerCaptureHelper_ReleasePointer_UnityEngine_UIElements_IEventHandler_System_Int32_">PointerCaptureHelper.ReleasePointer(IEventHandler, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Q_UnityEngine_UIElements_VisualElement_System_String_System_String_">UQueryExtensions.Q(VisualElement, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Q_UnityEngine_UIElements_VisualElement_System_String_System_String___">UQueryExtensions.Q(VisualElement, string, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Q__1_UnityEngine_UIElements_VisualElement_System_String_System_String_">UQueryExtensions.Q&lt;T&gt;(VisualElement, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Q__1_UnityEngine_UIElements_VisualElement_System_String_System_String___">UQueryExtensions.Q&lt;T&gt;(VisualElement, string, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query_UnityEngine_UIElements_VisualElement_">UQueryExtensions.Query(VisualElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query_UnityEngine_UIElements_VisualElement_System_String_System_String_">UQueryExtensions.Query(VisualElement, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query_UnityEngine_UIElements_VisualElement_System_String_System_String___">UQueryExtensions.Query(VisualElement, string, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query__1_UnityEngine_UIElements_VisualElement_System_String_System_String_">UQueryExtensions.Query&lt;T&gt;(VisualElement, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query__1_UnityEngine_UIElements_VisualElement_System_String_System_String___">UQueryExtensions.Query&lt;T&gt;(VisualElement, string, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_AddManipulator_UnityEngine_UIElements_VisualElement_UnityEngine_UIElements_IManipulator_">VisualElementExtensions.AddManipulator(VisualElement, IManipulator)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_ChangeCoordinatesTo_UnityEngine_UIElements_VisualElement_UnityEngine_UIElements_VisualElement_UnityEngine_Rect_">VisualElementExtensions.ChangeCoordinatesTo(VisualElement, VisualElement, Rect)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_ChangeCoordinatesTo_UnityEngine_UIElements_VisualElement_UnityEngine_UIElements_VisualElement_UnityEngine_Vector2_">VisualElementExtensions.ChangeCoordinatesTo(VisualElement, VisualElement, Vector2)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_LocalToWorld_UnityEngine_UIElements_VisualElement_UnityEngine_Rect_">VisualElementExtensions.LocalToWorld(VisualElement, Rect)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_LocalToWorld_UnityEngine_UIElements_VisualElement_UnityEngine_Vector2_">VisualElementExtensions.LocalToWorld(VisualElement, Vector2)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_RemoveManipulator_UnityEngine_UIElements_VisualElement_UnityEngine_UIElements_IManipulator_">VisualElementExtensions.RemoveManipulator(VisualElement, IManipulator)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_StretchToParentSize_UnityEngine_UIElements_VisualElement_">VisualElementExtensions.StretchToParentSize(VisualElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_StretchToParentWidth_UnityEngine_UIElements_VisualElement_">VisualElementExtensions.StretchToParentWidth(VisualElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_WorldToLocal_UnityEngine_UIElements_VisualElement_UnityEngine_Rect_">VisualElementExtensions.WorldToLocal(VisualElement, Rect)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_WorldToLocal_UnityEngine_UIElements_VisualElement_UnityEngine_Vector2_">VisualElementExtensions.WorldToLocal(VisualElement, Vector2)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

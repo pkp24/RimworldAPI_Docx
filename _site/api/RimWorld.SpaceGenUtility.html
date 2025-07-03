@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class SpaceGenUtility </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class SpaceGenUtility ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.SpaceGenUtility">
+
+
+
+  <h1 id="RimWorld_SpaceGenUtility" data-uid="RimWorld.SpaceGenUtility" class="text-break">Class SpaceGenUtility</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">SpaceGenUtility</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_SpaceGenUtility_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SpaceGenUtility</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_SpaceGenUtility_ChunksSetSparsley_" data-uid="RimWorld.SpaceGenUtility.ChunksSetSparsley*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_ChunksSetSparsley_RimWorld_Chunks_Verse_FloatRange_" data-uid="RimWorld.SpaceGenUtility.ChunksSetSparsley(RimWorld.Chunks,Verse.FloatRange)">ChunksSetSparsley(Chunks, FloatRange)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ChunksSetSparsley(Chunks chunks, FloatRange coverageRange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Chunks.html">Chunks</a></td>
+        <td><span class="parametername">chunks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.FloatRange.html">FloatRange</a></td>
+        <td><span class="parametername">coverageRange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_DamageEdges_" data-uid="RimWorld.SpaceGenUtility.DamageEdges*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_DamageEdges_Verse_Map_RimWorld_Chunks_System_Int32_System_Int32__" data-uid="RimWorld.SpaceGenUtility.DamageEdges(Verse.Map,RimWorld.Chunks,System.Int32,System.Int32@)">DamageEdges(Map, Chunks, int, ref int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DamageEdges(Map map, Chunks chunks, int maximum, ref int cells)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Chunks.html">Chunks</a></td>
+        <td><span class="parametername">chunks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maximum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cells</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_DamageHoles_" data-uid="RimWorld.SpaceGenUtility.DamageHoles*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_DamageHoles_RimWorld_Chunks_Verse_Map_System_Int32_System_Int32__System_Nullable_Verse_IntRange__System_Nullable_Verse_FloatRange__System_Single_System_Predicate_Verse_CellRect__System_Collections_Generic_List_Verse_CellRect__" data-uid="RimWorld.SpaceGenUtility.DamageHoles(RimWorld.Chunks,Verse.Map,System.Int32,System.Int32@,System.Nullable{Verse.IntRange},System.Nullable{Verse.FloatRange},System.Single,System.Predicate{Verse.CellRect},System.Collections.Generic.List{Verse.CellRect})">DamageHoles(Chunks, Map, int, ref int, IntRange?, FloatRange?, float, Predicate&lt;CellRect&gt;, List&lt;CellRect&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void DamageHoles(Chunks chunks, Map map, int maximum, ref int cells, IntRange? sizeRange = null, FloatRange? per100Range = null, float extendChance = 1, Predicate&lt;CellRect&gt; validator = null, List&lt;CellRect&gt; spaces = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Chunks.html">Chunks</a></td>
+        <td><span class="parametername">chunks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maximum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">sizeRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.FloatRange.html">FloatRange</a>?</td>
+        <td><span class="parametername">per100Range</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">extendChance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">spaces</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_GenerateConnectedPlatform_" data-uid="RimWorld.SpaceGenUtility.GenerateConnectedPlatform*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_GenerateConnectedPlatform_Verse_Map_Verse_TerrainDef_Verse_CellRect_Verse_IntRange_Verse_IntRange_Verse_Rot4_System_Int32_System_Single_System_Int32_System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__" data-uid="RimWorld.SpaceGenUtility.GenerateConnectedPlatform(Verse.Map,Verse.TerrainDef,Verse.CellRect,Verse.IntRange,Verse.IntRange,Verse.Rot4,System.Int32,System.Single,System.Int32,System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange})">GenerateConnectedPlatform(Map, TerrainDef, CellRect, IntRange, IntRange, Rot4, int, float, int, IntRange?, IntRange?, IntRange?, IntRange?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CellRect GenerateConnectedPlatform(Map map, TerrainDef terrain, CellRect platformRect, IntRange widthRange, IntRange heightRange, Rot4 dir, int distance = 14, float lumpChance = 0.2, int minHeight = 2, IntRange? connectorHeightRange = null, IntRange? connectorGapRange = null, IntRange? lumpOffsetRange = null, IntRange? lumpLengthRange = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.TerrainDef.html">TerrainDef</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">platformRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">widthRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">heightRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">lumpChance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">connectorHeightRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">connectorGapRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">lumpOffsetRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">lumpLengthRange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_GenerateEdgeCut_" data-uid="RimWorld.SpaceGenUtility.GenerateEdgeCut*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_GenerateEdgeCut_Verse_Map_RimWorld_Chunks_Verse_IntVec3_Verse_IntRange_Verse_IntRange_System_Int32__System_Predicate_Verse_CellRect__System_Collections_Generic_List_Verse_CellRect__System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__System_Single_System_Int32_" data-uid="RimWorld.SpaceGenUtility.GenerateEdgeCut(Verse.Map,RimWorld.Chunks,Verse.IntVec3,Verse.IntRange,Verse.IntRange,System.Int32@,System.Predicate{Verse.CellRect},System.Collections.Generic.List{Verse.CellRect},System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange},System.Single,System.Int32)">GenerateEdgeCut(Map, Chunks, IntVec3, IntRange, IntRange, ref int, Predicate&lt;CellRect&gt;, List&lt;CellRect&gt;, IntRange?, IntRange?, float, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateEdgeCut(Map map, Chunks chunks, IntVec3 chunk, IntRange halfLengthRange, IntRange depthRange, ref int cells, Predicate&lt;CellRect&gt; validator = null, List&lt;CellRect&gt; spaces = null, IntRange? lengthRange = null, IntRange? offsetRange = null, float extendChance = 1, int borderPadding = 20)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Chunks.html">Chunks</a></td>
+        <td><span class="parametername">chunks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec3.html">IntVec3</a></td>
+        <td><span class="parametername">chunk</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">halfLengthRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">depthRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">spaces</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">lengthRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">offsetRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">extendChance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">borderPadding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_GenerateExtraDamage_" data-uid="RimWorld.SpaceGenUtility.GenerateExtraDamage*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_GenerateExtraDamage_Verse_Map_Verse_CellRect__Verse_IntRange_System_Int32__System_Predicate_Verse_CellRect__System_Collections_Generic_List_Verse_CellRect__" data-uid="RimWorld.SpaceGenUtility.GenerateExtraDamage(Verse.Map,Verse.CellRect@,Verse.IntRange,System.Int32@,System.Predicate{Verse.CellRect},System.Collections.Generic.List{Verse.CellRect})">GenerateExtraDamage(Map, ref CellRect, IntRange, ref int, Predicate&lt;CellRect&gt;, List&lt;CellRect&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateExtraDamage(Map map, ref CellRect rect, IntRange sizeRange, ref int cells, Predicate&lt;CellRect&gt; validator = null, List&lt;CellRect&gt; spaces = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">sizeRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">spaces</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_GenerateHole_" data-uid="RimWorld.SpaceGenUtility.GenerateHole*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_GenerateHole_Verse_Map_Verse_CellRect_" data-uid="RimWorld.SpaceGenUtility.GenerateHole(Verse.Map,Verse.CellRect)">GenerateHole(Map, CellRect)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateHole(Map map, CellRect rect)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_GenerateRing_" data-uid="RimWorld.SpaceGenUtility.GenerateRing*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_GenerateRing_Verse_Map_Verse_CellRect_Verse_TerrainDef_System_Int32_System_Int32_System_Single_System_Single_System_Single_" data-uid="RimWorld.SpaceGenUtility.GenerateRing(Verse.Map,Verse.CellRect,Verse.TerrainDef,System.Int32,System.Int32,System.Single,System.Single,System.Single)">GenerateRing(Map, CellRect, TerrainDef, int, int, float, float, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GenerateRing(Map map, CellRect rect, TerrainDef terrain, int distance, int width, float ringWidth = 4.9, float ringExtraOffset = 0.5, float ringExtraChance = 0)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.TerrainDef.html">TerrainDef</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">distance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">ringWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">ringExtraOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">ringExtraChance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_NoIntersection_" data-uid="RimWorld.SpaceGenUtility.NoIntersection*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_NoIntersection_Verse_CellRect_System_Collections_Generic_List_Verse_CellRect__Verse_IntRange_" data-uid="RimWorld.SpaceGenUtility.NoIntersection(Verse.CellRect,System.Collections.Generic.List{Verse.CellRect},Verse.IntRange)">NoIntersection(CellRect, List&lt;CellRect&gt;, IntRange)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NoIntersection(CellRect rect, List&lt;CellRect&gt; spaces, IntRange holeRange)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">spaces</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a></td>
+        <td><span class="parametername">holeRange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_ScatterExtrusions_" data-uid="RimWorld.SpaceGenUtility.ScatterExtrusions*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_ScatterExtrusions_Verse_Map_RimWorld_Chunks_System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__System_Collections_Generic_List_Verse_CellRect__" data-uid="RimWorld.SpaceGenUtility.ScatterExtrusions(Verse.Map,RimWorld.Chunks,System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange},System.Collections.Generic.List{Verse.CellRect})">ScatterExtrusions(Map, Chunks, IntRange?, IntRange?, IntRange?, IntRange?, List&lt;CellRect&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScatterExtrusions(Map map, Chunks chunks, IntRange? countRange = null, IntRange? lengthRange = null, IntRange? widthRange = null, IntRange? gapRange = null, List&lt;CellRect&gt; spaces = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Chunks.html">Chunks</a></td>
+        <td><span class="parametername">chunks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">countRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">lengthRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">widthRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">gapRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">spaces</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_ScatterPrefabs_" data-uid="RimWorld.SpaceGenUtility.ScatterPrefabs*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_ScatterPrefabs_Verse_Map_RimWorld_Chunks_RimWorld_Faction_System_Collections_Generic_List_RimWorld_PrefabParms__System_Predicate_Verse_CellRect__System_Nullable_Verse_FloatRange__" data-uid="RimWorld.SpaceGenUtility.ScatterPrefabs(Verse.Map,RimWorld.Chunks,RimWorld.Faction,System.Collections.Generic.List{RimWorld.PrefabParms},System.Predicate{Verse.CellRect},System.Nullable{Verse.FloatRange})">ScatterPrefabs(Map, Chunks, Faction, List&lt;PrefabParms&gt;, Predicate&lt;CellRect&gt;, FloatRange?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ScatterPrefabs(Map map, Chunks chunks, Faction faction, List&lt;PrefabParms&gt; prefabs, Predicate&lt;CellRect&gt; validator = null, FloatRange? prefabsPer100K = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Chunks.html">Chunks</a></td>
+        <td><span class="parametername">chunks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.PrefabParms.html">PrefabParms</a>&gt;</td>
+        <td><span class="parametername">prefabs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.FloatRange.html">FloatRange</a>?</td>
+        <td><span class="parametername">prefabsPer100K</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_SpawnWalkways_" data-uid="RimWorld.SpaceGenUtility.SpawnWalkways*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_SpawnWalkways_Verse_Map_Verse_TerrainDef_Verse_CellRect_Verse_Rot4_System_Int32_System_Single_System_Int32_System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__System_Nullable_Verse_IntRange__" data-uid="RimWorld.SpaceGenUtility.SpawnWalkways(Verse.Map,Verse.TerrainDef,Verse.CellRect,Verse.Rot4,System.Int32,System.Single,System.Int32,System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange},System.Nullable{Verse.IntRange})">SpawnWalkways(Map, TerrainDef, CellRect, Rot4, int, float, int, IntRange?, IntRange?, IntRange?, IntRange?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SpawnWalkways(Map map, TerrainDef terrain, CellRect rect, Rot4 dir, int maxDistance, float lumpChance = 0.2, int minHeight = 2, IntRange? connectorHeightRange = null, IntRange? connectorGapRange = null, IntRange? lumpOffsetRange = null, IntRange? lumpLengthRange = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.TerrainDef.html">TerrainDef</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td><span class="parametername">dir</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxDistance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">lumpChance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">connectorHeightRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">connectorGapRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">lumpOffsetRange</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntRange.html">IntRange</a>?</td>
+        <td><span class="parametername">lumpLengthRange</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_SpaceGenUtility_TryGetRect_" data-uid="RimWorld.SpaceGenUtility.TryGetRect*"></a>
+  <h4 id="RimWorld_SpaceGenUtility_TryGetRect_RimWorld_Chunks_Verse_IntVec2_Verse_CellRect__System_Predicate_Verse_CellRect__" data-uid="RimWorld.SpaceGenUtility.TryGetRect(RimWorld.Chunks,Verse.IntVec2,Verse.CellRect@,System.Predicate{Verse.CellRect})">TryGetRect(Chunks, IntVec2, out CellRect, Predicate&lt;CellRect&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetRect(Chunks chunks, IntVec2 size, out CellRect rect, Predicate&lt;CellRect&gt; validator = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Chunks.html">Chunks</a></td>
+        <td><span class="parametername">chunks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.IntVec2.html">IntVec2</a></td>
+        <td><span class="parametername">size</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.CellRect.html">CellRect</a></td>
+        <td><span class="parametername">rect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="Verse.CellRect.html">CellRect</a>&gt;</td>
+        <td><span class="parametername">validator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3715 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PlanetLayer </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PlanetLayer ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Planet.PlanetLayer">
+
+
+
+  <h1 id="RimWorld_Planet_PlanetLayer" data-uid="RimWorld.Planet.PlanetLayer" class="text-break">Class PlanetLayer</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">PlanetLayer</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.OrbitLayer.html">OrbitLayer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.SurfaceLayer.html">SurfaceLayer</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a>.<a class="xref" href="RimWorld.Planet.html">Planet</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Planet_PlanetLayer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DefaultMember(&quot;Item&quot;)]
+[BurstCompile]
+public class PlanetLayer : IExposable, ILoadReferenceable, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Planet_PlanetLayer__ctor_" data-uid="RimWorld.Planet.PlanetLayer.#ctor*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer__ctor" data-uid="RimWorld.Planet.PlanetLayer.#ctor">PlanetLayer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetLayer()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer__ctor_" data-uid="RimWorld.Planet.PlanetLayer.#ctor*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer__ctor_System_Int32_RimWorld_PlanetLayerDef_System_Single_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Int32_System_Single_System_Single_System_Single_" data-uid="RimWorld.Planet.PlanetLayer.#ctor(System.Int32,RimWorld.PlanetLayerDef,System.Single,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,System.Single,System.Single,System.Single)">PlanetLayer(int, PlanetLayerDef, float, Vector3, Vector3, float, int, float, float, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetLayer(int layerId, PlanetLayerDef def, float radius, Vector3 origin, Vector3 viewCenter, float viewAngle, int subdivisions, float extraCameraAltitude, float backgroundWorldCameraOffset, float backgroundWorldCameraParallaxDistancePer100Cells)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">layerId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.PlanetLayerDef.html">PlanetLayerDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">viewCenter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">viewAngle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">subdivisions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">extraCameraAltitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">backgroundWorldCameraOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">backgroundWorldCameraParallaxDistancePer100Cells</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_Planet_PlanetLayer_tiles" data-uid="RimWorld.Planet.PlanetLayer.tiles">tiles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly List&lt;Tile&gt; tiles</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.Planet.Tile.html">Tile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Planet_PlanetLayer_zoomInToLayer" data-uid="RimWorld.Planet.PlanetLayer.zoomInToLayer">zoomInToLayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetLayer zoomInToLayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Planet_PlanetLayer_zoomOutToLayer" data-uid="RimWorld.Planet.PlanetLayer.zoomOutToLayer">zoomOutToLayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetLayer zoomOutToLayer</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_AverageTileSize_" data-uid="RimWorld.Planet.PlanetLayer.AverageTileSize*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_AverageTileSize" data-uid="RimWorld.Planet.PlanetLayer.AverageTileSize">AverageTileSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AverageTileSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_BackgroundWorldCameraOffset_" data-uid="RimWorld.Planet.PlanetLayer.BackgroundWorldCameraOffset*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_BackgroundWorldCameraOffset" data-uid="RimWorld.Planet.PlanetLayer.BackgroundWorldCameraOffset">BackgroundWorldCameraOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BackgroundWorldCameraOffset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_BackgroundWorldCameraParallaxDistancePer100Cells_" data-uid="RimWorld.Planet.PlanetLayer.BackgroundWorldCameraParallaxDistancePer100Cells*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_BackgroundWorldCameraParallaxDistancePer100Cells" data-uid="RimWorld.Planet.PlanetLayer.BackgroundWorldCameraParallaxDistancePer100Cells">BackgroundWorldCameraParallaxDistancePer100Cells</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BackgroundWorldCameraParallaxDistancePer100Cells { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_CanReachLayer_" data-uid="RimWorld.Planet.PlanetLayer.CanReachLayer*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_CanReachLayer" data-uid="RimWorld.Planet.PlanetLayer.CanReachLayer">CanReachLayer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanReachLayer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Def_" data-uid="RimWorld.Planet.PlanetLayer.Def*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Def" data-uid="RimWorld.Planet.PlanetLayer.Def">Def</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetLayerDef Def { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.PlanetLayerDef.html">PlanetLayerDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_ExtraCameraAltitude_" data-uid="RimWorld.Planet.PlanetLayer.ExtraCameraAltitude*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_ExtraCameraAltitude" data-uid="RimWorld.Planet.PlanetLayer.ExtraCameraAltitude">ExtraCameraAltitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ExtraCameraAltitude { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_FastTileFinder_" data-uid="RimWorld.Planet.PlanetLayer.FastTileFinder*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_FastTileFinder" data-uid="RimWorld.Planet.PlanetLayer.FastTileFinder">FastTileFinder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FastTileFinder FastTileFinder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.FastTileFinder.html">FastTileFinder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Filler_" data-uid="RimWorld.Planet.PlanetLayer.Filler*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Filler" data-uid="RimWorld.Planet.PlanetLayer.Filler">Filler</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldFloodFiller Filler { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.WorldFloodFiller.html">WorldFloodFiller</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_IsRootSurface_" data-uid="RimWorld.Planet.PlanetLayer.IsRootSurface*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_IsRootSurface" data-uid="RimWorld.Planet.PlanetLayer.IsRootSurface">IsRootSurface</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRootSurface { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_IsSelected_" data-uid="RimWorld.Planet.PlanetLayer.IsSelected*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_IsSelected" data-uid="RimWorld.Planet.PlanetLayer.IsSelected">IsSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSelected { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Item_" data-uid="RimWorld.Planet.PlanetLayer.Item*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Item_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.Item(RimWorld.Planet.PlanetTile)">this[PlanetTile]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile this[PlanetTile tile] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Tile.html">Tile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Item_" data-uid="RimWorld.Planet.PlanetLayer.Item*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Item_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tile this[int tileID] { get; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Tile.html">Tile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_LayerID_" data-uid="RimWorld.Planet.PlanetLayer.LayerID*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_LayerID" data-uid="RimWorld.Planet.PlanetLayer.LayerID">LayerID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LayerID { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_NorthPolePos_" data-uid="RimWorld.Planet.PlanetLayer.NorthPolePos*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_NorthPolePos" data-uid="RimWorld.Planet.PlanetLayer.NorthPolePos">NorthPolePos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 NorthPolePos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Origin_" data-uid="RimWorld.Planet.PlanetLayer.Origin*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Origin" data-uid="RimWorld.Planet.PlanetLayer.Origin">Origin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 Origin { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Pather_" data-uid="RimWorld.Planet.PlanetLayer.Pather*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Pather" data-uid="RimWorld.Planet.PlanetLayer.Pather">Pather</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldPathing Pather { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.WorldPathing.html">WorldPathing</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Radius_" data-uid="RimWorld.Planet.PlanetLayer.Radius*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Radius" data-uid="RimWorld.Planet.PlanetLayer.Radius">Radius</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Radius { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Raycastable_" data-uid="RimWorld.Planet.PlanetLayer.Raycastable*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Raycastable" data-uid="RimWorld.Planet.PlanetLayer.Raycastable">Raycastable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Raycastable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_ScenarioTag_" data-uid="RimWorld.Planet.PlanetLayer.ScenarioTag*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_ScenarioTag" data-uid="RimWorld.Planet.PlanetLayer.ScenarioTag">ScenarioTag</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ScenarioTag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Selected_" data-uid="RimWorld.Planet.PlanetLayer.Selected*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Selected" data-uid="RimWorld.Planet.PlanetLayer.Selected">Selected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlanetLayer Selected { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Tiles_" data-uid="RimWorld.Planet.PlanetLayer.Tiles*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Tiles" data-uid="RimWorld.Planet.PlanetLayer.Tiles">Tiles</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Tile&gt; Tiles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.Planet.Tile.html">Tile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_TilesCount_" data-uid="RimWorld.Planet.PlanetLayer.TilesCount*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_TilesCount" data-uid="RimWorld.Planet.PlanetLayer.TilesCount">TilesCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TilesCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_UnsafeTileIDToNeighbors_offsets_" data-uid="RimWorld.Planet.PlanetLayer.UnsafeTileIDToNeighbors_offsets*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_UnsafeTileIDToNeighbors_offsets" data-uid="RimWorld.Planet.PlanetLayer.UnsafeTileIDToNeighbors_offsets">UnsafeTileIDToNeighbors_offsets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;int&gt; UnsafeTileIDToNeighbors_offsets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_UnsafeTileIDToNeighbors_values_" data-uid="RimWorld.Planet.PlanetLayer.UnsafeTileIDToNeighbors_values*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_UnsafeTileIDToNeighbors_values" data-uid="RimWorld.Planet.PlanetLayer.UnsafeTileIDToNeighbors_values">UnsafeTileIDToNeighbors_values</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;PlanetTile&gt; UnsafeTileIDToNeighbors_values { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_UnsafeTileIDToVerts_offsets_" data-uid="RimWorld.Planet.PlanetLayer.UnsafeTileIDToVerts_offsets*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_UnsafeTileIDToVerts_offsets" data-uid="RimWorld.Planet.PlanetLayer.UnsafeTileIDToVerts_offsets">UnsafeTileIDToVerts_offsets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;int&gt; UnsafeTileIDToVerts_offsets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_UnsafeVerts_" data-uid="RimWorld.Planet.PlanetLayer.UnsafeVerts*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_UnsafeVerts" data-uid="RimWorld.Planet.PlanetLayer.UnsafeVerts">UnsafeVerts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;Vector3&gt; UnsafeVerts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Vector3.html">Vector3</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_ViewAngle_" data-uid="RimWorld.Planet.PlanetLayer.ViewAngle*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_ViewAngle" data-uid="RimWorld.Planet.PlanetLayer.ViewAngle">ViewAngle</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ViewAngle { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_ViewCenter_" data-uid="RimWorld.Planet.PlanetLayer.ViewCenter*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_ViewCenter" data-uid="RimWorld.Planet.PlanetLayer.ViewCenter">ViewCenter</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 ViewCenter { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Visible_" data-uid="RimWorld.Planet.PlanetLayer.Visible*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Visible" data-uid="RimWorld.Planet.PlanetLayer.Visible">Visible</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool Visible { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_WorldDrawLayers_" data-uid="RimWorld.Planet.PlanetLayer.WorldDrawLayers*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_WorldDrawLayers" data-uid="RimWorld.Planet.PlanetLayer.WorldDrawLayers">WorldDrawLayers</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;WorldDrawLayer&gt; WorldDrawLayers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.Planet.WorldDrawLayer.html">WorldDrawLayer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_AddConnection_" data-uid="RimWorld.Planet.PlanetLayer.AddConnection*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_AddConnection_RimWorld_Planet_PlanetLayer_System_Single_" data-uid="RimWorld.Planet.PlanetLayer.AddConnection(RimWorld.Planet.PlanetLayer,System.Single)">AddConnection(PlanetLayer, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddConnection(PlanetLayer target, float cost)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">cost</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_" data-uid="RimWorld.Planet.PlanetLayer.ApproxDistanceInTiles*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.ApproxDistanceInTiles(RimWorld.Planet.PlanetTile,RimWorld.Planet.PlanetTile)">ApproxDistanceInTiles(PlanetTile, PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ApproxDistanceInTiles(PlanetTile tileA, PlanetTile tileB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tileA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tileB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_" data-uid="RimWorld.Planet.PlanetLayer.ApproxDistanceInTiles*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_System_Int32_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.ApproxDistanceInTiles(System.Int32,System.Int32)">ApproxDistanceInTiles(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ApproxDistanceInTiles(int tileA, int tileB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_" data-uid="RimWorld.Planet.PlanetLayer.ApproxDistanceInTiles*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_System_Single_" data-uid="RimWorld.Planet.PlanetLayer.ApproxDistanceInTiles(System.Single)">ApproxDistanceInTiles(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ApproxDistanceInTiles(float sphericalDistance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">sphericalDistance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_CalculateAverageTileSize_BurstManaged_" data-uid="RimWorld.Planet.PlanetLayer.CalculateAverageTileSize$BurstManaged*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_CalculateAverageTileSize_BurstManaged_Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_RimWorld_Planet_PlanetTile___Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_UnityEngine_Vector3___" data-uid="RimWorld.Planet.PlanetLayer.CalculateAverageTileSize$BurstManaged(Unity.Collections.NativeArray{System.Int32}@,Unity.Collections.NativeArray{RimWorld.Planet.PlanetTile}@,Unity.Collections.NativeArray{System.Int32}@,Unity.Collections.NativeArray{UnityEngine.Vector3}@)">CalculateAverageTileSize$BurstManaged(in NativeArray&lt;int&gt;, in NativeArray&lt;PlanetTile&gt;, in NativeArray&lt;int&gt;, in NativeArray&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile(CompileSynchronously = true)]
+public static float CalculateAverageTileSize$BurstManaged(in NativeArray&lt;int&gt; tileIDToNeighbors_offsets, in NativeArray&lt;PlanetTile&gt; tileIDToNeighbors_values, in NativeArray&lt;int&gt; tileIDToVerts_offsets, in NativeArray&lt;Vector3&gt; verts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">tileIDToNeighbors_offsets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a>&gt;</td>
+        <td><span class="parametername">tileIDToNeighbors_values</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">tileIDToVerts_offsets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Vector3.html">Vector3</a>&gt;</td>
+        <td><span class="parametername">verts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_CanSelectLayer_" data-uid="RimWorld.Planet.PlanetLayer.CanSelectLayer*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_CanSelectLayer" data-uid="RimWorld.Planet.PlanetLayer.CanSelectLayer">CanSelectLayer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AcceptanceReport CanSelectLayer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AcceptanceReport.html">AcceptanceReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Dispose_" data-uid="RimWorld.Planet.PlanetLayer.Dispose*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Dispose" data-uid="RimWorld.Planet.PlanetLayer.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_DistOnSurfaceToAngle_" data-uid="RimWorld.Planet.PlanetLayer.DistOnSurfaceToAngle*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_DistOnSurfaceToAngle_System_Single_" data-uid="RimWorld.Planet.PlanetLayer.DistOnSurfaceToAngle(System.Single)">DistOnSurfaceToAngle(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DistOnSurfaceToAngle(float dist)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">dist</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_DistanceFromEquatorNormalized_" data-uid="RimWorld.Planet.PlanetLayer.DistanceFromEquatorNormalized*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_DistanceFromEquatorNormalized_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.DistanceFromEquatorNormalized(RimWorld.Planet.PlanetTile)">DistanceFromEquatorNormalized(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DistanceFromEquatorNormalized(PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_DistanceFromEquatorNormalized_" data-uid="RimWorld.Planet.PlanetLayer.DistanceFromEquatorNormalized*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_DistanceFromEquatorNormalized_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.DistanceFromEquatorNormalized(System.Int32)">DistanceFromEquatorNormalized(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DistanceFromEquatorNormalized(int tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_ExposeData_" data-uid="RimWorld.Planet.PlanetLayer.ExposeData*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_ExposeData" data-uid="RimWorld.Planet.PlanetLayer.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExposeData()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetClosestTile_" data-uid="RimWorld.Planet.PlanetLayer.GetClosestTile*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetClosestTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetClosestTile(RimWorld.Planet.PlanetTile)">GetClosestTile(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetTile GetClosestTile(PlanetTile other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetConnectionFromTo_" data-uid="RimWorld.Planet.PlanetLayer.GetConnectionFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetConnectionFromTo_RimWorld_Planet_PlanetLayer_" data-uid="RimWorld.Planet.PlanetLayer.GetConnectionFromTo(RimWorld.Planet.PlanetLayer)">GetConnectionFromTo(PlanetLayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetLayerConnection GetConnectionFromTo(PlanetLayer layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td><span class="parametername">layer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayerConnection.html">PlanetLayerConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetDirection8WayFromTo_" data-uid="RimWorld.Planet.PlanetLayer.GetDirection8WayFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetDirection8WayFromTo_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetDirection8WayFromTo(RimWorld.Planet.PlanetTile,RimWorld.Planet.PlanetTile)">GetDirection8WayFromTo(PlanetTile, PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Direction8Way GetDirection8WayFromTo(PlanetTile fromTile, PlanetTile toTile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">fromTile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">toTile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Direction8Way.html">Direction8Way</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetDirection8WayFromTo_" data-uid="RimWorld.Planet.PlanetLayer.GetDirection8WayFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetDirection8WayFromTo_System_Int32_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetDirection8WayFromTo(System.Int32,System.Int32)">GetDirection8WayFromTo(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Direction8Way GetDirection8WayFromTo(int fromTileID, int toTileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fromTileID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toTileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Direction8Way.html">Direction8Way</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetHeadingFromTo_" data-uid="RimWorld.Planet.PlanetLayer.GetHeadingFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetHeadingFromTo_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetHeadingFromTo(RimWorld.Planet.PlanetTile,RimWorld.Planet.PlanetTile)">GetHeadingFromTo(PlanetTile, PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHeadingFromTo(PlanetTile fromTile, PlanetTile toTile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">fromTile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">toTile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetHeadingFromTo_" data-uid="RimWorld.Planet.PlanetLayer.GetHeadingFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetHeadingFromTo_System_Int32_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetHeadingFromTo(System.Int32,System.Int32)">GetHeadingFromTo(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHeadingFromTo(int fromTileID, int toTileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fromTileID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toTileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetHeadingFromTo_" data-uid="RimWorld.Planet.PlanetLayer.GetHeadingFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetHeadingFromTo_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="RimWorld.Planet.PlanetLayer.GetHeadingFromTo(UnityEngine.Vector3,UnityEngine.Vector3)">GetHeadingFromTo(Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetHeadingFromTo(Vector3 from, Vector3 to)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">from</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">to</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetLayer_" data-uid="RimWorld.Planet.PlanetLayer.GetLayer*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetLayer__1" data-uid="RimWorld.Planet.PlanetLayer.GetLayer``1">GetLayer&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetLayer&lt;T&gt;() where T : WorldDrawLayer</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetMaxTileNeighborCountEver_" data-uid="RimWorld.Planet.PlanetLayer.GetMaxTileNeighborCountEver*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetMaxTileNeighborCountEver_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetMaxTileNeighborCountEver(RimWorld.Planet.PlanetTile)">GetMaxTileNeighborCountEver(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxTileNeighborCountEver(PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetMaxTileNeighborCountEver_" data-uid="RimWorld.Planet.PlanetLayer.GetMaxTileNeighborCountEver*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetMaxTileNeighborCountEver_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetMaxTileNeighborCountEver(System.Int32)">GetMaxTileNeighborCountEver(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetMaxTileNeighborCountEver(int tileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetNeighborId_" data-uid="RimWorld.Planet.PlanetLayer.GetNeighborId*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetNeighborId_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetNeighborId(RimWorld.Planet.PlanetTile,RimWorld.Planet.PlanetTile)">GetNeighborId(PlanetTile, PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNeighborId(PlanetTile tileA, PlanetTile tileB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tileA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tileB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetNeighborId_" data-uid="RimWorld.Planet.PlanetLayer.GetNeighborId*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetNeighborId_System_Int32_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetNeighborId(System.Int32,System.Int32)">GetNeighborId(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetNeighborId(int tileA, int tileB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetRotFromTo_" data-uid="RimWorld.Planet.PlanetLayer.GetRotFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetRotFromTo_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetRotFromTo(RimWorld.Planet.PlanetTile,RimWorld.Planet.PlanetTile)">GetRotFromTo(PlanetTile, PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rot4 GetRotFromTo(PlanetTile fromTile, PlanetTile toTile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">fromTile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">toTile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetRotFromTo_" data-uid="RimWorld.Planet.PlanetLayer.GetRotFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetRotFromTo_System_Int32_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetRotFromTo(System.Int32,System.Int32)">GetRotFromTo(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rot4 GetRotFromTo(int fromTileID, int toTileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">fromTileID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">toTileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Rot4.html">Rot4</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileCenter_" data-uid="RimWorld.Planet.PlanetLayer.GetTileCenter*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileCenter_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetTileCenter(RimWorld.Planet.PlanetTile)">GetTileCenter(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetTileCenter(PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileCenter_" data-uid="RimWorld.Planet.PlanetLayer.GetTileCenter*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileCenter_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetTileCenter(System.Int32)">GetTileCenter(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector3 GetTileCenter(int tileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileNeighbor_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighbor*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileNeighbor_RimWorld_Planet_PlanetTile_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighbor(RimWorld.Planet.PlanetTile,System.Int32)">GetTileNeighbor(PlanetTile, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetTile GetTileNeighbor(PlanetTile tile, int adjacentId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">adjacentId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileNeighbor_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighbor*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileNeighbor_System_Int32_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighbor(System.Int32,System.Int32)">GetTileNeighbor(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetTile GetTileNeighbor(int tileID, int adjacentId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">adjacentId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileNeighborCount_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighborCount*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileNeighborCount_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighborCount(RimWorld.Planet.PlanetTile)">GetTileNeighborCount(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTileNeighborCount(PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileNeighborCount_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighborCount*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileNeighborCount_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighborCount(System.Int32)">GetTileNeighborCount(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTileNeighborCount(int tileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileNeighbors_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighbors*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileNeighbors_RimWorld_Planet_PlanetTile_System_Collections_Generic_List_RimWorld_Planet_PlanetTile__" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighbors(RimWorld.Planet.PlanetTile,System.Collections.Generic.List{RimWorld.Planet.PlanetTile})">GetTileNeighbors(PlanetTile, List&lt;PlanetTile&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTileNeighbors(PlanetTile tile, List&lt;PlanetTile&gt; outNeighbors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a>&gt;</td>
+        <td><span class="parametername">outNeighbors</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileNeighbors_" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighbors*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileNeighbors_System_Int32_System_Collections_Generic_List_RimWorld_Planet_PlanetTile__" data-uid="RimWorld.Planet.PlanetLayer.GetTileNeighbors(System.Int32,System.Collections.Generic.List{RimWorld.Planet.PlanetTile})">GetTileNeighbors(int, List&lt;PlanetTile&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTileNeighbors(int tileID, List&lt;PlanetTile&gt; outNeighbors)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a>&gt;</td>
+        <td><span class="parametername">outNeighbors</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileSize_" data-uid="RimWorld.Planet.PlanetLayer.GetTileSize*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileSize_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.GetTileSize(RimWorld.Planet.PlanetTile)">GetTileSize(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetTileSize(PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileVertices_" data-uid="RimWorld.Planet.PlanetLayer.GetTileVertices*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileVertices_RimWorld_Planet_PlanetTile_System_Collections_Generic_List_UnityEngine_Vector3__" data-uid="RimWorld.Planet.PlanetLayer.GetTileVertices(RimWorld.Planet.PlanetTile,System.Collections.Generic.List{UnityEngine.Vector3})">GetTileVertices(PlanetTile, List&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTileVertices(PlanetTile tile, List&lt;Vector3&gt; outVerts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnityEngine.Vector3.html">Vector3</a>&gt;</td>
+        <td><span class="parametername">outVerts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileVertices_" data-uid="RimWorld.Planet.PlanetLayer.GetTileVertices*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileVertices_System_Int32_System_Collections_Generic_List_UnityEngine_Vector3__" data-uid="RimWorld.Planet.PlanetLayer.GetTileVertices(System.Int32,System.Collections.Generic.List{UnityEngine.Vector3})">GetTileVertices(int, List&lt;Vector3&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTileVertices(int tileID, List&lt;Vector3&gt; outVerts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnityEngine.Vector3.html">Vector3</a>&gt;</td>
+        <td><span class="parametername">outVerts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileVerticesIndices_" data-uid="RimWorld.Planet.PlanetLayer.GetTileVerticesIndices*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileVerticesIndices_RimWorld_Planet_PlanetTile_System_Collections_Generic_List_System_Int32__" data-uid="RimWorld.Planet.PlanetLayer.GetTileVerticesIndices(RimWorld.Planet.PlanetTile,System.Collections.Generic.List{System.Int32})">GetTileVerticesIndices(PlanetTile, List&lt;int&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTileVerticesIndices(PlanetTile tile, List&lt;int&gt; outVertsIndices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">outVertsIndices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetTileVerticesIndices_" data-uid="RimWorld.Planet.PlanetLayer.GetTileVerticesIndices*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetTileVerticesIndices_System_Int32_System_Collections_Generic_List_System_Int32__" data-uid="RimWorld.Planet.PlanetLayer.GetTileVerticesIndices(System.Int32,System.Collections.Generic.List{System.Int32})">GetTileVerticesIndices(int, List&lt;int&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetTileVerticesIndices(int tileID, List&lt;int&gt; outVertsIndices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">outVertsIndices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_GetUniqueLoadID_" data-uid="RimWorld.Planet.PlanetLayer.GetUniqueLoadID*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_GetUniqueLoadID" data-uid="RimWorld.Planet.PlanetLayer.GetUniqueLoadID">GetUniqueLoadID()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetUniqueLoadID()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_HasConnectionFromTo_" data-uid="RimWorld.Planet.PlanetLayer.HasConnectionFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_HasConnectionFromTo_RimWorld_Planet_PlanetLayer_" data-uid="RimWorld.Planet.PlanetLayer.HasConnectionFromTo(RimWorld.Planet.PlanetLayer)">HasConnectionFromTo(PlanetLayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasConnectionFromTo(PlanetLayer layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td><span class="parametername">layer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_HasConnectionPathTo_" data-uid="RimWorld.Planet.PlanetLayer.HasConnectionPathTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_HasConnectionPathTo_RimWorld_Planet_PlanetLayer_" data-uid="RimWorld.Planet.PlanetLayer.HasConnectionPathTo(RimWorld.Planet.PlanetLayer)">HasConnectionPathTo(PlanetLayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasConnectionPathTo(PlanetLayer other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_InBounds_" data-uid="RimWorld.Planet.PlanetLayer.InBounds*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_InBounds_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.InBounds(RimWorld.Planet.PlanetTile)">InBounds(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InBounds(PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_InBounds_" data-uid="RimWorld.Planet.PlanetLayer.InBounds*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_InBounds_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.InBounds(System.Int32)">InBounds(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool InBounds(int tileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_InitializeLayer_" data-uid="RimWorld.Planet.PlanetLayer.InitializeLayer*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_InitializeLayer" data-uid="RimWorld.Planet.PlanetLayer.InitializeLayer">InitializeLayer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeLayer()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_IntGetTileCenter_BurstManaged_" data-uid="RimWorld.Planet.PlanetLayer.IntGetTileCenter$BurstManaged*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_IntGetTileCenter_BurstManaged_Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_UnityEngine_Vector3___System_Int32_UnityEngine_Vector3__" data-uid="RimWorld.Planet.PlanetLayer.IntGetTileCenter$BurstManaged(Unity.Collections.NativeArray{System.Int32}@,Unity.Collections.NativeArray{UnityEngine.Vector3}@,System.Int32,UnityEngine.Vector3@)">IntGetTileCenter$BurstManaged(in NativeArray&lt;int&gt;, in NativeArray&lt;Vector3&gt;, int, out Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static void IntGetTileCenter$BurstManaged(in NativeArray&lt;int&gt; tileIDToVerts_offsets, in NativeArray&lt;Vector3&gt; verts, int tileID, out Vector3 center)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">tileIDToVerts_offsets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Vector3.html">Vector3</a>&gt;</td>
+        <td><span class="parametername">verts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">center</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_IntGetTileSize_BurstManaged_" data-uid="RimWorld.Planet.PlanetLayer.IntGetTileSize$BurstManaged*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_IntGetTileSize_BurstManaged_Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_RimWorld_Planet_PlanetTile___Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_UnityEngine_Vector3___RimWorld_Planet_PlanetTile__" data-uid="RimWorld.Planet.PlanetLayer.IntGetTileSize$BurstManaged(Unity.Collections.NativeArray{System.Int32}@,Unity.Collections.NativeArray{RimWorld.Planet.PlanetTile}@,Unity.Collections.NativeArray{System.Int32}@,Unity.Collections.NativeArray{UnityEngine.Vector3}@,RimWorld.Planet.PlanetTile@)">IntGetTileSize$BurstManaged(in NativeArray&lt;int&gt;, in NativeArray&lt;PlanetTile&gt;, in NativeArray&lt;int&gt;, in NativeArray&lt;Vector3&gt;, in PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[BurstCompile]
+public static float IntGetTileSize$BurstManaged(in NativeArray&lt;int&gt; tileIDToNeighbors_offsets, in NativeArray&lt;PlanetTile&gt; tileIDToNeighbors_values, in NativeArray&lt;int&gt; tileIDToVerts_offsets, in NativeArray&lt;Vector3&gt; verts, in PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">tileIDToNeighbors_offsets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a>&gt;</td>
+        <td><span class="parametername">tileIDToNeighbors_values</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">tileIDToVerts_offsets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Vector3.html">Vector3</a>&gt;</td>
+        <td><span class="parametername">verts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_IsNeighbor_" data-uid="RimWorld.Planet.PlanetLayer.IsNeighbor*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_IsNeighbor_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.IsNeighbor(RimWorld.Planet.PlanetTile,RimWorld.Planet.PlanetTile)">IsNeighbor(PlanetTile, PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNeighbor(PlanetTile tileA, PlanetTile tileB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tileA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tileB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_IsNeighbor_" data-uid="RimWorld.Planet.PlanetLayer.IsNeighbor*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_IsNeighbor_System_Int32_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.IsNeighbor(System.Int32,System.Int32)">IsNeighbor(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNeighbor(int tileA, int tileB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_IsNeighborOrSame_" data-uid="RimWorld.Planet.PlanetLayer.IsNeighborOrSame*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_IsNeighborOrSame_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.IsNeighborOrSame(RimWorld.Planet.PlanetTile,RimWorld.Planet.PlanetTile)">IsNeighborOrSame(PlanetTile, PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNeighborOrSame(PlanetTile tileA, PlanetTile tileB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tileA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tileB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_IsNeighborOrSame_" data-uid="RimWorld.Planet.PlanetLayer.IsNeighborOrSame*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_IsNeighborOrSame_System_Int32_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.IsNeighborOrSame(System.Int32,System.Int32)">IsNeighborOrSame(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNeighborOrSame(int tileA, int tileB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileA</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_LineIntersects_" data-uid="RimWorld.Planet.PlanetLayer.LineIntersects*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_LineIntersects_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_" data-uid="RimWorld.Planet.PlanetLayer.LineIntersects(UnityEngine.Vector3,UnityEngine.Vector3,System.Single)">LineIntersects(Vector3, Vector3, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LineIntersects(Vector3 A, Vector3 B, float radiusFactor = 1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">A</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">B</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">radiusFactor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_LongLatOf_" data-uid="RimWorld.Planet.PlanetLayer.LongLatOf*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_LongLatOf_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.PlanetLayer.LongLatOf(RimWorld.Planet.PlanetTile)">LongLatOf(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 LongLatOf(PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_LongLatOf_" data-uid="RimWorld.Planet.PlanetLayer.LongLatOf*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_LongLatOf_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.LongLatOf(System.Int32)">LongLatOf(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 LongLatOf(int tileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_MarkRootSurface_" data-uid="RimWorld.Planet.PlanetLayer.MarkRootSurface*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_MarkRootSurface" data-uid="RimWorld.Planet.PlanetLayer.MarkRootSurface">MarkRootSurface()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkRootSurface()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_PlanetTileForID_" data-uid="RimWorld.Planet.PlanetLayer.PlanetTileForID*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_PlanetTileForID_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.PlanetTileForID(System.Int32)">PlanetTileForID(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetTile PlanetTileForID(int tileID)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">tileID</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_RawDataToTiles_" data-uid="RimWorld.Planet.PlanetLayer.RawDataToTiles*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_RawDataToTiles" data-uid="RimWorld.Planet.PlanetLayer.RawDataToTiles">RawDataToTiles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void RawDataToTiles()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_RegenerateAllLayersNow_" data-uid="RimWorld.Planet.PlanetLayer.RegenerateAllLayersNow*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_RegenerateAllLayersNow" data-uid="RimWorld.Planet.PlanetLayer.RegenerateAllLayersNow">RegenerateAllLayersNow()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegenerateAllLayersNow()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_RunWorldGeneration_" data-uid="RimWorld.Planet.PlanetLayer.RunWorldGeneration*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_RunWorldGeneration" data-uid="RimWorld.Planet.PlanetLayer.RunWorldGeneration">RunWorldGeneration()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunWorldGeneration()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_RunWorldGeneration_" data-uid="RimWorld.Planet.PlanetLayer.RunWorldGeneration*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_RunWorldGeneration_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.RunWorldGeneration(System.Int32)">RunWorldGeneration(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunWorldGeneration(int seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_RunWorldGeneration_" data-uid="RimWorld.Planet.PlanetLayer.RunWorldGeneration*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_RunWorldGeneration_System_String_System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.RunWorldGeneration(System.String,System.Int32)">RunWorldGeneration(string, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunWorldGeneration(string seedString, int seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">seedString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_SetAllLayersDirty_" data-uid="RimWorld.Planet.PlanetLayer.SetAllLayersDirty*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_SetAllLayersDirty" data-uid="RimWorld.Planet.PlanetLayer.SetAllLayersDirty">SetAllLayersDirty()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllLayersDirty()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_SetDirty_" data-uid="RimWorld.Planet.PlanetLayer.SetDirty*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_SetDirty__1" data-uid="RimWorld.Planet.PlanetLayer.SetDirty``1">SetDirty&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDirty&lt;T&gt;() where T : WorldDrawLayer</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_Standardize_" data-uid="RimWorld.Planet.PlanetLayer.Standardize*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_Standardize" data-uid="RimWorld.Planet.PlanetLayer.Standardize">Standardize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Standardize()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_TileRadiusToAngle_" data-uid="RimWorld.Planet.PlanetLayer.TileRadiusToAngle*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_TileRadiusToAngle_System_Single_" data-uid="RimWorld.Planet.PlanetLayer.TileRadiusToAngle(System.Single)">TileRadiusToAngle(float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TileRadiusToAngle(float radii)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">radii</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_TilesToRawData_" data-uid="RimWorld.Planet.PlanetLayer.TilesToRawData*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_TilesToRawData" data-uid="RimWorld.Planet.PlanetLayer.TilesToRawData">TilesToRawData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void TilesToRawData()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_TryGetConnectionFromTo_" data-uid="RimWorld.Planet.PlanetLayer.TryGetConnectionFromTo*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_TryGetConnectionFromTo_RimWorld_Planet_PlanetLayer_RimWorld_Planet_PlanetLayerConnection__" data-uid="RimWorld.Planet.PlanetLayer.TryGetConnectionFromTo(RimWorld.Planet.PlanetLayer,RimWorld.Planet.PlanetLayerConnection@)">TryGetConnectionFromTo(PlanetLayer, out PlanetLayerConnection)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetConnectionFromTo(PlanetLayer layer, out PlanetLayerConnection connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td><span class="parametername">layer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayerConnection.html">PlanetLayerConnection</a></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_TryGetPath_" data-uid="RimWorld.Planet.PlanetLayer.TryGetPath*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_TryGetPath_RimWorld_Planet_PlanetLayer_RimWorld_Planet_PlanetLayer_System_Collections_Generic_List_RimWorld_Planet_PlanetLayerConnection__System_Single__System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.TryGetPath(RimWorld.Planet.PlanetLayer,RimWorld.Planet.PlanetLayer,System.Collections.Generic.List{RimWorld.Planet.PlanetLayerConnection},System.Single@,System.Int32)">TryGetPath(PlanetLayer, PlanetLayer, List&lt;PlanetLayerConnection&gt;, out float, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetPath(PlanetLayer start, PlanetLayer goal, List&lt;PlanetLayerConnection&gt; path, out float cost, int max = 2147483647)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td><span class="parametername">goal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetLayerConnection.html">PlanetLayerConnection</a>&gt;</td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">cost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">max</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_PlanetLayer_TryGetPath_" data-uid="RimWorld.Planet.PlanetLayer.TryGetPath*"></a>
+  <h4 id="RimWorld_Planet_PlanetLayer_TryGetPath_RimWorld_Planet_PlanetLayer_System_Collections_Generic_List_RimWorld_Planet_PlanetLayerConnection__System_Single__System_Int32_" data-uid="RimWorld.Planet.PlanetLayer.TryGetPath(RimWorld.Planet.PlanetLayer,System.Collections.Generic.List{RimWorld.Planet.PlanetLayerConnection},System.Single@,System.Int32)">TryGetPath(PlanetLayer, List&lt;PlanetLayerConnection&gt;, out float, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetPath(PlanetLayer goal, List&lt;PlanetLayerConnection&gt; path, out float cost, int max = 2147483647)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></td>
+        <td><span class="parametername">goal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetLayerConnection.html">PlanetLayerConnection</a>&gt;</td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">cost</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">max</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

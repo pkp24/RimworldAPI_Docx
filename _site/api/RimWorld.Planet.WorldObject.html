@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class WorldObject </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class WorldObject ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Planet.WorldObject">
+
+
+
+  <h1 id="RimWorld_Planet_WorldObject" data-uid="RimWorld.Planet.WorldObject" class="text-break">Class WorldObject</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">WorldObject</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.AbandonedArchotechStructures.html">AbandonedArchotechStructures</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.AbandonedSettlement.html">AbandonedSettlement</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.Caravan.html">Caravan</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.Gravship.html">Gravship</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.GravshipLaunch.html">GravshipLaunch</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.MapParent.html">MapParent</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.PeaceTalks.html">PeaceTalks</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.RoutePlannerWaypoint.html">RoutePlannerWaypoint</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Planet.TravellingTransporters.html">TravellingTransporters</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+    <div><a class="xref" href="Verse.ISelectable.html">ISelectable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a>.<a class="xref" href="RimWorld.Planet.html">Planet</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Planet_WorldObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StaticConstructorOnStartup]
+public class WorldObject : IExposable, ILoadReferenceable, ISelectable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Planet_WorldObject__ctor_" data-uid="RimWorld.Planet.WorldObject.#ctor*"></a>
+  <h4 id="RimWorld_Planet_WorldObject__ctor" data-uid="RimWorld.Planet.WorldObject.#ctor">WorldObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldObject()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_Planet_WorldObject_ID" data-uid="RimWorld.Planet.WorldObject.ID">ID</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ID</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Planet_WorldObject_creationGameTicks" data-uid="RimWorld.Planet.WorldObject.creationGameTicks">creationGameTicks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int creationGameTicks</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Planet_WorldObject_def" data-uid="RimWorld.Planet.WorldObject.def">def</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldObjectDef def</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.WorldObjectDef.html">WorldObjectDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Planet_WorldObject_isGeneratedLocation" data-uid="RimWorld.Planet.WorldObject.isGeneratedLocation">isGeneratedLocation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isGeneratedLocation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Planet_WorldObject_questTags" data-uid="RimWorld.Planet.WorldObject.questTags">questTags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; questTags</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Planet_WorldObject_rewards" data-uid="RimWorld.Planet.WorldObject.rewards">rewards</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingOwner&lt;Thing&gt; rewards</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingOwner-1.html">ThingOwner</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_Planet_WorldObject_AllComps_" data-uid="RimWorld.Planet.WorldObject.AllComps*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_AllComps" data-uid="RimWorld.Planet.WorldObject.AllComps">AllComps</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;WorldObjectComp&gt; AllComps { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.Planet.WorldObjectComp.html">WorldObjectComp</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_AppendFactionToInspectString_" data-uid="RimWorld.Planet.WorldObject.AppendFactionToInspectString*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_AppendFactionToInspectString" data-uid="RimWorld.Planet.WorldObject.AppendFactionToInspectString">AppendFactionToInspectString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AppendFactionToInspectString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_Biome_" data-uid="RimWorld.Planet.WorldObject.Biome*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Biome" data-uid="RimWorld.Planet.WorldObject.Biome">Biome</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual BiomeDef Biome { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.BiomeDef.html">BiomeDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_CanReformFoggedEnemies_" data-uid="RimWorld.Planet.WorldObject.CanReformFoggedEnemies*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_CanReformFoggedEnemies" data-uid="RimWorld.Planet.WorldObject.CanReformFoggedEnemies">CanReformFoggedEnemies</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanReformFoggedEnemies { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_Destroyed_" data-uid="RimWorld.Planet.WorldObject.Destroyed*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Destroyed" data-uid="RimWorld.Planet.WorldObject.Destroyed">Destroyed</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Destroyed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_DrawAltitude_" data-uid="RimWorld.Planet.WorldObject.DrawAltitude*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_DrawAltitude" data-uid="RimWorld.Planet.WorldObject.DrawAltitude">DrawAltitude</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float DrawAltitude { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_DrawPos_" data-uid="RimWorld.Planet.WorldObject.DrawPos*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_DrawPos" data-uid="RimWorld.Planet.WorldObject.DrawPos">DrawPos</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 DrawPos { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExpandMore_" data-uid="RimWorld.Planet.WorldObject.ExpandMore*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExpandMore" data-uid="RimWorld.Planet.WorldObject.ExpandMore">ExpandMore</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ExpandMore { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExpandingIcon_" data-uid="RimWorld.Planet.WorldObject.ExpandingIcon*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExpandingIcon" data-uid="RimWorld.Planet.WorldObject.ExpandingIcon">ExpandingIcon</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Texture2D ExpandingIcon { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture2D.html">Texture2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExpandingIconColor_" data-uid="RimWorld.Planet.WorldObject.ExpandingIconColor*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExpandingIconColor" data-uid="RimWorld.Planet.WorldObject.ExpandingIconColor">ExpandingIconColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color ExpandingIconColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExpandingIconFlipHorizontal_" data-uid="RimWorld.Planet.WorldObject.ExpandingIconFlipHorizontal*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExpandingIconFlipHorizontal" data-uid="RimWorld.Planet.WorldObject.ExpandingIconFlipHorizontal">ExpandingIconFlipHorizontal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ExpandingIconFlipHorizontal { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExpandingIconPriority_" data-uid="RimWorld.Planet.WorldObject.ExpandingIconPriority*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExpandingIconPriority" data-uid="RimWorld.Planet.WorldObject.ExpandingIconPriority">ExpandingIconPriority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float ExpandingIconPriority { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExpandingIconRotation_" data-uid="RimWorld.Planet.WorldObject.ExpandingIconRotation*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExpandingIconRotation" data-uid="RimWorld.Planet.WorldObject.ExpandingIconRotation">ExpandingIconRotation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float ExpandingIconRotation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExpandingMaterial_" data-uid="RimWorld.Planet.WorldObject.ExpandingMaterial*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExpandingMaterial" data-uid="RimWorld.Planet.WorldObject.ExpandingMaterial">ExpandingMaterial</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Material ExpandingMaterial { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_Faction_" data-uid="RimWorld.Planet.WorldObject.Faction*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Faction" data-uid="RimWorld.Planet.WorldObject.Faction">Faction</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Faction Faction { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GravShipCanLandOn_" data-uid="RimWorld.Planet.WorldObject.GravShipCanLandOn*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GravShipCanLandOn" data-uid="RimWorld.Planet.WorldObject.GravShipCanLandOn">GravShipCanLandOn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool GravShipCanLandOn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_HasName_" data-uid="RimWorld.Planet.WorldObject.HasName*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_HasName" data-uid="RimWorld.Planet.WorldObject.HasName">HasName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool HasName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_Label_" data-uid="RimWorld.Planet.WorldObject.Label*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Label" data-uid="RimWorld.Planet.WorldObject.Label">Label</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Label { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_LabelCap_" data-uid="RimWorld.Planet.WorldObject.LabelCap*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_LabelCap" data-uid="RimWorld.Planet.WorldObject.LabelCap">LabelCap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LabelCap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_LabelShort_" data-uid="RimWorld.Planet.WorldObject.LabelShort*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_LabelShort" data-uid="RimWorld.Planet.WorldObject.LabelShort">LabelShort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string LabelShort { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_LabelShortCap_" data-uid="RimWorld.Planet.WorldObject.LabelShortCap*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_LabelShortCap" data-uid="RimWorld.Planet.WorldObject.LabelShortCap">LabelShortCap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string LabelShortCap { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_Material_" data-uid="RimWorld.Planet.WorldObject.Material*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Material" data-uid="RimWorld.Planet.WorldObject.Material">Material</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Material Material { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_NeverMultiSelect_" data-uid="RimWorld.Planet.WorldObject.NeverMultiSelect*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_NeverMultiSelect" data-uid="RimWorld.Planet.WorldObject.NeverMultiSelect">NeverMultiSelect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool NeverMultiSelect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ParentHolder_" data-uid="RimWorld.Planet.WorldObject.ParentHolder*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ParentHolder" data-uid="RimWorld.Planet.WorldObject.ParentHolder">ParentHolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IThingHolder ParentHolder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IThingHolder.html">IThingHolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_RequiresSignalJammerToReach_" data-uid="RimWorld.Planet.WorldObject.RequiresSignalJammerToReach*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_RequiresSignalJammerToReach" data-uid="RimWorld.Planet.WorldObject.RequiresSignalJammerToReach">RequiresSignalJammerToReach</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool RequiresSignalJammerToReach { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_SelectableNow_" data-uid="RimWorld.Planet.WorldObject.SelectableNow*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_SelectableNow" data-uid="RimWorld.Planet.WorldObject.SelectableNow">SelectableNow</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool SelectableNow { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ShowRelatedQuests_" data-uid="RimWorld.Planet.WorldObject.ShowRelatedQuests*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ShowRelatedQuests" data-uid="RimWorld.Planet.WorldObject.ShowRelatedQuests">ShowRelatedQuests</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ShowRelatedQuests { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_Spawned_" data-uid="RimWorld.Planet.WorldObject.Spawned*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Spawned" data-uid="RimWorld.Planet.WorldObject.Spawned">Spawned</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Spawned { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_SpecialDisplayStats_" data-uid="RimWorld.Planet.WorldObject.SpecialDisplayStats*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_SpecialDisplayStats" data-uid="RimWorld.Planet.WorldObject.SpecialDisplayStats">SpecialDisplayStats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;StatDrawEntry&gt; SpecialDisplayStats { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.StatDrawEntry.html">StatDrawEntry</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_Tile_" data-uid="RimWorld.Planet.WorldObject.Tile*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Tile" data-uid="RimWorld.Planet.WorldObject.Tile">Tile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlanetTile Tile { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_UpdateRateTickOffset_" data-uid="RimWorld.Planet.WorldObject.UpdateRateTickOffset*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_UpdateRateTickOffset" data-uid="RimWorld.Planet.WorldObject.UpdateRateTickOffset">UpdateRateTickOffset</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int UpdateRateTickOffset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_UpdateRateTicks_" data-uid="RimWorld.Planet.WorldObject.UpdateRateTicks*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_UpdateRateTicks" data-uid="RimWorld.Planet.WorldObject.UpdateRateTicks">UpdateRateTicks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int UpdateRateTicks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_VisibleInBackground_" data-uid="RimWorld.Planet.WorldObject.VisibleInBackground*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_VisibleInBackground" data-uid="RimWorld.Planet.WorldObject.VisibleInBackground">VisibleInBackground</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool VisibleInBackground { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Planet_WorldObject_AllMatchingObjectsOnScreenMatchesWith_" data-uid="RimWorld.Planet.WorldObject.AllMatchingObjectsOnScreenMatchesWith*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_AllMatchingObjectsOnScreenMatchesWith_RimWorld_Planet_WorldObject_" data-uid="RimWorld.Planet.WorldObject.AllMatchingObjectsOnScreenMatchesWith(RimWorld.Planet.WorldObject)">AllMatchingObjectsOnScreenMatchesWith(WorldObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllMatchingObjectsOnScreenMatchesWith(WorldObject other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.WorldObject.html">WorldObject</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_Destroy_" data-uid="RimWorld.Planet.WorldObject.Destroy*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Destroy" data-uid="RimWorld.Planet.WorldObject.Destroy">Destroy()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Destroy()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_DoTick_" data-uid="RimWorld.Planet.WorldObject.DoTick*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_DoTick" data-uid="RimWorld.Planet.WorldObject.DoTick">DoTick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DoTick()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_Draw_" data-uid="RimWorld.Planet.WorldObject.Draw*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Draw" data-uid="RimWorld.Planet.WorldObject.Draw">Draw()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Draw()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_DrawExtraSelectionOverlays_" data-uid="RimWorld.Planet.WorldObject.DrawExtraSelectionOverlays*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_DrawExtraSelectionOverlays" data-uid="RimWorld.Planet.WorldObject.DrawExtraSelectionOverlays">DrawExtraSelectionOverlays()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DrawExtraSelectionOverlays()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExposeData_" data-uid="RimWorld.Planet.WorldObject.ExposeData*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExposeData" data-uid="RimWorld.Planet.WorldObject.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ExposeData()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_ExtraSelectionOverlaysOnGUI_" data-uid="RimWorld.Planet.WorldObject.ExtraSelectionOverlaysOnGUI*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ExtraSelectionOverlaysOnGUI" data-uid="RimWorld.Planet.WorldObject.ExtraSelectionOverlaysOnGUI">ExtraSelectionOverlaysOnGUI()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ExtraSelectionOverlaysOnGUI()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetCaravanGizmos_" data-uid="RimWorld.Planet.WorldObject.GetCaravanGizmos*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetCaravanGizmos_RimWorld_Planet_Caravan_" data-uid="RimWorld.Planet.WorldObject.GetCaravanGizmos(RimWorld.Planet.Caravan)">GetCaravanGizmos(Caravan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(WorldObject.&lt;GetCaravanGizmos&gt;d__109))]
+public virtual IEnumerable&lt;Gizmo&gt; GetCaravanGizmos(Caravan caravan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Caravan.html">Caravan</a></td>
+        <td><span class="parametername">caravan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Gizmo.html">Gizmo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetComponent_" data-uid="RimWorld.Planet.WorldObject.GetComponent*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetComponent_System_Type_" data-uid="RimWorld.Planet.WorldObject.GetComponent(System.Type)">GetComponent(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WorldObjectComp GetComponent(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.WorldObjectComp.html">WorldObjectComp</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetComponent_" data-uid="RimWorld.Planet.WorldObject.GetComponent*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetComponent__1" data-uid="RimWorld.Planet.WorldObject.GetComponent``1">GetComponent&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetComponent&lt;T&gt;() where T : WorldObjectComp</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetDescription_" data-uid="RimWorld.Planet.WorldObject.GetDescription*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetDescription" data-uid="RimWorld.Planet.WorldObject.GetDescription">GetDescription()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetDescription()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetFloatMenuOptions_" data-uid="RimWorld.Planet.WorldObject.GetFloatMenuOptions*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetFloatMenuOptions_RimWorld_Planet_Caravan_" data-uid="RimWorld.Planet.WorldObject.GetFloatMenuOptions(RimWorld.Planet.Caravan)">GetFloatMenuOptions(Caravan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(WorldObject.&lt;GetFloatMenuOptions&gt;d__110))]
+public virtual IEnumerable&lt;FloatMenuOption&gt; GetFloatMenuOptions(Caravan caravan)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Caravan.html">Caravan</a></td>
+        <td><span class="parametername">caravan</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.FloatMenuOption.html">FloatMenuOption</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetGizmos_" data-uid="RimWorld.Planet.WorldObject.GetGizmos*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetGizmos" data-uid="RimWorld.Planet.WorldObject.GetGizmos">GetGizmos()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(WorldObject.&lt;GetGizmos&gt;d__108))]
+public virtual IEnumerable&lt;Gizmo&gt; GetGizmos()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Gizmo.html">Gizmo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetHashCode_" data-uid="RimWorld.Planet.WorldObject.GetHashCode*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetHashCode" data-uid="RimWorld.Planet.WorldObject.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a></div>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetInspectString_" data-uid="RimWorld.Planet.WorldObject.GetInspectString*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetInspectString" data-uid="RimWorld.Planet.WorldObject.GetInspectString">GetInspectString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetInspectString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetInspectTabs_" data-uid="RimWorld.Planet.WorldObject.GetInspectTabs*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetInspectTabs" data-uid="RimWorld.Planet.WorldObject.GetInspectTabs">GetInspectTabs()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;InspectTabBase&gt; GetInspectTabs()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.InspectTabBase.html">InspectTabBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetShuttleFloatMenuOptions_" data-uid="RimWorld.Planet.WorldObject.GetShuttleFloatMenuOptions*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetShuttleFloatMenuOptions_System_Collections_Generic_IEnumerable_Verse_IThingHolder__System_Action_RimWorld_Planet_PlanetTile_RimWorld_Planet_TransportersArrivalAction__" data-uid="RimWorld.Planet.WorldObject.GetShuttleFloatMenuOptions(System.Collections.Generic.IEnumerable{Verse.IThingHolder},System.Action{RimWorld.Planet.PlanetTile,RimWorld.Planet.TransportersArrivalAction})">GetShuttleFloatMenuOptions(IEnumerable&lt;IThingHolder&gt;, Action&lt;PlanetTile, TransportersArrivalAction&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;FloatMenuOption&gt; GetShuttleFloatMenuOptions(IEnumerable&lt;IThingHolder&gt; pods, Action&lt;PlanetTile, TransportersArrivalAction&gt; launchAction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.IThingHolder.html">IThingHolder</a>&gt;</td>
+        <td><span class="parametername">pods</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a>, <a class="xref" href="RimWorld.Planet.TransportersArrivalAction.html">TransportersArrivalAction</a>&gt;</td>
+        <td><span class="parametername">launchAction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.FloatMenuOption.html">FloatMenuOption</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetTransportersFloatMenuOptions_" data-uid="RimWorld.Planet.WorldObject.GetTransportersFloatMenuOptions*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetTransportersFloatMenuOptions_System_Collections_Generic_IEnumerable_Verse_IThingHolder__System_Action_RimWorld_Planet_PlanetTile_RimWorld_Planet_TransportersArrivalAction__" data-uid="RimWorld.Planet.WorldObject.GetTransportersFloatMenuOptions(System.Collections.Generic.IEnumerable{Verse.IThingHolder},System.Action{RimWorld.Planet.PlanetTile,RimWorld.Planet.TransportersArrivalAction})">GetTransportersFloatMenuOptions(IEnumerable&lt;IThingHolder&gt;, Action&lt;PlanetTile, TransportersArrivalAction&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;FloatMenuOption&gt; GetTransportersFloatMenuOptions(IEnumerable&lt;IThingHolder&gt; pods, Action&lt;PlanetTile, TransportersArrivalAction&gt; launchAction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.IThingHolder.html">IThingHolder</a>&gt;</td>
+        <td><span class="parametername">pods</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a>, <a class="xref" href="RimWorld.Planet.TransportersArrivalAction.html">TransportersArrivalAction</a>&gt;</td>
+        <td><span class="parametername">launchAction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.FloatMenuOption.html">FloatMenuOption</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_GetUniqueLoadID_" data-uid="RimWorld.Planet.WorldObject.GetUniqueLoadID*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_GetUniqueLoadID" data-uid="RimWorld.Planet.WorldObject.GetUniqueLoadID">GetUniqueLoadID()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetUniqueLoadID()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_IncidentTargetTags_" data-uid="RimWorld.Planet.WorldObject.IncidentTargetTags*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_IncidentTargetTags" data-uid="RimWorld.Planet.WorldObject.IncidentTargetTags">IncidentTargetTags()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(WorldObject.&lt;IncidentTargetTags&gt;d__82))]
+public virtual IEnumerable&lt;IncidentTargetTagDef&gt; IncidentTargetTags()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.IncidentTargetTagDef.html">IncidentTargetTagDef</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_PositionChanged_" data-uid="RimWorld.Planet.WorldObject.PositionChanged*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_PositionChanged_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_" data-uid="RimWorld.Planet.WorldObject.PositionChanged(RimWorld.Planet.PlanetTile,RimWorld.Planet.PlanetTile)">PositionChanged(PlanetTile, PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void PositionChanged(PlanetTile previous, PlanetTile current)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">previous</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">current</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_PostAdd_" data-uid="RimWorld.Planet.WorldObject.PostAdd*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_PostAdd" data-uid="RimWorld.Planet.WorldObject.PostAdd">PostAdd()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostAdd()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_PostMake_" data-uid="RimWorld.Planet.WorldObject.PostMake*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_PostMake" data-uid="RimWorld.Planet.WorldObject.PostMake">PostMake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostMake()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_PostRemove_" data-uid="RimWorld.Planet.WorldObject.PostRemove*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_PostRemove" data-uid="RimWorld.Planet.WorldObject.PostRemove">PostRemove()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostRemove()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_Print_" data-uid="RimWorld.Planet.WorldObject.Print*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Print_Verse_LayerSubMesh_" data-uid="RimWorld.Planet.WorldObject.Print(Verse.LayerSubMesh)">Print(LayerSubMesh)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Print(LayerSubMesh subMesh)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LayerSubMesh.html">LayerSubMesh</a></td>
+        <td><span class="parametername">subMesh</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_SetFaction_" data-uid="RimWorld.Planet.WorldObject.SetFaction*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_SetFaction_RimWorld_Faction_" data-uid="RimWorld.Planet.WorldObject.SetFaction(RimWorld.Faction)">SetFaction(Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetFaction(Faction newFaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">newFaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_SpawnSetup_" data-uid="RimWorld.Planet.WorldObject.SpawnSetup*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_SpawnSetup" data-uid="RimWorld.Planet.WorldObject.SpawnSetup">SpawnSetup()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SpawnSetup()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_Tick_" data-uid="RimWorld.Planet.WorldObject.Tick*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_Tick" data-uid="RimWorld.Planet.WorldObject.Tick">Tick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Tick()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Planet_WorldObject_TickInterval_" data-uid="RimWorld.Planet.WorldObject.TickInterval*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_TickInterval_System_Int32_" data-uid="RimWorld.Planet.WorldObject.TickInterval(System.Int32)">TickInterval(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void TickInterval(int delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_WorldObject_ToString_" data-uid="RimWorld.Planet.WorldObject.ToString*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_ToString" data-uid="RimWorld.Planet.WorldObject.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+
+
+  <a id="RimWorld_Planet_WorldObject_TryGetComponent_" data-uid="RimWorld.Planet.WorldObject.TryGetComponent*"></a>
+  <h4 id="RimWorld_Planet_WorldObject_TryGetComponent__1___0__" data-uid="RimWorld.Planet.WorldObject.TryGetComponent``1(``0@)">TryGetComponent&lt;T&gt;(out T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetComponent&lt;T&gt;(out T comp) where T : WorldObjectComp</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ISelectable.html">ISelectable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="RimWorld.Planet.WorldObjectSelectionUtility.html#RimWorld_Planet_WorldObjectSelectionUtility_DistanceToMouse_RimWorld_Planet_WorldObject_UnityEngine_Vector2_">WorldObjectSelectionUtility.DistanceToMouse(WorldObject, Vector2)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.Planet.WorldObjectSelectionUtility.html#RimWorld_Planet_WorldObjectSelectionUtility_HiddenBehindTerrainNow_RimWorld_Planet_WorldObject_">WorldObjectSelectionUtility.HiddenBehindTerrainNow(WorldObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.Planet.WorldObjectSelectionUtility.html#RimWorld_Planet_WorldObjectSelectionUtility_ScreenPos_RimWorld_Planet_WorldObject_">WorldObjectSelectionUtility.ScreenPos(WorldObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.Planet.WorldObjectSelectionUtility.html#RimWorld_Planet_WorldObjectSelectionUtility_VisibleToCameraNow_RimWorld_Planet_WorldObject_">WorldObjectSelectionUtility.VisibleToCameraNow(WorldObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_HashOffset_RimWorld_Planet_WorldObject_">Gen.HashOffset(WorldObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_HashOffsetTicks_RimWorld_Planet_WorldObject_">Gen.HashOffsetTicks(WorldObject)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_IsHashIntervalTick_RimWorld_Planet_WorldObject_System_Int32_">Gen.IsHashIntervalTick(WorldObject, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_IsHashIntervalTick_RimWorld_Planet_WorldObject_System_Int32_System_Int32_">Gen.IsHashIntervalTick(WorldObject, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

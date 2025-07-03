@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BattleLogEntry_StateTransition </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BattleLogEntry_StateTransition ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.BattleLogEntry_StateTransition">
+
+
+
+  <h1 id="Verse_BattleLogEntry_StateTransition" data-uid="Verse.BattleLogEntry_StateTransition" class="text-break">Class BattleLogEntry_StateTransition</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.LogEntry.html">LogEntry</a></div>
+    <div class="level2"><span class="xref">BattleLogEntry_StateTransition</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_logID">LogEntry.logID</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_ticksAbs">LogEntry.ticksAbs</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_def">LogEntry.def</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Blood">LogEntry.Blood</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_BloodTarget">LogEntry.BloodTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Downed">LogEntry.Downed</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_DownedTarget">LogEntry.DownedTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Skull">LogEntry.Skull</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_SkullTarget">LogEntry.SkullTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_ToGameStringFromPOV_Verse_Thing_System_Boolean_">LogEntry.ToGameStringFromPOV(Thing, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_ToGameStringFromPOV_Worker_Verse_Thing_System_Boolean_">LogEntry.ToGameStringFromPOV_Worker(Thing, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_GetTextHeight_Verse_Thing_System_Single_">LogEntry.GetTextHeight(Thing, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_ResetCache">LogEntry.ResetCache()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_IconColorFromPOV_Verse_Thing_">LogEntry.IconColorFromPOV(Thing)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Notify_FactionRemoved_RimWorld_Faction_">LogEntry.Notify_FactionRemoved(Faction)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Notify_IdeoRemoved_RimWorld_Ideo_">LogEntry.Notify_IdeoRemoved(Ideo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_GetTipString">LogEntry.GetTipString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_ShowInCompactView">LogEntry.ShowInCompactView()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Debug_OverrideTicks_System_Int32_">LogEntry.Debug_OverrideTicks(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_GetUniqueLoadID">LogEntry.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Age">LogEntry.Age</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Tick">LogEntry.Tick</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_LogID">LogEntry.LogID</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Timestamp">LogEntry.Timestamp</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_BattleLogEntry_StateTransition_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BattleLogEntry_StateTransition : LogEntry, IExposable, ILoadReferenceable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition__ctor_" data-uid="Verse.BattleLogEntry_StateTransition.#ctor*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition__ctor" data-uid="Verse.BattleLogEntry_StateTransition.#ctor">BattleLogEntry_StateTransition()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BattleLogEntry_StateTransition()</code></pre>
+  </div>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition__ctor_" data-uid="Verse.BattleLogEntry_StateTransition.#ctor*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition__ctor_Verse_Thing_Verse_RulePackDef_Verse_Pawn_Verse_Hediff_Verse_BodyPartRecord_" data-uid="Verse.BattleLogEntry_StateTransition.#ctor(Verse.Thing,Verse.RulePackDef,Verse.Pawn,Verse.Hediff,Verse.BodyPartRecord)">BattleLogEntry_StateTransition(Thing, RulePackDef, Pawn, Hediff, BodyPartRecord)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BattleLogEntry_StateTransition(Thing subject, RulePackDef transitionDef, Pawn initiator, Hediff culpritHediff, BodyPartRecord culpritTargetDef)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">subject</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.RulePackDef.html">RulePackDef</a></td>
+        <td><span class="parametername">transitionDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">initiator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Hediff.html">Hediff</a></td>
+        <td><span class="parametername">culpritHediff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.BodyPartRecord.html">BodyPartRecord</a></td>
+        <td><span class="parametername">culpritTargetDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition_CanBeClickedFromPOV_" data-uid="Verse.BattleLogEntry_StateTransition.CanBeClickedFromPOV*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition_CanBeClickedFromPOV_Verse_Thing_" data-uid="Verse.BattleLogEntry_StateTransition.CanBeClickedFromPOV(Verse.Thing)">CanBeClickedFromPOV(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanBeClickedFromPOV(Thing pov)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">pov</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_CanBeClickedFromPOV_Verse_Thing_">LogEntry.CanBeClickedFromPOV(Thing)</a></div>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition_ClickedFromPOV_" data-uid="Verse.BattleLogEntry_StateTransition.ClickedFromPOV*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition_ClickedFromPOV_Verse_Thing_" data-uid="Verse.BattleLogEntry_StateTransition.ClickedFromPOV(Verse.Thing)">ClickedFromPOV(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ClickedFromPOV(Thing pov)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">pov</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_ClickedFromPOV_Verse_Thing_">LogEntry.ClickedFromPOV(Thing)</a></div>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition_Concerns_" data-uid="Verse.BattleLogEntry_StateTransition.Concerns*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition_Concerns_Verse_Thing_" data-uid="Verse.BattleLogEntry_StateTransition.Concerns(Verse.Thing)">Concerns(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Concerns(Thing t)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">t</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_Concerns_Verse_Thing_">LogEntry.Concerns(Thing)</a></div>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition_ExposeData_" data-uid="Verse.BattleLogEntry_StateTransition.ExposeData*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition_ExposeData" data-uid="Verse.BattleLogEntry_StateTransition.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExposeData()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_ExposeData">LogEntry.ExposeData()</a></div>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition_GenerateGrammarRequest_" data-uid="Verse.BattleLogEntry_StateTransition.GenerateGrammarRequest*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition_GenerateGrammarRequest" data-uid="Verse.BattleLogEntry_StateTransition.GenerateGrammarRequest">GenerateGrammarRequest()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override GrammarRequest GenerateGrammarRequest()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Grammar.GrammarRequest.html">GrammarRequest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_GenerateGrammarRequest">LogEntry.GenerateGrammarRequest()</a></div>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition_GetConcerns_" data-uid="Verse.BattleLogEntry_StateTransition.GetConcerns*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition_GetConcerns" data-uid="Verse.BattleLogEntry_StateTransition.GetConcerns">GetConcerns()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(BattleLogEntry_StateTransition.&lt;GetConcerns&gt;d__12))]
+public override IEnumerable&lt;Thing&gt; GetConcerns()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_GetConcerns">LogEntry.GetConcerns()</a></div>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition_IconFromPOV_" data-uid="Verse.BattleLogEntry_StateTransition.IconFromPOV*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition_IconFromPOV_Verse_Thing_" data-uid="Verse.BattleLogEntry_StateTransition.IconFromPOV(Verse.Thing)">IconFromPOV(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Texture2D IconFromPOV(Thing pov)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">pov</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture2D.html">Texture2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.LogEntry.html#Verse_LogEntry_IconFromPOV_Verse_Thing_">LogEntry.IconFromPOV(Thing)</a></div>
+
+
+  <a id="Verse_BattleLogEntry_StateTransition_ToString_" data-uid="Verse.BattleLogEntry_StateTransition.ToString*"></a>
+  <h4 id="Verse_BattleLogEntry_StateTransition_ToString" data-uid="Verse.BattleLogEntry_StateTransition.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PaintContext </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PaintContext ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.TerrainTools.PaintContext">
+
+
+
+  <h1 id="UnityEngine_TerrainTools_PaintContext" data-uid="UnityEngine.TerrainTools.PaintContext" class="text-break">Class PaintContext</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">PaintContext</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.TerrainTools.html">TerrainTools</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.TerrainModule.dll</h6>
+  <h5 id="UnityEngine_TerrainTools_PaintContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MovedFrom(&quot;UnityEngine.Experimental.TerrainAPI&quot;)]
+public class PaintContext</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext__ctor_" data-uid="UnityEngine.TerrainTools.PaintContext.#ctor*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext__ctor_UnityEngine_Terrain_UnityEngine_RectInt_System_Int32_System_Int32_System_Boolean_System_Boolean_" data-uid="UnityEngine.TerrainTools.PaintContext.#ctor(UnityEngine.Terrain,UnityEngine.RectInt,System.Int32,System.Int32,System.Boolean,System.Boolean)">PaintContext(Terrain, RectInt, int, int, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PaintContext(Terrain terrain, RectInt pixelRect, int targetTextureWidth, int targetTextureHeight, bool sharedBoundaryTexel = true, bool fillOutsideTerrain = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RectInt.html">RectInt</a></td>
+        <td><span class="parametername">pixelRect</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetTextureWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">targetTextureHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">sharedBoundaryTexel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fillOutsideTerrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_destinationRenderTexture_" data-uid="UnityEngine.TerrainTools.PaintContext.destinationRenderTexture*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_destinationRenderTexture" data-uid="UnityEngine.TerrainTools.PaintContext.destinationRenderTexture">destinationRenderTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTexture destinationRenderTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_heightWorldSpaceMin_" data-uid="UnityEngine.TerrainTools.PaintContext.heightWorldSpaceMin*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_heightWorldSpaceMin" data-uid="UnityEngine.TerrainTools.PaintContext.heightWorldSpaceMin">heightWorldSpaceMin</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float heightWorldSpaceMin { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_heightWorldSpaceSize_" data-uid="UnityEngine.TerrainTools.PaintContext.heightWorldSpaceSize*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_heightWorldSpaceSize" data-uid="UnityEngine.TerrainTools.PaintContext.heightWorldSpaceSize">heightWorldSpaceSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float heightWorldSpaceSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_kNormalizedHeightScale_" data-uid="UnityEngine.TerrainTools.PaintContext.kNormalizedHeightScale*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_kNormalizedHeightScale" data-uid="UnityEngine.TerrainTools.PaintContext.kNormalizedHeightScale">kNormalizedHeightScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float kNormalizedHeightScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_oldRenderTexture_" data-uid="UnityEngine.TerrainTools.PaintContext.oldRenderTexture*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_oldRenderTexture" data-uid="UnityEngine.TerrainTools.PaintContext.oldRenderTexture">oldRenderTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTexture oldRenderTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_originTerrain_" data-uid="UnityEngine.TerrainTools.PaintContext.originTerrain*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_originTerrain" data-uid="UnityEngine.TerrainTools.PaintContext.originTerrain">originTerrain</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Terrain originTerrain { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_pixelRect_" data-uid="UnityEngine.TerrainTools.PaintContext.pixelRect*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_pixelRect" data-uid="UnityEngine.TerrainTools.PaintContext.pixelRect">pixelRect</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectInt pixelRect { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RectInt.html">RectInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_pixelSize_" data-uid="UnityEngine.TerrainTools.PaintContext.pixelSize*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_pixelSize" data-uid="UnityEngine.TerrainTools.PaintContext.pixelSize">pixelSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 pixelSize { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector2.html">Vector2</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_sourceRenderTexture_" data-uid="UnityEngine.TerrainTools.PaintContext.sourceRenderTexture*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_sourceRenderTexture" data-uid="UnityEngine.TerrainTools.PaintContext.sourceRenderTexture">sourceRenderTexture</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTexture sourceRenderTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_targetTextureHeight_" data-uid="UnityEngine.TerrainTools.PaintContext.targetTextureHeight*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_targetTextureHeight" data-uid="UnityEngine.TerrainTools.PaintContext.targetTextureHeight">targetTextureHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int targetTextureHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_targetTextureWidth_" data-uid="UnityEngine.TerrainTools.PaintContext.targetTextureWidth*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_targetTextureWidth" data-uid="UnityEngine.TerrainTools.PaintContext.targetTextureWidth">targetTextureWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int targetTextureWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_terrainCount_" data-uid="UnityEngine.TerrainTools.PaintContext.terrainCount*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_terrainCount" data-uid="UnityEngine.TerrainTools.PaintContext.terrainCount">terrainCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int terrainCount { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_ApplyDelayedActions_" data-uid="UnityEngine.TerrainTools.PaintContext.ApplyDelayedActions*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_ApplyDelayedActions" data-uid="UnityEngine.TerrainTools.PaintContext.ApplyDelayedActions">ApplyDelayedActions()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ApplyDelayedActions()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_Cleanup_" data-uid="UnityEngine.TerrainTools.PaintContext.Cleanup*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_Cleanup_System_Boolean_" data-uid="UnityEngine.TerrainTools.PaintContext.Cleanup(System.Boolean)">Cleanup(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Cleanup(bool restoreRenderTexture = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">restoreRenderTexture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_CreateFromBounds_" data-uid="UnityEngine.TerrainTools.PaintContext.CreateFromBounds*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_CreateFromBounds_UnityEngine_Terrain_UnityEngine_Rect_System_Int32_System_Int32_System_Int32_System_Boolean_System_Boolean_" data-uid="UnityEngine.TerrainTools.PaintContext.CreateFromBounds(UnityEngine.Terrain,UnityEngine.Rect,System.Int32,System.Int32,System.Int32,System.Boolean,System.Boolean)">CreateFromBounds(Terrain, Rect, int, int, int, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PaintContext CreateFromBounds(Terrain terrain, Rect boundsInTerrainSpace, int inputTextureWidth, int inputTextureHeight, int extraBorderPixels = 0, bool sharedBoundaryTexel = true, bool fillOutsideTerrain = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rect.html">Rect</a></td>
+        <td><span class="parametername">boundsInTerrainSpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">inputTextureWidth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">inputTextureHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">extraBorderPixels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">sharedBoundaryTexel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fillOutsideTerrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_CreateRenderTargets_" data-uid="UnityEngine.TerrainTools.PaintContext.CreateRenderTargets*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_CreateRenderTargets_UnityEngine_RenderTextureFormat_" data-uid="UnityEngine.TerrainTools.PaintContext.CreateRenderTargets(UnityEngine.RenderTextureFormat)">CreateRenderTargets(RenderTextureFormat)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CreateRenderTargets(RenderTextureFormat colorFormat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTextureFormat.html">RenderTextureFormat</a></td>
+        <td><span class="parametername">colorFormat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_Gather_" data-uid="UnityEngine.TerrainTools.PaintContext.Gather*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_Gather_System_Func_UnityEngine_TerrainTools_PaintContext_ITerrainInfo_UnityEngine_Texture__UnityEngine_Color_UnityEngine_Material_System_Int32_System_Action_UnityEngine_TerrainTools_PaintContext_ITerrainInfo__System_Action_UnityEngine_TerrainTools_PaintContext_ITerrainInfo__" data-uid="UnityEngine.TerrainTools.PaintContext.Gather(System.Func{UnityEngine.TerrainTools.PaintContext.ITerrainInfo,UnityEngine.Texture},UnityEngine.Color,UnityEngine.Material,System.Int32,System.Action{UnityEngine.TerrainTools.PaintContext.ITerrainInfo},System.Action{UnityEngine.TerrainTools.PaintContext.ITerrainInfo})">Gather(Func&lt;ITerrainInfo, Texture&gt;, Color, Material, int, Action&lt;ITerrainInfo&gt;, Action&lt;ITerrainInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Gather(Func&lt;PaintContext.ITerrainInfo, Texture&gt; terrainSource, Color defaultColor, Material blitMaterial = null, int blitPass = 0, Action&lt;PaintContext.ITerrainInfo&gt; beforeBlit = null, Action&lt;PaintContext.ITerrainInfo&gt; afterBlit = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a>.<a class="xref" href="UnityEngine.TerrainTools.PaintContext.ITerrainInfo.html">ITerrainInfo</a>, <a class="xref" href="UnityEngine.Texture.html">Texture</a>&gt;</td>
+        <td><span class="parametername">terrainSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Color.html">Color</a></td>
+        <td><span class="parametername">defaultColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td><span class="parametername">blitMaterial</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">blitPass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a>.<a class="xref" href="UnityEngine.TerrainTools.PaintContext.ITerrainInfo.html">ITerrainInfo</a>&gt;</td>
+        <td><span class="parametername">beforeBlit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a>.<a class="xref" href="UnityEngine.TerrainTools.PaintContext.ITerrainInfo.html">ITerrainInfo</a>&gt;</td>
+        <td><span class="parametername">afterBlit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_GatherAlphamap_" data-uid="UnityEngine.TerrainTools.PaintContext.GatherAlphamap*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_GatherAlphamap_UnityEngine_TerrainLayer_System_Boolean_" data-uid="UnityEngine.TerrainTools.PaintContext.GatherAlphamap(UnityEngine.TerrainLayer,System.Boolean)">GatherAlphamap(TerrainLayer, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GatherAlphamap(TerrainLayer inputLayer, bool addLayerIfDoesntExist = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainLayer.html">TerrainLayer</a></td>
+        <td><span class="parametername">inputLayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">addLayerIfDoesntExist</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_GatherHeightmap_" data-uid="UnityEngine.TerrainTools.PaintContext.GatherHeightmap*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_GatherHeightmap" data-uid="UnityEngine.TerrainTools.PaintContext.GatherHeightmap">GatherHeightmap()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GatherHeightmap()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_GatherHoles_" data-uid="UnityEngine.TerrainTools.PaintContext.GatherHoles*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_GatherHoles" data-uid="UnityEngine.TerrainTools.PaintContext.GatherHoles">GatherHoles()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GatherHoles()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_GatherNormals_" data-uid="UnityEngine.TerrainTools.PaintContext.GatherNormals*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_GatherNormals" data-uid="UnityEngine.TerrainTools.PaintContext.GatherNormals">GatherNormals()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GatherNormals()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_GetClippedPixelRectInRenderTexturePixels_" data-uid="UnityEngine.TerrainTools.PaintContext.GetClippedPixelRectInRenderTexturePixels*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_GetClippedPixelRectInRenderTexturePixels_System_Int32_" data-uid="UnityEngine.TerrainTools.PaintContext.GetClippedPixelRectInRenderTexturePixels(System.Int32)">GetClippedPixelRectInRenderTexturePixels(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectInt GetClippedPixelRectInRenderTexturePixels(int terrainIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">terrainIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RectInt.html">RectInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_GetClippedPixelRectInTerrainPixels_" data-uid="UnityEngine.TerrainTools.PaintContext.GetClippedPixelRectInTerrainPixels*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_GetClippedPixelRectInTerrainPixels_System_Int32_" data-uid="UnityEngine.TerrainTools.PaintContext.GetClippedPixelRectInTerrainPixels(System.Int32)">GetClippedPixelRectInTerrainPixels(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectInt GetClippedPixelRectInTerrainPixels(int terrainIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">terrainIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RectInt.html">RectInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_GetTerrain_" data-uid="UnityEngine.TerrainTools.PaintContext.GetTerrain*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_GetTerrain_System_Int32_" data-uid="UnityEngine.TerrainTools.PaintContext.GetTerrain(System.Int32)">GetTerrain(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Terrain GetTerrain(int terrainIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">terrainIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_Scatter_" data-uid="UnityEngine.TerrainTools.PaintContext.Scatter*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_Scatter_System_Func_UnityEngine_TerrainTools_PaintContext_ITerrainInfo_UnityEngine_RenderTexture__UnityEngine_Material_System_Int32_System_Action_UnityEngine_TerrainTools_PaintContext_ITerrainInfo__System_Action_UnityEngine_TerrainTools_PaintContext_ITerrainInfo__" data-uid="UnityEngine.TerrainTools.PaintContext.Scatter(System.Func{UnityEngine.TerrainTools.PaintContext.ITerrainInfo,UnityEngine.RenderTexture},UnityEngine.Material,System.Int32,System.Action{UnityEngine.TerrainTools.PaintContext.ITerrainInfo},System.Action{UnityEngine.TerrainTools.PaintContext.ITerrainInfo})">Scatter(Func&lt;ITerrainInfo, RenderTexture&gt;, Material, int, Action&lt;ITerrainInfo&gt;, Action&lt;ITerrainInfo&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Scatter(Func&lt;PaintContext.ITerrainInfo, RenderTexture&gt; terrainDest, Material blitMaterial = null, int blitPass = 0, Action&lt;PaintContext.ITerrainInfo&gt; beforeBlit = null, Action&lt;PaintContext.ITerrainInfo&gt; afterBlit = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a>.<a class="xref" href="UnityEngine.TerrainTools.PaintContext.ITerrainInfo.html">ITerrainInfo</a>, <a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a>&gt;</td>
+        <td><span class="parametername">terrainDest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td><span class="parametername">blitMaterial</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">blitPass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a>.<a class="xref" href="UnityEngine.TerrainTools.PaintContext.ITerrainInfo.html">ITerrainInfo</a>&gt;</td>
+        <td><span class="parametername">beforeBlit</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a>.<a class="xref" href="UnityEngine.TerrainTools.PaintContext.ITerrainInfo.html">ITerrainInfo</a>&gt;</td>
+        <td><span class="parametername">afterBlit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_ScatterAlphamap_" data-uid="UnityEngine.TerrainTools.PaintContext.ScatterAlphamap*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_ScatterAlphamap_System_String_" data-uid="UnityEngine.TerrainTools.PaintContext.ScatterAlphamap(System.String)">ScatterAlphamap(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScatterAlphamap(string editorUndoName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">editorUndoName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_ScatterHeightmap_" data-uid="UnityEngine.TerrainTools.PaintContext.ScatterHeightmap*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_ScatterHeightmap_System_String_" data-uid="UnityEngine.TerrainTools.PaintContext.ScatterHeightmap(System.String)">ScatterHeightmap(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScatterHeightmap(string editorUndoName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">editorUndoName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_PaintContext_ScatterHoles_" data-uid="UnityEngine.TerrainTools.PaintContext.ScatterHoles*"></a>
+  <h4 id="UnityEngine_TerrainTools_PaintContext_ScatterHoles_System_String_" data-uid="UnityEngine.TerrainTools.PaintContext.ScatterHoles(System.String)">ScatterHoles(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScatterHoles(string editorUndoName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">editorUndoName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class JobDriver_ActivateMonolith </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class JobDriver_ActivateMonolith ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.JobDriver_ActivateMonolith">
+
+
+
+  <h1 id="RimWorld_JobDriver_ActivateMonolith" data-uid="RimWorld.JobDriver_ActivateMonolith" class="text-break">Class JobDriver_ActivateMonolith</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.AI.JobDriver.html">JobDriver</a></div>
+    <div class="level2"><span class="xref">JobDriver_ActivateMonolith</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.AI.IJobEndable.html">IJobEndable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_PlaceInInventoryDuration">JobDriver.PlaceInInventoryDuration</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_pawn">JobDriver.pawn</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_job">JobDriver.job</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_globalFailConditions">JobDriver.globalFailConditions</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_globalFinishActions">JobDriver.globalFinishActions</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ended">JobDriver.ended</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ticksLeftThisToil">JobDriver.ticksLeftThisToil</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_startTick">JobDriver.startTick</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_rotateToFace">JobDriver.rotateToFace</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_asleep">JobDriver.asleep</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_uninstallWorkLeft">JobDriver.uninstallWorkLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_collideWithPawns">JobDriver.collideWithPawns</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_locomotionUrgencySameAs">JobDriver.locomotionUrgencySameAs</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_debugTicksSpentThisToil">JobDriver.debugTicksSpentThisToil</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_GetReport">JobDriver.GetReport()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_GetReportStringOverride">JobDriver.GetReportStringOverride()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ReportStringProcessed_System_String_">JobDriver.ReportStringProcessed(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_SetInitialPosture">JobDriver.SetInitialPosture()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ExposeData">JobDriver.ExposeData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_Cleanup_Verse_AI_JobCondition_">JobDriver.Cleanup(JobCondition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_SetFinalizerJob_System_Func_Verse_AI_JobCondition_Verse_AI_Job__">JobDriver.SetFinalizerJob(Func&lt;JobCondition, Job&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_GetFinalizerJob_Verse_AI_JobCondition_">JobDriver.GetFinalizerJob(JobCondition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_CanBeginNowWhileLyingDown">JobDriver.CanBeginNowWhileLyingDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ClearToils">JobDriver.ClearToils()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_DriverTick">JobDriver.DriverTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_DriverTickInterval_System_Int32_">JobDriver.DriverTickInterval(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ReadyForNextToil">JobDriver.ReadyForNextToil()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_EndJobWith_Verse_AI_JobCondition_">JobDriver.EndJobWith(JobCondition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TaleParameters">JobDriver.TaleParameters()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_JumpToToil_Verse_AI_Toil_">JobDriver.JumpToToil(Toil)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_Notify_Starting">JobDriver.Notify_Starting()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_Notify_PatherArrived">JobDriver.Notify_PatherArrived()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_Notify_PatherFailed">JobDriver.Notify_PatherFailed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_Notify_StanceChanged">JobDriver.Notify_StanceChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_Notify_DamageTaken_Verse_DamageInfo_">JobDriver.Notify_DamageTaken(DamageInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_GetActor">JobDriver.GetActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_AddEndCondition_System_Func_Verse_AI_JobCondition__">JobDriver.AddEndCondition(Func&lt;JobCondition&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_AddFailCondition_System_Func_System_Boolean__">JobDriver.AddFailCondition(Func&lt;bool&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_AddFinishAction_System_Action_Verse_AI_JobCondition__">JobDriver.AddFinishAction(Action&lt;JobCondition&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ModifyCarriedThingDrawPos_UnityEngine_Vector3__System_Boolean__">JobDriver.ModifyCarriedThingDrawPos(ref Vector3, ref bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_DesiredSocialMode">JobDriver.DesiredSocialMode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_IsContinuation_Verse_AI_Job_">JobDriver.IsContinuation(Job)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_IsSameJobAs_Verse_AI_Job_">JobDriver.IsSameJobAs(Job)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ForcedLayingRotation">JobDriver.ForcedLayingRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ForcedBodyOffset">JobDriver.ForcedBodyOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_CurToil">JobDriver.CurToil</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_HaveCurToil">JobDriver.HaveCurToil</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_CurToilIndex">JobDriver.CurToilIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_CurToilString">JobDriver.CurToilString</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_OnLastToil">JobDriver.OnLastToil</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_ActiveSkill">JobDriver.ActiveSkill</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_HandlingFacing">JobDriver.HandlingFacing</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_PlayerInterruptable">JobDriver.PlayerInterruptable</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetA">JobDriver.TargetA</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetB">JobDriver.TargetB</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetC">JobDriver.TargetC</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetThingA">JobDriver.TargetThingA</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetThingB">JobDriver.TargetThingB</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetThingC">JobDriver.TargetThingC</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetPawnA">JobDriver.TargetPawnA</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetPawnB">JobDriver.TargetPawnB</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetPawnC">JobDriver.TargetPawnC</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TargetLocA">JobDriver.TargetLocA</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_Map">JobDriver.Map</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_JobDriver_ActivateMonolith_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JobDriver_ActivateMonolith : JobDriver, IExposable, IJobEndable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_JobDriver_ActivateMonolith__ctor_" data-uid="RimWorld.JobDriver_ActivateMonolith.#ctor*"></a>
+  <h4 id="RimWorld_JobDriver_ActivateMonolith__ctor" data-uid="RimWorld.JobDriver_ActivateMonolith.#ctor">JobDriver_ActivateMonolith()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobDriver_ActivateMonolith()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_JobDriver_ActivateMonolith_MakeNewToils_" data-uid="RimWorld.JobDriver_ActivateMonolith.MakeNewToils*"></a>
+  <h4 id="RimWorld_JobDriver_ActivateMonolith_MakeNewToils" data-uid="RimWorld.JobDriver_ActivateMonolith.MakeNewToils">MakeNewToils()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(JobDriver_ActivateMonolith.&lt;MakeNewToils&gt;d__6))]
+protected override IEnumerable&lt;Toil&gt; MakeNewToils()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.AI.Toil.html">Toil</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_MakeNewToils">JobDriver.MakeNewToils()</a></div>
+
+
+  <a id="RimWorld_JobDriver_ActivateMonolith_TryMakePreToilReservations_" data-uid="RimWorld.JobDriver_ActivateMonolith.TryMakePreToilReservations*"></a>
+  <h4 id="RimWorld_JobDriver_ActivateMonolith_TryMakePreToilReservations_System_Boolean_" data-uid="RimWorld.JobDriver_ActivateMonolith.TryMakePreToilReservations(System.Boolean)">TryMakePreToilReservations(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryMakePreToilReservations(bool errorOnFailed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">errorOnFailed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.AI.JobDriver.html#Verse_AI_JobDriver_TryMakePreToilReservations_System_Boolean_">JobDriver.TryMakePreToilReservations(bool)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.IJobEndable.html">IJobEndable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_EndOnDespawnedOrNull__1___0_Verse_AI_TargetIndex_Verse_AI_JobCondition_">ToilFailConditions.EndOnDespawnedOrNull&lt;T&gt;(T, TargetIndex, JobCondition)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_EndOnNoTargetInQueue__1___0_Verse_AI_TargetIndex_Verse_AI_JobCondition_">ToilFailConditions.EndOnNoTargetInQueue&lt;T&gt;(T, TargetIndex, JobCondition)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnAggroMentalStateAndHostile__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnAggroMentalStateAndHostile&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnAggroMentalState__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnAggroMentalState&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnBurningImmobile__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnBurningImmobile&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnCannotTouch__1___0_Verse_AI_TargetIndex_Verse_AI_PathEndMode_">ToilFailConditions.FailOnCannotTouch&lt;T&gt;(T, TargetIndex, PathEndMode)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnCellMissingDesignation__1___0_Verse_AI_TargetIndex_Verse_DesignationDef_">ToilFailConditions.FailOnCellMissingDesignation&lt;T&gt;(T, TargetIndex, DesignationDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnChildLearningConditions__1___0_">ToilFailConditions.FailOnChildLearningConditions&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDespawnedNullOrForbidden__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDespawnedNullOrForbidden&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDespawnedOrNull__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDespawnedOrNull&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDestroyedNullOrForbidden__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDestroyedNullOrForbidden&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDestroyedOrNull__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDestroyedOrNull&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnDowned__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnDowned&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnForbidden__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnForbidden&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnIncapable__1___0_Verse_PawnCapacityDef_">ToilFailConditions.FailOnIncapable&lt;T&gt;(T, PawnCapacityDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnInvalidOrDestroyed__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnInvalidOrDestroyed&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnMentalState__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnMentalState&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnMobile__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnMobile&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnNotAwake__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnNotAwake&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnNotCasualInterruptible__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnNotCasualInterruptible&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnNotDowned__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnNotDowned&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnSelfAndParentsDespawnedOrNull__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnSelfAndParentsDespawnedOrNull&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnSomeonePhysicallyInteracting__1___0_Verse_AI_TargetIndex_">ToilFailConditions.FailOnSomeonePhysicallyInteracting&lt;T&gt;(T, TargetIndex)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnThingHavingDesignation__1___0_Verse_AI_TargetIndex_Verse_DesignationDef_">ToilFailConditions.FailOnThingHavingDesignation&lt;T&gt;(T, TargetIndex, DesignationDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOnThingMissingDesignation__1___0_Verse_AI_TargetIndex_Verse_DesignationDef_">ToilFailConditions.FailOnThingMissingDesignation&lt;T&gt;(T, TargetIndex, DesignationDef)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.AI.ToilFailConditions.html#Verse_AI_ToilFailConditions_FailOn__1___0_System_Func_System_Boolean__">ToilFailConditions.FailOn&lt;T&gt;(T, Func&lt;bool&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="RimWorld.JobInBedUtility.html#RimWorld_JobInBedUtility_KeepLyingDown_Verse_AI_JobDriver_Verse_AI_TargetIndex_">JobInBedUtility.KeepLyingDown(JobDriver, TargetIndex)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

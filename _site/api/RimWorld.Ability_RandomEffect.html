@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Ability_RandomEffect </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Ability_RandomEffect ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Ability_RandomEffect">
+
+
+
+  <h1 id="RimWorld_Ability_RandomEffect" data-uid="RimWorld.Ability_RandomEffect" class="text-break">Class Ability_RandomEffect</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="RimWorld.Ability.html">Ability</a></div>
+    <div class="level2"><span class="xref">Ability_RandomEffect</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IVerbOwner.html">IVerbOwner</a></div>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Id">Ability.Id</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_pawn">Ability.pawn</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_def">Ability.def</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_comps">Ability.comps</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_gizmo">Ability.gizmo</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_maxCharges">Ability.maxCharges</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_lastCastTick">Ability.lastCastTick</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_sourcePrecept">Ability.sourcePrecept</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_UniqueVerbOwnerID">Ability.UniqueVerbOwnerID()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_VerbsStillUsableBy_Verse_Pawn_">Ability.VerbsStillUsableBy(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CanApplyOn_RimWorld_Planet_GlobalTargetInfo_">Ability.CanApplyOn(GlobalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_AICanTargetNow_Verse_LocalTargetInfo_">Ability.AICanTargetNow(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_AIGetAOETarget">Ability.AIGetAOETarget()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ConfirmationDialog_Verse_LocalTargetInfo_System_Action_">Ability.ConfirmationDialog(LocalTargetInfo, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ConfirmationDialog_RimWorld_Planet_GlobalTargetInfo_System_Action_">Ability.ConfirmationDialog(GlobalTargetInfo, Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_PreActivate_System_Nullable_Verse_LocalTargetInfo__">Ability.PreActivate(LocalTargetInfo?)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Activate_Verse_LocalTargetInfo_Verse_LocalTargetInfo_">Ability.Activate(LocalTargetInfo, LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Activate_RimWorld_Planet_GlobalTargetInfo_">Ability.Activate(GlobalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GetAffectedTargets_Verse_LocalTargetInfo_">Ability.GetAffectedTargets(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_QueueCastingJob_Verse_LocalTargetInfo_Verse_LocalTargetInfo_">Ability.QueueCastingJob(LocalTargetInfo, LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GetJob_Verse_LocalTargetInfo_Verse_LocalTargetInfo_">Ability.GetJob(LocalTargetInfo, LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_QueueCastingJob_RimWorld_Planet_GlobalTargetInfo_">Ability.QueueCastingJob(GlobalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ValidateGlobalTarget_RimWorld_Planet_GlobalTargetInfo_">Ability.ValidateGlobalTarget(GlobalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GizmoDisabled_System_String__">Ability.GizmoDisabled(out string)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_AbilityTick">Ability.AbilityTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Notify_StartedCasting">Ability.Notify_StartedCasting()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_DrawEffectPreviews_Verse_LocalTargetInfo_">Ability.DrawEffectPreviews(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GizmosVisible">Ability.GizmosVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GetGizmos">Ability.GetGizmos()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GetGizmosExtra">Ability.GetGizmosExtra()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GetInspectString">Ability.GetInspectString()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_StartCooldown_System_Int32_">Ability.StartCooldown(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ResetCooldown">Ability.ResetCooldown()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Notify_GroupStartedCooldown_RimWorld_AbilityGroupDef_System_Int32_">Ability.Notify_GroupStartedCooldown(AbilityGroupDef, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ApplyEffects_System_Collections_Generic_IEnumerable_RimWorld_CompAbilityEffect__RimWorld_Planet_GlobalTargetInfo_">Ability.ApplyEffects(IEnumerable&lt;CompAbilityEffect&gt;, GlobalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_OnGizmoUpdate">Ability.OnGizmoUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CompsOfType__1">Ability.CompsOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CompOfType__1">Ability.CompOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Initialize">Ability.Initialize()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_FinalPsyfocusCost_Verse_LocalTargetInfo_">Ability.FinalPsyfocusCost(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_HemogenCost">Ability.HemogenCost()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_WorldMapExtraLabel_RimWorld_Planet_GlobalTargetInfo_">Ability.WorldMapExtraLabel(GlobalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_AddEffecterToMaintain_Verse_Effecter_Verse_IntVec3_System_Int32_Verse_Map_">Ability.AddEffecterToMaintain(Effecter, IntVec3, int, Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_AddEffecterToMaintain_Verse_Effecter_Verse_IntVec3_Verse_IntVec3_System_Int32_Verse_Map_">Ability.AddEffecterToMaintain(Effecter, IntVec3, IntVec3, int, Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ExposeData">Ability.ExposeData()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GetUniqueLoadID">Ability.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_verb">Ability.verb</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Tools">Ability.Tools</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ConstantCaster">Ability.ConstantCaster</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_VerbProperties">Ability.VerbProperties</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ImplementOwnerTypeDef">Ability.ImplementOwnerTypeDef</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CooldownTicksRemaining">Ability.CooldownTicksRemaining</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CooldownTicksTotal">Ability.CooldownTicksTotal</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_UsesCharges">Ability.UsesCharges</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_RemainingCharges">Ability.RemainingCharges</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_GizmoExtraLabel">Ability.GizmoExtraLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_VerbTracker">Ability.VerbTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_HasCooldown">Ability.HasCooldown</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_OnCooldown">Ability.OnCooldown</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CanCast">Ability.CanCast</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Casting">Ability.Casting</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CanCooldown">Ability.CanCooldown</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_Tooltip">Ability.Tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CanQueueCast">Ability.CanQueueCast</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_EffectComps">Ability.EffectComps</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Ability_RandomEffect_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Ability_RandomEffect : Ability, IVerbOwner, IExposable, ILoadReferenceable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Ability_RandomEffect__ctor_" data-uid="RimWorld.Ability_RandomEffect.#ctor*"></a>
+  <h4 id="RimWorld_Ability_RandomEffect__ctor_Verse_Pawn_" data-uid="RimWorld.Ability_RandomEffect.#ctor(Verse.Pawn)">Ability_RandomEffect(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ability_RandomEffect(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Ability_RandomEffect__ctor_" data-uid="RimWorld.Ability_RandomEffect.#ctor*"></a>
+  <h4 id="RimWorld_Ability_RandomEffect__ctor_Verse_Pawn_RimWorld_AbilityDef_" data-uid="RimWorld.Ability_RandomEffect.#ctor(Verse.Pawn,RimWorld.AbilityDef)">Ability_RandomEffect(Pawn, AbilityDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ability_RandomEffect(Pawn pawn, AbilityDef def)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.AbilityDef.html">AbilityDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Ability_RandomEffect_ApplyEffects_" data-uid="RimWorld.Ability_RandomEffect.ApplyEffects*"></a>
+  <h4 id="RimWorld_Ability_RandomEffect_ApplyEffects_System_Collections_Generic_IEnumerable_RimWorld_CompAbilityEffect__Verse_LocalTargetInfo_Verse_LocalTargetInfo_" data-uid="RimWorld.Ability_RandomEffect.ApplyEffects(System.Collections.Generic.IEnumerable{RimWorld.CompAbilityEffect},Verse.LocalTargetInfo,Verse.LocalTargetInfo)">ApplyEffects(IEnumerable&lt;CompAbilityEffect&gt;, LocalTargetInfo, LocalTargetInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ApplyEffects(IEnumerable&lt;CompAbilityEffect&gt; effects, LocalTargetInfo target, LocalTargetInfo dest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.CompAbilityEffect.html">CompAbilityEffect</a>&gt;</td>
+        <td><span class="parametername">effects</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td><span class="parametername">dest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_ApplyEffects_System_Collections_Generic_IEnumerable_RimWorld_CompAbilityEffect__Verse_LocalTargetInfo_Verse_LocalTargetInfo_">Ability.ApplyEffects(IEnumerable&lt;CompAbilityEffect&gt;, LocalTargetInfo, LocalTargetInfo)</a></div>
+
+
+  <a id="RimWorld_Ability_RandomEffect_CanApplyOn_" data-uid="RimWorld.Ability_RandomEffect.CanApplyOn*"></a>
+  <h4 id="RimWorld_Ability_RandomEffect_CanApplyOn_Verse_LocalTargetInfo_" data-uid="RimWorld.Ability_RandomEffect.CanApplyOn(Verse.LocalTargetInfo)">CanApplyOn(LocalTargetInfo)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanApplyOn(LocalTargetInfo target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.LocalTargetInfo.html">LocalTargetInfo</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Ability.html#RimWorld_Ability_CanApplyOn_Verse_LocalTargetInfo_">Ability.CanApplyOn(LocalTargetInfo)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IVerbOwner.html">IVerbOwner</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="RimWorld.AbilityUtility.html#RimWorld_AbilityUtility_IsIncendiary_RimWorld_Ability_">AbilityUtility.IsIncendiary(Ability)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

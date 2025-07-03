@@ -1,0 +1,1586 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class QuestGen_Filter </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class QuestGen_Filter ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.QuestGen.QuestGen_Filter">
+
+
+
+  <h1 id="RimWorld_QuestGen_QuestGen_Filter" data-uid="RimWorld.QuestGen.QuestGen_Filter" class="text-break">Class QuestGen_Filter</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">QuestGen_Filter</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a>.<a class="xref" href="RimWorld.QuestGen.html">QuestGen</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_QuestGen_QuestGen_Filter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class QuestGen_Filter</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AcceptedAfterTicks_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AcceptedAfterTicks*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AcceptedAfterTicks_RimWorld_Quest_System_Int32_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AcceptedAfterTicks(RimWorld.Quest,System.Int32,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AcceptedAfterTicks(Quest, int, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AcceptedAfterTicks AcceptedAfterTicks(this Quest quest, int ticks, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">ticks</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AcceptedAfterTicks.html">QuestPart_Filter_AcceptedAfterTicks</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AllPawnsDespawned_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AllPawnsDespawned*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AllPawnsDespawned_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__System_Action_System_Action_System_String_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AllPawnsDespawned(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},System.Action,System.Action,System.String,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AllPawnsDespawned(Quest, IEnumerable&lt;Pawn&gt;, Action, Action, string, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AllPawnsDespawned AllPawnsDespawned(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, string inSignalRemovePawn = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignalRemovePawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AllPawnsDespawned.html">QuestPart_Filter_AllPawnsDespawned</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AllPawnsDestroyed_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AllPawnsDestroyed*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AllPawnsDestroyed_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__System_Action_System_Action_System_String_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AllPawnsDestroyed(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},System.Action,System.Action,System.String,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AllPawnsDestroyed(Quest, IEnumerable&lt;Pawn&gt;, Action, Action, string, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AllPawnsDestroyed AllPawnsDestroyed(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, string inSignalRemovePawn = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignalRemovePawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AllPawnsDestroyed.html">QuestPart_Filter_AllPawnsDestroyed</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AllPawnsDowned_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AllPawnsDowned*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AllPawnsDowned_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__System_Action_System_Action_System_String_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AllPawnsDowned(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},System.Action,System.Action,System.String,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AllPawnsDowned(Quest, IEnumerable&lt;Pawn&gt;, Action, Action, string, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AllPawnsDowned AllPawnsDowned(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, string inSignalRemovePawn = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignalRemovePawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AllPawnsDowned.html">QuestPart_Filter_AllPawnsDowned</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AnyColonistWithCharityPrecept_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyColonistWithCharityPrecept*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AnyColonistWithCharityPrecept_RimWorld_Quest_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyColonistWithCharityPrecept(RimWorld.Quest,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AnyColonistWithCharityPrecept(Quest, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AnyColonistWithCharityPrecept AnyColonistWithCharityPrecept(this Quest quest, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AnyColonistWithCharityPrecept.html">QuestPart_Filter_AnyColonistWithCharityPrecept</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AnyHostileThreatToPlayer_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyHostileThreatToPlayer*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AnyHostileThreatToPlayer_RimWorld_Quest_RimWorld_Planet_MapParent_System_Boolean_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyHostileThreatToPlayer(RimWorld.Quest,RimWorld.Planet.MapParent,System.Boolean,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AnyHostileThreatToPlayer(Quest, MapParent, bool, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AnyHostileThreatToPlayer AnyHostileThreatToPlayer(this Quest quest, MapParent mapParent, bool countDormantPawns = false, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.MapParent.html">MapParent</a></td>
+        <td><span class="parametername">mapParent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">countDormantPawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AnyHostileThreatToPlayer.html">QuestPart_Filter_AnyHostileThreatToPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AnyOnTransporter_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyOnTransporter*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AnyOnTransporter_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__Verse_Thing_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyOnTransporter(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},Verse.Thing,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AnyOnTransporter(Quest, IEnumerable&lt;Pawn&gt;, Thing, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AnyOnTransporter AnyOnTransporter(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, Thing shuttle, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">shuttle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AnyOnTransporter.html">QuestPart_Filter_AnyOnTransporter</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnAlive_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnAlive*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnAlive_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__System_Action_System_Action_System_String_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnAlive(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},System.Action,System.Action,System.String,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AnyPawnAlive(Quest, IEnumerable&lt;Pawn&gt;, Action, Action, string, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AnyPawnAlive AnyPawnAlive(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, string inSignalRemovePawn = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignalRemovePawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AnyPawnAlive.html">QuestPart_Filter_AnyPawnAlive</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnHasHediff_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnHasHediff*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnHasHediff_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__Verse_HediffDef_System_Action_System_Action_System_String_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnHasHediff(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},Verse.HediffDef,System.Action,System.Action,System.String,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AnyPawnHasHediff(Quest, IEnumerable&lt;Pawn&gt;, HediffDef, Action, Action, string, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AnyPawnHasHediff AnyPawnHasHediff(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, HediffDef hediff, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, string inSignalRemovePawn = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.HediffDef.html">HediffDef</a></td>
+        <td><span class="parametername">hediff</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignalRemovePawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AnyPawnHasHediff.html">QuestPart_Filter_AnyPawnHasHediff</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnInCombatShape_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnInCombatShape*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnInCombatShape_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__System_Action_System_Action_System_String_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnInCombatShape(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},System.Action,System.Action,System.String,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AnyPawnInCombatShape(Quest, IEnumerable&lt;Pawn&gt;, Action, Action, string, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AnyPawnInCombatShape AnyPawnInCombatShape(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, string inSignalRemovePawn = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignalRemovePawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AnyPawnInCombatShape.html">QuestPart_Filter_AnyPawnInCombatShape</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnPlayerControlled_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnPlayerControlled*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnPlayerControlled_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__System_Action_System_Action_System_String_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnPlayerControlled(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},System.Action,System.Action,System.String,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AnyPawnPlayerControlled(Quest, IEnumerable&lt;Pawn&gt;, Action, Action, string, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AnyPawnPlayerControlled AnyPawnPlayerControlled(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, string inSignalRemovePawn = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignalRemovePawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AnyPawnPlayerControlled.html">QuestPart_Filter_AnyPawnPlayerControlled</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnUnhealthy_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnUnhealthy*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_AnyPawnUnhealthy_RimWorld_Quest_System_Collections_Generic_IEnumerable_Verse_Pawn__System_Action_System_Action_System_String_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.AnyPawnUnhealthy(RimWorld.Quest,System.Collections.Generic.IEnumerable{Verse.Pawn},System.Action,System.Action,System.String,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">AnyPawnUnhealthy(Quest, IEnumerable&lt;Pawn&gt;, Action, Action, string, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_AnyPawnUnhealthy AnyPawnUnhealthy(this Quest quest, IEnumerable&lt;Pawn&gt; pawns, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, string inSignalRemovePawn = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">pawns</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignalRemovePawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_AnyPawnUnhealthy.html">QuestPart_Filter_AnyPawnUnhealthy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_BuiltNearSettlement_" data-uid="RimWorld.QuestGen.QuestGen_Filter.BuiltNearSettlement*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_BuiltNearSettlement_RimWorld_Quest_RimWorld_Faction_RimWorld_Planet_MapParent_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.BuiltNearSettlement(RimWorld.Quest,RimWorld.Faction,RimWorld.Planet.MapParent,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">BuiltNearSettlement(Quest, Faction, MapParent, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_BuiltNearSettlement BuiltNearSettlement(this Quest quest, Faction settlementFaction, MapParent mapParent, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">settlementFaction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.MapParent.html">MapParent</a></td>
+        <td><span class="parametername">mapParent</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_BuiltNearSettlement.html">QuestPart_Filter_BuiltNearSettlement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_CanAcceptQuest_" data-uid="RimWorld.QuestGen.QuestGen_Filter.CanAcceptQuest*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_CanAcceptQuest_RimWorld_Quest_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.CanAcceptQuest(RimWorld.Quest,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">CanAcceptQuest(Quest, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_CanAcceptQuest CanAcceptQuest(this Quest quest, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_CanAcceptQuest.html">QuestPart_Filter_CanAcceptQuest</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_FactionHostileToOtherFaction_" data-uid="RimWorld.QuestGen.QuestGen_Filter.FactionHostileToOtherFaction*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_FactionHostileToOtherFaction_RimWorld_Quest_RimWorld_Faction_RimWorld_Faction_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.FactionHostileToOtherFaction(RimWorld.Quest,RimWorld.Faction,RimWorld.Faction,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">FactionHostileToOtherFaction(Quest, Faction, Faction, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_FactionHostileToOtherFaction FactionHostileToOtherFaction(this Quest quest, Faction faction, Faction other, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_FactionHostileToOtherFaction.html">QuestPart_Filter_FactionHostileToOtherFaction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_FactionNonPlayer_" data-uid="RimWorld.QuestGen.QuestGen_Filter.FactionNonPlayer*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_FactionNonPlayer_RimWorld_Quest_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.FactionNonPlayer(RimWorld.Quest,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">FactionNonPlayer(Quest, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_FactionNonPlayer FactionNonPlayer(this Quest quest, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_FactionNonPlayer.html">QuestPart_Filter_FactionNonPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_PawnDestroyed_" data-uid="RimWorld.QuestGen.QuestGen_Filter.PawnDestroyed*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_PawnDestroyed_RimWorld_Quest_Verse_Pawn_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.PawnDestroyed(RimWorld.Quest,Verse.Pawn,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">PawnDestroyed(Quest, Pawn, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_PawnDestroyed PawnDestroyed(this Quest quest, Pawn pawn, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_PawnDestroyed.html">QuestPart_Filter_PawnDestroyed</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestGen_Filter_ThingAnalyzed_" data-uid="RimWorld.QuestGen.QuestGen_Filter.ThingAnalyzed*"></a>
+  <h4 id="RimWorld_QuestGen_QuestGen_Filter_ThingAnalyzed_RimWorld_Quest_Verse_ThingDef_System_Action_System_Action_System_String_System_String_System_String_RimWorld_QuestPart_SignalListenMode_" data-uid="RimWorld.QuestGen.QuestGen_Filter.ThingAnalyzed(RimWorld.Quest,Verse.ThingDef,System.Action,System.Action,System.String,System.String,System.String,RimWorld.QuestPart.SignalListenMode)">ThingAnalyzed(Quest, ThingDef, Action, Action, string, string, string, SignalListenMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QuestPart_Filter_ThingAnalyzed ThingAnalyzed(this Quest quest, ThingDef thingDef, Action action = null, Action elseAction = null, string inSignal = null, string outSignal = null, string outSignalElse = null, QuestPart.SignalListenMode signalListenMode = SignalListenMode.OngoingOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Quest.html">Quest</a></td>
+        <td><span class="parametername">quest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">thingDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td><span class="parametername">elseAction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">inSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">outSignalElse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart.html">QuestPart</a>.<a class="xref" href="RimWorld.QuestPart.SignalListenMode.html">SignalListenMode</a></td>
+        <td><span class="parametername">signalListenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestPart_Filter_ThingAnalyzed.html">QuestPart_Filter_ThingAnalyzed</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

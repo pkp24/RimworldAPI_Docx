@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct NativeArray&lt;T&gt; </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct NativeArray&lt;T&gt; ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Unity.Collections.NativeArray`1">
+
+
+
+  <h1 id="Unity_Collections_NativeArray_1" data-uid="Unity.Collections.NativeArray`1" class="text-break">Struct NativeArray&lt;T&gt;</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Unity.html">Unity</a>.<a class="xref" href="Unity.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.CoreModule.dll</h6>
+  <h5 id="Unity_Collections_NativeArray_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[DebuggerDisplay(&quot;Length = {m_Length}&quot;)]
+[DefaultMember(&quot;Item&quot;)]
+[NativeContainer]
+[NativeContainerSupportsMinMaxWriteRestriction]
+[NativeContainerSupportsDeallocateOnJobCompletion]
+[NativeContainerSupportsDeferredConvertListToArray]
+[DebuggerTypeProxy(typeof(NativeArrayDebugView&lt;&gt;))]
+public struct NativeArray&lt;T&gt; : IDisposable, IEnumerable&lt;T&gt;, IEnumerable, IEquatable&lt;NativeArray&lt;T&gt;&gt; where T : struct</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Unity_Collections_NativeArray_1__ctor_" data-uid="Unity.Collections.NativeArray`1.#ctor*"></a>
+  <h4 id="Unity_Collections_NativeArray_1__ctor_System_Int32_Unity_Collections_Allocator_Unity_Collections_NativeArrayOptions_" data-uid="Unity.Collections.NativeArray`1.#ctor(System.Int32,Unity.Collections.Allocator,Unity.Collections.NativeArrayOptions)">NativeArray(int, Allocator, NativeArrayOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray(int length, Allocator allocator, NativeArrayOptions options = NativeArrayOptions.ClearMemory)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.Allocator.html">Allocator</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArrayOptions.html">NativeArrayOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1__ctor_" data-uid="Unity.Collections.NativeArray`1.#ctor*"></a>
+  <h4 id="Unity_Collections_NativeArray_1__ctor_Unity_Collections_NativeArray__0__Unity_Collections_Allocator_" data-uid="Unity.Collections.NativeArray`1.#ctor(Unity.Collections.NativeArray{`0},Unity.Collections.Allocator)">NativeArray(NativeArray&lt;T&gt;, Allocator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray(NativeArray&lt;T&gt; array, Allocator allocator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.Allocator.html">Allocator</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1__ctor_" data-uid="Unity.Collections.NativeArray`1.#ctor*"></a>
+  <h4 id="Unity_Collections_NativeArray_1__ctor__0___Unity_Collections_Allocator_" data-uid="Unity.Collections.NativeArray`1.#ctor(`0[],Unity.Collections.Allocator)">NativeArray(T[], Allocator)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray(T[] array, Allocator allocator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.Allocator.html">Allocator</a></td>
+        <td><span class="parametername">allocator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Unity_Collections_NativeArray_1_IsCreated_" data-uid="Unity.Collections.NativeArray`1.IsCreated*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_IsCreated" data-uid="Unity.Collections.NativeArray`1.IsCreated">IsCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCreated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Item_" data-uid="Unity.Collections.NativeArray`1.Item*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Item_System_Int32_" data-uid="Unity.Collections.NativeArray`1.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Length_" data-uid="Unity.Collections.NativeArray`1.Length*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Length" data-uid="Unity.Collections.NativeArray`1.Length">Length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Unity_Collections_NativeArray_1_AsReadOnly_" data-uid="Unity.Collections.NativeArray`1.AsReadOnly*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_AsReadOnly" data-uid="Unity.Collections.NativeArray`1.AsReadOnly">AsReadOnly()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;T&gt;.ReadOnly AsReadOnly()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_AsReadOnlySpan_" data-uid="Unity.Collections.NativeArray`1.AsReadOnlySpan*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_AsReadOnlySpan" data-uid="Unity.Collections.NativeArray`1.AsReadOnlySpan">AsReadOnlySpan()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly ReadOnlySpan&lt;T&gt; AsReadOnlySpan()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_AsSpan_" data-uid="Unity.Collections.NativeArray`1.AsSpan*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_AsSpan" data-uid="Unity.Collections.NativeArray`1.AsSpan">AsSpan()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WriteAccessRequired]
+public readonly Span&lt;T&gt; AsSpan()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__System_Int32_Unity_Collections_NativeArray__0__System_Int32_System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0},System.Int32,Unity.Collections.NativeArray{`0},System.Int32,System.Int32)">Copy(NativeArray&lt;T&gt;, int, NativeArray&lt;T&gt;, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt; src, int srcIndex, NativeArray&lt;T&gt; dst, int dstIndex, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">srcIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">dstIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__System_Int32__0___System_Int32_System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0},System.Int32,`0[],System.Int32,System.Int32)">Copy(NativeArray&lt;T&gt;, int, T[], int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt; src, int srcIndex, T[] dst, int dstIndex, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">srcIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">dstIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__Unity_Collections_NativeArray__0__" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0},Unity.Collections.NativeArray{`0})">Copy(NativeArray&lt;T&gt;, NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt; src, NativeArray&lt;T&gt; dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__Unity_Collections_NativeArray__0__System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0},Unity.Collections.NativeArray{`0},System.Int32)">Copy(NativeArray&lt;T&gt;, NativeArray&lt;T&gt;, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt; src, NativeArray&lt;T&gt; dst, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0___0___" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0},`0[])">Copy(NativeArray&lt;T&gt;, T[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt; src, T[] dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0___0___System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0},`0[],System.Int32)">Copy(NativeArray&lt;T&gt;, T[], int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt; src, T[] dst, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__ReadOnly_System_Int32_Unity_Collections_NativeArray__0__System_Int32_System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0}.ReadOnly,System.Int32,Unity.Collections.NativeArray{`0},System.Int32,System.Int32)">Copy(ReadOnly, int, NativeArray&lt;T&gt;, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt;.ReadOnly src, int srcIndex, NativeArray&lt;T&gt; dst, int dstIndex, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">srcIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">dstIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__ReadOnly_System_Int32__0___System_Int32_System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0}.ReadOnly,System.Int32,`0[],System.Int32,System.Int32)">Copy(ReadOnly, int, T[], int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt;.ReadOnly src, int srcIndex, T[] dst, int dstIndex, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">srcIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">dstIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__ReadOnly_Unity_Collections_NativeArray__0__" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0}.ReadOnly,Unity.Collections.NativeArray{`0})">Copy(ReadOnly, NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt;.ReadOnly src, NativeArray&lt;T&gt; dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__ReadOnly_Unity_Collections_NativeArray__0__System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0}.ReadOnly,Unity.Collections.NativeArray{`0},System.Int32)">Copy(ReadOnly, NativeArray&lt;T&gt;, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt;.ReadOnly src, NativeArray&lt;T&gt; dst, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__ReadOnly__0___" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0}.ReadOnly,`0[])">Copy(ReadOnly, T[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt;.ReadOnly src, T[] dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy_Unity_Collections_NativeArray__0__ReadOnly__0___System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(Unity.Collections.NativeArray{`0}.ReadOnly,`0[],System.Int32)">Copy(ReadOnly, T[], int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(NativeArray&lt;T&gt;.ReadOnly src, T[] dst, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy__0___System_Int32_Unity_Collections_NativeArray__0__System_Int32_System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(`0[],System.Int32,Unity.Collections.NativeArray{`0},System.Int32,System.Int32)">Copy(T[], int, NativeArray&lt;T&gt;, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(T[] src, int srcIndex, NativeArray&lt;T&gt; dst, int dstIndex, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">srcIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">dstIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy__0___Unity_Collections_NativeArray__0__" data-uid="Unity.Collections.NativeArray`1.Copy(`0[],Unity.Collections.NativeArray{`0})">Copy(T[], NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(T[] src, NativeArray&lt;T&gt; dst)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Copy_" data-uid="Unity.Collections.NativeArray`1.Copy*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Copy__0___Unity_Collections_NativeArray__0__System_Int32_" data-uid="Unity.Collections.NativeArray`1.Copy(`0[],Unity.Collections.NativeArray{`0},System.Int32)">Copy(T[], NativeArray&lt;T&gt;, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Copy(T[] src, NativeArray&lt;T&gt; dst, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_CopyFrom_" data-uid="Unity.Collections.NativeArray`1.CopyFrom*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_CopyFrom_Unity_Collections_NativeArray__0__" data-uid="Unity.Collections.NativeArray`1.CopyFrom(Unity.Collections.NativeArray{`0})">CopyFrom(NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WriteAccessRequired]
+public void CopyFrom(NativeArray&lt;T&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_CopyFrom_" data-uid="Unity.Collections.NativeArray`1.CopyFrom*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_CopyFrom__0___" data-uid="Unity.Collections.NativeArray`1.CopyFrom(`0[])">CopyFrom(T[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WriteAccessRequired]
+public void CopyFrom(T[] array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_CopyTo_" data-uid="Unity.Collections.NativeArray`1.CopyTo*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_CopyTo_Unity_Collections_NativeArray__0__" data-uid="Unity.Collections.NativeArray`1.CopyTo(Unity.Collections.NativeArray{`0})">CopyTo(NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(NativeArray&lt;T&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_CopyTo_" data-uid="Unity.Collections.NativeArray`1.CopyTo*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_CopyTo__0___" data-uid="Unity.Collections.NativeArray`1.CopyTo(`0[])">CopyTo(T[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(T[] array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Dispose_" data-uid="Unity.Collections.NativeArray`1.Dispose*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Dispose" data-uid="Unity.Collections.NativeArray`1.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[WriteAccessRequired]
+public void Dispose()</code></pre>
+  </div>
+
+
+  <a id="Unity_Collections_NativeArray_1_Dispose_" data-uid="Unity.Collections.NativeArray`1.Dispose*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Dispose_Unity_Jobs_JobHandle_" data-uid="Unity.Collections.NativeArray`1.Dispose(Unity.Jobs.JobHandle)">Dispose(JobHandle)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobHandle Dispose(JobHandle inputDeps)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Jobs.JobHandle.html">JobHandle</a></td>
+        <td><span class="parametername">inputDeps</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Jobs.JobHandle.html">JobHandle</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Equals_" data-uid="Unity.Collections.NativeArray`1.Equals*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Equals_System_Object_" data-uid="Unity.Collections.NativeArray`1.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
+
+
+  <a id="Unity_Collections_NativeArray_1_Equals_" data-uid="Unity.Collections.NativeArray`1.Equals*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Equals_Unity_Collections_NativeArray__0__" data-uid="Unity.Collections.NativeArray`1.Equals(Unity.Collections.NativeArray{`0})">Equals(NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(NativeArray&lt;T&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_GetEnumerator_" data-uid="Unity.Collections.NativeArray`1.GetEnumerator*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_GetEnumerator" data-uid="Unity.Collections.NativeArray`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;T&gt;.Enumerator GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.Enumerator.html">Enumerator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_GetHashCode_" data-uid="Unity.Collections.NativeArray`1.GetHashCode*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_GetHashCode" data-uid="Unity.Collections.NativeArray`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
+
+
+  <a id="Unity_Collections_NativeArray_1_GetSubArray_" data-uid="Unity.Collections.NativeArray`1.GetSubArray*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_GetSubArray_System_Int32_System_Int32_" data-uid="Unity.Collections.NativeArray`1.GetSubArray(System.Int32,System.Int32)">GetSubArray(int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;T&gt; GetSubArray(int start, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_ReinterpretLoad_" data-uid="Unity.Collections.NativeArray`1.ReinterpretLoad*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_ReinterpretLoad__1_System_Int32_" data-uid="Unity.Collections.NativeArray`1.ReinterpretLoad``1(System.Int32)">ReinterpretLoad&lt;U&gt;(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public U ReinterpretLoad&lt;U&gt;(int sourceIndex) where U : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">sourceIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_ReinterpretStore_" data-uid="Unity.Collections.NativeArray`1.ReinterpretStore*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_ReinterpretStore__1_System_Int32___0_" data-uid="Unity.Collections.NativeArray`1.ReinterpretStore``1(System.Int32,``0)">ReinterpretStore&lt;U&gt;(int, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReinterpretStore&lt;U&gt;(int destIndex, U data) where U : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">destIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Reinterpret_" data-uid="Unity.Collections.NativeArray`1.Reinterpret*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Reinterpret__1" data-uid="Unity.Collections.NativeArray`1.Reinterpret``1">Reinterpret&lt;U&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;U&gt; Reinterpret&lt;U&gt;() where U : struct</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_Reinterpret_" data-uid="Unity.Collections.NativeArray`1.Reinterpret*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_Reinterpret__1_System_Int32_" data-uid="Unity.Collections.NativeArray`1.Reinterpret``1(System.Int32)">Reinterpret&lt;U&gt;(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NativeArray&lt;U&gt; Reinterpret&lt;U&gt;(int expectedTypeSize) where U : struct</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">expectedTypeSize</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_ToArray_" data-uid="Unity.Collections.NativeArray`1.ToArray*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_ToArray" data-uid="Unity.Collections.NativeArray`1.ToArray">ToArray()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T[] ToArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+
+
+  <a id="Unity_Collections_NativeArray_1_op_Equality_" data-uid="Unity.Collections.NativeArray`1.op_Equality*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_op_Equality_Unity_Collections_NativeArray__0__Unity_Collections_NativeArray__0__" data-uid="Unity.Collections.NativeArray`1.op_Equality(Unity.Collections.NativeArray{`0},Unity.Collections.NativeArray{`0})">operator ==(NativeArray&lt;T&gt;, NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(NativeArray&lt;T&gt; left, NativeArray&lt;T&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_op_Implicit_" data-uid="Unity.Collections.NativeArray`1.op_Implicit*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_op_Implicit_Unity_Collections_NativeArray__0____System_ReadOnlySpan__0_" data-uid="Unity.Collections.NativeArray`1.op_Implicit(Unity.Collections.NativeArray{`0}@)~System.ReadOnlySpan{`0}">implicit operator ReadOnlySpan&lt;T&gt;(in NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ReadOnlySpan&lt;T&gt;(in NativeArray&lt;T&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_op_Implicit_" data-uid="Unity.Collections.NativeArray`1.op_Implicit*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_op_Implicit_Unity_Collections_NativeArray__0____System_Span__0_" data-uid="Unity.Collections.NativeArray`1.op_Implicit(Unity.Collections.NativeArray{`0}@)~System.Span{`0}">implicit operator Span&lt;T&gt;(in NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Span&lt;T&gt;(in NativeArray&lt;T&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeArray_1_op_Inequality_" data-uid="Unity.Collections.NativeArray`1.op_Inequality*"></a>
+  <h4 id="Unity_Collections_NativeArray_1_op_Inequality_Unity_Collections_NativeArray__0__Unity_Collections_NativeArray__0__" data-uid="Unity.Collections.NativeArray`1.op_Inequality(Unity.Collections.NativeArray{`0},Unity.Collections.NativeArray{`0})">operator !=(NativeArray&lt;T&gt;, NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(NativeArray&lt;T&gt; left, NativeArray&lt;T&gt; right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.html#Unity_Collections_LowLevel_Unsafe_NativeArrayUnsafeUtility_GetUnsafePtr__1_Unity_Collections_NativeArray___0__">NativeArrayUnsafeUtility.GetUnsafePtr&lt;T&gt;(NativeArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Unity.Collections.LowLevel.Unsafe.NativeArrayUnsafeUtility.html#Unity_Collections_LowLevel_Unsafe_NativeArrayUnsafeUtility_GetUnsafeReadOnlyPtr__1_Unity_Collections_NativeArray___0__">NativeArrayUnsafeUtility.GetUnsafeReadOnlyPtr&lt;T&gt;(NativeArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Unity.Collections.NativeSliceExtensions.html#Unity_Collections_NativeSliceExtensions_Slice__1_Unity_Collections_NativeArray___0__">NativeSliceExtensions.Slice&lt;T&gt;(NativeArray&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Unity.Collections.NativeSliceExtensions.html#Unity_Collections_NativeSliceExtensions_Slice__1_Unity_Collections_NativeArray___0__System_Int32_">NativeSliceExtensions.Slice&lt;T&gt;(NativeArray&lt;T&gt;, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Unity.Collections.NativeSliceExtensions.html#Unity_Collections_NativeSliceExtensions_Slice__1_Unity_Collections_NativeArray___0__System_Int32_System_Int32_">NativeSliceExtensions.Slice&lt;T&gt;(NativeArray&lt;T&gt;, int, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

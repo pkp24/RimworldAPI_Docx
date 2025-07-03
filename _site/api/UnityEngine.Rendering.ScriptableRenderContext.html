@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct ScriptableRenderContext </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct ScriptableRenderContext ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.Rendering.ScriptableRenderContext">
+
+
+
+  <h1 id="UnityEngine_Rendering_ScriptableRenderContext" data-uid="UnityEngine.Rendering.ScriptableRenderContext" class="text-break">Struct ScriptableRenderContext</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="UnityEngine.Rendering.ScriptableRenderContext.html">ScriptableRenderContext</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.Rendering.html">Rendering</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.CoreModule.dll</h6>
+  <h5 id="UnityEngine_Rendering_ScriptableRenderContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct ScriptableRenderContext : IEquatable&lt;ScriptableRenderContext&gt;</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginRenderPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginRenderPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginRenderPass_System_Int32_System_Int32_System_Int32_System_Int32_Unity_Collections_NativeArray_UnityEngine_Rendering_AttachmentDescriptor__System_Int32_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginRenderPass(System.Int32,System.Int32,System.Int32,System.Int32,Unity.Collections.NativeArray{UnityEngine.Rendering.AttachmentDescriptor},System.Int32)">BeginRenderPass(int, int, int, int, NativeArray&lt;AttachmentDescriptor&gt;, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginRenderPass(int width, int height, int volumeDepth, int samples, NativeArray&lt;AttachmentDescriptor&gt; attachments, int depthAttachmentIndex = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">volumeDepth</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">samples</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Rendering.AttachmentDescriptor.html">AttachmentDescriptor</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">depthAttachmentIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginRenderPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginRenderPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginRenderPass_System_Int32_System_Int32_System_Int32_Unity_Collections_NativeArray_UnityEngine_Rendering_AttachmentDescriptor__System_Int32_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginRenderPass(System.Int32,System.Int32,System.Int32,Unity.Collections.NativeArray{UnityEngine.Rendering.AttachmentDescriptor},System.Int32)">BeginRenderPass(int, int, int, NativeArray&lt;AttachmentDescriptor&gt;, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginRenderPass(int width, int height, int samples, NativeArray&lt;AttachmentDescriptor&gt; attachments, int depthAttachmentIndex = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">samples</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Rendering.AttachmentDescriptor.html">AttachmentDescriptor</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">depthAttachmentIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedRenderPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedRenderPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedRenderPass_System_Int32_System_Int32_System_Int32_Unity_Collections_NativeArray_UnityEngine_Rendering_AttachmentDescriptor__System_Int32_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedRenderPass(System.Int32,System.Int32,System.Int32,Unity.Collections.NativeArray{UnityEngine.Rendering.AttachmentDescriptor},System.Int32)">BeginScopedRenderPass(int, int, int, NativeArray&lt;AttachmentDescriptor&gt;, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScopedRenderPass BeginScopedRenderPass(int width, int height, int samples, NativeArray&lt;AttachmentDescriptor&gt; attachments, int depthAttachmentIndex = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">samples</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Rendering.AttachmentDescriptor.html">AttachmentDescriptor</a>&gt;</td>
+        <td><span class="parametername">attachments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">depthAttachmentIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScopedRenderPass.html">ScopedRenderPass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedSubPass_Unity_Collections_NativeArray_System_Int32__System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedSubPass(Unity.Collections.NativeArray{System.Int32},System.Boolean)">BeginScopedSubPass(NativeArray&lt;int&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScopedSubPass BeginScopedSubPass(NativeArray&lt;int&gt; colors, bool isDepthStencilReadOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isDepthStencilReadOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScopedSubPass.html">ScopedSubPass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedSubPass_Unity_Collections_NativeArray_System_Int32__System_Boolean_System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedSubPass(Unity.Collections.NativeArray{System.Int32},System.Boolean,System.Boolean)">BeginScopedSubPass(NativeArray&lt;int&gt;, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScopedSubPass BeginScopedSubPass(NativeArray&lt;int&gt; colors, bool isDepthReadOnly, bool isStencilReadOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isDepthReadOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isStencilReadOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScopedSubPass.html">ScopedSubPass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedSubPass_Unity_Collections_NativeArray_System_Int32__Unity_Collections_NativeArray_System_Int32__System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedSubPass(Unity.Collections.NativeArray{System.Int32},Unity.Collections.NativeArray{System.Int32},System.Boolean)">BeginScopedSubPass(NativeArray&lt;int&gt;, NativeArray&lt;int&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScopedSubPass BeginScopedSubPass(NativeArray&lt;int&gt; colors, NativeArray&lt;int&gt; inputs, bool isDepthStencilReadOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">inputs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isDepthStencilReadOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScopedSubPass.html">ScopedSubPass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginScopedSubPass_Unity_Collections_NativeArray_System_Int32__Unity_Collections_NativeArray_System_Int32__System_Boolean_System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginScopedSubPass(Unity.Collections.NativeArray{System.Int32},Unity.Collections.NativeArray{System.Int32},System.Boolean,System.Boolean)">BeginScopedSubPass(NativeArray&lt;int&gt;, NativeArray&lt;int&gt;, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScopedSubPass BeginScopedSubPass(NativeArray&lt;int&gt; colors, NativeArray&lt;int&gt; inputs, bool isDepthReadOnly, bool isStencilReadOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">inputs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isDepthReadOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isStencilReadOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScopedSubPass.html">ScopedSubPass</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginSubPass_Unity_Collections_NativeArray_System_Int32__System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginSubPass(Unity.Collections.NativeArray{System.Int32},System.Boolean)">BeginSubPass(NativeArray&lt;int&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginSubPass(NativeArray&lt;int&gt; colors, bool isDepthStencilReadOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isDepthStencilReadOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginSubPass_Unity_Collections_NativeArray_System_Int32__System_Boolean_System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginSubPass(Unity.Collections.NativeArray{System.Int32},System.Boolean,System.Boolean)">BeginSubPass(NativeArray&lt;int&gt;, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginSubPass(NativeArray&lt;int&gt; colors, bool isDepthReadOnly, bool isStencilReadOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isDepthReadOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isStencilReadOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginSubPass_Unity_Collections_NativeArray_System_Int32__Unity_Collections_NativeArray_System_Int32__System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginSubPass(Unity.Collections.NativeArray{System.Int32},Unity.Collections.NativeArray{System.Int32},System.Boolean)">BeginSubPass(NativeArray&lt;int&gt;, NativeArray&lt;int&gt;, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginSubPass(NativeArray&lt;int&gt; colors, NativeArray&lt;int&gt; inputs, bool isDepthStencilReadOnly = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">inputs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isDepthStencilReadOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_BeginSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_BeginSubPass_Unity_Collections_NativeArray_System_Int32__Unity_Collections_NativeArray_System_Int32__System_Boolean_System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.BeginSubPass(Unity.Collections.NativeArray{System.Int32},Unity.Collections.NativeArray{System.Int32},System.Boolean,System.Boolean)">BeginSubPass(NativeArray&lt;int&gt;, NativeArray&lt;int&gt;, bool, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginSubPass(NativeArray&lt;int&gt; colors, NativeArray&lt;int&gt; inputs, bool isDepthReadOnly, bool isStencilReadOnly)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">colors</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">inputs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isDepthReadOnly</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isStencilReadOnly</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_CreateRendererList_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateRendererList*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_CreateRendererList_UnityEngine_Rendering_RendererListParams__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateRendererList(UnityEngine.Rendering.RendererListParams@)">CreateRendererList(ref RendererListParams)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RendererList CreateRendererList(ref RendererListParams param)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererListParams.html">RendererListParams</a></td>
+        <td><span class="parametername">param</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererList.html">RendererList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_CreateRendererList_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateRendererList*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_CreateRendererList_UnityEngine_Rendering_RendererUtils_RendererListDesc_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateRendererList(UnityEngine.Rendering.RendererUtils.RendererListDesc)">CreateRendererList(RendererListDesc)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RendererList CreateRendererList(RendererListDesc desc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererUtils.RendererListDesc.html">RendererListDesc</a></td>
+        <td><span class="parametername">desc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererList.html">RendererList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_CreateShadowRendererList_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateShadowRendererList*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_CreateShadowRendererList_UnityEngine_Rendering_ShadowDrawingSettings__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateShadowRendererList(UnityEngine.Rendering.ShadowDrawingSettings@)">CreateShadowRendererList(ref ShadowDrawingSettings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RendererList CreateShadowRendererList(ref ShadowDrawingSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ShadowDrawingSettings.html">ShadowDrawingSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererList.html">RendererList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_CreateSkyboxRendererList_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateSkyboxRendererList*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_CreateSkyboxRendererList_UnityEngine_Camera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateSkyboxRendererList(UnityEngine.Camera)">CreateSkyboxRendererList(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RendererList CreateSkyboxRendererList(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererList.html">RendererList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_CreateSkyboxRendererList_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateSkyboxRendererList*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_CreateSkyboxRendererList_UnityEngine_Camera_UnityEngine_Matrix4x4_UnityEngine_Matrix4x4_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateSkyboxRendererList(UnityEngine.Camera,UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)">CreateSkyboxRendererList(Camera, Matrix4x4, Matrix4x4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RendererList CreateSkyboxRendererList(Camera camera, Matrix4x4 projectionMatrix, Matrix4x4 viewMatrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">projectionMatrix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">viewMatrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererList.html">RendererList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_CreateSkyboxRendererList_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateSkyboxRendererList*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_CreateSkyboxRendererList_UnityEngine_Camera_UnityEngine_Matrix4x4_UnityEngine_Matrix4x4_UnityEngine_Matrix4x4_UnityEngine_Matrix4x4_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.CreateSkyboxRendererList(UnityEngine.Camera,UnityEngine.Matrix4x4,UnityEngine.Matrix4x4,UnityEngine.Matrix4x4,UnityEngine.Matrix4x4)">CreateSkyboxRendererList(Camera, Matrix4x4, Matrix4x4, Matrix4x4, Matrix4x4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RendererList CreateSkyboxRendererList(Camera camera, Matrix4x4 projectionMatrixL, Matrix4x4 viewMatrixL, Matrix4x4 projectionMatrixR, Matrix4x4 viewMatrixR)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">projectionMatrixL</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">viewMatrixL</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">projectionMatrixR</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">viewMatrixR</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererList.html">RendererList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_Cull_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.Cull*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_Cull_UnityEngine_Rendering_ScriptableCullingParameters__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.Cull(UnityEngine.Rendering.ScriptableCullingParameters@)">Cull(ref ScriptableCullingParameters)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CullingResults Cull(ref ScriptableCullingParameters parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScriptableCullingParameters.html">ScriptableCullingParameters</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CullingResults.html">CullingResults</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawGizmos_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawGizmos*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawGizmos_UnityEngine_Camera_UnityEngine_Rendering_GizmoSubset_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawGizmos(UnityEngine.Camera,UnityEngine.Rendering.GizmoSubset)">DrawGizmos(Camera, GizmoSubset)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawGizmos(Camera camera, GizmoSubset gizmoSubset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.GizmoSubset.html">GizmoSubset</a></td>
+        <td><span class="parametername">gizmoSubset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawRenderers*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_UnityEngine_Rendering_CullingResults_UnityEngine_Rendering_DrawingSettings__UnityEngine_Rendering_FilteringSettings__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawRenderers(UnityEngine.Rendering.CullingResults,UnityEngine.Rendering.DrawingSettings@,UnityEngine.Rendering.FilteringSettings@)">DrawRenderers(CullingResults, ref DrawingSettings, ref FilteringSettings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRenderers(CullingResults cullingResults, ref DrawingSettings drawingSettings, ref FilteringSettings filteringSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CullingResults.html">CullingResults</a></td>
+        <td><span class="parametername">cullingResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.DrawingSettings.html">DrawingSettings</a></td>
+        <td><span class="parametername">drawingSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.FilteringSettings.html">FilteringSettings</a></td>
+        <td><span class="parametername">filteringSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawRenderers*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_UnityEngine_Rendering_CullingResults_UnityEngine_Rendering_DrawingSettings__UnityEngine_Rendering_FilteringSettings__Unity_Collections_NativeArray_UnityEngine_Rendering_ShaderTagId__Unity_Collections_NativeArray_UnityEngine_Rendering_RenderStateBlock__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawRenderers(UnityEngine.Rendering.CullingResults,UnityEngine.Rendering.DrawingSettings@,UnityEngine.Rendering.FilteringSettings@,Unity.Collections.NativeArray{UnityEngine.Rendering.ShaderTagId},Unity.Collections.NativeArray{UnityEngine.Rendering.RenderStateBlock})">DrawRenderers(CullingResults, ref DrawingSettings, ref FilteringSettings, NativeArray&lt;ShaderTagId&gt;, NativeArray&lt;RenderStateBlock&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRenderers(CullingResults cullingResults, ref DrawingSettings drawingSettings, ref FilteringSettings filteringSettings, NativeArray&lt;ShaderTagId&gt; renderTypes, NativeArray&lt;RenderStateBlock&gt; stateBlocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CullingResults.html">CullingResults</a></td>
+        <td><span class="parametername">cullingResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.DrawingSettings.html">DrawingSettings</a></td>
+        <td><span class="parametername">drawingSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.FilteringSettings.html">FilteringSettings</a></td>
+        <td><span class="parametername">filteringSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Rendering.ShaderTagId.html">ShaderTagId</a>&gt;</td>
+        <td><span class="parametername">renderTypes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Rendering.RenderStateBlock.html">RenderStateBlock</a>&gt;</td>
+        <td><span class="parametername">stateBlocks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawRenderers*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_UnityEngine_Rendering_CullingResults_UnityEngine_Rendering_DrawingSettings__UnityEngine_Rendering_FilteringSettings__UnityEngine_Rendering_RenderStateBlock__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawRenderers(UnityEngine.Rendering.CullingResults,UnityEngine.Rendering.DrawingSettings@,UnityEngine.Rendering.FilteringSettings@,UnityEngine.Rendering.RenderStateBlock@)">DrawRenderers(CullingResults, ref DrawingSettings, ref FilteringSettings, ref RenderStateBlock)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRenderers(CullingResults cullingResults, ref DrawingSettings drawingSettings, ref FilteringSettings filteringSettings, ref RenderStateBlock stateBlock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CullingResults.html">CullingResults</a></td>
+        <td><span class="parametername">cullingResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.DrawingSettings.html">DrawingSettings</a></td>
+        <td><span class="parametername">drawingSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.FilteringSettings.html">FilteringSettings</a></td>
+        <td><span class="parametername">filteringSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RenderStateBlock.html">RenderStateBlock</a></td>
+        <td><span class="parametername">stateBlock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawRenderers*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawRenderers_UnityEngine_Rendering_CullingResults_UnityEngine_Rendering_DrawingSettings__UnityEngine_Rendering_FilteringSettings__UnityEngine_Rendering_ShaderTagId_System_Boolean_Unity_Collections_NativeArray_UnityEngine_Rendering_ShaderTagId__Unity_Collections_NativeArray_UnityEngine_Rendering_RenderStateBlock__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawRenderers(UnityEngine.Rendering.CullingResults,UnityEngine.Rendering.DrawingSettings@,UnityEngine.Rendering.FilteringSettings@,UnityEngine.Rendering.ShaderTagId,System.Boolean,Unity.Collections.NativeArray{UnityEngine.Rendering.ShaderTagId},Unity.Collections.NativeArray{UnityEngine.Rendering.RenderStateBlock})">DrawRenderers(CullingResults, ref DrawingSettings, ref FilteringSettings, ShaderTagId, bool, NativeArray&lt;ShaderTagId&gt;, NativeArray&lt;RenderStateBlock&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawRenderers(CullingResults cullingResults, ref DrawingSettings drawingSettings, ref FilteringSettings filteringSettings, ShaderTagId tagName, bool isPassTagName, NativeArray&lt;ShaderTagId&gt; tagValues, NativeArray&lt;RenderStateBlock&gt; stateBlocks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CullingResults.html">CullingResults</a></td>
+        <td><span class="parametername">cullingResults</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.DrawingSettings.html">DrawingSettings</a></td>
+        <td><span class="parametername">drawingSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.FilteringSettings.html">FilteringSettings</a></td>
+        <td><span class="parametername">filteringSettings</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ShaderTagId.html">ShaderTagId</a></td>
+        <td><span class="parametername">tagName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isPassTagName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Rendering.ShaderTagId.html">ShaderTagId</a>&gt;</td>
+        <td><span class="parametername">tagValues</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="UnityEngine.Rendering.RenderStateBlock.html">RenderStateBlock</a>&gt;</td>
+        <td><span class="parametername">stateBlocks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawShadows_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawShadows*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawShadows_UnityEngine_Rendering_ShadowDrawingSettings__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawShadows(UnityEngine.Rendering.ShadowDrawingSettings@)">DrawShadows(ref ShadowDrawingSettings)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawShadows(ref ShadowDrawingSettings settings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ShadowDrawingSettings.html">ShadowDrawingSettings</a></td>
+        <td><span class="parametername">settings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawSkybox_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawSkybox*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawSkybox_UnityEngine_Camera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawSkybox(UnityEngine.Camera)">DrawSkybox(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawSkybox(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawUIOverlay_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawUIOverlay*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawUIOverlay_UnityEngine_Camera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawUIOverlay(UnityEngine.Camera)">DrawUIOverlay(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawUIOverlay(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_DrawWireOverlay_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawWireOverlay*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_DrawWireOverlay_UnityEngine_Camera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.DrawWireOverlay(UnityEngine.Camera)">DrawWireOverlay(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawWireOverlay(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_EmitGeometryForCamera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.EmitGeometryForCamera*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_EmitGeometryForCamera_UnityEngine_Camera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.EmitGeometryForCamera(UnityEngine.Camera)">EmitGeometryForCamera(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EmitGeometryForCamera(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_EndRenderPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.EndRenderPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_EndRenderPass" data-uid="UnityEngine.Rendering.ScriptableRenderContext.EndRenderPass">EndRenderPass()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndRenderPass()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_EndSubPass_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.EndSubPass*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_EndSubPass" data-uid="UnityEngine.Rendering.ScriptableRenderContext.EndSubPass">EndSubPass()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndSubPass()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_Equals_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.Equals*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_Equals_System_Object_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a></div>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_Equals_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.Equals*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_Equals_UnityEngine_Rendering_ScriptableRenderContext_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.Equals(UnityEngine.Rendering.ScriptableRenderContext)">Equals(ScriptableRenderContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(ScriptableRenderContext other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScriptableRenderContext.html">ScriptableRenderContext</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_ExecuteCommandBuffer_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.ExecuteCommandBuffer*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_ExecuteCommandBuffer_UnityEngine_Rendering_CommandBuffer_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.ExecuteCommandBuffer(UnityEngine.Rendering.CommandBuffer)">ExecuteCommandBuffer(CommandBuffer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCommandBuffer(CommandBuffer commandBuffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CommandBuffer.html">CommandBuffer</a></td>
+        <td><span class="parametername">commandBuffer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_ExecuteCommandBufferAsync_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.ExecuteCommandBufferAsync*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_ExecuteCommandBufferAsync_UnityEngine_Rendering_CommandBuffer_UnityEngine_Rendering_ComputeQueueType_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.ExecuteCommandBufferAsync(UnityEngine.Rendering.CommandBuffer,UnityEngine.Rendering.ComputeQueueType)">ExecuteCommandBufferAsync(CommandBuffer, ComputeQueueType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExecuteCommandBufferAsync(CommandBuffer commandBuffer, ComputeQueueType queueType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CommandBuffer.html">CommandBuffer</a></td>
+        <td><span class="parametername">commandBuffer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ComputeQueueType.html">ComputeQueueType</a></td>
+        <td><span class="parametername">queueType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_GetHashCode_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.GetHashCode*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_GetHashCode" data-uid="UnityEngine.Rendering.ScriptableRenderContext.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a></div>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_InvokeOnRenderObjectCallback_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.InvokeOnRenderObjectCallback*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_InvokeOnRenderObjectCallback" data-uid="UnityEngine.Rendering.ScriptableRenderContext.InvokeOnRenderObjectCallback">InvokeOnRenderObjectCallback()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvokeOnRenderObjectCallback()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_PrepareRendererListsAsync_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.PrepareRendererListsAsync*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_PrepareRendererListsAsync_System_Collections_Generic_List_UnityEngine_Rendering_RendererList__" data-uid="UnityEngine.Rendering.ScriptableRenderContext.PrepareRendererListsAsync(System.Collections.Generic.List{UnityEngine.Rendering.RendererList})">PrepareRendererListsAsync(List&lt;RendererList&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PrepareRendererListsAsync(List&lt;RendererList&gt; rendererLists)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnityEngine.Rendering.RendererList.html">RendererList</a>&gt;</td>
+        <td><span class="parametername">rendererLists</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_QueryRendererListStatus_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.QueryRendererListStatus*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_QueryRendererListStatus_UnityEngine_Rendering_RendererList_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.QueryRendererListStatus(UnityEngine.Rendering.RendererList)">QueryRendererListStatus(RendererList)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RendererListStatus QueryRendererListStatus(RendererList rendererList)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererList.html">RendererList</a></td>
+        <td><span class="parametername">rendererList</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.RendererListStatus.html">RendererListStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_SetupCameraProperties_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.SetupCameraProperties*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_SetupCameraProperties_UnityEngine_Camera_System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.SetupCameraProperties(UnityEngine.Camera,System.Boolean)">SetupCameraProperties(Camera, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupCameraProperties(Camera camera, bool stereoSetup = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">stereoSetup</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_SetupCameraProperties_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.SetupCameraProperties*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_SetupCameraProperties_UnityEngine_Camera_System_Boolean_System_Int32_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.SetupCameraProperties(UnityEngine.Camera,System.Boolean,System.Int32)">SetupCameraProperties(Camera, bool, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetupCameraProperties(Camera camera, bool stereoSetup, int eye)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">stereoSetup</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">eye</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_StartMultiEye_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StartMultiEye*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_StartMultiEye_UnityEngine_Camera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StartMultiEye(UnityEngine.Camera)">StartMultiEye(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartMultiEye(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_StartMultiEye_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StartMultiEye*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_StartMultiEye_UnityEngine_Camera_System_Int32_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StartMultiEye(UnityEngine.Camera,System.Int32)">StartMultiEye(Camera, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartMultiEye(Camera camera, int eye)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">eye</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_StereoEndRender_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StereoEndRender*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_StereoEndRender_UnityEngine_Camera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StereoEndRender(UnityEngine.Camera)">StereoEndRender(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StereoEndRender(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_StereoEndRender_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StereoEndRender*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_StereoEndRender_UnityEngine_Camera_System_Int32_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StereoEndRender(UnityEngine.Camera,System.Int32)">StereoEndRender(Camera, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StereoEndRender(Camera camera, int eye)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">eye</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_StereoEndRender_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StereoEndRender*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_StereoEndRender_UnityEngine_Camera_System_Int32_System_Boolean_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StereoEndRender(UnityEngine.Camera,System.Int32,System.Boolean)">StereoEndRender(Camera, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StereoEndRender(Camera camera, int eye, bool isFinalPass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">eye</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isFinalPass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_StopMultiEye_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StopMultiEye*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_StopMultiEye_UnityEngine_Camera_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.StopMultiEye(UnityEngine.Camera)">StopMultiEye(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopMultiEye(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_Submit_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.Submit*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_Submit" data-uid="UnityEngine.Rendering.ScriptableRenderContext.Submit">Submit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Submit()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_SubmitForRenderPassValidation_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.SubmitForRenderPassValidation*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_SubmitForRenderPassValidation" data-uid="UnityEngine.Rendering.ScriptableRenderContext.SubmitForRenderPassValidation">SubmitForRenderPassValidation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SubmitForRenderPassValidation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+</h3>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_op_Equality_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.op_Equality*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_op_Equality_UnityEngine_Rendering_ScriptableRenderContext_UnityEngine_Rendering_ScriptableRenderContext_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.op_Equality(UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.ScriptableRenderContext)">operator ==(ScriptableRenderContext, ScriptableRenderContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(ScriptableRenderContext left, ScriptableRenderContext right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScriptableRenderContext.html">ScriptableRenderContext</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScriptableRenderContext.html">ScriptableRenderContext</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_Rendering_ScriptableRenderContext_op_Inequality_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.op_Inequality*"></a>
+  <h4 id="UnityEngine_Rendering_ScriptableRenderContext_op_Inequality_UnityEngine_Rendering_ScriptableRenderContext_UnityEngine_Rendering_ScriptableRenderContext_" data-uid="UnityEngine.Rendering.ScriptableRenderContext.op_Inequality(UnityEngine.Rendering.ScriptableRenderContext,UnityEngine.Rendering.ScriptableRenderContext)">operator !=(ScriptableRenderContext, ScriptableRenderContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(ScriptableRenderContext left, ScriptableRenderContext right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScriptableRenderContext.html">ScriptableRenderContext</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScriptableRenderContext.html">ScriptableRenderContext</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable&lt;T&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

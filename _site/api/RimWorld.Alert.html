@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Alert </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Alert ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Alert">
+
+
+
+  <h1 id="RimWorld_Alert" data-uid="RimWorld.Alert" class="text-break">Class Alert</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">Alert</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_AbandonedBaby.html">Alert_AbandonedBaby</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ActionDelay.html">Alert_ActionDelay</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ActivatorCountdown.html">Alert_ActivatorCountdown</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_AgeReversalDemandNear.html">Alert_AgeReversalDemandNear</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_Analyzable.html">Alert_Analyzable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_AnimaLinkingReady.html">Alert_AnimaLinkingReady</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_AnimalFilth.html">Alert_AnimalFilth</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_AnimalPenNeeded.html">Alert_AnimalPenNeeded</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_AnimalPenNotEnclosed.html">Alert_AnimalPenNotEnclosed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_AnimalRoaming.html">Alert_AnimalRoaming</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_AwaitingMedicalOperation.html">Alert_AwaitingMedicalOperation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_BestowerWaiting.html">Alert_BestowerWaiting</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_BilliardsTableOnWall.html">Alert_BilliardsTableOnWall</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_Biostarvation.html">Alert_Biostarvation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_Boredom.html">Alert_Boredom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_BrawlerHasRangedWeapon.html">Alert_BrawlerHasRangedWeapon</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_CannotBeUsedRoofed.html">Alert_CannotBeUsedRoofed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_CaravanIdle.html">Alert_CaravanIdle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ColonistLeftUnburied.html">Alert_ColonistLeftUnburied</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ColonistNeedsTend.html">Alert_ColonistNeedsTend</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ColonistsIdle.html">Alert_ColonistsIdle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ConnectedPawnNotAssignedToPlantCutting.html">Alert_ConnectedPawnNotAssignedToPlantCutting</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_CreepJoinerTimeout.html">Alert_CreepJoinerTimeout</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_Critical.html">Alert_Critical</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_Custom.html">Alert_Custom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_DateRitualComing.html">Alert_DateRitualComing</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_DeathrestComplete.html">Alert_DeathrestComplete</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_EmergingPitGate.html">Alert_EmergingPitGate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_EntityNeedsTend.html">Alert_EntityNeedsTend</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_Exhaustion.html">Alert_Exhaustion</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_GauranlenTreeWithoutProductionMode.html">Alert_GauranlenTreeWithoutProductionMode</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_GenebankUnpowered.html">Alert_GenebankUnpowered</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_Heatstroke.html">Alert_Heatstroke</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_HitchedAnimalHungryNoFood.html">Alert_HitchedAnimalHungryNoFood</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_HunterHasShieldAndRangedWeapon.html">Alert_HunterHasShieldAndRangedWeapon</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_HypothermicAnimals.html">Alert_HypothermicAnimals</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_InhibitorBlocked.html">Alert_InhibitorBlocked</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_JoyBuildingNoChairs.html">Alert_JoyBuildingNoChairs</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_LowBabyFood.html">Alert_LowBabyFood</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_LowDeathrest.html">Alert_LowDeathrest</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_LowFood.html">Alert_LowFood</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_LowHemogen.html">Alert_LowHemogen</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_LowMedicine.html">Alert_LowMedicine</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_MechChargerFull.html">Alert_MechChargerFull</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_MechDamaged.html">Alert_MechDamaged</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_MechMissingBodyPart.html">Alert_MechMissingBodyPart</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_MinifiedTreeAboutToDie.html">Alert_MinifiedTreeAboutToDie</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_MinorBreakRisk.html">Alert_MinorBreakRisk</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_MonolithAutoActivating.html">Alert_MonolithAutoActivating</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_MonumentMarkerMissingBlueprints.html">Alert_MonumentMarkerMissingBlueprints</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedAnomalyProject.html">Alert_NeedAnomalyProject</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedBabyCribs.html">Alert_NeedBabyCribs</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedBatteries.html">Alert_NeedBatteries</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedColonistBeds.html">Alert_NeedColonistBeds</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedDefenses.html">Alert_NeedDefenses</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedDoctor.html">Alert_NeedDoctor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedHoldingPlatform.html">Alert_NeedHoldingPlatform</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedJoySources.html">Alert_NeedJoySources</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedMealSource.html">Alert_NeedMealSource</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedMechChargers.html">Alert_NeedMechChargers</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedMeditationSpot.html">Alert_NeedMeditationSpot</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedMiner.html">Alert_NeedMiner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedResearchBench.html">Alert_NeedResearchBench</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedResearchProject.html">Alert_NeedResearchProject</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedSlaveBeds.html">Alert_NeedSlaveBeds</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedSlaveCribs.html">Alert_NeedSlaveCribs</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedWarden.html">Alert_NeedWarden</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NeedWarmClothes.html">Alert_NeedWarmClothes</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NoBabyFeeders.html">Alert_NoBabyFeeders</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_NoBabyFoodCaravan.html">Alert_NoBabyFoodCaravan</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_PasteDispenserNeedsHopper.html">Alert_PasteDispenserNeedsHopper</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_PennedAnimalHungry.html">Alert_PennedAnimalHungry</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_PollutedTerrain.html">Alert_PollutedTerrain</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_PredatorInPen.html">Alert_PredatorInPen</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_PsychicBondedSeparated.html">Alert_PsychicBondedSeparated</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_QuestExpiresSoon.html">Alert_QuestExpiresSoon</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ReimplantationAvailable.html">Alert_ReimplantationAvailable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_RolesEmpty.html">Alert_RolesEmpty</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_RoyalNoAcceptableFood.html">Alert_RoyalNoAcceptableFood</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_RoyalNoThroneAssigned.html">Alert_RoyalNoThroneAssigned</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ShieldUserHasRangedWeapon.html">Alert_ShieldUserHasRangedWeapon</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ShuttleLandingBeaconUnusable.html">Alert_ShuttleLandingBeaconUnusable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_SlaveRebellionLikely.html">Alert_SlaveRebellionLikely</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_SlavesUnattended.html">Alert_SlavesUnattended</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_SlavesUnsuppressed.html">Alert_SlavesUnsuppressed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_StarvationAnimals.html">Alert_StarvationAnimals</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_StarvationColonists.html">Alert_StarvationColonists</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_SubjectHasNowOverseer.html">Alert_SubjectHasNowOverseer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_Thought.html">Alert_Thought</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ThroneroomInvalidConfiguration.html">Alert_ThroneroomInvalidConfiguration</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_TimedMakeFactionHostile.html">Alert_TimedMakeFactionHostile</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_TimedRaidsArriving.html">Alert_TimedRaidsArriving</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_TitleRequiresBedroom.html">Alert_TitleRequiresBedroom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ToxicBuildup.html">Alert_ToxicBuildup</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_ToxifierGeneratorStopped.html">Alert_ToxifierGeneratorStopped</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_UndignifiedBedroom.html">Alert_UndignifiedBedroom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_UndignifiedThroneroom.html">Alert_UndignifiedThroneroom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_UnusableMeditationFocus.html">Alert_UnusableMeditationFocus</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_UnusableMeditationFocus.Alert_PermitAvailable.html">Alert_UnusableMeditationFocus.Alert_PermitAvailable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Alert_WarqueenHasLowResources.html">Alert_WarqueenHasLowResources</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Alert_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[StaticConstructorOnStartup]
+public abstract class Alert</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Alert__ctor_" data-uid="RimWorld.Alert.#ctor*"></a>
+  <h4 id="RimWorld_Alert__ctor" data-uid="RimWorld.Alert.#ctor">Alert()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Alert()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_Alert_InfoRectWidth" data-uid="RimWorld.Alert.InfoRectWidth">InfoRectWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float InfoRectWidth = 330</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_Width" data-uid="RimWorld.Alert.Width">Width</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const float Width = 154</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_defaultExplanation" data-uid="RimWorld.Alert.defaultExplanation">defaultExplanation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string defaultExplanation</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_defaultLabel" data-uid="RimWorld.Alert.defaultLabel">defaultLabel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string defaultLabel</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_defaultPriority" data-uid="RimWorld.Alert.defaultPriority">defaultPriority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AlertPriority defaultPriority</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.AlertPriority.html">AlertPriority</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_lastBellTime" data-uid="RimWorld.Alert.lastBellTime">lastBellTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float lastBellTime</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_requireAnomaly" data-uid="RimWorld.Alert.requireAnomaly">requireAnomaly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool requireAnomaly</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_requireBiotech" data-uid="RimWorld.Alert.requireBiotech">requireBiotech</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool requireBiotech</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_requireIdeology" data-uid="RimWorld.Alert.requireIdeology">requireIdeology</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool requireIdeology</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_Alert_requireRoyalty" data-uid="RimWorld.Alert.requireRoyalty">requireRoyalty</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool requireRoyalty</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_Alert_Active_" data-uid="RimWorld.Alert.Active*"></a>
+  <h4 id="RimWorld_Alert_Active" data-uid="RimWorld.Alert.Active">Active</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Active { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_BGColor_" data-uid="RimWorld.Alert.BGColor*"></a>
+  <h4 id="RimWorld_Alert_BGColor" data-uid="RimWorld.Alert.BGColor">BGColor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Color BGColor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_EnabledWithActiveExpansions_" data-uid="RimWorld.Alert.EnabledWithActiveExpansions*"></a>
+  <h4 id="RimWorld_Alert_EnabledWithActiveExpansions" data-uid="RimWorld.Alert.EnabledWithActiveExpansions">EnabledWithActiveExpansions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnabledWithActiveExpansions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_GetJumpToTargetsText_" data-uid="RimWorld.Alert.GetJumpToTargetsText*"></a>
+  <h4 id="RimWorld_Alert_GetJumpToTargetsText" data-uid="RimWorld.Alert.GetJumpToTargetsText">GetJumpToTargetsText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetJumpToTargetsText { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_Height_" data-uid="RimWorld.Alert.Height*"></a>
+  <h4 id="RimWorld_Alert_Height" data-uid="RimWorld.Alert.Height">Height</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Height { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_Label_" data-uid="RimWorld.Alert.Label*"></a>
+  <h4 id="RimWorld_Alert_Label" data-uid="RimWorld.Alert.Label">Label</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Label { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_Priority_" data-uid="RimWorld.Alert.Priority*"></a>
+  <h4 id="RimWorld_Alert_Priority" data-uid="RimWorld.Alert.Priority">Priority</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual AlertPriority Priority { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.AlertPriority.html">AlertPriority</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Alert_AlertActiveUpdate_" data-uid="RimWorld.Alert.AlertActiveUpdate*"></a>
+  <h4 id="RimWorld_Alert_AlertActiveUpdate" data-uid="RimWorld.Alert.AlertActiveUpdate">AlertActiveUpdate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AlertActiveUpdate()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Alert_DrawAt_" data-uid="RimWorld.Alert.DrawAt*"></a>
+  <h4 id="RimWorld_Alert_DrawAt_System_Single_System_Boolean_" data-uid="RimWorld.Alert.DrawAt(System.Single,System.Boolean)">DrawAt(float, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Rect DrawAt(float topY, bool minimized)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">topY</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">minimized</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rect.html">Rect</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_DrawInfoPane_" data-uid="RimWorld.Alert.DrawInfoPane*"></a>
+  <h4 id="RimWorld_Alert_DrawInfoPane" data-uid="RimWorld.Alert.DrawInfoPane">DrawInfoPane()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DrawInfoPane()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Alert_GetExplanation_" data-uid="RimWorld.Alert.GetExplanation*"></a>
+  <h4 id="RimWorld_Alert_GetExplanation" data-uid="RimWorld.Alert.GetExplanation">GetExplanation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TaggedString GetExplanation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_GetLabel_" data-uid="RimWorld.Alert.GetLabel*"></a>
+  <h4 id="RimWorld_Alert_GetLabel" data-uid="RimWorld.Alert.GetLabel">GetLabel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetLabel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_GetReport_" data-uid="RimWorld.Alert.GetReport*"></a>
+  <h4 id="RimWorld_Alert_GetReport" data-uid="RimWorld.Alert.GetReport">GetReport()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract AlertReport GetReport()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.AlertReport.html">AlertReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Alert_Notify_Started_" data-uid="RimWorld.Alert.Notify_Started*"></a>
+  <h4 id="RimWorld_Alert_Notify_Started" data-uid="RimWorld.Alert.Notify_Started">Notify_Started()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Notify_Started()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Alert_OnClick_" data-uid="RimWorld.Alert.OnClick*"></a>
+  <h4 id="RimWorld_Alert_OnClick" data-uid="RimWorld.Alert.OnClick">OnClick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnClick()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Alert_Recalculate_" data-uid="RimWorld.Alert.Recalculate*"></a>
+  <h4 id="RimWorld_Alert_Recalculate" data-uid="RimWorld.Alert.Recalculate">Recalculate()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Recalculate()</code></pre>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

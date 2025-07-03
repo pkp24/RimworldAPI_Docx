@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class QuestNode </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class QuestNode ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.QuestGen.QuestNode">
+
+
+
+  <h1 id="RimWorld_QuestGen_QuestNode" data-uid="RimWorld.QuestGen.QuestNode" class="text-break">Class QuestNode</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">QuestNode</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Add.html">QuestNode_Add</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddContentsToShuttle.html">QuestNode_AddContentsToShuttle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddHediff.html">QuestNode_AddHediff</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddItemsReward.html">QuestNode_AddItemsReward</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddMemoryThought.html">QuestNode_AddMemoryThought</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddPassageOffworldReward.html">QuestNode_AddPassageOffworldReward</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddPawnReward.html">QuestNode_AddPawnReward</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddRangeToList.html">QuestNode_AddRangeToList</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddShipJob.html">QuestNode_AddShipJob</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddTag.html">QuestNode_AddTag</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AddToList.html">QuestNode_AddToList</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AllSignals.html">QuestNode_AllSignals</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AllSignalsActivable.html">QuestNode_AllSignalsActivable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AllowDecreesForLodger.html">QuestNode_AllowDecreesForLodger</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AnyHiddenSitePart.html">QuestNode_AnyHiddenSitePart</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AnyPawnAlive.html">QuestNode_AnyPawnAlive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AnySignal.html">QuestNode_AnySignal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AnySignalActivable.html">QuestNode_AnySignalActivable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_AssaultColony.html">QuestNode_AssaultColony</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_BetrayMTB.html">QuestNode_BetrayMTB</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_BiocodeWeapons.html">QuestNode_BiocodeWeapons</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_CampLootReward.html">QuestNode_CampLootReward</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_CannotRun.html">QuestNode_CannotRun</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Chance.html">QuestNode_Chance</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ChangeFactionGoodwill.html">QuestNode_ChangeFactionGoodwill</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ChangeGoodwillForAlivePawnsMissingFromShuttle.html">QuestNode_ChangeGoodwillForAlivePawnsMissingFromShuttle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ChangeHeir.html">QuestNode_ChangeHeir</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ChangeNeed.html">QuestNode_ChangeNeed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ChildrenAllowed.html">QuestNode_ChildrenAllowed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Clamp.html">QuestNode_Clamp</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_CreateIncidents.html">QuestNode_CreateIncidents</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_DamageUntilDowned.html">QuestNode_DamageUntilDowned</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Delay.html">QuestNode_Delay</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_DestroyOrPassToWorld.html">QuestNode_DestroyOrPassToWorld</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_DestroyOrPassToWorldOnCleanup.html">QuestNode_DestroyOrPassToWorldOnCleanup</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_DestroyWorldObject.html">QuestNode_DestroyWorldObject</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_DisableRandomMoodCausedMentalBreaks.html">QuestNode_DisableRandomMoodCausedMentalBreaks</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Divide.html">QuestNode_Divide</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_DropMonumentMarkerCopy.html">QuestNode_DropMonumentMarkerCopy</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_DropPods.html">QuestNode_DropPods</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_End.html">QuestNode_End</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_EndGame.html">QuestNode_EndGame</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_EndGame_ShipEscape_FindShipTile.html">QuestNode_EndGame_ShipEscape_FindShipTile</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Equal.html">QuestNode_Equal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_EqualOrFail.html">QuestNode_EqualOrFail</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_EvaluateSimpleCurve.html">QuestNode_EvaluateSimpleCurve</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ExpansionActive.html">QuestNode_ExpansionActive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ExtraFaction.html">QuestNode_ExtraFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_FactionExists.html">QuestNode_FactionExists</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_FactionGoodwillForMoodChange.html">QuestNode_FactionGoodwillForMoodChange</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Filter.html">QuestNode_Filter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GameCondition.html">QuestNode_GameCondition</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateMonumentMarker.html">QuestNode_GenerateMonumentMarker</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateNonBuildableMonumentRequiredResources.html">QuestNode_GenerateNonBuildableMonumentRequiredResources</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GeneratePawn.html">QuestNode_GeneratePawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateShuttle.html">QuestNode_GenerateShuttle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateSite.html">QuestNode_GenerateSite</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateThing.html">QuestNode_GenerateThing</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateThingSet.html">QuestNode_GenerateThingSet</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateThreats.html">QuestNode_GenerateThreats</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateTransportShip.html">QuestNode_GenerateTransportShip</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GenerateWorldObject.html">QuestNode_GenerateWorldObject</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetAnimalKindByPoints.html">QuestNode_GetAnimalKindByPoints</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetAnimalToHunt.html">QuestNode_GetAnimalToHunt</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetBodySize.html">QuestNode_GetBodySize</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetColonistCountFromColonyPercentage.html">QuestNode_GetColonistCountFromColonyPercentage</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetDefaultSitePartsParams.html">QuestNode_GetDefaultSitePartsParams</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetDropSpot.html">QuestNode_GetDropSpot</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetEventDelays.html">QuestNode_GetEventDelays</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetExampleRaid.html">QuestNode_GetExampleRaid</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetFaction.html">QuestNode_GetFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetFactionOf.html">QuestNode_GetFactionOf</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetFieldValue.html">QuestNode_GetFieldValue</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetFreeColonistsCount.html">QuestNode_GetFreeColonistsCount</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetHediff.html">QuestNode_GetHediff</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetHivesCountFromPoints.html">QuestNode_GetHivesCountFromPoints</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetLargestClearArea.html">QuestNode_GetLargestClearArea</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetMap.html">QuestNode_GetMap</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetMapOf.html">QuestNode_GetMapOf</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetMapWealth.html">QuestNode_GetMapWealth</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetMarketValue.html">QuestNode_GetMarketValue</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetMonumentRequiredResourcesString.html">QuestNode_GetMonumentRequiredResourcesString</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetMonumentSize.html">QuestNode_GetMonumentSize</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetMonumentSketch.html">QuestNode_GetMonumentSketch</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetNearbySettlement.html">QuestNode_GetNearbySettlement</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetNearestHomeMapOf.html">QuestNode_GetNearestHomeMapOf</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetPawn.html">QuestNode_GetPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetPawnCountByPointsWeighted.html">QuestNode_GetPawnCountByPointsWeighted</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetPawnKind.html">QuestNode_GetPawnKind</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetPawnKindCombatPower.html">QuestNode_GetPawnKindCombatPower</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetPawnsWithRoyalTitle.html">QuestNode_GetPawnsWithRoyalTitle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetPlantPlayerCanHarvest.html">QuestNode_GetPlantPlayerCanHarvest</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetPlayerFaction.html">QuestNode_GetPlayerFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetPopIntentForQuest.html">QuestNode_GetPopIntentForQuest</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomByCurve.html">QuestNode_GetRandomByCurve</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomElement.html">QuestNode_GetRandomElement</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomElementByWeight.html">QuestNode_GetRandomElementByWeight</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomFactionForSite.html">QuestNode_GetRandomFactionForSite</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomInRangeFloat.html">QuestNode_GetRandomInRangeFloat</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomInRangeForChallengeRating.html">QuestNode_GetRandomInRangeForChallengeRating</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomInRangeInt.html">QuestNode_GetRandomInRangeInt</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomNegativeGameCondition.html">QuestNode_GetRandomNegativeGameCondition</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRandomPawnKindForFaction.html">QuestNode_GetRandomPawnKindForFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetRelationsInfo.html">QuestNode_GetRelationsInfo</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetSameQuestsCount.html">QuestNode_GetSameQuestsCount</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetSiteDisturbanceFactor.html">QuestNode_GetSiteDisturbanceFactor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetSitePartDefsByTagsAndFaction.html">QuestNode_GetSitePartDefsByTagsAndFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetSiteThreatPoints.html">QuestNode_GetSiteThreatPoints</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetSiteTile.html">QuestNode_GetSiteTile</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetThingPlayerCanProduce.html">QuestNode_GetThingPlayerCanProduce</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GetWalkInSpot.html">QuestNode_GetWalkInSpot</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GiveNearPawn.html">QuestNode_GiveNearPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GiveRewards.html">QuestNode_GiveRewards</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GiveRoyalFavor.html">QuestNode_GiveRoyalFavor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GiveTechprints.html">QuestNode_GiveTechprints</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Greater.html">QuestNode_Greater</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GreaterOrEqual.html">QuestNode_GreaterOrEqual</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GreaterOrFail.html">QuestNode_GreaterOrFail</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_GuardianShipDelay.html">QuestNode_GuardianShipDelay</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_HasGravEngine.html">QuestNode_HasGravEngine</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_HasRoyalTitleInCurrentFaction.html">QuestNode_HasRoyalTitleInCurrentFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Incident.html">QuestNode_Incident</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Infestation.html">QuestNode_Infestation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_InspectString.html">QuestNode_InspectString</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsFactionHostileToPlayer.html">QuestNode_IsFactionHostileToPlayer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsFactionLeader.html">QuestNode_IsFactionLeader</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsFreeWorldPawn.html">QuestNode_IsFreeWorldPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsInList.html">QuestNode_IsInList</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsNull.html">QuestNode_IsNull</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsOfFaction.html">QuestNode_IsOfFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsOfRoyalFaction.html">QuestNode_IsOfRoyalFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsPermanentEnemy.html">QuestNode_IsPermanentEnemy</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsSet.html">QuestNode_IsSet</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsTrue.html">QuestNode_IsTrue</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsTrueOrUnset.html">QuestNode_IsTrueOrUnset</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_IsZero.html">QuestNode_IsZero</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_JoinPlayer.html">QuestNode_JoinPlayer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Leave.html">QuestNode_Leave</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_LeaveOnCleanup.html">QuestNode_LeaveOnCleanup</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_LendColonistsToFaction.html">QuestNode_LendColonistsToFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Less.html">QuestNode_Less</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_LessOrEqual.html">QuestNode_LessOrEqual</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_LessOrFail.html">QuestNode_LessOrFail</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Letter.html">QuestNode_Letter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Log.html">QuestNode_Log</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_LoopCount.html">QuestNode_LoopCount</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_MakeMinified.html">QuestNode_MakeMinified</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ManhunterPack.html">QuestNode_ManhunterPack</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Message.html">QuestNode_Message</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ModIsActive.html">QuestNode_ModIsActive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_MoodBelow.html">QuestNode_MoodBelow</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Multiply.html">QuestNode_Multiply</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_MultiplyRange.html">QuestNode_MultiplyRange</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_NoWorldObject.html">QuestNode_NoWorldObject</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Notify_PlayerRaidedSomeone.html">QuestNode_Notify_PlayerRaidedSomeone</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_PawnsArrive.html">QuestNode_PawnsArrive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_PawnsKilled.html">QuestNode_PawnsKilled</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_PlantsHarvested.html">QuestNode_PlantsHarvested</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Prefix.html">QuestNode_Prefix</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_QuestUnique.html">QuestNode_QuestUnique</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RaceProperty.html">QuestNode_RaceProperty</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Raid.html">QuestNode_Raid</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RandomNode.html">QuestNode_RandomNode</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RandomRaid.html">QuestNode_RandomRaid</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RecordHistoryEvent.html">QuestNode_RecordHistoryEvent</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ReleaseParalyzedAnimals.html">QuestNode_ReleaseParalyzedAnimals</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RemoveEquipmentFromPawns.html">QuestNode_RemoveEquipmentFromPawns</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RemoveMemoryThought.html">QuestNode_RemoveMemoryThought</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ReplaceLostLeaderReferences.html">QuestNode_ReplaceLostLeaderReferences</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RequireRoyalFavorFromFaction.html">QuestNode_RequireRoyalFavorFromFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RequirementsToAcceptBedroom.html">QuestNode_RequirementsToAcceptBedroom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RequirementsToAcceptColonistWithTitle.html">QuestNode_RequirementsToAcceptColonistWithTitle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RequirementsToAcceptPlanetLayer.html">QuestNode_RequirementsToAcceptPlanetLayer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RequirementsToAcceptResearch.html">QuestNode_RequirementsToAcceptResearch</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ResolveQuestDescription.html">QuestNode_ResolveQuestDescription</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ResolveQuestName.html">QuestNode_ResolveQuestName</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ResolveTextNow.html">QuestNode_ResolveTextNow</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ResolveTextRequests.html">QuestNode_ResolveTextRequests</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_AncientComplex.html">QuestNode_Root_AncientComplex</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_AncientMercenaries.html">QuestNode_Root_AncientMercenaries</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_AncientSignalActivation.html">QuestNode_Root_AncientSignalActivation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_AncientStructure.html">QuestNode_Root_AncientStructure</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_ArchonexusVictory.html">QuestNode_Root_ArchonexusVictory</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_ArchonexusVictory_Cycle.html">QuestNode_Root_ArchonexusVictory_Cycle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Asteroid.html">QuestNode_Root_Asteroid</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Beggars.html">QuestNode_Root_Beggars</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_BestowingCeremony.html">QuestNode_Root_BestowingCeremony</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Bossgroup.html">QuestNode_Root_Bossgroup</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Creepjoiner_Arrival.html">QuestNode_Root_Creepjoiner_Arrival</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_DelayedRewardDropPods.html">QuestNode_Root_DelayedRewardDropPods</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_DistressCall.html">QuestNode_Root_DistressCall</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_GravShip.html">QuestNode_Root_GravShip</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Gravcore.html">QuestNode_Root_Gravcore</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Hack_Spacedrone.html">QuestNode_Root_Hack_Spacedrone</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Hack_WorshippedTerminal.html">QuestNode_Root_Hack_WorshippedTerminal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Hospitality_Refugee.html">QuestNode_Root_Hospitality_Refugee</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_MechanitorShip.html">QuestNode_Root_MechanitorShip</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_MechanitorStartingMech.html">QuestNode_Root_MechanitorStartingMech</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_MechanoidSignal.html">QuestNode_Root_MechanoidSignal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Mission.html">QuestNode_Root_Mission</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_MonolithMigration.html">QuestNode_Root_MonolithMigration</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_MysteriousCargo.html">QuestNode_Root_MysteriousCargo</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_OrbitalFugitive.html">QuestNode_Root_OrbitalFugitive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_PollutionDump.html">QuestNode_Root_PollutionDump</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_PollutionRaid.html">QuestNode_Root_PollutionRaid</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_PollutionRetaliation.html">QuestNode_Root_PollutionRetaliation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_RefugeeBetrayal.html">QuestNode_Root_RefugeeBetrayal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_RefugeeDelayedReward.html">QuestNode_Root_RefugeeDelayedReward</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_RelicHunt.html">QuestNode_Root_RelicHunt</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_ReliquaryPilgrims.html">QuestNode_Root_ReliquaryPilgrims</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_SanguophageMeetingHost.html">QuestNode_Root_SanguophageMeetingHost</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_SanguophageShip.html">QuestNode_Root_SanguophageShip</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_ShuttleCrash_Rescue.html">QuestNode_Root_ShuttleCrash_Rescue</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_SightstealerArrival.html">QuestNode_Root_SightstealerArrival</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_Site.html">QuestNode_Root_Site</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_SurveyScanner.html">QuestNode_Root_SurveyScanner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_UnnaturalDarkness.html">QuestNode_Root_UnnaturalDarkness</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_VoidAwakening.html">QuestNode_Root_VoidAwakening</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_VoidMonolith.html">QuestNode_Root_VoidMonolith</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_WandererJoin.html">QuestNode_Root_WandererJoin</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Root_WorkSite.html">QuestNode_Root_WorkSite</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RoyalTitleHyperlink.html">QuestNode_RoyalTitleHyperlink</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_RuntimeLog.html">QuestNode_RuntimeLog</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SendShuttleAway.html">QuestNode_SendShuttleAway</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SendShuttleAwayOnCleanup.html">QuestNode_SendShuttleAwayOnCleanup</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SendSignals.html">QuestNode_SendSignals</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SendTransportShipAwayOnCleanup.html">QuestNode_SendTransportShipAwayOnCleanup</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Sequence.html">QuestNode_Sequence</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Set.html">QuestNode_Set</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetAllApparelLocked.html">QuestNode_SetAllApparelLocked</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetAndRestore.html">QuestNode_SetAndRestore</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetChallengeRating.html">QuestNode_SetChallengeRating</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetChildCount.html">QuestNode_SetChildCount</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetFaction.html">QuestNode_SetFaction</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetItemStashContents.html">QuestNode_SetItemStashContents</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetRoyalTitle.html">QuestNode_SetRoyalTitle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetTicksUntilAcceptanceExpiry.html">QuestNode_SetTicksUntilAcceptanceExpiry</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SetupCreepjoiner.html">QuestNode_SetupCreepjoiner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ShuttleDelay.html">QuestNode_ShuttleDelay</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ShuttleLeaveDelay.html">QuestNode_ShuttleLeaveDelay</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Signal.html">QuestNode_Signal</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SignalActivable.html">QuestNode_SignalActivable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SituationalThought.html">QuestNode_SituationalThought</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SlateDump.html">QuestNode_SlateDump</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SpawnMechCluster.html">QuestNode_SpawnMechCluster</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SpawnSkyfaller.html">QuestNode_SpawnSkyfaller</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SpawnWorldObjects.html">QuestNode_SpawnWorldObjects</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SplitRandomly.html">QuestNode_SplitRandomly</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_SubScript.html">QuestNode_SubScript</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Subtract.html">QuestNode_Subtract</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_TextRules.html">QuestNode_TextRules</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ThingsProduced.html">QuestNode_ThingsProduced</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_TrackWhenExitMentalState.html">QuestNode_TrackWhenExitMentalState</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_TradeRequest_GetRequestedThing.html">QuestNode_TradeRequest_GetRequestedThing</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_TradeRequest_Initiate.html">QuestNode_TradeRequest_Initiate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_TradeRequest_RandomOfferDuration.html">QuestNode_TradeRequest_RandomOfferDuration</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_Unset.html">QuestNode_Unset</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_ViolentQuestsAllowed.html">QuestNode_ViolentQuestsAllowed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_VisitColony.html">QuestNode_VisitColony</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.QuestGen.QuestNode_WorkDisabled.html">QuestNode_WorkDisabled</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a>.<a class="xref" href="RimWorld.QuestGen.html">QuestGen</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_QuestGen_QuestNode_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class QuestNode</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_QuestGen_QuestNode__ctor_" data-uid="RimWorld.QuestGen.QuestNode.#ctor*"></a>
+  <h4 id="RimWorld_QuestGen_QuestNode__ctor" data-uid="RimWorld.QuestGen.QuestNode.#ctor">QuestNode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QuestNode()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_QuestGen_QuestNode_myTypeShort" data-uid="RimWorld.QuestGen.QuestNode.myTypeShort">myTypeShort</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Unsaved(false)]
+[TranslationHandle]
+public string myTypeShort</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_QuestGen_QuestNode_selectionWeight" data-uid="RimWorld.QuestGen.QuestNode.selectionWeight">selectionWeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SlateRef&lt;float?&gt; selectionWeight</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestGen.SlateRef-1.html">SlateRef</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_QuestGen_QuestNode_Run_" data-uid="RimWorld.QuestGen.QuestNode.Run*"></a>
+  <h4 id="RimWorld_QuestGen_QuestNode_Run" data-uid="RimWorld.QuestGen.QuestNode.Run">Run()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Run()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_QuestGen_QuestNode_RunInt_" data-uid="RimWorld.QuestGen.QuestNode.RunInt*"></a>
+  <h4 id="RimWorld_QuestGen_QuestNode_RunInt" data-uid="RimWorld.QuestGen.QuestNode.RunInt">RunInt()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void RunInt()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_QuestGen_QuestNode_SelectionWeight_" data-uid="RimWorld.QuestGen.QuestNode.SelectionWeight*"></a>
+  <h4 id="RimWorld_QuestGen_QuestNode_SelectionWeight_RimWorld_QuestGen_Slate_" data-uid="RimWorld.QuestGen.QuestNode.SelectionWeight(RimWorld.QuestGen.Slate)">SelectionWeight(Slate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SelectionWeight(Slate slate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestGen.Slate.html">Slate</a></td>
+        <td><span class="parametername">slate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestNode_TestRun_" data-uid="RimWorld.QuestGen.QuestNode.TestRun*"></a>
+  <h4 id="RimWorld_QuestGen_QuestNode_TestRun_RimWorld_QuestGen_Slate_" data-uid="RimWorld.QuestGen.QuestNode.TestRun(RimWorld.QuestGen.Slate)">TestRun(Slate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TestRun(Slate slate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestGen.Slate.html">Slate</a></td>
+        <td><span class="parametername">slate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestNode_TestRunInt_" data-uid="RimWorld.QuestGen.QuestNode.TestRunInt*"></a>
+  <h4 id="RimWorld_QuestGen_QuestNode_TestRunInt_RimWorld_QuestGen_Slate_" data-uid="RimWorld.QuestGen.QuestNode.TestRunInt(RimWorld.QuestGen.Slate)">TestRunInt(Slate)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool TestRunInt(Slate slate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.QuestGen.Slate.html">Slate</a></td>
+        <td><span class="parametername">slate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_QuestGen_QuestNode_ToString_" data-uid="RimWorld.QuestGen.QuestNode.ToString*"></a>
+  <h4 id="RimWorld_QuestGen_QuestNode_ToString" data-uid="RimWorld.QuestGen.QuestNode.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

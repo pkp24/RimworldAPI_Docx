@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GameCondition_SmokeSpewer </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GameCondition_SmokeSpewer ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.GameCondition_SmokeSpewer">
+
+
+
+  <h1 id="RimWorld_GameCondition_SmokeSpewer" data-uid="RimWorld.GameCondition_SmokeSpewer" class="text-break">Class GameCondition_SmokeSpewer</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="RimWorld.GameCondition.html">GameCondition</a></div>
+    <div class="level2"><a class="xref" href="RimWorld.GameCondition_VolcanicWinter.html">GameCondition_VolcanicWinter</a></div>
+    <div class="level3"><span class="xref">GameCondition_SmokeSpewer</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition_VolcanicWinter.html#RimWorld_GameCondition_VolcanicWinter_SkyTargetLerpFactor_Verse_Map_">GameCondition_VolcanicWinter.SkyTargetLerpFactor(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition_VolcanicWinter.html#RimWorld_GameCondition_VolcanicWinter_SkyTarget_Verse_Map_">GameCondition_VolcanicWinter.SkyTarget(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition_VolcanicWinter.html#RimWorld_GameCondition_VolcanicWinter_TemperatureOffset">GameCondition_VolcanicWinter.TemperatureOffset()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition_VolcanicWinter.html#RimWorld_GameCondition_VolcanicWinter_AnimalDensityFactor_Verse_Map_">GameCondition_VolcanicWinter.AnimalDensityFactor(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition_VolcanicWinter.html#RimWorld_GameCondition_VolcanicWinter_AllowEnjoyableOutsideNow_Verse_Map_">GameCondition_VolcanicWinter.AllowEnjoyableOutsideNow(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_gameConditionManager">GameCondition.gameConditionManager</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_conditionCauser">GameCondition.conditionCauser</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_hideSource">GameCondition.hideSource</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_def">GameCondition.def</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_uniqueID">GameCondition.uniqueID</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_startTick">GameCondition.startTick</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_suppressEndMessage">GameCondition.suppressEndMessage</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_forceDisplayAsDuration">GameCondition.forceDisplayAsDuration</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_quest">GameCondition.quest</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_psychicRitualDef">GameCondition.psychicRitualDef</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_ExposeData">GameCondition.ExposeData()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_GameConditionTick">GameCondition.GameConditionTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_GameConditionDraw_Verse_Map_">GameCondition.GameConditionDraw(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_Init">GameCondition.Init()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_End">GameCondition.End()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_CanApplyOnMap_Verse_Map_">GameCondition.CanApplyOnMap(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_MapExcludedByFilter_Verse_GameConditionDef_Verse_Map_">GameCondition.MapExcludedByFilter(GameConditionDef, Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_HiddenByOtherCondition_Verse_Map_">GameCondition.HiddenByOtherCondition(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_SkyGazeChanceFactor_Verse_Map_">GameCondition.SkyGazeChanceFactor(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_SkyGazeJoyGainFactor_Verse_Map_">GameCondition.SkyGazeJoyGainFactor(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_PlantDensityFactor_Verse_Map_">GameCondition.PlantDensityFactor(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_SkyOverlays_Verse_Map_">GameCondition.SkyOverlays(Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_DoCellSteadyEffects_Verse_IntVec3_Verse_Map_">GameCondition.DoCellSteadyEffects(IntVec3, Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_ForcedWeather">GameCondition.ForcedWeather()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_MinWindSpeed">GameCondition.MinWindSpeed()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_WeatherCommonalityFactor_Verse_WeatherDef_Verse_Map_">GameCondition.WeatherCommonalityFactor(WeatherDef, Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_PostMake">GameCondition.PostMake()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_RandomizeSettings_System_Single_Verse_Map_System_Collections_Generic_List_Verse_Grammar_Rule__System_Collections_Generic_Dictionary_System_String_System_String__">GameCondition.RandomizeSettings(float, Map, List&lt;Rule&gt;, Dictionary&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_GetUniqueLoadID">GameCondition.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_SingleMap">GameCondition.SingleMap</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_Label">GameCondition.Label</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_LabelCap">GameCondition.LabelCap</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_LetterText">GameCondition.LetterText</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_Expired">GameCondition.Expired</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_ElectricityDisabled">GameCondition.ElectricityDisabled</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_TicksPassed">GameCondition.TicksPassed</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_Description">GameCondition.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_TicksLeft">GameCondition.TicksLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_Permanent">GameCondition.Permanent</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_Duration">GameCondition.Duration</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_TooltipString">GameCondition.TooltipString</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.GameCondition.html#RimWorld_GameCondition_AffectedMaps">GameCondition.AffectedMaps</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_GameCondition_SmokeSpewer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GameCondition_SmokeSpewer : GameCondition_VolcanicWinter, IExposable, ILoadReferenceable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_GameCondition_SmokeSpewer__ctor_" data-uid="RimWorld.GameCondition_SmokeSpewer.#ctor*"></a>
+  <h4 id="RimWorld_GameCondition_SmokeSpewer__ctor" data-uid="RimWorld.GameCondition_SmokeSpewer.#ctor">GameCondition_SmokeSpewer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameCondition_SmokeSpewer()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_GameCondition_SmokeSpewer_TransitionTicks_" data-uid="RimWorld.GameCondition_SmokeSpewer.TransitionTicks*"></a>
+  <h4 id="RimWorld_GameCondition_SmokeSpewer_TransitionTicks" data-uid="RimWorld.GameCondition_SmokeSpewer.TransitionTicks">TransitionTicks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int TransitionTicks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.GameCondition_VolcanicWinter.html#RimWorld_GameCondition_VolcanicWinter_TransitionTicks">GameCondition_VolcanicWinter.TransitionTicks</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

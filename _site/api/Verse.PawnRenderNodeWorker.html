@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PawnRenderNodeWorker </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PawnRenderNodeWorker ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.PawnRenderNodeWorker">
+
+
+
+  <h1 id="Verse_PawnRenderNodeWorker" data-uid="Verse.PawnRenderNodeWorker" class="text-break">Class PawnRenderNodeWorker</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">PawnRenderNodeWorker</span></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_AnimalBody.html">PawnRenderNodeWorker_AnimalBody</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_AnimalPack.html">PawnRenderNodeWorker_AnimalPack</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_Body.html">PawnRenderNodeWorker_Body</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_Carried.html">PawnRenderNodeWorker_Carried</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_FlipWhenCrawling.html">PawnRenderNodeWorker_FlipWhenCrawling</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_Hediff.html">PawnRenderNodeWorker_Hediff</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_NociosphereSegment.html">PawnRenderNodeWorker_NociosphereSegment</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_Overlay.html">PawnRenderNodeWorker_Overlay</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_Spastic.html">PawnRenderNodeWorker_Spastic</a></div>
+      <div class="level2"><a class="xref" href="Verse.PawnRenderNodeWorker_TurretGun.html">PawnRenderNodeWorker_TurretGun</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_PawnRenderNodeWorker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PawnRenderNodeWorker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Verse_PawnRenderNodeWorker__ctor_" data-uid="Verse.PawnRenderNodeWorker.#ctor*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker__ctor" data-uid="Verse.PawnRenderNodeWorker.#ctor">PawnRenderNodeWorker()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PawnRenderNodeWorker()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_PawnRenderNodeWorker_AltitudeFor_" data-uid="Verse.PawnRenderNodeWorker.AltitudeFor*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_AltitudeFor_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.AltitudeFor(Verse.PawnRenderNode,Verse.PawnDrawParms)">AltitudeFor(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float AltitudeFor(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_AppendDrawRequests_" data-uid="Verse.PawnRenderNodeWorker.AppendDrawRequests*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_AppendDrawRequests_Verse_PawnRenderNode_Verse_PawnDrawParms_System_Collections_Generic_List_Verse_PawnGraphicDrawRequest__" data-uid="Verse.PawnRenderNodeWorker.AppendDrawRequests(Verse.PawnRenderNode,Verse.PawnDrawParms,System.Collections.Generic.List{Verse.PawnGraphicDrawRequest})">AppendDrawRequests(PawnRenderNode, PawnDrawParms, List&lt;PawnGraphicDrawRequest&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void AppendDrawRequests(PawnRenderNode node, PawnDrawParms parms, List&lt;PawnGraphicDrawRequest&gt; requests)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.PawnGraphicDrawRequest.html">PawnGraphicDrawRequest</a>&gt;</td>
+        <td><span class="parametername">requests</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_CanDrawNow_" data-uid="Verse.PawnRenderNodeWorker.CanDrawNow*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_CanDrawNow_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.CanDrawNow(Verse.PawnRenderNode,Verse.PawnDrawParms)">CanDrawNow(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CanDrawNow(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_GetFinalizedMaterial_" data-uid="Verse.PawnRenderNodeWorker.GetFinalizedMaterial*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_GetFinalizedMaterial_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.GetFinalizedMaterial(Verse.PawnRenderNode,Verse.PawnDrawParms)">GetFinalizedMaterial(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Material GetFinalizedMaterial(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_GetGraphic_" data-uid="Verse.PawnRenderNodeWorker.GetGraphic*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_GetGraphic_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.GetGraphic(Verse.PawnRenderNode,Verse.PawnDrawParms)">GetGraphic(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Graphic GetGraphic(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Graphic.html">Graphic</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_GetGraphicState_" data-uid="Verse.PawnRenderNodeWorker.GetGraphicState*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_GetGraphicState_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.GetGraphicState(Verse.PawnRenderNode,Verse.PawnDrawParms)">GetGraphicState(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual GraphicStateDef GetGraphicState(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.GraphicStateDef.html">GraphicStateDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_GetMaterial_" data-uid="Verse.PawnRenderNodeWorker.GetMaterial*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_GetMaterial_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.GetMaterial(Verse.PawnRenderNode,Verse.PawnDrawParms)">GetMaterial(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Material GetMaterial(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_GetMaterialPropertyBlock_" data-uid="Verse.PawnRenderNodeWorker.GetMaterialPropertyBlock*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_GetMaterialPropertyBlock_Verse_PawnRenderNode_UnityEngine_Material_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.GetMaterialPropertyBlock(Verse.PawnRenderNode,UnityEngine.Material,Verse.PawnDrawParms)">GetMaterialPropertyBlock(PawnRenderNode, Material, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual MaterialPropertyBlock GetMaterialPropertyBlock(PawnRenderNode node, Material material, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.MaterialPropertyBlock.html">MaterialPropertyBlock</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_GetSubWorkerList_" data-uid="Verse.PawnRenderNodeWorker.GetSubWorkerList*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_GetSubWorkerList_System_Collections_Generic_List_System_Type__" data-uid="Verse.PawnRenderNodeWorker.GetSubWorkerList(System.Collections.Generic.List{System.Type})">GetSubWorkerList(List&lt;Type&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;PawnRenderSubWorker&gt; GetSubWorkerList(List&lt;Type&gt; types)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</td>
+        <td><span class="parametername">types</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.PawnRenderSubWorker.html">PawnRenderSubWorker</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_LayerFor_" data-uid="Verse.PawnRenderNodeWorker.LayerFor*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_LayerFor_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.LayerFor(Verse.PawnRenderNode,Verse.PawnDrawParms)">LayerFor(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float LayerFor(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_OffsetFor_" data-uid="Verse.PawnRenderNodeWorker.OffsetFor*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_OffsetFor_Verse_PawnRenderNode_Verse_PawnDrawParms_UnityEngine_Vector3__" data-uid="Verse.PawnRenderNodeWorker.OffsetFor(Verse.PawnRenderNode,Verse.PawnDrawParms,UnityEngine.Vector3@)">OffsetFor(PawnRenderNode, PawnDrawParms, out Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 OffsetFor(PawnRenderNode node, PawnDrawParms parms, out Vector3 pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">pivot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_PivotFor_" data-uid="Verse.PawnRenderNodeWorker.PivotFor*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_PivotFor_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.PivotFor(Verse.PawnRenderNode,Verse.PawnDrawParms)">PivotFor(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Vector3 PivotFor(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_PostDraw_" data-uid="Verse.PawnRenderNodeWorker.PostDraw*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_PostDraw_Verse_PawnRenderNode_Verse_PawnDrawParms_UnityEngine_Mesh_UnityEngine_Matrix4x4_" data-uid="Verse.PawnRenderNodeWorker.PostDraw(Verse.PawnRenderNode,Verse.PawnDrawParms,UnityEngine.Mesh,UnityEngine.Matrix4x4)">PostDraw(PawnRenderNode, PawnDrawParms, Mesh, Matrix4x4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostDraw(PawnRenderNode node, PawnDrawParms parms, Mesh mesh, Matrix4x4 matrix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Mesh.html">Mesh</a></td>
+        <td><span class="parametername">mesh</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Matrix4x4.html">Matrix4x4</a></td>
+        <td><span class="parametername">matrix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_PreDraw_" data-uid="Verse.PawnRenderNodeWorker.PreDraw*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_PreDraw_Verse_PawnRenderNode_UnityEngine_Material_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.PreDraw(Verse.PawnRenderNode,UnityEngine.Material,Verse.PawnDrawParms)">PreDraw(PawnRenderNode, Material, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PreDraw(PawnRenderNode node, Material mat, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td><span class="parametername">mat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_RotationFor_" data-uid="Verse.PawnRenderNodeWorker.RotationFor*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_RotationFor_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.RotationFor(Verse.PawnRenderNode,Verse.PawnDrawParms)">RotationFor(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Quaternion RotationFor(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Quaternion.html">Quaternion</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_ScaleFor_" data-uid="Verse.PawnRenderNodeWorker.ScaleFor*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_ScaleFor_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.ScaleFor(Verse.PawnRenderNode,Verse.PawnDrawParms)">ScaleFor(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Vector3 ScaleFor(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_PawnRenderNodeWorker_ShouldListOnGraph_" data-uid="Verse.PawnRenderNodeWorker.ShouldListOnGraph*"></a>
+  <h4 id="Verse_PawnRenderNodeWorker_ShouldListOnGraph_Verse_PawnRenderNode_Verse_PawnDrawParms_" data-uid="Verse.PawnRenderNodeWorker.ShouldListOnGraph(Verse.PawnRenderNode,Verse.PawnDrawParms)">ShouldListOnGraph(PawnRenderNode, PawnDrawParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ShouldListOnGraph(PawnRenderNode node, PawnDrawParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a></td>
+        <td><span class="parametername">node</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.PawnDrawParms.html">PawnDrawParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

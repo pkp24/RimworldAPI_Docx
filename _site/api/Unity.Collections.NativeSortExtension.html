@@ -1,0 +1,2216 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class NativeSortExtension </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class NativeSortExtension ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Unity.Collections.NativeSortExtension">
+
+
+
+  <h1 id="Unity_Collections_NativeSortExtension" data-uid="Unity.Collections.NativeSortExtension" class="text-break">Class NativeSortExtension</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">NativeSortExtension</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Unity.html">Unity</a>.<a class="xref" href="Unity.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: Unity.Collections.dll</h6>
+  <h5 id="Unity_Collections_NativeSortExtension_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility]
+public static class NativeSortExtension</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__1_Unity_Collections_LowLevel_Unsafe_UnsafeList___0____0_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``1(Unity.Collections.LowLevel.Unsafe.UnsafeList{``0},``0)">BinarySearch&lt;T&gt;(UnsafeList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static int BinarySearch&lt;T&gt;(this UnsafeList&lt;T&gt; list, T value) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.LowLevel.Unsafe.UnsafeList-1.html">UnsafeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__1_Unity_Collections_NativeArray___0____0_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``1(Unity.Collections.NativeArray{``0},``0)">BinarySearch&lt;T&gt;(NativeArray&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static int BinarySearch&lt;T&gt;(this NativeArray&lt;T&gt; array, T value) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__1_Unity_Collections_NativeArray___0__ReadOnly___0_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``1(Unity.Collections.NativeArray{``0}.ReadOnly,``0)">BinarySearch&lt;T&gt;(ReadOnly, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static int BinarySearch&lt;T&gt;(this NativeArray&lt;T&gt;.ReadOnly array, T value) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__1_Unity_Collections_NativeList___0____0_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``1(Unity.Collections.NativeList{``0},``0)">BinarySearch&lt;T&gt;(NativeList&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static int BinarySearch&lt;T&gt;(this NativeList&lt;T&gt; list, T value) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__1_Unity_Collections_NativeSlice___0____0_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``1(Unity.Collections.NativeSlice{``0},``0)">BinarySearch&lt;T&gt;(NativeSlice&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static int BinarySearch&lt;T&gt;(this NativeSlice&lt;T&gt; slice, T value) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeSlice-1.html">NativeSlice</a>&lt;T&gt;</td>
+        <td><span class="parametername">slice</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__1___0__System_Int32___0_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``1(``0*,System.Int32,``0)">BinarySearch&lt;T&gt;(T*, int, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static int BinarySearch&lt;T&gt;(T* ptr, int length, T value) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T*</td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__2_Unity_Collections_LowLevel_Unsafe_UnsafeList___0____0___1_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``2(Unity.Collections.LowLevel.Unsafe.UnsafeList{``0},``0,``1)">BinarySearch&lt;T, U&gt;(UnsafeList&lt;T&gt;, T, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static int BinarySearch&lt;T, U&gt;(this UnsafeList&lt;T&gt; list, T value, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.LowLevel.Unsafe.UnsafeList-1.html">UnsafeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__2_Unity_Collections_NativeArray___0____0___1_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``2(Unity.Collections.NativeArray{``0},``0,``1)">BinarySearch&lt;T, U&gt;(NativeArray&lt;T&gt;, T, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static int BinarySearch&lt;T, U&gt;(this NativeArray&lt;T&gt; array, T value, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__2_Unity_Collections_NativeArray___0__ReadOnly___0___1_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``2(Unity.Collections.NativeArray{``0}.ReadOnly,``0,``1)">BinarySearch&lt;T, U&gt;(ReadOnly, T, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static int BinarySearch&lt;T, U&gt;(this NativeArray&lt;T&gt;.ReadOnly array, T value, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;.<a class="xref" href="Unity.Collections.NativeArray-1.ReadOnly.html">ReadOnly</a></td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__2_Unity_Collections_NativeList___0____0___1_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``2(Unity.Collections.NativeList{``0},``0,``1)">BinarySearch&lt;T, U&gt;(NativeList&lt;T&gt;, T, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static int BinarySearch&lt;T, U&gt;(this NativeList&lt;T&gt; list, T value, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__2_Unity_Collections_NativeSlice___0____0___1_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``2(Unity.Collections.NativeSlice{``0},``0,``1)">BinarySearch&lt;T, U&gt;(NativeSlice&lt;T&gt;, T, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static int BinarySearch&lt;T, U&gt;(this NativeSlice&lt;T&gt; slice, T value, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeSlice-1.html">NativeSlice</a>&lt;T&gt;</td>
+        <td><span class="parametername">slice</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_BinarySearch_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_BinarySearch__2___0__System_Int32___0___1_" data-uid="Unity.Collections.NativeSortExtension.BinarySearch``2(``0*,System.Int32,``0,``1)">BinarySearch&lt;T, U&gt;(T*, int, T, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static int BinarySearch&lt;T, U&gt;(T* ptr, int length, T value, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T*</td>
+        <td><span class="parametername">ptr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJobDefer_" data-uid="Unity.Collections.NativeSortExtension.SortJobDefer*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJobDefer__1_Unity_Collections_NativeList___0__" data-uid="Unity.Collections.NativeSortExtension.SortJobDefer``1(Unity.Collections.NativeList{``0})">SortJobDefer&lt;T&gt;(NativeList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int) })]
+public static SortJobDefer&lt;T, NativeSortExtension.DefaultComparer&lt;T&gt;&gt; SortJobDefer&lt;T&gt;(this NativeList&lt;T&gt; list) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJobDefer-2.html">SortJobDefer</a>&lt;T, <a class="xref" href="Unity.Collections.NativeSortExtension.html">NativeSortExtension</a>.<a class="xref" href="Unity.Collections.NativeSortExtension.DefaultComparer-1.html">DefaultComparer</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJobDefer_" data-uid="Unity.Collections.NativeSortExtension.SortJobDefer*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJobDefer__2_Unity_Collections_NativeList___0____1_" data-uid="Unity.Collections.NativeSortExtension.SortJobDefer``2(Unity.Collections.NativeList{``0},``1)">SortJobDefer&lt;T, U&gt;(NativeList&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static SortJobDefer&lt;T, U&gt; SortJobDefer&lt;T, U&gt;(this NativeList&lt;T&gt; list, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJobDefer-2.html">SortJobDefer</a>&lt;T, U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__1_Unity_Collections_LowLevel_Unsafe_UnsafeList___0__" data-uid="Unity.Collections.NativeSortExtension.SortJob``1(Unity.Collections.LowLevel.Unsafe.UnsafeList{``0})">SortJob&lt;T&gt;(UnsafeList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int) })]
+public static SortJob&lt;T, NativeSortExtension.DefaultComparer&lt;T&gt;&gt; SortJob&lt;T&gt;(this UnsafeList&lt;T&gt; list) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.LowLevel.Unsafe.UnsafeList-1.html">UnsafeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, <a class="xref" href="Unity.Collections.NativeSortExtension.html">NativeSortExtension</a>.<a class="xref" href="Unity.Collections.NativeSortExtension.DefaultComparer-1.html">DefaultComparer</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__1_Unity_Collections_NativeArray___0__" data-uid="Unity.Collections.NativeSortExtension.SortJob``1(Unity.Collections.NativeArray{``0})">SortJob&lt;T&gt;(NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int) })]
+public static SortJob&lt;T, NativeSortExtension.DefaultComparer&lt;T&gt;&gt; SortJob&lt;T&gt;(this NativeArray&lt;T&gt; array) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, <a class="xref" href="Unity.Collections.NativeSortExtension.html">NativeSortExtension</a>.<a class="xref" href="Unity.Collections.NativeSortExtension.DefaultComparer-1.html">DefaultComparer</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__1_Unity_Collections_NativeList___0__" data-uid="Unity.Collections.NativeSortExtension.SortJob``1(Unity.Collections.NativeList{``0})">SortJob&lt;T&gt;(NativeList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int) })]
+public static SortJob&lt;T, NativeSortExtension.DefaultComparer&lt;T&gt;&gt; SortJob&lt;T&gt;(this NativeList&lt;T&gt; list) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, <a class="xref" href="Unity.Collections.NativeSortExtension.html">NativeSortExtension</a>.<a class="xref" href="Unity.Collections.NativeSortExtension.DefaultComparer-1.html">DefaultComparer</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__1_Unity_Collections_NativeSlice___0__" data-uid="Unity.Collections.NativeSortExtension.SortJob``1(Unity.Collections.NativeSlice{``0})">SortJob&lt;T&gt;(NativeSlice&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int) })]
+public static SortJob&lt;T, NativeSortExtension.DefaultComparer&lt;T&gt;&gt; SortJob&lt;T&gt;(this NativeSlice&lt;T&gt; slice) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeSlice-1.html">NativeSlice</a>&lt;T&gt;</td>
+        <td><span class="parametername">slice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, <a class="xref" href="Unity.Collections.NativeSortExtension.html">NativeSortExtension</a>.<a class="xref" href="Unity.Collections.NativeSortExtension.DefaultComparer-1.html">DefaultComparer</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__1___0__System_Int32_" data-uid="Unity.Collections.NativeSortExtension.SortJob``1(``0*,System.Int32)">SortJob&lt;T&gt;(T*, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int) })]
+public static SortJob&lt;T, NativeSortExtension.DefaultComparer&lt;T&gt;&gt; SortJob&lt;T&gt;(T* array, int length) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T*</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, <a class="xref" href="Unity.Collections.NativeSortExtension.html">NativeSortExtension</a>.<a class="xref" href="Unity.Collections.NativeSortExtension.DefaultComparer-1.html">DefaultComparer</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__2_Unity_Collections_LowLevel_Unsafe_UnsafeList___0____1_" data-uid="Unity.Collections.NativeSortExtension.SortJob``2(Unity.Collections.LowLevel.Unsafe.UnsafeList{``0},``1)">SortJob&lt;T, U&gt;(UnsafeList&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static SortJob&lt;T, U&gt; SortJob&lt;T, U&gt;(this UnsafeList&lt;T&gt; list, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.LowLevel.Unsafe.UnsafeList-1.html">UnsafeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__2_Unity_Collections_NativeArray___0____1_" data-uid="Unity.Collections.NativeSortExtension.SortJob``2(Unity.Collections.NativeArray{``0},``1)">SortJob&lt;T, U&gt;(NativeArray&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static SortJob&lt;T, U&gt; SortJob&lt;T, U&gt;(this NativeArray&lt;T&gt; array, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__2_Unity_Collections_NativeList___0____1_" data-uid="Unity.Collections.NativeSortExtension.SortJob``2(Unity.Collections.NativeList{``0},``1)">SortJob&lt;T, U&gt;(NativeList&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static SortJob&lt;T, U&gt; SortJob&lt;T, U&gt;(this NativeList&lt;T&gt; list, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__2_Unity_Collections_NativeSlice___0____1_" data-uid="Unity.Collections.NativeSortExtension.SortJob``2(Unity.Collections.NativeSlice{``0},``1)">SortJob&lt;T, U&gt;(NativeSlice&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static SortJob&lt;T, U&gt; SortJob&lt;T, U&gt;(this NativeSlice&lt;T&gt; slice, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeSlice-1.html">NativeSlice</a>&lt;T&gt;</td>
+        <td><span class="parametername">slice</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_SortJob_" data-uid="Unity.Collections.NativeSortExtension.SortJob*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_SortJob__2___0__System_Int32___1_" data-uid="Unity.Collections.NativeSortExtension.SortJob``2(``0*,System.Int32,``1)">SortJob&lt;T, U&gt;(T*, int, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(RequiredUnityDefine = &quot;UNITY_2020_2_OR_NEWER&quot;, GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static SortJob&lt;T, U&gt; SortJob&lt;T, U&gt;(T* array, int length, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T*</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.SortJob-2.html">SortJob</a>&lt;T, U&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__1_Unity_Collections_LowLevel_Unsafe_UnsafeList___0__" data-uid="Unity.Collections.NativeSortExtension.Sort``1(Unity.Collections.LowLevel.Unsafe.UnsafeList{``0})">Sort&lt;T&gt;(UnsafeList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static void Sort&lt;T&gt;(this UnsafeList&lt;T&gt; list) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.LowLevel.Unsafe.UnsafeList-1.html">UnsafeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__1_Unity_Collections_NativeArray___0__" data-uid="Unity.Collections.NativeSortExtension.Sort``1(Unity.Collections.NativeArray{``0})">Sort&lt;T&gt;(NativeArray&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static void Sort&lt;T&gt;(this NativeArray&lt;T&gt; array) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__1_Unity_Collections_NativeList___0__" data-uid="Unity.Collections.NativeSortExtension.Sort``1(Unity.Collections.NativeList{``0})">Sort&lt;T&gt;(NativeList&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static void Sort&lt;T&gt;(this NativeList&lt;T&gt; list) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__1_Unity_Collections_NativeSlice___0__" data-uid="Unity.Collections.NativeSortExtension.Sort``1(Unity.Collections.NativeSlice{``0})">Sort&lt;T&gt;(NativeSlice&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static void Sort&lt;T&gt;(this NativeSlice&lt;T&gt; slice) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeSlice-1.html">NativeSlice</a>&lt;T&gt;</td>
+        <td><span class="parametername">slice</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__1___0__System_Int32_" data-uid="Unity.Collections.NativeSortExtension.Sort``1(``0*,System.Int32)">Sort&lt;T&gt;(T*, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int) })]
+public static void Sort&lt;T&gt;(T* array, int length) where T : unmanaged, IComparable&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T*</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__2_Unity_Collections_LowLevel_Unsafe_UnsafeList___0____1_" data-uid="Unity.Collections.NativeSortExtension.Sort``2(Unity.Collections.LowLevel.Unsafe.UnsafeList{``0},``1)">Sort&lt;T, U&gt;(UnsafeList&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static void Sort&lt;T, U&gt;(this UnsafeList&lt;T&gt; list, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.LowLevel.Unsafe.UnsafeList-1.html">UnsafeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__2_Unity_Collections_NativeArray___0____1_" data-uid="Unity.Collections.NativeSortExtension.Sort``2(Unity.Collections.NativeArray{``0},``1)">Sort&lt;T, U&gt;(NativeArray&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static void Sort&lt;T, U&gt;(this NativeArray&lt;T&gt; array, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;T&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__2_Unity_Collections_NativeList___0____1_" data-uid="Unity.Collections.NativeSortExtension.Sort``2(Unity.Collections.NativeList{``0},``1)">Sort&lt;T, U&gt;(NativeList&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static void Sort&lt;T, U&gt;(this NativeList&lt;T&gt; list, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeList-1.html">NativeList</a>&lt;T&gt;</td>
+        <td><span class="parametername">list</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__2_Unity_Collections_NativeSlice___0____1_" data-uid="Unity.Collections.NativeSortExtension.Sort``2(Unity.Collections.NativeSlice{``0},``1)">Sort&lt;T, U&gt;(NativeSlice&lt;T&gt;, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static void Sort&lt;T, U&gt;(this NativeSlice&lt;T&gt; slice, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeSlice-1.html">NativeSlice</a>&lt;T&gt;</td>
+        <td><span class="parametername">slice</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_NativeSortExtension_Sort_" data-uid="Unity.Collections.NativeSortExtension.Sort*"></a>
+  <h4 id="Unity_Collections_NativeSortExtension_Sort__2___0__System_Int32___1_" data-uid="Unity.Collections.NativeSortExtension.Sort``2(``0*,System.Int32,``1)">Sort&lt;T, U&gt;(T*, int, U)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[GenerateTestsForBurstCompatibility(GenericTypeArguments = new Type[] { typeof(int), typeof(NativeSortExtension.DefaultComparer&lt;int&gt;) })]
+public static void Sort&lt;T, U&gt;(T* array, int length, U comp) where T : unmanaged where U : IComparer&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T*</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">length</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">U</span></td>
+        <td><span class="parametername">comp</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">U</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

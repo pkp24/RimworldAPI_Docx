@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class TerrainPaintUtility </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class TerrainPaintUtility ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility">
+
+
+
+  <h1 id="UnityEngine_TerrainTools_TerrainPaintUtility" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility" class="text-break">Class TerrainPaintUtility</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">TerrainPaintUtility</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.TerrainTools.html">TerrainTools</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.TerrainModule.dll</h6>
+  <h5 id="UnityEngine_TerrainTools_TerrainPaintUtility_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MovedFrom(&quot;UnityEngine.Experimental.TerrainAPI&quot;)]
+public static class TerrainPaintUtility</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_BeginPaintHeightmap_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.BeginPaintHeightmap*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_BeginPaintHeightmap_UnityEngine_Terrain_UnityEngine_Rect_System_Int32_System_Boolean_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.BeginPaintHeightmap(UnityEngine.Terrain,UnityEngine.Rect,System.Int32,System.Boolean)">BeginPaintHeightmap(Terrain, Rect, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PaintContext BeginPaintHeightmap(Terrain terrain, Rect boundsInTerrainSpace, int extraBorderPixels = 0, bool fillOutsideTerrain = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rect.html">Rect</a></td>
+        <td><span class="parametername">boundsInTerrainSpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">extraBorderPixels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fillOutsideTerrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_BeginPaintHoles_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.BeginPaintHoles*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_BeginPaintHoles_UnityEngine_Terrain_UnityEngine_Rect_System_Int32_System_Boolean_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.BeginPaintHoles(UnityEngine.Terrain,UnityEngine.Rect,System.Int32,System.Boolean)">BeginPaintHoles(Terrain, Rect, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PaintContext BeginPaintHoles(Terrain terrain, Rect boundsInTerrainSpace, int extraBorderPixels = 0, bool fillOutsideTerrain = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rect.html">Rect</a></td>
+        <td><span class="parametername">boundsInTerrainSpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">extraBorderPixels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fillOutsideTerrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_BeginPaintTexture_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.BeginPaintTexture*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_BeginPaintTexture_UnityEngine_Terrain_UnityEngine_Rect_UnityEngine_TerrainLayer_System_Int32_System_Boolean_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.BeginPaintTexture(UnityEngine.Terrain,UnityEngine.Rect,UnityEngine.TerrainLayer,System.Int32,System.Boolean)">BeginPaintTexture(Terrain, Rect, TerrainLayer, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PaintContext BeginPaintTexture(Terrain terrain, Rect boundsInTerrainSpace, TerrainLayer inputLayer, int extraBorderPixels = 0, bool fillOutsideTerrain = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rect.html">Rect</a></td>
+        <td><span class="parametername">boundsInTerrainSpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainLayer.html">TerrainLayer</a></td>
+        <td><span class="parametername">inputLayer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">extraBorderPixels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fillOutsideTerrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_BuildTransformPaintContextUVToPaintContextUV_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.BuildTransformPaintContextUVToPaintContextUV*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_BuildTransformPaintContextUVToPaintContextUV_UnityEngine_TerrainTools_PaintContext_UnityEngine_TerrainTools_PaintContext_UnityEngine_Vector4__" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.BuildTransformPaintContextUVToPaintContextUV(UnityEngine.TerrainTools.PaintContext,UnityEngine.TerrainTools.PaintContext,UnityEngine.Vector4@)">BuildTransformPaintContextUVToPaintContextUV(PaintContext, PaintContext, out Vector4)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void BuildTransformPaintContextUVToPaintContextUV(PaintContext src, PaintContext dst, out Vector4 scaleOffset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td><span class="parametername">src</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td><span class="parametername">dst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector4.html">Vector4</a></td>
+        <td><span class="parametername">scaleOffset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_CalculateBrushTransform_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.CalculateBrushTransform*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_CalculateBrushTransform_UnityEngine_Terrain_UnityEngine_Vector2_System_Single_System_Single_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.CalculateBrushTransform(UnityEngine.Terrain,UnityEngine.Vector2,System.Single,System.Single)">CalculateBrushTransform(Terrain, Vector2, float, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BrushTransform CalculateBrushTransform(Terrain terrain, Vector2 brushCenterTerrainUV, float brushSize, float brushRotationDegrees)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector2.html">Vector2</a></td>
+        <td><span class="parametername">brushCenterTerrainUV</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">brushSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">brushRotationDegrees</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.BrushTransform.html">BrushTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_CollectNormals_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.CollectNormals*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_CollectNormals_UnityEngine_Terrain_UnityEngine_Rect_System_Int32_System_Boolean_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.CollectNormals(UnityEngine.Terrain,UnityEngine.Rect,System.Int32,System.Boolean)">CollectNormals(Terrain, Rect, int, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PaintContext CollectNormals(Terrain terrain, Rect boundsInTerrainSpace, int extraBorderPixels = 0, bool fillOutsideTerrain = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rect.html">Rect</a></td>
+        <td><span class="parametername">boundsInTerrainSpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">extraBorderPixels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">fillOutsideTerrain</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_EndPaintHeightmap_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.EndPaintHeightmap*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_EndPaintHeightmap_UnityEngine_TerrainTools_PaintContext_System_String_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.EndPaintHeightmap(UnityEngine.TerrainTools.PaintContext,System.String)">EndPaintHeightmap(PaintContext, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EndPaintHeightmap(PaintContext ctx, string editorUndoName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">editorUndoName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_EndPaintHoles_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.EndPaintHoles*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_EndPaintHoles_UnityEngine_TerrainTools_PaintContext_System_String_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.EndPaintHoles(UnityEngine.TerrainTools.PaintContext,System.String)">EndPaintHoles(PaintContext, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EndPaintHoles(PaintContext ctx, string editorUndoName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">editorUndoName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_EndPaintTexture_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.EndPaintTexture*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_EndPaintTexture_UnityEngine_TerrainTools_PaintContext_System_String_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.EndPaintTexture(UnityEngine.TerrainTools.PaintContext,System.String)">EndPaintTexture(PaintContext, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void EndPaintTexture(PaintContext ctx, string editorUndoName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">editorUndoName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_FindTerrainLayerIndex_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.FindTerrainLayerIndex*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_FindTerrainLayerIndex_UnityEngine_Terrain_UnityEngine_TerrainLayer_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.FindTerrainLayerIndex(UnityEngine.Terrain,UnityEngine.TerrainLayer)">FindTerrainLayerIndex(Terrain, TerrainLayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FindTerrainLayerIndex(Terrain terrain, TerrainLayer inputLayer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainLayer.html">TerrainLayer</a></td>
+        <td><span class="parametername">inputLayer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_GetBlitMaterial_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetBlitMaterial*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_GetBlitMaterial" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetBlitMaterial">GetBlitMaterial()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Material GetBlitMaterial()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_GetBrushWorldSizeLimits_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetBrushWorldSizeLimits*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_GetBrushWorldSizeLimits_System_Single__System_Single__System_Single_System_Int32_System_Int32_System_Int32_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetBrushWorldSizeLimits(System.Single@,System.Single@,System.Single,System.Int32,System.Int32,System.Int32)">GetBrushWorldSizeLimits(out float, out float, float, int, int, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void GetBrushWorldSizeLimits(out float minBrushWorldSize, out float maxBrushWorldSize, float terrainTileWorldSize, int terrainTileTextureResolutionPixels, int minBrushResolutionPixels = 1, int maxBrushResolutionPixels = 8192)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">minBrushWorldSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">maxBrushWorldSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">terrainTileWorldSize</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">terrainTileTextureResolutionPixels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">minBrushResolutionPixels</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">maxBrushResolutionPixels</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_GetBuiltinPaintMaterial_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetBuiltinPaintMaterial*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_GetBuiltinPaintMaterial" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetBuiltinPaintMaterial">GetBuiltinPaintMaterial()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Material GetBuiltinPaintMaterial()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_GetCopyTerrainLayerMaterial_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetCopyTerrainLayerMaterial*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_GetCopyTerrainLayerMaterial" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetCopyTerrainLayerMaterial">GetCopyTerrainLayerMaterial()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Material GetCopyTerrainLayerMaterial()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_GetHeightBlitMaterial_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetHeightBlitMaterial*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_GetHeightBlitMaterial" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetHeightBlitMaterial">GetHeightBlitMaterial()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Material GetHeightBlitMaterial()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_GetTerrainAlphaMapChecked_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetTerrainAlphaMapChecked*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_GetTerrainAlphaMapChecked_UnityEngine_Terrain_System_Int32_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.GetTerrainAlphaMapChecked(UnityEngine.Terrain,System.Int32)">GetTerrainAlphaMapChecked(Terrain, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Texture2D GetTerrainAlphaMapChecked(Terrain terrain, int mapIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Terrain.html">Terrain</a></td>
+        <td><span class="parametername">terrain</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mapIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Texture2D.html">Texture2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_ReleaseContextResources_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.ReleaseContextResources*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_ReleaseContextResources_UnityEngine_TerrainTools_PaintContext_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.ReleaseContextResources(UnityEngine.TerrainTools.PaintContext)">ReleaseContextResources(PaintContext)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ReleaseContextResources(PaintContext ctx)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td><span class="parametername">ctx</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_TerrainTools_TerrainPaintUtility_SetupTerrainToolMaterialProperties_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.SetupTerrainToolMaterialProperties*"></a>
+  <h4 id="UnityEngine_TerrainTools_TerrainPaintUtility_SetupTerrainToolMaterialProperties_UnityEngine_TerrainTools_PaintContext_UnityEngine_TerrainTools_BrushTransform__UnityEngine_Material_" data-uid="UnityEngine.TerrainTools.TerrainPaintUtility.SetupTerrainToolMaterialProperties(UnityEngine.TerrainTools.PaintContext,UnityEngine.TerrainTools.BrushTransform@,UnityEngine.Material)">SetupTerrainToolMaterialProperties(PaintContext, in BrushTransform, Material)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetupTerrainToolMaterialProperties(PaintContext paintContext, in BrushTransform brushXform, Material material)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.PaintContext.html">PaintContext</a></td>
+        <td><span class="parametername">paintContext</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.TerrainTools.BrushTransform.html">BrushTransform</a></td>
+        <td><span class="parametername">brushXform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Material.html">Material</a></td>
+        <td><span class="parametername">material</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

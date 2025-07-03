@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PropertyBag </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PropertyBag ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Unity.Properties.PropertyBag">
+
+
+
+  <h1 id="Unity_Properties_PropertyBag" data-uid="Unity.Properties.PropertyBag" class="text-break">Class PropertyBag</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">PropertyBag</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Unity.html">Unity</a>.<a class="xref" href="Unity.Properties.html">Properties</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.PropertiesModule.dll</h6>
+  <h5 id="Unity_Properties_PropertyBag_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class PropertyBag</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Unity_Properties_PropertyBag_AcceptWithSpecializedVisitor_" data-uid="Unity.Properties.PropertyBag.AcceptWithSpecializedVisitor*"></a>
+  <h4 id="Unity_Properties_PropertyBag_AcceptWithSpecializedVisitor__1_Unity_Properties_IPropertyBag___0__Unity_Properties_IPropertyBagVisitor___0__" data-uid="Unity.Properties.PropertyBag.AcceptWithSpecializedVisitor``1(Unity.Properties.IPropertyBag{``0},Unity.Properties.IPropertyBagVisitor,``0@)">AcceptWithSpecializedVisitor&lt;TContainer&gt;(IPropertyBag&lt;TContainer&gt;, IPropertyBagVisitor, ref TContainer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AcceptWithSpecializedVisitor&lt;TContainer&gt;(IPropertyBag&lt;TContainer&gt; properties, IPropertyBagVisitor visitor, ref TContainer container)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Properties.IPropertyBag-1.html">IPropertyBag</a>&lt;TContainer&gt;</td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Properties.IPropertyBagVisitor.html">IPropertyBagVisitor</a></td>
+        <td><span class="parametername">visitor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">TContainer</span></td>
+        <td><span class="parametername">container</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_CreateInstance_" data-uid="Unity.Properties.PropertyBag.CreateInstance*"></a>
+  <h4 id="Unity_Properties_PropertyBag_CreateInstance__1" data-uid="Unity.Properties.PropertyBag.CreateInstance``1">CreateInstance&lt;TContainer&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TContainer CreateInstance&lt;TContainer&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TContainer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_Exists_" data-uid="Unity.Properties.PropertyBag.Exists*"></a>
+  <h4 id="Unity_Properties_PropertyBag_Exists_System_Type_" data-uid="Unity.Properties.PropertyBag.Exists(System.Type)">Exists(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Exists(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_Exists_" data-uid="Unity.Properties.PropertyBag.Exists*"></a>
+  <h4 id="Unity_Properties_PropertyBag_Exists__1" data-uid="Unity.Properties.PropertyBag.Exists``1">Exists&lt;TContainer&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Exists&lt;TContainer&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_GetAllTypesWithAPropertyBag_" data-uid="Unity.Properties.PropertyBag.GetAllTypesWithAPropertyBag*"></a>
+  <h4 id="Unity_Properties_PropertyBag_GetAllTypesWithAPropertyBag" data-uid="Unity.Properties.PropertyBag.GetAllTypesWithAPropertyBag">GetAllTypesWithAPropertyBag()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;Type&gt; GetAllTypesWithAPropertyBag()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_GetPropertyBag_" data-uid="Unity.Properties.PropertyBag.GetPropertyBag*"></a>
+  <h4 id="Unity_Properties_PropertyBag_GetPropertyBag_System_Type_" data-uid="Unity.Properties.PropertyBag.GetPropertyBag(System.Type)">GetPropertyBag(Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPropertyBag GetPropertyBag(Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Properties.IPropertyBag.html">IPropertyBag</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_GetPropertyBag_" data-uid="Unity.Properties.PropertyBag.GetPropertyBag*"></a>
+  <h4 id="Unity_Properties_PropertyBag_GetPropertyBag__1" data-uid="Unity.Properties.PropertyBag.GetPropertyBag``1">GetPropertyBag&lt;TContainer&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPropertyBag&lt;TContainer&gt; GetPropertyBag&lt;TContainer&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Properties.IPropertyBag-1.html">IPropertyBag</a>&lt;TContainer&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterArray_" data-uid="Unity.Properties.PropertyBag.RegisterArray*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterArray__1" data-uid="Unity.Properties.PropertyBag.RegisterArray``1">RegisterArray&lt;TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterArray&lt;TElement&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterArray_" data-uid="Unity.Properties.PropertyBag.RegisterArray*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterArray__2" data-uid="Unity.Properties.PropertyBag.RegisterArray``2">RegisterArray&lt;TContainer, TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterArray&lt;TContainer, TElement&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterDictionary_" data-uid="Unity.Properties.PropertyBag.RegisterDictionary*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterDictionary__2" data-uid="Unity.Properties.PropertyBag.RegisterDictionary``2">RegisterDictionary&lt;TKey, TValue&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterDictionary&lt;TKey, TValue&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterDictionary_" data-uid="Unity.Properties.PropertyBag.RegisterDictionary*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterDictionary__3" data-uid="Unity.Properties.PropertyBag.RegisterDictionary``3">RegisterDictionary&lt;TContainer, TKey, TValue&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterDictionary&lt;TContainer, TKey, TValue&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterHashSet_" data-uid="Unity.Properties.PropertyBag.RegisterHashSet*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterHashSet__1" data-uid="Unity.Properties.PropertyBag.RegisterHashSet``1">RegisterHashSet&lt;TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterHashSet&lt;TElement&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterHashSet_" data-uid="Unity.Properties.PropertyBag.RegisterHashSet*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterHashSet__2" data-uid="Unity.Properties.PropertyBag.RegisterHashSet``2">RegisterHashSet&lt;TContainer, TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterHashSet&lt;TContainer, TElement&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterIDictionary_" data-uid="Unity.Properties.PropertyBag.RegisterIDictionary*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterIDictionary__3" data-uid="Unity.Properties.PropertyBag.RegisterIDictionary``3">RegisterIDictionary&lt;TDictionary, TKey, TValue&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterIDictionary&lt;TDictionary, TKey, TValue&gt;() where TDictionary : IDictionary&lt;TKey, TValue&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TDictionary</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterIDictionary_" data-uid="Unity.Properties.PropertyBag.RegisterIDictionary*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterIDictionary__4" data-uid="Unity.Properties.PropertyBag.RegisterIDictionary``4">RegisterIDictionary&lt;TContainer, TDictionary, TKey, TValue&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterIDictionary&lt;TContainer, TDictionary, TKey, TValue&gt;() where TDictionary : IDictionary&lt;TKey, TValue&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TDictionary</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterIList_" data-uid="Unity.Properties.PropertyBag.RegisterIList*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterIList__2" data-uid="Unity.Properties.PropertyBag.RegisterIList``2">RegisterIList&lt;TList, TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterIList&lt;TList, TElement&gt;() where TList : IList&lt;TElement&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterIList_" data-uid="Unity.Properties.PropertyBag.RegisterIList*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterIList__3" data-uid="Unity.Properties.PropertyBag.RegisterIList``3">RegisterIList&lt;TContainer, TList, TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterIList&lt;TContainer, TList, TElement&gt;() where TList : IList&lt;TElement&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TList</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterISet_" data-uid="Unity.Properties.PropertyBag.RegisterISet*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterISet__2" data-uid="Unity.Properties.PropertyBag.RegisterISet``2">RegisterISet&lt;TSet, TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterISet&lt;TSet, TElement&gt;() where TSet : ISet&lt;TElement&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterISet_" data-uid="Unity.Properties.PropertyBag.RegisterISet*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterISet__3" data-uid="Unity.Properties.PropertyBag.RegisterISet``3">RegisterISet&lt;TContainer, TSet, TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterISet&lt;TContainer, TSet, TElement&gt;() where TSet : ISet&lt;TElement&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TSet</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterList_" data-uid="Unity.Properties.PropertyBag.RegisterList*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterList__1" data-uid="Unity.Properties.PropertyBag.RegisterList``1">RegisterList&lt;TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterList&lt;TElement&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_RegisterList_" data-uid="Unity.Properties.PropertyBag.RegisterList*"></a>
+  <h4 id="Unity_Properties_PropertyBag_RegisterList__2" data-uid="Unity.Properties.PropertyBag.RegisterList``2">RegisterList&lt;TContainer, TElement&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterList&lt;TContainer, TElement&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_Register_" data-uid="Unity.Properties.PropertyBag.Register*"></a>
+  <h4 id="Unity_Properties_PropertyBag_Register__1_Unity_Properties_PropertyBag___0__" data-uid="Unity.Properties.PropertyBag.Register``1(Unity.Properties.PropertyBag{``0})">Register&lt;TContainer&gt;(PropertyBag&lt;TContainer&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register&lt;TContainer&gt;(PropertyBag&lt;TContainer&gt; propertyBag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Properties.PropertyBag-1.html">PropertyBag</a>&lt;TContainer&gt;</td>
+        <td><span class="parametername">propertyBag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TContainer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Properties_PropertyBag_TryGetPropertyBagForValue_" data-uid="Unity.Properties.PropertyBag.TryGetPropertyBagForValue*"></a>
+  <h4 id="Unity_Properties_PropertyBag_TryGetPropertyBagForValue__1___0__Unity_Properties_IPropertyBag__" data-uid="Unity.Properties.PropertyBag.TryGetPropertyBagForValue``1(``0@,Unity.Properties.IPropertyBag@)">TryGetPropertyBagForValue&lt;TValue&gt;(ref TValue, out IPropertyBag)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetPropertyBagForValue&lt;TValue&gt;(ref TValue value, out IPropertyBag propertyBag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TValue</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Properties.IPropertyBag.html">IPropertyBag</a></td>
+        <td><span class="parametername">propertyBag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

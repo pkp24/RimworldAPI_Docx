@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Tale_SinglePawn </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Tale_SinglePawn ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Tale_SinglePawn">
+
+
+
+  <h1 id="RimWorld_Tale_SinglePawn" data-uid="RimWorld.Tale_SinglePawn" class="text-break">Class Tale_SinglePawn</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="RimWorld.Tale.html">Tale</a></div>
+    <div class="level2"><span class="xref">Tale_SinglePawn</span></div>
+      <div class="level3"><a class="xref" href="RimWorld.Tale_SinglePawnAndDef.html">Tale_SinglePawnAndDef</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.Tale_SinglePawnAndThing.html">Tale_SinglePawnAndThing</a></div>
+      <div class="level3"><a class="xref" href="RimWorld.Tale_SinglePawnAndTrader.html">Tale_SinglePawnAndTrader</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_def">Tale.def</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_id">Tale.id</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_date">Tale.date</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_surroundings">Tale.surroundings</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_customLabel">Tale.customLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_hidden">Tale.hidden</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_Notify_NewlyUsed">Tale.Notify_NewlyUsed()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_Notify_ReferenceDestroyed">Tale.Notify_ReferenceDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_GetTextGenerationIncludes">Tale.GetTextGenerationIncludes()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_GetTextGenerationRules_System_Collections_Generic_Dictionary_System_String_System_String__">Tale.GetTextGenerationRules(Dictionary&lt;string, string&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_GetUniqueLoadID">Tale.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_GetHashCode">Tale.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_ToString">Tale.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_AgeTicks">Tale.AgeTicks</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_Uses">Tale.Uses</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_Unused">Tale.Unused</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_InterestLevel">Tale.InterestLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_Expired">Tale.Expired</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Tale_SinglePawn_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Tale_SinglePawn : Tale, IExposable, ILoadReferenceable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Tale_SinglePawn__ctor_" data-uid="RimWorld.Tale_SinglePawn.#ctor*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn__ctor" data-uid="RimWorld.Tale_SinglePawn.#ctor">Tale_SinglePawn()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tale_SinglePawn()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_Tale_SinglePawn__ctor_" data-uid="RimWorld.Tale_SinglePawn.#ctor*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn__ctor_Verse_Pawn_" data-uid="RimWorld.Tale_SinglePawn.#ctor(Verse.Pawn)">Tale_SinglePawn(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Tale_SinglePawn(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_Tale_SinglePawn_pawnData" data-uid="RimWorld.Tale_SinglePawn.pawnData">pawnData</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TaleData_Pawn pawnData</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.TaleData_Pawn.html">TaleData_Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_Tale_SinglePawn_DominantPawn_" data-uid="RimWorld.Tale_SinglePawn.DominantPawn*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn_DominantPawn" data-uid="RimWorld.Tale_SinglePawn.DominantPawn">DominantPawn</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Pawn DominantPawn { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_DominantPawn">Tale.DominantPawn</a></div>
+
+
+  <a id="RimWorld_Tale_SinglePawn_ShortSummary_" data-uid="RimWorld.Tale_SinglePawn.ShortSummary*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn_ShortSummary" data-uid="RimWorld.Tale_SinglePawn.ShortSummary">ShortSummary</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ShortSummary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_ShortSummary">Tale.ShortSummary</a></div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Tale_SinglePawn_Concerns_" data-uid="RimWorld.Tale_SinglePawn.Concerns*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn_Concerns_Verse_Thing_" data-uid="RimWorld.Tale_SinglePawn.Concerns(Verse.Thing)">Concerns(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Concerns(Thing th)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">th</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_Concerns_Verse_Thing_">Tale.Concerns(Thing)</a></div>
+
+
+  <a id="RimWorld_Tale_SinglePawn_ExposeData_" data-uid="RimWorld.Tale_SinglePawn.ExposeData*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn_ExposeData" data-uid="RimWorld.Tale_SinglePawn.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExposeData()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_ExposeData">Tale.ExposeData()</a></div>
+
+
+  <a id="RimWorld_Tale_SinglePawn_GenerateTestData_" data-uid="RimWorld.Tale_SinglePawn.GenerateTestData*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn_GenerateTestData" data-uid="RimWorld.Tale_SinglePawn.GenerateTestData">GenerateTestData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void GenerateTestData()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_GenerateTestData">Tale.GenerateTestData()</a></div>
+
+
+  <a id="RimWorld_Tale_SinglePawn_Notify_FactionRemoved_" data-uid="RimWorld.Tale_SinglePawn.Notify_FactionRemoved*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn_Notify_FactionRemoved_RimWorld_Faction_" data-uid="RimWorld.Tale_SinglePawn.Notify_FactionRemoved(RimWorld.Faction)">Notify_FactionRemoved(Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Notify_FactionRemoved(Faction faction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_Notify_FactionRemoved_RimWorld_Faction_">Tale.Notify_FactionRemoved(Faction)</a></div>
+
+
+  <a id="RimWorld_Tale_SinglePawn_SpecialTextGenerationRules_" data-uid="RimWorld.Tale_SinglePawn.SpecialTextGenerationRules*"></a>
+  <h4 id="RimWorld_Tale_SinglePawn_SpecialTextGenerationRules_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="RimWorld.Tale_SinglePawn.SpecialTextGenerationRules(System.Collections.Generic.Dictionary{System.String,System.String})">SpecialTextGenerationRules(Dictionary&lt;string, string&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(Tale_SinglePawn.&lt;SpecialTextGenerationRules&gt;d__10))]
+protected override IEnumerable&lt;Rule&gt; SpecialTextGenerationRules(Dictionary&lt;string, string&gt; outConstants)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">outConstants</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Grammar.Rule.html">Rule</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Tale.html#RimWorld_Tale_SpecialTextGenerationRules_System_Collections_Generic_Dictionary_System_String_System_String__">Tale.SpecialTextGenerationRules(Dictionary&lt;string, string&gt;)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

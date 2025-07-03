@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class SiteMaker </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class SiteMaker ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Planet.SiteMaker">
+
+
+
+  <h1 id="RimWorld_Planet_SiteMaker" data-uid="RimWorld.Planet.SiteMaker" class="text-break">Class SiteMaker</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">SiteMaker</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a>.<a class="xref" href="RimWorld.Planet.html">Planet</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Planet_SiteMaker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class SiteMaker</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Planet_SiteMaker_MakeSite_" data-uid="RimWorld.Planet.SiteMaker.MakeSite*"></a>
+  <h4 id="RimWorld_Planet_SiteMaker_MakeSite_RimWorld_SitePartDef_RimWorld_Planet_PlanetTile_RimWorld_Faction_System_Boolean_System_Nullable_System_Single__RimWorld_WorldObjectDef_" data-uid="RimWorld.Planet.SiteMaker.MakeSite(RimWorld.SitePartDef,RimWorld.Planet.PlanetTile,RimWorld.Faction,System.Boolean,System.Nullable{System.Single},RimWorld.WorldObjectDef)">MakeSite(SitePartDef, PlanetTile, Faction, bool, float?, WorldObjectDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Site MakeSite(SitePartDef sitePart, PlanetTile tile, Faction faction, bool ifHostileThenMustRemainHostile = true, float? threatPoints = null, WorldObjectDef worldObjectDef = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.SitePartDef.html">SitePartDef</a></td>
+        <td><span class="parametername">sitePart</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ifHostileThenMustRemainHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.WorldObjectDef.html">WorldObjectDef</a></td>
+        <td><span class="parametername">worldObjectDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Site.html">Site</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_SiteMaker_MakeSite_" data-uid="RimWorld.Planet.SiteMaker.MakeSite*"></a>
+  <h4 id="RimWorld_Planet_SiteMaker_MakeSite_System_Collections_Generic_IEnumerable_RimWorld_Planet_SitePartDefWithParams__RimWorld_Planet_PlanetTile_RimWorld_Faction_System_Boolean_RimWorld_WorldObjectDef_" data-uid="RimWorld.Planet.SiteMaker.MakeSite(System.Collections.Generic.IEnumerable{RimWorld.Planet.SitePartDefWithParams},RimWorld.Planet.PlanetTile,RimWorld.Faction,System.Boolean,RimWorld.WorldObjectDef)">MakeSite(IEnumerable&lt;SitePartDefWithParams&gt;, PlanetTile, Faction, bool, WorldObjectDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Site MakeSite(IEnumerable&lt;SitePartDefWithParams&gt; siteParts, PlanetTile tile, Faction faction, bool ifHostileThenMustRemainHostile = true, WorldObjectDef worldObjectDef = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.Planet.SitePartDefWithParams.html">SitePartDefWithParams</a>&gt;</td>
+        <td><span class="parametername">siteParts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ifHostileThenMustRemainHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.WorldObjectDef.html">WorldObjectDef</a></td>
+        <td><span class="parametername">worldObjectDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Site.html">Site</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_SiteMaker_MakeSite_" data-uid="RimWorld.Planet.SiteMaker.MakeSite*"></a>
+  <h4 id="RimWorld_Planet_SiteMaker_MakeSite_System_Collections_Generic_IEnumerable_RimWorld_SitePartDef__RimWorld_Planet_PlanetTile_RimWorld_Faction_System_Boolean_System_Nullable_System_Single__RimWorld_WorldObjectDef_" data-uid="RimWorld.Planet.SiteMaker.MakeSite(System.Collections.Generic.IEnumerable{RimWorld.SitePartDef},RimWorld.Planet.PlanetTile,RimWorld.Faction,System.Boolean,System.Nullable{System.Single},RimWorld.WorldObjectDef)">MakeSite(IEnumerable&lt;SitePartDef&gt;, PlanetTile, Faction, bool, float?, WorldObjectDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Site MakeSite(IEnumerable&lt;SitePartDef&gt; siteParts, PlanetTile tile, Faction faction, bool ifHostileThenMustRemainHostile = true, float? threatPoints = null, WorldObjectDef worldObjectDef = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.SitePartDef.html">SitePartDef</a>&gt;</td>
+        <td><span class="parametername">siteParts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ifHostileThenMustRemainHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.WorldObjectDef.html">WorldObjectDef</a></td>
+        <td><span class="parametername">worldObjectDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Site.html">Site</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_SiteMaker_TryMakeSite_" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite*"></a>
+  <h4 id="RimWorld_Planet_SiteMaker_TryMakeSite_System_Collections_Generic_IEnumerable_RimWorld_SitePartDef__RimWorld_Planet_PlanetTile_System_Boolean_System_Predicate_RimWorld_Faction__System_Boolean_System_Nullable_System_Single__" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite(System.Collections.Generic.IEnumerable{RimWorld.SitePartDef},RimWorld.Planet.PlanetTile,System.Boolean,System.Predicate{RimWorld.Faction},System.Boolean,System.Nullable{System.Single})">TryMakeSite(IEnumerable&lt;SitePartDef&gt;, PlanetTile, bool, Predicate&lt;Faction&gt;, bool, float?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Site TryMakeSite(IEnumerable&lt;SitePartDef&gt; siteParts, PlanetTile tile, bool disallowNonHostileFactions = true, Predicate&lt;Faction&gt; extraFactionValidator = null, bool ifHostileThenMustRemainHostile = true, float? threatPoints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.SitePartDef.html">SitePartDef</a>&gt;</td>
+        <td><span class="parametername">siteParts</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disallowNonHostileFactions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="RimWorld.Faction.html">Faction</a>&gt;</td>
+        <td><span class="parametername">extraFactionValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ifHostileThenMustRemainHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Site.html">Site</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_SiteMaker_TryMakeSite_MultipleSiteParts_" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite_MultipleSiteParts*"></a>
+  <h4 id="RimWorld_Planet_SiteMaker_TryMakeSite_MultipleSiteParts_System_Collections_Generic_IEnumerable_System_Collections_Generic_IEnumerable_RimWorld_SitePartDef___RimWorld_Planet_PlanetTile_RimWorld_Faction_System_Boolean_System_Predicate_RimWorld_Faction__System_Boolean_System_Nullable_System_Single__" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite_MultipleSiteParts(System.Collections.Generic.IEnumerable{System.Collections.Generic.IEnumerable{RimWorld.SitePartDef}},RimWorld.Planet.PlanetTile,RimWorld.Faction,System.Boolean,System.Predicate{RimWorld.Faction},System.Boolean,System.Nullable{System.Single})">TryMakeSite_MultipleSiteParts(IEnumerable&lt;IEnumerable&lt;SitePartDef&gt;&gt;, PlanetTile, Faction, bool, Predicate&lt;Faction&gt;, bool, float?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Site TryMakeSite_MultipleSiteParts(IEnumerable&lt;IEnumerable&lt;SitePartDef&gt;&gt; sitePartsCandidates, PlanetTile tile, Faction faction = null, bool disallowNonHostileFactions = true, Predicate&lt;Faction&gt; extraFactionValidator = null, bool ifHostileThenMustRemainHostile = true, float? threatPoints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.SitePartDef.html">SitePartDef</a>&gt;&gt;</td>
+        <td><span class="parametername">sitePartsCandidates</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disallowNonHostileFactions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="RimWorld.Faction.html">Faction</a>&gt;</td>
+        <td><span class="parametername">extraFactionValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ifHostileThenMustRemainHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Site.html">Site</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_SiteMaker_TryMakeSite_MultipleSiteParts_" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite_MultipleSiteParts*"></a>
+  <h4 id="RimWorld_Planet_SiteMaker_TryMakeSite_MultipleSiteParts_System_Collections_Generic_List_System_String__RimWorld_Planet_PlanetTile_RimWorld_Faction_System_Boolean_System_Predicate_RimWorld_Faction__System_Boolean_System_Nullable_System_Single__" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite_MultipleSiteParts(System.Collections.Generic.List{System.String},RimWorld.Planet.PlanetTile,RimWorld.Faction,System.Boolean,System.Predicate{RimWorld.Faction},System.Boolean,System.Nullable{System.Single})">TryMakeSite_MultipleSiteParts(List&lt;string&gt;, PlanetTile, Faction, bool, Predicate&lt;Faction&gt;, bool, float?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Site TryMakeSite_MultipleSiteParts(List&lt;string&gt; sitePartsTags, PlanetTile tile, Faction faction = null, bool disallowNonHostileFactions = true, Predicate&lt;Faction&gt; extraFactionValidator = null, bool ifHostileThenMustRemainHostile = true, float? threatPoints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
+        <td><span class="parametername">sitePartsTags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disallowNonHostileFactions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="RimWorld.Faction.html">Faction</a>&gt;</td>
+        <td><span class="parametername">extraFactionValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ifHostileThenMustRemainHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Site.html">Site</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_SiteMaker_TryMakeSite_SingleSitePart_" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite_SingleSitePart*"></a>
+  <h4 id="RimWorld_Planet_SiteMaker_TryMakeSite_SingleSitePart_System_Collections_Generic_IEnumerable_RimWorld_SitePartDef__RimWorld_Planet_PlanetTile_RimWorld_Faction_System_Boolean_System_Predicate_RimWorld_Faction__System_Boolean_System_Nullable_System_Single__" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite_SingleSitePart(System.Collections.Generic.IEnumerable{RimWorld.SitePartDef},RimWorld.Planet.PlanetTile,RimWorld.Faction,System.Boolean,System.Predicate{RimWorld.Faction},System.Boolean,System.Nullable{System.Single})">TryMakeSite_SingleSitePart(IEnumerable&lt;SitePartDef&gt;, PlanetTile, Faction, bool, Predicate&lt;Faction&gt;, bool, float?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Site TryMakeSite_SingleSitePart(IEnumerable&lt;SitePartDef&gt; singleSitePartCandidates, PlanetTile tile, Faction faction = null, bool disallowNonHostileFactions = true, Predicate&lt;Faction&gt; extraFactionValidator = null, bool ifHostileThenMustRemainHostile = true, float? threatPoints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.SitePartDef.html">SitePartDef</a>&gt;</td>
+        <td><span class="parametername">singleSitePartCandidates</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disallowNonHostileFactions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="RimWorld.Faction.html">Faction</a>&gt;</td>
+        <td><span class="parametername">extraFactionValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ifHostileThenMustRemainHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Site.html">Site</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_Planet_SiteMaker_TryMakeSite_SingleSitePart_" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite_SingleSitePart*"></a>
+  <h4 id="RimWorld_Planet_SiteMaker_TryMakeSite_SingleSitePart_System_String_RimWorld_Planet_PlanetTile_RimWorld_Faction_System_Boolean_System_Predicate_RimWorld_Faction__System_Boolean_System_Nullable_System_Single__" data-uid="RimWorld.Planet.SiteMaker.TryMakeSite_SingleSitePart(System.String,RimWorld.Planet.PlanetTile,RimWorld.Faction,System.Boolean,System.Predicate{RimWorld.Faction},System.Boolean,System.Nullable{System.Single})">TryMakeSite_SingleSitePart(string, PlanetTile, Faction, bool, Predicate&lt;Faction&gt;, bool, float?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Site TryMakeSite_SingleSitePart(string singleSitePartTag, PlanetTile tile, Faction faction = null, bool disallowNonHostileFactions = true, Predicate&lt;Faction&gt; extraFactionValidator = null, bool ifHostileThenMustRemainHostile = true, float? threatPoints = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">singleSitePartTag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">disallowNonHostileFactions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.predicate-1">Predicate</a>&lt;<a class="xref" href="RimWorld.Faction.html">Faction</a>&gt;</td>
+        <td><span class="parametername">extraFactionValidator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">ifHostileThenMustRemainHostile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a>?</td>
+        <td><span class="parametername">threatPoints</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.Site.html">Site</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

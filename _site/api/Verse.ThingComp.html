@@ -1,0 +1,2418 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class ThingComp </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ThingComp ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Verse.ThingComp">
+
+
+
+  <h1 id="Verse_ThingComp" data-uid="Verse.ThingComp" class="text-break">Class ThingComp</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">ThingComp</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompActivity.html">CompActivity</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAffectedByFacilities.html">CompAffectedByFacilities</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAmbientSound.html">CompAmbientSound</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAncientUplink.html">CompAncientUplink</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAncientVent.html">CompAncientVent</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAnimalInsanityPulser.html">CompAnimalInsanityPulser</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompApparelVerbOwner.html">CompApparelVerbOwner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompArt.html">CompArt</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAssignableToPawn.html">CompAssignableToPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAttachPoints.html">CompAttachPoints</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAutoCut.html">CompAutoCut</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompAutoPowered.html">CompAutoPowered</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompBandNode.html">CompBandNode</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompBiocodable.html">CompBiocodable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompBiosculpterPod.html">CompBiosculpterPod</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompBiosculpterPod_Cycle.html">CompBiosculpterPod_Cycle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompBiosignatureOwner.html">CompBiosignatureOwner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompBreakdownable.html">CompBreakdownable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCableConnection.html">CompCableConnection</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCameraShaker.html">CompCameraShaker</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCanBeDormant.html">CompCanBeDormant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCascadeOnDestroyed.html">CompCascadeOnDestroyed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCauseGameCondition.html">CompCauseGameCondition</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCauseHediff_AoE.html">CompCauseHediff_AoE</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCauseHediff_Apparel.html">CompCauseHediff_Apparel</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompChangeableProjectile.html">CompChangeableProjectile</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompChimera.html">CompChimera</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCountdown.html">CompCountdown</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompCreatesInfestations.html">CompCreatesInfestations</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDamageOnInterval.html">CompDamageOnInterval</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDeathrestBindable.html">CompDeathrestBindable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDeepDrill.html">CompDeepDrill</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDestroyAfterDelay.html">CompDestroyAfterDelay</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDestroyAfterEffect.html">CompDestroyAfterEffect</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDestroyNearbyPlantsOnSpawn.html">CompDestroyNearbyPlantsOnSpawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDevourer.html">CompDevourer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDisruptorFlare.html">CompDisruptorFlare</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDissolution.html">CompDissolution</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDissolutionEffect.html">CompDissolutionEffect</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDrawAdditionalGraphics.html">CompDrawAdditionalGraphics</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDreadmeld.html">CompDreadmeld</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDrug.html">CompDrug</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompDryadHolder.html">CompDryadHolder</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompEffecter.html">CompEffecter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompEggLayer.html">CompEggLayer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompEmptyStateGraphic.html">CompEmptyStateGraphic</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompEntityHolder.html">CompEntityHolder</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompExplosive.html">CompExplosive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFacility.html">CompFacility</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFacilityInUse.html">CompFacilityInUse</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFadesInOut.html">CompFadesInOut</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFireBurst.html">CompFireBurst</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFireOverlayBase.html">CompFireOverlayBase</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFleckEmitter.html">CompFleckEmitter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFleckEmitterLongTerm.html">CompFleckEmitterLongTerm</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFleshmass.html">CompFleshmass</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFleshmassBase.html">CompFleshmassBase</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFleshmassHeartChild.html">CompFleshmassHeartChild</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFleshmassNucleus.html">CompFleshmassNucleus</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFlickable.html">CompFlickable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompFoodPoisonable.html">CompFoodPoisonable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompForbiddable.html">CompForbiddable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGasOnDamage.html">CompGasOnDamage</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGasOnDestroyed.html">CompGasOnDestroyed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGatherSpot.html">CompGatherSpot</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGenepackContainer.html">CompGenepackContainer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGeneratedNames.html">CompGeneratedNames</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGiveHediffSeverity.html">CompGiveHediffSeverity</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGiveThoughtToAllMapPawnsOnDestroy.html">CompGiveThoughtToAllMapPawnsOnDestroy</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGrayStatue.html">CompGrayStatue</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGrowsFleshmassLump.html">CompGrowsFleshmassLump</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompGrowsFleshmassTendrils.html">CompGrowsFleshmassTendrils</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHackable.html">CompHackable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHarbingerTreeConsumable.html">CompHarbingerTreeConsumable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHasGatherableBodyResource.html">CompHasGatherableBodyResource</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHasPawnSources.html">CompHasPawnSources</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHasSources.html">CompHasSources</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHatcher.html">CompHatcher</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHeatPusherEffecter.html">CompHeatPusherEffecter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHibernatable.html">CompHibernatable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHitchingSpot.html">CompHitchingSpot</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHoldingPlatformTarget.html">CompHoldingPlatformTarget</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompHunterDrone.html">CompHunterDrone</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompIngredients.html">CompIngredients</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompInitiatable.html">CompInitiatable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompInspectString.html">CompInspectString</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompInteractable.html">CompInteractable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompLaunchable.html">CompLaunchable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompLeaveFilthOnDestroyed.html">CompLeaveFilthOnDestroyed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompLeavingsLetter.html">CompLeavingsLetter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompLetterOnRevealed.html">CompLetterOnRevealed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompLootSpawn.html">CompLootSpawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompLowPowerInSpace.html">CompLowPowerInSpace</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMaintainable.html">CompMaintainable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMannable.html">CompMannable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMechCarrier.html">CompMechCarrier</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMechGestatorTank.html">CompMechGestatorTank</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMechPowerCell.html">CompMechPowerCell</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMechRelay.html">CompMechRelay</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMechRepairable.html">CompMechRepairable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMechhiveAssembler.html">CompMechhiveAssembler</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMelter.html">CompMelter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMetalhorror.html">CompMetalhorror</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMetalhorrorInfectible.html">CompMetalhorrorInfectible</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompMoteEmitter.html">CompMoteEmitter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompNoctolEyes.html">CompNoctolEyes</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompNoiseSource.html">CompNoiseSource</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompObelisk.html">CompObelisk</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompOrbitalBeam.html">CompOrbitalBeam</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompOrbitalScanner.html">CompOrbitalScanner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompOverseerSubject.html">CompOverseerSubject</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompOxygenPusher.html">CompOxygenPusher</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPawnSpawnOnWakeup.html">CompPawnSpawnOnWakeup</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPlantDamager.html">CompPlantDamager</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPlantHarmRadius.html">CompPlantHarmRadius</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPlantPreventCutting.html">CompPlantPreventCutting</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPlantable.html">CompPlantable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPlaySoundOnDestroy.html">CompPlaySoundOnDestroy</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPlaysMusic.html">CompPlaysMusic</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPolluteOverTime.html">CompPolluteOverTime</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPollutionPump.html">CompPollutionPump</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPorcupine.html">CompPorcupine</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPower.html">CompPower</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompProducesBioferrite.html">CompProducesBioferrite</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompProjectileInterceptor.html">CompProjectileInterceptor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompProximityFuse.html">CompProximityFuse</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompProximityLetter.html">CompProximityLetter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPsychicRitualSpot.html">CompPsychicRitualSpot</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPsylinkable.html">CompPsylinkable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompPushable.html">CompPushable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompQuality.html">CompQuality</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRadialPulse.html">CompRadialPulse</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompReadable.html">CompReadable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRechargeable.html">CompRechargeable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompReleaseGas.html">CompReleaseGas</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompReportWorkSpeed.html">CompReportWorkSpeed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRevenant.html">CompRevenant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRitualEffectSpawner.html">CompRitualEffectSpawner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRitualHediffGiverInRoom.html">CompRitualHediffGiverInRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRitualSeat.html">CompRitualSeat</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRitualSignalSender.html">CompRitualSignalSender</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRottable.html">CompRottable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompRoyalImplant.html">CompRoyalImplant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompScanner.html">CompScanner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSchedule.html">CompSchedule</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSelectProxy.html">CompSelectProxy</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSelfhealHitpoints.html">CompSelfhealHitpoints</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSendSignalOnCountdown.html">CompSendSignalOnCountdown</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSendSignalOnMotion.html">CompSendSignalOnMotion</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSentryDrone.html">CompSentryDrone</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSerum.html">CompSerum</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompShield.html">CompShield</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompShipLandingBeacon.html">CompShipLandingBeacon</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompShipPart.html">CompShipPart</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompShuttle.html">CompShuttle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSightstealer.html">CompSightstealer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSkyfallerRandomizeDirection.html">CompSkyfallerRandomizeDirection</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSmokeCloudMaker.html">CompSmokeCloudMaker</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSnowExpand.html">CompSnowExpand</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnEffecterOnDestroy.html">CompSpawnEffecterOnDestroy</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnEffectersInRoom.html">CompSpawnEffectersInRoom</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnImmortalSubplantsAround.html">CompSpawnImmortalSubplantsAround</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnPawnOnDestroyed.html">CompSpawnPawnOnDestroyed</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnPawnsOnDamaged.html">CompSpawnPawnsOnDamaged</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnSubplant.html">CompSpawnSubplant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnSubplantDuration.html">CompSpawnSubplantDuration</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawner.html">CompSpawner</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnerFilth.html">CompSpawnerFilth</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnerFilthOnTakeDamage.html">CompSpawnerFilthOnTakeDamage</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnerHives.html">CompSpawnerHives</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnerItems.html">CompSpawnerItems</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnerPawn.html">CompSpawnerPawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpawnsRevenant.html">CompSpawnsRevenant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSpreadSludge.html">CompSpreadSludge</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompStatEntry.html">CompStatEntry</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompStatOffsetBase.html">CompStatOffsetBase</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompStudiable.html">CompStudiable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompStudyUnlocks.html">CompStudyUnlocks</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompStunOnDamage.html">CompStunOnDamage</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompStunnable.html">CompStunnable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompStyleable.html">CompStyleable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompSubstructureFootprint.html">CompSubstructureFootprint</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTargetEffect.html">CompTargetEffect</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTargetingBeam.html">CompTargetingBeam</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTechprint.html">CompTechprint</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTempControl.html">CompTempControl</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTemperatureRuinable.html">CompTemperatureRuinable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTerraformer.html">CompTerraformer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTerrainPump.html">CompTerrainPump</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompThingContainer.html">CompThingContainer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompThrownFleckEmitter.html">CompThrownFleckEmitter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompThrownMoteEmitter.html">CompThrownMoteEmitter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompToggleDrawAffectedMeditationFoci.html">CompToggleDrawAffectedMeditationFoci</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompToxifier.html">CompToxifier</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTransporter.html">CompTransporter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTreeConnection.html">CompTreeConnection</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompTurretGun.html">CompTurretGun</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompUniqueWeapon.html">CompUniqueWeapon</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompUsable.html">CompUsable</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompUseEffect.html">CompUseEffect</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompUsesMeditationFocus.html">CompUsesMeditationFocus</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompWakeUpDormant.html">CompWakeUpDormant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.CompWasteProducer.html">CompWasteProducer</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.Comp_ProjectileEffecter.html">Comp_ProjectileEffecter</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.EffecterOnDeath.html">EffecterOnDeath</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompAIUsablePack.html">CompAIUsablePack</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompAffectsSky.html">CompAffectsSky</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompAttachBase.html">CompAttachBase</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompColorable.html">CompColorable</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompEquippable.html">CompEquippable</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompGlower.html">CompGlower</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompHeatPusher.html">CompHeatPusher</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompLifespan.html">CompLifespan</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompTemperatureDamaged.html">CompTemperatureDamaged</a></div>
+      <div class="level2"><a class="xref" href="Verse.CompWindSource.html">CompWindSource</a></div>
+      <div class="level2"><a class="xref" href="Verse.ThingComp_VacuumAware.html">ThingComp_VacuumAware</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Verse.html">Verse</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="Verse_ThingComp_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ThingComp</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Verse_ThingComp__ctor_" data-uid="Verse.ThingComp.#ctor*"></a>
+  <h4 id="Verse_ThingComp__ctor" data-uid="Verse.ThingComp.#ctor">ThingComp()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ThingComp()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="Verse_ThingComp_parent" data-uid="Verse.ThingComp.parent">parent</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThingWithComps parent</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.ThingWithComps.html">ThingWithComps</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="Verse_ThingComp_props" data-uid="Verse.ThingComp.props">props</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CompProperties props</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CompProperties.html">CompProperties</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Verse_ThingComp_ParentHolder_" data-uid="Verse.ThingComp.ParentHolder*"></a>
+  <h4 id="Verse_ThingComp_ParentHolder" data-uid="Verse.ThingComp.ParentHolder">ParentHolder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IThingHolder ParentHolder { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.IThingHolder.html">IThingHolder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Verse_ThingComp_AllowStackWith_" data-uid="Verse.ThingComp.AllowStackWith*"></a>
+  <h4 id="Verse_ThingComp_AllowStackWith_Verse_Thing_" data-uid="Verse.ThingComp.AllowStackWith(Verse.Thing)">AllowStackWith(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool AllowStackWith(Thing other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompAllowVerbCast_" data-uid="Verse.ThingComp.CompAllowVerbCast*"></a>
+  <h4 id="Verse_ThingComp_CompAllowVerbCast_Verse_Verb_" data-uid="Verse.ThingComp.CompAllowVerbCast(Verse.Verb)">CompAllowVerbCast(Verb)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CompAllowVerbCast(Verb verb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Verb.html">Verb</a></td>
+        <td><span class="parametername">verb</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompDrawWornExtras_" data-uid="Verse.ThingComp.CompDrawWornExtras*"></a>
+  <h4 id="Verse_ThingComp_CompDrawWornExtras" data-uid="Verse.ThingComp.CompDrawWornExtras">CompDrawWornExtras()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CompDrawWornExtras()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_CompFloatMenuOptions_" data-uid="Verse.ThingComp.CompFloatMenuOptions*"></a>
+  <h4 id="Verse_ThingComp_CompFloatMenuOptions_Verse_Pawn_" data-uid="Verse.ThingComp.CompFloatMenuOptions(Verse.Pawn)">CompFloatMenuOptions(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;FloatMenuOption&gt; CompFloatMenuOptions(Pawn selPawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">selPawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.FloatMenuOption.html">FloatMenuOption</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompForceDeconstructable_" data-uid="Verse.ThingComp.CompForceDeconstructable*"></a>
+  <h4 id="Verse_ThingComp_CompForceDeconstructable" data-uid="Verse.ThingComp.CompForceDeconstructable">CompForceDeconstructable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CompForceDeconstructable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompGetGizmosExtra_" data-uid="Verse.ThingComp.CompGetGizmosExtra*"></a>
+  <h4 id="Verse_ThingComp_CompGetGizmosExtra" data-uid="Verse.ThingComp.CompGetGizmosExtra">CompGetGizmosExtra()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;Gizmo&gt; CompGetGizmosExtra()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Gizmo.html">Gizmo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompGetSpecialApparelScoreOffset_" data-uid="Verse.ThingComp.CompGetSpecialApparelScoreOffset*"></a>
+  <h4 id="Verse_ThingComp_CompGetSpecialApparelScoreOffset" data-uid="Verse.ThingComp.CompGetSpecialApparelScoreOffset">CompGetSpecialApparelScoreOffset()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float CompGetSpecialApparelScoreOffset()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompGetWornGizmosExtra_" data-uid="Verse.ThingComp.CompGetWornGizmosExtra*"></a>
+  <h4 id="Verse_ThingComp_CompGetWornGizmosExtra" data-uid="Verse.ThingComp.CompGetWornGizmosExtra">CompGetWornGizmosExtra()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;Gizmo&gt; CompGetWornGizmosExtra()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Gizmo.html">Gizmo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompInspectStringExtra_" data-uid="Verse.ThingComp.CompInspectStringExtra*"></a>
+  <h4 id="Verse_ThingComp_CompInspectStringExtra" data-uid="Verse.ThingComp.CompInspectStringExtra">CompInspectStringExtra()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string CompInspectStringExtra()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompMultiSelectFloatMenuOptions_" data-uid="Verse.ThingComp.CompMultiSelectFloatMenuOptions*"></a>
+  <h4 id="Verse_ThingComp_CompMultiSelectFloatMenuOptions_System_Collections_Generic_IEnumerable_Verse_Pawn__" data-uid="Verse.ThingComp.CompMultiSelectFloatMenuOptions(System.Collections.Generic.IEnumerable{Verse.Pawn})">CompMultiSelectFloatMenuOptions(IEnumerable&lt;Pawn&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;FloatMenuOption&gt; CompMultiSelectFloatMenuOptions(IEnumerable&lt;Pawn&gt; selPawns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td><span class="parametername">selPawns</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.FloatMenuOption.html">FloatMenuOption</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompPreventClaimingBy_" data-uid="Verse.ThingComp.CompPreventClaimingBy*"></a>
+  <h4 id="Verse_ThingComp_CompPreventClaimingBy_RimWorld_Faction_" data-uid="Verse.ThingComp.CompPreventClaimingBy(RimWorld.Faction)">CompPreventClaimingBy(Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool CompPreventClaimingBy(Faction faction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">faction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompPrintForPowerGrid_" data-uid="Verse.ThingComp.CompPrintForPowerGrid*"></a>
+  <h4 id="Verse_ThingComp_CompPrintForPowerGrid_Verse_SectionLayer_" data-uid="Verse.ThingComp.CompPrintForPowerGrid(Verse.SectionLayer)">CompPrintForPowerGrid(SectionLayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CompPrintForPowerGrid(SectionLayer layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.SectionLayer.html">SectionLayer</a></td>
+        <td><span class="parametername">layer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompRenderNodes_" data-uid="Verse.ThingComp.CompRenderNodes*"></a>
+  <h4 id="Verse_ThingComp_CompRenderNodes" data-uid="Verse.ThingComp.CompRenderNodes">CompRenderNodes()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual List&lt;PawnRenderNode&gt; CompRenderNodes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.PawnRenderNode.html">PawnRenderNode</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompTick_" data-uid="Verse.ThingComp.CompTick*"></a>
+  <h4 id="Verse_ThingComp_CompTick" data-uid="Verse.ThingComp.CompTick">CompTick()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CompTick()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_CompTickInterval_" data-uid="Verse.ThingComp.CompTickInterval*"></a>
+  <h4 id="Verse_ThingComp_CompTickInterval_System_Int32_" data-uid="Verse.ThingComp.CompTickInterval(System.Int32)">CompTickInterval(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CompTickInterval(int delta)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">delta</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_CompTickLong_" data-uid="Verse.ThingComp.CompTickLong*"></a>
+  <h4 id="Verse_ThingComp_CompTickLong" data-uid="Verse.ThingComp.CompTickLong">CompTickLong()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CompTickLong()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_CompTickRare_" data-uid="Verse.ThingComp.CompTickRare*"></a>
+  <h4 id="Verse_ThingComp_CompTickRare" data-uid="Verse.ThingComp.CompTickRare">CompTickRare()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CompTickRare()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_CompTipStringExtra_" data-uid="Verse.ThingComp.CompTipStringExtra*"></a>
+  <h4 id="Verse_ThingComp_CompTipStringExtra" data-uid="Verse.ThingComp.CompTipStringExtra">CompTipStringExtra()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string CompTipStringExtra()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_DontDrawParent_" data-uid="Verse.ThingComp.DontDrawParent*"></a>
+  <h4 id="Verse_ThingComp_DontDrawParent" data-uid="Verse.ThingComp.DontDrawParent">DontDrawParent()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool DontDrawParent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_DrawAt_" data-uid="Verse.ThingComp.DrawAt*"></a>
+  <h4 id="Verse_ThingComp_DrawAt_UnityEngine_Vector3_System_Boolean_" data-uid="Verse.ThingComp.DrawAt(UnityEngine.Vector3,System.Boolean)">DrawAt(Vector3, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DrawAt(Vector3 drawLoc, bool flip = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">drawLoc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">flip</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_DrawGUIOverlay_" data-uid="Verse.ThingComp.DrawGUIOverlay*"></a>
+  <h4 id="Verse_ThingComp_DrawGUIOverlay" data-uid="Verse.ThingComp.DrawGUIOverlay">DrawGUIOverlay()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DrawGUIOverlay()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_ForceColor_" data-uid="Verse.ThingComp.ForceColor*"></a>
+  <h4 id="Verse_ThingComp_ForceColor" data-uid="Verse.ThingComp.ForceColor">ForceColor()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Color? ForceColor()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Color.html">Color</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_GetAdditionalHarvestYield_" data-uid="Verse.ThingComp.GetAdditionalHarvestYield*"></a>
+  <h4 id="Verse_ThingComp_GetAdditionalHarvestYield" data-uid="Verse.ThingComp.GetAdditionalHarvestYield">GetAdditionalHarvestYield()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;ThingDefCountClass&gt; GetAdditionalHarvestYield()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.ThingDefCountClass.html">ThingDefCountClass</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_GetAdditionalLeavings_" data-uid="Verse.ThingComp.GetAdditionalLeavings*"></a>
+  <h4 id="Verse_ThingComp_GetAdditionalLeavings_Verse_Map_Verse_DestroyMode_" data-uid="Verse.ThingComp.GetAdditionalLeavings(Verse.Map,Verse.DestroyMode)">GetAdditionalLeavings(Map, DestroyMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;ThingDefCountClass&gt; GetAdditionalLeavings(Map map, DestroyMode mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.DestroyMode.html">DestroyMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.ThingDefCountClass.html">ThingDefCountClass</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_GetDescriptionPart_" data-uid="Verse.ThingComp.GetDescriptionPart*"></a>
+  <h4 id="Verse_ThingComp_GetDescriptionPart" data-uid="Verse.ThingComp.GetDescriptionPart">GetDescriptionPart()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetDescriptionPart()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_GetStatFactor_" data-uid="Verse.ThingComp.GetStatFactor*"></a>
+  <h4 id="Verse_ThingComp_GetStatFactor_RimWorld_StatDef_" data-uid="Verse.ThingComp.GetStatFactor(RimWorld.StatDef)">GetStatFactor(StatDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float GetStatFactor(StatDef stat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatDef.html">StatDef</a></td>
+        <td><span class="parametername">stat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_GetStatOffset_" data-uid="Verse.ThingComp.GetStatOffset*"></a>
+  <h4 id="Verse_ThingComp_GetStatOffset_RimWorld_StatDef_" data-uid="Verse.ThingComp.GetStatOffset(RimWorld.StatDef)">GetStatOffset(StatDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float GetStatOffset(StatDef stat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatDef.html">StatDef</a></td>
+        <td><span class="parametername">stat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_GetStatsExplanation_" data-uid="Verse.ThingComp.GetStatsExplanation*"></a>
+  <h4 id="Verse_ThingComp_GetStatsExplanation_RimWorld_StatDef_System_Text_StringBuilder_System_String_" data-uid="Verse.ThingComp.GetStatsExplanation(RimWorld.StatDef,System.Text.StringBuilder,System.String)">GetStatsExplanation(StatDef, StringBuilder, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GetStatsExplanation(StatDef stat, StringBuilder sb, string whitespace = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatDef.html">StatDef</a></td>
+        <td><span class="parametername">stat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">whitespace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Initialize_" data-uid="Verse.ThingComp.Initialize*"></a>
+  <h4 id="Verse_ThingComp_Initialize_Verse_CompProperties_" data-uid="Verse.ThingComp.Initialize(Verse.CompProperties)">Initialize(CompProperties)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(CompProperties props)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.CompProperties.html">CompProperties</a></td>
+        <td><span class="parametername">props</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_AbandonedAtTile_" data-uid="Verse.ThingComp.Notify_AbandonedAtTile*"></a>
+  <h4 id="Verse_ThingComp_Notify_AbandonedAtTile_RimWorld_Planet_PlanetTile_" data-uid="Verse.ThingComp.Notify_AbandonedAtTile(RimWorld.Planet.PlanetTile)">Notify_AbandonedAtTile(PlanetTile)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_AbandonedAtTile(PlanetTile tile)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">tile</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_AddBedThoughts_" data-uid="Verse.ThingComp.Notify_AddBedThoughts*"></a>
+  <h4 id="Verse_ThingComp_Notify_AddBedThoughts_Verse_Pawn_" data-uid="Verse.ThingComp.Notify_AddBedThoughts(Verse.Pawn)">Notify_AddBedThoughts(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_AddBedThoughts(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_Arrested_" data-uid="Verse.ThingComp.Notify_Arrested*"></a>
+  <h4 id="Verse_ThingComp_Notify_Arrested_System_Boolean_" data-uid="Verse.ThingComp.Notify_Arrested(System.Boolean)">Notify_Arrested(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_Arrested(bool succeeded)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">succeeded</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_BecameInvisible_" data-uid="Verse.ThingComp.Notify_BecameInvisible*"></a>
+  <h4 id="Verse_ThingComp_Notify_BecameInvisible" data-uid="Verse.ThingComp.Notify_BecameInvisible">Notify_BecameInvisible()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_BecameInvisible()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_BecameVisible_" data-uid="Verse.ThingComp.Notify_BecameVisible*"></a>
+  <h4 id="Verse_ThingComp_Notify_BecameVisible" data-uid="Verse.ThingComp.Notify_BecameVisible">Notify_BecameVisible()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_BecameVisible()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_ColorChanged_" data-uid="Verse.ThingComp.Notify_ColorChanged*"></a>
+  <h4 id="Verse_ThingComp_Notify_ColorChanged" data-uid="Verse.ThingComp.Notify_ColorChanged">Notify_ColorChanged()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_ColorChanged()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_DefsHotReloaded_" data-uid="Verse.ThingComp.Notify_DefsHotReloaded*"></a>
+  <h4 id="Verse_ThingComp_Notify_DefsHotReloaded" data-uid="Verse.ThingComp.Notify_DefsHotReloaded">Notify_DefsHotReloaded()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_DefsHotReloaded()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_Downed_" data-uid="Verse.ThingComp.Notify_Downed*"></a>
+  <h4 id="Verse_ThingComp_Notify_Downed" data-uid="Verse.ThingComp.Notify_Downed">Notify_Downed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_Downed()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_DuplicatedFrom_" data-uid="Verse.ThingComp.Notify_DuplicatedFrom*"></a>
+  <h4 id="Verse_ThingComp_Notify_DuplicatedFrom_Verse_Pawn_" data-uid="Verse.ThingComp.Notify_DuplicatedFrom(Verse.Pawn)">Notify_DuplicatedFrom(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_DuplicatedFrom(Pawn source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">source</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_Equipped_" data-uid="Verse.ThingComp.Notify_Equipped*"></a>
+  <h4 id="Verse_ThingComp_Notify_Equipped_Verse_Pawn_" data-uid="Verse.ThingComp.Notify_Equipped(Verse.Pawn)">Notify_Equipped(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_Equipped(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_ForcedVisible_" data-uid="Verse.ThingComp.Notify_ForcedVisible*"></a>
+  <h4 id="Verse_ThingComp_Notify_ForcedVisible" data-uid="Verse.ThingComp.Notify_ForcedVisible">Notify_ForcedVisible()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_ForcedVisible()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_Hacked_" data-uid="Verse.ThingComp.Notify_Hacked*"></a>
+  <h4 id="Verse_ThingComp_Notify_Hacked_Verse_Pawn_" data-uid="Verse.ThingComp.Notify_Hacked(Verse.Pawn)">Notify_Hacked(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_Hacked(Pawn hacker = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">hacker</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_Killed_" data-uid="Verse.ThingComp.Notify_Killed*"></a>
+  <h4 id="Verse_ThingComp_Notify_Killed_Verse_Map_System_Nullable_Verse_DamageInfo__" data-uid="Verse.ThingComp.Notify_Killed(Verse.Map,System.Nullable{Verse.DamageInfo})">Notify_Killed(Map, DamageInfo?)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_Killed(Map prevMap, DamageInfo? dinfo = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">prevMap</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a>?</td>
+        <td><span class="parametername">dinfo</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_KilledLeavingsLeft_" data-uid="Verse.ThingComp.Notify_KilledLeavingsLeft*"></a>
+  <h4 id="Verse_ThingComp_Notify_KilledLeavingsLeft_System_Collections_Generic_List_Verse_Thing__" data-uid="Verse.ThingComp.Notify_KilledLeavingsLeft(System.Collections.Generic.List{Verse.Thing})">Notify_KilledLeavingsLeft(List&lt;Thing&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_KilledLeavingsLeft(List&lt;Thing&gt; leavings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Thing.html">Thing</a>&gt;</td>
+        <td><span class="parametername">leavings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_KilledPawn_" data-uid="Verse.ThingComp.Notify_KilledPawn*"></a>
+  <h4 id="Verse_ThingComp_Notify_KilledPawn_Verse_Pawn_" data-uid="Verse.ThingComp.Notify_KilledPawn(Verse.Pawn)">Notify_KilledPawn(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_KilledPawn(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_LordDestroyed_" data-uid="Verse.ThingComp.Notify_LordDestroyed*"></a>
+  <h4 id="Verse_ThingComp_Notify_LordDestroyed" data-uid="Verse.ThingComp.Notify_LordDestroyed">Notify_LordDestroyed()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_LordDestroyed()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_MapRemoved_" data-uid="Verse.ThingComp.Notify_MapRemoved*"></a>
+  <h4 id="Verse_ThingComp_Notify_MapRemoved" data-uid="Verse.ThingComp.Notify_MapRemoved">Notify_MapRemoved()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_MapRemoved()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_PassedToWorld_" data-uid="Verse.ThingComp.Notify_PassedToWorld*"></a>
+  <h4 id="Verse_ThingComp_Notify_PassedToWorld" data-uid="Verse.ThingComp.Notify_PassedToWorld">Notify_PassedToWorld()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_PassedToWorld()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_PrisonBreakout_" data-uid="Verse.ThingComp.Notify_PrisonBreakout*"></a>
+  <h4 id="Verse_ThingComp_Notify_PrisonBreakout" data-uid="Verse.ThingComp.Notify_PrisonBreakout">Notify_PrisonBreakout()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_PrisonBreakout()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_RecipeProduced_" data-uid="Verse.ThingComp.Notify_RecipeProduced*"></a>
+  <h4 id="Verse_ThingComp_Notify_RecipeProduced_Verse_Pawn_" data-uid="Verse.ThingComp.Notify_RecipeProduced(Verse.Pawn)">Notify_RecipeProduced(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_RecipeProduced(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_Released_" data-uid="Verse.ThingComp.Notify_Released*"></a>
+  <h4 id="Verse_ThingComp_Notify_Released" data-uid="Verse.ThingComp.Notify_Released">Notify_Released()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_Released()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_Notify_SignalReceived_" data-uid="Verse.ThingComp.Notify_SignalReceived*"></a>
+  <h4 id="Verse_ThingComp_Notify_SignalReceived_RimWorld_Signal_" data-uid="Verse.ThingComp.Notify_SignalReceived(RimWorld.Signal)">Notify_SignalReceived(Signal)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_SignalReceived(Signal signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.Signal.html">Signal</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_Unequipped_" data-uid="Verse.ThingComp.Notify_Unequipped*"></a>
+  <h4 id="Verse_ThingComp_Notify_Unequipped_Verse_Pawn_" data-uid="Verse.ThingComp.Notify_Unequipped(Verse.Pawn)">Notify_Unequipped(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_Unequipped(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_UsedVerb_" data-uid="Verse.ThingComp.Notify_UsedVerb*"></a>
+  <h4 id="Verse_ThingComp_Notify_UsedVerb_Verse_Pawn_Verse_Verb_" data-uid="Verse.ThingComp.Notify_UsedVerb(Verse.Pawn,Verse.Verb)">Notify_UsedVerb(Pawn, Verb)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_UsedVerb(Pawn pawn, Verb verb)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Verb.html">Verb</a></td>
+        <td><span class="parametername">verb</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_UsedWeapon_" data-uid="Verse.ThingComp.Notify_UsedWeapon*"></a>
+  <h4 id="Verse_ThingComp_Notify_UsedWeapon_Verse_Pawn_" data-uid="Verse.ThingComp.Notify_UsedWeapon(Verse.Pawn)">Notify_UsedWeapon(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_UsedWeapon(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_Notify_WearerDied_" data-uid="Verse.ThingComp.Notify_WearerDied*"></a>
+  <h4 id="Verse_ThingComp_Notify_WearerDied" data-uid="Verse.ThingComp.Notify_WearerDied">Notify_WearerDied()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Notify_WearerDied()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_PostDeSpawn_" data-uid="Verse.ThingComp.PostDeSpawn*"></a>
+  <h4 id="Verse_ThingComp_PostDeSpawn_Verse_Map_Verse_DestroyMode_" data-uid="Verse.ThingComp.PostDeSpawn(Verse.Map,Verse.DestroyMode)">PostDeSpawn(Map, DestroyMode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostDeSpawn(Map map, DestroyMode mode = DestroyMode.Vanish)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">map</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.DestroyMode.html">DestroyMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostDestroy_" data-uid="Verse.ThingComp.PostDestroy*"></a>
+  <h4 id="Verse_ThingComp_PostDestroy_Verse_DestroyMode_Verse_Map_" data-uid="Verse.ThingComp.PostDestroy(Verse.DestroyMode,Verse.Map)">PostDestroy(DestroyMode, Map)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostDestroy(DestroyMode mode, Map previousMap)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DestroyMode.html">DestroyMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Map.html">Map</a></td>
+        <td><span class="parametername">previousMap</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostDraw_" data-uid="Verse.ThingComp.PostDraw*"></a>
+  <h4 id="Verse_ThingComp_PostDraw" data-uid="Verse.ThingComp.PostDraw">PostDraw()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostDraw()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_PostDrawExtraSelectionOverlays_" data-uid="Verse.ThingComp.PostDrawExtraSelectionOverlays*"></a>
+  <h4 id="Verse_ThingComp_PostDrawExtraSelectionOverlays" data-uid="Verse.ThingComp.PostDrawExtraSelectionOverlays">PostDrawExtraSelectionOverlays()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostDrawExtraSelectionOverlays()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_PostExposeData_" data-uid="Verse.ThingComp.PostExposeData*"></a>
+  <h4 id="Verse_ThingComp_PostExposeData" data-uid="Verse.ThingComp.PostExposeData">PostExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostExposeData()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_PostIngested_" data-uid="Verse.ThingComp.PostIngested*"></a>
+  <h4 id="Verse_ThingComp_PostIngested_Verse_Pawn_" data-uid="Verse.ThingComp.PostIngested(Verse.Pawn)">PostIngested(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostIngested(Pawn ingester)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">ingester</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostMapInit_" data-uid="Verse.ThingComp.PostMapInit*"></a>
+  <h4 id="Verse_ThingComp_PostMapInit" data-uid="Verse.ThingComp.PostMapInit">PostMapInit()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostMapInit()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_PostPostApplyDamage_" data-uid="Verse.ThingComp.PostPostApplyDamage*"></a>
+  <h4 id="Verse_ThingComp_PostPostApplyDamage_Verse_DamageInfo_System_Single_" data-uid="Verse.ThingComp.PostPostApplyDamage(Verse.DamageInfo,System.Single)">PostPostApplyDamage(DamageInfo, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostPostApplyDamage(DamageInfo dinfo, float totalDamageDealt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a></td>
+        <td><span class="parametername">dinfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">totalDamageDealt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostPostGeneratedForTrader_" data-uid="Verse.ThingComp.PostPostGeneratedForTrader*"></a>
+  <h4 id="Verse_ThingComp_PostPostGeneratedForTrader_RimWorld_TraderKindDef_RimWorld_Planet_PlanetTile_RimWorld_Faction_" data-uid="Verse.ThingComp.PostPostGeneratedForTrader(RimWorld.TraderKindDef,RimWorld.Planet.PlanetTile,RimWorld.Faction)">PostPostGeneratedForTrader(TraderKindDef, PlanetTile, Faction)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostPostGeneratedForTrader(TraderKindDef trader, PlanetTile forTile, Faction forFaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.TraderKindDef.html">TraderKindDef</a></td>
+        <td><span class="parametername">trader</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Planet.PlanetTile.html">PlanetTile</a></td>
+        <td><span class="parametername">forTile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Faction.html">Faction</a></td>
+        <td><span class="parametername">forFaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostPostMake_" data-uid="Verse.ThingComp.PostPostMake*"></a>
+  <h4 id="Verse_ThingComp_PostPostMake" data-uid="Verse.ThingComp.PostPostMake">PostPostMake()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostPostMake()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_PostPreApplyDamage_" data-uid="Verse.ThingComp.PostPreApplyDamage*"></a>
+  <h4 id="Verse_ThingComp_PostPreApplyDamage_Verse_DamageInfo__System_Boolean__" data-uid="Verse.ThingComp.PostPreApplyDamage(Verse.DamageInfo@,System.Boolean@)">PostPreApplyDamage(ref DamageInfo, out bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostPreApplyDamage(ref DamageInfo dinfo, out bool absorbed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.DamageInfo.html">DamageInfo</a></td>
+        <td><span class="parametername">dinfo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">absorbed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostPrintOnto_" data-uid="Verse.ThingComp.PostPrintOnto*"></a>
+  <h4 id="Verse_ThingComp_PostPrintOnto_Verse_SectionLayer_" data-uid="Verse.ThingComp.PostPrintOnto(Verse.SectionLayer)">PostPrintOnto(SectionLayer)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostPrintOnto(SectionLayer layer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.SectionLayer.html">SectionLayer</a></td>
+        <td><span class="parametername">layer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostSpawnSetup_" data-uid="Verse.ThingComp.PostSpawnSetup*"></a>
+  <h4 id="Verse_ThingComp_PostSpawnSetup_System_Boolean_" data-uid="Verse.ThingComp.PostSpawnSetup(System.Boolean)">PostSpawnSetup(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostSpawnSetup(bool respawningAfterLoad)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">respawningAfterLoad</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostSplitOff_" data-uid="Verse.ThingComp.PostSplitOff*"></a>
+  <h4 id="Verse_ThingComp_PostSplitOff_Verse_Thing_" data-uid="Verse.ThingComp.PostSplitOff(Verse.Thing)">PostSplitOff(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostSplitOff(Thing piece)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">piece</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PostSwapMap_" data-uid="Verse.ThingComp.PostSwapMap*"></a>
+  <h4 id="Verse_ThingComp_PostSwapMap" data-uid="Verse.ThingComp.PostSwapMap">PostSwapMap()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PostSwapMap()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_PreAbsorbStack_" data-uid="Verse.ThingComp.PreAbsorbStack*"></a>
+  <h4 id="Verse_ThingComp_PreAbsorbStack_Verse_Thing_System_Int32_" data-uid="Verse.ThingComp.PreAbsorbStack(Verse.Thing,System.Int32)">PreAbsorbStack(Thing, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PreAbsorbStack(Thing otherStack, int count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">otherStack</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PrePostIngested_" data-uid="Verse.ThingComp.PrePostIngested*"></a>
+  <h4 id="Verse_ThingComp_PrePostIngested_Verse_Pawn_" data-uid="Verse.ThingComp.PrePostIngested(Verse.Pawn)">PrePostIngested(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrePostIngested(Pawn ingester)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">ingester</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PrePreTraded_" data-uid="Verse.ThingComp.PrePreTraded*"></a>
+  <h4 id="Verse_ThingComp_PrePreTraded_RimWorld_TradeAction_Verse_Pawn_RimWorld_ITrader_" data-uid="Verse.ThingComp.PrePreTraded(RimWorld.TradeAction,Verse.Pawn,RimWorld.ITrader)">PrePreTraded(TradeAction, Pawn, ITrader)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PrePreTraded(TradeAction action, Pawn playerNegotiator, ITrader trader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.TradeAction.html">TradeAction</a></td>
+        <td><span class="parametername">action</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">playerNegotiator</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.ITrader.html">ITrader</a></td>
+        <td><span class="parametername">trader</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_PreSwapMap_" data-uid="Verse.ThingComp.PreSwapMap*"></a>
+  <h4 id="Verse_ThingComp_PreSwapMap" data-uid="Verse.ThingComp.PreSwapMap">PreSwapMap()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void PreSwapMap()</code></pre>
+  </div>
+
+
+  <a id="Verse_ThingComp_ReceiveCompSignal_" data-uid="Verse.ThingComp.ReceiveCompSignal*"></a>
+  <h4 id="Verse_ThingComp_ReceiveCompSignal_System_String_" data-uid="Verse.ThingComp.ReceiveCompSignal(System.String)">ReceiveCompSignal(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void ReceiveCompSignal(string signal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">signal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_SpecialDisplayStats_" data-uid="Verse.ThingComp.SpecialDisplayStats*"></a>
+  <h4 id="Verse_ThingComp_SpecialDisplayStats" data-uid="Verse.ThingComp.SpecialDisplayStats">SpecialDisplayStats()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;StatDrawEntry&gt; SpecialDisplayStats()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="RimWorld.StatDrawEntry.html">StatDrawEntry</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_ToString_" data-uid="Verse.ThingComp.ToString*"></a>
+  <h4 id="Verse_ThingComp_ToString" data-uid="Verse.ThingComp.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a></div>
+
+
+  <a id="Verse_ThingComp_TransformLabel_" data-uid="Verse.ThingComp.TransformLabel*"></a>
+  <h4 id="Verse_ThingComp_TransformLabel_System_String_" data-uid="Verse.ThingComp.TransformLabel(System.String)">TransformLabel(string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string TransformLabel(string label)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">label</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Verse_ThingComp_WantHoldWeapon_" data-uid="Verse.ThingComp.WantHoldWeapon*"></a>
+  <h4 id="Verse_ThingComp_WantHoldWeapon_Verse_Pawn_" data-uid="Verse.ThingComp.WantHoldWeapon(Verse.Pawn)">WantHoldWeapon(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool WantHoldWeapon(Pawn pawn)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

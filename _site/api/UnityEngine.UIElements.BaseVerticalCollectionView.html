@@ -1,0 +1,2074 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class BaseVerticalCollectionView </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class BaseVerticalCollectionView ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView">
+
+
+
+  <h1 id="UnityEngine_UIElements_BaseVerticalCollectionView" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView" class="text-break">Class BaseVerticalCollectionView</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html">CallbackEventHandler</a></div>
+    <div class="level2"><a class="xref" href="UnityEngine.UIElements.Focusable.html">Focusable</a></div>
+    <div class="level3"><a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a></div>
+    <div class="level4"><a class="xref" href="UnityEngine.UIElements.BindableElement.html">BindableElement</a></div>
+    <div class="level5"><span class="xref">BaseVerticalCollectionView</span></div>
+      <div class="level6"><a class="xref" href="UnityEngine.UIElements.BaseListView.html">BaseListView</a></div>
+      <div class="level6"><a class="xref" href="UnityEngine.UIElements.BaseTreeView.html">BaseTreeView</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.UIElements.IEventHandler.html">IEventHandler</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.IResolvedStyle.html">IResolvedStyle</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.ITransform.html">ITransform</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.Experimental.ITransitionAnimations.html">ITransitionAnimations</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.IExperimentalFeatures.html">IExperimentalFeatures</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.IVisualElementScheduler.html">IVisualElementScheduler</a></div>
+    <div><a class="xref" href="UnityEngine.UIElements.IBindable.html">IBindable</a></div>
+    <div><a class="xref" href="UnityEngine.ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.BindableElement.html#UnityEngine_UIElements_BindableElement_binding">BindableElement.binding</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.BindableElement.html#UnityEngine_UIElements_BindableElement_bindingPath">BindableElement.bindingPath</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_disabledUssClassName">VisualElement.disabledUssClassName</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Focus">VisualElement.Focus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_SendEvent_UnityEngine_UIElements_EventBase_">VisualElement.SendEvent(EventBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_SetEnabledFromHierarchy_System_Boolean_">VisualElement.SetEnabledFromHierarchy(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_SetEnabled_System_Boolean_">VisualElement.SetEnabled(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_MarkDirtyRepaint">VisualElement.MarkDirtyRepaint()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ContainsPoint_UnityEngine_Vector2_">VisualElement.ContainsPoint(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Overlaps_UnityEngine_Rect_">VisualElement.Overlaps(Rect)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_DoMeasure_System_Single_UnityEngine_UIElements_VisualElement_MeasureMode_System_Single_UnityEngine_UIElements_VisualElement_MeasureMode_">VisualElement.DoMeasure(float, VisualElement.MeasureMode, float, VisualElement.MeasureMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ToString">VisualElement.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_GetClasses">VisualElement.GetClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ClearClassList">VisualElement.ClearClassList()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_AddToClassList_System_String_">VisualElement.AddToClassList(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_RemoveFromClassList_System_String_">VisualElement.RemoveFromClassList(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ToggleInClassList_System_String_">VisualElement.ToggleInClassList(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_EnableInClassList_System_String_System_Boolean_">VisualElement.EnableInClassList(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ClassListContains_System_String_">VisualElement.ClassListContains(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_FindAncestorUserData">VisualElement.FindAncestorUserData()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Add_UnityEngine_UIElements_VisualElement_">VisualElement.Add(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Insert_System_Int32_UnityEngine_UIElements_VisualElement_">VisualElement.Insert(int, VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Remove_UnityEngine_UIElements_VisualElement_">VisualElement.Remove(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_RemoveAt_System_Int32_">VisualElement.RemoveAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Clear">VisualElement.Clear()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ElementAt_System_Int32_">VisualElement.ElementAt(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_IndexOf_UnityEngine_UIElements_VisualElement_">VisualElement.IndexOf(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Children">VisualElement.Children()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Sort_System_Comparison_UnityEngine_UIElements_VisualElement__">VisualElement.Sort(Comparison&lt;VisualElement&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_BringToFront">VisualElement.BringToFront()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_SendToBack">VisualElement.SendToBack()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_PlaceBehind_UnityEngine_UIElements_VisualElement_">VisualElement.PlaceBehind(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_PlaceInFront_UnityEngine_UIElements_VisualElement_">VisualElement.PlaceInFront(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_RemoveFromHierarchy">VisualElement.RemoveFromHierarchy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_GetFirstOfType__1">VisualElement.GetFirstOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_GetFirstAncestorOfType__1">VisualElement.GetFirstAncestorOfType&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Contains_UnityEngine_UIElements_VisualElement_">VisualElement.Contains(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_FindCommonAncestor_UnityEngine_UIElements_VisualElement_">VisualElement.FindCommonAncestor(VisualElement)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_resolvedStyle">VisualElement.resolvedStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_viewDataKey">VisualElement.viewDataKey</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_userData">VisualElement.userData</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_canGrabFocus">VisualElement.canGrabFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_focusController">VisualElement.focusController</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_usageHints">VisualElement.usageHints</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_transform">VisualElement.transform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_layout">VisualElement.layout</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_contentRect">VisualElement.contentRect</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_paddingRect">VisualElement.paddingRect</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_worldBound">VisualElement.worldBound</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_localBound">VisualElement.localBound</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_worldTransform">VisualElement.worldTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_pickingMode">VisualElement.pickingMode</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_name">VisualElement.name</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_enabledInHierarchy">VisualElement.enabledInHierarchy</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_enabledSelf">VisualElement.enabledSelf</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_languageDirection">VisualElement.languageDirection</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_visible">VisualElement.visible</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_generateVisualContent">VisualElement.generateVisualContent</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_experimental">VisualElement.experimental</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_hierarchy">VisualElement.hierarchy</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_cacheAsBitmap">VisualElement.cacheAsBitmap</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_parent">VisualElement.parent</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_panel">VisualElement.panel</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_visualTreeAssetSource">VisualElement.visualTreeAssetSource</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_Item_System_Int32_">VisualElement.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_childCount">VisualElement.childCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_schedule">VisualElement.schedule</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_style">VisualElement.style</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_customStyle">VisualElement.customStyle</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_styleSheets">VisualElement.styleSheets</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_tooltip">VisualElement.tooltip</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.Focusable.html#UnityEngine_UIElements_Focusable_Blur">Focusable.Blur()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.Focusable.html#UnityEngine_UIElements_Focusable_focusable">Focusable.focusable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.Focusable.html#UnityEngine_UIElements_Focusable_tabIndex">Focusable.tabIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.Focusable.html#UnityEngine_UIElements_Focusable_delegatesFocus">Focusable.delegatesFocus</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_RegisterCallback__1_UnityEngine_UIElements_EventCallback___0__UnityEngine_UIElements_TrickleDown_">CallbackEventHandler.RegisterCallback&lt;TEventType&gt;(EventCallback&lt;TEventType&gt;, TrickleDown)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_RegisterCallback__2_UnityEngine_UIElements_EventCallback___0___1____1_UnityEngine_UIElements_TrickleDown_">CallbackEventHandler.RegisterCallback&lt;TEventType, TUserArgsType&gt;(EventCallback&lt;TEventType, TUserArgsType&gt;, TUserArgsType, TrickleDown)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_UnregisterCallback__1_UnityEngine_UIElements_EventCallback___0__UnityEngine_UIElements_TrickleDown_">CallbackEventHandler.UnregisterCallback&lt;TEventType&gt;(EventCallback&lt;TEventType&gt;, TrickleDown)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_UnregisterCallback__2_UnityEngine_UIElements_EventCallback___0___1__UnityEngine_UIElements_TrickleDown_">CallbackEventHandler.UnregisterCallback&lt;TEventType, TUserArgsType&gt;(EventCallback&lt;TEventType, TUserArgsType&gt;, TrickleDown)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_HandleEvent_UnityEngine_UIElements_EventBase_">CallbackEventHandler.HandleEvent(EventBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_HasTrickleDownHandlers">CallbackEventHandler.HasTrickleDownHandlers()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_HasBubbleUpHandlers">CallbackEventHandler.HasBubbleUpHandlers()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UIElements.CallbackEventHandler.html#UnityEngine_UIElements_CallbackEventHandler_ExecuteDefaultActionAtTarget_UnityEngine_UIElements_EventBase_">CallbackEventHandler.ExecuteDefaultActionAtTarget(EventBase)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UIElements.html">UIElements</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.UIElementsModule.dll</h6>
+  <h5 id="UnityEngine_UIElements_BaseVerticalCollectionView_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseVerticalCollectionView : BindableElement, IEventHandler, IResolvedStyle, ITransform, ITransitionAnimations, IExperimentalFeatures, IVisualElementScheduler, IBindable, ISerializationCallbackReceiver</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView__ctor_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.#ctor*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView__ctor" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.#ctor">BaseVerticalCollectionView()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseVerticalCollectionView()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView__ctor_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.#ctor*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView__ctor_System_Collections_IList_System_Single_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.#ctor(System.Collections.IList,System.Single)">BaseVerticalCollectionView(IList, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseVerticalCollectionView(IList itemsSource, float itemHeight = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></td>
+        <td><span class="parametername">itemsSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">itemHeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView__ctor_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.#ctor*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView__ctor_System_Collections_IList_System_Single_System_Func_UnityEngine_UIElements_VisualElement__System_Action_UnityEngine_UIElements_VisualElement_System_Int32__" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.#ctor(System.Collections.IList,System.Single,System.Func{UnityEngine.UIElements.VisualElement},System.Action{UnityEngine.UIElements.VisualElement,System.Int32})">BaseVerticalCollectionView(IList, float, Func&lt;VisualElement&gt;, Action&lt;VisualElement, int&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;makeItem and bindItem are now in ListView and TreeView directly, please use a constructor without these parameters.&quot;)]
+public BaseVerticalCollectionView(IList itemsSource, float itemHeight = -1, Func&lt;VisualElement&gt; makeItem = null, Action&lt;VisualElement, int&gt; bindItem = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></td>
+        <td><span class="parametername">itemsSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">itemHeight</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a>&gt;</td>
+        <td><span class="parametername">makeItem</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">bindItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_borderUssClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.borderUssClassName">borderUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string borderUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_dragHoverBarUssClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.dragHoverBarUssClassName">dragHoverBarUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string dragHoverBarUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_dragHoverMarkerUssClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.dragHoverMarkerUssClassName">dragHoverMarkerUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string dragHoverMarkerUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemAlternativeBackgroundUssClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemAlternativeBackgroundUssClassName">itemAlternativeBackgroundUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string itemAlternativeBackgroundUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemDragHoverUssClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemDragHoverUssClassName">itemDragHoverUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string itemDragHoverUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemSelectedVariantUssClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemSelectedVariantUssClassName">itemSelectedVariantUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string itemSelectedVariantUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemUssClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemUssClassName">itemUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string itemUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_listScrollViewUssClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.listScrollViewUssClassName">listScrollViewUssClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string listScrollViewUssClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_ussClassName" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ussClassName">ussClassName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static readonly string ussClassName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_bindItem_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.bindItem*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_bindItem" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.bindItem">bindItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;bindItem has been moved to ListView and TreeView. Use these ones instead.&quot;)]
+public Action&lt;VisualElement, int&gt; bindItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_contentContainer_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.contentContainer*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_contentContainer" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.contentContainer">contentContainer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override VisualElement contentContainer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_contentContainer">VisualElement.contentContainer</a></div>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_destroyItem_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.destroyItem*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_destroyItem" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.destroyItem">destroyItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;destroyItem has been moved to ListView and TreeView. Use these ones instead.&quot;)]
+public Action&lt;VisualElement&gt; destroyItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_fixedItemHeight_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.fixedItemHeight*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_fixedItemHeight" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.fixedItemHeight">fixedItemHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fixedItemHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_horizontalScrollingEnabled_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.horizontalScrollingEnabled*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_horizontalScrollingEnabled" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.horizontalScrollingEnabled">horizontalScrollingEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool horizontalScrollingEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_itemHeight_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemHeight*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemHeight" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemHeight">itemHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;itemHeight is deprecated, use fixedItemHeight instead.&quot;, false)]
+public int itemHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_itemsSource_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemsSource*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemsSource" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemsSource">itemsSource</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList itemsSource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ilist">IList</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_makeItem_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.makeItem*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_makeItem" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.makeItem">makeItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;makeItem has been moved to ListView and TreeView. Use these ones instead.&quot;)]
+public Func&lt;VisualElement&gt; makeItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_reorderable_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.reorderable*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_reorderable" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.reorderable">reorderable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool reorderable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_resolvedItemHeight_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.resolvedItemHeight*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_resolvedItemHeight" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.resolvedItemHeight">resolvedItemHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;resolvedItemHeight is deprecated and will be removed from the API.&quot;, false)]
+public float resolvedItemHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedIndex_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedIndex*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedIndex" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedIndex">selectedIndex</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int selectedIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedIndices_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedIndices*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedIndices" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedIndices">selectedIndices</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;int&gt; selectedIndices { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedItem_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedItem*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedItem" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedItem">selectedItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object selectedItem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedItems_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedItems*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedItems" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedItems">selectedItems</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;object&gt; selectedItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_selectionType_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectionType*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_selectionType" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectionType">selectionType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectionType selectionType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.SelectionType.html">SelectionType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_showAlternatingRowBackgrounds_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.showAlternatingRowBackgrounds*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_showAlternatingRowBackgrounds" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.showAlternatingRowBackgrounds">showAlternatingRowBackgrounds</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AlternatingRowBackground showAlternatingRowBackgrounds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.AlternatingRowBackground.html">AlternatingRowBackground</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_showBorder_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.showBorder*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_showBorder" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.showBorder">showBorder</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool showBorder { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_unbindItem_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.unbindItem*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_unbindItem" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.unbindItem">unbindItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;unbindItem has been moved to ListView and TreeView. Use these ones instead.&quot;)]
+public Action&lt;VisualElement, int&gt; unbindItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_viewController_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.viewController*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_viewController" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.viewController">viewController</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollectionViewController viewController { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.CollectionViewController.html">CollectionViewController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_virtualizationMethod_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.virtualizationMethod*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_virtualizationMethod" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.virtualizationMethod">virtualizationMethod</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CollectionVirtualizationMethod virtualizationMethod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.CollectionVirtualizationMethod.html">CollectionVirtualizationMethod</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_AddToSelection_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.AddToSelection*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_AddToSelection_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.AddToSelection(System.Int32)">AddToSelection(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToSelection(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_ClearSelection_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ClearSelection*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_ClearSelection" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ClearSelection">ClearSelection()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearSelection()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_CreateViewController_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.CreateViewController*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_CreateViewController" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.CreateViewController">CreateViewController()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract CollectionViewController CreateViewController()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.CollectionViewController.html">CollectionViewController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_ExecuteDefaultAction_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ExecuteDefaultAction*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_ExecuteDefaultAction_UnityEngine_UIElements_EventBase_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ExecuteDefaultAction(UnityEngine.UIElements.EventBase)">ExecuteDefaultAction(EventBase)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[EventInterest(new Type[] { typeof(PointerUpEvent), typeof(FocusEvent), typeof(NavigationSubmitEvent), typeof(BlurEvent) })]
+protected override void ExecuteDefaultAction(EventBase evt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.EventBase.html">EventBase</a></td>
+        <td><span class="parametername">evt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UnityEngine.UIElements.VisualElement.html#UnityEngine_UIElements_VisualElement_ExecuteDefaultAction_UnityEngine_UIElements_EventBase_">VisualElement.ExecuteDefaultAction(EventBase)</a></div>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_GetRootElementForId_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.GetRootElementForId*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_GetRootElementForId_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.GetRootElementForId(System.Int32)">GetRootElementForId(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VisualElement GetRootElementForId(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_GetRootElementForIndex_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.GetRootElementForIndex*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_GetRootElementForIndex_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.GetRootElementForIndex(System.Int32)">GetRootElementForIndex(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VisualElement GetRootElementForIndex(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_OnKeyDown_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.OnKeyDown*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_OnKeyDown_UnityEngine_UIElements_KeyDownEvent_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.OnKeyDown(UnityEngine.UIElements.KeyDownEvent)">OnKeyDown(KeyDownEvent)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;OnKeyDown is obsolete and will be removed from ListView. Use the event system instead, i.e. SendEvent(EventBase e).&quot;, true)]
+public void OnKeyDown(KeyDownEvent evt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.KeyDownEvent.html">KeyDownEvent</a></td>
+        <td><span class="parametername">evt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_Rebuild_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.Rebuild*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_Rebuild" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.Rebuild">Rebuild()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rebuild()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_Refresh_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.Refresh*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_Refresh" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.Refresh">Refresh()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Refresh() has been deprecated. Use Rebuild() instead. (UnityUpgradable) -&gt; Rebuild()&quot;, false)]
+public void Refresh()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_RefreshItem_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.RefreshItem*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_RefreshItem_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.RefreshItem(System.Int32)">RefreshItem(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshItem(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_RefreshItems_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.RefreshItems*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_RefreshItems" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.RefreshItems">RefreshItems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshItems()</code></pre>
+  </div>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_RemoveFromSelection_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.RemoveFromSelection*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_RemoveFromSelection_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.RemoveFromSelection(System.Int32)">RemoveFromSelection(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFromSelection(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_ScrollTo_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ScrollTo*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_ScrollTo_UnityEngine_UIElements_VisualElement_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ScrollTo(UnityEngine.UIElements.VisualElement)">ScrollTo(VisualElement)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollTo(VisualElement visualElement)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.VisualElement.html">VisualElement</a></td>
+        <td><span class="parametername">visualElement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_ScrollToId_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ScrollToId*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_ScrollToId_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ScrollToId(System.Int32)">ScrollToId(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;ScrollToId() has been deprecated. Use ScrollToItemById() instead. (UnityUpgradable) -&gt; ScrollToItemById(*)&quot;, false)]
+public void ScrollToId(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_ScrollToItem_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ScrollToItem*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_ScrollToItem_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ScrollToItem(System.Int32)">ScrollToItem(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToItem(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_ScrollToItemById_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ScrollToItemById*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_ScrollToItemById_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.ScrollToItemById(System.Int32)">ScrollToItemById(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrollToItemById(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_SetSelection_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.SetSelection*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_SetSelection_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.SetSelection(System.Collections.Generic.IEnumerable{System.Int32})">SetSelection(IEnumerable&lt;int&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelection(IEnumerable&lt;int&gt; indices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">indices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_SetSelection_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.SetSelection*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_SetSelection_System_Int32_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.SetSelection(System.Int32)">SetSelection(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelection(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_SetSelectionWithoutNotify_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.SetSelectionWithoutNotify*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_SetSelectionWithoutNotify_System_Collections_Generic_IEnumerable_System_Int32__" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.SetSelectionWithoutNotify(System.Collections.Generic.IEnumerable{System.Int32})">SetSelectionWithoutNotify(IEnumerable&lt;int&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetSelectionWithoutNotify(IEnumerable&lt;int&gt; indices)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td><span class="parametername">indices</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_UIElements_BaseVerticalCollectionView_SetViewController_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.SetViewController*"></a>
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_SetViewController_UnityEngine_UIElements_CollectionViewController_" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.SetViewController(UnityEngine.UIElements.CollectionViewController)">SetViewController(CollectionViewController)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetViewController(CollectionViewController controller)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.UIElements.CollectionViewController.html">CollectionViewController</a></td>
+        <td><span class="parametername">controller</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemIndexChanged" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemIndexChanged">itemIndexChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;int, int&gt; itemIndexChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemsChosen" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemsChosen">itemsChosen</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IEnumerable&lt;object&gt;&gt; itemsChosen</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_itemsSourceChanged" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.itemsSourceChanged">itemsSourceChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action itemsSourceChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_onItemsChosen" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.onItemsChosen">onItemsChosen</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;onItemsChosen is deprecated, use itemsChosen instead&quot;, false)]
+public event Action&lt;IEnumerable&lt;object&gt;&gt; onItemsChosen</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_onSelectedIndicesChange" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.onSelectedIndicesChange">onSelectedIndicesChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;onSelectedIndicesChange is deprecated, use selectedIndicesChanged instead&quot;, false)]
+public event Action&lt;IEnumerable&lt;int&gt;&gt; onSelectedIndicesChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_onSelectionChange" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.onSelectionChange">onSelectionChange</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;onSelectionChange is deprecated, use selectionChanged instead&quot;, false)]
+public event Action&lt;IEnumerable&lt;object&gt;&gt; onSelectionChange</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_selectedIndicesChanged" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectedIndicesChanged">selectedIndicesChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IEnumerable&lt;int&gt;&gt; selectedIndicesChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="UnityEngine_UIElements_BaseVerticalCollectionView_selectionChanged" data-uid="UnityEngine.UIElements.BaseVerticalCollectionView.selectionChanged">selectionChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;IEnumerable&lt;object&gt;&gt; selectionChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IEventHandler.html">IEventHandler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IResolvedStyle.html">IResolvedStyle</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.ITransform.html">ITransform</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.Experimental.ITransitionAnimations.html">ITransitionAnimations</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IExperimentalFeatures.html">IExperimentalFeatures</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IVisualElementScheduler.html">IVisualElementScheduler</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IBindable.html">IBindable</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.ISerializationCallbackReceiver.html">ISerializationCallbackReceiver</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.IBindingExtensions.html#UnityEngine_UIElements_IBindingExtensions_IsBound_UnityEngine_UIElements_IBindable_">IBindingExtensions.IsBound(IBindable)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.MouseCaptureController.html#UnityEngine_UIElements_MouseCaptureController_CaptureMouse_UnityEngine_UIElements_IEventHandler_">MouseCaptureController.CaptureMouse(IEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.MouseCaptureController.html#UnityEngine_UIElements_MouseCaptureController_HasMouseCapture_UnityEngine_UIElements_IEventHandler_">MouseCaptureController.HasMouseCapture(IEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.MouseCaptureController.html#UnityEngine_UIElements_MouseCaptureController_ReleaseMouse_UnityEngine_UIElements_IEventHandler_">MouseCaptureController.ReleaseMouse(IEventHandler)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.PointerCaptureHelper.html#UnityEngine_UIElements_PointerCaptureHelper_CapturePointer_UnityEngine_UIElements_IEventHandler_System_Int32_">PointerCaptureHelper.CapturePointer(IEventHandler, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.PointerCaptureHelper.html#UnityEngine_UIElements_PointerCaptureHelper_HasPointerCapture_UnityEngine_UIElements_IEventHandler_System_Int32_">PointerCaptureHelper.HasPointerCapture(IEventHandler, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.PointerCaptureHelper.html#UnityEngine_UIElements_PointerCaptureHelper_ReleasePointer_UnityEngine_UIElements_IEventHandler_System_Int32_">PointerCaptureHelper.ReleasePointer(IEventHandler, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Q_UnityEngine_UIElements_VisualElement_System_String_System_String_">UQueryExtensions.Q(VisualElement, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Q_UnityEngine_UIElements_VisualElement_System_String_System_String___">UQueryExtensions.Q(VisualElement, string, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Q__1_UnityEngine_UIElements_VisualElement_System_String_System_String_">UQueryExtensions.Q&lt;T&gt;(VisualElement, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Q__1_UnityEngine_UIElements_VisualElement_System_String_System_String___">UQueryExtensions.Q&lt;T&gt;(VisualElement, string, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query_UnityEngine_UIElements_VisualElement_">UQueryExtensions.Query(VisualElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query_UnityEngine_UIElements_VisualElement_System_String_System_String_">UQueryExtensions.Query(VisualElement, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query_UnityEngine_UIElements_VisualElement_System_String_System_String___">UQueryExtensions.Query(VisualElement, string, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query__1_UnityEngine_UIElements_VisualElement_System_String_System_String_">UQueryExtensions.Query&lt;T&gt;(VisualElement, string, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.UQueryExtensions.html#UnityEngine_UIElements_UQueryExtensions_Query__1_UnityEngine_UIElements_VisualElement_System_String_System_String___">UQueryExtensions.Query&lt;T&gt;(VisualElement, string, params string[])</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_AddManipulator_UnityEngine_UIElements_VisualElement_UnityEngine_UIElements_IManipulator_">VisualElementExtensions.AddManipulator(VisualElement, IManipulator)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_ChangeCoordinatesTo_UnityEngine_UIElements_VisualElement_UnityEngine_UIElements_VisualElement_UnityEngine_Rect_">VisualElementExtensions.ChangeCoordinatesTo(VisualElement, VisualElement, Rect)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_ChangeCoordinatesTo_UnityEngine_UIElements_VisualElement_UnityEngine_UIElements_VisualElement_UnityEngine_Vector2_">VisualElementExtensions.ChangeCoordinatesTo(VisualElement, VisualElement, Vector2)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_LocalToWorld_UnityEngine_UIElements_VisualElement_UnityEngine_Rect_">VisualElementExtensions.LocalToWorld(VisualElement, Rect)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_LocalToWorld_UnityEngine_UIElements_VisualElement_UnityEngine_Vector2_">VisualElementExtensions.LocalToWorld(VisualElement, Vector2)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_RemoveManipulator_UnityEngine_UIElements_VisualElement_UnityEngine_UIElements_IManipulator_">VisualElementExtensions.RemoveManipulator(VisualElement, IManipulator)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_StretchToParentSize_UnityEngine_UIElements_VisualElement_">VisualElementExtensions.StretchToParentSize(VisualElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_StretchToParentWidth_UnityEngine_UIElements_VisualElement_">VisualElementExtensions.StretchToParentWidth(VisualElement)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_WorldToLocal_UnityEngine_UIElements_VisualElement_UnityEngine_Rect_">VisualElementExtensions.WorldToLocal(VisualElement, Rect)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.UIElements.VisualElementExtensions.html#UnityEngine_UIElements_VisualElementExtensions_WorldToLocal_UnityEngine_UIElements_VisualElement_UnityEngine_Vector2_">VisualElementExtensions.WorldToLocal(VisualElement, Vector2)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

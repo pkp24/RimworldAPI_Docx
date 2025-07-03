@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class Verb_BeatFire </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class Verb_BeatFire ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.Verb_BeatFire">
+
+
+
+  <h1 id="RimWorld_Verb_BeatFire" data-uid="RimWorld.Verb_BeatFire" class="text-break">Class Verb_BeatFire</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.Verb.html">Verb</a></div>
+    <div class="level2"><span class="xref">Verb_BeatFire</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="RimWorld.ITargetingSource.html">ITargetingSource</a></div>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_verbProps">Verb.verbProps</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_verbTracker">Verb.verbTracker</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_maneuver">Verb.maneuver</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_tool">Verb.tool</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_caster">Verb.caster</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_controlGroup">Verb.controlGroup</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_loadID">Verb.loadID</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_state">Verb.state</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_currentTarget">Verb.currentTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_currentDestination">Verb.currentDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_burstShotsLeft">Verb.burstShotsLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ticksToNextBurstShot">Verb.ticksToNextBurstShot</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_lastShotTick">Verb.lastShotTick</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_surpriseAttack">Verb.surpriseAttack</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_canHitNonTargetPawnsNow">Verb.canHitNonTargetPawnsNow</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_preventFriendlyFire">Verb.preventFriendlyFire</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_nonInterruptingSelfCast">Verb.nonInterruptingSelfCast</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_castCompleteCallback">Verb.castCompleteCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_IsStillUsableBy_Verse_Pawn_">Verb.IsStillUsableBy(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_IsUsableOn_Verse_Thing_">Verb.IsUsableOn(Thing)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ExposeData">Verb.ExposeData()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_GetUniqueLoadID">Verb.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_CalculateUniqueLoadID_Verse_IVerbOwner_Verse_Tool_Verse_ManeuverDef_">Verb.CalculateUniqueLoadID(IVerbOwner, Tool, ManeuverDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_CalculateUniqueLoadID_Verse_IVerbOwner_System_Int32_">Verb.CalculateUniqueLoadID(IVerbOwner, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_TryStartCastOn_Verse_LocalTargetInfo_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">Verb.TryStartCastOn(LocalTargetInfo, bool, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_TryStartCastOn_Verse_LocalTargetInfo_Verse_LocalTargetInfo_System_Boolean_System_Boolean_System_Boolean_System_Boolean_">Verb.TryStartCastOn(LocalTargetInfo, LocalTargetInfo, bool, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_WarmupComplete">Verb.WarmupComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_VerbTick">Verb.VerbTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_BurstingTick">Verb.BurstingTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_AddEffecterToMaintain_Verse_Effecter_Verse_IntVec3_System_Int32_Verse_Map_">Verb.AddEffecterToMaintain(Effecter, IntVec3, int, Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_AddEffecterToMaintain_Verse_Effecter_Verse_IntVec3_Verse_IntVec3_System_Int32_Verse_Map_">Verb.AddEffecterToMaintain(Effecter, IntVec3, IntVec3, int, Map)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_Available">Verb.Available()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_TryCastNextBurstShot">Verb.TryCastNextBurstShot()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_OrderForceTarget_Verse_LocalTargetInfo_">Verb.OrderForceTarget(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_Notify_PickedUp">Verb.Notify_PickedUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_Reset">Verb.Reset()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_Notify_EquipmentLost">Verb.Notify_EquipmentLost()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_HighlightFieldRadiusAroundTarget_System_Boolean__">Verb.HighlightFieldRadiusAroundTarget(out bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_CanHitTarget_Verse_LocalTargetInfo_">Verb.CanHitTarget(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ValidateTarget_Verse_LocalTargetInfo_System_Boolean_">Verb.ValidateTarget(LocalTargetInfo, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_DrawHighlight_Verse_LocalTargetInfo_">Verb.DrawHighlight(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_DrawHighlightFieldRadiusAroundTarget_Verse_LocalTargetInfo_">Verb.DrawHighlightFieldRadiusAroundTarget(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_OnGUI_Verse_LocalTargetInfo_">Verb.OnGUI(LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_CanHitTargetFrom_Verse_IntVec3_Verse_LocalTargetInfo_">Verb.CanHitTargetFrom(IntVec3, LocalTargetInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ApparelPreventsShooting">Verb.ApparelPreventsShooting()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_FirstApparelPreventingShooting">Verb.FirstApparelPreventingShooting()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_TryFindShootLineFromTo_Verse_IntVec3_Verse_LocalTargetInfo_Verse_ShootLine__System_Boolean_">Verb.TryFindShootLineFromTo(IntVec3, LocalTargetInfo, out ShootLine, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_OutOfRange_Verse_IntVec3_Verse_LocalTargetInfo_Verse_CellRect_">Verb.OutOfRange(IntVec3, LocalTargetInfo, CellRect)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ToString">Verb.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_DirectOwner">Verb.DirectOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ImplementOwnerType">Verb.ImplementOwnerType</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_EquipmentCompSource">Verb.EquipmentCompSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ReloadableCompSource">Verb.ReloadableCompSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_VerbOwner_ChargedCompSource">Verb.VerbOwner_ChargedCompSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_EquipmentSource">Verb.EquipmentSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_HediffCompSource">Verb.HediffCompSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_HediffSource">Verb.HediffSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_TerrainSource">Verb.TerrainSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_TerrainDefSource">Verb.TerrainDefSource</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_Caster">Verb.Caster</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_CasterPawn">Verb.CasterPawn</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_GetVerb">Verb.GetVerb</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_CasterIsPawn">Verb.CasterIsPawn</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_Targetable">Verb.Targetable</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_MultiSelect">Verb.MultiSelect</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_HidePawnTooltips">Verb.HidePawnTooltips</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_CurrentTarget">Verb.CurrentTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_CurrentDestination">Verb.CurrentDestination</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_LastShotTick">Verb.LastShotTick</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_targetParams">Verb.targetParams</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_DestinationSelector">Verb.DestinationSelector</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ShotsPerBurst">Verb.ShotsPerBurst</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_UIIcon">Verb.UIIcon</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_Bursting">Verb.Bursting</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_IsMeleeAttack">Verb.IsMeleeAttack</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_BuggedAfterLoading">Verb.BuggedAfterLoading</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_WarmingUp">Verb.WarmingUp</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_WarmupStance">Verb.WarmupStance</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_WarmupTicksLeft">Verb.WarmupTicksLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_WarmupProgress">Verb.WarmupProgress</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_ReportLabel">Verb.ReportLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_EffectiveRange">Verb.EffectiveRange</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_AimAngleOverride">Verb.AimAngleOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_NonInterruptingSelfCast">Verb.NonInterruptingSelfCast</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_TicksBetweenBurstShots">Verb.TicksBetweenBurstShots</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.Verb.html#Verse_Verb_BurstShotCount">Verb.BurstShotCount</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_Verb_BeatFire_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Verb_BeatFire : Verb, ITargetingSource, IExposable, ILoadReferenceable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_Verb_BeatFire__ctor_" data-uid="RimWorld.Verb_BeatFire.#ctor*"></a>
+  <h4 id="RimWorld_Verb_BeatFire__ctor" data-uid="RimWorld.Verb_BeatFire.#ctor">Verb_BeatFire()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Verb_BeatFire()</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_Verb_BeatFire_TryCastShot_" data-uid="RimWorld.Verb_BeatFire.TryCastShot*"></a>
+  <h4 id="RimWorld_Verb_BeatFire_TryCastShot" data-uid="RimWorld.Verb_BeatFire.TryCastShot">TryCastShot()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool TryCastShot()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Verse.Verb.html#Verse_Verb_TryCastShot">Verb.TryCastShot()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="RimWorld.ITargetingSource.html">ITargetingSource</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_GetDamageDef_Verse_Verb_">VerbUtility.GetDamageDef(Verb)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_GetProjectile_Verse_Verb_">VerbUtility.GetProjectile(Verb)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_GetSelectionCategory_Verse_Verb_Verse_Pawn_System_Single_">VerbUtility.GetSelectionCategory(Verb, Pawn, float)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_HarmsHealth_Verse_Verb_">VerbUtility.HarmsHealth(Verb)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_IsEMP_Verse_Verb_">VerbUtility.IsEMP(Verb)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_IsIncendiary_Melee_Verse_Verb_">VerbUtility.IsIncendiary_Melee(Verb)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_IsIncendiary_Ranged_Verse_Verb_">VerbUtility.IsIncendiary_Ranged(Verb)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_ProjectileFliesOverhead_Verse_Verb_">VerbUtility.ProjectileFliesOverhead(Verb)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.VerbUtility.html#Verse_VerbUtility_UsesExplosiveProjectiles_Verse_Verb_">VerbUtility.UsesExplosiveProjectiles(Verb)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

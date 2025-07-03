@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class IncidentWorker </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class IncidentWorker ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.IncidentWorker">
+
+
+
+  <h1 id="RimWorld_IncidentWorker" data-uid="RimWorld.IncidentWorker" class="text-break">Class IncidentWorker</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">IncidentWorker</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_AggressiveAnimals.html">IncidentWorker_AggressiveAnimals</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_Alphabeavers.html">IncidentWorker_Alphabeavers</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_AmbrosiaSprout.html">IncidentWorker_AmbrosiaSprout</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_Ambush.html">IncidentWorker_Ambush</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_AnimalInsanityMass.html">IncidentWorker_AnimalInsanityMass</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_AnimalInsanitySingle.html">IncidentWorker_AnimalInsanitySingle</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_BoomshroomSprout.html">IncidentWorker_BoomshroomSprout</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_CaravanDemand.html">IncidentWorker_CaravanDemand</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_CaravanMeeting.html">IncidentWorker_CaravanMeeting</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_ChimeraAssault.html">IncidentWorker_ChimeraAssault</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_CrashedShipPart.html">IncidentWorker_CrashedShipPart</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_CropBlight.html">IncidentWorker_CropBlight</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_DeepDrillInfestation.html">IncidentWorker_DeepDrillInfestation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_DevourerAssault.html">IncidentWorker_DevourerAssault</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_DevourerWaterAssault.html">IncidentWorker_DevourerWaterAssault</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_Disease.html">IncidentWorker_Disease</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_EntitySwarm.html">IncidentWorker_EntitySwarm</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_FarmAnimalsWanderIn.html">IncidentWorker_FarmAnimalsWanderIn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_Flashstorm.html">IncidentWorker_Flashstorm</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_FleshbeastAttack.html">IncidentWorker_FleshbeastAttack</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_FleshmassHeart.html">IncidentWorker_FleshmassHeart</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_GameEndedWanderersJoin.html">IncidentWorker_GameEndedWanderersJoin</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_GauranlenPodSpawn.html">IncidentWorker_GauranlenPodSpawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_GhoulAttack.html">IncidentWorker_GhoulAttack</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_GiveQuest.html">IncidentWorker_GiveQuest</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_GorehulkAssault.html">IncidentWorker_GorehulkAssault</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_HarbingerTreeProvoked.html">IncidentWorker_HarbingerTreeProvoked</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_HateChanters.html">IncidentWorker_HateChanters</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_HerdMigration.html">IncidentWorker_HerdMigration</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_Infestation.html">IncidentWorker_Infestation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_InsectJelly.html">IncidentWorker_InsectJelly</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_LavaEmergence.html">IncidentWorker_LavaEmergence</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_LavaFlow.html">IncidentWorker_LavaFlow</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_MakeGameCondition.html">IncidentWorker_MakeGameCondition</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_MechCluster.html">IncidentWorker_MechCluster</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_MetalhorrorImplantation.html">IncidentWorker_MetalhorrorImplantation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_MeteoriteImpact.html">IncidentWorker_MeteoriteImpact</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_Nociosphere.html">IncidentWorker_Nociosphere</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_Obelisk.html">IncidentWorker_Obelisk</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_OrbitalDebris.html">IncidentWorker_OrbitalDebris</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_OrbitalTraderArrival.html">IncidentWorker_OrbitalTraderArrival</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_PawnsArrive.html">IncidentWorker_PawnsArrive</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_PitGate.html">IncidentWorker_PitGate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_PsychicEmanation.html">IncidentWorker_PsychicEmanation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_RansomDemand.html">IncidentWorker_RansomDemand</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_ResourcePodCrash.html">IncidentWorker_ResourcePodCrash</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_Revenant.html">IncidentWorker_Revenant</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_RevenantEmergence.html">IncidentWorker_RevenantEmergence</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_SeasonalFlooding.html">IncidentWorker_SeasonalFlooding</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_SelfTame.html">IncidentWorker_SelfTame</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_ShipChunkDrop.html">IncidentWorker_ShipChunkDrop</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_ShortCircuit.html">IncidentWorker_ShortCircuit</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_SightstealerArrival.html">IncidentWorker_SightstealerArrival</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_SightstealerSwarm.html">IncidentWorker_SightstealerSwarm</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_SpecialTreeSpawn.html">IncidentWorker_SpecialTreeSpawn</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_ThrumboPasses.html">IncidentWorker_ThrumboPasses</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_UnnaturalCorpseArrival.html">IncidentWorker_UnnaturalCorpseArrival</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_VoidCuriosity.html">IncidentWorker_VoidCuriosity</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_WandererJoin.html">IncidentWorker_WandererJoin</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_WastepackInfestation.html">IncidentWorker_WastepackInfestation</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.IncidentWorker_WildManWandersIn.html">IncidentWorker_WildManWandersIn</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_IncidentWorker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class IncidentWorker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_IncidentWorker__ctor_" data-uid="RimWorld.IncidentWorker.#ctor*"></a>
+  <h4 id="RimWorld_IncidentWorker__ctor" data-uid="RimWorld.IncidentWorker.#ctor">IncidentWorker()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IncidentWorker()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_IncidentWorker_def" data-uid="RimWorld.IncidentWorker.def">def</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IncidentDef def</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentDef.html">IncidentDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="RimWorld_IncidentWorker_BaseChanceThisGame_" data-uid="RimWorld.IncidentWorker.BaseChanceThisGame*"></a>
+  <h4 id="RimWorld_IncidentWorker_BaseChanceThisGame" data-uid="RimWorld.IncidentWorker.BaseChanceThisGame">BaseChanceThisGame</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float BaseChanceThisGame { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_IncidentWorker_CanFireNow_" data-uid="RimWorld.IncidentWorker.CanFireNow*"></a>
+  <h4 id="RimWorld_IncidentWorker_CanFireNow_RimWorld_IncidentParms_" data-uid="RimWorld.IncidentWorker.CanFireNow(RimWorld.IncidentParms)">CanFireNow(IncidentParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanFireNow(IncidentParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentParms.html">IncidentParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_IncidentWorker_CanFireNowSub_" data-uid="RimWorld.IncidentWorker.CanFireNowSub*"></a>
+  <h4 id="RimWorld_IncidentWorker_CanFireNowSub_RimWorld_IncidentParms_" data-uid="RimWorld.IncidentWorker.CanFireNowSub(RimWorld.IncidentParms)">CanFireNowSub(IncidentParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool CanFireNowSub(IncidentParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentParms.html">IncidentParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_IncidentWorker_ChanceFactorNow_" data-uid="RimWorld.IncidentWorker.ChanceFactorNow*"></a>
+  <h4 id="RimWorld_IncidentWorker_ChanceFactorNow_RimWorld_IIncidentTarget_" data-uid="RimWorld.IncidentWorker.ChanceFactorNow(RimWorld.IIncidentTarget)">ChanceFactorNow(IIncidentTarget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float ChanceFactorNow(IIncidentTarget target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.IIncidentTarget.html">IIncidentTarget</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_IncidentWorker_FiredTooRecently_" data-uid="RimWorld.IncidentWorker.FiredTooRecently*"></a>
+  <h4 id="RimWorld_IncidentWorker_FiredTooRecently_RimWorld_IIncidentTarget_" data-uid="RimWorld.IncidentWorker.FiredTooRecently(RimWorld.IIncidentTarget)">FiredTooRecently(IIncidentTarget)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool FiredTooRecently(IIncidentTarget target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.IIncidentTarget.html">IIncidentTarget</a></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_IncidentWorker_SendIncidentLetter_" data-uid="RimWorld.IncidentWorker.SendIncidentLetter*"></a>
+  <h4 id="RimWorld_IncidentWorker_SendIncidentLetter_Verse_TaggedString_Verse_TaggedString_Verse_LetterDef_RimWorld_IncidentParms_Verse_LookTargets_RimWorld_IncidentDef_Verse_NamedArgument___" data-uid="RimWorld.IncidentWorker.SendIncidentLetter(Verse.TaggedString,Verse.TaggedString,Verse.LetterDef,RimWorld.IncidentParms,Verse.LookTargets,RimWorld.IncidentDef,Verse.NamedArgument[])">SendIncidentLetter(TaggedString, TaggedString, LetterDef, IncidentParms, LookTargets, IncidentDef, params NamedArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SendIncidentLetter(TaggedString baseLetterLabel, TaggedString baseLetterText, LetterDef baseLetterDef, IncidentParms parms, LookTargets lookTargets, IncidentDef def, params NamedArgument[] textArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td><span class="parametername">baseLetterLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td><span class="parametername">baseLetterText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LetterDef.html">LetterDef</a></td>
+        <td><span class="parametername">baseLetterDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentParms.html">IncidentParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LookTargets.html">LookTargets</a></td>
+        <td><span class="parametername">lookTargets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentDef.html">IncidentDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.NamedArgument.html">NamedArgument</a>[]</td>
+        <td><span class="parametername">textArgs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_IncidentWorker_SendStandardLetter_" data-uid="RimWorld.IncidentWorker.SendStandardLetter*"></a>
+  <h4 id="RimWorld_IncidentWorker_SendStandardLetter_RimWorld_IncidentParms_Verse_LookTargets_Verse_NamedArgument___" data-uid="RimWorld.IncidentWorker.SendStandardLetter(RimWorld.IncidentParms,Verse.LookTargets,Verse.NamedArgument[])">SendStandardLetter(IncidentParms, LookTargets, params NamedArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SendStandardLetter(IncidentParms parms, LookTargets lookTargets, params NamedArgument[] textArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentParms.html">IncidentParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LookTargets.html">LookTargets</a></td>
+        <td><span class="parametername">lookTargets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.NamedArgument.html">NamedArgument</a>[]</td>
+        <td><span class="parametername">textArgs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_IncidentWorker_SendStandardLetter_" data-uid="RimWorld.IncidentWorker.SendStandardLetter*"></a>
+  <h4 id="RimWorld_IncidentWorker_SendStandardLetter_Verse_TaggedString_Verse_TaggedString_Verse_LetterDef_RimWorld_IncidentParms_Verse_LookTargets_Verse_NamedArgument___" data-uid="RimWorld.IncidentWorker.SendStandardLetter(Verse.TaggedString,Verse.TaggedString,Verse.LetterDef,RimWorld.IncidentParms,Verse.LookTargets,Verse.NamedArgument[])">SendStandardLetter(TaggedString, TaggedString, LetterDef, IncidentParms, LookTargets, params NamedArgument[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SendStandardLetter(TaggedString baseLetterLabel, TaggedString baseLetterText, LetterDef baseLetterDef, IncidentParms parms, LookTargets lookTargets, params NamedArgument[] textArgs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td><span class="parametername">baseLetterLabel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.TaggedString.html">TaggedString</a></td>
+        <td><span class="parametername">baseLetterText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LetterDef.html">LetterDef</a></td>
+        <td><span class="parametername">baseLetterDef</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentParms.html">IncidentParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.LookTargets.html">LookTargets</a></td>
+        <td><span class="parametername">lookTargets</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.NamedArgument.html">NamedArgument</a>[]</td>
+        <td><span class="parametername">textArgs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_IncidentWorker_TryExecute_" data-uid="RimWorld.IncidentWorker.TryExecute*"></a>
+  <h4 id="RimWorld_IncidentWorker_TryExecute_RimWorld_IncidentParms_" data-uid="RimWorld.IncidentWorker.TryExecute(RimWorld.IncidentParms)">TryExecute(IncidentParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryExecute(IncidentParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentParms.html">IncidentParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_IncidentWorker_TryExecuteWorker_" data-uid="RimWorld.IncidentWorker.TryExecuteWorker*"></a>
+  <h4 id="RimWorld_IncidentWorker_TryExecuteWorker_RimWorld_IncidentParms_" data-uid="RimWorld.IncidentWorker.TryExecuteWorker(RimWorld.IncidentParms)">TryExecuteWorker(IncidentParms)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TryExecuteWorker(IncidentParms parms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.IncidentParms.html">IncidentParms</a></td>
+        <td><span class="parametername">parms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

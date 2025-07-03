@@ -1,0 +1,1799 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct DataStreamReader </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct DataStreamReader ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Unity.Collections.DataStreamReader">
+
+
+
+  <h1 id="Unity_Collections_DataStreamReader" data-uid="Unity.Collections.DataStreamReader" class="text-break">Struct DataStreamReader</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Unity.html">Unity</a>.<a class="xref" href="Unity.Collections.html">Collections</a></h6>
+  <h6><strong>Assembly</strong>: Unity.Collections.dll</h6>
+  <h5 id="Unity_Collections_DataStreamReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[MovedFrom(true, &quot;Unity.Networking.Transport&quot;, null, null)]
+[GenerateTestsForBurstCompatibility]
+public struct DataStreamReader</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="Unity_Collections_DataStreamReader__ctor_" data-uid="Unity.Collections.DataStreamReader.#ctor*"></a>
+  <h4 id="Unity_Collections_DataStreamReader__ctor_Unity_Collections_NativeArray_System_Byte__" data-uid="Unity.Collections.DataStreamReader.#ctor(Unity.Collections.NativeArray{System.Byte})">DataStreamReader(NativeArray&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataStreamReader(NativeArray&lt;byte&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="Unity_Collections_DataStreamReader_HasFailedReads_" data-uid="Unity.Collections.DataStreamReader.HasFailedReads*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_HasFailedReads" data-uid="Unity.Collections.DataStreamReader.HasFailedReads">HasFailedReads</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool HasFailedReads { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_IsCreated_" data-uid="Unity.Collections.DataStreamReader.IsCreated*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_IsCreated" data-uid="Unity.Collections.DataStreamReader.IsCreated">IsCreated</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly bool IsCreated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_IsLittleEndian_" data-uid="Unity.Collections.DataStreamReader.IsLittleEndian*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_IsLittleEndian" data-uid="Unity.Collections.DataStreamReader.IsLittleEndian">IsLittleEndian</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsLittleEndian { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_Length_" data-uid="Unity.Collections.DataStreamReader.Length*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_Length" data-uid="Unity.Collections.DataStreamReader.Length">Length</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly int Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Unity_Collections_DataStreamReader_Flush_" data-uid="Unity.Collections.DataStreamReader.Flush*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_Flush" data-uid="Unity.Collections.DataStreamReader.Flush">Flush()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Flush()</code></pre>
+  </div>
+
+
+  <a id="Unity_Collections_DataStreamReader_GetBitsRead_" data-uid="Unity.Collections.DataStreamReader.GetBitsRead*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_GetBitsRead" data-uid="Unity.Collections.DataStreamReader.GetBitsRead">GetBitsRead()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBitsRead()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_GetBytesRead_" data-uid="Unity.Collections.DataStreamReader.GetBytesRead*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_GetBytesRead" data-uid="Unity.Collections.DataStreamReader.GetBytesRead">GetBytesRead()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetBytesRead()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadByte_" data-uid="Unity.Collections.DataStreamReader.ReadByte*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadByte" data-uid="Unity.Collections.DataStreamReader.ReadByte">ReadByte()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte ReadByte()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadBytes_" data-uid="Unity.Collections.DataStreamReader.ReadBytes*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadBytes_System_Span_System_Byte__" data-uid="Unity.Collections.DataStreamReader.ReadBytes(System.Span{System.Byte})">ReadBytes(Span&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadBytes(Span&lt;byte&gt; span)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.span-1">Span</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">span</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadBytes_" data-uid="Unity.Collections.DataStreamReader.ReadBytes*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadBytes_Unity_Collections_NativeArray_System_Byte__" data-uid="Unity.Collections.DataStreamReader.ReadBytes(Unity.Collections.NativeArray{System.Byte})">ReadBytes(NativeArray&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ReadBytes(NativeArray&lt;byte&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadDouble_" data-uid="Unity.Collections.DataStreamReader.ReadDouble*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadDouble" data-uid="Unity.Collections.DataStreamReader.ReadDouble">ReadDouble()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ReadDouble()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadFixedString_" data-uid="Unity.Collections.DataStreamReader.ReadFixedString*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadFixedString_Unity_Collections_NativeArray_System_Byte__" data-uid="Unity.Collections.DataStreamReader.ReadFixedString(Unity.Collections.NativeArray{System.Byte})">ReadFixedString(NativeArray&lt;byte&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort ReadFixedString(NativeArray&lt;byte&gt; array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadFixedString128_" data-uid="Unity.Collections.DataStreamReader.ReadFixedString128*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadFixedString128" data-uid="Unity.Collections.DataStreamReader.ReadFixedString128">ReadFixedString128()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString128Bytes ReadFixedString128()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString128Bytes.html">FixedString128Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadFixedString32_" data-uid="Unity.Collections.DataStreamReader.ReadFixedString32*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadFixedString32" data-uid="Unity.Collections.DataStreamReader.ReadFixedString32">ReadFixedString32()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString32Bytes ReadFixedString32()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString32Bytes.html">FixedString32Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadFixedString4096_" data-uid="Unity.Collections.DataStreamReader.ReadFixedString4096*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadFixedString4096" data-uid="Unity.Collections.DataStreamReader.ReadFixedString4096">ReadFixedString4096()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString4096Bytes ReadFixedString4096()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString4096Bytes.html">FixedString4096Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadFixedString512_" data-uid="Unity.Collections.DataStreamReader.ReadFixedString512*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadFixedString512" data-uid="Unity.Collections.DataStreamReader.ReadFixedString512">ReadFixedString512()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString512Bytes ReadFixedString512()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString512Bytes.html">FixedString512Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadFixedString64_" data-uid="Unity.Collections.DataStreamReader.ReadFixedString64*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadFixedString64" data-uid="Unity.Collections.DataStreamReader.ReadFixedString64">ReadFixedString64()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString64Bytes ReadFixedString64()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString64Bytes.html">FixedString64Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadFloat_" data-uid="Unity.Collections.DataStreamReader.ReadFloat*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadFloat" data-uid="Unity.Collections.DataStreamReader.ReadFloat">ReadFloat()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ReadFloat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadInt_" data-uid="Unity.Collections.DataStreamReader.ReadInt*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadInt" data-uid="Unity.Collections.DataStreamReader.ReadInt">ReadInt()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadIntNetworkByteOrder_" data-uid="Unity.Collections.DataStreamReader.ReadIntNetworkByteOrder*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadIntNetworkByteOrder" data-uid="Unity.Collections.DataStreamReader.ReadIntNetworkByteOrder">ReadIntNetworkByteOrder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadIntNetworkByteOrder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadLong_" data-uid="Unity.Collections.DataStreamReader.ReadLong*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadLong" data-uid="Unity.Collections.DataStreamReader.ReadLong">ReadLong()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ReadLong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedDouble_" data-uid="Unity.Collections.DataStreamReader.ReadPackedDouble*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedDouble_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedDouble(Unity.Collections.StreamCompressionModel@)">ReadPackedDouble(in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ReadPackedDouble(in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedDoubleDelta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedDoubleDelta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedDoubleDelta_System_Double_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedDoubleDelta(System.Double,Unity.Collections.StreamCompressionModel@)">ReadPackedDoubleDelta(double, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ReadPackedDoubleDelta(double baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedFixedString128Delta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString128Delta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedFixedString128Delta_Unity_Collections_FixedString128Bytes_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString128Delta(Unity.Collections.FixedString128Bytes,Unity.Collections.StreamCompressionModel@)">ReadPackedFixedString128Delta(FixedString128Bytes, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString128Bytes ReadPackedFixedString128Delta(FixedString128Bytes baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString128Bytes.html">FixedString128Bytes</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString128Bytes.html">FixedString128Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedFixedString32Delta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString32Delta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedFixedString32Delta_Unity_Collections_FixedString32Bytes_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString32Delta(Unity.Collections.FixedString32Bytes,Unity.Collections.StreamCompressionModel@)">ReadPackedFixedString32Delta(FixedString32Bytes, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString32Bytes ReadPackedFixedString32Delta(FixedString32Bytes baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString32Bytes.html">FixedString32Bytes</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString32Bytes.html">FixedString32Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedFixedString4096Delta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString4096Delta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedFixedString4096Delta_Unity_Collections_FixedString4096Bytes_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString4096Delta(Unity.Collections.FixedString4096Bytes,Unity.Collections.StreamCompressionModel@)">ReadPackedFixedString4096Delta(FixedString4096Bytes, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString4096Bytes ReadPackedFixedString4096Delta(FixedString4096Bytes baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString4096Bytes.html">FixedString4096Bytes</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString4096Bytes.html">FixedString4096Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedFixedString512Delta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString512Delta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedFixedString512Delta_Unity_Collections_FixedString512Bytes_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString512Delta(Unity.Collections.FixedString512Bytes,Unity.Collections.StreamCompressionModel@)">ReadPackedFixedString512Delta(FixedString512Bytes, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString512Bytes ReadPackedFixedString512Delta(FixedString512Bytes baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString512Bytes.html">FixedString512Bytes</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString512Bytes.html">FixedString512Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedFixedString64Delta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString64Delta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedFixedString64Delta_Unity_Collections_FixedString64Bytes_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedString64Delta(Unity.Collections.FixedString64Bytes,Unity.Collections.StreamCompressionModel@)">ReadPackedFixedString64Delta(FixedString64Bytes, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedString64Bytes ReadPackedFixedString64Delta(FixedString64Bytes baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString64Bytes.html">FixedString64Bytes</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.FixedString64Bytes.html">FixedString64Bytes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedFixedStringDelta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedStringDelta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedFixedStringDelta_Unity_Collections_NativeArray_System_Byte__Unity_Collections_NativeArray_System_Byte__Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedFixedStringDelta(Unity.Collections.NativeArray{System.Byte},Unity.Collections.NativeArray{System.Byte},Unity.Collections.StreamCompressionModel@)">ReadPackedFixedStringDelta(NativeArray&lt;byte&gt;, NativeArray&lt;byte&gt;, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort ReadPackedFixedStringDelta(NativeArray&lt;byte&gt; data, NativeArray&lt;byte&gt; baseData, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">data</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.NativeArray-1.html">NativeArray</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</td>
+        <td><span class="parametername">baseData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedFloat_" data-uid="Unity.Collections.DataStreamReader.ReadPackedFloat*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedFloat_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedFloat(Unity.Collections.StreamCompressionModel@)">ReadPackedFloat(in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ReadPackedFloat(in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedFloatDelta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedFloatDelta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedFloatDelta_System_Single_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedFloatDelta(System.Single,Unity.Collections.StreamCompressionModel@)">ReadPackedFloatDelta(float, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ReadPackedFloatDelta(float baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedInt_" data-uid="Unity.Collections.DataStreamReader.ReadPackedInt*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedInt_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedInt(Unity.Collections.StreamCompressionModel@)">ReadPackedInt(in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadPackedInt(in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedIntDelta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedIntDelta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedIntDelta_System_Int32_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedIntDelta(System.Int32,Unity.Collections.StreamCompressionModel@)">ReadPackedIntDelta(int, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReadPackedIntDelta(int baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedLong_" data-uid="Unity.Collections.DataStreamReader.ReadPackedLong*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedLong_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedLong(Unity.Collections.StreamCompressionModel@)">ReadPackedLong(in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ReadPackedLong(in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedLongDelta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedLongDelta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedLongDelta_System_Int64_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedLongDelta(System.Int64,Unity.Collections.StreamCompressionModel@)">ReadPackedLongDelta(long, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ReadPackedLongDelta(long baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedUInt_" data-uid="Unity.Collections.DataStreamReader.ReadPackedUInt*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedUInt_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedUInt(Unity.Collections.StreamCompressionModel@)">ReadPackedUInt(in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ReadPackedUInt(in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedUIntDelta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedUIntDelta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedUIntDelta_System_UInt32_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedUIntDelta(System.UInt32,Unity.Collections.StreamCompressionModel@)">ReadPackedUIntDelta(uint, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ReadPackedUIntDelta(uint baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedULong_" data-uid="Unity.Collections.DataStreamReader.ReadPackedULong*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedULong_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedULong(Unity.Collections.StreamCompressionModel@)">ReadPackedULong(in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong ReadPackedULong(in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadPackedULongDelta_" data-uid="Unity.Collections.DataStreamReader.ReadPackedULongDelta*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadPackedULongDelta_System_UInt64_Unity_Collections_StreamCompressionModel__" data-uid="Unity.Collections.DataStreamReader.ReadPackedULongDelta(System.UInt64,Unity.Collections.StreamCompressionModel@)">ReadPackedULongDelta(ulong, in StreamCompressionModel)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong ReadPackedULongDelta(ulong baseline, in StreamCompressionModel model)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td><span class="parametername">baseline</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Unity.Collections.StreamCompressionModel.html">StreamCompressionModel</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadRawBits_" data-uid="Unity.Collections.DataStreamReader.ReadRawBits*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadRawBits_System_Int32_" data-uid="Unity.Collections.DataStreamReader.ReadRawBits(System.Int32)">ReadRawBits(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ReadRawBits(int numbits)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">numbits</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadShort_" data-uid="Unity.Collections.DataStreamReader.ReadShort*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadShort" data-uid="Unity.Collections.DataStreamReader.ReadShort">ReadShort()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short ReadShort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadShortNetworkByteOrder_" data-uid="Unity.Collections.DataStreamReader.ReadShortNetworkByteOrder*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadShortNetworkByteOrder" data-uid="Unity.Collections.DataStreamReader.ReadShortNetworkByteOrder">ReadShortNetworkByteOrder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short ReadShortNetworkByteOrder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int16">short</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadUInt_" data-uid="Unity.Collections.DataStreamReader.ReadUInt*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadUInt" data-uid="Unity.Collections.DataStreamReader.ReadUInt">ReadUInt()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ReadUInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadUIntNetworkByteOrder_" data-uid="Unity.Collections.DataStreamReader.ReadUIntNetworkByteOrder*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadUIntNetworkByteOrder" data-uid="Unity.Collections.DataStreamReader.ReadUIntNetworkByteOrder">ReadUIntNetworkByteOrder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint ReadUIntNetworkByteOrder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadULong_" data-uid="Unity.Collections.DataStreamReader.ReadULong*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadULong" data-uid="Unity.Collections.DataStreamReader.ReadULong">ReadULong()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong ReadULong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadUShort_" data-uid="Unity.Collections.DataStreamReader.ReadUShort*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadUShort" data-uid="Unity.Collections.DataStreamReader.ReadUShort">ReadUShort()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort ReadUShort()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_ReadUShortNetworkByteOrder_" data-uid="Unity.Collections.DataStreamReader.ReadUShortNetworkByteOrder*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_ReadUShortNetworkByteOrder" data-uid="Unity.Collections.DataStreamReader.ReadUShortNetworkByteOrder">ReadUShortNetworkByteOrder()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ushort ReadUShortNetworkByteOrder()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint16">ushort</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Unity_Collections_DataStreamReader_SeekSet_" data-uid="Unity.Collections.DataStreamReader.SeekSet*"></a>
+  <h4 id="Unity_Collections_DataStreamReader_SeekSet_System_Int32_" data-uid="Unity.Collections.DataStreamReader.SeekSet(System.Int32)">SeekSet(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SeekSet(int pos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">pos</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Unity.Collections.LowLevel.Unsafe.DataStreamExtensions.html#Unity_Collections_LowLevel_Unsafe_DataStreamExtensions_GetUnsafeReadOnlyPtr_Unity_Collections_DataStreamReader__">DataStreamExtensions.GetUnsafeReadOnlyPtr(ref DataStreamReader)</a>
+  </div>
+  <div>
+      <a class="xref" href="Unity.Collections.LowLevel.Unsafe.DataStreamExtensions.html#Unity_Collections_LowLevel_Unsafe_DataStreamExtensions_ReadBytesUnsafe_Unity_Collections_DataStreamReader__System_Byte__System_Int32_">DataStreamExtensions.ReadBytesUnsafe(ref DataStreamReader, byte*, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Unity.Collections.LowLevel.Unsafe.DataStreamExtensions.html#Unity_Collections_LowLevel_Unsafe_DataStreamExtensions_ReadFixedStringUnsafe_Unity_Collections_DataStreamReader__System_Byte__System_Int32_">DataStreamExtensions.ReadFixedStringUnsafe(ref DataStreamReader, byte*, int)</a>
+  </div>
+  <div>
+      <a class="xref" href="Unity.Collections.LowLevel.Unsafe.DataStreamExtensions.html#Unity_Collections_LowLevel_Unsafe_DataStreamExtensions_ReadPackedFixedStringDeltaUnsafe_Unity_Collections_DataStreamReader__System_Byte__System_Int32_System_Byte__System_UInt16_Unity_Collections_StreamCompressionModel_">DataStreamExtensions.ReadPackedFixedStringDeltaUnsafe(ref DataStreamReader, byte*, int, byte*, ushort, StreamCompressionModel)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class XRDisplaySubsystem </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class XRDisplaySubsystem ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UnityEngine.XR.XRDisplaySubsystem">
+
+
+
+  <h1 id="UnityEngine_XR_XRDisplaySubsystem" data-uid="UnityEngine.XR.XRDisplaySubsystem" class="text-break">Class XRDisplaySubsystem</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="UnityEngine.IntegratedSubsystem.html">IntegratedSubsystem</a></div>
+    <div class="level2"><a class="xref" href="UnityEngine.IntegratedSubsystem-1.html">IntegratedSubsystem</a>&lt;<a class="xref" href="UnityEngine.XR.XRDisplaySubsystemDescriptor.html">XRDisplaySubsystemDescriptor</a>&gt;</div>
+    <div class="level3"><span class="xref">XRDisplaySubsystem</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UnityEngine.ISubsystem.html">ISubsystem</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UnityEngine.IntegratedSubsystem-1.html#UnityEngine_IntegratedSubsystem_1_subsystemDescriptor">IntegratedSubsystem&lt;XRDisplaySubsystemDescriptor&gt;.subsystemDescriptor</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.IntegratedSubsystem-1.html#UnityEngine_IntegratedSubsystem_1_SubsystemDescriptor">IntegratedSubsystem&lt;XRDisplaySubsystemDescriptor&gt;.SubsystemDescriptor</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.IntegratedSubsystem.html#UnityEngine_IntegratedSubsystem_Start">IntegratedSubsystem.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.IntegratedSubsystem.html#UnityEngine_IntegratedSubsystem_Stop">IntegratedSubsystem.Stop()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.IntegratedSubsystem.html#UnityEngine_IntegratedSubsystem_Destroy">IntegratedSubsystem.Destroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.IntegratedSubsystem.html#UnityEngine_IntegratedSubsystem_running">IntegratedSubsystem.running</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.XR.html">XR</a></h6>
+  <h6><strong>Assembly</strong>: UnityEngine.XRModule.dll</h6>
+  <h5 id="UnityEngine_XR_XRDisplaySubsystem_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class XRDisplaySubsystem : IntegratedSubsystem&lt;XRDisplaySubsystemDescriptor&gt;, ISubsystem</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem__ctor_" data-uid="UnityEngine.XR.XRDisplaySubsystem.#ctor*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem__ctor" data-uid="UnityEngine.XR.XRDisplaySubsystem.#ctor">XRDisplaySubsystem()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XRDisplaySubsystem()</code></pre>
+  </div>
+  <h3 id="properties">Properties
+</h3>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_contentProtectionEnabled_" data-uid="UnityEngine.XR.XRDisplaySubsystem.contentProtectionEnabled*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_contentProtectionEnabled" data-uid="UnityEngine.XR.XRDisplaySubsystem.contentProtectionEnabled">contentProtectionEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool contentProtectionEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_disableLegacyRenderer_" data-uid="UnityEngine.XR.XRDisplaySubsystem.disableLegacyRenderer*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_disableLegacyRenderer" data-uid="UnityEngine.XR.XRDisplaySubsystem.disableLegacyRenderer">disableLegacyRenderer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool disableLegacyRenderer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_displayOpaque_" data-uid="UnityEngine.XR.XRDisplaySubsystem.displayOpaque*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_displayOpaque" data-uid="UnityEngine.XR.XRDisplaySubsystem.displayOpaque">displayOpaque</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool displayOpaque { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_foveatedRenderingFlags_" data-uid="UnityEngine.XR.XRDisplaySubsystem.foveatedRenderingFlags*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_foveatedRenderingFlags" data-uid="UnityEngine.XR.XRDisplaySubsystem.foveatedRenderingFlags">foveatedRenderingFlags</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XRDisplaySubsystem.FoveatedRenderingFlags foveatedRenderingFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.html">XRDisplaySubsystem</a>.<a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.FoveatedRenderingFlags.html">FoveatedRenderingFlags</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_foveatedRenderingLevel_" data-uid="UnityEngine.XR.XRDisplaySubsystem.foveatedRenderingLevel*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_foveatedRenderingLevel" data-uid="UnityEngine.XR.XRDisplaySubsystem.foveatedRenderingLevel">foveatedRenderingLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float foveatedRenderingLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_hdrOutputSettings_" data-uid="UnityEngine.XR.XRDisplaySubsystem.hdrOutputSettings*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_hdrOutputSettings" data-uid="UnityEngine.XR.XRDisplaySubsystem.hdrOutputSettings">hdrOutputSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HDROutputSettings hdrOutputSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.HDROutputSettings.html">HDROutputSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_occlusionMaskScale_" data-uid="UnityEngine.XR.XRDisplaySubsystem.occlusionMaskScale*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_occlusionMaskScale" data-uid="UnityEngine.XR.XRDisplaySubsystem.occlusionMaskScale">occlusionMaskScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float occlusionMaskScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_reprojectionMode_" data-uid="UnityEngine.XR.XRDisplaySubsystem.reprojectionMode*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_reprojectionMode" data-uid="UnityEngine.XR.XRDisplaySubsystem.reprojectionMode">reprojectionMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XRDisplaySubsystem.ReprojectionMode reprojectionMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.html">XRDisplaySubsystem</a>.<a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.ReprojectionMode.html">ReprojectionMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_sRGB_" data-uid="UnityEngine.XR.XRDisplaySubsystem.sRGB*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_sRGB" data-uid="UnityEngine.XR.XRDisplaySubsystem.sRGB">sRGB</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool sRGB { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_scaleOfAllRenderTargets_" data-uid="UnityEngine.XR.XRDisplaySubsystem.scaleOfAllRenderTargets*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_scaleOfAllRenderTargets" data-uid="UnityEngine.XR.XRDisplaySubsystem.scaleOfAllRenderTargets">scaleOfAllRenderTargets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scaleOfAllRenderTargets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_scaleOfAllViewports_" data-uid="UnityEngine.XR.XRDisplaySubsystem.scaleOfAllViewports*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_scaleOfAllViewports" data-uid="UnityEngine.XR.XRDisplaySubsystem.scaleOfAllViewports">scaleOfAllViewports</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scaleOfAllViewports { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_singlePassRenderingDisabled_" data-uid="UnityEngine.XR.XRDisplaySubsystem.singlePassRenderingDisabled*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_singlePassRenderingDisabled" data-uid="UnityEngine.XR.XRDisplaySubsystem.singlePassRenderingDisabled">singlePassRenderingDisabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;singlePassRenderingDisabled{get;set;} is deprecated. Use textureLayout and supportedTextureLayouts instead.&quot;, false)]
+public bool singlePassRenderingDisabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_supportedTextureLayouts_" data-uid="UnityEngine.XR.XRDisplaySubsystem.supportedTextureLayouts*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_supportedTextureLayouts" data-uid="UnityEngine.XR.XRDisplaySubsystem.supportedTextureLayouts">supportedTextureLayouts</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XRDisplaySubsystem.TextureLayout supportedTextureLayouts { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.html">XRDisplaySubsystem</a>.<a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.TextureLayout.html">TextureLayout</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_textureLayout_" data-uid="UnityEngine.XR.XRDisplaySubsystem.textureLayout*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_textureLayout" data-uid="UnityEngine.XR.XRDisplaySubsystem.textureLayout">textureLayout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public XRDisplaySubsystem.TextureLayout textureLayout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.html">XRDisplaySubsystem</a>.<a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.TextureLayout.html">TextureLayout</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_zFar_" data-uid="UnityEngine.XR.XRDisplaySubsystem.zFar*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_zFar" data-uid="UnityEngine.XR.XRDisplaySubsystem.zFar">zFar</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float zFar { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_zNear_" data-uid="UnityEngine.XR.XRDisplaySubsystem.zNear*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_zNear" data-uid="UnityEngine.XR.XRDisplaySubsystem.zNear">zNear</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float zNear { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_AddGraphicsThreadMirrorViewBlit_" data-uid="UnityEngine.XR.XRDisplaySubsystem.AddGraphicsThreadMirrorViewBlit*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_AddGraphicsThreadMirrorViewBlit_UnityEngine_Rendering_CommandBuffer_System_Boolean_" data-uid="UnityEngine.XR.XRDisplaySubsystem.AddGraphicsThreadMirrorViewBlit(UnityEngine.Rendering.CommandBuffer,System.Boolean)">AddGraphicsThreadMirrorViewBlit(CommandBuffer, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;AddGraphicsThreadMirrorViewBlit(CommandBuffer, bool) is deprecated. Use AddGraphicsThreadMirrorViewBlit(CommandBuffer, bool, int) instead.&quot;, false)]
+public bool AddGraphicsThreadMirrorViewBlit(CommandBuffer cmd, bool allowGraphicsStateInvalidate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CommandBuffer.html">CommandBuffer</a></td>
+        <td><span class="parametername">cmd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowGraphicsStateInvalidate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_AddGraphicsThreadMirrorViewBlit_" data-uid="UnityEngine.XR.XRDisplaySubsystem.AddGraphicsThreadMirrorViewBlit*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_AddGraphicsThreadMirrorViewBlit_UnityEngine_Rendering_CommandBuffer_System_Boolean_System_Int32_" data-uid="UnityEngine.XR.XRDisplaySubsystem.AddGraphicsThreadMirrorViewBlit(UnityEngine.Rendering.CommandBuffer,System.Boolean,System.Int32)">AddGraphicsThreadMirrorViewBlit(CommandBuffer, bool, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddGraphicsThreadMirrorViewBlit(CommandBuffer cmd, bool allowGraphicsStateInvalidate, int mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.CommandBuffer.html">CommandBuffer</a></td>
+        <td><span class="parametername">cmd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">allowGraphicsStateInvalidate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_BeginRecordingIfLateLatched_" data-uid="UnityEngine.XR.XRDisplaySubsystem.BeginRecordingIfLateLatched*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_BeginRecordingIfLateLatched_UnityEngine_Camera_" data-uid="UnityEngine.XR.XRDisplaySubsystem.BeginRecordingIfLateLatched(UnityEngine.Camera)">BeginRecordingIfLateLatched(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void BeginRecordingIfLateLatched(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_EndRecordingIfLateLatched_" data-uid="UnityEngine.XR.XRDisplaySubsystem.EndRecordingIfLateLatched*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_EndRecordingIfLateLatched_UnityEngine_Camera_" data-uid="UnityEngine.XR.XRDisplaySubsystem.EndRecordingIfLateLatched(UnityEngine.Camera)">EndRecordingIfLateLatched(Camera)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EndRecordingIfLateLatched(Camera camera)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetCullingParameters_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetCullingParameters*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetCullingParameters_UnityEngine_Camera_System_Int32_UnityEngine_Rendering_ScriptableCullingParameters__" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetCullingParameters(UnityEngine.Camera,System.Int32,UnityEngine.Rendering.ScriptableCullingParameters@)">GetCullingParameters(Camera, int, out ScriptableCullingParameters)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetCullingParameters(Camera camera, int cullingPassIndex, out ScriptableCullingParameters scriptableCullingParameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Camera.html">Camera</a></td>
+        <td><span class="parametername">camera</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cullingPassIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Rendering.ScriptableCullingParameters.html">ScriptableCullingParameters</a></td>
+        <td><span class="parametername">scriptableCullingParameters</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetMirrorViewBlitDesc_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetMirrorViewBlitDesc*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetMirrorViewBlitDesc_UnityEngine_RenderTexture_UnityEngine_XR_XRDisplaySubsystem_XRMirrorViewBlitDesc__" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetMirrorViewBlitDesc(UnityEngine.RenderTexture,UnityEngine.XR.XRDisplaySubsystem.XRMirrorViewBlitDesc@)">GetMirrorViewBlitDesc(RenderTexture, out XRMirrorViewBlitDesc)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;GetMirrorViewBlitDesc(RenderTexture, out XRMirrorViewBlitDesc) is deprecated. Use GetMirrorViewBlitDesc(RenderTexture, out XRMirrorViewBlitDesc, int) instead.&quot;, false)]
+public bool GetMirrorViewBlitDesc(RenderTexture mirrorRt, out XRDisplaySubsystem.XRMirrorViewBlitDesc outDesc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td><span class="parametername">mirrorRt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.html">XRDisplaySubsystem</a>.<a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.XRMirrorViewBlitDesc.html">XRMirrorViewBlitDesc</a></td>
+        <td><span class="parametername">outDesc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetMirrorViewBlitDesc_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetMirrorViewBlitDesc*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetMirrorViewBlitDesc_UnityEngine_RenderTexture_UnityEngine_XR_XRDisplaySubsystem_XRMirrorViewBlitDesc__System_Int32_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetMirrorViewBlitDesc(UnityEngine.RenderTexture,UnityEngine.XR.XRDisplaySubsystem.XRMirrorViewBlitDesc@,System.Int32)">GetMirrorViewBlitDesc(RenderTexture, out XRMirrorViewBlitDesc, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetMirrorViewBlitDesc(RenderTexture mirrorRt, out XRDisplaySubsystem.XRMirrorViewBlitDesc outDesc, int mode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td><span class="parametername">mirrorRt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.html">XRDisplaySubsystem</a>.<a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.XRMirrorViewBlitDesc.html">XRMirrorViewBlitDesc</a></td>
+        <td><span class="parametername">outDesc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetPreferredMirrorBlitMode_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetPreferredMirrorBlitMode*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetPreferredMirrorBlitMode" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetPreferredMirrorBlitMode">GetPreferredMirrorBlitMode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPreferredMirrorBlitMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetRenderPass_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetRenderPass*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetRenderPass_System_Int32_UnityEngine_XR_XRDisplaySubsystem_XRRenderPass__" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetRenderPass(System.Int32,UnityEngine.XR.XRDisplaySubsystem.XRRenderPass@)">GetRenderPass(int, out XRRenderPass)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetRenderPass(int renderPassIndex, out XRDisplaySubsystem.XRRenderPass renderPass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">renderPassIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.html">XRDisplaySubsystem</a>.<a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.XRRenderPass.html">XRRenderPass</a></td>
+        <td><span class="parametername">renderPass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetRenderPassCount_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetRenderPassCount*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetRenderPassCount" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetRenderPassCount">GetRenderPassCount()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetRenderPassCount()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetRenderTexture_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetRenderTexture*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetRenderTexture_System_UInt32_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetRenderTexture(System.UInt32)">GetRenderTexture(uint)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTexture GetRenderTexture(uint unityXrRenderTextureId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></td>
+        <td><span class="parametername">unityXrRenderTextureId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetRenderTextureForRenderPass_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetRenderTextureForRenderPass*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetRenderTextureForRenderPass_System_Int32_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetRenderTextureForRenderPass(System.Int32)">GetRenderTextureForRenderPass(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTexture GetRenderTextureForRenderPass(int renderPass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">renderPass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_GetSharedDepthTextureForRenderPass_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetSharedDepthTextureForRenderPass*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_GetSharedDepthTextureForRenderPass_System_Int32_" data-uid="UnityEngine.XR.XRDisplaySubsystem.GetSharedDepthTextureForRenderPass(System.Int32)">GetSharedDepthTextureForRenderPass(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RenderTexture GetSharedDepthTextureForRenderPass(int renderPass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">renderPass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.RenderTexture.html">RenderTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_MarkTransformLateLatched_" data-uid="UnityEngine.XR.XRDisplaySubsystem.MarkTransformLateLatched*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_MarkTransformLateLatched_UnityEngine_Transform_UnityEngine_XR_XRDisplaySubsystem_LateLatchNode_" data-uid="UnityEngine.XR.XRDisplaySubsystem.MarkTransformLateLatched(UnityEngine.Transform,UnityEngine.XR.XRDisplaySubsystem.LateLatchNode)">MarkTransformLateLatched(Transform, LateLatchNode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MarkTransformLateLatched(Transform transform, XRDisplaySubsystem.LateLatchNode nodeType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Transform.html">Transform</a></td>
+        <td><span class="parametername">transform</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.html">XRDisplaySubsystem</a>.<a class="xref" href="UnityEngine.XR.XRDisplaySubsystem.LateLatchNode.html">LateLatchNode</a></td>
+        <td><span class="parametername">nodeType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_SetFocusPlane_" data-uid="UnityEngine.XR.XRDisplaySubsystem.SetFocusPlane*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_SetFocusPlane_UnityEngine_Vector3_UnityEngine_Vector3_UnityEngine_Vector3_" data-uid="UnityEngine.XR.XRDisplaySubsystem.SetFocusPlane(UnityEngine.Vector3,UnityEngine.Vector3,UnityEngine.Vector3)">SetFocusPlane(Vector3, Vector3, Vector3)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFocusPlane(Vector3 point, Vector3 normal, Vector3 velocity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">point</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">normal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">velocity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_SetMSAALevel_" data-uid="UnityEngine.XR.XRDisplaySubsystem.SetMSAALevel*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_SetMSAALevel_System_Int32_" data-uid="UnityEngine.XR.XRDisplaySubsystem.SetMSAALevel(System.Int32)">SetMSAALevel(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMSAALevel(int level)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">level</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_SetPreferredMirrorBlitMode_" data-uid="UnityEngine.XR.XRDisplaySubsystem.SetPreferredMirrorBlitMode*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_SetPreferredMirrorBlitMode_System_Int32_" data-uid="UnityEngine.XR.XRDisplaySubsystem.SetPreferredMirrorBlitMode(System.Int32)">SetPreferredMirrorBlitMode(int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPreferredMirrorBlitMode(int blitMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">blitMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_TryGetAppGPUTimeLastFrame_" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetAppGPUTimeLastFrame*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_TryGetAppGPUTimeLastFrame_System_Single__" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetAppGPUTimeLastFrame(System.Single@)">TryGetAppGPUTimeLastFrame(out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetAppGPUTimeLastFrame(out float gpuTimeLastFrame)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">gpuTimeLastFrame</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_TryGetCompositorGPUTimeLastFrame_" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetCompositorGPUTimeLastFrame*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_TryGetCompositorGPUTimeLastFrame_System_Single__" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetCompositorGPUTimeLastFrame(System.Single@)">TryGetCompositorGPUTimeLastFrame(out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetCompositorGPUTimeLastFrame(out float gpuTimeLastFrameCompositor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">gpuTimeLastFrameCompositor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_TryGetDisplayRefreshRate_" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetDisplayRefreshRate*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_TryGetDisplayRefreshRate_System_Single__" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetDisplayRefreshRate(System.Single@)">TryGetDisplayRefreshRate(out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetDisplayRefreshRate(out float displayRefreshRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">displayRefreshRate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_TryGetDroppedFrameCount_" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetDroppedFrameCount*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_TryGetDroppedFrameCount_System_Int32__" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetDroppedFrameCount(System.Int32@)">TryGetDroppedFrameCount(out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetDroppedFrameCount(out int droppedFrameCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">droppedFrameCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_TryGetFramePresentCount_" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetFramePresentCount*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_TryGetFramePresentCount_System_Int32__" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetFramePresentCount(System.Int32@)">TryGetFramePresentCount(out int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetFramePresentCount(out int framePresentCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">framePresentCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="UnityEngine_XR_XRDisplaySubsystem_TryGetMotionToPhoton_" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetMotionToPhoton*"></a>
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_TryGetMotionToPhoton_System_Single__" data-uid="UnityEngine.XR.XRDisplaySubsystem.TryGetMotionToPhoton(System.Single@)">TryGetMotionToPhoton(out float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetMotionToPhoton(out float motionToPhoton)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">motionToPhoton</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+
+
+  <h4 id="UnityEngine_XR_XRDisplaySubsystem_displayFocusChanged" data-uid="UnityEngine.XR.XRDisplaySubsystem.displayFocusChanged">displayFocusChanged</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Action&lt;bool&gt; displayFocusChanged</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UnityEngine.ISubsystem.html">ISubsystem</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class StatWorker </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class StatWorker ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.StatWorker">
+
+
+
+  <h1 id="RimWorld_StatWorker" data-uid="RimWorld.StatWorker" class="text-break">Class StatWorker</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><span class="xref">StatWorker</span></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_CaravanRidingSpeedFactor.html">StatWorker_CaravanRidingSpeedFactor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_ColdContainmentBonus.html">StatWorker_ColdContainmentBonus</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_ContainmentStrength.html">StatWorker_ContainmentStrength</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_ForagedNutritionPerDay.html">StatWorker_ForagedNutritionPerDay</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_LeatherAmount.html">StatWorker_LeatherAmount</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MarketValue.html">StatWorker_MarketValue</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MaxPowerOutput.html">StatWorker_MaxPowerOutput</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MeatAmount.html">StatWorker_MeatAmount</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MechEnergyLossPerHP.html">StatWorker_MechEnergyLossPerHP</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_Mechanitor.html">StatWorker_Mechanitor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MeleeArmorPenetration.html">StatWorker_MeleeArmorPenetration</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MeleeAverageArmorPenetration.html">StatWorker_MeleeAverageArmorPenetration</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MeleeAverageDPS.html">StatWorker_MeleeAverageDPS</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MeleeDPS.html">StatWorker_MeleeDPS</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MeleeDamageAmount.html">StatWorker_MeleeDamageAmount</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MinimumContainmentStrength.html">StatWorker_MinimumContainmentStrength</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_MinimumHandlingSkill.html">StatWorker_MinimumHandlingSkill</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_PossibleCompOffsets.html">StatWorker_PossibleCompOffsets</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_PsyfocusCost.html">StatWorker_PsyfocusCost</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_RoomReadingBonus.html">StatWorker_RoomReadingBonus</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_ShootingAccuracy.html">StatWorker_ShootingAccuracy</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_SuppressionFallRate.html">StatWorker_SuppressionFallRate</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_SurgerySuccessChanceFactor.html">StatWorker_SurgerySuccessChanceFactor</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_Terror.html">StatWorker_Terror</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_VacuumResistance.html">StatWorker_VacuumResistance</a></div>
+      <div class="level2"><a class="xref" href="RimWorld.StatWorker_Wildness.html">StatWorker_Wildness</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_StatWorker_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class StatWorker</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_StatWorker__ctor_" data-uid="RimWorld.StatWorker.#ctor*"></a>
+  <h4 id="RimWorld_StatWorker__ctor" data-uid="RimWorld.StatWorker.#ctor">StatWorker()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StatWorker()</code></pre>
+  </div>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_StatWorker_IGNORE_CACHE" data-uid="RimWorld.StatWorker.IGNORE_CACHE">IGNORE_CACHE</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const int IGNORE_CACHE = -1</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <h4 id="RimWorld_StatWorker_stat" data-uid="RimWorld.StatWorker.stat">stat</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StatDef stat</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatDef.html">StatDef</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_StatWorker_ClearCacheForThing_" data-uid="RimWorld.StatWorker.ClearCacheForThing*"></a>
+  <h4 id="RimWorld_StatWorker_ClearCacheForThing_Verse_Thing_" data-uid="RimWorld.StatWorker.ClearCacheForThing(Verse.Thing)">ClearCacheForThing(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCacheForThing(Thing thing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_DeleteStatCache_" data-uid="RimWorld.StatWorker.DeleteStatCache*"></a>
+  <h4 id="RimWorld_StatWorker_DeleteStatCache" data-uid="RimWorld.StatWorker.DeleteStatCache">DeleteStatCache()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeleteStatCache()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_StatWorker_FinalizeValue_" data-uid="RimWorld.StatWorker.FinalizeValue*"></a>
+  <h4 id="RimWorld_StatWorker_FinalizeValue_RimWorld_StatRequest_System_Single__System_Boolean_" data-uid="RimWorld.StatWorker.FinalizeValue(RimWorld.StatRequest,System.Single@,System.Boolean)">FinalizeValue(StatRequest, ref float, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void FinalizeValue(StatRequest req, ref float val, bool applyPostProcess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">applyPostProcess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetAdditionalOffsetsAndFactorsExplanation_" data-uid="RimWorld.StatWorker.GetAdditionalOffsetsAndFactorsExplanation*"></a>
+  <h4 id="RimWorld_StatWorker_GetAdditionalOffsetsAndFactorsExplanation_RimWorld_StatRequest_Verse_ToStringNumberSense_System_Text_StringBuilder_System_String_" data-uid="RimWorld.StatWorker.GetAdditionalOffsetsAndFactorsExplanation(RimWorld.StatRequest,Verse.ToStringNumberSense,System.Text.StringBuilder,System.String)">GetAdditionalOffsetsAndFactorsExplanation(StatRequest, ToStringNumberSense, StringBuilder, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetAdditionalOffsetsAndFactorsExplanation(StatRequest req, ToStringNumberSense numberSense, StringBuilder sb, string whitespace = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ToStringNumberSense.html">ToStringNumberSense</a></td>
+        <td><span class="parametername">numberSense</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">whitespace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetBaseValueFor_" data-uid="RimWorld.StatWorker.GetBaseValueFor*"></a>
+  <h4 id="RimWorld_StatWorker_GetBaseValueFor_RimWorld_StatRequest_" data-uid="RimWorld.StatWorker.GetBaseValueFor(RimWorld.StatRequest)">GetBaseValueFor(StatRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float GetBaseValueFor(StatRequest request)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">request</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetExplanationFinalizePart_" data-uid="RimWorld.StatWorker.GetExplanationFinalizePart*"></a>
+  <h4 id="RimWorld_StatWorker_GetExplanationFinalizePart_RimWorld_StatRequest_Verse_ToStringNumberSense_System_Single_" data-uid="RimWorld.StatWorker.GetExplanationFinalizePart(RimWorld.StatRequest,Verse.ToStringNumberSense,System.Single)">GetExplanationFinalizePart(StatRequest, ToStringNumberSense, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetExplanationFinalizePart(StatRequest req, ToStringNumberSense numberSense, float finalVal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ToStringNumberSense.html">ToStringNumberSense</a></td>
+        <td><span class="parametername">numberSense</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">finalVal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetExplanationFull_" data-uid="RimWorld.StatWorker.GetExplanationFull*"></a>
+  <h4 id="RimWorld_StatWorker_GetExplanationFull_RimWorld_StatRequest_Verse_ToStringNumberSense_System_Single_" data-uid="RimWorld.StatWorker.GetExplanationFull(RimWorld.StatRequest,Verse.ToStringNumberSense,System.Single)">GetExplanationFull(StatRequest, ToStringNumberSense, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetExplanationFull(StatRequest req, ToStringNumberSense numberSense, float value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ToStringNumberSense.html">ToStringNumberSense</a></td>
+        <td><span class="parametername">numberSense</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetExplanationUnfinalized_" data-uid="RimWorld.StatWorker.GetExplanationUnfinalized*"></a>
+  <h4 id="RimWorld_StatWorker_GetExplanationUnfinalized_RimWorld_StatRequest_Verse_ToStringNumberSense_" data-uid="RimWorld.StatWorker.GetExplanationUnfinalized(RimWorld.StatRequest,Verse.ToStringNumberSense)">GetExplanationUnfinalized(StatRequest, ToStringNumberSense)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ToStringNumberSense.html">ToStringNumberSense</a></td>
+        <td><span class="parametername">numberSense</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetInfoCardHyperlinks_" data-uid="RimWorld.StatWorker.GetInfoCardHyperlinks*"></a>
+  <h4 id="RimWorld_StatWorker_GetInfoCardHyperlinks_RimWorld_StatRequest_" data-uid="RimWorld.StatWorker.GetInfoCardHyperlinks(RimWorld.StatRequest)">GetInfoCardHyperlinks(StatRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[IteratorStateMachine(typeof(StatWorker.&lt;GetInfoCardHyperlinks&gt;d__29))]
+public virtual IEnumerable&lt;Dialog_InfoCard.Hyperlink&gt; GetInfoCardHyperlinks(StatRequest statRequest)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">statRequest</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Verse.Dialog_InfoCard.html">Dialog_InfoCard</a>.<a class="xref" href="Verse.Dialog_InfoCard.Hyperlink.html">Hyperlink</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetOffsetsAndFactorsExplanation_" data-uid="RimWorld.StatWorker.GetOffsetsAndFactorsExplanation*"></a>
+  <h4 id="RimWorld_StatWorker_GetOffsetsAndFactorsExplanation_RimWorld_StatRequest_System_Text_StringBuilder_System_Single_System_String_" data-uid="RimWorld.StatWorker.GetOffsetsAndFactorsExplanation(RimWorld.StatRequest,System.Text.StringBuilder,System.Single,System.String)">GetOffsetsAndFactorsExplanation(StatRequest, StringBuilder, float, string)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetOffsetsAndFactorsExplanation(StatRequest req, StringBuilder sb, float baseValue, string whitespace = &quot;&quot;)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></td>
+        <td><span class="parametername">sb</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">baseValue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">whitespace</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetStatDrawEntryLabel_" data-uid="RimWorld.StatWorker.GetStatDrawEntryLabel*"></a>
+  <h4 id="RimWorld_StatWorker_GetStatDrawEntryLabel_RimWorld_StatDef_System_Single_Verse_ToStringNumberSense_RimWorld_StatRequest_System_Boolean_" data-uid="RimWorld.StatWorker.GetStatDrawEntryLabel(RimWorld.StatDef,System.Single,Verse.ToStringNumberSense,RimWorld.StatRequest,System.Boolean)">GetStatDrawEntryLabel(StatDef, float, ToStringNumberSense, StatRequest, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string GetStatDrawEntryLabel(StatDef stat, float value, ToStringNumberSense numberSense, StatRequest optionalReq, bool finalized = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatDef.html">StatDef</a></td>
+        <td><span class="parametername">stat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ToStringNumberSense.html">ToStringNumberSense</a></td>
+        <td><span class="parametername">numberSense</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">optionalReq</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">finalized</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetValue_" data-uid="RimWorld.StatWorker.GetValue*"></a>
+  <h4 id="RimWorld_StatWorker_GetValue_RimWorld_StatRequest_System_Boolean_" data-uid="RimWorld.StatWorker.GetValue(RimWorld.StatRequest,System.Boolean)">GetValue(StatRequest, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetValue(StatRequest req, bool applyPostProcess = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">applyPostProcess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetValue_" data-uid="RimWorld.StatWorker.GetValue*"></a>
+  <h4 id="RimWorld_StatWorker_GetValue_Verse_Thing_System_Boolean_System_Int32_" data-uid="RimWorld.StatWorker.GetValue(Verse.Thing,System.Boolean,System.Int32)">GetValue(Thing, bool, int)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetValue(Thing thing, bool applyPostProcess = true, int cacheStaleAfterTicks = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">applyPostProcess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">cacheStaleAfterTicks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetValue_" data-uid="RimWorld.StatWorker.GetValue*"></a>
+  <h4 id="RimWorld_StatWorker_GetValue_Verse_Thing_Verse_Pawn_System_Boolean_" data-uid="RimWorld.StatWorker.GetValue(Verse.Thing,Verse.Pawn,System.Boolean)">GetValue(Thing, Pawn, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetValue(Thing thing, Pawn pawn, bool applyPostProcess = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">pawn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">applyPostProcess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetValueAbstract_" data-uid="RimWorld.StatWorker.GetValueAbstract*"></a>
+  <h4 id="RimWorld_StatWorker_GetValueAbstract_RimWorld_AbilityDef_Verse_Pawn_" data-uid="RimWorld.StatWorker.GetValueAbstract(RimWorld.AbilityDef,Verse.Pawn)">GetValueAbstract(AbilityDef, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetValueAbstract(AbilityDef def, Pawn forPawn = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.AbilityDef.html">AbilityDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">forPawn</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetValueAbstract_" data-uid="RimWorld.StatWorker.GetValueAbstract*"></a>
+  <h4 id="RimWorld_StatWorker_GetValueAbstract_Verse_BuildableDef_Verse_ThingDef_" data-uid="RimWorld.StatWorker.GetValueAbstract(Verse.BuildableDef,Verse.ThingDef)">GetValueAbstract(BuildableDef, ThingDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetValueAbstract(BuildableDef def, ThingDef stuffDef = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.BuildableDef.html">BuildableDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ThingDef.html">ThingDef</a></td>
+        <td><span class="parametername">stuffDef</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_GetValueUnfinalized_" data-uid="RimWorld.StatWorker.GetValueUnfinalized*"></a>
+  <h4 id="RimWorld_StatWorker_GetValueUnfinalized_RimWorld_StatRequest_System_Boolean_" data-uid="RimWorld.StatWorker.GetValueUnfinalized(RimWorld.StatRequest,System.Boolean)">GetValueUnfinalized(StatRequest, bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float GetValueUnfinalized(StatRequest req, bool applyPostProcess = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">applyPostProcess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_InitSetStat_" data-uid="RimWorld.StatWorker.InitSetStat*"></a>
+  <h4 id="RimWorld_StatWorker_InitSetStat_RimWorld_StatDef_" data-uid="RimWorld.StatWorker.InitSetStat(RimWorld.StatDef)">InitSetStat(StatDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitSetStat(StatDef newStat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatDef.html">StatDef</a></td>
+        <td><span class="parametername">newStat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_IsDisabledFor_" data-uid="RimWorld.StatWorker.IsDisabledFor*"></a>
+  <h4 id="RimWorld_StatWorker_IsDisabledFor_Verse_Thing_" data-uid="RimWorld.StatWorker.IsDisabledFor(Verse.Thing)">IsDisabledFor(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsDisabledFor(Thing thing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_ScaleFactor_" data-uid="RimWorld.StatWorker.ScaleFactor*"></a>
+  <h4 id="RimWorld_StatWorker_ScaleFactor_System_Single_System_Single_" data-uid="RimWorld.StatWorker.ScaleFactor(System.Single,System.Single)">ScaleFactor(float, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float ScaleFactor(float factor, float scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">factor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_SetCacheability_" data-uid="RimWorld.StatWorker.SetCacheability*"></a>
+  <h4 id="RimWorld_StatWorker_SetCacheability_System_Boolean_" data-uid="RimWorld.StatWorker.SetCacheability(System.Boolean)">SetCacheability(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCacheability(bool immutable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">immutable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_ShouldShowFor_" data-uid="RimWorld.StatWorker.ShouldShowFor*"></a>
+  <h4 id="RimWorld_StatWorker_ShouldShowFor_RimWorld_StatRequest_" data-uid="RimWorld.StatWorker.ShouldShowFor(RimWorld.StatRequest)">ShouldShowFor(StatRequest)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool ShouldShowFor(StatRequest req)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatRequest.html">StatRequest</a></td>
+        <td><span class="parametername">req</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_StatOffsetFromGear_" data-uid="RimWorld.StatWorker.StatOffsetFromGear*"></a>
+  <h4 id="RimWorld_StatWorker_StatOffsetFromGear_Verse_Thing_RimWorld_StatDef_" data-uid="RimWorld.StatWorker.StatOffsetFromGear(Verse.Thing,RimWorld.StatDef)">StatOffsetFromGear(Thing, StatDef)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float StatOffsetFromGear(Thing gear, StatDef stat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">gear</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.StatDef.html">StatDef</a></td>
+        <td><span class="parametername">stat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_TryClearCache_" data-uid="RimWorld.StatWorker.TryClearCache*"></a>
+  <h4 id="RimWorld_StatWorker_TryClearCache" data-uid="RimWorld.StatWorker.TryClearCache">TryClearCache()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TryClearCache()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_StatWorker_ValueToString_" data-uid="RimWorld.StatWorker.ValueToString*"></a>
+  <h4 id="RimWorld_StatWorker_ValueToString_System_Single_System_Boolean_Verse_ToStringNumberSense_" data-uid="RimWorld.StatWorker.ValueToString(System.Single,System.Boolean,Verse.ToStringNumberSense)">ValueToString(float, bool, ToStringNumberSense)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ValueToString(float val, bool finalized, ToStringNumberSense numberSense = ToStringNumberSense.Absolute)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">val</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">finalized</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.ToStringNumberSense.html">ToStringNumberSense</a></td>
+        <td><span class="parametername">numberSense</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="RimWorld_StatWorker_ValueToStringFor_" data-uid="RimWorld.StatWorker.ValueToStringFor*"></a>
+  <h4 id="RimWorld_StatWorker_ValueToStringFor_Verse_Thing_" data-uid="RimWorld.StatWorker.ValueToStringFor(Verse.Thing)">ValueToStringFor(Thing)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string ValueToStringFor(Thing thing)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Thing.html">Thing</a></td>
+        <td><span class="parametername">thing</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

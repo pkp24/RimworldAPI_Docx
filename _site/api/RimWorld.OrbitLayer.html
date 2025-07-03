@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class OrbitLayer </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class OrbitLayer ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.OrbitLayer">
+
+
+
+  <h1 id="RimWorld_OrbitLayer" data-uid="RimWorld.OrbitLayer" class="text-break">Class OrbitLayer</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="RimWorld.Planet.PlanetLayer.html">PlanetLayer</a></div>
+    <div class="level2"><span class="xref">OrbitLayer</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_zoomOutToLayer">PlanetLayer.zoomOutToLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_zoomInToLayer">PlanetLayer.zoomInToLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_tiles">PlanetLayer.tiles</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetUniqueLoadID">PlanetLayer.GetUniqueLoadID()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_PlanetTileForID_System_Int32_">PlanetLayer.PlanetTileForID(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_MarkRootSurface">PlanetLayer.MarkRootSurface()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_AddConnection_RimWorld_Planet_PlanetLayer_System_Single_">PlanetLayer.AddConnection(PlanetLayer, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_HasConnectionFromTo_RimWorld_Planet_PlanetLayer_">PlanetLayer.HasConnectionFromTo(PlanetLayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetConnectionFromTo_RimWorld_Planet_PlanetLayer_">PlanetLayer.GetConnectionFromTo(PlanetLayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_TryGetConnectionFromTo_RimWorld_Planet_PlanetLayer_RimWorld_Planet_PlanetLayerConnection__">PlanetLayer.TryGetConnectionFromTo(PlanetLayer, out PlanetLayerConnection)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_RunWorldGeneration">PlanetLayer.RunWorldGeneration()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_RunWorldGeneration_System_Int32_">PlanetLayer.RunWorldGeneration(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_RunWorldGeneration_System_String_System_Int32_">PlanetLayer.RunWorldGeneration(string, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_InitializeLayer">PlanetLayer.InitializeLayer()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileSize_RimWorld_Planet_PlanetTile_">PlanetLayer.GetTileSize(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileCenter_RimWorld_Planet_PlanetTile_">PlanetLayer.GetTileCenter(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileCenter_System_Int32_">PlanetLayer.GetTileCenter(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetHeadingFromTo_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_">PlanetLayer.GetHeadingFromTo(PlanetTile, PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetHeadingFromTo_System_Int32_System_Int32_">PlanetLayer.GetHeadingFromTo(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetHeadingFromTo_UnityEngine_Vector3_UnityEngine_Vector3_">PlanetLayer.GetHeadingFromTo(Vector3, Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_InBounds_RimWorld_Planet_PlanetTile_">PlanetLayer.InBounds(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_InBounds_System_Int32_">PlanetLayer.InBounds(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_LongLatOf_RimWorld_Planet_PlanetTile_">PlanetLayer.LongLatOf(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_LongLatOf_System_Int32_">PlanetLayer.LongLatOf(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetDirection8WayFromTo_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_">PlanetLayer.GetDirection8WayFromTo(PlanetTile, PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetDirection8WayFromTo_System_Int32_System_Int32_">PlanetLayer.GetDirection8WayFromTo(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetRotFromTo_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_">PlanetLayer.GetRotFromTo(PlanetTile, PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetRotFromTo_System_Int32_System_Int32_">PlanetLayer.GetRotFromTo(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileVertices_RimWorld_Planet_PlanetTile_System_Collections_Generic_List_UnityEngine_Vector3__">PlanetLayer.GetTileVertices(PlanetTile, List&lt;Vector3&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileVertices_System_Int32_System_Collections_Generic_List_UnityEngine_Vector3__">PlanetLayer.GetTileVertices(int, List&lt;Vector3&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileVerticesIndices_RimWorld_Planet_PlanetTile_System_Collections_Generic_List_System_Int32__">PlanetLayer.GetTileVerticesIndices(PlanetTile, List&lt;int&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileVerticesIndices_System_Int32_System_Collections_Generic_List_System_Int32__">PlanetLayer.GetTileVerticesIndices(int, List&lt;int&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileNeighbors_RimWorld_Planet_PlanetTile_System_Collections_Generic_List_RimWorld_Planet_PlanetTile__">PlanetLayer.GetTileNeighbors(PlanetTile, List&lt;PlanetTile&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileNeighbors_System_Int32_System_Collections_Generic_List_RimWorld_Planet_PlanetTile__">PlanetLayer.GetTileNeighbors(int, List&lt;PlanetTile&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileNeighborCount_RimWorld_Planet_PlanetTile_">PlanetLayer.GetTileNeighborCount(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileNeighborCount_System_Int32_">PlanetLayer.GetTileNeighborCount(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetMaxTileNeighborCountEver_RimWorld_Planet_PlanetTile_">PlanetLayer.GetMaxTileNeighborCountEver(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetMaxTileNeighborCountEver_System_Int32_">PlanetLayer.GetMaxTileNeighborCountEver(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_IsNeighbor_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_">PlanetLayer.IsNeighbor(PlanetTile, PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_IsNeighbor_System_Int32_System_Int32_">PlanetLayer.IsNeighbor(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetNeighborId_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_">PlanetLayer.GetNeighborId(PlanetTile, PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetNeighborId_System_Int32_System_Int32_">PlanetLayer.GetNeighborId(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileNeighbor_RimWorld_Planet_PlanetTile_System_Int32_">PlanetLayer.GetTileNeighbor(PlanetTile, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetTileNeighbor_System_Int32_System_Int32_">PlanetLayer.GetTileNeighbor(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_IsNeighborOrSame_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_">PlanetLayer.IsNeighborOrSame(PlanetTile, PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_IsNeighborOrSame_System_Int32_System_Int32_">PlanetLayer.IsNeighborOrSame(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_TileRadiusToAngle_System_Single_">PlanetLayer.TileRadiusToAngle(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_DistOnSurfaceToAngle_System_Single_">PlanetLayer.DistOnSurfaceToAngle(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_System_Single_">PlanetLayer.ApproxDistanceInTiles(float)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_DistanceFromEquatorNormalized_RimWorld_Planet_PlanetTile_">PlanetLayer.DistanceFromEquatorNormalized(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_DistanceFromEquatorNormalized_System_Int32_">PlanetLayer.DistanceFromEquatorNormalized(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_RimWorld_Planet_PlanetTile_RimWorld_Planet_PlanetTile_">PlanetLayer.ApproxDistanceInTiles(PlanetTile, PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_ApproxDistanceInTiles_System_Int32_System_Int32_">PlanetLayer.ApproxDistanceInTiles(int, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_ExposeData">PlanetLayer.ExposeData()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Standardize">PlanetLayer.Standardize()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_TilesToRawData">PlanetLayer.TilesToRawData()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_RawDataToTiles">PlanetLayer.RawDataToTiles()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_SetAllLayersDirty">PlanetLayer.SetAllLayersDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_SetDirty__1">PlanetLayer.SetDirty&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetLayer__1">PlanetLayer.GetLayer&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_RegenerateAllLayersNow">PlanetLayer.RegenerateAllLayersNow()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_LineIntersects_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_">PlanetLayer.LineIntersects(Vector3, Vector3, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_GetClosestTile_RimWorld_Planet_PlanetTile_">PlanetLayer.GetClosestTile(PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_HasConnectionPathTo_RimWorld_Planet_PlanetLayer_">PlanetLayer.HasConnectionPathTo(PlanetLayer)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_TryGetPath_RimWorld_Planet_PlanetLayer_System_Collections_Generic_List_RimWorld_Planet_PlanetLayerConnection__System_Single__System_Int32_">PlanetLayer.TryGetPath(PlanetLayer, List&lt;PlanetLayerConnection&gt;, out float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_TryGetPath_RimWorld_Planet_PlanetLayer_RimWorld_Planet_PlanetLayer_System_Collections_Generic_List_RimWorld_Planet_PlanetLayerConnection__System_Single__System_Int32_">PlanetLayer.TryGetPath(PlanetLayer, PlanetLayer, List&lt;PlanetLayerConnection&gt;, out float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Dispose">PlanetLayer.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_CalculateAverageTileSize_BurstManaged_Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_RimWorld_Planet_PlanetTile___Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_UnityEngine_Vector3___">PlanetLayer.CalculateAverageTileSize$BurstManaged(in NativeArray&lt;int&gt;, in NativeArray&lt;PlanetTile&gt;, in NativeArray&lt;int&gt;, in NativeArray&lt;Vector3&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_IntGetTileSize_BurstManaged_Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_RimWorld_Planet_PlanetTile___Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_UnityEngine_Vector3___RimWorld_Planet_PlanetTile__">PlanetLayer.IntGetTileSize$BurstManaged(in NativeArray&lt;int&gt;, in NativeArray&lt;PlanetTile&gt;, in NativeArray&lt;int&gt;, in NativeArray&lt;Vector3&gt;, in PlanetTile)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_IntGetTileCenter_BurstManaged_Unity_Collections_NativeArray_System_Int32___Unity_Collections_NativeArray_UnityEngine_Vector3___System_Int32_UnityEngine_Vector3__">PlanetLayer.IntGetTileCenter$BurstManaged(in NativeArray&lt;int&gt;, in NativeArray&lt;Vector3&gt;, int, out Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_WorldDrawLayers">PlanetLayer.WorldDrawLayers</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_FastTileFinder">PlanetLayer.FastTileFinder</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Pather">PlanetLayer.Pather</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Filler">PlanetLayer.Filler</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Visible">PlanetLayer.Visible</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_IsSelected">PlanetLayer.IsSelected</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_LayerID">PlanetLayer.LayerID</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Def">PlanetLayer.Def</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Tiles">PlanetLayer.Tiles</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_TilesCount">PlanetLayer.TilesCount</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_IsRootSurface">PlanetLayer.IsRootSurface</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_UnsafeVerts">PlanetLayer.UnsafeVerts</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_UnsafeTileIDToVerts_offsets">PlanetLayer.UnsafeTileIDToVerts_offsets</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_UnsafeTileIDToNeighbors_offsets">PlanetLayer.UnsafeTileIDToNeighbors_offsets</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_UnsafeTileIDToNeighbors_values">PlanetLayer.UnsafeTileIDToNeighbors_values</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Origin">PlanetLayer.Origin</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_NorthPolePos">PlanetLayer.NorthPolePos</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_AverageTileSize">PlanetLayer.AverageTileSize</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Radius">PlanetLayer.Radius</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_ExtraCameraAltitude">PlanetLayer.ExtraCameraAltitude</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_BackgroundWorldCameraOffset">PlanetLayer.BackgroundWorldCameraOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_BackgroundWorldCameraParallaxDistancePer100Cells">PlanetLayer.BackgroundWorldCameraParallaxDistancePer100Cells</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_ViewCenter">PlanetLayer.ViewCenter</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_ViewAngle">PlanetLayer.ViewAngle</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Item_System_Int32_">PlanetLayer.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Item_RimWorld_Planet_PlanetTile_">PlanetLayer.this[PlanetTile]</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Raycastable">PlanetLayer.Raycastable</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_CanReachLayer">PlanetLayer.CanReachLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_ScenarioTag">PlanetLayer.ScenarioTag</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_Selected">PlanetLayer.Selected</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_OrbitLayer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class OrbitLayer : PlanetLayer, IExposable, ILoadReferenceable, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_OrbitLayer__ctor_" data-uid="RimWorld.OrbitLayer.#ctor*"></a>
+  <h4 id="RimWorld_OrbitLayer__ctor" data-uid="RimWorld.OrbitLayer.#ctor">OrbitLayer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrbitLayer()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_OrbitLayer__ctor_" data-uid="RimWorld.OrbitLayer.#ctor*"></a>
+  <h4 id="RimWorld_OrbitLayer__ctor_System_Int32_RimWorld_PlanetLayerDef_System_Single_UnityEngine_Vector3_UnityEngine_Vector3_System_Single_System_Int32_System_Single_System_Single_System_Single_" data-uid="RimWorld.OrbitLayer.#ctor(System.Int32,RimWorld.PlanetLayerDef,System.Single,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Int32,System.Single,System.Single,System.Single)">OrbitLayer(int, PlanetLayerDef, float, Vector3, Vector3, float, int, float, float, float)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public OrbitLayer(int layerId, PlanetLayerDef def, float radius, Vector3 origin, Vector3 viewCenter, float viewAngle, int subdivisions, float extraCameraAltitude, float backgroundWorldCameraOffset, float backgroundWorldCameraParallaxDistancePer100Cells)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">layerId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.PlanetLayerDef.html">PlanetLayerDef</a></td>
+        <td><span class="parametername">def</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">radius</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">origin</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UnityEngine.Vector3.html">Vector3</a></td>
+        <td><span class="parametername">viewCenter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">viewAngle</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">subdivisions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">extraCameraAltitude</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">backgroundWorldCameraOffset</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></td>
+        <td><span class="parametername">backgroundWorldCameraParallaxDistancePer100Cells</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_OrbitLayer_CanSelectLayer_" data-uid="RimWorld.OrbitLayer.CanSelectLayer*"></a>
+  <h4 id="RimWorld_OrbitLayer_CanSelectLayer" data-uid="RimWorld.OrbitLayer.CanSelectLayer">CanSelectLayer()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AcceptanceReport CanSelectLayer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.AcceptanceReport.html">AcceptanceReport</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.Planet.PlanetLayer.html#RimWorld_Planet_PlanetLayer_CanSelectLayer">PlanetLayer.CanSelectLayer()</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.ILoadReferenceable.html">ILoadReferenceable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

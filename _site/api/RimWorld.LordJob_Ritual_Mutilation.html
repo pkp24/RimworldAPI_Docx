@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class LordJob_Ritual_Mutilation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class LordJob_Ritual_Mutilation ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="RimWorld.LordJob_Ritual_Mutilation">
+
+
+
+  <h1 id="RimWorld_LordJob_Ritual_Mutilation" data-uid="RimWorld.LordJob_Ritual_Mutilation" class="text-break">Class LordJob_Ritual_Mutilation</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Verse.AI.Group.LordJob.html">LordJob</a></div>
+    <div class="level2"><a class="xref" href="RimWorld.LordJob_VoluntarilyJoinable.html">LordJob_VoluntarilyJoinable</a></div>
+    <div class="level3"><a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html">LordJob_Joinable_Gathering</a></div>
+    <div class="level4"><a class="xref" href="RimWorld.LordJob_Ritual.html">LordJob_Ritual</a></div>
+    <div class="level5"><span class="xref">LordJob_Ritual_Mutilation</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Verse.IExposable.html">IExposable</a></div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ritual">LordJob_Ritual.ritual</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_obligation">LordJob_Ritual.obligation</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_selectedTarget">LordJob_Ritual.selectedTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_assignments">LordJob_Ritual.assignments</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_pawnsDeathIgnored">LordJob_Ritual.pawnsDeathIgnored</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_pawnsForcedToLeave">LordJob_Ritual.pawnsForcedToLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_usedThings">LordJob_Ritual.usedThings</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_perPawnTags">LordJob_Ritual.perPawnTags</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ambienceDef">LordJob_Ritual.ambienceDef</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_stageTicks">LordJob_Ritual.stageTicks</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ticksPassed">LordJob_Ritual.ticksPassed</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_stageIndex">LordJob_Ritual.stageIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ticksPassedWithProgress">LordJob_Ritual.ticksPassedWithProgress</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_progressBarOverride">LordJob_Ritual.progressBarOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ended">LordJob_Ritual.ended</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_repeatPenalty">LordJob_Ritual.repeatPenalty</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_progressBar">LordJob_Ritual.progressBar</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ambiencePlaying">LordJob_Ritual.ambiencePlaying</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_toils">LordJob_Ritual.toils</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_cancelled">LordJob_Ritual.cancelled</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_RitualStartedSignal">LordJob_Ritual.RitualStartedSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_DefaultRitualVfxScale">LordJob_Ritual.DefaultRitualVfxScale</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_AllowsDrafting_Verse_Pawn_">LordJob_Ritual.AllowsDrafting(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ShouldRemovePawn_Verse_Pawn_Verse_AI_Group_PawnLostCondition_">LordJob_Ritual.ShouldRemovePawn(Pawn, PawnLostCondition)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_EndPawnJobOnCleanup_Verse_Pawn_">LordJob_Ritual.EndPawnJobOnCleanup(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_PreparePawns">LordJob_Ritual.PreparePawns()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_AllowsFloatMenu_Verse_Pawn_">LordJob_Ritual.AllowsFloatMenu(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_BlocksSocialInteraction_Verse_Pawn_">LordJob_Ritual.BlocksSocialInteraction(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_DutyActiveWhenDown_Verse_Pawn_">LordJob_Ritual.DutyActiveWhenDown(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_PrisonerSecure_Verse_Pawn_">LordJob_Ritual.PrisonerSecure(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_AbilityAllowed_RimWorld_Ability_">LordJob_Ritual.AbilityAllowed(Ability)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_Notify_AddedToLord">LordJob_Ritual.Notify_AddedToLord()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_CreateGraph">LordJob_Ritual.CreateGraph()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_CallOffTriggers">LordJob_Ritual.CallOffTriggers()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_GetJobReport_Verse_Pawn_">LordJob_Ritual.GetJobReport(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_GetReport_Verse_Pawn_">LordJob_Ritual.GetReport(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_MakeToil_RimWorld_RitualStage_">LordJob_Ritual.MakeToil(RitualStage)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_RitualFinished_System_Single_System_Boolean_">LordJob_Ritual.RitualFinished(float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ApplyOutcome_System_Single_System_Boolean_System_Boolean_System_Boolean_">LordJob_Ritual.ApplyOutcome(float, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_CreateGatheringToil_Verse_IntVec3_Verse_Pawn_RimWorld_GatheringDef_">LordJob_Ritual.CreateGatheringToil(IntVec3, Pawn, GatheringDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_TargetStillAllowed">LordJob_Ritual.TargetStillAllowed()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ShouldBeCalledOff">LordJob_Ritual.ShouldBeCalledOff()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_RoleFilled_System_String_">LordJob_Ritual.RoleFilled(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_RoleFor_Verse_Pawn_System_Boolean_">LordJob_Ritual.RoleFor(Pawn, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_TryGetRoleFor_Verse_Pawn_RimWorld_RitualRole__System_Boolean_">LordJob_Ritual.TryGetRoleFor(Pawn, out RitualRole, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_PawnWithRole_System_String_">LordJob_Ritual.PawnWithRole(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_GetRole_System_String_">LordJob_Ritual.GetRole(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_BehaviorFor_Verse_Pawn_System_Boolean_">LordJob_Ritual.BehaviorFor(Pawn, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_GetPawnGizmos_Verse_Pawn_">LordJob_Ritual.GetPawnGizmos(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_GetCancelGizmo">LordJob_Ritual.GetCancelGizmo()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_Cancel">LordJob_Ritual.Cancel()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_VoluntaryJoinPriorityFor_Verse_Pawn_">LordJob_Ritual.VoluntaryJoinPriorityFor(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_IsInvited_Verse_Pawn_">LordJob_Ritual.IsInvited(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_LordJobTick">LordJob_Ritual.LordJobTick()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_Cleanup">LordJob_Ritual.Cleanup()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_PostCleanup">LordJob_Ritual.PostCleanup()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_Notify_PawnLost_Verse_Pawn_Verse_AI_Group_PawnLostCondition_">LordJob_Ritual.Notify_PawnLost(Pawn, PawnLostCondition)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_Notify_InMentalState_Verse_Pawn_Verse_MentalStateDef_">LordJob_Ritual.Notify_InMentalState(Pawn, MentalStateDef)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_AddTagForPawn_Verse_Pawn_System_String_">LordJob_Ritual.AddTagForPawn(Pawn, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_PawnTagSet_Verse_Pawn_System_String_">LordJob_Ritual.PawnTagSet(Pawn, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_SecondFocusForStage_System_Int32_Verse_Pawn_">LordJob_Ritual.SecondFocusForStage(int, Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_AllSecondFoci_System_Int32_">LordJob_Ritual.AllSecondFoci(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_SecondFocusForStage_RimWorld_RitualStage_Verse_Pawn_">LordJob_Ritual.SecondFocusForStage(RitualStage, Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_PawnPositionForStage_Verse_Pawn_RimWorld_RitualStage_">LordJob_Ritual.PawnPositionForStage(Pawn, RitualStage)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_CurrentSpectatorCrowdCenter">LordJob_Ritual.CurrentSpectatorCrowdCenter()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_IsParticipating_Verse_Pawn_">LordJob_Ritual.IsParticipating(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_AllowStartNewGatherings">LordJob_Ritual.AllowStartNewGatherings</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_Ritual">LordJob_Ritual.Ritual</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_RitualLabel">LordJob_Ritual.RitualLabel</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_CallOffSignal">LordJob_Ritual.CallOffSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_CancelSignal">LordJob_Ritual.CancelSignal</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_TicksLeft">LordJob_Ritual.TicksLeft</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_Progress">LordJob_Ritual.Progress</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_TicksPassedWithProgress">LordJob_Ritual.TicksPassedWithProgress</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_StageIndex">LordJob_Ritual.StageIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_DontInterruptLayingPawnsOnCleanup">LordJob_Ritual.DontInterruptLayingPawnsOnCleanup</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_CurrentStage">LordJob_Ritual.CurrentStage</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_TimeLeftPostfix">LordJob_Ritual.TimeLeftPostfix</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_MinTicksToFinish">LordJob_Ritual.MinTicksToFinish</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_GetRoom">LordJob_Ritual.GetRoom</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_RoomBoundsCached">LordJob_Ritual.RoomBoundsCached</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_AmbiencePlaying">LordJob_Ritual.AmbiencePlaying</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_PawnsToCountTowardsPresence">LordJob_Ritual.PawnsToCountTowardsPresence</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_spot">LordJob_Joinable_Gathering.spot</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_organizer">LordJob_Joinable_Gathering.organizer</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_gatheringDef">LordJob_Joinable_Gathering.gatheringDef</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_durationTicks">LordJob_Joinable_Gathering.durationTicks</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_timeoutTrigger">LordJob_Joinable_Gathering.timeoutTrigger</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_GetTimeoutTrigger">LordJob_Joinable_Gathering.GetTimeoutTrigger()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_IsGatheringAboutToEnd">LordJob_Joinable_Gathering.IsGatheringAboutToEnd()</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_Organizer">LordJob_Joinable_Gathering.Organizer</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_DurationTicks">LordJob_Joinable_Gathering.DurationTicks</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_Joinable_Gathering.html#RimWorld_LordJob_Joinable_Gathering_Spot">LordJob_Joinable_Gathering.Spot</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_VoluntarilyJoinable.html#RimWorld_LordJob_VoluntarilyJoinable_ShouldExistWithoutPawns">LordJob_VoluntarilyJoinable.ShouldExistWithoutPawns</a>
+    </div>
+    <div>
+      <a class="xref" href="RimWorld.LordJob_VoluntarilyJoinable.html#RimWorld_LordJob_VoluntarilyJoinable_AddFleeToil">LordJob_VoluntarilyJoinable.AddFleeToil</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_lord">LordJob.lord</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_PawnAdded_Verse_Pawn_">LordJob.Notify_PawnAdded(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_PawnJobDone_Verse_Pawn_Verse_AI_JobCondition_">LordJob.Notify_PawnJobDone(Pawn, JobCondition)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_BuildingAdded_Verse_Building_">LordJob.Notify_BuildingAdded(Building)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_CorpseAdded_Verse_Corpse_">LordJob.Notify_CorpseAdded(Corpse)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_BuildingLost_Verse_Building_">LordJob.Notify_BuildingLost(Building)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_CorpseLost_Verse_Corpse_">LordJob.Notify_CorpseLost(Corpse)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_LordDestroyed">LordJob.Notify_LordDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_MapRemoved">LordJob.Notify_MapRemoved()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_PawnUndowned_Verse_Pawn_">LordJob.Notify_PawnUndowned(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_PawnDowned_Verse_Pawn_">LordJob.Notify_PawnDowned(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_DutyConstantResult_Verse_AI_ThinkResult_Verse_Pawn_Verse_AI_JobIssueParams_">LordJob.Notify_DutyConstantResult(ThinkResult, Pawn, JobIssueParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Notify_DutyResult_Verse_AI_ThinkResult_Verse_Pawn_Verse_AI_JobIssueParams_">LordJob.Notify_DutyResult(ThinkResult, Pawn, JobIssueParams)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_CanOpenAnyDoor_Verse_Pawn_">LordJob.CanOpenAnyDoor(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_ValidateAttackTarget_Verse_Pawn_Verse_Thing_">LordJob.ValidateAttackTarget(Pawn, Thing)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_GetWalkGrid_Verse_Pawn_">LordJob.GetWalkGrid(Pawn)</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Dispose">LordJob.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_LostImportantReferenceDuringLoading">LordJob.LostImportantReferenceDuringLoading</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_AllowStartNewRituals">LordJob.AllowStartNewRituals</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_NeverInRestraints">LordJob.NeverInRestraints</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_GuiltyOnDowned">LordJob.GuiltyOnDowned</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_CanBlockHostileVisitors">LordJob.CanBlockHostileVisitors</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_OrganizerIsStartingPawn">LordJob.OrganizerIsStartingPawn</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_KeepExistingWhileHasAnyBuilding">LordJob.KeepExistingWhileHasAnyBuilding</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_AlwaysShowWeapon">LordJob.AlwaysShowWeapon</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_IsCaravanSendable">LordJob.IsCaravanSendable</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_ManagesRopableAnimals">LordJob.ManagesRopableAnimals</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_CanAutoAddPawns">LordJob.CanAutoAddPawns</a>
+    </div>
+    <div>
+      <a class="xref" href="Verse.AI.Group.LordJob.html#Verse_AI_Group_LordJob_Map">LordJob.Map</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="RimWorld.html">RimWorld</a></h6>
+  <h6><strong>Assembly</strong>: Assembly-CSharp.dll</h6>
+  <h5 id="RimWorld_LordJob_Ritual_Mutilation_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LordJob_Ritual_Mutilation : LordJob_Ritual, IExposable, IDisposable</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+</h3>
+
+
+  <a id="RimWorld_LordJob_Ritual_Mutilation__ctor_" data-uid="RimWorld.LordJob_Ritual_Mutilation.#ctor*"></a>
+  <h4 id="RimWorld_LordJob_Ritual_Mutilation__ctor" data-uid="RimWorld.LordJob_Ritual_Mutilation.#ctor">LordJob_Ritual_Mutilation()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LordJob_Ritual_Mutilation()</code></pre>
+  </div>
+
+
+  <a id="RimWorld_LordJob_Ritual_Mutilation__ctor_" data-uid="RimWorld.LordJob_Ritual_Mutilation.#ctor*"></a>
+  <h4 id="RimWorld_LordJob_Ritual_Mutilation__ctor_Verse_TargetInfo_RimWorld_Precept_Ritual_RimWorld_RitualObligation_System_Collections_Generic_List_RimWorld_RitualStage__RimWorld_RitualRoleAssignments_Verse_Pawn_" data-uid="RimWorld.LordJob_Ritual_Mutilation.#ctor(Verse.TargetInfo,RimWorld.Precept_Ritual,RimWorld.RitualObligation,System.Collections.Generic.List{RimWorld.RitualStage},RimWorld.RitualRoleAssignments,Verse.Pawn)">LordJob_Ritual_Mutilation(TargetInfo, Precept_Ritual, RitualObligation, List&lt;RitualStage&gt;, RitualRoleAssignments, Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LordJob_Ritual_Mutilation(TargetInfo selectedTarget, Precept_Ritual ritual, RitualObligation obligation, List&lt;RitualStage&gt; allStages, RitualRoleAssignments assignments, Pawn organizer = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.TargetInfo.html">TargetInfo</a></td>
+        <td><span class="parametername">selectedTarget</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.Precept_Ritual.html">Precept_Ritual</a></td>
+        <td><span class="parametername">ritual</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.RitualObligation.html">RitualObligation</a></td>
+        <td><span class="parametername">obligation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="RimWorld.RitualStage.html">RitualStage</a>&gt;</td>
+        <td><span class="parametername">allStages</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="RimWorld.RitualRoleAssignments.html">RitualRoleAssignments</a></td>
+        <td><span class="parametername">assignments</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">organizer</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+
+
+  <h4 id="RimWorld_LordJob_Ritual_Mutilation_mutilatedPawns" data-uid="RimWorld.LordJob_Ritual_Mutilation.mutilatedPawns">mutilatedPawns</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Pawn&gt; mutilatedPawns</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="Verse.Pawn.html">Pawn</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="RimWorld_LordJob_Ritual_Mutilation_ExposeData_" data-uid="RimWorld.LordJob_Ritual_Mutilation.ExposeData*"></a>
+  <h4 id="RimWorld_LordJob_Ritual_Mutilation_ExposeData" data-uid="RimWorld.LordJob_Ritual_Mutilation.ExposeData">ExposeData()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ExposeData()</code></pre>
+  </div>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ExposeData">LordJob_Ritual.ExposeData()</a></div>
+
+
+  <a id="RimWorld_LordJob_Ritual_Mutilation_ShouldCallOffBecausePawnNoLongerOwned_" data-uid="RimWorld.LordJob_Ritual_Mutilation.ShouldCallOffBecausePawnNoLongerOwned*"></a>
+  <h4 id="RimWorld_LordJob_Ritual_Mutilation_ShouldCallOffBecausePawnNoLongerOwned_Verse_Pawn_" data-uid="RimWorld.LordJob_Ritual_Mutilation.ShouldCallOffBecausePawnNoLongerOwned(Verse.Pawn)">ShouldCallOffBecausePawnNoLongerOwned(Pawn)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool ShouldCallOffBecausePawnNoLongerOwned(Pawn p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Verse.Pawn.html">Pawn</a></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="RimWorld.LordJob_Ritual.html#RimWorld_LordJob_Ritual_ShouldCallOffBecausePawnNoLongerOwned_Verse_Pawn_">LordJob_Ritual.ShouldCallOffBecausePawnNoLongerOwned(Pawn)</a></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Verse.IExposable.html">IExposable</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_">MustExtensions.MustBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeEqual__1___0___0_System_String_">MustExtensions.MustBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_">MustExtensions.MustBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustBeNull__1___0_System_String_">MustExtensions.MustBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeEqual__1___0___0_System_String_">MustExtensions.MustNotBeEqual&lt;T&gt;(T, T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_">MustExtensions.MustNotBeNull&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="UnityEngine.Assertions.Must.MustExtensions.html#UnityEngine_Assertions_Must_MustExtensions_MustNotBeNull__1___0_System_String_">MustExtensions.MustNotBeNull&lt;T&gt;(T, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Gen.html#Verse_Gen_ToStringSafe__1___0_">Gen.ToStringSafe&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object_">GenTypes.Isnt&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.GenTypes.html#Verse_GenTypes_Isnt__1_System_Object___0__">GenTypes.Isnt&lt;T&gt;(object, out T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.NamedArgumentUtility.html#Verse_NamedArgumentUtility_Named_System_Object_System_String_">NamedArgumentUtility.Named(object, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Verse.Widgets.html#Verse_Widgets_ChangeType__1_System_Object_">Widgets.ChangeType&lt;T&gt;(object)</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
