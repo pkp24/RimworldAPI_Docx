@@ -44,5 +44,7 @@ if __name__ == "__main__":
         sys.exit(1)
     
     sitemap = build_sitemap(root, base)
-    (root / "sitemap.xml").write_bytes(sitemap)
-    print(f"Wrote {len(list(root.rglob('*.html')))} URLs → {root/'sitemap.xml'}")
+    # Generate sitemap in the script's directory (RimworldAPI_Docx root), not in api/
+    output_path = Path(__file__).parent / "sitemap.xml"
+    output_path.write_bytes(sitemap)
+    print(f"Wrote {len(list(root.rglob('*.html')))} URLs → {output_path}")
