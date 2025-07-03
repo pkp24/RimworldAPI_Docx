@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 def build_sitemap(site_root: Path, base_url: str) -> bytes:
     NS = {"": "http://www.sitemaps.org/schemas/sitemap/0.9"}
     ET.register_namespace("", NS[""])
-    urlset = ET.Element("urlset", NS)
+    urlset = ET.Element("urlset", {"xmlns": NS[""]})
 
     for path in sorted(site_root.rglob("*.html")):
         if path.name == "404.html":       # skip utility pages
