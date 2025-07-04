@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RimWorld_Alerts - Combined API Documentation</title>
+    <meta name="robots" content="index, follow">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .toc { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .toc h2 { margin-top: 0; color: #34495e; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { color: #2980b9; text-decoration: none; font-weight: 500; }
+        .toc a:hover { text-decoration: underline; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .section h3 { color: #e74c3c; margin-top: 0; }
+        .section-content { margin-top: 15px; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #3498db; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; }
+        .back-to-top:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RimWorld_Alerts - Combined API Documentation</h1>
+        <p>This page contains combined documentation for 144 related API classes and components.</p>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-0">RimWorld.Alert</a></li>
+                <li><a href="#section-1">RimWorld.Alert_AbandonedBaby</a></li>
+                <li><a href="#section-2">RimWorld.Alert_ActionDelay</a></li>
+                <li><a href="#section-3">RimWorld.Alert_ActivatorCountdown</a></li>
+                <li><a href="#section-4">RimWorld.Alert_AgeReversalDemandNear</a></li>
+                <li><a href="#section-5">RimWorld.Alert_Analyzable</a></li>
+                <li><a href="#section-6">RimWorld.Alert_Analyzable_GrayFlesh</a></li>
+                <li><a href="#section-7">RimWorld.Alert_Analyzable_NeuralLump</a></li>
+                <li><a href="#section-8">RimWorld.Alert_Analyzable_RevenantFlesh</a></li>
+                <li><a href="#section-9">RimWorld.Alert_AnimalFilth</a></li>
+                <li><a href="#section-10">RimWorld.Alert_AnimaLinkingReady</a></li>
+                <li><a href="#section-11">RimWorld.Alert_AnimalPenNeeded</a></li>
+                <li><a href="#section-12">RimWorld.Alert_AnimalPenNotEnclosed</a></li>
+                <li><a href="#section-13">RimWorld.Alert_AnimalRoaming</a></li>
+                <li><a href="#section-14">RimWorld.Alert_AwaitingMedicalOperation</a></li>
+                <li><a href="#section-15">RimWorld.Alert_BestowerWaiting</a></li>
+                <li><a href="#section-16">RimWorld.Alert_BilliardsTableOnWall</a></li>
+                <li><a href="#section-17">RimWorld.Alert_Biostarvation</a></li>
+                <li><a href="#section-18">RimWorld.Alert_Boredom</a></li>
+                <li><a href="#section-19">RimWorld.Alert_BrawlerHasRangedWeapon</a></li>
+                <li><a href="#section-20">RimWorld.Alert_CannotBeUsedRoofed</a></li>
+                <li><a href="#section-21">RimWorld.Alert_CaravanIdle</a></li>
+                <li><a href="#section-22">RimWorld.Alert_CasketOpening</a></li>
+                <li><a href="#section-23">RimWorld.Alert_ChessTableNoChairs</a></li>
+                <li><a href="#section-24">RimWorld.Alert_ColonistLeftUnburied</a></li>
+                <li><a href="#section-25">RimWorld.Alert_ColonistNeedsRescuing</a></li>
+                <li><a href="#section-26">RimWorld.Alert_ColonistNeedsTend</a></li>
+                <li><a href="#section-27">RimWorld.Alert_ColonistsIdle</a></li>
+                <li><a href="#section-28">RimWorld.Alert_ConnectedPawnNotAssignedToPlantCutting</a></li>
+                <li><a href="#section-29">RimWorld.Alert_CreepJoinerTimeout</a></li>
+                <li><a href="#section-30">RimWorld.Alert_Critical</a></li>
+                <li><a href="#section-31">RimWorld.Alert_CubeWithdrawal</a></li>
+                <li><a href="#section-32">RimWorld.Alert_CultistPsychicRitual</a></li>
+                <li><a href="#section-33">RimWorld.Alert_Custom</a></li>
+                <li><a href="#section-34">RimWorld.Alert_CustomCritical</a></li>
+                <li><a href="#section-35">RimWorld.Alert_DangerousActivity</a></li>
+                <li><a href="#section-36">RimWorld.Alert_DateRitualComing</a></li>
+                <li><a href="#section-37">RimWorld.Alert_DeathrestComplete</a></li>
+                <li><a href="#section-38">RimWorld.Alert_Digesting</a></li>
+                <li><a href="#section-39">RimWorld.Alert_DisallowedBuildingInsideMonument</a></li>
+                <li><a href="#section-40">RimWorld.Alert_DormanyWakeUpDelay</a></li>
+                <li><a href="#section-41">RimWorld.Alert_EmergingPitGate</a></li>
+                <li><a href="#section-42">RimWorld.Alert_EntityNeedsTend</a></li>
+                <li><a href="#section-43">RimWorld.Alert_Exhaustion</a></li>
+                <li><a href="#section-44">RimWorld.Alert_FireInHomeArea</a></li>
+                <li><a href="#section-45">RimWorld.Alert_FuelNodeIgnition</a></li>
+                <li><a href="#section-46">RimWorld.Alert_GauranlenTreeWithoutProductionMode</a></li>
+                <li><a href="#section-47">RimWorld.Alert_GenebankUnpowered</a></li>
+                <li><a href="#section-48">RimWorld.Alert_GhoulHypothermia</a></li>
+                <li><a href="#section-49">RimWorld.Alert_Heatstroke</a></li>
+                <li><a href="#section-50">RimWorld.Alert_HitchedAnimalHungryNoFood</a></li>
+                <li><a href="#section-51">RimWorld.Alert_HunterHasShieldAndRangedWeapon</a></li>
+                <li><a href="#section-52">RimWorld.Alert_Hypothermia</a></li>
+                <li><a href="#section-53">RimWorld.Alert_HypothermicAnimals</a></li>
+                <li><a href="#section-54">RimWorld.Alert_IdeoBuildingDisrespected</a></li>
+                <li><a href="#section-55">RimWorld.Alert_IdeoBuildingMissing</a></li>
+                <li><a href="#section-56">RimWorld.Alert_ImmobileCaravan</a></li>
+                <li><a href="#section-57">RimWorld.Alert_InfestationDelay</a></li>
+                <li><a href="#section-58">RimWorld.Alert_InhibitorBlocked</a></li>
+                <li><a href="#section-59">RimWorld.Alert_InsufficientContainmentStrength</a></li>
+                <li><a href="#section-60">RimWorld.Alert_JoyBuildingNoChairs</a></li>
+                <li><a href="#section-61">RimWorld.Alert_LifeThreateningHediff</a></li>
+                <li><a href="#section-62">RimWorld.Alert_LowBabyFood</a></li>
+                <li><a href="#section-63">RimWorld.Alert_LowDeathrest</a></li>
+                <li><a href="#section-64">RimWorld.Alert_LowFood</a></li>
+                <li><a href="#section-65">RimWorld.Alert_LowHemogen</a></li>
+                <li><a href="#section-66">RimWorld.Alert_LowMedicine</a></li>
+                <li><a href="#section-67">RimWorld.Alert_LowOxygen</a></li>
+                <li><a href="#section-68">RimWorld.Alert_MajorOrExtremeBreakRisk</a></li>
+                <li><a href="#section-69">RimWorld.Alert_MeatHunger</a></li>
+                <li><a href="#section-70">RimWorld.Alert_MechChargerFull</a></li>
+                <li><a href="#section-71">RimWorld.Alert_MechDamaged</a></li>
+                <li><a href="#section-72">RimWorld.Alert_MechMissingBodyPart</a></li>
+                <li><a href="#section-73">RimWorld.Alert_MechThreat</a></li>
+                <li><a href="#section-74">RimWorld.Alert_MinifiedTreeAboutToDie</a></li>
+                <li><a href="#section-75">RimWorld.Alert_MinorBreakRisk</a></li>
+                <li><a href="#section-76">RimWorld.Alert_MonolithAutoActivating</a></li>
+                <li><a href="#section-77">RimWorld.Alert_MonumentMarkerMissingBlueprints</a></li>
+                <li><a href="#section-78">RimWorld.Alert_NeedAnomalyProject</a></li>
+                <li><a href="#section-79">RimWorld.Alert_NeedBabyCribs</a></li>
+                <li><a href="#section-80">RimWorld.Alert_NeedBatteries</a></li>
+                <li><a href="#section-81">RimWorld.Alert_NeedColonistBeds</a></li>
+                <li><a href="#section-82">RimWorld.Alert_NeedDefenses</a></li>
+                <li><a href="#section-83">RimWorld.Alert_NeedDoctor</a></li>
+                <li><a href="#section-84">RimWorld.Alert_NeedHoldingPlatform</a></li>
+                <li><a href="#section-85">RimWorld.Alert_NeedJoySources</a></li>
+                <li><a href="#section-86">RimWorld.Alert_NeedMealSource</a></li>
+                <li><a href="#section-87">RimWorld.Alert_NeedMechChargers</a></li>
+                <li><a href="#section-88">RimWorld.Alert_NeedMeditationSpot</a></li>
+                <li><a href="#section-89">RimWorld.Alert_NeedMiner</a></li>
+                <li><a href="#section-90">RimWorld.Alert_NeedResearchBench</a></li>
+                <li><a href="#section-91">RimWorld.Alert_NeedResearchProject</a></li>
+                <li><a href="#section-92">RimWorld.Alert_NeedSlaveBeds</a></li>
+                <li><a href="#section-93">RimWorld.Alert_NeedSlaveCribs</a></li>
+                <li><a href="#section-94">RimWorld.Alert_NeedWarden</a></li>
+                <li><a href="#section-95">RimWorld.Alert_NeedWarmClothes</a></li>
+                <li><a href="#section-96">RimWorld.Alert_NoBabyFeeders</a></li>
+                <li><a href="#section-97">RimWorld.Alert_NoBabyFoodCaravan</a></li>
+                <li><a href="#section-98">RimWorld.Alert_PasteDispenserNeedsHopper</a></li>
+                <li><a href="#section-99">RimWorld.Alert_PennedAnimalHungry</a></li>
+                <li><a href="#section-100">RimWorld.Alert_PokerTableNoChairs</a></li>
+                <li><a href="#section-101">RimWorld.Alert_PollutedTerrain</a></li>
+                <li><a href="#section-102">RimWorld.Alert_Precept</a></li>
+                <li><a href="#section-103">RimWorld.Alert_PredatorInPen</a></li>
+                <li><a href="#section-104">RimWorld.Alert_PsychicBondedSeparated</a></li>
+                <li><a href="#section-105">RimWorld.Alert_QuestExpiresSoon</a></li>
+                <li><a href="#section-106">RimWorld.Alert_ReimplantationAvailable</a></li>
+                <li><a href="#section-107">RimWorld.Alert_RolesEmpty</a></li>
+                <li><a href="#section-108">RimWorld.Alert_RoyalNoAcceptableFood</a></li>
+                <li><a href="#section-109">RimWorld.Alert_RoyalNoThroneAssigned</a></li>
+                <li><a href="#section-110">RimWorld.Alert_Scenario</a></li>
+                <li><a href="#section-111">RimWorld.Alert_ShieldUserHasRangedWeapon</a></li>
+                <li><a href="#section-112">RimWorld.Alert_ShuttleLandingBeaconUnusable</a></li>
+                <li><a href="#section-113">RimWorld.Alert_SlaveRebellionLikely</a></li>
+                <li><a href="#section-114">RimWorld.Alert_SlavesUnattended</a></li>
+                <li><a href="#section-115">RimWorld.Alert_SlavesUnsuppressed</a></li>
+                <li><a href="#section-116">RimWorld.Alert_StarvationAnimals</a></li>
+                <li><a href="#section-117">RimWorld.Alert_StarvationColonists</a></li>
+                <li><a href="#section-118">RimWorld.Alert_SubjectHasNowOverseer</a></li>
+                <li><a href="#section-119">RimWorld.Alert_TatteredApparel</a></li>
+                <li><a href="#section-120">RimWorld.Alert_Thought</a></li>
+                <li><a href="#section-121">RimWorld.Alert_ThroneroomInvalidConfiguration</a></li>
+                <li><a href="#section-122">RimWorld.Alert_TimedMakeFactionHostile</a></li>
+                <li><a href="#section-123">RimWorld.Alert_TimedRaidsArriving</a></li>
+                <li><a href="#section-124">RimWorld.Alert_TitleRequiresBedroom</a></li>
+                <li><a href="#section-125">RimWorld.Alert_ToxicBuildup</a></li>
+                <li><a href="#section-126">RimWorld.Alert_ToxifierGeneratorStopped</a></li>
+                <li><a href="#section-127">RimWorld.Alert_UndercaveUnstable</a></li>
+                <li><a href="#section-128">RimWorld.Alert_UndignifiedBedroom</a></li>
+                <li><a href="#section-129">RimWorld.Alert_UndignifiedThroneroom</a></li>
+                <li><a href="#section-130">RimWorld.Alert_UnhappyNudity</a></li>
+                <li><a href="#section-131">RimWorld.Alert_UnusableMeditationFocus.Alert_PermitAvailable</a></li>
+                <li><a href="#section-132">RimWorld.Alert_UnusableMeditationFocus</a></li>
+                <li><a href="#section-133">RimWorld.Alert_WarqueenHasLowResources</a></li>
+                <li><a href="#section-134">RimWorld.AlertPriority</a></li>
+                <li><a href="#section-135">RimWorld.AlertReport</a></li>
+                <li><a href="#section-136">RimWorld.AlertsReadout</a></li>
+                <li><a href="#section-137">RimWorld.BreakRiskAlertUtility</a></li>
+                <li><a href="#section-138">RimWorld.QuestGen.QuestPart_ActivateStructuresAlert</a></li>
+                <li><a href="#section-139">RimWorld.QuestGen.QuestPart_Alert_StructuresArriving</a></li>
+                <li><a href="#section-140">RimWorld.QuestGen.QuestPart_RelayStabilizersRemainingAlert</a></li>
+                <li><a href="#section-141">RimWorld.QuestGen.QuestPart_ScannerDurationRemainingAlert</a></li>
+                <li><a href="#section-142">RimWorld.QuestGen.QuestPart_StabilizersRemainingAlert</a></li>
+                <li><a href="#section-143">RimWorld.QuestPart_Alert</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="section-0">
+            <h3>RimWorld.Alert</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-1">
+            <h3>RimWorld.Alert_AbandonedBaby</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_AbandonedBaby</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_AbandonedBaby</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+            <h3>RimWorld.Alert_ActionDelay</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ActionDelay</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ActionDelay</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-3">
+            <h3>RimWorld.Alert_ActivatorCountdown</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ActivatorCountdown</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ActivatorCountdown</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-4">
+            <h3>RimWorld.Alert_AgeReversalDemandNear</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_AgeReversalDemandNear</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_AgeReversalDemandNear</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-5">
+            <h3>RimWorld.Alert_Analyzable</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Analyzable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Analyzable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-6">
+            <h3>RimWorld.Alert_Analyzable_GrayFlesh</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Analyzable_GrayFlesh</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Analyzable_GrayFlesh</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-7">
+            <h3>RimWorld.Alert_Analyzable_NeuralLump</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Analyzable_NeuralLump</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Analyzable_NeuralLump</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-8">
+            <h3>RimWorld.Alert_Analyzable_RevenantFlesh</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Analyzable_RevenantFlesh</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Analyzable_RevenantFlesh</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-9">
+            <h3>RimWorld.Alert_AnimalFilth</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_AnimalFilth</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_AnimalFilth</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-10">
+            <h3>RimWorld.Alert_AnimaLinkingReady</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_AnimaLinkingReady</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_AnimaLinkingReady</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-11">
+            <h3>RimWorld.Alert_AnimalPenNeeded</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_AnimalPenNeeded</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_AnimalPenNeeded</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-12">
+            <h3>RimWorld.Alert_AnimalPenNotEnclosed</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_AnimalPenNotEnclosed</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_AnimalPenNotEnclosed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-13">
+            <h3>RimWorld.Alert_AnimalRoaming</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_AnimalRoaming</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_AnimalRoaming</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-14">
+            <h3>RimWorld.Alert_AwaitingMedicalOperation</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_AwaitingMedicalOperation</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_AwaitingMedicalOperation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-15">
+            <h3>RimWorld.Alert_BestowerWaiting</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_BestowerWaiting</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_BestowerWaiting</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-16">
+            <h3>RimWorld.Alert_BilliardsTableOnWall</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_BilliardsTableOnWall</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_BilliardsTableOnWall</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-17">
+            <h3>RimWorld.Alert_Biostarvation</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Biostarvation</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Biostarvation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-18">
+            <h3>RimWorld.Alert_Boredom</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Boredom</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Boredom</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-19">
+            <h3>RimWorld.Alert_BrawlerHasRangedWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_BrawlerHasRangedWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_BrawlerHasRangedWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-20">
+            <h3>RimWorld.Alert_CannotBeUsedRoofed</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_CannotBeUsedRoofed</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_CannotBeUsedRoofed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-21">
+            <h3>RimWorld.Alert_CaravanIdle</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_CaravanIdle</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_CaravanIdle</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-22">
+            <h3>RimWorld.Alert_CasketOpening</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_CasketOpening</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_CasketOpening</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-23">
+            <h3>RimWorld.Alert_ChessTableNoChairs</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ChessTableNoChairs</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ChessTableNoChairs</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-24">
+            <h3>RimWorld.Alert_ColonistLeftUnburied</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ColonistLeftUnburied</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ColonistLeftUnburied</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-25">
+            <h3>RimWorld.Alert_ColonistNeedsRescuing</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ColonistNeedsRescuing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ColonistNeedsRescuing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-26">
+            <h3>RimWorld.Alert_ColonistNeedsTend</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ColonistNeedsTend</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ColonistNeedsTend</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-27">
+            <h3>RimWorld.Alert_ColonistsIdle</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ColonistsIdle</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ColonistsIdle</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-28">
+            <h3>RimWorld.Alert_ConnectedPawnNotAssignedToPlantCutting</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ConnectedPawnNotAssignedToPlantCutting</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ConnectedPawnNotAssignedToPlantCutting</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-29">
+            <h3>RimWorld.Alert_CreepJoinerTimeout</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_CreepJoinerTimeout</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_CreepJoinerTimeout</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-30">
+            <h3>RimWorld.Alert_Critical</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Critical</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Critical</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-31">
+            <h3>RimWorld.Alert_CubeWithdrawal</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_CubeWithdrawal</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_CubeWithdrawal</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-32">
+            <h3>RimWorld.Alert_CultistPsychicRitual</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_CultistPsychicRitual</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_CultistPsychicRitual</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-33">
+            <h3>RimWorld.Alert_Custom</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Custom</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Custom</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-34">
+            <h3>RimWorld.Alert_CustomCritical</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_CustomCritical</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_CustomCritical</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-35">
+            <h3>RimWorld.Alert_DangerousActivity</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_DangerousActivity</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_DangerousActivity</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-36">
+            <h3>RimWorld.Alert_DateRitualComing</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_DateRitualComing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_DateRitualComing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-37">
+            <h3>RimWorld.Alert_DeathrestComplete</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_DeathrestComplete</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_DeathrestComplete</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-38">
+            <h3>RimWorld.Alert_Digesting</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Digesting</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Digesting</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-39">
+            <h3>RimWorld.Alert_DisallowedBuildingInsideMonument</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_DisallowedBuildingInsideMonument</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_DisallowedBuildingInsideMonument</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-40">
+            <h3>RimWorld.Alert_DormanyWakeUpDelay</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_DormanyWakeUpDelay</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_DormanyWakeUpDelay</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-41">
+            <h3>RimWorld.Alert_EmergingPitGate</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_EmergingPitGate</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_EmergingPitGate</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-42">
+            <h3>RimWorld.Alert_EntityNeedsTend</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_EntityNeedsTend</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_EntityNeedsTend</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-43">
+            <h3>RimWorld.Alert_Exhaustion</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Exhaustion</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Exhaustion</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-44">
+            <h3>RimWorld.Alert_FireInHomeArea</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_FireInHomeArea</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_FireInHomeArea</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-45">
+            <h3>RimWorld.Alert_FuelNodeIgnition</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_FuelNodeIgnition</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_FuelNodeIgnition</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-46">
+            <h3>RimWorld.Alert_GauranlenTreeWithoutProductionMode</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_GauranlenTreeWithoutProductionMode</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_GauranlenTreeWithoutProductionMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-47">
+            <h3>RimWorld.Alert_GenebankUnpowered</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_GenebankUnpowered</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_GenebankUnpowered</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-48">
+            <h3>RimWorld.Alert_GhoulHypothermia</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_GhoulHypothermia</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_GhoulHypothermia</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-49">
+            <h3>RimWorld.Alert_Heatstroke</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Heatstroke</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Heatstroke</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-50">
+            <h3>RimWorld.Alert_HitchedAnimalHungryNoFood</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_HitchedAnimalHungryNoFood</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_HitchedAnimalHungryNoFood</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-51">
+            <h3>RimWorld.Alert_HunterHasShieldAndRangedWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_HunterHasShieldAndRangedWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_HunterHasShieldAndRangedWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-52">
+            <h3>RimWorld.Alert_Hypothermia</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Hypothermia</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Hypothermia</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-53">
+            <h3>RimWorld.Alert_HypothermicAnimals</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_HypothermicAnimals</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_HypothermicAnimals</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-54">
+            <h3>RimWorld.Alert_IdeoBuildingDisrespected</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_IdeoBuildingDisrespected</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_IdeoBuildingDisrespected</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-55">
+            <h3>RimWorld.Alert_IdeoBuildingMissing</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_IdeoBuildingMissing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_IdeoBuildingMissing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-56">
+            <h3>RimWorld.Alert_ImmobileCaravan</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ImmobileCaravan</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ImmobileCaravan</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-57">
+            <h3>RimWorld.Alert_InfestationDelay</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_InfestationDelay</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_InfestationDelay</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-58">
+            <h3>RimWorld.Alert_InhibitorBlocked</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_InhibitorBlocked</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_InhibitorBlocked</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-59">
+            <h3>RimWorld.Alert_InsufficientContainmentStrength</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_InsufficientContainmentStrength</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_InsufficientContainmentStrength</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-60">
+            <h3>RimWorld.Alert_JoyBuildingNoChairs</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_JoyBuildingNoChairs</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_JoyBuildingNoChairs</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-61">
+            <h3>RimWorld.Alert_LifeThreateningHediff</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_LifeThreateningHediff</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_LifeThreateningHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-62">
+            <h3>RimWorld.Alert_LowBabyFood</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_LowBabyFood</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_LowBabyFood</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-63">
+            <h3>RimWorld.Alert_LowDeathrest</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_LowDeathrest</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_LowDeathrest</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-64">
+            <h3>RimWorld.Alert_LowFood</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_LowFood</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_LowFood</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-65">
+            <h3>RimWorld.Alert_LowHemogen</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_LowHemogen</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_LowHemogen</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-66">
+            <h3>RimWorld.Alert_LowMedicine</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_LowMedicine</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_LowMedicine</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-67">
+            <h3>RimWorld.Alert_LowOxygen</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_LowOxygen</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_LowOxygen</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-68">
+            <h3>RimWorld.Alert_MajorOrExtremeBreakRisk</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MajorOrExtremeBreakRisk</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MajorOrExtremeBreakRisk</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-69">
+            <h3>RimWorld.Alert_MeatHunger</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MeatHunger</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MeatHunger</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-70">
+            <h3>RimWorld.Alert_MechChargerFull</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MechChargerFull</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MechChargerFull</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-71">
+            <h3>RimWorld.Alert_MechDamaged</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MechDamaged</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MechDamaged</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-72">
+            <h3>RimWorld.Alert_MechMissingBodyPart</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MechMissingBodyPart</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MechMissingBodyPart</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-73">
+            <h3>RimWorld.Alert_MechThreat</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MechThreat</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MechThreat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-74">
+            <h3>RimWorld.Alert_MinifiedTreeAboutToDie</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MinifiedTreeAboutToDie</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MinifiedTreeAboutToDie</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-75">
+            <h3>RimWorld.Alert_MinorBreakRisk</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MinorBreakRisk</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MinorBreakRisk</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-76">
+            <h3>RimWorld.Alert_MonolithAutoActivating</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MonolithAutoActivating</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MonolithAutoActivating</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-77">
+            <h3>RimWorld.Alert_MonumentMarkerMissingBlueprints</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_MonumentMarkerMissingBlueprints</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_MonumentMarkerMissingBlueprints</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-78">
+            <h3>RimWorld.Alert_NeedAnomalyProject</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedAnomalyProject</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedAnomalyProject</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-79">
+            <h3>RimWorld.Alert_NeedBabyCribs</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedBabyCribs</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedBabyCribs</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-80">
+            <h3>RimWorld.Alert_NeedBatteries</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedBatteries</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedBatteries</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-81">
+            <h3>RimWorld.Alert_NeedColonistBeds</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedColonistBeds</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedColonistBeds</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-82">
+            <h3>RimWorld.Alert_NeedDefenses</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedDefenses</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedDefenses</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-83">
+            <h3>RimWorld.Alert_NeedDoctor</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedDoctor</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedDoctor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-84">
+            <h3>RimWorld.Alert_NeedHoldingPlatform</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedHoldingPlatform</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedHoldingPlatform</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-85">
+            <h3>RimWorld.Alert_NeedJoySources</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedJoySources</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedJoySources</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-86">
+            <h3>RimWorld.Alert_NeedMealSource</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedMealSource</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedMealSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-87">
+            <h3>RimWorld.Alert_NeedMechChargers</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedMechChargers</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedMechChargers</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-88">
+            <h3>RimWorld.Alert_NeedMeditationSpot</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedMeditationSpot</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedMeditationSpot</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-89">
+            <h3>RimWorld.Alert_NeedMiner</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedMiner</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedMiner</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-90">
+            <h3>RimWorld.Alert_NeedResearchBench</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedResearchBench</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedResearchBench</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-91">
+            <h3>RimWorld.Alert_NeedResearchProject</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedResearchProject</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedResearchProject</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-92">
+            <h3>RimWorld.Alert_NeedSlaveBeds</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedSlaveBeds</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedSlaveBeds</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-93">
+            <h3>RimWorld.Alert_NeedSlaveCribs</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedSlaveCribs</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedSlaveCribs</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-94">
+            <h3>RimWorld.Alert_NeedWarden</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedWarden</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedWarden</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-95">
+            <h3>RimWorld.Alert_NeedWarmClothes</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NeedWarmClothes</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NeedWarmClothes</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-96">
+            <h3>RimWorld.Alert_NoBabyFeeders</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NoBabyFeeders</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NoBabyFeeders</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-97">
+            <h3>RimWorld.Alert_NoBabyFoodCaravan</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_NoBabyFoodCaravan</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_NoBabyFoodCaravan</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-98">
+            <h3>RimWorld.Alert_PasteDispenserNeedsHopper</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_PasteDispenserNeedsHopper</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_PasteDispenserNeedsHopper</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-99">
+            <h3>RimWorld.Alert_PennedAnimalHungry</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_PennedAnimalHungry</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_PennedAnimalHungry</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-100">
+            <h3>RimWorld.Alert_PokerTableNoChairs</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_PokerTableNoChairs</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_PokerTableNoChairs</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-101">
+            <h3>RimWorld.Alert_PollutedTerrain</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_PollutedTerrain</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_PollutedTerrain</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-102">
+            <h3>RimWorld.Alert_Precept</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Precept</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Precept</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-103">
+            <h3>RimWorld.Alert_PredatorInPen</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_PredatorInPen</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_PredatorInPen</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-104">
+            <h3>RimWorld.Alert_PsychicBondedSeparated</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_PsychicBondedSeparated</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_PsychicBondedSeparated</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-105">
+            <h3>RimWorld.Alert_QuestExpiresSoon</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_QuestExpiresSoon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_QuestExpiresSoon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-106">
+            <h3>RimWorld.Alert_ReimplantationAvailable</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ReimplantationAvailable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ReimplantationAvailable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-107">
+            <h3>RimWorld.Alert_RolesEmpty</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_RolesEmpty</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_RolesEmpty</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-108">
+            <h3>RimWorld.Alert_RoyalNoAcceptableFood</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_RoyalNoAcceptableFood</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_RoyalNoAcceptableFood</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-109">
+            <h3>RimWorld.Alert_RoyalNoThroneAssigned</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_RoyalNoThroneAssigned</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_RoyalNoThroneAssigned</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-110">
+            <h3>RimWorld.Alert_Scenario</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Scenario</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Scenario</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-111">
+            <h3>RimWorld.Alert_ShieldUserHasRangedWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ShieldUserHasRangedWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ShieldUserHasRangedWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-112">
+            <h3>RimWorld.Alert_ShuttleLandingBeaconUnusable</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ShuttleLandingBeaconUnusable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ShuttleLandingBeaconUnusable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-113">
+            <h3>RimWorld.Alert_SlaveRebellionLikely</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_SlaveRebellionLikely</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_SlaveRebellionLikely</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-114">
+            <h3>RimWorld.Alert_SlavesUnattended</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_SlavesUnattended</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_SlavesUnattended</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-115">
+            <h3>RimWorld.Alert_SlavesUnsuppressed</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_SlavesUnsuppressed</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_SlavesUnsuppressed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-116">
+            <h3>RimWorld.Alert_StarvationAnimals</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_StarvationAnimals</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_StarvationAnimals</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-117">
+            <h3>RimWorld.Alert_StarvationColonists</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_StarvationColonists</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_StarvationColonists</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-118">
+            <h3>RimWorld.Alert_SubjectHasNowOverseer</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_SubjectHasNowOverseer</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_SubjectHasNowOverseer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-119">
+            <h3>RimWorld.Alert_TatteredApparel</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_TatteredApparel</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_TatteredApparel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-120">
+            <h3>RimWorld.Alert_Thought</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_Thought</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_Thought</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-121">
+            <h3>RimWorld.Alert_ThroneroomInvalidConfiguration</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ThroneroomInvalidConfiguration</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ThroneroomInvalidConfiguration</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-122">
+            <h3>RimWorld.Alert_TimedMakeFactionHostile</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_TimedMakeFactionHostile</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_TimedMakeFactionHostile</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-123">
+            <h3>RimWorld.Alert_TimedRaidsArriving</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_TimedRaidsArriving</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_TimedRaidsArriving</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-124">
+            <h3>RimWorld.Alert_TitleRequiresBedroom</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_TitleRequiresBedroom</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_TitleRequiresBedroom</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-125">
+            <h3>RimWorld.Alert_ToxicBuildup</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ToxicBuildup</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ToxicBuildup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-126">
+            <h3>RimWorld.Alert_ToxifierGeneratorStopped</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_ToxifierGeneratorStopped</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_ToxifierGeneratorStopped</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-127">
+            <h3>RimWorld.Alert_UndercaveUnstable</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_UndercaveUnstable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_UndercaveUnstable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-128">
+            <h3>RimWorld.Alert_UndignifiedBedroom</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_UndignifiedBedroom</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_UndignifiedBedroom</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-129">
+            <h3>RimWorld.Alert_UndignifiedThroneroom</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_UndignifiedThroneroom</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_UndignifiedThroneroom</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-130">
+            <h3>RimWorld.Alert_UnhappyNudity</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_UnhappyNudity</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_UnhappyNudity</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-131">
+            <h3>RimWorld.Alert_UnusableMeditationFocus.Alert_PermitAvailable</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_UnusableMeditationFocus.Alert_PermitAvailable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_UnusableMeditationFocus.Alert_PermitAvailable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-132">
+            <h3>RimWorld.Alert_UnusableMeditationFocus</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_UnusableMeditationFocus</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_UnusableMeditationFocus</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-133">
+            <h3>RimWorld.Alert_WarqueenHasLowResources</h3>
+            <p><strong>Namespace:</strong> RimWorld.Alert_WarqueenHasLowResources</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Alert_WarqueenHasLowResources</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-134">
+            <h3>RimWorld.AlertPriority</h3>
+            <p><strong>Namespace:</strong> RimWorld.AlertPriority</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.AlertPriority</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-135">
+            <h3>RimWorld.AlertReport</h3>
+            <p><strong>Namespace:</strong> RimWorld.AlertReport</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.AlertReport</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-136">
+            <h3>RimWorld.AlertsReadout</h3>
+            <p><strong>Namespace:</strong> RimWorld.AlertsReadout</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.AlertsReadout</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-137">
+            <h3>RimWorld.BreakRiskAlertUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.BreakRiskAlertUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.BreakRiskAlertUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-138">
+            <h3>RimWorld.QuestGen.QuestPart_ActivateStructuresAlert</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestPart_ActivateStructuresAlert</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestPart_ActivateStructuresAlert</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-139">
+            <h3>RimWorld.QuestGen.QuestPart_Alert_StructuresArriving</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestPart_Alert_StructuresArriving</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestPart_Alert_StructuresArriving</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-140">
+            <h3>RimWorld.QuestGen.QuestPart_RelayStabilizersRemainingAlert</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestPart_RelayStabilizersRemainingAlert</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestPart_RelayStabilizersRemainingAlert</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-141">
+            <h3>RimWorld.QuestGen.QuestPart_ScannerDurationRemainingAlert</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestPart_ScannerDurationRemainingAlert</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestPart_ScannerDurationRemainingAlert</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-142">
+            <h3>RimWorld.QuestGen.QuestPart_StabilizersRemainingAlert</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestPart_StabilizersRemainingAlert</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestPart_StabilizersRemainingAlert</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-143">
+            <h3>RimWorld.QuestPart_Alert</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_Alert</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_Alert</p>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="back-to-top">↑ Top</a>
+</body>
+</html>

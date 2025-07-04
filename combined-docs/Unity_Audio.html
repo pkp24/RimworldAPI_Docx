@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity_Audio - Combined API Documentation</title>
+    <meta name="robots" content="index, follow">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .toc { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .toc h2 { margin-top: 0; color: #34495e; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { color: #2980b9; text-decoration: none; font-weight: 500; }
+        .toc a:hover { text-decoration: underline; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .section h3 { color: #e74c3c; margin-top: 0; }
+        .section-content { margin-top: 15px; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #3498db; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; }
+        .back-to-top:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Unity_Audio - Combined API Documentation</h1>
+        <p>This page contains combined documentation for 65 related API classes and components.</p>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-0">UnityEngine.AnimationClip</a></li>
+                <li><a href="#section-1">UnityEngine.AnimationClipPair</a></li>
+                <li><a href="#section-2">UnityEngine.Animations.AnimationClipPlayable</a></li>
+                <li><a href="#section-3">UnityEngine.Animations.ConstraintSource</a></li>
+                <li><a href="#section-4">UnityEngine.AnimatorClipInfo</a></li>
+                <li><a href="#section-5">UnityEngine.Audio.AudioClipPlayable</a></li>
+                <li><a href="#section-6">UnityEngine.Audio.AudioMixer</a></li>
+                <li><a href="#section-7">UnityEngine.Audio.AudioMixerGroup</a></li>
+                <li><a href="#section-8">UnityEngine.Audio.AudioMixerPlayable</a></li>
+                <li><a href="#section-9">UnityEngine.Audio.AudioMixerSnapshot</a></li>
+                <li><a href="#section-10">UnityEngine.Audio.AudioMixerUpdateMode</a></li>
+                <li><a href="#section-11">UnityEngine.Audio.AudioPlayableBinding</a></li>
+                <li><a href="#section-12">UnityEngine.Audio.AudioPlayableOutput</a></li>
+                <li><a href="#section-13">UnityEngine.Audio</a></li>
+                <li><a href="#section-14">UnityEngine.AudioBehaviour</a></li>
+                <li><a href="#section-15">UnityEngine.AudioChorusFilter</a></li>
+                <li><a href="#section-16">UnityEngine.AudioClip</a></li>
+                <li><a href="#section-17">UnityEngine.AudioClip.PCMReaderCallback</a></li>
+                <li><a href="#section-18">UnityEngine.AudioClip.PCMSetPositionCallback</a></li>
+                <li><a href="#section-19">UnityEngine.AudioClipLoadType</a></li>
+                <li><a href="#section-20">UnityEngine.AudioCompressionFormat</a></li>
+                <li><a href="#section-21">UnityEngine.AudioConfiguration</a></li>
+                <li><a href="#section-22">UnityEngine.AudioDataLoadState</a></li>
+                <li><a href="#section-23">UnityEngine.AudioDistortionFilter</a></li>
+                <li><a href="#section-24">UnityEngine.AudioEchoFilter</a></li>
+                <li><a href="#section-25">UnityEngine.AudioHighPassFilter</a></li>
+                <li><a href="#section-26">UnityEngine.AudioListener</a></li>
+                <li><a href="#section-27">UnityEngine.AudioLowPassFilter</a></li>
+                <li><a href="#section-28">UnityEngine.AudioReverbFilter</a></li>
+                <li><a href="#section-29">UnityEngine.AudioReverbPreset</a></li>
+                <li><a href="#section-30">UnityEngine.AudioReverbZone</a></li>
+                <li><a href="#section-31">UnityEngine.AudioRolloffMode</a></li>
+                <li><a href="#section-32">UnityEngine.AudioSettings.AudioConfigurationChangeHandler</a></li>
+                <li><a href="#section-33">UnityEngine.AudioSettings</a></li>
+                <li><a href="#section-34">UnityEngine.AudioSettings.Mobile</a></li>
+                <li><a href="#section-35">UnityEngine.AudioSource</a></li>
+                <li><a href="#section-36">UnityEngine.AudioSourceCurveType</a></li>
+                <li><a href="#section-37">UnityEngine.AudioSpeakerMode</a></li>
+                <li><a href="#section-38">UnityEngine.AudioType</a></li>
+                <li><a href="#section-39">UnityEngine.AudioVelocityUpdateMode</a></li>
+                <li><a href="#section-40">UnityEngine.Experimental.Animations.AnimationStreamSource</a></li>
+                <li><a href="#section-41">UnityEngine.Experimental.Audio.AudioSampleProvider.ConsumeSampleFramesNativeFunction</a></li>
+                <li><a href="#section-42">UnityEngine.Experimental.Audio.AudioSampleProvider</a></li>
+                <li><a href="#section-43">UnityEngine.Experimental.Audio.AudioSampleProvider.SampleFramesEventNativeFunction</a></li>
+                <li><a href="#section-44">UnityEngine.Experimental.Audio.AudioSampleProvider.SampleFramesHandler</a></li>
+                <li><a href="#section-45">UnityEngine.Experimental.Audio</a></li>
+                <li><a href="#section-46">UnityEngine.Experimental.Video.VideoClipPlayable</a></li>
+                <li><a href="#section-47">UnityEngine.GUI.ClipScope</a></li>
+                <li><a href="#section-48">UnityEngine.IAnimationClipSource</a></li>
+                <li><a href="#section-49">UnityEngine.Networking.DownloadHandlerAudioClip</a></li>
+                <li><a href="#section-50">UnityEngine.ParticleSystemGravitySource</a></li>
+                <li><a href="#section-51">UnityEngine.PlayerLoop.FixedUpdate.AudioFixedUpdate</a></li>
+                <li><a href="#section-52">UnityEngine.PlayerLoop.PostLateUpdate.UpdateAudio</a></li>
+                <li><a href="#section-53">UnityEngine.TextClipping</a></li>
+                <li><a href="#section-54">UnityEngine.UI.ClipperRegistry</a></li>
+                <li><a href="#section-55">UnityEngine.UI.Clipping</a></li>
+                <li><a href="#section-56">UnityEngine.UI.IClippable</a></li>
+                <li><a href="#section-57">UnityEngine.UI.IClipper</a></li>
+                <li><a href="#section-58">UnityEngine.UIElements.OverflowClipBox</a></li>
+                <li><a href="#section-59">UnityEngine.Video.VideoAudioOutputMode</a></li>
+                <li><a href="#section-60">UnityEngine.Video.VideoClip</a></li>
+                <li><a href="#section-61">UnityEngine.Video.VideoSource</a></li>
+                <li><a href="#section-62">UnityEngine.Video.VideoTimeSource</a></li>
+                <li><a href="#section-63">UnityEngine.Windows.WebCam.VideoCapture.AudioState</a></li>
+                <li><a href="#section-64">UnityEngine.WWWAudioExtensions</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="section-0">
+            <h3>UnityEngine.AnimationClip</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AnimationClip</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AnimationClip</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-1">
+            <h3>UnityEngine.AnimationClipPair</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AnimationClipPair</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AnimationClipPair</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+            <h3>UnityEngine.Animations.AnimationClipPlayable</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Animations.AnimationClipPlayable</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Animations.AnimationClipPlayable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-3">
+            <h3>UnityEngine.Animations.ConstraintSource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Animations.ConstraintSource</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Animations.ConstraintSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-4">
+            <h3>UnityEngine.AnimatorClipInfo</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AnimatorClipInfo</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AnimatorClipInfo</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-5">
+            <h3>UnityEngine.Audio.AudioClipPlayable</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio.AudioClipPlayable</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio.AudioClipPlayable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-6">
+            <h3>UnityEngine.Audio.AudioMixer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio.AudioMixer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio.AudioMixer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-7">
+            <h3>UnityEngine.Audio.AudioMixerGroup</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio.AudioMixerGroup</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio.AudioMixerGroup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-8">
+            <h3>UnityEngine.Audio.AudioMixerPlayable</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio.AudioMixerPlayable</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio.AudioMixerPlayable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-9">
+            <h3>UnityEngine.Audio.AudioMixerSnapshot</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio.AudioMixerSnapshot</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio.AudioMixerSnapshot</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-10">
+            <h3>UnityEngine.Audio.AudioMixerUpdateMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio.AudioMixerUpdateMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio.AudioMixerUpdateMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-11">
+            <h3>UnityEngine.Audio.AudioPlayableBinding</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio.AudioPlayableBinding</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio.AudioPlayableBinding</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-12">
+            <h3>UnityEngine.Audio.AudioPlayableOutput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio.AudioPlayableOutput</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio.AudioPlayableOutput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-13">
+            <h3>UnityEngine.Audio</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Audio</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Audio</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-14">
+            <h3>UnityEngine.AudioBehaviour</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioBehaviour</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioBehaviour</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-15">
+            <h3>UnityEngine.AudioChorusFilter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioChorusFilter</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioChorusFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-16">
+            <h3>UnityEngine.AudioClip</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioClip</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioClip</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-17">
+            <h3>UnityEngine.AudioClip.PCMReaderCallback</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioClip.PCMReaderCallback</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioClip.PCMReaderCallback</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-18">
+            <h3>UnityEngine.AudioClip.PCMSetPositionCallback</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioClip.PCMSetPositionCallback</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioClip.PCMSetPositionCallback</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-19">
+            <h3>UnityEngine.AudioClipLoadType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioClipLoadType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioClipLoadType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-20">
+            <h3>UnityEngine.AudioCompressionFormat</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioCompressionFormat</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioCompressionFormat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-21">
+            <h3>UnityEngine.AudioConfiguration</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioConfiguration</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioConfiguration</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-22">
+            <h3>UnityEngine.AudioDataLoadState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioDataLoadState</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioDataLoadState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-23">
+            <h3>UnityEngine.AudioDistortionFilter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioDistortionFilter</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioDistortionFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-24">
+            <h3>UnityEngine.AudioEchoFilter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioEchoFilter</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioEchoFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-25">
+            <h3>UnityEngine.AudioHighPassFilter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioHighPassFilter</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioHighPassFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-26">
+            <h3>UnityEngine.AudioListener</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioListener</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioListener</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-27">
+            <h3>UnityEngine.AudioLowPassFilter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioLowPassFilter</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioLowPassFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-28">
+            <h3>UnityEngine.AudioReverbFilter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioReverbFilter</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioReverbFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-29">
+            <h3>UnityEngine.AudioReverbPreset</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioReverbPreset</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioReverbPreset</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-30">
+            <h3>UnityEngine.AudioReverbZone</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioReverbZone</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioReverbZone</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-31">
+            <h3>UnityEngine.AudioRolloffMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioRolloffMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioRolloffMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-32">
+            <h3>UnityEngine.AudioSettings.AudioConfigurationChangeHandler</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioSettings.AudioConfigurationChangeHandler</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioSettings.AudioConfigurationChangeHandler</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-33">
+            <h3>UnityEngine.AudioSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-34">
+            <h3>UnityEngine.AudioSettings.Mobile</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioSettings.Mobile</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioSettings.Mobile</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-35">
+            <h3>UnityEngine.AudioSource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioSource</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-36">
+            <h3>UnityEngine.AudioSourceCurveType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioSourceCurveType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioSourceCurveType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-37">
+            <h3>UnityEngine.AudioSpeakerMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioSpeakerMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioSpeakerMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-38">
+            <h3>UnityEngine.AudioType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-39">
+            <h3>UnityEngine.AudioVelocityUpdateMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioVelocityUpdateMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioVelocityUpdateMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-40">
+            <h3>UnityEngine.Experimental.Animations.AnimationStreamSource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Animations</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Animations.AnimationStreamSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-41">
+            <h3>UnityEngine.Experimental.Audio.AudioSampleProvider.ConsumeSampleFramesNativeFunction</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Audio</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Audio.AudioSampleProvider.ConsumeSampleFramesNativeFunction</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-42">
+            <h3>UnityEngine.Experimental.Audio.AudioSampleProvider</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Audio</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Audio.AudioSampleProvider</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-43">
+            <h3>UnityEngine.Experimental.Audio.AudioSampleProvider.SampleFramesEventNativeFunction</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Audio</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Audio.AudioSampleProvider.SampleFramesEventNativeFunction</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-44">
+            <h3>UnityEngine.Experimental.Audio.AudioSampleProvider.SampleFramesHandler</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Audio</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Audio.AudioSampleProvider.SampleFramesHandler</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-45">
+            <h3>UnityEngine.Experimental.Audio</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Audio</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Audio</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-46">
+            <h3>UnityEngine.Experimental.Video.VideoClipPlayable</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Video</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Video.VideoClipPlayable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-47">
+            <h3>UnityEngine.GUI.ClipScope</h3>
+            <p><strong>Namespace:</strong> UnityEngine.GUI.ClipScope</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.GUI.ClipScope</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-48">
+            <h3>UnityEngine.IAnimationClipSource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.IAnimationClipSource</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.IAnimationClipSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-49">
+            <h3>UnityEngine.Networking.DownloadHandlerAudioClip</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Networking.DownloadHandlerAudioClip</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Networking.DownloadHandlerAudioClip</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-50">
+            <h3>UnityEngine.ParticleSystemGravitySource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemGravitySource</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemGravitySource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-51">
+            <h3>UnityEngine.PlayerLoop.FixedUpdate.AudioFixedUpdate</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.FixedUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.FixedUpdate.AudioFixedUpdate</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-52">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.UpdateAudio</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.UpdateAudio</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-53">
+            <h3>UnityEngine.TextClipping</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextClipping</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextClipping</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-54">
+            <h3>UnityEngine.UI.ClipperRegistry</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.ClipperRegistry</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.ClipperRegistry</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-55">
+            <h3>UnityEngine.UI.Clipping</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.Clipping</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.Clipping</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-56">
+            <h3>UnityEngine.UI.IClippable</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.IClippable</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.IClippable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-57">
+            <h3>UnityEngine.UI.IClipper</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.IClipper</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.IClipper</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-58">
+            <h3>UnityEngine.UIElements.OverflowClipBox</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.OverflowClipBox</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.OverflowClipBox</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-59">
+            <h3>UnityEngine.Video.VideoAudioOutputMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Video.VideoAudioOutputMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Video.VideoAudioOutputMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-60">
+            <h3>UnityEngine.Video.VideoClip</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Video.VideoClip</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Video.VideoClip</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-61">
+            <h3>UnityEngine.Video.VideoSource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Video.VideoSource</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Video.VideoSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-62">
+            <h3>UnityEngine.Video.VideoTimeSource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Video.VideoTimeSource</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Video.VideoTimeSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-63">
+            <h3>UnityEngine.Windows.WebCam.VideoCapture.AudioState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Windows.WebCam</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Windows.WebCam.VideoCapture.AudioState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-64">
+            <h3>UnityEngine.WWWAudioExtensions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.WWWAudioExtensions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.WWWAudioExtensions</p>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="back-to-top">↑ Top</a>
+</body>
+</html>

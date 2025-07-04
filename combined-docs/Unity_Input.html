@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity_Input - Combined API Documentation</title>
+    <meta name="robots" content="index, follow">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .toc { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .toc h2 { margin-top: 0; color: #34495e; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { color: #2980b9; text-decoration: none; font-weight: 500; }
+        .toc a:hover { text-decoration: underline; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .section h3 { color: #e74c3c; margin-top: 0; }
+        .section-content { margin-top: 15px; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #3498db; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; }
+        .back-to-top:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Unity_Input - Combined API Documentation</h1>
+        <p>This page contains combined documentation for 91 related API classes and components.</p>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-0">UnityEngine.Animations.NotKeyableAttribute</a></li>
+                <li><a href="#section-1">UnityEngine.ClusterInput</a></li>
+                <li><a href="#section-2">UnityEngine.ClusterInputType</a></li>
+                <li><a href="#section-3">UnityEngine.EventSystems.BaseInput</a></li>
+                <li><a href="#section-4">UnityEngine.EventSystems.BaseInputModule</a></li>
+                <li><a href="#section-5">UnityEngine.EventSystems.PointerEventData.InputButton</a></li>
+                <li><a href="#section-6">UnityEngine.EventSystems.PointerInputModule.ButtonState</a></li>
+                <li><a href="#section-7">UnityEngine.EventSystems.PointerInputModule</a></li>
+                <li><a href="#section-8">UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData</a></li>
+                <li><a href="#section-9">UnityEngine.EventSystems.PointerInputModule.MouseState</a></li>
+                <li><a href="#section-10">UnityEngine.EventSystems.StandaloneInputModule</a></li>
+                <li><a href="#section-11">UnityEngine.EventSystems.StandaloneInputModule.InputMode</a></li>
+                <li><a href="#section-12">UnityEngine.EventSystems.TouchInputModule</a></li>
+                <li><a href="#section-13">UnityEngine.GradientAlphaKey</a></li>
+                <li><a href="#section-14">UnityEngine.GradientColorKey</a></li>
+                <li><a href="#section-15">UnityEngine.Input</a></li>
+                <li><a href="#section-16">UnityEngine.KeyCode</a></li>
+                <li><a href="#section-17">UnityEngine.Keyframe</a></li>
+                <li><a href="#section-18">UnityEngine.PlayerLoop.EarlyUpdate.ProcessMouseInWindow</a></li>
+                <li><a href="#section-19">UnityEngine.PlayerLoop.EarlyUpdate.ProcessRemoteInput</a></li>
+                <li><a href="#section-20">UnityEngine.PlayerLoop.EarlyUpdate.UpdateInputManager</a></li>
+                <li><a href="#section-21">UnityEngine.PlayerLoop.FixedUpdate.NewInputFixedUpdate</a></li>
+                <li><a href="#section-22">UnityEngine.PlayerLoop.Initialization.SynchronizeInputs</a></li>
+                <li><a href="#section-23">UnityEngine.PlayerLoop.PostLateUpdate.InputEndFrame</a></li>
+                <li><a href="#section-24">UnityEngine.PlayerLoop.PostLateUpdate.ResetInputAxis</a></li>
+                <li><a href="#section-25">UnityEngine.PlayerLoop.PreUpdate.CheckTexFieldInput</a></li>
+                <li><a href="#section-26">UnityEngine.PlayerLoop.PreUpdate.NewInputUpdate</a></li>
+                <li><a href="#section-27">UnityEngine.PlayerLoop.PreUpdate.SendMouseEvents</a></li>
+                <li><a href="#section-28">UnityEngine.Touch</a></li>
+                <li><a href="#section-29">UnityEngine.TouchPhase</a></li>
+                <li><a href="#section-30">UnityEngine.TouchScreenKeyboard.Android</a></li>
+                <li><a href="#section-31">UnityEngine.TouchScreenKeyboard</a></li>
+                <li><a href="#section-32">UnityEngine.TouchScreenKeyboard.Status</a></li>
+                <li><a href="#section-33">UnityEngine.TouchScreenKeyboardType</a></li>
+                <li><a href="#section-34">UnityEngine.TouchType</a></li>
+                <li><a href="#section-35">UnityEngine.UI.InputField.CharacterValidation</a></li>
+                <li><a href="#section-36">UnityEngine.UI.InputField.ContentType</a></li>
+                <li><a href="#section-37">UnityEngine.UI.InputField.EditState</a></li>
+                <li><a href="#section-38">UnityEngine.UI.InputField.EndEditEvent</a></li>
+                <li><a href="#section-39">UnityEngine.UI.InputField</a></li>
+                <li><a href="#section-40">UnityEngine.UI.InputField.InputType</a></li>
+                <li><a href="#section-41">UnityEngine.UI.InputField.LineType</a></li>
+                <li><a href="#section-42">UnityEngine.UI.InputField.OnChangeEvent</a></li>
+                <li><a href="#section-43">UnityEngine.UI.InputField.OnValidateInput</a></li>
+                <li><a href="#section-44">UnityEngine.UI.InputField.SubmitEvent</a></li>
+                <li><a href="#section-45">UnityEngine.UIElements.BackgroundPositionKeyword</a></li>
+                <li><a href="#section-46">UnityEngine.UIElements.BaseFieldMouseDragger</a></li>
+                <li><a href="#section-47">UnityEngine.UIElements.FieldMouseDragger-1</a></li>
+                <li><a href="#section-48">UnityEngine.UIElements.IKeyboardEvent</a></li>
+                <li><a href="#section-49">UnityEngine.UIElements.IMouseCaptureEvent</a></li>
+                <li><a href="#section-50">UnityEngine.UIElements.IMouseEvent</a></li>
+                <li><a href="#section-51">UnityEngine.UIElements.InputEvent</a></li>
+                <li><a href="#section-52">UnityEngine.UIElements.KeyboardEventBase-1</a></li>
+                <li><a href="#section-53">UnityEngine.UIElements.KeyboardNavigationManipulator</a></li>
+                <li><a href="#section-54">UnityEngine.UIElements.KeyboardNavigationOperation</a></li>
+                <li><a href="#section-55">UnityEngine.UIElements.KeyDownEvent</a></li>
+                <li><a href="#section-56">UnityEngine.UIElements.KeyUpEvent</a></li>
+                <li><a href="#section-57">UnityEngine.UIElements.MouseButton</a></li>
+                <li><a href="#section-58">UnityEngine.UIElements.MouseCaptureController</a></li>
+                <li><a href="#section-59">UnityEngine.UIElements.MouseCaptureEvent</a></li>
+                <li><a href="#section-60">UnityEngine.UIElements.MouseCaptureEventBase-1</a></li>
+                <li><a href="#section-61">UnityEngine.UIElements.MouseCaptureOutEvent</a></li>
+                <li><a href="#section-62">UnityEngine.UIElements.MouseDownEvent</a></li>
+                <li><a href="#section-63">UnityEngine.UIElements.MouseEnterEvent</a></li>
+                <li><a href="#section-64">UnityEngine.UIElements.MouseEnterWindowEvent</a></li>
+                <li><a href="#section-65">UnityEngine.UIElements.MouseEventBase-1</a></li>
+                <li><a href="#section-66">UnityEngine.UIElements.MouseLeaveEvent</a></li>
+                <li><a href="#section-67">UnityEngine.UIElements.MouseLeaveWindowEvent</a></li>
+                <li><a href="#section-68">UnityEngine.UIElements.MouseManipulator</a></li>
+                <li><a href="#section-69">UnityEngine.UIElements.MouseMoveEvent</a></li>
+                <li><a href="#section-70">UnityEngine.UIElements.MouseOutEvent</a></li>
+                <li><a href="#section-71">UnityEngine.UIElements.MouseOverEvent</a></li>
+                <li><a href="#section-72">UnityEngine.UIElements.MouseUpEvent</a></li>
+                <li><a href="#section-73">UnityEngine.UIElements.ScrollView.TouchScrollBehavior</a></li>
+                <li><a href="#section-74">UnityEngine.UIElements.StyleKeyword</a></li>
+                <li><a href="#section-75">UnityEngine.UIElements.TextInputBaseField-1</a></li>
+                <li><a href="#section-76">UnityEngine.UIElements.TextInputBaseField-1.TextInputBase</a></li>
+                <li><a href="#section-77">UnityEngine.UIElements.TextInputBaseField-1.UxmlTraits</a></li>
+                <li><a href="#section-78">UnityEngine.UIElements.TextValueField-1.TextValueInput</a></li>
+                <li><a href="#section-79">UnityEngine.Windows.Input</a></li>
+                <li><a href="#section-80">UnityEngine.Windows.Speech.KeywordRecognizer</a></li>
+                <li><a href="#section-81">UnityEngine.XR.InputDevice</a></li>
+                <li><a href="#section-82">UnityEngine.XR.InputDeviceCharacteristics</a></li>
+                <li><a href="#section-83">UnityEngine.XR.InputDeviceRole</a></li>
+                <li><a href="#section-84">UnityEngine.XR.InputDevices</a></li>
+                <li><a href="#section-85">UnityEngine.XR.InputFeatureUsage</a></li>
+                <li><a href="#section-86">UnityEngine.XR.InputFeatureUsage-1</a></li>
+                <li><a href="#section-87">UnityEngine.XR.InputTracking</a></li>
+                <li><a href="#section-88">UnityEngine.XR.InputTrackingState</a></li>
+                <li><a href="#section-89">UnityEngine.XR.XRInputSubsystem</a></li>
+                <li><a href="#section-90">UnityEngine.XR.XRInputSubsystemDescriptor</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="section-0">
+            <h3>UnityEngine.Animations.NotKeyableAttribute</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Animations.NotKeyableAttribute</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Animations.NotKeyableAttribute</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-1">
+            <h3>UnityEngine.ClusterInput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ClusterInput</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ClusterInput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+            <h3>UnityEngine.ClusterInputType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ClusterInputType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ClusterInputType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-3">
+            <h3>UnityEngine.EventSystems.BaseInput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.BaseInput</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.BaseInput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-4">
+            <h3>UnityEngine.EventSystems.BaseInputModule</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.BaseInputModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.BaseInputModule</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-5">
+            <h3>UnityEngine.EventSystems.PointerEventData.InputButton</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.PointerEventData</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.PointerEventData.InputButton</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-6">
+            <h3>UnityEngine.EventSystems.PointerInputModule.ButtonState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.PointerInputModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.PointerInputModule.ButtonState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-7">
+            <h3>UnityEngine.EventSystems.PointerInputModule</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.PointerInputModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.PointerInputModule</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-8">
+            <h3>UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.PointerInputModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-9">
+            <h3>UnityEngine.EventSystems.PointerInputModule.MouseState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.PointerInputModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.PointerInputModule.MouseState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-10">
+            <h3>UnityEngine.EventSystems.StandaloneInputModule</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.StandaloneInputModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.StandaloneInputModule</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-11">
+            <h3>UnityEngine.EventSystems.StandaloneInputModule.InputMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.StandaloneInputModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.StandaloneInputModule.InputMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-12">
+            <h3>UnityEngine.EventSystems.TouchInputModule</h3>
+            <p><strong>Namespace:</strong> UnityEngine.EventSystems.TouchInputModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.EventSystems.TouchInputModule</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-13">
+            <h3>UnityEngine.GradientAlphaKey</h3>
+            <p><strong>Namespace:</strong> UnityEngine.GradientAlphaKey</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.GradientAlphaKey</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-14">
+            <h3>UnityEngine.GradientColorKey</h3>
+            <p><strong>Namespace:</strong> UnityEngine.GradientColorKey</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.GradientColorKey</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-15">
+            <h3>UnityEngine.Input</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Input</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Input</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-16">
+            <h3>UnityEngine.KeyCode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.KeyCode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.KeyCode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-17">
+            <h3>UnityEngine.Keyframe</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Keyframe</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Keyframe</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-18">
+            <h3>UnityEngine.PlayerLoop.EarlyUpdate.ProcessMouseInWindow</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.EarlyUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.EarlyUpdate.ProcessMouseInWindow</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-19">
+            <h3>UnityEngine.PlayerLoop.EarlyUpdate.ProcessRemoteInput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.EarlyUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.EarlyUpdate.ProcessRemoteInput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-20">
+            <h3>UnityEngine.PlayerLoop.EarlyUpdate.UpdateInputManager</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.EarlyUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.EarlyUpdate.UpdateInputManager</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-21">
+            <h3>UnityEngine.PlayerLoop.FixedUpdate.NewInputFixedUpdate</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.FixedUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.FixedUpdate.NewInputFixedUpdate</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-22">
+            <h3>UnityEngine.PlayerLoop.Initialization.SynchronizeInputs</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.Initialization</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.Initialization.SynchronizeInputs</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-23">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.InputEndFrame</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.InputEndFrame</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-24">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.ResetInputAxis</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.ResetInputAxis</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-25">
+            <h3>UnityEngine.PlayerLoop.PreUpdate.CheckTexFieldInput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PreUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PreUpdate.CheckTexFieldInput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-26">
+            <h3>UnityEngine.PlayerLoop.PreUpdate.NewInputUpdate</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PreUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PreUpdate.NewInputUpdate</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-27">
+            <h3>UnityEngine.PlayerLoop.PreUpdate.SendMouseEvents</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PreUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PreUpdate.SendMouseEvents</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-28">
+            <h3>UnityEngine.Touch</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Touch</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Touch</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-29">
+            <h3>UnityEngine.TouchPhase</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TouchPhase</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TouchPhase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-30">
+            <h3>UnityEngine.TouchScreenKeyboard.Android</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TouchScreenKeyboard.Android</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TouchScreenKeyboard.Android</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-31">
+            <h3>UnityEngine.TouchScreenKeyboard</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TouchScreenKeyboard</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TouchScreenKeyboard</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-32">
+            <h3>UnityEngine.TouchScreenKeyboard.Status</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TouchScreenKeyboard.Status</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TouchScreenKeyboard.Status</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-33">
+            <h3>UnityEngine.TouchScreenKeyboardType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TouchScreenKeyboardType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TouchScreenKeyboardType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-34">
+            <h3>UnityEngine.TouchType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TouchType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TouchType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-35">
+            <h3>UnityEngine.UI.InputField.CharacterValidation</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.CharacterValidation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-36">
+            <h3>UnityEngine.UI.InputField.ContentType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.ContentType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-37">
+            <h3>UnityEngine.UI.InputField.EditState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.EditState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-38">
+            <h3>UnityEngine.UI.InputField.EndEditEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.EndEditEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-39">
+            <h3>UnityEngine.UI.InputField</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-40">
+            <h3>UnityEngine.UI.InputField.InputType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.InputType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-41">
+            <h3>UnityEngine.UI.InputField.LineType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.LineType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-42">
+            <h3>UnityEngine.UI.InputField.OnChangeEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.OnChangeEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-43">
+            <h3>UnityEngine.UI.InputField.OnValidateInput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.OnValidateInput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-44">
+            <h3>UnityEngine.UI.InputField.SubmitEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.InputField</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.InputField.SubmitEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-45">
+            <h3>UnityEngine.UIElements.BackgroundPositionKeyword</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.BackgroundPositionKeyword</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.BackgroundPositionKeyword</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-46">
+            <h3>UnityEngine.UIElements.BaseFieldMouseDragger</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.BaseFieldMouseDragger</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.BaseFieldMouseDragger</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-47">
+            <h3>UnityEngine.UIElements.FieldMouseDragger-1</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.FieldMouseDragger-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.FieldMouseDragger-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-48">
+            <h3>UnityEngine.UIElements.IKeyboardEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.IKeyboardEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.IKeyboardEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-49">
+            <h3>UnityEngine.UIElements.IMouseCaptureEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.IMouseCaptureEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.IMouseCaptureEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-50">
+            <h3>UnityEngine.UIElements.IMouseEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.IMouseEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.IMouseEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-51">
+            <h3>UnityEngine.UIElements.InputEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.InputEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.InputEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-52">
+            <h3>UnityEngine.UIElements.KeyboardEventBase-1</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.KeyboardEventBase-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.KeyboardEventBase-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-53">
+            <h3>UnityEngine.UIElements.KeyboardNavigationManipulator</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.KeyboardNavigationManipulator</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.KeyboardNavigationManipulator</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-54">
+            <h3>UnityEngine.UIElements.KeyboardNavigationOperation</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.KeyboardNavigationOperation</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.KeyboardNavigationOperation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-55">
+            <h3>UnityEngine.UIElements.KeyDownEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.KeyDownEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.KeyDownEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-56">
+            <h3>UnityEngine.UIElements.KeyUpEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.KeyUpEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.KeyUpEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-57">
+            <h3>UnityEngine.UIElements.MouseButton</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseButton</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseButton</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-58">
+            <h3>UnityEngine.UIElements.MouseCaptureController</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseCaptureController</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseCaptureController</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-59">
+            <h3>UnityEngine.UIElements.MouseCaptureEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseCaptureEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseCaptureEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-60">
+            <h3>UnityEngine.UIElements.MouseCaptureEventBase-1</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseCaptureEventBase-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseCaptureEventBase-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-61">
+            <h3>UnityEngine.UIElements.MouseCaptureOutEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseCaptureOutEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseCaptureOutEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-62">
+            <h3>UnityEngine.UIElements.MouseDownEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseDownEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseDownEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-63">
+            <h3>UnityEngine.UIElements.MouseEnterEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseEnterEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseEnterEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-64">
+            <h3>UnityEngine.UIElements.MouseEnterWindowEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseEnterWindowEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseEnterWindowEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-65">
+            <h3>UnityEngine.UIElements.MouseEventBase-1</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseEventBase-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseEventBase-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-66">
+            <h3>UnityEngine.UIElements.MouseLeaveEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseLeaveEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseLeaveEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-67">
+            <h3>UnityEngine.UIElements.MouseLeaveWindowEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseLeaveWindowEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseLeaveWindowEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-68">
+            <h3>UnityEngine.UIElements.MouseManipulator</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseManipulator</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseManipulator</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-69">
+            <h3>UnityEngine.UIElements.MouseMoveEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseMoveEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseMoveEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-70">
+            <h3>UnityEngine.UIElements.MouseOutEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseOutEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseOutEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-71">
+            <h3>UnityEngine.UIElements.MouseOverEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseOverEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseOverEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-72">
+            <h3>UnityEngine.UIElements.MouseUpEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MouseUpEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MouseUpEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-73">
+            <h3>UnityEngine.UIElements.ScrollView.TouchScrollBehavior</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.ScrollView</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.ScrollView.TouchScrollBehavior</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-74">
+            <h3>UnityEngine.UIElements.StyleKeyword</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.StyleKeyword</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.StyleKeyword</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-75">
+            <h3>UnityEngine.UIElements.TextInputBaseField-1</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.TextInputBaseField-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.TextInputBaseField-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-76">
+            <h3>UnityEngine.UIElements.TextInputBaseField-1.TextInputBase</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.TextInputBaseField-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.TextInputBaseField-1.TextInputBase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-77">
+            <h3>UnityEngine.UIElements.TextInputBaseField-1.UxmlTraits</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.TextInputBaseField-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.TextInputBaseField-1.UxmlTraits</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-78">
+            <h3>UnityEngine.UIElements.TextValueField-1.TextValueInput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.TextValueField-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.TextValueField-1.TextValueInput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-79">
+            <h3>UnityEngine.Windows.Input</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Windows.Input</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Windows.Input</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-80">
+            <h3>UnityEngine.Windows.Speech.KeywordRecognizer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Windows.Speech</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Windows.Speech.KeywordRecognizer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-81">
+            <h3>UnityEngine.XR.InputDevice</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.InputDevice</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.InputDevice</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-82">
+            <h3>UnityEngine.XR.InputDeviceCharacteristics</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.InputDeviceCharacteristics</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.InputDeviceCharacteristics</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-83">
+            <h3>UnityEngine.XR.InputDeviceRole</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.InputDeviceRole</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.InputDeviceRole</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-84">
+            <h3>UnityEngine.XR.InputDevices</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.InputDevices</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.InputDevices</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-85">
+            <h3>UnityEngine.XR.InputFeatureUsage</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.InputFeatureUsage</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.InputFeatureUsage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-86">
+            <h3>UnityEngine.XR.InputFeatureUsage-1</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.InputFeatureUsage-1</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.InputFeatureUsage-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-87">
+            <h3>UnityEngine.XR.InputTracking</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.InputTracking</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.InputTracking</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-88">
+            <h3>UnityEngine.XR.InputTrackingState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.InputTrackingState</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.InputTrackingState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-89">
+            <h3>UnityEngine.XR.XRInputSubsystem</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRInputSubsystem</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRInputSubsystem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-90">
+            <h3>UnityEngine.XR.XRInputSubsystemDescriptor</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRInputSubsystemDescriptor</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRInputSubsystemDescriptor</p>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="back-to-top">↑ Top</a>
+</body>
+</html>

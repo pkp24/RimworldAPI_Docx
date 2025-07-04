@@ -1,0 +1,3666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verse_Core - Combined API Documentation</title>
+    <meta name="robots" content="index, follow">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .toc { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .toc h2 { margin-top: 0; color: #34495e; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { color: #2980b9; text-decoration: none; font-weight: 500; }
+        .toc a:hover { text-decoration: underline; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .section h3 { color: #e74c3c; margin-top: 0; }
+        .section-content { margin-top: 15px; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #3498db; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; }
+        .back-to-top:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Verse_Core - Combined API Documentation</h1>
+        <p>This page contains combined documentation for 403 related API classes and components.</p>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-0">Verse.AbilityCompProperties</a></li>
+                <li><a href="#section-1">Verse.AI.DutyDef</a></li>
+                <li><a href="#section-2">Verse.AI.Group.LordJob_DefendPoint</a></li>
+                <li><a href="#section-3">Verse.AI.Group.LordToil_DefendPoint</a></li>
+                <li><a href="#section-4">Verse.AI.Group.LordToil_DefendSelf</a></li>
+                <li><a href="#section-5">Verse.AI.Group.LordToilData_DefendPoint</a></li>
+                <li><a href="#section-6">Verse.AI.Group.TransitionAction_SetDefendLocalGroup</a></li>
+                <li><a href="#section-7">Verse.AI.Group.TransitionAction_SetDefendTrader</a></li>
+                <li><a href="#section-8">Verse.AI.Group.Trigger_AnyThingDamageTaken</a></li>
+                <li><a href="#section-9">Verse.AI.Group.Trigger_OnHumanlikeHarmAnyThing</a></li>
+                <li><a href="#section-10">Verse.AI.Group.Trigger_ThingDamageTaken</a></li>
+                <li><a href="#section-11">Verse.AI.Group.Trigger_ThingsDamageTaken</a></li>
+                <li><a href="#section-12">Verse.AI.MentalState_SlaughterThing</a></li>
+                <li><a href="#section-13">Verse.AI.ThingCountTracker</a></li>
+                <li><a href="#section-14">Verse.AI.ThingCountTracker.PawnCount</a></li>
+                <li><a href="#section-15">Verse.AI.ThinkNode_ConditionalNoConnectedThings</a></li>
+                <li><a href="#section-16">Verse.AI.ToilCompleteMode</a></li>
+                <li><a href="#section-17">Verse.AnimationDef</a></li>
+                <li><a href="#section-18">Verse.ApparelLayerDef</a></li>
+                <li><a href="#section-19">Verse.AttachableThing</a></li>
+                <li><a href="#section-20">Verse.BackCompatibility</a></li>
+                <li><a href="#section-21">Verse.BackCompatibilityConverter</a></li>
+                <li><a href="#section-22">Verse.BackCompatibilityConverter_0_17_AndLower</a></li>
+                <li><a href="#section-23">Verse.BackCompatibilityConverter_0_18</a></li>
+                <li><a href="#section-24">Verse.BackCompatibilityConverter_0_19</a></li>
+                <li><a href="#section-25">Verse.BackCompatibilityConverter_1_0</a></li>
+                <li><a href="#section-26">Verse.BackCompatibilityConverter_1_2</a></li>
+                <li><a href="#section-27">Verse.BackCompatibilityConverter_1_3</a></li>
+                <li><a href="#section-28">Verse.BackCompatibilityConverter_1_4</a></li>
+                <li><a href="#section-29">Verse.BackCompatibilityConverter_1_5</a></li>
+                <li><a href="#section-30">Verse.BackCompatibilityConverter_Universal</a></li>
+                <li><a href="#section-31">Verse.BodyDef</a></li>
+                <li><a href="#section-32">Verse.BodyPartDef</a></li>
+                <li><a href="#section-33">Verse.BodyPartGroupDef</a></li>
+                <li><a href="#section-34">Verse.BodyPartTagDef</a></li>
+                <li><a href="#section-35">Verse.BuildableDef</a></li>
+                <li><a href="#section-36">Verse.ClamorDef</a></li>
+                <li><a href="#section-37">Verse.CompAffectsSky</a></li>
+                <li><a href="#section-38">Verse.CompAIUsablePack</a></li>
+                <li><a href="#section-39">Verse.CompAttachBase</a></li>
+                <li><a href="#section-40">Verse.CompColorable</a></li>
+                <li><a href="#section-41">Verse.CompColorable_Animated</a></li>
+                <li><a href="#section-42">Verse.CompColorableUtility</a></li>
+                <li><a href="#section-43">Verse.CompEquippable</a></li>
+                <li><a href="#section-44">Verse.CompFirefoamPack</a></li>
+                <li><a href="#section-45">Verse.CompGlower</a></li>
+                <li><a href="#section-46">Verse.CompHeatPusher</a></li>
+                <li><a href="#section-47">Verse.CompHeatPusherPowered</a></li>
+                <li><a href="#section-48">Verse.CompLifespan</a></li>
+                <li><a href="#section-49">Verse.CompProperties</a></li>
+                <li><a href="#section-50">Verse.CompProperties_AffectsSky</a></li>
+                <li><a href="#section-51">Verse.CompProperties_AIUSablePack</a></li>
+                <li><a href="#section-52">Verse.CompProperties_ColorableAnimated</a></li>
+                <li><a href="#section-53">Verse.CompProperties_HeatPusher</a></li>
+                <li><a href="#section-54">Verse.CompProperties_Lifespan</a></li>
+                <li><a href="#section-55">Verse.CompProperties_TemperatureDamaged</a></li>
+                <li><a href="#section-56">Verse.CompProperties_WindSource</a></li>
+                <li><a href="#section-57">Verse.CompressibilityDecider</a></li>
+                <li><a href="#section-58">Verse.CompressibilityDeciderUtility</a></li>
+                <li><a href="#section-59">Verse.CompressUtility</a></li>
+                <li><a href="#section-60">Verse.CompTemperatureDamaged</a></li>
+                <li><a href="#section-61">Verse.CompToxPack</a></li>
+                <li><a href="#section-62">Verse.CompWindSource</a></li>
+                <li><a href="#section-63">Verse.CreepJoinerAggressiveDef</a></li>
+                <li><a href="#section-64">Verse.CreepJoinerBaseDef</a></li>
+                <li><a href="#section-65">Verse.CreepJoinerBenefitDef</a></li>
+                <li><a href="#section-66">Verse.CreepJoinerBenefitDef.SkillValue</a></li>
+                <li><a href="#section-67">Verse.CreepJoinerDownsideDef</a></li>
+                <li><a href="#section-68">Verse.CreepJoinerFormKindDef</a></li>
+                <li><a href="#section-69">Verse.CreepJoinerRejectionDef</a></li>
+                <li><a href="#section-70">Verse.CustomMapComponent</a></li>
+                <li><a href="#section-71">Verse.DamageArmorCategoryDef</a></li>
+                <li><a href="#section-72">Verse.DamageDef</a></li>
+                <li><a href="#section-73">Verse.DamageDefAdditionalHediff</a></li>
+                <li><a href="#section-74">Verse.DebugThingPlaceHelper</a></li>
+                <li><a href="#section-75">Verse.Def</a></li>
+                <li><a href="#section-76">Verse.DefaultEmptyListAttribute</a></li>
+                <li><a href="#section-77">Verse.DefaultFloatRangeAttribute</a></li>
+                <li><a href="#section-78">Verse.DefaultValueAttribute</a></li>
+                <li><a href="#section-79">Verse.DefaultWindowDrawing</a></li>
+                <li><a href="#section-80">Verse.DefDatabase-1</a></li>
+                <li><a href="#section-81">Verse.DefHyperlink</a></li>
+                <li><a href="#section-82">Verse.DefInjectionPackage.DefInjection</a></li>
+                <li><a href="#section-83">Verse.DefInjectionPackage</a></li>
+                <li><a href="#section-84">Verse.DefInjectionUtility</a></li>
+                <li><a href="#section-85">Verse.DefInjectionUtility.PossibleDefInjectionTraverser</a></li>
+                <li><a href="#section-86">Verse.DefMap-2</a></li>
+                <li><a href="#section-87">Verse.DefModExtension</a></li>
+                <li><a href="#section-88">Verse.DesignationCategoryDef.BuildablePreceptBuilding</a></li>
+                <li><a href="#section-89">Verse.DesignationCategoryDef</a></li>
+                <li><a href="#section-90">Verse.DesignationDef</a></li>
+                <li><a href="#section-91">Verse.DesignatorDropdownGroupDef</a></li>
+                <li><a href="#section-92">Verse.DesignatorDropdownGroupDef.IconSource</a></li>
+                <li><a href="#section-93">Verse.DirectXmlToObjectNew.ParseValueAndReturnDefDelegate</a></li>
+                <li><a href="#section-94">Verse.DrawStyleCategoryDef</a></li>
+                <li><a href="#section-95">Verse.DrawStyleDef</a></li>
+                <li><a href="#section-96">Verse.EffecterDef</a></li>
+                <li><a href="#section-97">Verse.EffecterDef.OffsetMode</a></li>
+                <li><a href="#section-98">Verse.FastEntityTypeComparer</a></li>
+                <li><a href="#section-99">Verse.FastPawnCapacityDefComparer</a></li>
+                <li><a href="#section-100">Verse.FastVector2Comparer</a></li>
+                <li><a href="#section-101">Verse.FishShadowComponent</a></li>
+                <li><a href="#section-102">Verse.FleckDef</a></li>
+                <li><a href="#section-103">Verse.FloatMinComparer</a></li>
+                <li><a href="#section-104">Verse.GameComponent</a></li>
+                <li><a href="#section-105">Verse.GameComponent_DebugTools</a></li>
+                <li><a href="#section-106">Verse.GameComponent_OnetimeNotification</a></li>
+                <li><a href="#section-107">Verse.GameComponentUtility</a></li>
+                <li><a href="#section-108">Verse.GameConditionDef</a></li>
+                <li><a href="#section-109">Verse.GameSetupStepDef</a></li>
+                <li><a href="#section-110">Verse.GenDefDatabase</a></li>
+                <li><a href="#section-111">Verse.GeneCategoryDef</a></li>
+                <li><a href="#section-112">Verse.GeneDef</a></li>
+                <li><a href="#section-113">Verse.GenStep_ScatterGroup.ThingWeight</a></li>
+                <li><a href="#section-114">Verse.GenStep_ScatterThings</a></li>
+                <li><a href="#section-115">Verse.GenStepDef</a></li>
+                <li><a href="#section-116">Verse.Glow.ComputeGlowGridsJob</a></li>
+                <li><a href="#section-117">Verse.Glow.GlowCellComparer</a></li>
+                <li><a href="#section-118">Verse.GraphicStateDef</a></li>
+                <li><a href="#section-119">Verse.HeadTypeDef</a></li>
+                <li><a href="#section-120">Verse.HediffComp</a></li>
+                <li><a href="#section-121">Verse.HediffComp_AttachPoints</a></li>
+                <li><a href="#section-122">Verse.HediffComp_CauseMentalState</a></li>
+                <li><a href="#section-123">Verse.HediffComp_ChanceToRemove</a></li>
+                <li><a href="#section-124">Verse.HediffComp_ChangeImplantLevel</a></li>
+                <li><a href="#section-125">Verse.HediffComp_ChangeNeed</a></li>
+                <li><a href="#section-126">Verse.HediffComp_Chargeable</a></li>
+                <li><a href="#section-127">Verse.HediffComp_DamageBrain</a></li>
+                <li><a href="#section-128">Verse.HediffComp_Disappears</a></li>
+                <li><a href="#section-129">Verse.HediffComp_DisappearsAndKills</a></li>
+                <li><a href="#section-130">Verse.HediffComp_DisappearsAndKills_Shambler</a></li>
+                <li><a href="#section-131">Verse.HediffComp_DisappearsDisableable</a></li>
+                <li><a href="#section-132">Verse.HediffComp_DisappearsOnDeath</a></li>
+                <li><a href="#section-133">Verse.HediffComp_DisappearsPausable</a></li>
+                <li><a href="#section-134">Verse.HediffComp_DisappearsPausable_LethalInjuries</a></li>
+                <li><a href="#section-135">Verse.HediffComp_Discoverable</a></li>
+                <li><a href="#section-136">Verse.HediffComp_Disorientation</a></li>
+                <li><a href="#section-137">Verse.HediffComp_DrugEffectFactor</a></li>
+                <li><a href="#section-138">Verse.HediffComp_Effecter</a></li>
+                <li><a href="#section-139">Verse.HediffComp_EntropyLink</a></li>
+                <li><a href="#section-140">Verse.HediffComp_FleshbeastEmerge</a></li>
+                <li><a href="#section-141">Verse.HediffComp_GetsPermanent</a></li>
+                <li><a href="#section-142">Verse.HediffComp_GiveAbility</a></li>
+                <li><a href="#section-143">Verse.HediffComp_GiveHediff</a></li>
+                <li><a href="#section-144">Verse.HediffComp_GiveHediffLungRot</a></li>
+                <li><a href="#section-145">Verse.HediffComp_GiveHediffsInRange</a></li>
+                <li><a href="#section-146">Verse.HediffComp_GiveHemogen</a></li>
+                <li><a href="#section-147">Verse.HediffComp_GiveLovinMTBFactor</a></li>
+                <li><a href="#section-148">Verse.HediffComp_GiveNeurocharge</a></li>
+                <li><a href="#section-149">Verse.HediffComp_GiveRandomSituationalThought</a></li>
+                <li><a href="#section-150">Verse.HediffComp_GrowthMode</a></li>
+                <li><a href="#section-151">Verse.HediffComp_HealPermanentWounds</a></li>
+                <li><a href="#section-152">Verse.HediffComp_Immunizable</a></li>
+                <li><a href="#section-153">Verse.HediffComp_ImmunizableToxic</a></li>
+                <li><a href="#section-154">Verse.HediffComp_Infecter</a></li>
+                <li><a href="#section-155">Verse.HediffComp_Invisibility</a></li>
+                <li><a href="#section-156">Verse.HediffComp_KillAfterDays</a></li>
+                <li><a href="#section-157">Verse.HediffComp_Lactating</a></li>
+                <li><a href="#section-158">Verse.HediffComp_LetterOnDeath</a></li>
+                <li><a href="#section-159">Verse.HediffComp_Link</a></li>
+                <li><a href="#section-160">Verse.HediffComp_MessageAboveSeverity</a></li>
+                <li><a href="#section-161">Verse.HediffComp_MessageAfterTicks</a></li>
+                <li><a href="#section-162">Verse.HediffComp_MessageBase</a></li>
+                <li><a href="#section-163">Verse.HediffComp_MessageOnRemoval</a></li>
+                <li><a href="#section-164">Verse.HediffComp_MessageStageIncreased</a></li>
+                <li><a href="#section-165">Verse.HediffComp_PainField</a></li>
+                <li><a href="#section-166">Verse.HediffComp_Pollution</a></li>
+                <li><a href="#section-167">Verse.HediffComp_PregnantHuman</a></li>
+                <li><a href="#section-168">Verse.HediffComp_Randomizer</a></li>
+                <li><a href="#section-169">Verse.HediffComp_RandomizeSeverityPhases</a></li>
+                <li><a href="#section-170">Verse.HediffComp_RandomizeStageWithInterval</a></li>
+                <li><a href="#section-171">Verse.HediffComp_ReactOnDamage</a></li>
+                <li><a href="#section-172">Verse.HediffComp_RecoveryThought</a></li>
+                <li><a href="#section-173">Verse.HediffComp_RemoveIfApparelDropped</a></li>
+                <li><a href="#section-174">Verse.HediffComp_RemoveIfOtherHediff</a></li>
+                <li><a href="#section-175">Verse.HediffComp_ReplaceHediff</a></li>
+                <li><a href="#section-176">Verse.HediffComp_SelfHeal</a></li>
+                <li><a href="#section-177">Verse.HediffComp_SeverityFromEntropy</a></li>
+                <li><a href="#section-178">Verse.HediffComp_SeverityFromGas</a></li>
+                <li><a href="#section-179">Verse.HediffComp_SeverityFromGasDensityDirect</a></li>
+                <li><a href="#section-180">Verse.HediffComp_SeverityFromHemogen</a></li>
+                <li><a href="#section-181">Verse.HediffComp_SeverityModifierBase</a></li>
+                <li><a href="#section-182">Verse.HediffComp_SeverityPerDay</a></li>
+                <li><a href="#section-183">Verse.HediffComp_SeverityPerSecond</a></li>
+                <li><a href="#section-184">Verse.HediffComp_SkillDecay</a></li>
+                <li><a href="#section-185">Verse.HediffComp_SurgeryInspectable</a></li>
+                <li><a href="#section-186">Verse.HediffComp_SurgeryInspectableMetalhorror</a></li>
+                <li><a href="#section-187">Verse.HediffComp_TendDuration</a></li>
+                <li><a href="#section-188">Verse.HediffComp_ThoughtSetter</a></li>
+                <li><a href="#section-189">Verse.HediffComp_VacuumExposure</a></li>
+                <li><a href="#section-190">Verse.HediffComp_VatGrowing</a></li>
+                <li><a href="#section-191">Verse.HediffComp_VerbGiver</a></li>
+                <li><a href="#section-192">Verse.HediffCompProperties</a></li>
+                <li><a href="#section-193">Verse.HediffCompProperties_AttachPoints</a></li>
+                <li><a href="#section-194">Verse.HediffCompProperties_CauseMentalState</a></li>
+                <li><a href="#section-195">Verse.HediffCompProperties_ChanceToRemove</a></li>
+                <li><a href="#section-196">Verse.HediffCompProperties_ChangeImplantLevel</a></li>
+                <li><a href="#section-197">Verse.HediffCompProperties_ChangeNeed</a></li>
+                <li><a href="#section-198">Verse.HediffCompProperties_Chargeable</a></li>
+                <li><a href="#section-199">Verse.HediffCompProperties_DamageBrain</a></li>
+                <li><a href="#section-200">Verse.HediffCompProperties_Disappears</a></li>
+                <li><a href="#section-201">Verse.HediffCompProperties_DisappearsAndKills</a></li>
+                <li><a href="#section-202">Verse.HediffCompProperties_DisappearsDisableable</a></li>
+                <li><a href="#section-203">Verse.HediffCompProperties_DisappearsOnDeath</a></li>
+                <li><a href="#section-204">Verse.HediffCompProperties_Discoverable</a></li>
+                <li><a href="#section-205">Verse.HediffCompProperties_Disorientation</a></li>
+                <li><a href="#section-206">Verse.HediffCompProperties_DrugEffectFactor</a></li>
+                <li><a href="#section-207">Verse.HediffCompProperties_Effecter</a></li>
+                <li><a href="#section-208">Verse.HediffCompProperties_EntropyLink</a></li>
+                <li><a href="#section-209">Verse.HediffCompProperties_FleshbeastEmerge</a></li>
+                <li><a href="#section-210">Verse.HediffCompProperties_GetsPermanent</a></li>
+                <li><a href="#section-211">Verse.HediffCompProperties_GiveAbility</a></li>
+                <li><a href="#section-212">Verse.HediffCompProperties_GiveHediff</a></li>
+                <li><a href="#section-213">Verse.HediffCompProperties_GiveHediffLungRot</a></li>
+                <li><a href="#section-214">Verse.HediffCompProperties_GiveHediffsInRange</a></li>
+                <li><a href="#section-215">Verse.HediffCompProperties_GiveHemogen</a></li>
+                <li><a href="#section-216">Verse.HediffCompProperties_GiveLovinMTBFactor</a></li>
+                <li><a href="#section-217">Verse.HediffCompProperties_GiveNeurocharge</a></li>
+                <li><a href="#section-218">Verse.HediffCompProperties_GiveRandomSituationalThought</a></li>
+                <li><a href="#section-219">Verse.HediffCompProperties_GrowthMode</a></li>
+                <li><a href="#section-220">Verse.HediffCompProperties_HealPermanentWounds</a></li>
+                <li><a href="#section-221">Verse.HediffCompProperties_Immunizable</a></li>
+                <li><a href="#section-222">Verse.HediffCompProperties_Infecter</a></li>
+                <li><a href="#section-223">Verse.HediffCompProperties_Invisibility</a></li>
+                <li><a href="#section-224">Verse.HediffCompProperties_KillAfterDays</a></li>
+                <li><a href="#section-225">Verse.HediffCompProperties_Lactating</a></li>
+                <li><a href="#section-226">Verse.HediffCompProperties_LetterOnDeath</a></li>
+                <li><a href="#section-227">Verse.HediffCompProperties_Link</a></li>
+                <li><a href="#section-228">Verse.HediffCompProperties_MessageAboveSeverity</a></li>
+                <li><a href="#section-229">Verse.HediffCompProperties_MessageAfterTicks</a></li>
+                <li><a href="#section-230">Verse.HediffCompProperties_MessageBase</a></li>
+                <li><a href="#section-231">Verse.HediffCompProperties_MessageOnRemoval</a></li>
+                <li><a href="#section-232">Verse.HediffCompProperties_MessageStageIncreased</a></li>
+                <li><a href="#section-233">Verse.HediffCompProperties_PainField</a></li>
+                <li><a href="#section-234">Verse.HediffCompProperties_Pollution</a></li>
+                <li><a href="#section-235">Verse.HediffCompProperties_Randomizer</a></li>
+                <li><a href="#section-236">Verse.HediffCompProperties_RandomizeSeverityPhases</a></li>
+                <li><a href="#section-237">Verse.HediffCompProperties_RandomizeSeverityPhases.Phase</a></li>
+                <li><a href="#section-238">Verse.HediffCompProperties_RandomizeStageWithInterval</a></li>
+                <li><a href="#section-239">Verse.HediffCompProperties_ReactOnDamage</a></li>
+                <li><a href="#section-240">Verse.HediffCompProperties_RecoveryThought</a></li>
+                <li><a href="#section-241">Verse.HediffCompProperties_RemoveIfApparelDropped</a></li>
+                <li><a href="#section-242">Verse.HediffCompProperties_RemoveIfOtherHediff</a></li>
+                <li><a href="#section-243">Verse.HediffCompProperties_ReplaceHediff</a></li>
+                <li><a href="#section-244">Verse.HediffCompProperties_ReplaceHediff.TriggeredHediff</a></li>
+                <li><a href="#section-245">Verse.HediffCompProperties_SelfHeal</a></li>
+                <li><a href="#section-246">Verse.HediffCompProperties_SeverityFromEntropy</a></li>
+                <li><a href="#section-247">Verse.HediffCompProperties_SeverityFromGas</a></li>
+                <li><a href="#section-248">Verse.HediffCompProperties_SeverityFromGasDensityDirect</a></li>
+                <li><a href="#section-249">Verse.HediffCompProperties_SeverityFromHemogen</a></li>
+                <li><a href="#section-250">Verse.HediffCompProperties_SeverityPerDay</a></li>
+                <li><a href="#section-251">Verse.HediffCompProperties_SeverityPerSecond</a></li>
+                <li><a href="#section-252">Verse.HediffCompProperties_SkillDecay</a></li>
+                <li><a href="#section-253">Verse.HediffCompProperties_SurgeryInspectable</a></li>
+                <li><a href="#section-254">Verse.HediffCompProperties_SurgeryInspectableMetalHorror</a></li>
+                <li><a href="#section-255">Verse.HediffCompProperties_TendDuration</a></li>
+                <li><a href="#section-256">Verse.HediffCompProperties_ThoughtSetter</a></li>
+                <li><a href="#section-257">Verse.HediffCompProperties_VacuumExposure</a></li>
+                <li><a href="#section-258">Verse.HediffCompProperties_VerbGiver</a></li>
+                <li><a href="#section-259">Verse.HediffDef</a></li>
+                <li><a href="#section-260">Verse.HediffDefFactor</a></li>
+                <li><a href="#section-261">Verse.HediffWithComps</a></li>
+                <li><a href="#section-262">Verse.ICreepJoinerDef</a></li>
+                <li><a href="#section-263">Verse.IdeoStoryPatternDef</a></li>
+                <li><a href="#section-264">Verse.ImplementOwnerTypeDef</a></li>
+                <li><a href="#section-265">Verse.IntMinComparer</a></li>
+                <li><a href="#section-266">Verse.InventoryStockGroupDef</a></li>
+                <li><a href="#section-267">Verse.ISuspendableThingHolder</a></li>
+                <li><a href="#section-268">Verse.IThingGlower</a></li>
+                <li><a href="#section-269">Verse.IThingHolder</a></li>
+                <li><a href="#section-270">Verse.IThingHolderEvents-1</a></li>
+                <li><a href="#section-271">Verse.IThingHolderTickable</a></li>
+                <li><a href="#section-272">Verse.IThingHolderWithDrawnPawn</a></li>
+                <li><a href="#section-273">Verse.JobDef</a></li>
+                <li><a href="#section-274">Verse.KeyBindingCategoryDef</a></li>
+                <li><a href="#section-275">Verse.KeyBindingDef</a></li>
+                <li><a href="#section-276">Verse.KeyBindingDefGenerator</a></li>
+                <li><a href="#section-277">Verse.LanguageWorker_Default</a></li>
+                <li><a href="#section-278">Verse.LavaFXComponent</a></li>
+                <li><a href="#section-279">Verse.LetterDef</a></li>
+                <li><a href="#section-280">Verse.ListerThings</a></li>
+                <li><a href="#section-281">Verse.ListerThingsUse</a></li>
+                <li><a href="#section-282">Verse.Listing_TreeDefs</a></li>
+                <li><a href="#section-283">Verse.Listing_TreeThingFilter</a></li>
+                <li><a href="#section-284">Verse.LogEntryDef</a></li>
+                <li><a href="#section-285">Verse.ManeuverDef</a></li>
+                <li><a href="#section-286">Verse.MapComponent</a></li>
+                <li><a href="#section-287">Verse.MapComponentUtility</a></li>
+                <li><a href="#section-288">Verse.MapFileCompressor</a></li>
+                <li><a href="#section-289">Verse.MapGeneratorDef</a></li>
+                <li><a href="#section-290">Verse.MechWeightClassDef</a></li>
+                <li><a href="#section-291">Verse.MechWorkModeDef</a></li>
+                <li><a href="#section-292">Verse.MentalBreakDef</a></li>
+                <li><a href="#section-293">Verse.MentalFitDef</a></li>
+                <li><a href="#section-294">Verse.MentalStateDef</a></li>
+                <li><a href="#section-295">Verse.MessageTypeDef</a></li>
+                <li><a href="#section-296">Verse.NumericStringComparer</a></li>
+                <li><a href="#section-297">Verse.OptionCategoryDef</a></li>
+                <li><a href="#section-298">Verse.OrbitalDebrisDef.DebrisGraphic</a></li>
+                <li><a href="#section-299">Verse.OrbitalDebrisDef</a></li>
+                <li><a href="#section-300">Verse.OrderedTakeGroupDef</a></li>
+                <li><a href="#section-301">Verse.PanCompletionCallback</a></li>
+                <li><a href="#section-302">Verse.PathGridDef</a></li>
+                <li><a href="#section-303">Verse.PawnCapacityDef</a></li>
+                <li><a href="#section-304">Verse.PawnEqualityComparer</a></li>
+                <li><a href="#section-305">Verse.PawnKindDef</a></li>
+                <li><a href="#section-306">Verse.PawnRenderNodeTagDef</a></li>
+                <li><a href="#section-307">Verse.PawnRenderTreeDef</a></li>
+                <li><a href="#section-308">Verse.PlaceDef</a></li>
+                <li><a href="#section-309">Verse.Projectile_SpawnsThing</a></li>
+                <li><a href="#section-310">Verse.RecipeDef</a></li>
+                <li><a href="#section-311">Verse.RegionProcessorClosestThingReachable</a></li>
+                <li><a href="#section-312">Verse.ResearchProjectDef</a></li>
+                <li><a href="#section-313">Verse.ResearchProjectTagDef</a></li>
+                <li><a href="#section-314">Verse.ReservationLayerDef</a></li>
+                <li><a href="#section-315">Verse.RoofDef</a></li>
+                <li><a href="#section-316">Verse.RoomRoleDef</a></li>
+                <li><a href="#section-317">Verse.RoomStatDef</a></li>
+                <li><a href="#section-318">Verse.Root</a></li>
+                <li><a href="#section-319">Verse.Root_Entry</a></li>
+                <li><a href="#section-320">Verse.Root_Play</a></li>
+                <li><a href="#section-321">Verse.RulePackDef</a></li>
+                <li><a href="#section-322">Verse.ScatterableDef</a></li>
+                <li><a href="#section-323">Verse.ScattererValidator_AvoidSpecialThings</a></li>
+                <li><a href="#section-324">Verse.ScattererValidator_AvoidThingsOfDef</a></li>
+                <li><a href="#section-325">Verse.ScattererValidator_TerrainDef</a></li>
+                <li><a href="#section-326">Verse.Scribe_Defs</a></li>
+                <li><a href="#section-327">Verse.SectionLayer_Things</a></li>
+                <li><a href="#section-328">Verse.SectionLayer_ThingsGeneral</a></li>
+                <li><a href="#section-329">Verse.ShaderTypeDef</a></li>
+                <li><a href="#section-330">Verse.SongDef</a></li>
+                <li><a href="#section-331">Verse.Sound.ImpactSoundTypeDef</a></li>
+                <li><a href="#section-332">Verse.Sound.SoundRoot</a></li>
+                <li><a href="#section-333">Verse.Sound.SubSoundDef</a></li>
+                <li><a href="#section-334">Verse.SoundDef</a></li>
+                <li><a href="#section-335">Verse.SoundDefHelper</a></li>
+                <li><a href="#section-336">Verse.SpecialThingFilterDef</a></li>
+                <li><a href="#section-337">Verse.SpecialThingFilterWorker</a></li>
+                <li><a href="#section-338">Verse.StuffAppearanceDef</a></li>
+                <li><a href="#section-339">Verse.StyleCategoryDef</a></li>
+                <li><a href="#section-340">Verse.SubcameraDef</a></li>
+                <li><a href="#section-341">Verse.SubEffecterDef</a></li>
+                <li><a href="#section-342">Verse.TemporaryThingDrawable</a></li>
+                <li><a href="#section-343">Verse.TemporaryThingDrawer</a></li>
+                <li><a href="#section-344">Verse.TerrainAffordanceDef</a></li>
+                <li><a href="#section-345">Verse.TerrainDef</a></li>
+                <li><a href="#section-346">Verse.TerrainDef.SpaceEdgeGraphicData</a></li>
+                <li><a href="#section-347">Verse.TerrainDef.TerrainCategoryType</a></li>
+                <li><a href="#section-348">Verse.TerrainDef.TerrainEdgeType</a></li>
+                <li><a href="#section-349">Verse.Thing</a></li>
+                <li><a href="#section-350">Verse.ThingCategory</a></li>
+                <li><a href="#section-351">Verse.ThingCategoryDef</a></li>
+                <li><a href="#section-352">Verse.ThingCategoryNodeDatabase</a></li>
+                <li><a href="#section-353">Verse.ThingComp</a></li>
+                <li><a href="#section-354">Verse.ThingComp_VacuumAware</a></li>
+                <li><a href="#section-355">Verse.ThingCompUtility</a></li>
+                <li><a href="#section-356">Verse.ThingCount</a></li>
+                <li><a href="#section-357">Verse.ThingCountClass</a></li>
+                <li><a href="#section-358">Verse.ThingCountUtility</a></li>
+                <li><a href="#section-359">Verse.ThingDef</a></li>
+                <li><a href="#section-360">Verse.ThingDefComparer</a></li>
+                <li><a href="#section-361">Verse.ThingDefCount</a></li>
+                <li><a href="#section-362">Verse.ThingDefCountClass</a></li>
+                <li><a href="#section-363">Verse.ThingDefCountRange</a></li>
+                <li><a href="#section-364">Verse.ThingDefCountRangeClass</a></li>
+                <li><a href="#section-365">Verse.ThingDefStyle</a></li>
+                <li><a href="#section-366">Verse.ThingFilter</a></li>
+                <li><a href="#section-367">Verse.ThingFilterUI</a></li>
+                <li><a href="#section-368">Verse.ThingFilterUI.UIState</a></li>
+                <li><a href="#section-369">Verse.ThingGrid</a></li>
+                <li><a href="#section-370">Verse.ThingIDMaker</a></li>
+                <li><a href="#section-371">Verse.ThingListChangedCallbacks</a></li>
+                <li><a href="#section-372">Verse.ThingListGroupHelper</a></li>
+                <li><a href="#section-373">Verse.ThingMaker</a></li>
+                <li><a href="#section-374">Verse.ThingOption</a></li>
+                <li><a href="#section-375">Verse.ThingOverlays</a></li>
+                <li><a href="#section-376">Verse.ThingOwner</a></li>
+                <li><a href="#section-377">Verse.ThingOwner-1</a></li>
+                <li><a href="#section-378">Verse.ThingOwnerUtility</a></li>
+                <li><a href="#section-379">Verse.ThingPlaceMode</a></li>
+                <li><a href="#section-380">Verse.ThingRequest</a></li>
+                <li><a href="#section-381">Verse.ThingRequestGroup</a></li>
+                <li><a href="#section-382">Verse.ThingRequestGroupUtility</a></li>
+                <li><a href="#section-383">Verse.ThingStyleCategoryWithPriority</a></li>
+                <li><a href="#section-384">Verse.ThingStyleChance</a></li>
+                <li><a href="#section-385">Verse.ThingStyleDef</a></li>
+                <li><a href="#section-386">Verse.ThingUtility</a></li>
+                <li><a href="#section-387">Verse.ThingWithComps</a></li>
+                <li><a href="#section-388">Verse.ThinkTreeDef</a></li>
+                <li><a href="#section-389">Verse.TipSetDef</a></li>
+                <li><a href="#section-390">Verse.ToolCapacityDef</a></li>
+                <li><a href="#section-391">Verse.TrainabilityDef</a></li>
+                <li><a href="#section-392">Verse.TreeNode_ThingCategory</a></li>
+                <li><a href="#section-393">Verse.UIRoot</a></li>
+                <li><a href="#section-394">Verse.UIRoot_Entry</a></li>
+                <li><a href="#section-395">Verse.UnfinishedThing</a></li>
+                <li><a href="#section-396">Verse.VacuumComponent</a></li>
+                <li><a href="#section-397">Verse.WeatherDef</a></li>
+                <li><a href="#section-398">Verse.Widgets.ColorComponents</a></li>
+                <li><a href="#section-399">Verse.WorkTypeDef</a></li>
+                <li><a href="#section-400">Verse.WorkTypeDefsUtility</a></li>
+                <li><a href="#section-401">Verse.WorldComponent_GravshipController</a></li>
+                <li><a href="#section-402">Verse.WorldGenStepDef</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="section-0">
+            <h3>Verse.AbilityCompProperties</h3>
+            <p><strong>Namespace:</strong> Verse.AbilityCompProperties</p>
+            <div class="section-content">
+<p>Content not available for Verse.AbilityCompProperties</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-1">
+            <h3>Verse.AI.DutyDef</h3>
+            <p><strong>Namespace:</strong> Verse.AI.DutyDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.DutyDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+            <h3>Verse.AI.Group.LordJob_DefendPoint</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.LordJob_DefendPoint</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-3">
+            <h3>Verse.AI.Group.LordToil_DefendPoint</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.LordToil_DefendPoint</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-4">
+            <h3>Verse.AI.Group.LordToil_DefendSelf</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.LordToil_DefendSelf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-5">
+            <h3>Verse.AI.Group.LordToilData_DefendPoint</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.LordToilData_DefendPoint</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-6">
+            <h3>Verse.AI.Group.TransitionAction_SetDefendLocalGroup</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.TransitionAction_SetDefendLocalGroup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-7">
+            <h3>Verse.AI.Group.TransitionAction_SetDefendTrader</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.TransitionAction_SetDefendTrader</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-8">
+            <h3>Verse.AI.Group.Trigger_AnyThingDamageTaken</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.Trigger_AnyThingDamageTaken</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-9">
+            <h3>Verse.AI.Group.Trigger_OnHumanlikeHarmAnyThing</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.Trigger_OnHumanlikeHarmAnyThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-10">
+            <h3>Verse.AI.Group.Trigger_ThingDamageTaken</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.Trigger_ThingDamageTaken</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-11">
+            <h3>Verse.AI.Group.Trigger_ThingsDamageTaken</h3>
+            <p><strong>Namespace:</strong> Verse.AI.Group</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.Group.Trigger_ThingsDamageTaken</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-12">
+            <h3>Verse.AI.MentalState_SlaughterThing</h3>
+            <p><strong>Namespace:</strong> Verse.AI.MentalState_SlaughterThing</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.MentalState_SlaughterThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-13">
+            <h3>Verse.AI.ThingCountTracker</h3>
+            <p><strong>Namespace:</strong> Verse.AI.ThingCountTracker</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.ThingCountTracker</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-14">
+            <h3>Verse.AI.ThingCountTracker.PawnCount</h3>
+            <p><strong>Namespace:</strong> Verse.AI.ThingCountTracker</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.ThingCountTracker.PawnCount</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-15">
+            <h3>Verse.AI.ThinkNode_ConditionalNoConnectedThings</h3>
+            <p><strong>Namespace:</strong> Verse.AI.ThinkNode_ConditionalNoConnectedThings</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.ThinkNode_ConditionalNoConnectedThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-16">
+            <h3>Verse.AI.ToilCompleteMode</h3>
+            <p><strong>Namespace:</strong> Verse.AI.ToilCompleteMode</p>
+            <div class="section-content">
+<p>Content not available for Verse.AI.ToilCompleteMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-17">
+            <h3>Verse.AnimationDef</h3>
+            <p><strong>Namespace:</strong> Verse.AnimationDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.AnimationDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-18">
+            <h3>Verse.ApparelLayerDef</h3>
+            <p><strong>Namespace:</strong> Verse.ApparelLayerDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ApparelLayerDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-19">
+            <h3>Verse.AttachableThing</h3>
+            <p><strong>Namespace:</strong> Verse.AttachableThing</p>
+            <div class="section-content">
+<p>Content not available for Verse.AttachableThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-20">
+            <h3>Verse.BackCompatibility</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibility</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-21">
+            <h3>Verse.BackCompatibilityConverter</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-22">
+            <h3>Verse.BackCompatibilityConverter_0_17_AndLower</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_0_17_AndLower</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_0_17_AndLower</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-23">
+            <h3>Verse.BackCompatibilityConverter_0_18</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_0_18</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_0_18</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-24">
+            <h3>Verse.BackCompatibilityConverter_0_19</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_0_19</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_0_19</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-25">
+            <h3>Verse.BackCompatibilityConverter_1_0</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_1_0</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_1_0</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-26">
+            <h3>Verse.BackCompatibilityConverter_1_2</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_1_2</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_1_2</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-27">
+            <h3>Verse.BackCompatibilityConverter_1_3</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_1_3</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_1_3</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-28">
+            <h3>Verse.BackCompatibilityConverter_1_4</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_1_4</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_1_4</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-29">
+            <h3>Verse.BackCompatibilityConverter_1_5</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_1_5</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_1_5</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-30">
+            <h3>Verse.BackCompatibilityConverter_Universal</h3>
+            <p><strong>Namespace:</strong> Verse.BackCompatibilityConverter_Universal</p>
+            <div class="section-content">
+<p>Content not available for Verse.BackCompatibilityConverter_Universal</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-31">
+            <h3>Verse.BodyDef</h3>
+            <p><strong>Namespace:</strong> Verse.BodyDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.BodyDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-32">
+            <h3>Verse.BodyPartDef</h3>
+            <p><strong>Namespace:</strong> Verse.BodyPartDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.BodyPartDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-33">
+            <h3>Verse.BodyPartGroupDef</h3>
+            <p><strong>Namespace:</strong> Verse.BodyPartGroupDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.BodyPartGroupDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-34">
+            <h3>Verse.BodyPartTagDef</h3>
+            <p><strong>Namespace:</strong> Verse.BodyPartTagDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.BodyPartTagDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-35">
+            <h3>Verse.BuildableDef</h3>
+            <p><strong>Namespace:</strong> Verse.BuildableDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.BuildableDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-36">
+            <h3>Verse.ClamorDef</h3>
+            <p><strong>Namespace:</strong> Verse.ClamorDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ClamorDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-37">
+            <h3>Verse.CompAffectsSky</h3>
+            <p><strong>Namespace:</strong> Verse.CompAffectsSky</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompAffectsSky</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-38">
+            <h3>Verse.CompAIUsablePack</h3>
+            <p><strong>Namespace:</strong> Verse.CompAIUsablePack</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompAIUsablePack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-39">
+            <h3>Verse.CompAttachBase</h3>
+            <p><strong>Namespace:</strong> Verse.CompAttachBase</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompAttachBase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-40">
+            <h3>Verse.CompColorable</h3>
+            <p><strong>Namespace:</strong> Verse.CompColorable</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompColorable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-41">
+            <h3>Verse.CompColorable_Animated</h3>
+            <p><strong>Namespace:</strong> Verse.CompColorable_Animated</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompColorable_Animated</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-42">
+            <h3>Verse.CompColorableUtility</h3>
+            <p><strong>Namespace:</strong> Verse.CompColorableUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompColorableUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-43">
+            <h3>Verse.CompEquippable</h3>
+            <p><strong>Namespace:</strong> Verse.CompEquippable</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompEquippable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-44">
+            <h3>Verse.CompFirefoamPack</h3>
+            <p><strong>Namespace:</strong> Verse.CompFirefoamPack</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompFirefoamPack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-45">
+            <h3>Verse.CompGlower</h3>
+            <p><strong>Namespace:</strong> Verse.CompGlower</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompGlower</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-46">
+            <h3>Verse.CompHeatPusher</h3>
+            <p><strong>Namespace:</strong> Verse.CompHeatPusher</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompHeatPusher</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-47">
+            <h3>Verse.CompHeatPusherPowered</h3>
+            <p><strong>Namespace:</strong> Verse.CompHeatPusherPowered</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompHeatPusherPowered</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-48">
+            <h3>Verse.CompLifespan</h3>
+            <p><strong>Namespace:</strong> Verse.CompLifespan</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompLifespan</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-49">
+            <h3>Verse.CompProperties</h3>
+            <p><strong>Namespace:</strong> Verse.CompProperties</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompProperties</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-50">
+            <h3>Verse.CompProperties_AffectsSky</h3>
+            <p><strong>Namespace:</strong> Verse.CompProperties_AffectsSky</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompProperties_AffectsSky</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-51">
+            <h3>Verse.CompProperties_AIUSablePack</h3>
+            <p><strong>Namespace:</strong> Verse.CompProperties_AIUSablePack</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompProperties_AIUSablePack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-52">
+            <h3>Verse.CompProperties_ColorableAnimated</h3>
+            <p><strong>Namespace:</strong> Verse.CompProperties_ColorableAnimated</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompProperties_ColorableAnimated</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-53">
+            <h3>Verse.CompProperties_HeatPusher</h3>
+            <p><strong>Namespace:</strong> Verse.CompProperties_HeatPusher</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompProperties_HeatPusher</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-54">
+            <h3>Verse.CompProperties_Lifespan</h3>
+            <p><strong>Namespace:</strong> Verse.CompProperties_Lifespan</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompProperties_Lifespan</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-55">
+            <h3>Verse.CompProperties_TemperatureDamaged</h3>
+            <p><strong>Namespace:</strong> Verse.CompProperties_TemperatureDamaged</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompProperties_TemperatureDamaged</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-56">
+            <h3>Verse.CompProperties_WindSource</h3>
+            <p><strong>Namespace:</strong> Verse.CompProperties_WindSource</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompProperties_WindSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-57">
+            <h3>Verse.CompressibilityDecider</h3>
+            <p><strong>Namespace:</strong> Verse.CompressibilityDecider</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompressibilityDecider</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-58">
+            <h3>Verse.CompressibilityDeciderUtility</h3>
+            <p><strong>Namespace:</strong> Verse.CompressibilityDeciderUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompressibilityDeciderUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-59">
+            <h3>Verse.CompressUtility</h3>
+            <p><strong>Namespace:</strong> Verse.CompressUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompressUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-60">
+            <h3>Verse.CompTemperatureDamaged</h3>
+            <p><strong>Namespace:</strong> Verse.CompTemperatureDamaged</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompTemperatureDamaged</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-61">
+            <h3>Verse.CompToxPack</h3>
+            <p><strong>Namespace:</strong> Verse.CompToxPack</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompToxPack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-62">
+            <h3>Verse.CompWindSource</h3>
+            <p><strong>Namespace:</strong> Verse.CompWindSource</p>
+            <div class="section-content">
+<p>Content not available for Verse.CompWindSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-63">
+            <h3>Verse.CreepJoinerAggressiveDef</h3>
+            <p><strong>Namespace:</strong> Verse.CreepJoinerAggressiveDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.CreepJoinerAggressiveDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-64">
+            <h3>Verse.CreepJoinerBaseDef</h3>
+            <p><strong>Namespace:</strong> Verse.CreepJoinerBaseDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.CreepJoinerBaseDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-65">
+            <h3>Verse.CreepJoinerBenefitDef</h3>
+            <p><strong>Namespace:</strong> Verse.CreepJoinerBenefitDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.CreepJoinerBenefitDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-66">
+            <h3>Verse.CreepJoinerBenefitDef.SkillValue</h3>
+            <p><strong>Namespace:</strong> Verse.CreepJoinerBenefitDef.SkillValue</p>
+            <div class="section-content">
+<p>Content not available for Verse.CreepJoinerBenefitDef.SkillValue</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-67">
+            <h3>Verse.CreepJoinerDownsideDef</h3>
+            <p><strong>Namespace:</strong> Verse.CreepJoinerDownsideDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.CreepJoinerDownsideDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-68">
+            <h3>Verse.CreepJoinerFormKindDef</h3>
+            <p><strong>Namespace:</strong> Verse.CreepJoinerFormKindDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.CreepJoinerFormKindDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-69">
+            <h3>Verse.CreepJoinerRejectionDef</h3>
+            <p><strong>Namespace:</strong> Verse.CreepJoinerRejectionDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.CreepJoinerRejectionDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-70">
+            <h3>Verse.CustomMapComponent</h3>
+            <p><strong>Namespace:</strong> Verse.CustomMapComponent</p>
+            <div class="section-content">
+<p>Content not available for Verse.CustomMapComponent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-71">
+            <h3>Verse.DamageArmorCategoryDef</h3>
+            <p><strong>Namespace:</strong> Verse.DamageArmorCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.DamageArmorCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-72">
+            <h3>Verse.DamageDef</h3>
+            <p><strong>Namespace:</strong> Verse.DamageDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.DamageDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-73">
+            <h3>Verse.DamageDefAdditionalHediff</h3>
+            <p><strong>Namespace:</strong> Verse.DamageDefAdditionalHediff</p>
+            <div class="section-content">
+<p>Content not available for Verse.DamageDefAdditionalHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-74">
+            <h3>Verse.DebugThingPlaceHelper</h3>
+            <p><strong>Namespace:</strong> Verse.DebugThingPlaceHelper</p>
+            <div class="section-content">
+<p>Content not available for Verse.DebugThingPlaceHelper</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-75">
+            <h3>Verse.Def</h3>
+            <p><strong>Namespace:</strong> Verse.Def</p>
+            <div class="section-content">
+<p>Content not available for Verse.Def</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-76">
+            <h3>Verse.DefaultEmptyListAttribute</h3>
+            <p><strong>Namespace:</strong> Verse.DefaultEmptyListAttribute</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefaultEmptyListAttribute</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-77">
+            <h3>Verse.DefaultFloatRangeAttribute</h3>
+            <p><strong>Namespace:</strong> Verse.DefaultFloatRangeAttribute</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefaultFloatRangeAttribute</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-78">
+            <h3>Verse.DefaultValueAttribute</h3>
+            <p><strong>Namespace:</strong> Verse.DefaultValueAttribute</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefaultValueAttribute</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-79">
+            <h3>Verse.DefaultWindowDrawing</h3>
+            <p><strong>Namespace:</strong> Verse.DefaultWindowDrawing</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefaultWindowDrawing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-80">
+            <h3>Verse.DefDatabase-1</h3>
+            <p><strong>Namespace:</strong> Verse.DefDatabase-1</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefDatabase-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-81">
+            <h3>Verse.DefHyperlink</h3>
+            <p><strong>Namespace:</strong> Verse.DefHyperlink</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefHyperlink</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-82">
+            <h3>Verse.DefInjectionPackage.DefInjection</h3>
+            <p><strong>Namespace:</strong> Verse.DefInjectionPackage.DefInjection</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefInjectionPackage.DefInjection</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-83">
+            <h3>Verse.DefInjectionPackage</h3>
+            <p><strong>Namespace:</strong> Verse.DefInjectionPackage</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefInjectionPackage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-84">
+            <h3>Verse.DefInjectionUtility</h3>
+            <p><strong>Namespace:</strong> Verse.DefInjectionUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefInjectionUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-85">
+            <h3>Verse.DefInjectionUtility.PossibleDefInjectionTraverser</h3>
+            <p><strong>Namespace:</strong> Verse.DefInjectionUtility.PossibleDefInjectionTraverser</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefInjectionUtility.PossibleDefInjectionTraverser</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-86">
+            <h3>Verse.DefMap-2</h3>
+            <p><strong>Namespace:</strong> Verse.DefMap-2</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefMap-2</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-87">
+            <h3>Verse.DefModExtension</h3>
+            <p><strong>Namespace:</strong> Verse.DefModExtension</p>
+            <div class="section-content">
+<p>Content not available for Verse.DefModExtension</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-88">
+            <h3>Verse.DesignationCategoryDef.BuildablePreceptBuilding</h3>
+            <p><strong>Namespace:</strong> Verse.DesignationCategoryDef.BuildablePreceptBuilding</p>
+            <div class="section-content">
+<p>Content not available for Verse.DesignationCategoryDef.BuildablePreceptBuilding</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-89">
+            <h3>Verse.DesignationCategoryDef</h3>
+            <p><strong>Namespace:</strong> Verse.DesignationCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.DesignationCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-90">
+            <h3>Verse.DesignationDef</h3>
+            <p><strong>Namespace:</strong> Verse.DesignationDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.DesignationDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-91">
+            <h3>Verse.DesignatorDropdownGroupDef</h3>
+            <p><strong>Namespace:</strong> Verse.DesignatorDropdownGroupDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.DesignatorDropdownGroupDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-92">
+            <h3>Verse.DesignatorDropdownGroupDef.IconSource</h3>
+            <p><strong>Namespace:</strong> Verse.DesignatorDropdownGroupDef.IconSource</p>
+            <div class="section-content">
+<p>Content not available for Verse.DesignatorDropdownGroupDef.IconSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-93">
+            <h3>Verse.DirectXmlToObjectNew.ParseValueAndReturnDefDelegate</h3>
+            <p><strong>Namespace:</strong> Verse.DirectXmlToObjectNew.ParseValueAndReturnDefDelegate</p>
+            <div class="section-content">
+<p>Content not available for Verse.DirectXmlToObjectNew.ParseValueAndReturnDefDelegate</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-94">
+            <h3>Verse.DrawStyleCategoryDef</h3>
+            <p><strong>Namespace:</strong> Verse.DrawStyleCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.DrawStyleCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-95">
+            <h3>Verse.DrawStyleDef</h3>
+            <p><strong>Namespace:</strong> Verse.DrawStyleDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.DrawStyleDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-96">
+            <h3>Verse.EffecterDef</h3>
+            <p><strong>Namespace:</strong> Verse.EffecterDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.EffecterDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-97">
+            <h3>Verse.EffecterDef.OffsetMode</h3>
+            <p><strong>Namespace:</strong> Verse.EffecterDef.OffsetMode</p>
+            <div class="section-content">
+<p>Content not available for Verse.EffecterDef.OffsetMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-98">
+            <h3>Verse.FastEntityTypeComparer</h3>
+            <p><strong>Namespace:</strong> Verse.FastEntityTypeComparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.FastEntityTypeComparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-99">
+            <h3>Verse.FastPawnCapacityDefComparer</h3>
+            <p><strong>Namespace:</strong> Verse.FastPawnCapacityDefComparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.FastPawnCapacityDefComparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-100">
+            <h3>Verse.FastVector2Comparer</h3>
+            <p><strong>Namespace:</strong> Verse.FastVector2Comparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.FastVector2Comparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-101">
+            <h3>Verse.FishShadowComponent</h3>
+            <p><strong>Namespace:</strong> Verse.FishShadowComponent</p>
+            <div class="section-content">
+<p>Content not available for Verse.FishShadowComponent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-102">
+            <h3>Verse.FleckDef</h3>
+            <p><strong>Namespace:</strong> Verse.FleckDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.FleckDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-103">
+            <h3>Verse.FloatMinComparer</h3>
+            <p><strong>Namespace:</strong> Verse.FloatMinComparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.FloatMinComparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-104">
+            <h3>Verse.GameComponent</h3>
+            <p><strong>Namespace:</strong> Verse.GameComponent</p>
+            <div class="section-content">
+<p>Content not available for Verse.GameComponent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-105">
+            <h3>Verse.GameComponent_DebugTools</h3>
+            <p><strong>Namespace:</strong> Verse.GameComponent_DebugTools</p>
+            <div class="section-content">
+<p>Content not available for Verse.GameComponent_DebugTools</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-106">
+            <h3>Verse.GameComponent_OnetimeNotification</h3>
+            <p><strong>Namespace:</strong> Verse.GameComponent_OnetimeNotification</p>
+            <div class="section-content">
+<p>Content not available for Verse.GameComponent_OnetimeNotification</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-107">
+            <h3>Verse.GameComponentUtility</h3>
+            <p><strong>Namespace:</strong> Verse.GameComponentUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.GameComponentUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-108">
+            <h3>Verse.GameConditionDef</h3>
+            <p><strong>Namespace:</strong> Verse.GameConditionDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.GameConditionDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-109">
+            <h3>Verse.GameSetupStepDef</h3>
+            <p><strong>Namespace:</strong> Verse.GameSetupStepDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.GameSetupStepDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-110">
+            <h3>Verse.GenDefDatabase</h3>
+            <p><strong>Namespace:</strong> Verse.GenDefDatabase</p>
+            <div class="section-content">
+<p>Content not available for Verse.GenDefDatabase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-111">
+            <h3>Verse.GeneCategoryDef</h3>
+            <p><strong>Namespace:</strong> Verse.GeneCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.GeneCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-112">
+            <h3>Verse.GeneDef</h3>
+            <p><strong>Namespace:</strong> Verse.GeneDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.GeneDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-113">
+            <h3>Verse.GenStep_ScatterGroup.ThingWeight</h3>
+            <p><strong>Namespace:</strong> Verse.GenStep_ScatterGroup.ThingWeight</p>
+            <div class="section-content">
+<p>Content not available for Verse.GenStep_ScatterGroup.ThingWeight</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-114">
+            <h3>Verse.GenStep_ScatterThings</h3>
+            <p><strong>Namespace:</strong> Verse.GenStep_ScatterThings</p>
+            <div class="section-content">
+<p>Content not available for Verse.GenStep_ScatterThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-115">
+            <h3>Verse.GenStepDef</h3>
+            <p><strong>Namespace:</strong> Verse.GenStepDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.GenStepDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-116">
+            <h3>Verse.Glow.ComputeGlowGridsJob</h3>
+            <p><strong>Namespace:</strong> Verse.Glow.ComputeGlowGridsJob</p>
+            <div class="section-content">
+<p>Content not available for Verse.Glow.ComputeGlowGridsJob</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-117">
+            <h3>Verse.Glow.GlowCellComparer</h3>
+            <p><strong>Namespace:</strong> Verse.Glow.GlowCellComparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.Glow.GlowCellComparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-118">
+            <h3>Verse.GraphicStateDef</h3>
+            <p><strong>Namespace:</strong> Verse.GraphicStateDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.GraphicStateDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-119">
+            <h3>Verse.HeadTypeDef</h3>
+            <p><strong>Namespace:</strong> Verse.HeadTypeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.HeadTypeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-120">
+            <h3>Verse.HediffComp</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-121">
+            <h3>Verse.HediffComp_AttachPoints</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_AttachPoints</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_AttachPoints</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-122">
+            <h3>Verse.HediffComp_CauseMentalState</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_CauseMentalState</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_CauseMentalState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-123">
+            <h3>Verse.HediffComp_ChanceToRemove</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_ChanceToRemove</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_ChanceToRemove</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-124">
+            <h3>Verse.HediffComp_ChangeImplantLevel</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_ChangeImplantLevel</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_ChangeImplantLevel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-125">
+            <h3>Verse.HediffComp_ChangeNeed</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_ChangeNeed</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_ChangeNeed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-126">
+            <h3>Verse.HediffComp_Chargeable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Chargeable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Chargeable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-127">
+            <h3>Verse.HediffComp_DamageBrain</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_DamageBrain</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_DamageBrain</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-128">
+            <h3>Verse.HediffComp_Disappears</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Disappears</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Disappears</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-129">
+            <h3>Verse.HediffComp_DisappearsAndKills</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_DisappearsAndKills</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_DisappearsAndKills</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-130">
+            <h3>Verse.HediffComp_DisappearsAndKills_Shambler</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_DisappearsAndKills_Shambler</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_DisappearsAndKills_Shambler</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-131">
+            <h3>Verse.HediffComp_DisappearsDisableable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_DisappearsDisableable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_DisappearsDisableable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-132">
+            <h3>Verse.HediffComp_DisappearsOnDeath</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_DisappearsOnDeath</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_DisappearsOnDeath</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-133">
+            <h3>Verse.HediffComp_DisappearsPausable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_DisappearsPausable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_DisappearsPausable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-134">
+            <h3>Verse.HediffComp_DisappearsPausable_LethalInjuries</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_DisappearsPausable_LethalInjuries</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_DisappearsPausable_LethalInjuries</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-135">
+            <h3>Verse.HediffComp_Discoverable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Discoverable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Discoverable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-136">
+            <h3>Verse.HediffComp_Disorientation</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Disorientation</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Disorientation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-137">
+            <h3>Verse.HediffComp_DrugEffectFactor</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_DrugEffectFactor</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_DrugEffectFactor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-138">
+            <h3>Verse.HediffComp_Effecter</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Effecter</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Effecter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-139">
+            <h3>Verse.HediffComp_EntropyLink</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_EntropyLink</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_EntropyLink</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-140">
+            <h3>Verse.HediffComp_FleshbeastEmerge</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_FleshbeastEmerge</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_FleshbeastEmerge</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-141">
+            <h3>Verse.HediffComp_GetsPermanent</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GetsPermanent</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GetsPermanent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-142">
+            <h3>Verse.HediffComp_GiveAbility</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GiveAbility</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GiveAbility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-143">
+            <h3>Verse.HediffComp_GiveHediff</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GiveHediff</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GiveHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-144">
+            <h3>Verse.HediffComp_GiveHediffLungRot</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GiveHediffLungRot</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GiveHediffLungRot</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-145">
+            <h3>Verse.HediffComp_GiveHediffsInRange</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GiveHediffsInRange</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GiveHediffsInRange</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-146">
+            <h3>Verse.HediffComp_GiveHemogen</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GiveHemogen</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GiveHemogen</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-147">
+            <h3>Verse.HediffComp_GiveLovinMTBFactor</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GiveLovinMTBFactor</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GiveLovinMTBFactor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-148">
+            <h3>Verse.HediffComp_GiveNeurocharge</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GiveNeurocharge</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GiveNeurocharge</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-149">
+            <h3>Verse.HediffComp_GiveRandomSituationalThought</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GiveRandomSituationalThought</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GiveRandomSituationalThought</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-150">
+            <h3>Verse.HediffComp_GrowthMode</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_GrowthMode</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_GrowthMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-151">
+            <h3>Verse.HediffComp_HealPermanentWounds</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_HealPermanentWounds</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_HealPermanentWounds</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-152">
+            <h3>Verse.HediffComp_Immunizable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Immunizable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Immunizable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-153">
+            <h3>Verse.HediffComp_ImmunizableToxic</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_ImmunizableToxic</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_ImmunizableToxic</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-154">
+            <h3>Verse.HediffComp_Infecter</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Infecter</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Infecter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-155">
+            <h3>Verse.HediffComp_Invisibility</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Invisibility</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Invisibility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-156">
+            <h3>Verse.HediffComp_KillAfterDays</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_KillAfterDays</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_KillAfterDays</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-157">
+            <h3>Verse.HediffComp_Lactating</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Lactating</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Lactating</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-158">
+            <h3>Verse.HediffComp_LetterOnDeath</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_LetterOnDeath</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_LetterOnDeath</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-159">
+            <h3>Verse.HediffComp_Link</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Link</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Link</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-160">
+            <h3>Verse.HediffComp_MessageAboveSeverity</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_MessageAboveSeverity</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_MessageAboveSeverity</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-161">
+            <h3>Verse.HediffComp_MessageAfterTicks</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_MessageAfterTicks</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_MessageAfterTicks</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-162">
+            <h3>Verse.HediffComp_MessageBase</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_MessageBase</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_MessageBase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-163">
+            <h3>Verse.HediffComp_MessageOnRemoval</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_MessageOnRemoval</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_MessageOnRemoval</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-164">
+            <h3>Verse.HediffComp_MessageStageIncreased</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_MessageStageIncreased</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_MessageStageIncreased</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-165">
+            <h3>Verse.HediffComp_PainField</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_PainField</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_PainField</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-166">
+            <h3>Verse.HediffComp_Pollution</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Pollution</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Pollution</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-167">
+            <h3>Verse.HediffComp_PregnantHuman</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_PregnantHuman</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_PregnantHuman</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-168">
+            <h3>Verse.HediffComp_Randomizer</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_Randomizer</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_Randomizer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-169">
+            <h3>Verse.HediffComp_RandomizeSeverityPhases</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_RandomizeSeverityPhases</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_RandomizeSeverityPhases</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-170">
+            <h3>Verse.HediffComp_RandomizeStageWithInterval</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_RandomizeStageWithInterval</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_RandomizeStageWithInterval</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-171">
+            <h3>Verse.HediffComp_ReactOnDamage</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_ReactOnDamage</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_ReactOnDamage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-172">
+            <h3>Verse.HediffComp_RecoveryThought</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_RecoveryThought</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_RecoveryThought</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-173">
+            <h3>Verse.HediffComp_RemoveIfApparelDropped</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_RemoveIfApparelDropped</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_RemoveIfApparelDropped</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-174">
+            <h3>Verse.HediffComp_RemoveIfOtherHediff</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_RemoveIfOtherHediff</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_RemoveIfOtherHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-175">
+            <h3>Verse.HediffComp_ReplaceHediff</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_ReplaceHediff</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_ReplaceHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-176">
+            <h3>Verse.HediffComp_SelfHeal</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SelfHeal</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SelfHeal</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-177">
+            <h3>Verse.HediffComp_SeverityFromEntropy</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SeverityFromEntropy</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SeverityFromEntropy</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-178">
+            <h3>Verse.HediffComp_SeverityFromGas</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SeverityFromGas</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SeverityFromGas</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-179">
+            <h3>Verse.HediffComp_SeverityFromGasDensityDirect</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SeverityFromGasDensityDirect</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SeverityFromGasDensityDirect</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-180">
+            <h3>Verse.HediffComp_SeverityFromHemogen</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SeverityFromHemogen</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SeverityFromHemogen</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-181">
+            <h3>Verse.HediffComp_SeverityModifierBase</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SeverityModifierBase</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SeverityModifierBase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-182">
+            <h3>Verse.HediffComp_SeverityPerDay</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SeverityPerDay</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SeverityPerDay</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-183">
+            <h3>Verse.HediffComp_SeverityPerSecond</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SeverityPerSecond</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SeverityPerSecond</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-184">
+            <h3>Verse.HediffComp_SkillDecay</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SkillDecay</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SkillDecay</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-185">
+            <h3>Verse.HediffComp_SurgeryInspectable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SurgeryInspectable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SurgeryInspectable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-186">
+            <h3>Verse.HediffComp_SurgeryInspectableMetalhorror</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_SurgeryInspectableMetalhorror</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_SurgeryInspectableMetalhorror</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-187">
+            <h3>Verse.HediffComp_TendDuration</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_TendDuration</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_TendDuration</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-188">
+            <h3>Verse.HediffComp_ThoughtSetter</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_ThoughtSetter</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_ThoughtSetter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-189">
+            <h3>Verse.HediffComp_VacuumExposure</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_VacuumExposure</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_VacuumExposure</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-190">
+            <h3>Verse.HediffComp_VatGrowing</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_VatGrowing</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_VatGrowing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-191">
+            <h3>Verse.HediffComp_VerbGiver</h3>
+            <p><strong>Namespace:</strong> Verse.HediffComp_VerbGiver</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffComp_VerbGiver</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-192">
+            <h3>Verse.HediffCompProperties</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-193">
+            <h3>Verse.HediffCompProperties_AttachPoints</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_AttachPoints</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_AttachPoints</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-194">
+            <h3>Verse.HediffCompProperties_CauseMentalState</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_CauseMentalState</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_CauseMentalState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-195">
+            <h3>Verse.HediffCompProperties_ChanceToRemove</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_ChanceToRemove</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_ChanceToRemove</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-196">
+            <h3>Verse.HediffCompProperties_ChangeImplantLevel</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_ChangeImplantLevel</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_ChangeImplantLevel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-197">
+            <h3>Verse.HediffCompProperties_ChangeNeed</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_ChangeNeed</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_ChangeNeed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-198">
+            <h3>Verse.HediffCompProperties_Chargeable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Chargeable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Chargeable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-199">
+            <h3>Verse.HediffCompProperties_DamageBrain</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_DamageBrain</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_DamageBrain</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-200">
+            <h3>Verse.HediffCompProperties_Disappears</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Disappears</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Disappears</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-201">
+            <h3>Verse.HediffCompProperties_DisappearsAndKills</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_DisappearsAndKills</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_DisappearsAndKills</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-202">
+            <h3>Verse.HediffCompProperties_DisappearsDisableable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_DisappearsDisableable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_DisappearsDisableable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-203">
+            <h3>Verse.HediffCompProperties_DisappearsOnDeath</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_DisappearsOnDeath</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_DisappearsOnDeath</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-204">
+            <h3>Verse.HediffCompProperties_Discoverable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Discoverable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Discoverable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-205">
+            <h3>Verse.HediffCompProperties_Disorientation</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Disorientation</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Disorientation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-206">
+            <h3>Verse.HediffCompProperties_DrugEffectFactor</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_DrugEffectFactor</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_DrugEffectFactor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-207">
+            <h3>Verse.HediffCompProperties_Effecter</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Effecter</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Effecter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-208">
+            <h3>Verse.HediffCompProperties_EntropyLink</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_EntropyLink</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_EntropyLink</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-209">
+            <h3>Verse.HediffCompProperties_FleshbeastEmerge</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_FleshbeastEmerge</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_FleshbeastEmerge</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-210">
+            <h3>Verse.HediffCompProperties_GetsPermanent</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GetsPermanent</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GetsPermanent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-211">
+            <h3>Verse.HediffCompProperties_GiveAbility</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GiveAbility</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GiveAbility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-212">
+            <h3>Verse.HediffCompProperties_GiveHediff</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GiveHediff</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GiveHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-213">
+            <h3>Verse.HediffCompProperties_GiveHediffLungRot</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GiveHediffLungRot</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GiveHediffLungRot</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-214">
+            <h3>Verse.HediffCompProperties_GiveHediffsInRange</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GiveHediffsInRange</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GiveHediffsInRange</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-215">
+            <h3>Verse.HediffCompProperties_GiveHemogen</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GiveHemogen</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GiveHemogen</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-216">
+            <h3>Verse.HediffCompProperties_GiveLovinMTBFactor</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GiveLovinMTBFactor</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GiveLovinMTBFactor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-217">
+            <h3>Verse.HediffCompProperties_GiveNeurocharge</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GiveNeurocharge</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GiveNeurocharge</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-218">
+            <h3>Verse.HediffCompProperties_GiveRandomSituationalThought</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GiveRandomSituationalThought</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GiveRandomSituationalThought</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-219">
+            <h3>Verse.HediffCompProperties_GrowthMode</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_GrowthMode</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_GrowthMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-220">
+            <h3>Verse.HediffCompProperties_HealPermanentWounds</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_HealPermanentWounds</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_HealPermanentWounds</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-221">
+            <h3>Verse.HediffCompProperties_Immunizable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Immunizable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Immunizable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-222">
+            <h3>Verse.HediffCompProperties_Infecter</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Infecter</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Infecter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-223">
+            <h3>Verse.HediffCompProperties_Invisibility</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Invisibility</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Invisibility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-224">
+            <h3>Verse.HediffCompProperties_KillAfterDays</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_KillAfterDays</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_KillAfterDays</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-225">
+            <h3>Verse.HediffCompProperties_Lactating</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Lactating</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Lactating</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-226">
+            <h3>Verse.HediffCompProperties_LetterOnDeath</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_LetterOnDeath</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_LetterOnDeath</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-227">
+            <h3>Verse.HediffCompProperties_Link</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Link</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Link</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-228">
+            <h3>Verse.HediffCompProperties_MessageAboveSeverity</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_MessageAboveSeverity</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_MessageAboveSeverity</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-229">
+            <h3>Verse.HediffCompProperties_MessageAfterTicks</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_MessageAfterTicks</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_MessageAfterTicks</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-230">
+            <h3>Verse.HediffCompProperties_MessageBase</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_MessageBase</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_MessageBase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-231">
+            <h3>Verse.HediffCompProperties_MessageOnRemoval</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_MessageOnRemoval</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_MessageOnRemoval</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-232">
+            <h3>Verse.HediffCompProperties_MessageStageIncreased</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_MessageStageIncreased</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_MessageStageIncreased</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-233">
+            <h3>Verse.HediffCompProperties_PainField</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_PainField</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_PainField</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-234">
+            <h3>Verse.HediffCompProperties_Pollution</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Pollution</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Pollution</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-235">
+            <h3>Verse.HediffCompProperties_Randomizer</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_Randomizer</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_Randomizer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-236">
+            <h3>Verse.HediffCompProperties_RandomizeSeverityPhases</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_RandomizeSeverityPhases</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_RandomizeSeverityPhases</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-237">
+            <h3>Verse.HediffCompProperties_RandomizeSeverityPhases.Phase</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_RandomizeSeverityPhases.Phase</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_RandomizeSeverityPhases.Phase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-238">
+            <h3>Verse.HediffCompProperties_RandomizeStageWithInterval</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_RandomizeStageWithInterval</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_RandomizeStageWithInterval</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-239">
+            <h3>Verse.HediffCompProperties_ReactOnDamage</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_ReactOnDamage</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_ReactOnDamage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-240">
+            <h3>Verse.HediffCompProperties_RecoveryThought</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_RecoveryThought</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_RecoveryThought</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-241">
+            <h3>Verse.HediffCompProperties_RemoveIfApparelDropped</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_RemoveIfApparelDropped</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_RemoveIfApparelDropped</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-242">
+            <h3>Verse.HediffCompProperties_RemoveIfOtherHediff</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_RemoveIfOtherHediff</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_RemoveIfOtherHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-243">
+            <h3>Verse.HediffCompProperties_ReplaceHediff</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_ReplaceHediff</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_ReplaceHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-244">
+            <h3>Verse.HediffCompProperties_ReplaceHediff.TriggeredHediff</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_ReplaceHediff.TriggeredHediff</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_ReplaceHediff.TriggeredHediff</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-245">
+            <h3>Verse.HediffCompProperties_SelfHeal</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SelfHeal</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SelfHeal</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-246">
+            <h3>Verse.HediffCompProperties_SeverityFromEntropy</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SeverityFromEntropy</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SeverityFromEntropy</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-247">
+            <h3>Verse.HediffCompProperties_SeverityFromGas</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SeverityFromGas</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SeverityFromGas</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-248">
+            <h3>Verse.HediffCompProperties_SeverityFromGasDensityDirect</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SeverityFromGasDensityDirect</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SeverityFromGasDensityDirect</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-249">
+            <h3>Verse.HediffCompProperties_SeverityFromHemogen</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SeverityFromHemogen</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SeverityFromHemogen</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-250">
+            <h3>Verse.HediffCompProperties_SeverityPerDay</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SeverityPerDay</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SeverityPerDay</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-251">
+            <h3>Verse.HediffCompProperties_SeverityPerSecond</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SeverityPerSecond</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SeverityPerSecond</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-252">
+            <h3>Verse.HediffCompProperties_SkillDecay</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SkillDecay</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SkillDecay</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-253">
+            <h3>Verse.HediffCompProperties_SurgeryInspectable</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SurgeryInspectable</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SurgeryInspectable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-254">
+            <h3>Verse.HediffCompProperties_SurgeryInspectableMetalHorror</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_SurgeryInspectableMetalHorror</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_SurgeryInspectableMetalHorror</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-255">
+            <h3>Verse.HediffCompProperties_TendDuration</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_TendDuration</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_TendDuration</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-256">
+            <h3>Verse.HediffCompProperties_ThoughtSetter</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_ThoughtSetter</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_ThoughtSetter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-257">
+            <h3>Verse.HediffCompProperties_VacuumExposure</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_VacuumExposure</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_VacuumExposure</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-258">
+            <h3>Verse.HediffCompProperties_VerbGiver</h3>
+            <p><strong>Namespace:</strong> Verse.HediffCompProperties_VerbGiver</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffCompProperties_VerbGiver</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-259">
+            <h3>Verse.HediffDef</h3>
+            <p><strong>Namespace:</strong> Verse.HediffDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-260">
+            <h3>Verse.HediffDefFactor</h3>
+            <p><strong>Namespace:</strong> Verse.HediffDefFactor</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffDefFactor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-261">
+            <h3>Verse.HediffWithComps</h3>
+            <p><strong>Namespace:</strong> Verse.HediffWithComps</p>
+            <div class="section-content">
+<p>Content not available for Verse.HediffWithComps</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-262">
+            <h3>Verse.ICreepJoinerDef</h3>
+            <p><strong>Namespace:</strong> Verse.ICreepJoinerDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ICreepJoinerDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-263">
+            <h3>Verse.IdeoStoryPatternDef</h3>
+            <p><strong>Namespace:</strong> Verse.IdeoStoryPatternDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.IdeoStoryPatternDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-264">
+            <h3>Verse.ImplementOwnerTypeDef</h3>
+            <p><strong>Namespace:</strong> Verse.ImplementOwnerTypeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ImplementOwnerTypeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-265">
+            <h3>Verse.IntMinComparer</h3>
+            <p><strong>Namespace:</strong> Verse.IntMinComparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.IntMinComparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-266">
+            <h3>Verse.InventoryStockGroupDef</h3>
+            <p><strong>Namespace:</strong> Verse.InventoryStockGroupDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.InventoryStockGroupDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-267">
+            <h3>Verse.ISuspendableThingHolder</h3>
+            <p><strong>Namespace:</strong> Verse.ISuspendableThingHolder</p>
+            <div class="section-content">
+<p>Content not available for Verse.ISuspendableThingHolder</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-268">
+            <h3>Verse.IThingGlower</h3>
+            <p><strong>Namespace:</strong> Verse.IThingGlower</p>
+            <div class="section-content">
+<p>Content not available for Verse.IThingGlower</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-269">
+            <h3>Verse.IThingHolder</h3>
+            <p><strong>Namespace:</strong> Verse.IThingHolder</p>
+            <div class="section-content">
+<p>Content not available for Verse.IThingHolder</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-270">
+            <h3>Verse.IThingHolderEvents-1</h3>
+            <p><strong>Namespace:</strong> Verse.IThingHolderEvents-1</p>
+            <div class="section-content">
+<p>Content not available for Verse.IThingHolderEvents-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-271">
+            <h3>Verse.IThingHolderTickable</h3>
+            <p><strong>Namespace:</strong> Verse.IThingHolderTickable</p>
+            <div class="section-content">
+<p>Content not available for Verse.IThingHolderTickable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-272">
+            <h3>Verse.IThingHolderWithDrawnPawn</h3>
+            <p><strong>Namespace:</strong> Verse.IThingHolderWithDrawnPawn</p>
+            <div class="section-content">
+<p>Content not available for Verse.IThingHolderWithDrawnPawn</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-273">
+            <h3>Verse.JobDef</h3>
+            <p><strong>Namespace:</strong> Verse.JobDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.JobDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-274">
+            <h3>Verse.KeyBindingCategoryDef</h3>
+            <p><strong>Namespace:</strong> Verse.KeyBindingCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.KeyBindingCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-275">
+            <h3>Verse.KeyBindingDef</h3>
+            <p><strong>Namespace:</strong> Verse.KeyBindingDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.KeyBindingDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-276">
+            <h3>Verse.KeyBindingDefGenerator</h3>
+            <p><strong>Namespace:</strong> Verse.KeyBindingDefGenerator</p>
+            <div class="section-content">
+<p>Content not available for Verse.KeyBindingDefGenerator</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-277">
+            <h3>Verse.LanguageWorker_Default</h3>
+            <p><strong>Namespace:</strong> Verse.LanguageWorker_Default</p>
+            <div class="section-content">
+<p>Content not available for Verse.LanguageWorker_Default</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-278">
+            <h3>Verse.LavaFXComponent</h3>
+            <p><strong>Namespace:</strong> Verse.LavaFXComponent</p>
+            <div class="section-content">
+<p>Content not available for Verse.LavaFXComponent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-279">
+            <h3>Verse.LetterDef</h3>
+            <p><strong>Namespace:</strong> Verse.LetterDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.LetterDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-280">
+            <h3>Verse.ListerThings</h3>
+            <p><strong>Namespace:</strong> Verse.ListerThings</p>
+            <div class="section-content">
+<p>Content not available for Verse.ListerThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-281">
+            <h3>Verse.ListerThingsUse</h3>
+            <p><strong>Namespace:</strong> Verse.ListerThingsUse</p>
+            <div class="section-content">
+<p>Content not available for Verse.ListerThingsUse</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-282">
+            <h3>Verse.Listing_TreeDefs</h3>
+            <p><strong>Namespace:</strong> Verse.Listing_TreeDefs</p>
+            <div class="section-content">
+<p>Content not available for Verse.Listing_TreeDefs</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-283">
+            <h3>Verse.Listing_TreeThingFilter</h3>
+            <p><strong>Namespace:</strong> Verse.Listing_TreeThingFilter</p>
+            <div class="section-content">
+<p>Content not available for Verse.Listing_TreeThingFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-284">
+            <h3>Verse.LogEntryDef</h3>
+            <p><strong>Namespace:</strong> Verse.LogEntryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.LogEntryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-285">
+            <h3>Verse.ManeuverDef</h3>
+            <p><strong>Namespace:</strong> Verse.ManeuverDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ManeuverDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-286">
+            <h3>Verse.MapComponent</h3>
+            <p><strong>Namespace:</strong> Verse.MapComponent</p>
+            <div class="section-content">
+<p>Content not available for Verse.MapComponent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-287">
+            <h3>Verse.MapComponentUtility</h3>
+            <p><strong>Namespace:</strong> Verse.MapComponentUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.MapComponentUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-288">
+            <h3>Verse.MapFileCompressor</h3>
+            <p><strong>Namespace:</strong> Verse.MapFileCompressor</p>
+            <div class="section-content">
+<p>Content not available for Verse.MapFileCompressor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-289">
+            <h3>Verse.MapGeneratorDef</h3>
+            <p><strong>Namespace:</strong> Verse.MapGeneratorDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.MapGeneratorDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-290">
+            <h3>Verse.MechWeightClassDef</h3>
+            <p><strong>Namespace:</strong> Verse.MechWeightClassDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.MechWeightClassDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-291">
+            <h3>Verse.MechWorkModeDef</h3>
+            <p><strong>Namespace:</strong> Verse.MechWorkModeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.MechWorkModeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-292">
+            <h3>Verse.MentalBreakDef</h3>
+            <p><strong>Namespace:</strong> Verse.MentalBreakDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.MentalBreakDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-293">
+            <h3>Verse.MentalFitDef</h3>
+            <p><strong>Namespace:</strong> Verse.MentalFitDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.MentalFitDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-294">
+            <h3>Verse.MentalStateDef</h3>
+            <p><strong>Namespace:</strong> Verse.MentalStateDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.MentalStateDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-295">
+            <h3>Verse.MessageTypeDef</h3>
+            <p><strong>Namespace:</strong> Verse.MessageTypeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.MessageTypeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-296">
+            <h3>Verse.NumericStringComparer</h3>
+            <p><strong>Namespace:</strong> Verse.NumericStringComparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.NumericStringComparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-297">
+            <h3>Verse.OptionCategoryDef</h3>
+            <p><strong>Namespace:</strong> Verse.OptionCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.OptionCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-298">
+            <h3>Verse.OrbitalDebrisDef.DebrisGraphic</h3>
+            <p><strong>Namespace:</strong> Verse.OrbitalDebrisDef.DebrisGraphic</p>
+            <div class="section-content">
+<p>Content not available for Verse.OrbitalDebrisDef.DebrisGraphic</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-299">
+            <h3>Verse.OrbitalDebrisDef</h3>
+            <p><strong>Namespace:</strong> Verse.OrbitalDebrisDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.OrbitalDebrisDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-300">
+            <h3>Verse.OrderedTakeGroupDef</h3>
+            <p><strong>Namespace:</strong> Verse.OrderedTakeGroupDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.OrderedTakeGroupDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-301">
+            <h3>Verse.PanCompletionCallback</h3>
+            <p><strong>Namespace:</strong> Verse.PanCompletionCallback</p>
+            <div class="section-content">
+<p>Content not available for Verse.PanCompletionCallback</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-302">
+            <h3>Verse.PathGridDef</h3>
+            <p><strong>Namespace:</strong> Verse.PathGridDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.PathGridDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-303">
+            <h3>Verse.PawnCapacityDef</h3>
+            <p><strong>Namespace:</strong> Verse.PawnCapacityDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.PawnCapacityDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-304">
+            <h3>Verse.PawnEqualityComparer</h3>
+            <p><strong>Namespace:</strong> Verse.PawnEqualityComparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.PawnEqualityComparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-305">
+            <h3>Verse.PawnKindDef</h3>
+            <p><strong>Namespace:</strong> Verse.PawnKindDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.PawnKindDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-306">
+            <h3>Verse.PawnRenderNodeTagDef</h3>
+            <p><strong>Namespace:</strong> Verse.PawnRenderNodeTagDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.PawnRenderNodeTagDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-307">
+            <h3>Verse.PawnRenderTreeDef</h3>
+            <p><strong>Namespace:</strong> Verse.PawnRenderTreeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.PawnRenderTreeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-308">
+            <h3>Verse.PlaceDef</h3>
+            <p><strong>Namespace:</strong> Verse.PlaceDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.PlaceDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-309">
+            <h3>Verse.Projectile_SpawnsThing</h3>
+            <p><strong>Namespace:</strong> Verse.Projectile_SpawnsThing</p>
+            <div class="section-content">
+<p>Content not available for Verse.Projectile_SpawnsThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-310">
+            <h3>Verse.RecipeDef</h3>
+            <p><strong>Namespace:</strong> Verse.RecipeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.RecipeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-311">
+            <h3>Verse.RegionProcessorClosestThingReachable</h3>
+            <p><strong>Namespace:</strong> Verse.RegionProcessorClosestThingReachable</p>
+            <div class="section-content">
+<p>Content not available for Verse.RegionProcessorClosestThingReachable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-312">
+            <h3>Verse.ResearchProjectDef</h3>
+            <p><strong>Namespace:</strong> Verse.ResearchProjectDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ResearchProjectDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-313">
+            <h3>Verse.ResearchProjectTagDef</h3>
+            <p><strong>Namespace:</strong> Verse.ResearchProjectTagDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ResearchProjectTagDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-314">
+            <h3>Verse.ReservationLayerDef</h3>
+            <p><strong>Namespace:</strong> Verse.ReservationLayerDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ReservationLayerDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-315">
+            <h3>Verse.RoofDef</h3>
+            <p><strong>Namespace:</strong> Verse.RoofDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.RoofDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-316">
+            <h3>Verse.RoomRoleDef</h3>
+            <p><strong>Namespace:</strong> Verse.RoomRoleDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.RoomRoleDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-317">
+            <h3>Verse.RoomStatDef</h3>
+            <p><strong>Namespace:</strong> Verse.RoomStatDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.RoomStatDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-318">
+            <h3>Verse.Root</h3>
+            <p><strong>Namespace:</strong> Verse.Root</p>
+            <div class="section-content">
+<p>Content not available for Verse.Root</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-319">
+            <h3>Verse.Root_Entry</h3>
+            <p><strong>Namespace:</strong> Verse.Root_Entry</p>
+            <div class="section-content">
+<p>Content not available for Verse.Root_Entry</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-320">
+            <h3>Verse.Root_Play</h3>
+            <p><strong>Namespace:</strong> Verse.Root_Play</p>
+            <div class="section-content">
+<p>Content not available for Verse.Root_Play</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-321">
+            <h3>Verse.RulePackDef</h3>
+            <p><strong>Namespace:</strong> Verse.RulePackDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.RulePackDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-322">
+            <h3>Verse.ScatterableDef</h3>
+            <p><strong>Namespace:</strong> Verse.ScatterableDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ScatterableDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-323">
+            <h3>Verse.ScattererValidator_AvoidSpecialThings</h3>
+            <p><strong>Namespace:</strong> Verse.ScattererValidator_AvoidSpecialThings</p>
+            <div class="section-content">
+<p>Content not available for Verse.ScattererValidator_AvoidSpecialThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-324">
+            <h3>Verse.ScattererValidator_AvoidThingsOfDef</h3>
+            <p><strong>Namespace:</strong> Verse.ScattererValidator_AvoidThingsOfDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ScattererValidator_AvoidThingsOfDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-325">
+            <h3>Verse.ScattererValidator_TerrainDef</h3>
+            <p><strong>Namespace:</strong> Verse.ScattererValidator_TerrainDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ScattererValidator_TerrainDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-326">
+            <h3>Verse.Scribe_Defs</h3>
+            <p><strong>Namespace:</strong> Verse.Scribe_Defs</p>
+            <div class="section-content">
+<p>Content not available for Verse.Scribe_Defs</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-327">
+            <h3>Verse.SectionLayer_Things</h3>
+            <p><strong>Namespace:</strong> Verse.SectionLayer_Things</p>
+            <div class="section-content">
+<p>Content not available for Verse.SectionLayer_Things</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-328">
+            <h3>Verse.SectionLayer_ThingsGeneral</h3>
+            <p><strong>Namespace:</strong> Verse.SectionLayer_ThingsGeneral</p>
+            <div class="section-content">
+<p>Content not available for Verse.SectionLayer_ThingsGeneral</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-329">
+            <h3>Verse.ShaderTypeDef</h3>
+            <p><strong>Namespace:</strong> Verse.ShaderTypeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ShaderTypeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-330">
+            <h3>Verse.SongDef</h3>
+            <p><strong>Namespace:</strong> Verse.SongDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.SongDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-331">
+            <h3>Verse.Sound.ImpactSoundTypeDef</h3>
+            <p><strong>Namespace:</strong> Verse.Sound.ImpactSoundTypeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.Sound.ImpactSoundTypeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-332">
+            <h3>Verse.Sound.SoundRoot</h3>
+            <p><strong>Namespace:</strong> Verse.Sound.SoundRoot</p>
+            <div class="section-content">
+<p>Content not available for Verse.Sound.SoundRoot</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-333">
+            <h3>Verse.Sound.SubSoundDef</h3>
+            <p><strong>Namespace:</strong> Verse.Sound.SubSoundDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.Sound.SubSoundDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-334">
+            <h3>Verse.SoundDef</h3>
+            <p><strong>Namespace:</strong> Verse.SoundDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.SoundDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-335">
+            <h3>Verse.SoundDefHelper</h3>
+            <p><strong>Namespace:</strong> Verse.SoundDefHelper</p>
+            <div class="section-content">
+<p>Content not available for Verse.SoundDefHelper</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-336">
+            <h3>Verse.SpecialThingFilterDef</h3>
+            <p><strong>Namespace:</strong> Verse.SpecialThingFilterDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.SpecialThingFilterDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-337">
+            <h3>Verse.SpecialThingFilterWorker</h3>
+            <p><strong>Namespace:</strong> Verse.SpecialThingFilterWorker</p>
+            <div class="section-content">
+<p>Content not available for Verse.SpecialThingFilterWorker</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-338">
+            <h3>Verse.StuffAppearanceDef</h3>
+            <p><strong>Namespace:</strong> Verse.StuffAppearanceDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.StuffAppearanceDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-339">
+            <h3>Verse.StyleCategoryDef</h3>
+            <p><strong>Namespace:</strong> Verse.StyleCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.StyleCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-340">
+            <h3>Verse.SubcameraDef</h3>
+            <p><strong>Namespace:</strong> Verse.SubcameraDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.SubcameraDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-341">
+            <h3>Verse.SubEffecterDef</h3>
+            <p><strong>Namespace:</strong> Verse.SubEffecterDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.SubEffecterDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-342">
+            <h3>Verse.TemporaryThingDrawable</h3>
+            <p><strong>Namespace:</strong> Verse.TemporaryThingDrawable</p>
+            <div class="section-content">
+<p>Content not available for Verse.TemporaryThingDrawable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-343">
+            <h3>Verse.TemporaryThingDrawer</h3>
+            <p><strong>Namespace:</strong> Verse.TemporaryThingDrawer</p>
+            <div class="section-content">
+<p>Content not available for Verse.TemporaryThingDrawer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-344">
+            <h3>Verse.TerrainAffordanceDef</h3>
+            <p><strong>Namespace:</strong> Verse.TerrainAffordanceDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.TerrainAffordanceDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-345">
+            <h3>Verse.TerrainDef</h3>
+            <p><strong>Namespace:</strong> Verse.TerrainDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.TerrainDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-346">
+            <h3>Verse.TerrainDef.SpaceEdgeGraphicData</h3>
+            <p><strong>Namespace:</strong> Verse.TerrainDef.SpaceEdgeGraphicData</p>
+            <div class="section-content">
+<p>Content not available for Verse.TerrainDef.SpaceEdgeGraphicData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-347">
+            <h3>Verse.TerrainDef.TerrainCategoryType</h3>
+            <p><strong>Namespace:</strong> Verse.TerrainDef.TerrainCategoryType</p>
+            <div class="section-content">
+<p>Content not available for Verse.TerrainDef.TerrainCategoryType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-348">
+            <h3>Verse.TerrainDef.TerrainEdgeType</h3>
+            <p><strong>Namespace:</strong> Verse.TerrainDef.TerrainEdgeType</p>
+            <div class="section-content">
+<p>Content not available for Verse.TerrainDef.TerrainEdgeType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-349">
+            <h3>Verse.Thing</h3>
+            <p><strong>Namespace:</strong> Verse.Thing</p>
+            <div class="section-content">
+<p>Content not available for Verse.Thing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-350">
+            <h3>Verse.ThingCategory</h3>
+            <p><strong>Namespace:</strong> Verse.ThingCategory</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingCategory</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-351">
+            <h3>Verse.ThingCategoryDef</h3>
+            <p><strong>Namespace:</strong> Verse.ThingCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-352">
+            <h3>Verse.ThingCategoryNodeDatabase</h3>
+            <p><strong>Namespace:</strong> Verse.ThingCategoryNodeDatabase</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingCategoryNodeDatabase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-353">
+            <h3>Verse.ThingComp</h3>
+            <p><strong>Namespace:</strong> Verse.ThingComp</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingComp</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-354">
+            <h3>Verse.ThingComp_VacuumAware</h3>
+            <p><strong>Namespace:</strong> Verse.ThingComp_VacuumAware</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingComp_VacuumAware</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-355">
+            <h3>Verse.ThingCompUtility</h3>
+            <p><strong>Namespace:</strong> Verse.ThingCompUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingCompUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-356">
+            <h3>Verse.ThingCount</h3>
+            <p><strong>Namespace:</strong> Verse.ThingCount</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingCount</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-357">
+            <h3>Verse.ThingCountClass</h3>
+            <p><strong>Namespace:</strong> Verse.ThingCountClass</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingCountClass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-358">
+            <h3>Verse.ThingCountUtility</h3>
+            <p><strong>Namespace:</strong> Verse.ThingCountUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingCountUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-359">
+            <h3>Verse.ThingDef</h3>
+            <p><strong>Namespace:</strong> Verse.ThingDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-360">
+            <h3>Verse.ThingDefComparer</h3>
+            <p><strong>Namespace:</strong> Verse.ThingDefComparer</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingDefComparer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-361">
+            <h3>Verse.ThingDefCount</h3>
+            <p><strong>Namespace:</strong> Verse.ThingDefCount</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingDefCount</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-362">
+            <h3>Verse.ThingDefCountClass</h3>
+            <p><strong>Namespace:</strong> Verse.ThingDefCountClass</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingDefCountClass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-363">
+            <h3>Verse.ThingDefCountRange</h3>
+            <p><strong>Namespace:</strong> Verse.ThingDefCountRange</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingDefCountRange</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-364">
+            <h3>Verse.ThingDefCountRangeClass</h3>
+            <p><strong>Namespace:</strong> Verse.ThingDefCountRangeClass</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingDefCountRangeClass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-365">
+            <h3>Verse.ThingDefStyle</h3>
+            <p><strong>Namespace:</strong> Verse.ThingDefStyle</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingDefStyle</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-366">
+            <h3>Verse.ThingFilter</h3>
+            <p><strong>Namespace:</strong> Verse.ThingFilter</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-367">
+            <h3>Verse.ThingFilterUI</h3>
+            <p><strong>Namespace:</strong> Verse.ThingFilterUI</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingFilterUI</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-368">
+            <h3>Verse.ThingFilterUI.UIState</h3>
+            <p><strong>Namespace:</strong> Verse.ThingFilterUI.UIState</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingFilterUI.UIState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-369">
+            <h3>Verse.ThingGrid</h3>
+            <p><strong>Namespace:</strong> Verse.ThingGrid</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingGrid</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-370">
+            <h3>Verse.ThingIDMaker</h3>
+            <p><strong>Namespace:</strong> Verse.ThingIDMaker</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingIDMaker</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-371">
+            <h3>Verse.ThingListChangedCallbacks</h3>
+            <p><strong>Namespace:</strong> Verse.ThingListChangedCallbacks</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingListChangedCallbacks</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-372">
+            <h3>Verse.ThingListGroupHelper</h3>
+            <p><strong>Namespace:</strong> Verse.ThingListGroupHelper</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingListGroupHelper</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-373">
+            <h3>Verse.ThingMaker</h3>
+            <p><strong>Namespace:</strong> Verse.ThingMaker</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingMaker</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-374">
+            <h3>Verse.ThingOption</h3>
+            <p><strong>Namespace:</strong> Verse.ThingOption</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingOption</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-375">
+            <h3>Verse.ThingOverlays</h3>
+            <p><strong>Namespace:</strong> Verse.ThingOverlays</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingOverlays</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-376">
+            <h3>Verse.ThingOwner</h3>
+            <p><strong>Namespace:</strong> Verse.ThingOwner</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingOwner</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-377">
+            <h3>Verse.ThingOwner-1</h3>
+            <p><strong>Namespace:</strong> Verse.ThingOwner-1</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingOwner-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-378">
+            <h3>Verse.ThingOwnerUtility</h3>
+            <p><strong>Namespace:</strong> Verse.ThingOwnerUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingOwnerUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-379">
+            <h3>Verse.ThingPlaceMode</h3>
+            <p><strong>Namespace:</strong> Verse.ThingPlaceMode</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingPlaceMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-380">
+            <h3>Verse.ThingRequest</h3>
+            <p><strong>Namespace:</strong> Verse.ThingRequest</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingRequest</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-381">
+            <h3>Verse.ThingRequestGroup</h3>
+            <p><strong>Namespace:</strong> Verse.ThingRequestGroup</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingRequestGroup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-382">
+            <h3>Verse.ThingRequestGroupUtility</h3>
+            <p><strong>Namespace:</strong> Verse.ThingRequestGroupUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingRequestGroupUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-383">
+            <h3>Verse.ThingStyleCategoryWithPriority</h3>
+            <p><strong>Namespace:</strong> Verse.ThingStyleCategoryWithPriority</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingStyleCategoryWithPriority</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-384">
+            <h3>Verse.ThingStyleChance</h3>
+            <p><strong>Namespace:</strong> Verse.ThingStyleChance</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingStyleChance</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-385">
+            <h3>Verse.ThingStyleDef</h3>
+            <p><strong>Namespace:</strong> Verse.ThingStyleDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingStyleDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-386">
+            <h3>Verse.ThingUtility</h3>
+            <p><strong>Namespace:</strong> Verse.ThingUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-387">
+            <h3>Verse.ThingWithComps</h3>
+            <p><strong>Namespace:</strong> Verse.ThingWithComps</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThingWithComps</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-388">
+            <h3>Verse.ThinkTreeDef</h3>
+            <p><strong>Namespace:</strong> Verse.ThinkTreeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ThinkTreeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-389">
+            <h3>Verse.TipSetDef</h3>
+            <p><strong>Namespace:</strong> Verse.TipSetDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.TipSetDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-390">
+            <h3>Verse.ToolCapacityDef</h3>
+            <p><strong>Namespace:</strong> Verse.ToolCapacityDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.ToolCapacityDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-391">
+            <h3>Verse.TrainabilityDef</h3>
+            <p><strong>Namespace:</strong> Verse.TrainabilityDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.TrainabilityDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-392">
+            <h3>Verse.TreeNode_ThingCategory</h3>
+            <p><strong>Namespace:</strong> Verse.TreeNode_ThingCategory</p>
+            <div class="section-content">
+<p>Content not available for Verse.TreeNode_ThingCategory</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-393">
+            <h3>Verse.UIRoot</h3>
+            <p><strong>Namespace:</strong> Verse.UIRoot</p>
+            <div class="section-content">
+<p>Content not available for Verse.UIRoot</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-394">
+            <h3>Verse.UIRoot_Entry</h3>
+            <p><strong>Namespace:</strong> Verse.UIRoot_Entry</p>
+            <div class="section-content">
+<p>Content not available for Verse.UIRoot_Entry</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-395">
+            <h3>Verse.UnfinishedThing</h3>
+            <p><strong>Namespace:</strong> Verse.UnfinishedThing</p>
+            <div class="section-content">
+<p>Content not available for Verse.UnfinishedThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-396">
+            <h3>Verse.VacuumComponent</h3>
+            <p><strong>Namespace:</strong> Verse.VacuumComponent</p>
+            <div class="section-content">
+<p>Content not available for Verse.VacuumComponent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-397">
+            <h3>Verse.WeatherDef</h3>
+            <p><strong>Namespace:</strong> Verse.WeatherDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.WeatherDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-398">
+            <h3>Verse.Widgets.ColorComponents</h3>
+            <p><strong>Namespace:</strong> Verse.Widgets.ColorComponents</p>
+            <div class="section-content">
+<p>Content not available for Verse.Widgets.ColorComponents</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-399">
+            <h3>Verse.WorkTypeDef</h3>
+            <p><strong>Namespace:</strong> Verse.WorkTypeDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.WorkTypeDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-400">
+            <h3>Verse.WorkTypeDefsUtility</h3>
+            <p><strong>Namespace:</strong> Verse.WorkTypeDefsUtility</p>
+            <div class="section-content">
+<p>Content not available for Verse.WorkTypeDefsUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-401">
+            <h3>Verse.WorldComponent_GravshipController</h3>
+            <p><strong>Namespace:</strong> Verse.WorldComponent_GravshipController</p>
+            <div class="section-content">
+<p>Content not available for Verse.WorldComponent_GravshipController</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-402">
+            <h3>Verse.WorldGenStepDef</h3>
+            <p><strong>Namespace:</strong> Verse.WorldGenStepDef</p>
+            <div class="section-content">
+<p>Content not available for Verse.WorldGenStepDef</p>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="back-to-top">↑ Top</a>
+</body>
+</html>

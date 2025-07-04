@@ -1,0 +1,3486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unity_Graphics - Combined API Documentation</title>
+    <meta name="robots" content="index, follow">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .toc { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .toc h2 { margin-top: 0; color: #34495e; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { color: #2980b9; text-decoration: none; font-weight: 500; }
+        .toc a:hover { text-decoration: underline; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .section h3 { color: #e74c3c; margin-top: 0; }
+        .section-content { margin-top: 15px; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #3498db; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; }
+        .back-to-top:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Unity_Graphics - Combined API Documentation</h1>
+        <p>This page contains combined documentation for 383 related API classes and components.</p>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-0">UnityEngine.AdditionalCanvasShaderChannels</a></li>
+                <li><a href="#section-1">UnityEngine.AI.NavMesh</a></li>
+                <li><a href="#section-2">UnityEngine.AI.NavMesh.OnNavMeshPreUpdate</a></li>
+                <li><a href="#section-3">UnityEngine.AI.NavMeshAgent</a></li>
+                <li><a href="#section-4">UnityEngine.AI.NavMeshBuildDebugFlags</a></li>
+                <li><a href="#section-5">UnityEngine.AI.NavMeshBuildDebugSettings</a></li>
+                <li><a href="#section-6">UnityEngine.AI.NavMeshBuilder</a></li>
+                <li><a href="#section-7">UnityEngine.AI.NavMeshBuildMarkup</a></li>
+                <li><a href="#section-8">UnityEngine.AI.NavMeshBuildSettings</a></li>
+                <li><a href="#section-9">UnityEngine.AI.NavMeshBuildSource</a></li>
+                <li><a href="#section-10">UnityEngine.AI.NavMeshBuildSourceShape</a></li>
+                <li><a href="#section-11">UnityEngine.AI.NavMeshCollectGeometry</a></li>
+                <li><a href="#section-12">UnityEngine.AI.NavMeshData</a></li>
+                <li><a href="#section-13">UnityEngine.AI.NavMeshDataInstance</a></li>
+                <li><a href="#section-14">UnityEngine.AI.NavMeshHit</a></li>
+                <li><a href="#section-15">UnityEngine.AI.NavMeshLinkData</a></li>
+                <li><a href="#section-16">UnityEngine.AI.NavMeshLinkInstance</a></li>
+                <li><a href="#section-17">UnityEngine.AI.NavMeshObstacle</a></li>
+                <li><a href="#section-18">UnityEngine.AI.NavMeshObstacleShape</a></li>
+                <li><a href="#section-19">UnityEngine.AI.NavMeshPath</a></li>
+                <li><a href="#section-20">UnityEngine.AI.NavMeshPathStatus</a></li>
+                <li><a href="#section-21">UnityEngine.AI.NavMeshQueryFilter</a></li>
+                <li><a href="#section-22">UnityEngine.AI.NavMeshTriangulation</a></li>
+                <li><a href="#section-23">UnityEngine.AI.OffMeshLink</a></li>
+                <li><a href="#section-24">UnityEngine.AI.OffMeshLinkData</a></li>
+                <li><a href="#section-25">UnityEngine.AI.OffMeshLinkType</a></li>
+                <li><a href="#section-26">UnityEngine.AudioRenderer</a></li>
+                <li><a href="#section-27">UnityEngine.BeforeRenderOrderAttribute</a></li>
+                <li><a href="#section-28">UnityEngine.BillboardRenderer</a></li>
+                <li><a href="#section-29">UnityEngine.Camera.RenderRequest</a></li>
+                <li><a href="#section-30">UnityEngine.Camera.RenderRequestMode</a></li>
+                <li><a href="#section-31">UnityEngine.Camera.RenderRequestOutputSpace</a></li>
+                <li><a href="#section-32">UnityEngine.Canvas.WillRenderCanvases</a></li>
+                <li><a href="#section-33">UnityEngine.CanvasRenderer</a></li>
+                <li><a href="#section-34">UnityEngine.ComputeShader</a></li>
+                <li><a href="#section-35">UnityEngine.CustomRenderTexture</a></li>
+                <li><a href="#section-36">UnityEngine.CustomRenderTextureInitializationSource</a></li>
+                <li><a href="#section-37">UnityEngine.CustomRenderTextureManager</a></li>
+                <li><a href="#section-38">UnityEngine.CustomRenderTextureUpdateMode</a></li>
+                <li><a href="#section-39">UnityEngine.CustomRenderTextureUpdateZone</a></li>
+                <li><a href="#section-40">UnityEngine.CustomRenderTextureUpdateZoneSpace</a></li>
+                <li><a href="#section-41">UnityEngine.DepthTextureMode</a></li>
+                <li><a href="#section-42">UnityEngine.DetailRenderMode</a></li>
+                <li><a href="#section-43">UnityEngine.Experimental.AI.NavMeshLocation</a></li>
+                <li><a href="#section-44">UnityEngine.Experimental.AI.NavMeshPolyTypes</a></li>
+                <li><a href="#section-45">UnityEngine.Experimental.AI.NavMeshQuery</a></li>
+                <li><a href="#section-46">UnityEngine.Experimental.AI.NavMeshWorld</a></li>
+                <li><a href="#section-47">UnityEngine.Experimental.GlobalIllumination.RenderSettings</a></li>
+                <li><a href="#section-48">UnityEngine.Experimental.Playables.MaterialEffectPlayable</a></li>
+                <li><a href="#section-49">UnityEngine.Experimental.Playables.TextureMixerPlayable</a></li>
+                <li><a href="#section-50">UnityEngine.Experimental.Playables.TexturePlayableBinding</a></li>
+                <li><a href="#section-51">UnityEngine.Experimental.Playables.TexturePlayableOutput</a></li>
+                <li><a href="#section-52">UnityEngine.Experimental.Rendering.DefaultFormat</a></li>
+                <li><a href="#section-53">UnityEngine.Experimental.Rendering.ExternalGPUProfiler</a></li>
+                <li><a href="#section-54">UnityEngine.Experimental.Rendering.FormatUsage</a></li>
+                <li><a href="#section-55">UnityEngine.Experimental.Rendering.GraphicsDeviceSettings</a></li>
+                <li><a href="#section-56">UnityEngine.Experimental.Rendering.GraphicsFormat</a></li>
+                <li><a href="#section-57">UnityEngine.Experimental.Rendering.GraphicsFormatUtility</a></li>
+                <li><a href="#section-58">UnityEngine.Experimental.Rendering.GraphicsJobsSyncPoint</a></li>
+                <li><a href="#section-59">UnityEngine.Experimental.Rendering</a></li>
+                <li><a href="#section-60">UnityEngine.Experimental.Rendering.IScriptableRuntimeReflectionSystem</a></li>
+                <li><a href="#section-61">UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure</a></li>
+                <li><a href="#section-62">UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.ManagementMode</a></li>
+                <li><a href="#section-63">UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.RASSettings</a></li>
+                <li><a href="#section-64">UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.RayTracingModeMask</a></li>
+                <li><a href="#section-65">UnityEngine.Experimental.Rendering.RayTracingInstanceCullingConfig</a></li>
+                <li><a href="#section-66">UnityEngine.Experimental.Rendering.RayTracingInstanceCullingFlags</a></li>
+                <li><a href="#section-67">UnityEngine.Experimental.Rendering.RayTracingInstanceCullingMaterialTest</a></li>
+                <li><a href="#section-68">UnityEngine.Experimental.Rendering.RayTracingInstanceCullingResults</a></li>
+                <li><a href="#section-69">UnityEngine.Experimental.Rendering.RayTracingInstanceCullingShaderTagConfig</a></li>
+                <li><a href="#section-70">UnityEngine.Experimental.Rendering.RayTracingInstanceCullingTest</a></li>
+                <li><a href="#section-71">UnityEngine.Experimental.Rendering.RayTracingInstanceMaterialConfig</a></li>
+                <li><a href="#section-72">UnityEngine.Experimental.Rendering.RayTracingInstanceMaterialCRC</a></li>
+                <li><a href="#section-73">UnityEngine.Experimental.Rendering.RayTracingInstanceTriangleCullingConfig</a></li>
+                <li><a href="#section-74">UnityEngine.Experimental.Rendering.RayTracingMode</a></li>
+                <li><a href="#section-75">UnityEngine.Experimental.Rendering.RayTracingShader</a></li>
+                <li><a href="#section-76">UnityEngine.Experimental.Rendering.RayTracingSubMeshFlags</a></li>
+                <li><a href="#section-77">UnityEngine.Experimental.Rendering.RayTracingSubMeshFlagsConfig</a></li>
+                <li><a href="#section-78">UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystem</a></li>
+                <li><a href="#section-79">UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings</a></li>
+                <li><a href="#section-80">UnityEngine.Experimental.Rendering.ShaderWarmup</a></li>
+                <li><a href="#section-81">UnityEngine.Experimental.Rendering.ShaderWarmupSetup</a></li>
+                <li><a href="#section-82">UnityEngine.Experimental.Rendering.TextureCreationFlags</a></li>
+                <li><a href="#section-83">UnityEngine.Experimental.Rendering.WaitForPresentSyncPoint</a></li>
+                <li><a href="#section-84">UnityEngine.Font.FontTextureRebuildCallback</a></li>
+                <li><a href="#section-85">UnityEngine.GUITexture</a></li>
+                <li><a href="#section-86">UnityEngine.LightRenderMode</a></li>
+                <li><a href="#section-87">UnityEngine.LineRenderer</a></li>
+                <li><a href="#section-88">UnityEngine.LineTextureMode</a></li>
+                <li><a href="#section-89">UnityEngine.Material</a></li>
+                <li><a href="#section-90">UnityEngine.MaterialGlobalIlluminationFlags</a></li>
+                <li><a href="#section-91">UnityEngine.MaterialPropertyBlock</a></li>
+                <li><a href="#section-92">UnityEngine.MaterialPropertyType</a></li>
+                <li><a href="#section-93">UnityEngine.Mesh</a></li>
+                <li><a href="#section-94">UnityEngine.Mesh.MeshData</a></li>
+                <li><a href="#section-95">UnityEngine.Mesh.MeshDataArray</a></li>
+                <li><a href="#section-96">UnityEngine.MeshCollider</a></li>
+                <li><a href="#section-97">UnityEngine.MeshColliderCookingOptions</a></li>
+                <li><a href="#section-98">UnityEngine.MeshFilter</a></li>
+                <li><a href="#section-99">UnityEngine.MeshRenderer</a></li>
+                <li><a href="#section-100">UnityEngine.MeshTopology</a></li>
+                <li><a href="#section-101">UnityEngine.MovieTexture</a></li>
+                <li><a href="#section-102">UnityEngine.Networking.DownloadHandlerMovieTexture</a></li>
+                <li><a href="#section-103">UnityEngine.Networking.DownloadHandlerTexture</a></li>
+                <li><a href="#section-104">UnityEngine.Networking.UnityWebRequestTexture</a></li>
+                <li><a href="#section-105">UnityEngine.NVIDIA.DLSSTextureTable</a></li>
+                <li><a href="#section-106">UnityEngine.ParticleSystem.TextureSheetAnimationModule</a></li>
+                <li><a href="#section-107">UnityEngine.ParticleSystemBakeMeshOptions</a></li>
+                <li><a href="#section-108">UnityEngine.ParticleSystemBakeTextureOptions</a></li>
+                <li><a href="#section-109">UnityEngine.ParticleSystemMeshDistribution</a></li>
+                <li><a href="#section-110">UnityEngine.ParticleSystemMeshShapeType</a></li>
+                <li><a href="#section-111">UnityEngine.ParticleSystemRenderer</a></li>
+                <li><a href="#section-112">UnityEngine.ParticleSystemRenderMode</a></li>
+                <li><a href="#section-113">UnityEngine.ParticleSystemRenderSpace</a></li>
+                <li><a href="#section-114">UnityEngine.ParticleSystemShapeTextureChannel</a></li>
+                <li><a href="#section-115">UnityEngine.ParticleSystemTrailTextureMode</a></li>
+                <li><a href="#section-116">UnityEngine.PhysicMaterial</a></li>
+                <li><a href="#section-117">UnityEngine.PhysicMaterialCombine</a></li>
+                <li><a href="#section-118">UnityEngine.PhysicsMaterial2D</a></li>
+                <li><a href="#section-119">UnityEngine.PlayerLoop.EarlyUpdate.ClearIntermediateRenderers</a></li>
+                <li><a href="#section-120">UnityEngine.PlayerLoop.EarlyUpdate.RendererNotifyInvisible</a></li>
+                <li><a href="#section-121">UnityEngine.PlayerLoop.EarlyUpdate.UpdateTextureStreamingManager</a></li>
+                <li><a href="#section-122">UnityEngine.PlayerLoop.PostLateUpdate.ClearImmediateRenderers</a></li>
+                <li><a href="#section-123">UnityEngine.PlayerLoop.PostLateUpdate.DirectorRenderImage</a></li>
+                <li><a href="#section-124">UnityEngine.PlayerLoop.PostLateUpdate.FinishFrameRendering</a></li>
+                <li><a href="#section-125">UnityEngine.PlayerLoop.PostLateUpdate.GraphicsWarmupPreloadedShaders</a></li>
+                <li><a href="#section-126">UnityEngine.PlayerLoop.PostLateUpdate.ShaderHandleErrors</a></li>
+                <li><a href="#section-127">UnityEngine.PlayerLoop.PostLateUpdate.UpdateAllRenderers</a></li>
+                <li><a href="#section-128">UnityEngine.PlayerLoop.PostLateUpdate.UpdateAllSkinnedMeshes</a></li>
+                <li><a href="#section-129">UnityEngine.PlayerLoop.PostLateUpdate.UpdateCustomRenderTextures</a></li>
+                <li><a href="#section-130">UnityEngine.PlayerLoop.PostLateUpdate.UpdateVideoTextures</a></li>
+                <li><a href="#section-131">UnityEngine.ProceduralMaterial</a></li>
+                <li><a href="#section-132">UnityEngine.ProceduralTexture</a></li>
+                <li><a href="#section-133">UnityEngine.RenderBuffer</a></li>
+                <li><a href="#section-134">UnityEngine.Renderer</a></li>
+                <li><a href="#section-135">UnityEngine.RendererExtensions</a></li>
+                <li><a href="#section-136">UnityEngine.Rendering.AmbientMode</a></li>
+                <li><a href="#section-137">UnityEngine.Rendering.AsyncGPUReadback</a></li>
+                <li><a href="#section-138">UnityEngine.Rendering.AsyncGPUReadbackRequest</a></li>
+                <li><a href="#section-139">UnityEngine.Rendering.AttachmentDescriptor</a></li>
+                <li><a href="#section-140">UnityEngine.Rendering.BatchBufferTarget</a></li>
+                <li><a href="#section-141">UnityEngine.Rendering.BatchCullingContext</a></li>
+                <li><a href="#section-142">UnityEngine.Rendering.BatchCullingFlags</a></li>
+                <li><a href="#section-143">UnityEngine.Rendering.BatchCullingOutput</a></li>
+                <li><a href="#section-144">UnityEngine.Rendering.BatchCullingOutputDrawCommands</a></li>
+                <li><a href="#section-145">UnityEngine.Rendering.BatchCullingProjectionType</a></li>
+                <li><a href="#section-146">UnityEngine.Rendering.BatchCullingViewType</a></li>
+                <li><a href="#section-147">UnityEngine.Rendering.BatchDrawCommand</a></li>
+                <li><a href="#section-148">UnityEngine.Rendering.BatchDrawCommandFlags</a></li>
+                <li><a href="#section-149">UnityEngine.Rendering.BatchDrawRange</a></li>
+                <li><a href="#section-150">UnityEngine.Rendering.BatchFilterSettings</a></li>
+                <li><a href="#section-151">UnityEngine.Rendering.BatchID</a></li>
+                <li><a href="#section-152">UnityEngine.Rendering.BatchMaterialID</a></li>
+                <li><a href="#section-153">UnityEngine.Rendering.BatchMeshID</a></li>
+                <li><a href="#section-154">UnityEngine.Rendering.BatchPackedCullingViewID</a></li>
+                <li><a href="#section-155">UnityEngine.Rendering.BatchRendererGroup</a></li>
+                <li><a href="#section-156">UnityEngine.Rendering.BatchRendererGroup.OnPerformCulling</a></li>
+                <li><a href="#section-157">UnityEngine.Rendering.BlendMode</a></li>
+                <li><a href="#section-158">UnityEngine.Rendering.BlendOp</a></li>
+                <li><a href="#section-159">UnityEngine.Rendering.BlendShapeBufferLayout</a></li>
+                <li><a href="#section-160">UnityEngine.Rendering.BlendState</a></li>
+                <li><a href="#section-161">UnityEngine.Rendering.BuiltinRenderTextureType</a></li>
+                <li><a href="#section-162">UnityEngine.Rendering.BuiltinShaderDefine</a></li>
+                <li><a href="#section-163">UnityEngine.Rendering.BuiltinShaderMode</a></li>
+                <li><a href="#section-164">UnityEngine.Rendering.BuiltinShaderType</a></li>
+                <li><a href="#section-165">UnityEngine.Rendering.CameraEvent</a></li>
+                <li><a href="#section-166">UnityEngine.Rendering.CameraHDRMode</a></li>
+                <li><a href="#section-167">UnityEngine.Rendering.CameraLateLatchMatrixType</a></li>
+                <li><a href="#section-168">UnityEngine.Rendering.CameraProperties</a></li>
+                <li><a href="#section-169">UnityEngine.Rendering.ColorWriteMask</a></li>
+                <li><a href="#section-170">UnityEngine.Rendering.CommandBuffer</a></li>
+                <li><a href="#section-171">UnityEngine.Rendering.CommandBufferExecutionFlags</a></li>
+                <li><a href="#section-172">UnityEngine.Rendering.CommandBufferExtensions</a></li>
+                <li><a href="#section-173">UnityEngine.Rendering.CompareFunction</a></li>
+                <li><a href="#section-174">UnityEngine.Rendering.ComputeQueueType</a></li>
+                <li><a href="#section-175">UnityEngine.Rendering.CopyTextureSupport</a></li>
+                <li><a href="#section-176">UnityEngine.Rendering.CullingOptions</a></li>
+                <li><a href="#section-177">UnityEngine.Rendering.CullingResults</a></li>
+                <li><a href="#section-178">UnityEngine.Rendering.CullingSplit</a></li>
+                <li><a href="#section-179">UnityEngine.Rendering.CullMode</a></li>
+                <li><a href="#section-180">UnityEngine.Rendering.CustomMarkerCallbackFlags</a></li>
+                <li><a href="#section-181">UnityEngine.Rendering.DefaultReflectionMode</a></li>
+                <li><a href="#section-182">UnityEngine.Rendering.DepthState</a></li>
+                <li><a href="#section-183">UnityEngine.Rendering.DistanceMetric</a></li>
+                <li><a href="#section-184">UnityEngine.Rendering.DrawingSettings</a></li>
+                <li><a href="#section-185">UnityEngine.Rendering.FastMemoryFlags</a></li>
+                <li><a href="#section-186">UnityEngine.Rendering.FilteringSettings</a></li>
+                <li><a href="#section-187">UnityEngine.Rendering.FormatSwizzle</a></li>
+                <li><a href="#section-188">UnityEngine.Rendering.FoveatedRenderingCaps</a></li>
+                <li><a href="#section-189">UnityEngine.Rendering.FoveatedRenderingMode</a></li>
+                <li><a href="#section-190">UnityEngine.Rendering.GizmoSubset</a></li>
+                <li><a href="#section-191">UnityEngine.Rendering.GlobalKeyword</a></li>
+                <li><a href="#section-192">UnityEngine.Rendering.GPUFence</a></li>
+                <li><a href="#section-193">UnityEngine.Rendering.GraphicsDeviceType</a></li>
+                <li><a href="#section-194">UnityEngine.Rendering.GraphicsFence</a></li>
+                <li><a href="#section-195">UnityEngine.Rendering.GraphicsFenceType</a></li>
+                <li><a href="#section-196">UnityEngine.Rendering.GraphicsSettings</a></li>
+                <li><a href="#section-197">UnityEngine.Rendering.GraphicsTier</a></li>
+                <li><a href="#section-198">UnityEngine.Rendering</a></li>
+                <li><a href="#section-199">UnityEngine.Rendering.IndexFormat</a></li>
+                <li><a href="#section-200">UnityEngine.Rendering.LightEvent</a></li>
+                <li><a href="#section-201">UnityEngine.Rendering.LightProbeOutsideHullStrategy</a></li>
+                <li><a href="#section-202">UnityEngine.Rendering.LightProbeUsage</a></li>
+                <li><a href="#section-203">UnityEngine.Rendering.LightShadowResolution</a></li>
+                <li><a href="#section-204">UnityEngine.Rendering.LoadStoreActionDebugModeSettings</a></li>
+                <li><a href="#section-205">UnityEngine.Rendering.LocalKeyword</a></li>
+                <li><a href="#section-206">UnityEngine.Rendering.LocalKeywordSpace</a></li>
+                <li><a href="#section-207">UnityEngine.Rendering.LODParameters</a></li>
+                <li><a href="#section-208">UnityEngine.Rendering.MeshUpdateFlags</a></li>
+                <li><a href="#section-209">UnityEngine.Rendering.MetadataValue</a></li>
+                <li><a href="#section-210">UnityEngine.Rendering.OnDemandRendering</a></li>
+                <li><a href="#section-211">UnityEngine.Rendering.OpaqueSortMode</a></li>
+                <li><a href="#section-212">UnityEngine.Rendering.OpenGLESVersion</a></li>
+                <li><a href="#section-213">UnityEngine.Rendering.PassIdentifier</a></li>
+                <li><a href="#section-214">UnityEngine.Rendering.PassType</a></li>
+                <li><a href="#section-215">UnityEngine.Rendering.PIX</a></li>
+                <li><a href="#section-216">UnityEngine.Rendering.PlatformKeywordSet</a></li>
+                <li><a href="#section-217">UnityEngine.Rendering.RasterState</a></li>
+                <li><a href="#section-218">UnityEngine.Rendering.RealtimeGICPUUsage</a></li>
+                <li><a href="#section-219">UnityEngine.Rendering.ReflectionCubemapCompression</a></li>
+                <li><a href="#section-220">UnityEngine.Rendering.ReflectionProbeBlendInfo</a></li>
+                <li><a href="#section-221">UnityEngine.Rendering.ReflectionProbeClearFlags</a></li>
+                <li><a href="#section-222">UnityEngine.Rendering.ReflectionProbeMode</a></li>
+                <li><a href="#section-223">UnityEngine.Rendering.ReflectionProbeRefreshMode</a></li>
+                <li><a href="#section-224">UnityEngine.Rendering.ReflectionProbeSortingCriteria</a></li>
+                <li><a href="#section-225">UnityEngine.Rendering.ReflectionProbeTimeSlicingMode</a></li>
+                <li><a href="#section-226">UnityEngine.Rendering.ReflectionProbeType</a></li>
+                <li><a href="#section-227">UnityEngine.Rendering.ReflectionProbeUsage</a></li>
+                <li><a href="#section-228">UnityEngine.Rendering.RenderBufferLoadAction</a></li>
+                <li><a href="#section-229">UnityEngine.Rendering.RenderBufferStoreAction</a></li>
+                <li><a href="#section-230">UnityEngine.Rendering.RendererList</a></li>
+                <li><a href="#section-231">UnityEngine.Rendering.RendererListParams</a></li>
+                <li><a href="#section-232">UnityEngine.Rendering.RendererListStatus</a></li>
+                <li><a href="#section-233">UnityEngine.Rendering.RendererUtils</a></li>
+                <li><a href="#section-234">UnityEngine.Rendering.RendererUtils.RendererListDesc</a></li>
+                <li><a href="#section-235">UnityEngine.Rendering.RenderingThreadingMode</a></li>
+                <li><a href="#section-236">UnityEngine.Rendering.RenderPipeline</a></li>
+                <li><a href="#section-237">UnityEngine.Rendering.RenderPipeline.StandardRequest</a></li>
+                <li><a href="#section-238">UnityEngine.Rendering.RenderPipelineAsset</a></li>
+                <li><a href="#section-239">UnityEngine.Rendering.RenderPipelineGlobalSettings</a></li>
+                <li><a href="#section-240">UnityEngine.Rendering.RenderPipelineManager</a></li>
+                <li><a href="#section-241">UnityEngine.Rendering.RenderQueue</a></li>
+                <li><a href="#section-242">UnityEngine.Rendering.RenderQueueRange</a></li>
+                <li><a href="#section-243">UnityEngine.Rendering.RenderStateBlock</a></li>
+                <li><a href="#section-244">UnityEngine.Rendering.RenderStateMask</a></li>
+                <li><a href="#section-245">UnityEngine.Rendering.RenderTargetBinding</a></li>
+                <li><a href="#section-246">UnityEngine.Rendering.RenderTargetBlendState</a></li>
+                <li><a href="#section-247">UnityEngine.Rendering.RenderTargetFlags</a></li>
+                <li><a href="#section-248">UnityEngine.Rendering.RenderTargetIdentifier</a></li>
+                <li><a href="#section-249">UnityEngine.Rendering.RenderTextureSubElement</a></li>
+                <li><a href="#section-250">UnityEngine.Rendering.RTClearFlags</a></li>
+                <li><a href="#section-251">UnityEngine.Rendering.ScopedRenderPass</a></li>
+                <li><a href="#section-252">UnityEngine.Rendering.ScopedSubPass</a></li>
+                <li><a href="#section-253">UnityEngine.Rendering.ScriptableCullingParameters</a></li>
+                <li><a href="#section-254">UnityEngine.Rendering.ScriptableRenderContext</a></li>
+                <li><a href="#section-255">UnityEngine.Rendering.ShaderConstantType</a></li>
+                <li><a href="#section-256">UnityEngine.Rendering.ShaderHardwareTier</a></li>
+                <li><a href="#section-257">UnityEngine.Rendering.ShaderKeyword</a></li>
+                <li><a href="#section-258">UnityEngine.Rendering.ShaderKeywordSet</a></li>
+                <li><a href="#section-259">UnityEngine.Rendering.ShaderKeywordType</a></li>
+                <li><a href="#section-260">UnityEngine.Rendering.ShaderParamType</a></li>
+                <li><a href="#section-261">UnityEngine.Rendering.ShaderPropertyFlags</a></li>
+                <li><a href="#section-262">UnityEngine.Rendering.ShaderPropertyType</a></li>
+                <li><a href="#section-263">UnityEngine.Rendering.ShaderTagId</a></li>
+                <li><a href="#section-264">UnityEngine.Rendering.ShadowCastingMode</a></li>
+                <li><a href="#section-265">UnityEngine.Rendering.ShadowDrawingSettings</a></li>
+                <li><a href="#section-266">UnityEngine.Rendering.ShadowMapPass</a></li>
+                <li><a href="#section-267">UnityEngine.Rendering.ShadowSamplingMode</a></li>
+                <li><a href="#section-268">UnityEngine.Rendering.ShadowSplitData</a></li>
+                <li><a href="#section-269">UnityEngine.Rendering.SinglePassStereoMode</a></li>
+                <li><a href="#section-270">UnityEngine.Rendering.SortingCriteria</a></li>
+                <li><a href="#section-271">UnityEngine.Rendering.SortingGroup</a></li>
+                <li><a href="#section-272">UnityEngine.Rendering.SortingLayerRange</a></li>
+                <li><a href="#section-273">UnityEngine.Rendering.SortingSettings</a></li>
+                <li><a href="#section-274">UnityEngine.Rendering.SphericalHarmonicsL2</a></li>
+                <li><a href="#section-275">UnityEngine.Rendering.SplashScreen</a></li>
+                <li><a href="#section-276">UnityEngine.Rendering.SplashScreen.StopBehavior</a></li>
+                <li><a href="#section-277">UnityEngine.Rendering.StencilOp</a></li>
+                <li><a href="#section-278">UnityEngine.Rendering.StencilState</a></li>
+                <li><a href="#section-279">UnityEngine.Rendering.SubMeshDescriptor</a></li>
+                <li><a href="#section-280">UnityEngine.Rendering.SupportedRenderingFeatures</a></li>
+                <li><a href="#section-281">UnityEngine.Rendering.SupportedRenderingFeatures.LightmapMixedBakeModes</a></li>
+                <li><a href="#section-282">UnityEngine.Rendering.SupportedRenderingFeatures.ReflectionProbeModes</a></li>
+                <li><a href="#section-283">UnityEngine.Rendering.SynchronisationStage</a></li>
+                <li><a href="#section-284">UnityEngine.Rendering.SynchronisationStageFlags</a></li>
+                <li><a href="#section-285">UnityEngine.Rendering.TextureDimension</a></li>
+                <li><a href="#section-286">UnityEngine.Rendering.ThreadedBatchContext</a></li>
+                <li><a href="#section-287">UnityEngine.Rendering.UVChannelFlags</a></li>
+                <li><a href="#section-288">UnityEngine.Rendering.VertexAttribute</a></li>
+                <li><a href="#section-289">UnityEngine.Rendering.VertexAttributeDescriptor</a></li>
+                <li><a href="#section-290">UnityEngine.Rendering.VertexAttributeFormat</a></li>
+                <li><a href="#section-291">UnityEngine.Rendering.VideoShadersIncludeMode</a></li>
+                <li><a href="#section-292">UnityEngine.Rendering.VirtualTexturing.Debugging.Handle</a></li>
+                <li><a href="#section-293">UnityEngine.Rendering.VirtualTexturing.Debugging</a></li>
+                <li><a href="#section-294">UnityEngine.Rendering.VirtualTexturing.EditorHelpers</a></li>
+                <li><a href="#section-295">UnityEngine.Rendering.VirtualTexturing.FilterMode</a></li>
+                <li><a href="#section-296">UnityEngine.Rendering.VirtualTexturing.GPUCacheSetting</a></li>
+                <li><a href="#section-297">UnityEngine.Rendering.VirtualTexturing</a></li>
+                <li><a href="#section-298">UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStack</a></li>
+                <li><a href="#section-299">UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStackRequestLayerParameters</a></li>
+                <li><a href="#section-300">UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStackRequestParameters</a></li>
+                <li><a href="#section-301">UnityEngine.Rendering.VirtualTexturing.Procedural.CreationParameters</a></li>
+                <li><a href="#section-302">UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStack</a></li>
+                <li><a href="#section-303">UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStackRequestLayerParameters</a></li>
+                <li><a href="#section-304">UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStackRequestParameters</a></li>
+                <li><a href="#section-305">UnityEngine.Rendering.VirtualTexturing.Procedural</a></li>
+                <li><a href="#section-306">UnityEngine.Rendering.VirtualTexturing.Procedural.RequestStatus</a></li>
+                <li><a href="#section-307">UnityEngine.Rendering.VirtualTexturing.Procedural.TextureStackBase-1</a></li>
+                <li><a href="#section-308">UnityEngine.Rendering.VirtualTexturing.Procedural.TextureStackRequestHandle-1</a></li>
+                <li><a href="#section-309">UnityEngine.Rendering.VirtualTexturing.Resolver</a></li>
+                <li><a href="#section-310">UnityEngine.Rendering.VirtualTexturing.Streaming</a></li>
+                <li><a href="#section-311">UnityEngine.Rendering.VirtualTexturing.System</a></li>
+                <li><a href="#section-312">UnityEngine.Rendering.VisibleLight</a></li>
+                <li><a href="#section-313">UnityEngine.Rendering.VisibleReflectionProbe</a></li>
+                <li><a href="#section-314">UnityEngine.RenderingPath</a></li>
+                <li><a href="#section-315">UnityEngine.RenderMode</a></li>
+                <li><a href="#section-316">UnityEngine.RenderParams</a></li>
+                <li><a href="#section-317">UnityEngine.RenderSettings</a></li>
+                <li><a href="#section-318">UnityEngine.RenderTargetSetup</a></li>
+                <li><a href="#section-319">UnityEngine.RenderTexture</a></li>
+                <li><a href="#section-320">UnityEngine.RenderTextureCreationFlags</a></li>
+                <li><a href="#section-321">UnityEngine.RenderTextureDescriptor</a></li>
+                <li><a href="#section-322">UnityEngine.RenderTextureFormat</a></li>
+                <li><a href="#section-323">UnityEngine.RenderTextureMemoryless</a></li>
+                <li><a href="#section-324">UnityEngine.RenderTextureReadWrite</a></li>
+                <li><a href="#section-325">UnityEngine.SecondarySpriteTexture</a></li>
+                <li><a href="#section-326">UnityEngine.Shader</a></li>
+                <li><a href="#section-327">UnityEngine.ShaderVariantCollection</a></li>
+                <li><a href="#section-328">UnityEngine.ShaderVariantCollection.ShaderVariant</a></li>
+                <li><a href="#section-329">UnityEngine.SkinnedMeshRenderer</a></li>
+                <li><a href="#section-330">UnityEngine.SparseTexture</a></li>
+                <li><a href="#section-331">UnityEngine.SpriteMeshType</a></li>
+                <li><a href="#section-332">UnityEngine.SpriteRenderer</a></li>
+                <li><a href="#section-333">UnityEngine.StandaloneRenderResize</a></li>
+                <li><a href="#section-334">UnityEngine.Terrain.MaterialType</a></li>
+                <li><a href="#section-335">UnityEngine.TerrainCallbacks.TextureChangedCallback</a></li>
+                <li><a href="#section-336">UnityEngine.TerrainRenderFlags</a></li>
+                <li><a href="#section-337">UnityEngine.TerrainTools.TerrainBuiltinPaintMaterialPasses</a></li>
+                <li><a href="#section-338">UnityEngine.TextCore.LowLevel.GlyphRenderMode</a></li>
+                <li><a href="#section-339">UnityEngine.TextCore.Text.TextShaderUtilities</a></li>
+                <li><a href="#section-340">UnityEngine.TextMesh</a></li>
+                <li><a href="#section-341">UnityEngine.Texture</a></li>
+                <li><a href="#section-342">UnityEngine.Texture2D.EXRFlags</a></li>
+                <li><a href="#section-343">UnityEngine.Texture2D</a></li>
+                <li><a href="#section-344">UnityEngine.Texture2DArray</a></li>
+                <li><a href="#section-345">UnityEngine.Texture3D</a></li>
+                <li><a href="#section-346">UnityEngine.TextureFormat</a></li>
+                <li><a href="#section-347">UnityEngine.TextureMipmapLimitBiasMode</a></li>
+                <li><a href="#section-348">UnityEngine.TextureMipmapLimitGroups</a></li>
+                <li><a href="#section-349">UnityEngine.TextureMipmapLimitSettings</a></li>
+                <li><a href="#section-350">UnityEngine.TextureWrapMode</a></li>
+                <li><a href="#section-351">UnityEngine.Tilemaps.TilemapRenderer.DetectChunkCullingBounds</a></li>
+                <li><a href="#section-352">UnityEngine.Tilemaps.TilemapRenderer</a></li>
+                <li><a href="#section-353">UnityEngine.Tilemaps.TilemapRenderer.Mode</a></li>
+                <li><a href="#section-354">UnityEngine.Tilemaps.TilemapRenderer.SortOrder</a></li>
+                <li><a href="#section-355">UnityEngine.TrailRenderer</a></li>
+                <li><a href="#section-356">UnityEngine.U2D.PixelPerfectRendering</a></li>
+                <li><a href="#section-357">UnityEngine.U2D.SpriteRendererDataAccessExtensions</a></li>
+                <li><a href="#section-358">UnityEngine.U2D.SpriteShapeRenderer</a></li>
+                <li><a href="#section-359">UnityEngine.UI.BaseMeshEffect</a></li>
+                <li><a href="#section-360">UnityEngine.UI.IMaterialModifier</a></li>
+                <li><a href="#section-361">UnityEngine.UI.IMeshModifier</a></li>
+                <li><a href="#section-362">UnityEngine.UI.StencilMaterial</a></li>
+                <li><a href="#section-363">UnityEngine.UIElements.MeshGenerationContext</a></li>
+                <li><a href="#section-364">UnityEngine.UIElements.MeshWriteData</a></li>
+                <li><a href="#section-365">UnityEngine.Video.VideoRenderMode</a></li>
+                <li><a href="#section-366">UnityEngine.VRTextureUsage</a></li>
+                <li><a href="#section-367">UnityEngine.WebCamTexture</a></li>
+                <li><a href="#section-368">UnityEngine.XR.GameViewRenderMode</a></li>
+                <li><a href="#section-369">UnityEngine.XR.MeshChangeState</a></li>
+                <li><a href="#section-370">UnityEngine.XR.MeshGenerationOptions</a></li>
+                <li><a href="#section-371">UnityEngine.XR.MeshGenerationResult</a></li>
+                <li><a href="#section-372">UnityEngine.XR.MeshGenerationStatus</a></li>
+                <li><a href="#section-373">UnityEngine.XR.MeshId</a></li>
+                <li><a href="#section-374">UnityEngine.XR.MeshInfo</a></li>
+                <li><a href="#section-375">UnityEngine.XR.MeshVertexAttributes</a></li>
+                <li><a href="#section-376">UnityEngine.XR.XRDisplaySubsystem.FoveatedRenderingFlags</a></li>
+                <li><a href="#section-377">UnityEngine.XR.XRDisplaySubsystem.TextureLayout</a></li>
+                <li><a href="#section-378">UnityEngine.XR.XRDisplaySubsystem.XRRenderParameter</a></li>
+                <li><a href="#section-379">UnityEngine.XR.XRDisplaySubsystem.XRRenderPass</a></li>
+                <li><a href="#section-380">UnityEngine.XR.XRMeshSubsystem</a></li>
+                <li><a href="#section-381">UnityEngine.XR.XRMeshSubsystemDescriptor</a></li>
+                <li><a href="#section-382">UnityEngine.XR.XRSettings.StereoRenderingMode</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="section-0">
+            <h3>UnityEngine.AdditionalCanvasShaderChannels</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AdditionalCanvasShaderChannels</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AdditionalCanvasShaderChannels</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-1">
+            <h3>UnityEngine.AI.NavMesh</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMesh</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMesh</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+            <h3>UnityEngine.AI.NavMesh.OnNavMeshPreUpdate</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMesh</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMesh.OnNavMeshPreUpdate</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-3">
+            <h3>UnityEngine.AI.NavMeshAgent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshAgent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshAgent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-4">
+            <h3>UnityEngine.AI.NavMeshBuildDebugFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshBuildDebugFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshBuildDebugFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-5">
+            <h3>UnityEngine.AI.NavMeshBuildDebugSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshBuildDebugSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshBuildDebugSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-6">
+            <h3>UnityEngine.AI.NavMeshBuilder</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshBuilder</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshBuilder</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-7">
+            <h3>UnityEngine.AI.NavMeshBuildMarkup</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshBuildMarkup</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshBuildMarkup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-8">
+            <h3>UnityEngine.AI.NavMeshBuildSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshBuildSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshBuildSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-9">
+            <h3>UnityEngine.AI.NavMeshBuildSource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshBuildSource</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshBuildSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-10">
+            <h3>UnityEngine.AI.NavMeshBuildSourceShape</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshBuildSourceShape</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshBuildSourceShape</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-11">
+            <h3>UnityEngine.AI.NavMeshCollectGeometry</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshCollectGeometry</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshCollectGeometry</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-12">
+            <h3>UnityEngine.AI.NavMeshData</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshData</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-13">
+            <h3>UnityEngine.AI.NavMeshDataInstance</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshDataInstance</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshDataInstance</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-14">
+            <h3>UnityEngine.AI.NavMeshHit</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshHit</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshHit</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-15">
+            <h3>UnityEngine.AI.NavMeshLinkData</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshLinkData</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshLinkData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-16">
+            <h3>UnityEngine.AI.NavMeshLinkInstance</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshLinkInstance</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshLinkInstance</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-17">
+            <h3>UnityEngine.AI.NavMeshObstacle</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshObstacle</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshObstacle</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-18">
+            <h3>UnityEngine.AI.NavMeshObstacleShape</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshObstacleShape</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshObstacleShape</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-19">
+            <h3>UnityEngine.AI.NavMeshPath</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshPath</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshPath</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-20">
+            <h3>UnityEngine.AI.NavMeshPathStatus</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshPathStatus</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshPathStatus</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-21">
+            <h3>UnityEngine.AI.NavMeshQueryFilter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshQueryFilter</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshQueryFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-22">
+            <h3>UnityEngine.AI.NavMeshTriangulation</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.NavMeshTriangulation</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.NavMeshTriangulation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-23">
+            <h3>UnityEngine.AI.OffMeshLink</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.OffMeshLink</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.OffMeshLink</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-24">
+            <h3>UnityEngine.AI.OffMeshLinkData</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.OffMeshLinkData</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.OffMeshLinkData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-25">
+            <h3>UnityEngine.AI.OffMeshLinkType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AI.OffMeshLinkType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AI.OffMeshLinkType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-26">
+            <h3>UnityEngine.AudioRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.AudioRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.AudioRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-27">
+            <h3>UnityEngine.BeforeRenderOrderAttribute</h3>
+            <p><strong>Namespace:</strong> UnityEngine.BeforeRenderOrderAttribute</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.BeforeRenderOrderAttribute</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-28">
+            <h3>UnityEngine.BillboardRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.BillboardRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.BillboardRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-29">
+            <h3>UnityEngine.Camera.RenderRequest</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Camera.RenderRequest</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Camera.RenderRequest</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-30">
+            <h3>UnityEngine.Camera.RenderRequestMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Camera.RenderRequestMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Camera.RenderRequestMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-31">
+            <h3>UnityEngine.Camera.RenderRequestOutputSpace</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Camera.RenderRequestOutputSpace</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Camera.RenderRequestOutputSpace</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-32">
+            <h3>UnityEngine.Canvas.WillRenderCanvases</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Canvas.WillRenderCanvases</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Canvas.WillRenderCanvases</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-33">
+            <h3>UnityEngine.CanvasRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.CanvasRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.CanvasRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-34">
+            <h3>UnityEngine.ComputeShader</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ComputeShader</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ComputeShader</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-35">
+            <h3>UnityEngine.CustomRenderTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.CustomRenderTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.CustomRenderTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-36">
+            <h3>UnityEngine.CustomRenderTextureInitializationSource</h3>
+            <p><strong>Namespace:</strong> UnityEngine.CustomRenderTextureInitializationSource</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.CustomRenderTextureInitializationSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-37">
+            <h3>UnityEngine.CustomRenderTextureManager</h3>
+            <p><strong>Namespace:</strong> UnityEngine.CustomRenderTextureManager</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.CustomRenderTextureManager</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-38">
+            <h3>UnityEngine.CustomRenderTextureUpdateMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.CustomRenderTextureUpdateMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.CustomRenderTextureUpdateMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-39">
+            <h3>UnityEngine.CustomRenderTextureUpdateZone</h3>
+            <p><strong>Namespace:</strong> UnityEngine.CustomRenderTextureUpdateZone</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.CustomRenderTextureUpdateZone</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-40">
+            <h3>UnityEngine.CustomRenderTextureUpdateZoneSpace</h3>
+            <p><strong>Namespace:</strong> UnityEngine.CustomRenderTextureUpdateZoneSpace</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.CustomRenderTextureUpdateZoneSpace</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-41">
+            <h3>UnityEngine.DepthTextureMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.DepthTextureMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.DepthTextureMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-42">
+            <h3>UnityEngine.DetailRenderMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.DetailRenderMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.DetailRenderMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-43">
+            <h3>UnityEngine.Experimental.AI.NavMeshLocation</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.AI</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.AI.NavMeshLocation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-44">
+            <h3>UnityEngine.Experimental.AI.NavMeshPolyTypes</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.AI</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.AI.NavMeshPolyTypes</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-45">
+            <h3>UnityEngine.Experimental.AI.NavMeshQuery</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.AI</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.AI.NavMeshQuery</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-46">
+            <h3>UnityEngine.Experimental.AI.NavMeshWorld</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.AI</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.AI.NavMeshWorld</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-47">
+            <h3>UnityEngine.Experimental.GlobalIllumination.RenderSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.GlobalIllumination</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.GlobalIllumination.RenderSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-48">
+            <h3>UnityEngine.Experimental.Playables.MaterialEffectPlayable</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Playables</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Playables.MaterialEffectPlayable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-49">
+            <h3>UnityEngine.Experimental.Playables.TextureMixerPlayable</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Playables</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Playables.TextureMixerPlayable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-50">
+            <h3>UnityEngine.Experimental.Playables.TexturePlayableBinding</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Playables</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Playables.TexturePlayableBinding</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-51">
+            <h3>UnityEngine.Experimental.Playables.TexturePlayableOutput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Playables</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Playables.TexturePlayableOutput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-52">
+            <h3>UnityEngine.Experimental.Rendering.DefaultFormat</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.DefaultFormat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-53">
+            <h3>UnityEngine.Experimental.Rendering.ExternalGPUProfiler</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.ExternalGPUProfiler</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-54">
+            <h3>UnityEngine.Experimental.Rendering.FormatUsage</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.FormatUsage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-55">
+            <h3>UnityEngine.Experimental.Rendering.GraphicsDeviceSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.GraphicsDeviceSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-56">
+            <h3>UnityEngine.Experimental.Rendering.GraphicsFormat</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.GraphicsFormat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-57">
+            <h3>UnityEngine.Experimental.Rendering.GraphicsFormatUtility</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.GraphicsFormatUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-58">
+            <h3>UnityEngine.Experimental.Rendering.GraphicsJobsSyncPoint</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.GraphicsJobsSyncPoint</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-59">
+            <h3>UnityEngine.Experimental.Rendering</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-60">
+            <h3>UnityEngine.Experimental.Rendering.IScriptableRuntimeReflectionSystem</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.IScriptableRuntimeReflectionSystem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-61">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-62">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.ManagementMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.ManagementMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-63">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.RASSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.RASSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-64">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.RayTracingModeMask</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingAccelerationStructure.RayTracingModeMask</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-65">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceCullingConfig</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceCullingConfig</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-66">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceCullingFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceCullingFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-67">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceCullingMaterialTest</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceCullingMaterialTest</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-68">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceCullingResults</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceCullingResults</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-69">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceCullingShaderTagConfig</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceCullingShaderTagConfig</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-70">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceCullingTest</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceCullingTest</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-71">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceMaterialConfig</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceMaterialConfig</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-72">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceMaterialCRC</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceMaterialCRC</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-73">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingInstanceTriangleCullingConfig</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingInstanceTriangleCullingConfig</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-74">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-75">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingShader</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingShader</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-76">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingSubMeshFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingSubMeshFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-77">
+            <h3>UnityEngine.Experimental.Rendering.RayTracingSubMeshFlagsConfig</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.RayTracingSubMeshFlagsConfig</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-78">
+            <h3>UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystem</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-79">
+            <h3>UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.ScriptableRuntimeReflectionSystemSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-80">
+            <h3>UnityEngine.Experimental.Rendering.ShaderWarmup</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.ShaderWarmup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-81">
+            <h3>UnityEngine.Experimental.Rendering.ShaderWarmupSetup</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.ShaderWarmupSetup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-82">
+            <h3>UnityEngine.Experimental.Rendering.TextureCreationFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.TextureCreationFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-83">
+            <h3>UnityEngine.Experimental.Rendering.WaitForPresentSyncPoint</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Experimental.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Experimental.Rendering.WaitForPresentSyncPoint</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-84">
+            <h3>UnityEngine.Font.FontTextureRebuildCallback</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Font.FontTextureRebuildCallback</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Font.FontTextureRebuildCallback</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-85">
+            <h3>UnityEngine.GUITexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.GUITexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.GUITexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-86">
+            <h3>UnityEngine.LightRenderMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.LightRenderMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.LightRenderMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-87">
+            <h3>UnityEngine.LineRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.LineRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.LineRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-88">
+            <h3>UnityEngine.LineTextureMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.LineTextureMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.LineTextureMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-89">
+            <h3>UnityEngine.Material</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Material</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Material</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-90">
+            <h3>UnityEngine.MaterialGlobalIlluminationFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MaterialGlobalIlluminationFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MaterialGlobalIlluminationFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-91">
+            <h3>UnityEngine.MaterialPropertyBlock</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MaterialPropertyBlock</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MaterialPropertyBlock</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-92">
+            <h3>UnityEngine.MaterialPropertyType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MaterialPropertyType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MaterialPropertyType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-93">
+            <h3>UnityEngine.Mesh</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Mesh</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Mesh</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-94">
+            <h3>UnityEngine.Mesh.MeshData</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Mesh.MeshData</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Mesh.MeshData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-95">
+            <h3>UnityEngine.Mesh.MeshDataArray</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Mesh.MeshDataArray</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Mesh.MeshDataArray</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-96">
+            <h3>UnityEngine.MeshCollider</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MeshCollider</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MeshCollider</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-97">
+            <h3>UnityEngine.MeshColliderCookingOptions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MeshColliderCookingOptions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MeshColliderCookingOptions</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-98">
+            <h3>UnityEngine.MeshFilter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MeshFilter</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MeshFilter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-99">
+            <h3>UnityEngine.MeshRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MeshRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MeshRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-100">
+            <h3>UnityEngine.MeshTopology</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MeshTopology</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MeshTopology</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-101">
+            <h3>UnityEngine.MovieTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.MovieTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.MovieTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-102">
+            <h3>UnityEngine.Networking.DownloadHandlerMovieTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Networking.DownloadHandlerMovieTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Networking.DownloadHandlerMovieTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-103">
+            <h3>UnityEngine.Networking.DownloadHandlerTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Networking.DownloadHandlerTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Networking.DownloadHandlerTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-104">
+            <h3>UnityEngine.Networking.UnityWebRequestTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Networking.UnityWebRequestTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Networking.UnityWebRequestTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-105">
+            <h3>UnityEngine.NVIDIA.DLSSTextureTable</h3>
+            <p><strong>Namespace:</strong> UnityEngine.NVIDIA.DLSSTextureTable</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.NVIDIA.DLSSTextureTable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-106">
+            <h3>UnityEngine.ParticleSystem.TextureSheetAnimationModule</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystem.TextureSheetAnimationModule</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystem.TextureSheetAnimationModule</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-107">
+            <h3>UnityEngine.ParticleSystemBakeMeshOptions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemBakeMeshOptions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemBakeMeshOptions</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-108">
+            <h3>UnityEngine.ParticleSystemBakeTextureOptions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemBakeTextureOptions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemBakeTextureOptions</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-109">
+            <h3>UnityEngine.ParticleSystemMeshDistribution</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemMeshDistribution</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemMeshDistribution</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-110">
+            <h3>UnityEngine.ParticleSystemMeshShapeType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemMeshShapeType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemMeshShapeType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-111">
+            <h3>UnityEngine.ParticleSystemRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-112">
+            <h3>UnityEngine.ParticleSystemRenderMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemRenderMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemRenderMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-113">
+            <h3>UnityEngine.ParticleSystemRenderSpace</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemRenderSpace</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemRenderSpace</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-114">
+            <h3>UnityEngine.ParticleSystemShapeTextureChannel</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemShapeTextureChannel</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemShapeTextureChannel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-115">
+            <h3>UnityEngine.ParticleSystemTrailTextureMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ParticleSystemTrailTextureMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ParticleSystemTrailTextureMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-116">
+            <h3>UnityEngine.PhysicMaterial</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PhysicMaterial</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PhysicMaterial</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-117">
+            <h3>UnityEngine.PhysicMaterialCombine</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PhysicMaterialCombine</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PhysicMaterialCombine</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-118">
+            <h3>UnityEngine.PhysicsMaterial2D</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PhysicsMaterial2D</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PhysicsMaterial2D</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-119">
+            <h3>UnityEngine.PlayerLoop.EarlyUpdate.ClearIntermediateRenderers</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.EarlyUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.EarlyUpdate.ClearIntermediateRenderers</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-120">
+            <h3>UnityEngine.PlayerLoop.EarlyUpdate.RendererNotifyInvisible</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.EarlyUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.EarlyUpdate.RendererNotifyInvisible</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-121">
+            <h3>UnityEngine.PlayerLoop.EarlyUpdate.UpdateTextureStreamingManager</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.EarlyUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.EarlyUpdate.UpdateTextureStreamingManager</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-122">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.ClearImmediateRenderers</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.ClearImmediateRenderers</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-123">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.DirectorRenderImage</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.DirectorRenderImage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-124">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.FinishFrameRendering</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.FinishFrameRendering</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-125">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.GraphicsWarmupPreloadedShaders</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.GraphicsWarmupPreloadedShaders</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-126">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.ShaderHandleErrors</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.ShaderHandleErrors</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-127">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.UpdateAllRenderers</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.UpdateAllRenderers</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-128">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.UpdateAllSkinnedMeshes</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.UpdateAllSkinnedMeshes</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-129">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.UpdateCustomRenderTextures</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.UpdateCustomRenderTextures</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-130">
+            <h3>UnityEngine.PlayerLoop.PostLateUpdate.UpdateVideoTextures</h3>
+            <p><strong>Namespace:</strong> UnityEngine.PlayerLoop.PostLateUpdate</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.PlayerLoop.PostLateUpdate.UpdateVideoTextures</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-131">
+            <h3>UnityEngine.ProceduralMaterial</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ProceduralMaterial</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ProceduralMaterial</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-132">
+            <h3>UnityEngine.ProceduralTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ProceduralTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ProceduralTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-133">
+            <h3>UnityEngine.RenderBuffer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderBuffer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderBuffer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-134">
+            <h3>UnityEngine.Renderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Renderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Renderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-135">
+            <h3>UnityEngine.RendererExtensions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RendererExtensions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RendererExtensions</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-136">
+            <h3>UnityEngine.Rendering.AmbientMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.AmbientMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.AmbientMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-137">
+            <h3>UnityEngine.Rendering.AsyncGPUReadback</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.AsyncGPUReadback</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.AsyncGPUReadback</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-138">
+            <h3>UnityEngine.Rendering.AsyncGPUReadbackRequest</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.AsyncGPUReadbackRequest</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.AsyncGPUReadbackRequest</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-139">
+            <h3>UnityEngine.Rendering.AttachmentDescriptor</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.AttachmentDescriptor</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.AttachmentDescriptor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-140">
+            <h3>UnityEngine.Rendering.BatchBufferTarget</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchBufferTarget</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchBufferTarget</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-141">
+            <h3>UnityEngine.Rendering.BatchCullingContext</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchCullingContext</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchCullingContext</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-142">
+            <h3>UnityEngine.Rendering.BatchCullingFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchCullingFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchCullingFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-143">
+            <h3>UnityEngine.Rendering.BatchCullingOutput</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchCullingOutput</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchCullingOutput</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-144">
+            <h3>UnityEngine.Rendering.BatchCullingOutputDrawCommands</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchCullingOutputDrawCommands</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchCullingOutputDrawCommands</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-145">
+            <h3>UnityEngine.Rendering.BatchCullingProjectionType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchCullingProjectionType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchCullingProjectionType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-146">
+            <h3>UnityEngine.Rendering.BatchCullingViewType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchCullingViewType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchCullingViewType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-147">
+            <h3>UnityEngine.Rendering.BatchDrawCommand</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchDrawCommand</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchDrawCommand</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-148">
+            <h3>UnityEngine.Rendering.BatchDrawCommandFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchDrawCommandFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchDrawCommandFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-149">
+            <h3>UnityEngine.Rendering.BatchDrawRange</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchDrawRange</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchDrawRange</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-150">
+            <h3>UnityEngine.Rendering.BatchFilterSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchFilterSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchFilterSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-151">
+            <h3>UnityEngine.Rendering.BatchID</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchID</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchID</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-152">
+            <h3>UnityEngine.Rendering.BatchMaterialID</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchMaterialID</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchMaterialID</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-153">
+            <h3>UnityEngine.Rendering.BatchMeshID</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchMeshID</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchMeshID</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-154">
+            <h3>UnityEngine.Rendering.BatchPackedCullingViewID</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchPackedCullingViewID</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchPackedCullingViewID</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-155">
+            <h3>UnityEngine.Rendering.BatchRendererGroup</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchRendererGroup</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchRendererGroup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-156">
+            <h3>UnityEngine.Rendering.BatchRendererGroup.OnPerformCulling</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BatchRendererGroup</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BatchRendererGroup.OnPerformCulling</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-157">
+            <h3>UnityEngine.Rendering.BlendMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BlendMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BlendMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-158">
+            <h3>UnityEngine.Rendering.BlendOp</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BlendOp</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BlendOp</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-159">
+            <h3>UnityEngine.Rendering.BlendShapeBufferLayout</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BlendShapeBufferLayout</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BlendShapeBufferLayout</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-160">
+            <h3>UnityEngine.Rendering.BlendState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BlendState</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BlendState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-161">
+            <h3>UnityEngine.Rendering.BuiltinRenderTextureType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BuiltinRenderTextureType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BuiltinRenderTextureType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-162">
+            <h3>UnityEngine.Rendering.BuiltinShaderDefine</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BuiltinShaderDefine</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BuiltinShaderDefine</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-163">
+            <h3>UnityEngine.Rendering.BuiltinShaderMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BuiltinShaderMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BuiltinShaderMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-164">
+            <h3>UnityEngine.Rendering.BuiltinShaderType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.BuiltinShaderType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.BuiltinShaderType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-165">
+            <h3>UnityEngine.Rendering.CameraEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CameraEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CameraEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-166">
+            <h3>UnityEngine.Rendering.CameraHDRMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CameraHDRMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CameraHDRMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-167">
+            <h3>UnityEngine.Rendering.CameraLateLatchMatrixType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CameraLateLatchMatrixType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CameraLateLatchMatrixType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-168">
+            <h3>UnityEngine.Rendering.CameraProperties</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CameraProperties</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CameraProperties</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-169">
+            <h3>UnityEngine.Rendering.ColorWriteMask</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ColorWriteMask</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ColorWriteMask</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-170">
+            <h3>UnityEngine.Rendering.CommandBuffer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CommandBuffer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CommandBuffer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-171">
+            <h3>UnityEngine.Rendering.CommandBufferExecutionFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CommandBufferExecutionFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CommandBufferExecutionFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-172">
+            <h3>UnityEngine.Rendering.CommandBufferExtensions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CommandBufferExtensions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CommandBufferExtensions</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-173">
+            <h3>UnityEngine.Rendering.CompareFunction</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CompareFunction</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CompareFunction</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-174">
+            <h3>UnityEngine.Rendering.ComputeQueueType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ComputeQueueType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ComputeQueueType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-175">
+            <h3>UnityEngine.Rendering.CopyTextureSupport</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CopyTextureSupport</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CopyTextureSupport</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-176">
+            <h3>UnityEngine.Rendering.CullingOptions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CullingOptions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CullingOptions</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-177">
+            <h3>UnityEngine.Rendering.CullingResults</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CullingResults</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CullingResults</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-178">
+            <h3>UnityEngine.Rendering.CullingSplit</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CullingSplit</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CullingSplit</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-179">
+            <h3>UnityEngine.Rendering.CullMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CullMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CullMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-180">
+            <h3>UnityEngine.Rendering.CustomMarkerCallbackFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.CustomMarkerCallbackFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.CustomMarkerCallbackFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-181">
+            <h3>UnityEngine.Rendering.DefaultReflectionMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.DefaultReflectionMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.DefaultReflectionMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-182">
+            <h3>UnityEngine.Rendering.DepthState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.DepthState</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.DepthState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-183">
+            <h3>UnityEngine.Rendering.DistanceMetric</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.DistanceMetric</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.DistanceMetric</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-184">
+            <h3>UnityEngine.Rendering.DrawingSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.DrawingSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.DrawingSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-185">
+            <h3>UnityEngine.Rendering.FastMemoryFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.FastMemoryFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.FastMemoryFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-186">
+            <h3>UnityEngine.Rendering.FilteringSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.FilteringSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.FilteringSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-187">
+            <h3>UnityEngine.Rendering.FormatSwizzle</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.FormatSwizzle</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.FormatSwizzle</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-188">
+            <h3>UnityEngine.Rendering.FoveatedRenderingCaps</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.FoveatedRenderingCaps</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.FoveatedRenderingCaps</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-189">
+            <h3>UnityEngine.Rendering.FoveatedRenderingMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.FoveatedRenderingMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.FoveatedRenderingMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-190">
+            <h3>UnityEngine.Rendering.GizmoSubset</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.GizmoSubset</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.GizmoSubset</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-191">
+            <h3>UnityEngine.Rendering.GlobalKeyword</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.GlobalKeyword</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.GlobalKeyword</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-192">
+            <h3>UnityEngine.Rendering.GPUFence</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.GPUFence</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.GPUFence</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-193">
+            <h3>UnityEngine.Rendering.GraphicsDeviceType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.GraphicsDeviceType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.GraphicsDeviceType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-194">
+            <h3>UnityEngine.Rendering.GraphicsFence</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.GraphicsFence</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.GraphicsFence</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-195">
+            <h3>UnityEngine.Rendering.GraphicsFenceType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.GraphicsFenceType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.GraphicsFenceType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-196">
+            <h3>UnityEngine.Rendering.GraphicsSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.GraphicsSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.GraphicsSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-197">
+            <h3>UnityEngine.Rendering.GraphicsTier</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.GraphicsTier</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.GraphicsTier</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-198">
+            <h3>UnityEngine.Rendering</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-199">
+            <h3>UnityEngine.Rendering.IndexFormat</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.IndexFormat</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.IndexFormat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-200">
+            <h3>UnityEngine.Rendering.LightEvent</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.LightEvent</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.LightEvent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-201">
+            <h3>UnityEngine.Rendering.LightProbeOutsideHullStrategy</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.LightProbeOutsideHullStrategy</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.LightProbeOutsideHullStrategy</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-202">
+            <h3>UnityEngine.Rendering.LightProbeUsage</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.LightProbeUsage</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.LightProbeUsage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-203">
+            <h3>UnityEngine.Rendering.LightShadowResolution</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.LightShadowResolution</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.LightShadowResolution</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-204">
+            <h3>UnityEngine.Rendering.LoadStoreActionDebugModeSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.LoadStoreActionDebugModeSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.LoadStoreActionDebugModeSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-205">
+            <h3>UnityEngine.Rendering.LocalKeyword</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.LocalKeyword</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.LocalKeyword</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-206">
+            <h3>UnityEngine.Rendering.LocalKeywordSpace</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.LocalKeywordSpace</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.LocalKeywordSpace</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-207">
+            <h3>UnityEngine.Rendering.LODParameters</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.LODParameters</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.LODParameters</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-208">
+            <h3>UnityEngine.Rendering.MeshUpdateFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.MeshUpdateFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.MeshUpdateFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-209">
+            <h3>UnityEngine.Rendering.MetadataValue</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.MetadataValue</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.MetadataValue</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-210">
+            <h3>UnityEngine.Rendering.OnDemandRendering</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.OnDemandRendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.OnDemandRendering</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-211">
+            <h3>UnityEngine.Rendering.OpaqueSortMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.OpaqueSortMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.OpaqueSortMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-212">
+            <h3>UnityEngine.Rendering.OpenGLESVersion</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.OpenGLESVersion</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.OpenGLESVersion</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-213">
+            <h3>UnityEngine.Rendering.PassIdentifier</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.PassIdentifier</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.PassIdentifier</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-214">
+            <h3>UnityEngine.Rendering.PassType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.PassType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.PassType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-215">
+            <h3>UnityEngine.Rendering.PIX</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.PIX</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.PIX</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-216">
+            <h3>UnityEngine.Rendering.PlatformKeywordSet</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.PlatformKeywordSet</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.PlatformKeywordSet</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-217">
+            <h3>UnityEngine.Rendering.RasterState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RasterState</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RasterState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-218">
+            <h3>UnityEngine.Rendering.RealtimeGICPUUsage</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RealtimeGICPUUsage</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RealtimeGICPUUsage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-219">
+            <h3>UnityEngine.Rendering.ReflectionCubemapCompression</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionCubemapCompression</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionCubemapCompression</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-220">
+            <h3>UnityEngine.Rendering.ReflectionProbeBlendInfo</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionProbeBlendInfo</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionProbeBlendInfo</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-221">
+            <h3>UnityEngine.Rendering.ReflectionProbeClearFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionProbeClearFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionProbeClearFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-222">
+            <h3>UnityEngine.Rendering.ReflectionProbeMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionProbeMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionProbeMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-223">
+            <h3>UnityEngine.Rendering.ReflectionProbeRefreshMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionProbeRefreshMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionProbeRefreshMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-224">
+            <h3>UnityEngine.Rendering.ReflectionProbeSortingCriteria</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionProbeSortingCriteria</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionProbeSortingCriteria</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-225">
+            <h3>UnityEngine.Rendering.ReflectionProbeTimeSlicingMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionProbeTimeSlicingMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionProbeTimeSlicingMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-226">
+            <h3>UnityEngine.Rendering.ReflectionProbeType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionProbeType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionProbeType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-227">
+            <h3>UnityEngine.Rendering.ReflectionProbeUsage</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ReflectionProbeUsage</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ReflectionProbeUsage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-228">
+            <h3>UnityEngine.Rendering.RenderBufferLoadAction</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderBufferLoadAction</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderBufferLoadAction</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-229">
+            <h3>UnityEngine.Rendering.RenderBufferStoreAction</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderBufferStoreAction</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderBufferStoreAction</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-230">
+            <h3>UnityEngine.Rendering.RendererList</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RendererList</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RendererList</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-231">
+            <h3>UnityEngine.Rendering.RendererListParams</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RendererListParams</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RendererListParams</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-232">
+            <h3>UnityEngine.Rendering.RendererListStatus</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RendererListStatus</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RendererListStatus</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-233">
+            <h3>UnityEngine.Rendering.RendererUtils</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RendererUtils</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RendererUtils</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-234">
+            <h3>UnityEngine.Rendering.RendererUtils.RendererListDesc</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RendererUtils</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RendererUtils.RendererListDesc</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-235">
+            <h3>UnityEngine.Rendering.RenderingThreadingMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderingThreadingMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderingThreadingMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-236">
+            <h3>UnityEngine.Rendering.RenderPipeline</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderPipeline</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderPipeline</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-237">
+            <h3>UnityEngine.Rendering.RenderPipeline.StandardRequest</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderPipeline</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderPipeline.StandardRequest</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-238">
+            <h3>UnityEngine.Rendering.RenderPipelineAsset</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderPipelineAsset</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderPipelineAsset</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-239">
+            <h3>UnityEngine.Rendering.RenderPipelineGlobalSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderPipelineGlobalSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderPipelineGlobalSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-240">
+            <h3>UnityEngine.Rendering.RenderPipelineManager</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderPipelineManager</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderPipelineManager</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-241">
+            <h3>UnityEngine.Rendering.RenderQueue</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderQueue</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderQueue</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-242">
+            <h3>UnityEngine.Rendering.RenderQueueRange</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderQueueRange</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderQueueRange</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-243">
+            <h3>UnityEngine.Rendering.RenderStateBlock</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderStateBlock</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderStateBlock</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-244">
+            <h3>UnityEngine.Rendering.RenderStateMask</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderStateMask</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderStateMask</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-245">
+            <h3>UnityEngine.Rendering.RenderTargetBinding</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderTargetBinding</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderTargetBinding</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-246">
+            <h3>UnityEngine.Rendering.RenderTargetBlendState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderTargetBlendState</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderTargetBlendState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-247">
+            <h3>UnityEngine.Rendering.RenderTargetFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderTargetFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderTargetFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-248">
+            <h3>UnityEngine.Rendering.RenderTargetIdentifier</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderTargetIdentifier</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderTargetIdentifier</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-249">
+            <h3>UnityEngine.Rendering.RenderTextureSubElement</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RenderTextureSubElement</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RenderTextureSubElement</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-250">
+            <h3>UnityEngine.Rendering.RTClearFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.RTClearFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.RTClearFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-251">
+            <h3>UnityEngine.Rendering.ScopedRenderPass</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ScopedRenderPass</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ScopedRenderPass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-252">
+            <h3>UnityEngine.Rendering.ScopedSubPass</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ScopedSubPass</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ScopedSubPass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-253">
+            <h3>UnityEngine.Rendering.ScriptableCullingParameters</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ScriptableCullingParameters</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ScriptableCullingParameters</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-254">
+            <h3>UnityEngine.Rendering.ScriptableRenderContext</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ScriptableRenderContext</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ScriptableRenderContext</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-255">
+            <h3>UnityEngine.Rendering.ShaderConstantType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderConstantType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderConstantType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-256">
+            <h3>UnityEngine.Rendering.ShaderHardwareTier</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderHardwareTier</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderHardwareTier</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-257">
+            <h3>UnityEngine.Rendering.ShaderKeyword</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderKeyword</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderKeyword</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-258">
+            <h3>UnityEngine.Rendering.ShaderKeywordSet</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderKeywordSet</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderKeywordSet</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-259">
+            <h3>UnityEngine.Rendering.ShaderKeywordType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderKeywordType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderKeywordType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-260">
+            <h3>UnityEngine.Rendering.ShaderParamType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderParamType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderParamType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-261">
+            <h3>UnityEngine.Rendering.ShaderPropertyFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderPropertyFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderPropertyFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-262">
+            <h3>UnityEngine.Rendering.ShaderPropertyType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderPropertyType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderPropertyType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-263">
+            <h3>UnityEngine.Rendering.ShaderTagId</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShaderTagId</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShaderTagId</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-264">
+            <h3>UnityEngine.Rendering.ShadowCastingMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShadowCastingMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShadowCastingMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-265">
+            <h3>UnityEngine.Rendering.ShadowDrawingSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShadowDrawingSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShadowDrawingSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-266">
+            <h3>UnityEngine.Rendering.ShadowMapPass</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShadowMapPass</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShadowMapPass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-267">
+            <h3>UnityEngine.Rendering.ShadowSamplingMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShadowSamplingMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShadowSamplingMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-268">
+            <h3>UnityEngine.Rendering.ShadowSplitData</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ShadowSplitData</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ShadowSplitData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-269">
+            <h3>UnityEngine.Rendering.SinglePassStereoMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SinglePassStereoMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SinglePassStereoMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-270">
+            <h3>UnityEngine.Rendering.SortingCriteria</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SortingCriteria</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SortingCriteria</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-271">
+            <h3>UnityEngine.Rendering.SortingGroup</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SortingGroup</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SortingGroup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-272">
+            <h3>UnityEngine.Rendering.SortingLayerRange</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SortingLayerRange</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SortingLayerRange</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-273">
+            <h3>UnityEngine.Rendering.SortingSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SortingSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SortingSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-274">
+            <h3>UnityEngine.Rendering.SphericalHarmonicsL2</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SphericalHarmonicsL2</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SphericalHarmonicsL2</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-275">
+            <h3>UnityEngine.Rendering.SplashScreen</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SplashScreen</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SplashScreen</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-276">
+            <h3>UnityEngine.Rendering.SplashScreen.StopBehavior</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SplashScreen</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SplashScreen.StopBehavior</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-277">
+            <h3>UnityEngine.Rendering.StencilOp</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.StencilOp</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.StencilOp</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-278">
+            <h3>UnityEngine.Rendering.StencilState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.StencilState</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.StencilState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-279">
+            <h3>UnityEngine.Rendering.SubMeshDescriptor</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SubMeshDescriptor</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SubMeshDescriptor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-280">
+            <h3>UnityEngine.Rendering.SupportedRenderingFeatures</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SupportedRenderingFeatures</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SupportedRenderingFeatures</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-281">
+            <h3>UnityEngine.Rendering.SupportedRenderingFeatures.LightmapMixedBakeModes</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SupportedRenderingFeatures</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SupportedRenderingFeatures.LightmapMixedBakeModes</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-282">
+            <h3>UnityEngine.Rendering.SupportedRenderingFeatures.ReflectionProbeModes</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SupportedRenderingFeatures</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SupportedRenderingFeatures.ReflectionProbeModes</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-283">
+            <h3>UnityEngine.Rendering.SynchronisationStage</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SynchronisationStage</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SynchronisationStage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-284">
+            <h3>UnityEngine.Rendering.SynchronisationStageFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.SynchronisationStageFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.SynchronisationStageFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-285">
+            <h3>UnityEngine.Rendering.TextureDimension</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.TextureDimension</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.TextureDimension</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-286">
+            <h3>UnityEngine.Rendering.ThreadedBatchContext</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.ThreadedBatchContext</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.ThreadedBatchContext</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-287">
+            <h3>UnityEngine.Rendering.UVChannelFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.UVChannelFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.UVChannelFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-288">
+            <h3>UnityEngine.Rendering.VertexAttribute</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VertexAttribute</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VertexAttribute</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-289">
+            <h3>UnityEngine.Rendering.VertexAttributeDescriptor</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VertexAttributeDescriptor</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VertexAttributeDescriptor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-290">
+            <h3>UnityEngine.Rendering.VertexAttributeFormat</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VertexAttributeFormat</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VertexAttributeFormat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-291">
+            <h3>UnityEngine.Rendering.VideoShadersIncludeMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VideoShadersIncludeMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VideoShadersIncludeMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-292">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Debugging.Handle</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Debugging.Handle</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-293">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Debugging</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Debugging</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-294">
+            <h3>UnityEngine.Rendering.VirtualTexturing.EditorHelpers</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.EditorHelpers</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-295">
+            <h3>UnityEngine.Rendering.VirtualTexturing.FilterMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.FilterMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-296">
+            <h3>UnityEngine.Rendering.VirtualTexturing.GPUCacheSetting</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.GPUCacheSetting</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-297">
+            <h3>UnityEngine.Rendering.VirtualTexturing</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-298">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStack</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-299">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStackRequestLayerParameters</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStackRequestLayerParameters</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-300">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStackRequestParameters</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.CPUTextureStackRequestParameters</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-301">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.CreationParameters</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.CreationParameters</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-302">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStack</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-303">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStackRequestLayerParameters</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStackRequestLayerParameters</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-304">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStackRequestParameters</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.GPUTextureStackRequestParameters</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-305">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-306">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.RequestStatus</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.RequestStatus</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-307">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.TextureStackBase-1</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.TextureStackBase-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-308">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Procedural.TextureStackRequestHandle-1</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Procedural.TextureStackRequestHandle-1</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-309">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Resolver</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Resolver</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-310">
+            <h3>UnityEngine.Rendering.VirtualTexturing.Streaming</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.Streaming</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-311">
+            <h3>UnityEngine.Rendering.VirtualTexturing.System</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VirtualTexturing</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VirtualTexturing.System</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-312">
+            <h3>UnityEngine.Rendering.VisibleLight</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VisibleLight</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VisibleLight</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-313">
+            <h3>UnityEngine.Rendering.VisibleReflectionProbe</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Rendering.VisibleReflectionProbe</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Rendering.VisibleReflectionProbe</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-314">
+            <h3>UnityEngine.RenderingPath</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderingPath</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderingPath</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-315">
+            <h3>UnityEngine.RenderMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-316">
+            <h3>UnityEngine.RenderParams</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderParams</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderParams</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-317">
+            <h3>UnityEngine.RenderSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-318">
+            <h3>UnityEngine.RenderTargetSetup</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderTargetSetup</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderTargetSetup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-319">
+            <h3>UnityEngine.RenderTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-320">
+            <h3>UnityEngine.RenderTextureCreationFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderTextureCreationFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderTextureCreationFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-321">
+            <h3>UnityEngine.RenderTextureDescriptor</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderTextureDescriptor</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderTextureDescriptor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-322">
+            <h3>UnityEngine.RenderTextureFormat</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderTextureFormat</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderTextureFormat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-323">
+            <h3>UnityEngine.RenderTextureMemoryless</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderTextureMemoryless</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderTextureMemoryless</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-324">
+            <h3>UnityEngine.RenderTextureReadWrite</h3>
+            <p><strong>Namespace:</strong> UnityEngine.RenderTextureReadWrite</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.RenderTextureReadWrite</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-325">
+            <h3>UnityEngine.SecondarySpriteTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.SecondarySpriteTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.SecondarySpriteTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-326">
+            <h3>UnityEngine.Shader</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Shader</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Shader</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-327">
+            <h3>UnityEngine.ShaderVariantCollection</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ShaderVariantCollection</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ShaderVariantCollection</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-328">
+            <h3>UnityEngine.ShaderVariantCollection.ShaderVariant</h3>
+            <p><strong>Namespace:</strong> UnityEngine.ShaderVariantCollection.ShaderVariant</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.ShaderVariantCollection.ShaderVariant</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-329">
+            <h3>UnityEngine.SkinnedMeshRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.SkinnedMeshRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.SkinnedMeshRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-330">
+            <h3>UnityEngine.SparseTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.SparseTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.SparseTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-331">
+            <h3>UnityEngine.SpriteMeshType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.SpriteMeshType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.SpriteMeshType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-332">
+            <h3>UnityEngine.SpriteRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.SpriteRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.SpriteRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-333">
+            <h3>UnityEngine.StandaloneRenderResize</h3>
+            <p><strong>Namespace:</strong> UnityEngine.StandaloneRenderResize</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.StandaloneRenderResize</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-334">
+            <h3>UnityEngine.Terrain.MaterialType</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Terrain.MaterialType</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Terrain.MaterialType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-335">
+            <h3>UnityEngine.TerrainCallbacks.TextureChangedCallback</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TerrainCallbacks.TextureChangedCallback</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TerrainCallbacks.TextureChangedCallback</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-336">
+            <h3>UnityEngine.TerrainRenderFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TerrainRenderFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TerrainRenderFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-337">
+            <h3>UnityEngine.TerrainTools.TerrainBuiltinPaintMaterialPasses</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TerrainTools.TerrainBuiltinPaintMaterialPasses</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TerrainTools.TerrainBuiltinPaintMaterialPasses</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-338">
+            <h3>UnityEngine.TextCore.LowLevel.GlyphRenderMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextCore.LowLevel</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextCore.LowLevel.GlyphRenderMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-339">
+            <h3>UnityEngine.TextCore.Text.TextShaderUtilities</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextCore.Text</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextCore.Text.TextShaderUtilities</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-340">
+            <h3>UnityEngine.TextMesh</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextMesh</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextMesh</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-341">
+            <h3>UnityEngine.Texture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Texture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Texture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-342">
+            <h3>UnityEngine.Texture2D.EXRFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Texture2D.EXRFlags</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Texture2D.EXRFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-343">
+            <h3>UnityEngine.Texture2D</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Texture2D</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Texture2D</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-344">
+            <h3>UnityEngine.Texture2DArray</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Texture2DArray</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Texture2DArray</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-345">
+            <h3>UnityEngine.Texture3D</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Texture3D</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Texture3D</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-346">
+            <h3>UnityEngine.TextureFormat</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextureFormat</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextureFormat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-347">
+            <h3>UnityEngine.TextureMipmapLimitBiasMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextureMipmapLimitBiasMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextureMipmapLimitBiasMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-348">
+            <h3>UnityEngine.TextureMipmapLimitGroups</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextureMipmapLimitGroups</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextureMipmapLimitGroups</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-349">
+            <h3>UnityEngine.TextureMipmapLimitSettings</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextureMipmapLimitSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextureMipmapLimitSettings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-350">
+            <h3>UnityEngine.TextureWrapMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TextureWrapMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TextureWrapMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-351">
+            <h3>UnityEngine.Tilemaps.TilemapRenderer.DetectChunkCullingBounds</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Tilemaps.TilemapRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Tilemaps.TilemapRenderer.DetectChunkCullingBounds</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-352">
+            <h3>UnityEngine.Tilemaps.TilemapRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Tilemaps.TilemapRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Tilemaps.TilemapRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-353">
+            <h3>UnityEngine.Tilemaps.TilemapRenderer.Mode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Tilemaps.TilemapRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Tilemaps.TilemapRenderer.Mode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-354">
+            <h3>UnityEngine.Tilemaps.TilemapRenderer.SortOrder</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Tilemaps.TilemapRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Tilemaps.TilemapRenderer.SortOrder</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-355">
+            <h3>UnityEngine.TrailRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.TrailRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.TrailRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-356">
+            <h3>UnityEngine.U2D.PixelPerfectRendering</h3>
+            <p><strong>Namespace:</strong> UnityEngine.U2D.PixelPerfectRendering</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.U2D.PixelPerfectRendering</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-357">
+            <h3>UnityEngine.U2D.SpriteRendererDataAccessExtensions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.U2D.SpriteRendererDataAccessExtensions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.U2D.SpriteRendererDataAccessExtensions</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-358">
+            <h3>UnityEngine.U2D.SpriteShapeRenderer</h3>
+            <p><strong>Namespace:</strong> UnityEngine.U2D.SpriteShapeRenderer</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.U2D.SpriteShapeRenderer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-359">
+            <h3>UnityEngine.UI.BaseMeshEffect</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.BaseMeshEffect</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.BaseMeshEffect</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-360">
+            <h3>UnityEngine.UI.IMaterialModifier</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.IMaterialModifier</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.IMaterialModifier</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-361">
+            <h3>UnityEngine.UI.IMeshModifier</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.IMeshModifier</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.IMeshModifier</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-362">
+            <h3>UnityEngine.UI.StencilMaterial</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UI.StencilMaterial</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UI.StencilMaterial</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-363">
+            <h3>UnityEngine.UIElements.MeshGenerationContext</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MeshGenerationContext</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MeshGenerationContext</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-364">
+            <h3>UnityEngine.UIElements.MeshWriteData</h3>
+            <p><strong>Namespace:</strong> UnityEngine.UIElements.MeshWriteData</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.UIElements.MeshWriteData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-365">
+            <h3>UnityEngine.Video.VideoRenderMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.Video.VideoRenderMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.Video.VideoRenderMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-366">
+            <h3>UnityEngine.VRTextureUsage</h3>
+            <p><strong>Namespace:</strong> UnityEngine.VRTextureUsage</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.VRTextureUsage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-367">
+            <h3>UnityEngine.WebCamTexture</h3>
+            <p><strong>Namespace:</strong> UnityEngine.WebCamTexture</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.WebCamTexture</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-368">
+            <h3>UnityEngine.XR.GameViewRenderMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.GameViewRenderMode</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.GameViewRenderMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-369">
+            <h3>UnityEngine.XR.MeshChangeState</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.MeshChangeState</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.MeshChangeState</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-370">
+            <h3>UnityEngine.XR.MeshGenerationOptions</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.MeshGenerationOptions</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.MeshGenerationOptions</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-371">
+            <h3>UnityEngine.XR.MeshGenerationResult</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.MeshGenerationResult</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.MeshGenerationResult</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-372">
+            <h3>UnityEngine.XR.MeshGenerationStatus</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.MeshGenerationStatus</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.MeshGenerationStatus</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-373">
+            <h3>UnityEngine.XR.MeshId</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.MeshId</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.MeshId</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-374">
+            <h3>UnityEngine.XR.MeshInfo</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.MeshInfo</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.MeshInfo</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-375">
+            <h3>UnityEngine.XR.MeshVertexAttributes</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.MeshVertexAttributes</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.MeshVertexAttributes</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-376">
+            <h3>UnityEngine.XR.XRDisplaySubsystem.FoveatedRenderingFlags</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRDisplaySubsystem</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRDisplaySubsystem.FoveatedRenderingFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-377">
+            <h3>UnityEngine.XR.XRDisplaySubsystem.TextureLayout</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRDisplaySubsystem</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRDisplaySubsystem.TextureLayout</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-378">
+            <h3>UnityEngine.XR.XRDisplaySubsystem.XRRenderParameter</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRDisplaySubsystem</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRDisplaySubsystem.XRRenderParameter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-379">
+            <h3>UnityEngine.XR.XRDisplaySubsystem.XRRenderPass</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRDisplaySubsystem</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRDisplaySubsystem.XRRenderPass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-380">
+            <h3>UnityEngine.XR.XRMeshSubsystem</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRMeshSubsystem</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRMeshSubsystem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-381">
+            <h3>UnityEngine.XR.XRMeshSubsystemDescriptor</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRMeshSubsystemDescriptor</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRMeshSubsystemDescriptor</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-382">
+            <h3>UnityEngine.XR.XRSettings.StereoRenderingMode</h3>
+            <p><strong>Namespace:</strong> UnityEngine.XR.XRSettings</p>
+            <div class="section-content">
+<p>Content not available for UnityEngine.XR.XRSettings.StereoRenderingMode</p>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="back-to-top">↑ Top</a>
+</body>
+</html>

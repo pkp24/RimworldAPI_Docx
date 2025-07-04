@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RimWorld_Items - Combined API Documentation</title>
+    <meta name="robots" content="index, follow">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .toc { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .toc h2 { margin-top: 0; color: #34495e; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { color: #2980b9; text-decoration: none; font-weight: 500; }
+        .toc a:hover { text-decoration: underline; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .section h3 { color: #e74c3c; margin-top: 0; }
+        .section-content { margin-top: 15px; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #3498db; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; }
+        .back-to-top:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RimWorld_Items - Combined API Documentation</h1>
+        <p>This page contains combined documentation for 214 related API classes and components.</p>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-0">RimWorld.AncientStructureGenParms.ScatteredThing</a></li>
+                <li><a href="#section-1">RimWorld.Apparel</a></li>
+                <li><a href="#section-2">RimWorld.ApparelGraphicRecord</a></li>
+                <li><a href="#section-3">RimWorld.ApparelGraphicRecordGetter</a></li>
+                <li><a href="#section-4">RimWorld.ApparelLayerDefOf</a></li>
+                <li><a href="#section-5">RimWorld.ApparelPolicy</a></li>
+                <li><a href="#section-6">RimWorld.ApparelProperties</a></li>
+                <li><a href="#section-7">RimWorld.ApparelRequirement</a></li>
+                <li><a href="#section-8">RimWorld.ApparelRequirementSource</a></li>
+                <li><a href="#section-9">RimWorld.ApparelRequirementWithSource</a></li>
+                <li><a href="#section-10">RimWorld.ApparelUtility</a></li>
+                <li><a href="#section-11">RimWorld.ApparelUtility.LayerGroupPair</a></li>
+                <li><a href="#section-12">RimWorld.BaseGen.SymbolResolver_EdgeThing</a></li>
+                <li><a href="#section-13">RimWorld.BaseGen.SymbolResolver_FillWithThings</a></li>
+                <li><a href="#section-14">RimWorld.BaseGen.SymbolResolver_SingleThing</a></li>
+                <li><a href="#section-15">RimWorld.BaseGen.SymbolResolver_ThingSet</a></li>
+                <li><a href="#section-16">RimWorld.BookOutcomeProperties_GainResearch.BookResearchItem</a></li>
+                <li><a href="#section-17">RimWorld.BookOutcomeProperties_GainResearch.BookTabItem</a></li>
+                <li><a href="#section-18">RimWorld.CompApparelReloadable</a></li>
+                <li><a href="#section-19">RimWorld.CompApparelVerbOwner</a></li>
+                <li><a href="#section-20">RimWorld.CompApparelVerbOwner_Charged</a></li>
+                <li><a href="#section-21">RimWorld.CompCauseHediff_Apparel</a></li>
+                <li><a href="#section-22">RimWorld.CompFoodPoisonable</a></li>
+                <li><a href="#section-23">RimWorld.CompProperties_ApparelReloadable</a></li>
+                <li><a href="#section-24">RimWorld.CompProperties_ApparelVerbOwner</a></li>
+                <li><a href="#section-25">RimWorld.CompProperties_ApparelVerbOwnerCharged</a></li>
+                <li><a href="#section-26">RimWorld.CompProperties_CauseHediff_Apparel</a></li>
+                <li><a href="#section-27">RimWorld.CompProperties_FoodPoisonable</a></li>
+                <li><a href="#section-28">RimWorld.CompProperties_SpawnerItems</a></li>
+                <li><a href="#section-29">RimWorld.CompProperties_ThingContainer</a></li>
+                <li><a href="#section-30">RimWorld.CompSpawnerItems</a></li>
+                <li><a href="#section-31">RimWorld.CompThingContainer</a></li>
+                <li><a href="#section-32">RimWorld.Dialog_ChooseThingsForNewColony</a></li>
+                <li><a href="#section-33">RimWorld.Dialog_EditIdeoStyleItems.ExpandedInfo</a></li>
+                <li><a href="#section-34">RimWorld.Dialog_EditIdeoStyleItems</a></li>
+                <li><a href="#section-35">RimWorld.Dialog_EditIdeoStyleItems.ItemType</a></li>
+                <li><a href="#section-36">RimWorld.Dialog_ManageApparelPolicies</a></li>
+                <li><a href="#section-37">RimWorld.Dialog_ManageFoodPolicies</a></li>
+                <li><a href="#section-38">RimWorld.Dialog_SellableItems</a></li>
+                <li><a href="#section-39">RimWorld.FloatMenuOptionProvider_FromThing</a></li>
+                <li><a href="#section-40">RimWorld.FloatMenuOptionProvider_OpenThing</a></li>
+                <li><a href="#section-41">RimWorld.FloatMenuOptionProvider_PickUpItem</a></li>
+                <li><a href="#section-42">RimWorld.FoodKind</a></li>
+                <li><a href="#section-43">RimWorld.FoodPoisonCause</a></li>
+                <li><a href="#section-44">RimWorld.FoodPoisonCauseExtension</a></li>
+                <li><a href="#section-45">RimWorld.FoodPolicy</a></li>
+                <li><a href="#section-46">RimWorld.FoodPreferability</a></li>
+                <li><a href="#section-47">RimWorld.FoodRestrictionDatabase</a></li>
+                <li><a href="#section-48">RimWorld.FoodTypeFlags</a></li>
+                <li><a href="#section-49">RimWorld.FoodTypeFlagsExtension</a></li>
+                <li><a href="#section-50">RimWorld.FoodUtility</a></li>
+                <li><a href="#section-51">RimWorld.FoodUtility.ThoughtFromIngesting</a></li>
+                <li><a href="#section-52">RimWorld.GatherItemsForCaravanUtility</a></li>
+                <li><a href="#section-53">RimWorld.GenStep_AsteroidItemStash</a></li>
+                <li><a href="#section-54">RimWorld.GenStep_ItemStash</a></li>
+                <li><a href="#section-55">RimWorld.GenThing</a></li>
+                <li><a href="#section-56">RimWorld.GiveItemsToPawnUtility</a></li>
+                <li><a href="#section-57">RimWorld.HiddenItemsManager</a></li>
+                <li><a href="#section-58">RimWorld.IApparelSource</a></li>
+                <li><a href="#section-59">RimWorld.IdeoApparelGender</a></li>
+                <li><a href="#section-60">RimWorld.IngestionOutcomeDoer_UseThing</a></li>
+                <li><a href="#section-61">RimWorld.ITab_PenFood</a></li>
+                <li><a href="#section-62">RimWorld.ItemAvailability</a></li>
+                <li><a href="#section-63">RimWorld.IThingStudied</a></li>
+                <li><a href="#section-64">RimWorld.IWaitForItemsLordToil</a></li>
+                <li><a href="#section-65">RimWorld.LayoutThing</a></li>
+                <li><a href="#section-66">RimWorld.LordToil_AssaultThings</a></li>
+                <li><a href="#section-67">RimWorld.LordToil_PrepareCaravan_GatherItems</a></li>
+                <li><a href="#section-68">RimWorld.LordToil_TravelAndWaitForItems</a></li>
+                <li><a href="#section-69">RimWorld.LordToil_WaitForItems</a></li>
+                <li><a href="#section-70">RimWorld.MinifiedThing</a></li>
+                <li><a href="#section-71">RimWorld.Need_Food</a></li>
+                <li><a href="#section-72">RimWorld.Pawn_ApparelTracker</a></li>
+                <li><a href="#section-73">RimWorld.Pawn_FoodRestrictionTracker</a></li>
+                <li><a href="#section-74">RimWorld.PawnApparelGenerator</a></li>
+                <li><a href="#section-75">RimWorld.PawnStyleItemChooser</a></li>
+                <li><a href="#section-76">RimWorld.Planet.CaravanItemsTabUtility</a></li>
+                <li><a href="#section-77">RimWorld.Planet.CaravanThingsTabUtility</a></li>
+                <li><a href="#section-78">RimWorld.Planet.DaysWorthOfFoodCalculator</a></li>
+                <li><a href="#section-79">RimWorld.Planet.ForagedFoodPerDayCalculator</a></li>
+                <li><a href="#section-80">RimWorld.Planet.ItemStashContentsComp</a></li>
+                <li><a href="#section-81">RimWorld.Planet.WITab_Caravan_Items</a></li>
+                <li><a href="#section-82">RimWorld.PlayerItemAccessibilityUtility</a></li>
+                <li><a href="#section-83">RimWorld.PossessionThingDefCountClass</a></li>
+                <li><a href="#section-84">RimWorld.Precept_Apparel</a></li>
+                <li><a href="#section-85">RimWorld.Precept_ThingDef</a></li>
+                <li><a href="#section-86">RimWorld.Precept_ThingStyle</a></li>
+                <li><a href="#section-87">RimWorld.PreceptApparelRequirement</a></li>
+                <li><a href="#section-88">RimWorld.PreceptComp_Apparel</a></li>
+                <li><a href="#section-89">RimWorld.PreceptComp_Apparel_Desired</a></li>
+                <li><a href="#section-90">RimWorld.PreceptComp_Apparel_DesiredStrong</a></li>
+                <li><a href="#section-91">RimWorld.PreceptThingChance</a></li>
+                <li><a href="#section-92">RimWorld.PreceptThingChanceClass</a></li>
+                <li><a href="#section-93">RimWorld.PreceptThingPair</a></li>
+                <li><a href="#section-94">RimWorld.PrefabThingData</a></li>
+                <li><a href="#section-95">RimWorld.QuestGen.QuestNode_AddItemsReward</a></li>
+                <li><a href="#section-96">RimWorld.QuestGen.QuestNode_GenerateThing</a></li>
+                <li><a href="#section-97">RimWorld.QuestGen.QuestNode_GenerateThingSet</a></li>
+                <li><a href="#section-98">RimWorld.QuestGen.QuestNode_GetThingPlayerCanProduce</a></li>
+                <li><a href="#section-99">RimWorld.QuestGen.QuestNode_SetAllApparelLocked</a></li>
+                <li><a href="#section-100">RimWorld.QuestGen.QuestNode_SetItemStashContents</a></li>
+                <li><a href="#section-101">RimWorld.QuestGen.QuestNode_SetItemStashContents.ThingCategoryCount</a></li>
+                <li><a href="#section-102">RimWorld.QuestGen.QuestNode_ThingsProduced</a></li>
+                <li><a href="#section-103">RimWorld.QuestGen.QuestNode_TradeRequest_GetRequestedThing</a></li>
+                <li><a href="#section-104">RimWorld.QuestGen.QuestPart_DestroyAllThingsOfDef</a></li>
+                <li><a href="#section-105">RimWorld.QuestPart_AssaultThings</a></li>
+                <li><a href="#section-106">RimWorld.QuestPart_BegForItems</a></li>
+                <li><a href="#section-107">RimWorld.QuestPart_DestroyThingsOrPassToWorld</a></li>
+                <li><a href="#section-108">RimWorld.QuestPart_DestroyThingsOrPassToWorldOnCleanup</a></li>
+                <li><a href="#section-109">RimWorld.QuestPart_FactionGoodwillChange_ShuttleSentThings</a></li>
+                <li><a href="#section-110">RimWorld.QuestPart_Filter_AllRequiredThingsLoaded</a></li>
+                <li><a href="#section-111">RimWorld.QuestPart_Filter_AllThingsHacked</a></li>
+                <li><a href="#section-112">RimWorld.QuestPart_Filter_AllThingsHackedOrDestroyed</a></li>
+                <li><a href="#section-113">RimWorld.QuestPart_Filter_ThingAnalyzed</a></li>
+                <li><a href="#section-114">RimWorld.QuestPart_RequiredShuttleThings</a></li>
+                <li><a href="#section-115">RimWorld.QuestPart_RequirementsToAcceptThingStudied</a></li>
+                <li><a href="#section-116">RimWorld.QuestPart_RequirementsToAcceptThingStudied_ArchotechStructures</a></li>
+                <li><a href="#section-117">RimWorld.QuestPart_SetAllApparelLocked</a></li>
+                <li><a href="#section-118">RimWorld.QuestPart_SpawnThing</a></li>
+                <li><a href="#section-119">RimWorld.QuestPart_ThingsProduced</a></li>
+                <li><a href="#section-120">RimWorld.Recipe_AdministerUsableItem</a></li>
+                <li><a href="#section-121">RimWorld.Reward_DefinedThingDef</a></li>
+                <li><a href="#section-122">RimWorld.Reward_Items</a></li>
+                <li><a href="#section-123">RimWorld.Reward_Items.RememberedItem</a></li>
+                <li><a href="#section-124">RimWorld.RitualOutcomeComp_DataThingPresence</a></li>
+                <li><a href="#section-125">RimWorld.RitualOutcomeComp_TargetThingStat</a></li>
+                <li><a href="#section-126">RimWorld.RitualPosition_BehindThingCenter</a></li>
+                <li><a href="#section-127">RimWorld.RitualPosition_BesideThing</a></li>
+                <li><a href="#section-128">RimWorld.RitualPosition_InFrontThingCenter</a></li>
+                <li><a href="#section-129">RimWorld.RitualPosition_NearbyThing</a></li>
+                <li><a href="#section-130">RimWorld.RitualPosition_ThingDef</a></li>
+                <li><a href="#section-131">RimWorld.RitualPosition_VerticalThingCenter</a></li>
+                <li><a href="#section-132">RimWorld.RitualStageAction_DropThing</a></li>
+                <li><a href="#section-133">RimWorld.RitualTargetFilter_SelectedThing</a></li>
+                <li><a href="#section-134">RimWorld.RoomPart_CornerThing</a></li>
+                <li><a href="#section-135">RimWorld.RoomPart_ThingDef</a></li>
+                <li><a href="#section-136">RimWorld.RoomRequirement_AllThingsAnyOfAreGlowing</a></li>
+                <li><a href="#section-137">RimWorld.RoomRequirement_AllThingsAreGlowing</a></li>
+                <li><a href="#section-138">RimWorld.RoomRequirement_Thing</a></li>
+                <li><a href="#section-139">RimWorld.RoomRequirement_ThingAnyOf</a></li>
+                <li><a href="#section-140">RimWorld.RoomRequirement_ThingAnyOfCount</a></li>
+                <li><a href="#section-141">RimWorld.RoomRequirement_ThingCount</a></li>
+                <li><a href="#section-142">RimWorld.RoyalTitleFoodRequirement</a></li>
+                <li><a href="#section-143">RimWorld.ScenPart_ScatterThings</a></li>
+                <li><a href="#section-144">RimWorld.ScenPart_ScatterThingsAnywhere</a></li>
+                <li><a href="#section-145">RimWorld.ScenPart_ScatterThingsNearPlayerStart</a></li>
+                <li><a href="#section-146">RimWorld.ScenPart_StartingThing_Defined</a></li>
+                <li><a href="#section-147">RimWorld.ScenPart_ThingCount</a></li>
+                <li><a href="#section-148">RimWorld.SectionLayer_ThingsPowerGrid</a></li>
+                <li><a href="#section-149">RimWorld.SketchGen.SketchResolver_AddCornerThings</a></li>
+                <li><a href="#section-150">RimWorld.SketchGen.SketchResolver_AddThingsCentral</a></li>
+                <li><a href="#section-151">RimWorld.SketchGen.SketchResolver_AddWallEdgeThings</a></li>
+                <li><a href="#section-152">RimWorld.SketchThing</a></li>
+                <li><a href="#section-153">RimWorld.SpecialThingFilterDefOf</a></li>
+                <li><a href="#section-154">RimWorld.StageFailTrigger_NoThingPresent</a></li>
+                <li><a href="#section-155">RimWorld.StageFailTrigger_TargetThingMissing</a></li>
+                <li><a href="#section-156">RimWorld.StatPart_Food</a></li>
+                <li><a href="#section-157">RimWorld.StatPart_LifeStageMaxFood</a></li>
+                <li><a href="#section-158">RimWorld.StatPart_UnfinishedThingIngredientsMass</a></li>
+                <li><a href="#section-159">RimWorld.StockGenerator_MiscItems</a></li>
+                <li><a href="#section-160">RimWorld.StyleItemCategoryDef</a></li>
+                <li><a href="#section-161">RimWorld.StyleItemCategoryDefOf</a></li>
+                <li><a href="#section-162">RimWorld.StyleItemDef</a></li>
+                <li><a href="#section-163">RimWorld.StyleItemFrequency</a></li>
+                <li><a href="#section-164">RimWorld.StyleItemSpawningProperties</a></li>
+                <li><a href="#section-165">RimWorld.StyleItemTab</a></li>
+                <li><a href="#section-166">RimWorld.StyleItemTagWeighted</a></li>
+                <li><a href="#section-167">RimWorld.Tale_SinglePawnAndThing</a></li>
+                <li><a href="#section-168">RimWorld.TaleData_Thing</a></li>
+                <li><a href="#section-169">RimWorld.ThingCategoryDefOf</a></li>
+                <li><a href="#section-170">RimWorld.ThingDefGenerator_Corpses</a></li>
+                <li><a href="#section-171">RimWorld.ThingDefGenerator_Meat</a></li>
+                <li><a href="#section-172">RimWorld.ThingDefGenerator_Neurotrainer</a></li>
+                <li><a href="#section-173">RimWorld.ThingDefGenerator_Techprints</a></li>
+                <li><a href="#section-174">RimWorld.ThingDefOf</a></li>
+                <li><a href="#section-175">RimWorld.ThingOverlaysHandle</a></li>
+                <li><a href="#section-176">RimWorld.ThingRequiringRoyalPermissionUtility</a></li>
+                <li><a href="#section-177">RimWorld.ThingSelectionUtility</a></li>
+                <li><a href="#section-178">RimWorld.ThingSetMaker</a></li>
+                <li><a href="#section-179">RimWorld.ThingSetMaker_Books</a></li>
+                <li><a href="#section-180">RimWorld.ThingSetMaker_Conditional</a></li>
+                <li><a href="#section-181">RimWorld.ThingSetMaker_Conditional_FactionRelation</a></li>
+                <li><a href="#section-182">RimWorld.ThingSetMaker_Conditional_MakingFaction</a></li>
+                <li><a href="#section-183">RimWorld.ThingSetMaker_Conditional_MinMaxTotalMarketValue</a></li>
+                <li><a href="#section-184">RimWorld.ThingSetMaker_Conditional_ResearchFinished</a></li>
+                <li><a href="#section-185">RimWorld.ThingSetMaker_Count</a></li>
+                <li><a href="#section-186">RimWorld.ThingSetMaker_MapGen_AncientPodContents</a></li>
+                <li><a href="#section-187">RimWorld.ThingSetMaker_MarketValue</a></li>
+                <li><a href="#section-188">RimWorld.ThingSetMaker_Meteorite</a></li>
+                <li><a href="#section-189">RimWorld.ThingSetMaker_Nutrition</a></li>
+                <li><a href="#section-190">RimWorld.ThingSetMaker_Pawn</a></li>
+                <li><a href="#section-191">RimWorld.ThingSetMaker_RandomGeneralGoods</a></li>
+                <li><a href="#section-192">RimWorld.ThingSetMaker_RandomOption</a></li>
+                <li><a href="#section-193">RimWorld.ThingSetMaker_RandomOption.Option</a></li>
+                <li><a href="#section-194">RimWorld.ThingSetMaker_RefugeePod</a></li>
+                <li><a href="#section-195">RimWorld.ThingSetMaker_ResourcePod</a></li>
+                <li><a href="#section-196">RimWorld.ThingSetMaker_StackCount</a></li>
+                <li><a href="#section-197">RimWorld.ThingSetMaker_SubTree</a></li>
+                <li><a href="#section-198">RimWorld.ThingSetMaker_Sum</a></li>
+                <li><a href="#section-199">RimWorld.ThingSetMaker_Sum.Option</a></li>
+                <li><a href="#section-200">RimWorld.ThingSetMaker_Techprints</a></li>
+                <li><a href="#section-201">RimWorld.ThingSetMaker_TraderStock</a></li>
+                <li><a href="#section-202">RimWorld.ThingSetMakerByTotalStatUtility</a></li>
+                <li><a href="#section-203">RimWorld.ThingSetMakerDef</a></li>
+                <li><a href="#section-204">RimWorld.ThingSetMakerDefOf</a></li>
+                <li><a href="#section-205">RimWorld.ThingSetMakerParams</a></li>
+                <li><a href="#section-206">RimWorld.ThingSetMakerUtility</a></li>
+                <li><a href="#section-207">RimWorld.ThingStuffPair</a></li>
+                <li><a href="#section-208">RimWorld.ThingStuffPairWithQuality</a></li>
+                <li><a href="#section-209">RimWorld.ThingStyleHelper</a></li>
+                <li><a href="#section-210">RimWorld.Thought_IdeoRoleApparelRequirementNotMet</a></li>
+                <li><a href="#section-211">RimWorld.Thought_Situational_WearingDesiredApparel</a></li>
+                <li><a href="#section-212">RimWorld.Trigger_HighValueThingsAround</a></li>
+                <li><a href="#section-213">RimWorld.WorldObjectCompProperties_ItemStashContents</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="section-0">
+            <h3>RimWorld.AncientStructureGenParms.ScatteredThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.AncientStructureGenParms.ScatteredThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.AncientStructureGenParms.ScatteredThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-1">
+            <h3>RimWorld.Apparel</h3>
+            <p><strong>Namespace:</strong> RimWorld.Apparel</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Apparel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+            <h3>RimWorld.ApparelGraphicRecord</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelGraphicRecord</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelGraphicRecord</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-3">
+            <h3>RimWorld.ApparelGraphicRecordGetter</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelGraphicRecordGetter</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelGraphicRecordGetter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-4">
+            <h3>RimWorld.ApparelLayerDefOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelLayerDefOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelLayerDefOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-5">
+            <h3>RimWorld.ApparelPolicy</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelPolicy</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelPolicy</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-6">
+            <h3>RimWorld.ApparelProperties</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelProperties</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelProperties</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-7">
+            <h3>RimWorld.ApparelRequirement</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelRequirement</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelRequirement</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-8">
+            <h3>RimWorld.ApparelRequirementSource</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelRequirementSource</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelRequirementSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-9">
+            <h3>RimWorld.ApparelRequirementWithSource</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelRequirementWithSource</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelRequirementWithSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-10">
+            <h3>RimWorld.ApparelUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-11">
+            <h3>RimWorld.ApparelUtility.LayerGroupPair</h3>
+            <p><strong>Namespace:</strong> RimWorld.ApparelUtility.LayerGroupPair</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ApparelUtility.LayerGroupPair</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-12">
+            <h3>RimWorld.BaseGen.SymbolResolver_EdgeThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.BaseGen.SymbolResolver_EdgeThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.BaseGen.SymbolResolver_EdgeThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-13">
+            <h3>RimWorld.BaseGen.SymbolResolver_FillWithThings</h3>
+            <p><strong>Namespace:</strong> RimWorld.BaseGen.SymbolResolver_FillWithThings</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.BaseGen.SymbolResolver_FillWithThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-14">
+            <h3>RimWorld.BaseGen.SymbolResolver_SingleThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.BaseGen.SymbolResolver_SingleThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.BaseGen.SymbolResolver_SingleThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-15">
+            <h3>RimWorld.BaseGen.SymbolResolver_ThingSet</h3>
+            <p><strong>Namespace:</strong> RimWorld.BaseGen.SymbolResolver_ThingSet</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.BaseGen.SymbolResolver_ThingSet</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-16">
+            <h3>RimWorld.BookOutcomeProperties_GainResearch.BookResearchItem</h3>
+            <p><strong>Namespace:</strong> RimWorld.BookOutcomeProperties_GainResearch.BookResearchItem</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.BookOutcomeProperties_GainResearch.BookResearchItem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-17">
+            <h3>RimWorld.BookOutcomeProperties_GainResearch.BookTabItem</h3>
+            <p><strong>Namespace:</strong> RimWorld.BookOutcomeProperties_GainResearch.BookTabItem</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.BookOutcomeProperties_GainResearch.BookTabItem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-18">
+            <h3>RimWorld.CompApparelReloadable</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompApparelReloadable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompApparelReloadable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-19">
+            <h3>RimWorld.CompApparelVerbOwner</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompApparelVerbOwner</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompApparelVerbOwner</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-20">
+            <h3>RimWorld.CompApparelVerbOwner_Charged</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompApparelVerbOwner_Charged</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompApparelVerbOwner_Charged</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-21">
+            <h3>RimWorld.CompCauseHediff_Apparel</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompCauseHediff_Apparel</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompCauseHediff_Apparel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-22">
+            <h3>RimWorld.CompFoodPoisonable</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompFoodPoisonable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompFoodPoisonable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-23">
+            <h3>RimWorld.CompProperties_ApparelReloadable</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_ApparelReloadable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_ApparelReloadable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-24">
+            <h3>RimWorld.CompProperties_ApparelVerbOwner</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_ApparelVerbOwner</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_ApparelVerbOwner</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-25">
+            <h3>RimWorld.CompProperties_ApparelVerbOwnerCharged</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_ApparelVerbOwnerCharged</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_ApparelVerbOwnerCharged</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-26">
+            <h3>RimWorld.CompProperties_CauseHediff_Apparel</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_CauseHediff_Apparel</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_CauseHediff_Apparel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-27">
+            <h3>RimWorld.CompProperties_FoodPoisonable</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_FoodPoisonable</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_FoodPoisonable</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-28">
+            <h3>RimWorld.CompProperties_SpawnerItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_SpawnerItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_SpawnerItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-29">
+            <h3>RimWorld.CompProperties_ThingContainer</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_ThingContainer</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_ThingContainer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-30">
+            <h3>RimWorld.CompSpawnerItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompSpawnerItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompSpawnerItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-31">
+            <h3>RimWorld.CompThingContainer</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompThingContainer</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompThingContainer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-32">
+            <h3>RimWorld.Dialog_ChooseThingsForNewColony</h3>
+            <p><strong>Namespace:</strong> RimWorld.Dialog_ChooseThingsForNewColony</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Dialog_ChooseThingsForNewColony</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-33">
+            <h3>RimWorld.Dialog_EditIdeoStyleItems.ExpandedInfo</h3>
+            <p><strong>Namespace:</strong> RimWorld.Dialog_EditIdeoStyleItems.ExpandedInfo</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Dialog_EditIdeoStyleItems.ExpandedInfo</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-34">
+            <h3>RimWorld.Dialog_EditIdeoStyleItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.Dialog_EditIdeoStyleItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Dialog_EditIdeoStyleItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-35">
+            <h3>RimWorld.Dialog_EditIdeoStyleItems.ItemType</h3>
+            <p><strong>Namespace:</strong> RimWorld.Dialog_EditIdeoStyleItems.ItemType</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Dialog_EditIdeoStyleItems.ItemType</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-36">
+            <h3>RimWorld.Dialog_ManageApparelPolicies</h3>
+            <p><strong>Namespace:</strong> RimWorld.Dialog_ManageApparelPolicies</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Dialog_ManageApparelPolicies</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-37">
+            <h3>RimWorld.Dialog_ManageFoodPolicies</h3>
+            <p><strong>Namespace:</strong> RimWorld.Dialog_ManageFoodPolicies</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Dialog_ManageFoodPolicies</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-38">
+            <h3>RimWorld.Dialog_SellableItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.Dialog_SellableItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Dialog_SellableItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-39">
+            <h3>RimWorld.FloatMenuOptionProvider_FromThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.FloatMenuOptionProvider_FromThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FloatMenuOptionProvider_FromThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-40">
+            <h3>RimWorld.FloatMenuOptionProvider_OpenThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.FloatMenuOptionProvider_OpenThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FloatMenuOptionProvider_OpenThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-41">
+            <h3>RimWorld.FloatMenuOptionProvider_PickUpItem</h3>
+            <p><strong>Namespace:</strong> RimWorld.FloatMenuOptionProvider_PickUpItem</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FloatMenuOptionProvider_PickUpItem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-42">
+            <h3>RimWorld.FoodKind</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodKind</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodKind</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-43">
+            <h3>RimWorld.FoodPoisonCause</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodPoisonCause</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodPoisonCause</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-44">
+            <h3>RimWorld.FoodPoisonCauseExtension</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodPoisonCauseExtension</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodPoisonCauseExtension</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-45">
+            <h3>RimWorld.FoodPolicy</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodPolicy</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodPolicy</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-46">
+            <h3>RimWorld.FoodPreferability</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodPreferability</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodPreferability</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-47">
+            <h3>RimWorld.FoodRestrictionDatabase</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodRestrictionDatabase</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodRestrictionDatabase</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-48">
+            <h3>RimWorld.FoodTypeFlags</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodTypeFlags</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodTypeFlags</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-49">
+            <h3>RimWorld.FoodTypeFlagsExtension</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodTypeFlagsExtension</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodTypeFlagsExtension</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-50">
+            <h3>RimWorld.FoodUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-51">
+            <h3>RimWorld.FoodUtility.ThoughtFromIngesting</h3>
+            <p><strong>Namespace:</strong> RimWorld.FoodUtility.ThoughtFromIngesting</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FoodUtility.ThoughtFromIngesting</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-52">
+            <h3>RimWorld.GatherItemsForCaravanUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.GatherItemsForCaravanUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.GatherItemsForCaravanUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-53">
+            <h3>RimWorld.GenStep_AsteroidItemStash</h3>
+            <p><strong>Namespace:</strong> RimWorld.GenStep_AsteroidItemStash</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.GenStep_AsteroidItemStash</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-54">
+            <h3>RimWorld.GenStep_ItemStash</h3>
+            <p><strong>Namespace:</strong> RimWorld.GenStep_ItemStash</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.GenStep_ItemStash</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-55">
+            <h3>RimWorld.GenThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.GenThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.GenThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-56">
+            <h3>RimWorld.GiveItemsToPawnUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.GiveItemsToPawnUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.GiveItemsToPawnUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-57">
+            <h3>RimWorld.HiddenItemsManager</h3>
+            <p><strong>Namespace:</strong> RimWorld.HiddenItemsManager</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.HiddenItemsManager</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-58">
+            <h3>RimWorld.IApparelSource</h3>
+            <p><strong>Namespace:</strong> RimWorld.IApparelSource</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IApparelSource</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-59">
+            <h3>RimWorld.IdeoApparelGender</h3>
+            <p><strong>Namespace:</strong> RimWorld.IdeoApparelGender</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IdeoApparelGender</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-60">
+            <h3>RimWorld.IngestionOutcomeDoer_UseThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.IngestionOutcomeDoer_UseThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IngestionOutcomeDoer_UseThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-61">
+            <h3>RimWorld.ITab_PenFood</h3>
+            <p><strong>Namespace:</strong> RimWorld.ITab_PenFood</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ITab_PenFood</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-62">
+            <h3>RimWorld.ItemAvailability</h3>
+            <p><strong>Namespace:</strong> RimWorld.ItemAvailability</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ItemAvailability</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-63">
+            <h3>RimWorld.IThingStudied</h3>
+            <p><strong>Namespace:</strong> RimWorld.IThingStudied</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IThingStudied</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-64">
+            <h3>RimWorld.IWaitForItemsLordToil</h3>
+            <p><strong>Namespace:</strong> RimWorld.IWaitForItemsLordToil</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IWaitForItemsLordToil</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-65">
+            <h3>RimWorld.LayoutThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.LayoutThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LayoutThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-66">
+            <h3>RimWorld.LordToil_AssaultThings</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordToil_AssaultThings</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordToil_AssaultThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-67">
+            <h3>RimWorld.LordToil_PrepareCaravan_GatherItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordToil_PrepareCaravan_GatherItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordToil_PrepareCaravan_GatherItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-68">
+            <h3>RimWorld.LordToil_TravelAndWaitForItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordToil_TravelAndWaitForItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordToil_TravelAndWaitForItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-69">
+            <h3>RimWorld.LordToil_WaitForItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordToil_WaitForItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordToil_WaitForItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-70">
+            <h3>RimWorld.MinifiedThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.MinifiedThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.MinifiedThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-71">
+            <h3>RimWorld.Need_Food</h3>
+            <p><strong>Namespace:</strong> RimWorld.Need_Food</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Need_Food</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-72">
+            <h3>RimWorld.Pawn_ApparelTracker</h3>
+            <p><strong>Namespace:</strong> RimWorld.Pawn_ApparelTracker</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Pawn_ApparelTracker</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-73">
+            <h3>RimWorld.Pawn_FoodRestrictionTracker</h3>
+            <p><strong>Namespace:</strong> RimWorld.Pawn_FoodRestrictionTracker</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Pawn_FoodRestrictionTracker</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-74">
+            <h3>RimWorld.PawnApparelGenerator</h3>
+            <p><strong>Namespace:</strong> RimWorld.PawnApparelGenerator</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PawnApparelGenerator</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-75">
+            <h3>RimWorld.PawnStyleItemChooser</h3>
+            <p><strong>Namespace:</strong> RimWorld.PawnStyleItemChooser</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PawnStyleItemChooser</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-76">
+            <h3>RimWorld.Planet.CaravanItemsTabUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.Planet.CaravanItemsTabUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Planet.CaravanItemsTabUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-77">
+            <h3>RimWorld.Planet.CaravanThingsTabUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.Planet.CaravanThingsTabUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Planet.CaravanThingsTabUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-78">
+            <h3>RimWorld.Planet.DaysWorthOfFoodCalculator</h3>
+            <p><strong>Namespace:</strong> RimWorld.Planet.DaysWorthOfFoodCalculator</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Planet.DaysWorthOfFoodCalculator</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-79">
+            <h3>RimWorld.Planet.ForagedFoodPerDayCalculator</h3>
+            <p><strong>Namespace:</strong> RimWorld.Planet.ForagedFoodPerDayCalculator</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Planet.ForagedFoodPerDayCalculator</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-80">
+            <h3>RimWorld.Planet.ItemStashContentsComp</h3>
+            <p><strong>Namespace:</strong> RimWorld.Planet.ItemStashContentsComp</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Planet.ItemStashContentsComp</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-81">
+            <h3>RimWorld.Planet.WITab_Caravan_Items</h3>
+            <p><strong>Namespace:</strong> RimWorld.Planet.WITab_Caravan_Items</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Planet.WITab_Caravan_Items</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-82">
+            <h3>RimWorld.PlayerItemAccessibilityUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.PlayerItemAccessibilityUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PlayerItemAccessibilityUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-83">
+            <h3>RimWorld.PossessionThingDefCountClass</h3>
+            <p><strong>Namespace:</strong> RimWorld.PossessionThingDefCountClass</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PossessionThingDefCountClass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-84">
+            <h3>RimWorld.Precept_Apparel</h3>
+            <p><strong>Namespace:</strong> RimWorld.Precept_Apparel</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Precept_Apparel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-85">
+            <h3>RimWorld.Precept_ThingDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.Precept_ThingDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Precept_ThingDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-86">
+            <h3>RimWorld.Precept_ThingStyle</h3>
+            <p><strong>Namespace:</strong> RimWorld.Precept_ThingStyle</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Precept_ThingStyle</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-87">
+            <h3>RimWorld.PreceptApparelRequirement</h3>
+            <p><strong>Namespace:</strong> RimWorld.PreceptApparelRequirement</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PreceptApparelRequirement</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-88">
+            <h3>RimWorld.PreceptComp_Apparel</h3>
+            <p><strong>Namespace:</strong> RimWorld.PreceptComp_Apparel</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PreceptComp_Apparel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-89">
+            <h3>RimWorld.PreceptComp_Apparel_Desired</h3>
+            <p><strong>Namespace:</strong> RimWorld.PreceptComp_Apparel_Desired</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PreceptComp_Apparel_Desired</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-90">
+            <h3>RimWorld.PreceptComp_Apparel_DesiredStrong</h3>
+            <p><strong>Namespace:</strong> RimWorld.PreceptComp_Apparel_DesiredStrong</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PreceptComp_Apparel_DesiredStrong</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-91">
+            <h3>RimWorld.PreceptThingChance</h3>
+            <p><strong>Namespace:</strong> RimWorld.PreceptThingChance</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PreceptThingChance</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-92">
+            <h3>RimWorld.PreceptThingChanceClass</h3>
+            <p><strong>Namespace:</strong> RimWorld.PreceptThingChanceClass</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PreceptThingChanceClass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-93">
+            <h3>RimWorld.PreceptThingPair</h3>
+            <p><strong>Namespace:</strong> RimWorld.PreceptThingPair</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PreceptThingPair</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-94">
+            <h3>RimWorld.PrefabThingData</h3>
+            <p><strong>Namespace:</strong> RimWorld.PrefabThingData</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PrefabThingData</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-95">
+            <h3>RimWorld.QuestGen.QuestNode_AddItemsReward</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_AddItemsReward</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_AddItemsReward</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-96">
+            <h3>RimWorld.QuestGen.QuestNode_GenerateThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_GenerateThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_GenerateThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-97">
+            <h3>RimWorld.QuestGen.QuestNode_GenerateThingSet</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_GenerateThingSet</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_GenerateThingSet</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-98">
+            <h3>RimWorld.QuestGen.QuestNode_GetThingPlayerCanProduce</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_GetThingPlayerCanProduce</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_GetThingPlayerCanProduce</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-99">
+            <h3>RimWorld.QuestGen.QuestNode_SetAllApparelLocked</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_SetAllApparelLocked</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_SetAllApparelLocked</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-100">
+            <h3>RimWorld.QuestGen.QuestNode_SetItemStashContents</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_SetItemStashContents</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_SetItemStashContents</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-101">
+            <h3>RimWorld.QuestGen.QuestNode_SetItemStashContents.ThingCategoryCount</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_SetItemStashContents</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_SetItemStashContents.ThingCategoryCount</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-102">
+            <h3>RimWorld.QuestGen.QuestNode_ThingsProduced</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_ThingsProduced</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_ThingsProduced</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-103">
+            <h3>RimWorld.QuestGen.QuestNode_TradeRequest_GetRequestedThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_TradeRequest_GetRequestedThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_TradeRequest_GetRequestedThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-104">
+            <h3>RimWorld.QuestGen.QuestPart_DestroyAllThingsOfDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestPart_DestroyAllThingsOfDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestPart_DestroyAllThingsOfDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-105">
+            <h3>RimWorld.QuestPart_AssaultThings</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_AssaultThings</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_AssaultThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-106">
+            <h3>RimWorld.QuestPart_BegForItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_BegForItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_BegForItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-107">
+            <h3>RimWorld.QuestPart_DestroyThingsOrPassToWorld</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_DestroyThingsOrPassToWorld</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_DestroyThingsOrPassToWorld</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-108">
+            <h3>RimWorld.QuestPart_DestroyThingsOrPassToWorldOnCleanup</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_DestroyThingsOrPassToWorldOnCleanup</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_DestroyThingsOrPassToWorldOnCleanup</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-109">
+            <h3>RimWorld.QuestPart_FactionGoodwillChange_ShuttleSentThings</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_FactionGoodwillChange_ShuttleSentThings</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_FactionGoodwillChange_ShuttleSentThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-110">
+            <h3>RimWorld.QuestPart_Filter_AllRequiredThingsLoaded</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_Filter_AllRequiredThingsLoaded</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_Filter_AllRequiredThingsLoaded</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-111">
+            <h3>RimWorld.QuestPart_Filter_AllThingsHacked</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_Filter_AllThingsHacked</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_Filter_AllThingsHacked</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-112">
+            <h3>RimWorld.QuestPart_Filter_AllThingsHackedOrDestroyed</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_Filter_AllThingsHackedOrDestroyed</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_Filter_AllThingsHackedOrDestroyed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-113">
+            <h3>RimWorld.QuestPart_Filter_ThingAnalyzed</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_Filter_ThingAnalyzed</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_Filter_ThingAnalyzed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-114">
+            <h3>RimWorld.QuestPart_RequiredShuttleThings</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_RequiredShuttleThings</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_RequiredShuttleThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-115">
+            <h3>RimWorld.QuestPart_RequirementsToAcceptThingStudied</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_RequirementsToAcceptThingStudied</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_RequirementsToAcceptThingStudied</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-116">
+            <h3>RimWorld.QuestPart_RequirementsToAcceptThingStudied_ArchotechStructures</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_RequirementsToAcceptThingStudied_ArchotechStructures</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_RequirementsToAcceptThingStudied_ArchotechStructures</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-117">
+            <h3>RimWorld.QuestPart_SetAllApparelLocked</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_SetAllApparelLocked</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_SetAllApparelLocked</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-118">
+            <h3>RimWorld.QuestPart_SpawnThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_SpawnThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_SpawnThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-119">
+            <h3>RimWorld.QuestPart_ThingsProduced</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_ThingsProduced</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_ThingsProduced</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-120">
+            <h3>RimWorld.Recipe_AdministerUsableItem</h3>
+            <p><strong>Namespace:</strong> RimWorld.Recipe_AdministerUsableItem</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Recipe_AdministerUsableItem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-121">
+            <h3>RimWorld.Reward_DefinedThingDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.Reward_DefinedThingDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Reward_DefinedThingDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-122">
+            <h3>RimWorld.Reward_Items</h3>
+            <p><strong>Namespace:</strong> RimWorld.Reward_Items</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Reward_Items</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-123">
+            <h3>RimWorld.Reward_Items.RememberedItem</h3>
+            <p><strong>Namespace:</strong> RimWorld.Reward_Items.RememberedItem</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Reward_Items.RememberedItem</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-124">
+            <h3>RimWorld.RitualOutcomeComp_DataThingPresence</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualOutcomeComp_DataThingPresence</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualOutcomeComp_DataThingPresence</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-125">
+            <h3>RimWorld.RitualOutcomeComp_TargetThingStat</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualOutcomeComp_TargetThingStat</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualOutcomeComp_TargetThingStat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-126">
+            <h3>RimWorld.RitualPosition_BehindThingCenter</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualPosition_BehindThingCenter</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualPosition_BehindThingCenter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-127">
+            <h3>RimWorld.RitualPosition_BesideThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualPosition_BesideThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualPosition_BesideThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-128">
+            <h3>RimWorld.RitualPosition_InFrontThingCenter</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualPosition_InFrontThingCenter</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualPosition_InFrontThingCenter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-129">
+            <h3>RimWorld.RitualPosition_NearbyThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualPosition_NearbyThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualPosition_NearbyThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-130">
+            <h3>RimWorld.RitualPosition_ThingDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualPosition_ThingDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualPosition_ThingDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-131">
+            <h3>RimWorld.RitualPosition_VerticalThingCenter</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualPosition_VerticalThingCenter</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualPosition_VerticalThingCenter</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-132">
+            <h3>RimWorld.RitualStageAction_DropThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualStageAction_DropThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualStageAction_DropThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-133">
+            <h3>RimWorld.RitualTargetFilter_SelectedThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualTargetFilter_SelectedThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualTargetFilter_SelectedThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-134">
+            <h3>RimWorld.RoomPart_CornerThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomPart_CornerThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomPart_CornerThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-135">
+            <h3>RimWorld.RoomPart_ThingDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomPart_ThingDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomPart_ThingDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-136">
+            <h3>RimWorld.RoomRequirement_AllThingsAnyOfAreGlowing</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomRequirement_AllThingsAnyOfAreGlowing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomRequirement_AllThingsAnyOfAreGlowing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-137">
+            <h3>RimWorld.RoomRequirement_AllThingsAreGlowing</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomRequirement_AllThingsAreGlowing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomRequirement_AllThingsAreGlowing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-138">
+            <h3>RimWorld.RoomRequirement_Thing</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomRequirement_Thing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomRequirement_Thing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-139">
+            <h3>RimWorld.RoomRequirement_ThingAnyOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomRequirement_ThingAnyOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomRequirement_ThingAnyOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-140">
+            <h3>RimWorld.RoomRequirement_ThingAnyOfCount</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomRequirement_ThingAnyOfCount</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomRequirement_ThingAnyOfCount</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-141">
+            <h3>RimWorld.RoomRequirement_ThingCount</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomRequirement_ThingCount</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomRequirement_ThingCount</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-142">
+            <h3>RimWorld.RoyalTitleFoodRequirement</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoyalTitleFoodRequirement</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoyalTitleFoodRequirement</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-143">
+            <h3>RimWorld.ScenPart_ScatterThings</h3>
+            <p><strong>Namespace:</strong> RimWorld.ScenPart_ScatterThings</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ScenPart_ScatterThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-144">
+            <h3>RimWorld.ScenPart_ScatterThingsAnywhere</h3>
+            <p><strong>Namespace:</strong> RimWorld.ScenPart_ScatterThingsAnywhere</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ScenPart_ScatterThingsAnywhere</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-145">
+            <h3>RimWorld.ScenPart_ScatterThingsNearPlayerStart</h3>
+            <p><strong>Namespace:</strong> RimWorld.ScenPart_ScatterThingsNearPlayerStart</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ScenPart_ScatterThingsNearPlayerStart</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-146">
+            <h3>RimWorld.ScenPart_StartingThing_Defined</h3>
+            <p><strong>Namespace:</strong> RimWorld.ScenPart_StartingThing_Defined</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ScenPart_StartingThing_Defined</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-147">
+            <h3>RimWorld.ScenPart_ThingCount</h3>
+            <p><strong>Namespace:</strong> RimWorld.ScenPart_ThingCount</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ScenPart_ThingCount</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-148">
+            <h3>RimWorld.SectionLayer_ThingsPowerGrid</h3>
+            <p><strong>Namespace:</strong> RimWorld.SectionLayer_ThingsPowerGrid</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SectionLayer_ThingsPowerGrid</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-149">
+            <h3>RimWorld.SketchGen.SketchResolver_AddCornerThings</h3>
+            <p><strong>Namespace:</strong> RimWorld.SketchGen.SketchResolver_AddCornerThings</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SketchGen.SketchResolver_AddCornerThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-150">
+            <h3>RimWorld.SketchGen.SketchResolver_AddThingsCentral</h3>
+            <p><strong>Namespace:</strong> RimWorld.SketchGen.SketchResolver_AddThingsCentral</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SketchGen.SketchResolver_AddThingsCentral</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-151">
+            <h3>RimWorld.SketchGen.SketchResolver_AddWallEdgeThings</h3>
+            <p><strong>Namespace:</strong> RimWorld.SketchGen.SketchResolver_AddWallEdgeThings</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SketchGen.SketchResolver_AddWallEdgeThings</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-152">
+            <h3>RimWorld.SketchThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.SketchThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SketchThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-153">
+            <h3>RimWorld.SpecialThingFilterDefOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.SpecialThingFilterDefOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SpecialThingFilterDefOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-154">
+            <h3>RimWorld.StageFailTrigger_NoThingPresent</h3>
+            <p><strong>Namespace:</strong> RimWorld.StageFailTrigger_NoThingPresent</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StageFailTrigger_NoThingPresent</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-155">
+            <h3>RimWorld.StageFailTrigger_TargetThingMissing</h3>
+            <p><strong>Namespace:</strong> RimWorld.StageFailTrigger_TargetThingMissing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StageFailTrigger_TargetThingMissing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-156">
+            <h3>RimWorld.StatPart_Food</h3>
+            <p><strong>Namespace:</strong> RimWorld.StatPart_Food</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StatPart_Food</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-157">
+            <h3>RimWorld.StatPart_LifeStageMaxFood</h3>
+            <p><strong>Namespace:</strong> RimWorld.StatPart_LifeStageMaxFood</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StatPart_LifeStageMaxFood</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-158">
+            <h3>RimWorld.StatPart_UnfinishedThingIngredientsMass</h3>
+            <p><strong>Namespace:</strong> RimWorld.StatPart_UnfinishedThingIngredientsMass</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StatPart_UnfinishedThingIngredientsMass</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-159">
+            <h3>RimWorld.StockGenerator_MiscItems</h3>
+            <p><strong>Namespace:</strong> RimWorld.StockGenerator_MiscItems</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StockGenerator_MiscItems</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-160">
+            <h3>RimWorld.StyleItemCategoryDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.StyleItemCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StyleItemCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-161">
+            <h3>RimWorld.StyleItemCategoryDefOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.StyleItemCategoryDefOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StyleItemCategoryDefOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-162">
+            <h3>RimWorld.StyleItemDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.StyleItemDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StyleItemDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-163">
+            <h3>RimWorld.StyleItemFrequency</h3>
+            <p><strong>Namespace:</strong> RimWorld.StyleItemFrequency</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StyleItemFrequency</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-164">
+            <h3>RimWorld.StyleItemSpawningProperties</h3>
+            <p><strong>Namespace:</strong> RimWorld.StyleItemSpawningProperties</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StyleItemSpawningProperties</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-165">
+            <h3>RimWorld.StyleItemTab</h3>
+            <p><strong>Namespace:</strong> RimWorld.StyleItemTab</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StyleItemTab</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-166">
+            <h3>RimWorld.StyleItemTagWeighted</h3>
+            <p><strong>Namespace:</strong> RimWorld.StyleItemTagWeighted</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StyleItemTagWeighted</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-167">
+            <h3>RimWorld.Tale_SinglePawnAndThing</h3>
+            <p><strong>Namespace:</strong> RimWorld.Tale_SinglePawnAndThing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Tale_SinglePawnAndThing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-168">
+            <h3>RimWorld.TaleData_Thing</h3>
+            <p><strong>Namespace:</strong> RimWorld.TaleData_Thing</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.TaleData_Thing</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-169">
+            <h3>RimWorld.ThingCategoryDefOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingCategoryDefOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingCategoryDefOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-170">
+            <h3>RimWorld.ThingDefGenerator_Corpses</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingDefGenerator_Corpses</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingDefGenerator_Corpses</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-171">
+            <h3>RimWorld.ThingDefGenerator_Meat</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingDefGenerator_Meat</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingDefGenerator_Meat</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-172">
+            <h3>RimWorld.ThingDefGenerator_Neurotrainer</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingDefGenerator_Neurotrainer</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingDefGenerator_Neurotrainer</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-173">
+            <h3>RimWorld.ThingDefGenerator_Techprints</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingDefGenerator_Techprints</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingDefGenerator_Techprints</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-174">
+            <h3>RimWorld.ThingDefOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingDefOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingDefOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-175">
+            <h3>RimWorld.ThingOverlaysHandle</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingOverlaysHandle</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingOverlaysHandle</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-176">
+            <h3>RimWorld.ThingRequiringRoyalPermissionUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingRequiringRoyalPermissionUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingRequiringRoyalPermissionUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-177">
+            <h3>RimWorld.ThingSelectionUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSelectionUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSelectionUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-178">
+            <h3>RimWorld.ThingSetMaker</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-179">
+            <h3>RimWorld.ThingSetMaker_Books</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Books</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Books</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-180">
+            <h3>RimWorld.ThingSetMaker_Conditional</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Conditional</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Conditional</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-181">
+            <h3>RimWorld.ThingSetMaker_Conditional_FactionRelation</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Conditional_FactionRelation</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Conditional_FactionRelation</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-182">
+            <h3>RimWorld.ThingSetMaker_Conditional_MakingFaction</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Conditional_MakingFaction</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Conditional_MakingFaction</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-183">
+            <h3>RimWorld.ThingSetMaker_Conditional_MinMaxTotalMarketValue</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Conditional_MinMaxTotalMarketValue</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Conditional_MinMaxTotalMarketValue</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-184">
+            <h3>RimWorld.ThingSetMaker_Conditional_ResearchFinished</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Conditional_ResearchFinished</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Conditional_ResearchFinished</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-185">
+            <h3>RimWorld.ThingSetMaker_Count</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Count</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Count</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-186">
+            <h3>RimWorld.ThingSetMaker_MapGen_AncientPodContents</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_MapGen_AncientPodContents</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_MapGen_AncientPodContents</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-187">
+            <h3>RimWorld.ThingSetMaker_MarketValue</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_MarketValue</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_MarketValue</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-188">
+            <h3>RimWorld.ThingSetMaker_Meteorite</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Meteorite</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Meteorite</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-189">
+            <h3>RimWorld.ThingSetMaker_Nutrition</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Nutrition</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Nutrition</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-190">
+            <h3>RimWorld.ThingSetMaker_Pawn</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Pawn</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Pawn</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-191">
+            <h3>RimWorld.ThingSetMaker_RandomGeneralGoods</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_RandomGeneralGoods</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_RandomGeneralGoods</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-192">
+            <h3>RimWorld.ThingSetMaker_RandomOption</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_RandomOption</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_RandomOption</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-193">
+            <h3>RimWorld.ThingSetMaker_RandomOption.Option</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_RandomOption.Option</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_RandomOption.Option</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-194">
+            <h3>RimWorld.ThingSetMaker_RefugeePod</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_RefugeePod</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_RefugeePod</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-195">
+            <h3>RimWorld.ThingSetMaker_ResourcePod</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_ResourcePod</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_ResourcePod</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-196">
+            <h3>RimWorld.ThingSetMaker_StackCount</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_StackCount</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_StackCount</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-197">
+            <h3>RimWorld.ThingSetMaker_SubTree</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_SubTree</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_SubTree</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-198">
+            <h3>RimWorld.ThingSetMaker_Sum</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Sum</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Sum</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-199">
+            <h3>RimWorld.ThingSetMaker_Sum.Option</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Sum.Option</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Sum.Option</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-200">
+            <h3>RimWorld.ThingSetMaker_Techprints</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_Techprints</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_Techprints</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-201">
+            <h3>RimWorld.ThingSetMaker_TraderStock</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_TraderStock</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_TraderStock</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-202">
+            <h3>RimWorld.ThingSetMakerByTotalStatUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMakerByTotalStatUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMakerByTotalStatUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-203">
+            <h3>RimWorld.ThingSetMakerDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMakerDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMakerDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-204">
+            <h3>RimWorld.ThingSetMakerDefOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMakerDefOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMakerDefOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-205">
+            <h3>RimWorld.ThingSetMakerParams</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMakerParams</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMakerParams</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-206">
+            <h3>RimWorld.ThingSetMakerUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMakerUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMakerUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-207">
+            <h3>RimWorld.ThingStuffPair</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingStuffPair</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingStuffPair</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-208">
+            <h3>RimWorld.ThingStuffPairWithQuality</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingStuffPairWithQuality</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingStuffPairWithQuality</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-209">
+            <h3>RimWorld.ThingStyleHelper</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingStyleHelper</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingStyleHelper</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-210">
+            <h3>RimWorld.Thought_IdeoRoleApparelRequirementNotMet</h3>
+            <p><strong>Namespace:</strong> RimWorld.Thought_IdeoRoleApparelRequirementNotMet</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Thought_IdeoRoleApparelRequirementNotMet</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-211">
+            <h3>RimWorld.Thought_Situational_WearingDesiredApparel</h3>
+            <p><strong>Namespace:</strong> RimWorld.Thought_Situational_WearingDesiredApparel</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Thought_Situational_WearingDesiredApparel</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-212">
+            <h3>RimWorld.Trigger_HighValueThingsAround</h3>
+            <p><strong>Namespace:</strong> RimWorld.Trigger_HighValueThingsAround</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Trigger_HighValueThingsAround</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-213">
+            <h3>RimWorld.WorldObjectCompProperties_ItemStashContents</h3>
+            <p><strong>Namespace:</strong> RimWorld.WorldObjectCompProperties_ItemStashContents</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WorldObjectCompProperties_ItemStashContents</p>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="back-to-top">↑ Top</a>
+</body>
+</html>

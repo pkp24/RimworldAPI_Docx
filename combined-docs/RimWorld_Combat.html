@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RimWorld_Combat - Combined API Documentation</title>
+    <meta name="robots" content="index, follow">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f8f9fa; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .toc { background: #ecf0f1; padding: 20px; border-radius: 5px; margin: 20px 0; }
+        .toc h2 { margin-top: 0; color: #34495e; }
+        .toc ul { list-style: none; padding: 0; }
+        .toc li { margin: 5px 0; }
+        .toc a { color: #2980b9; text-decoration: none; font-weight: 500; }
+        .toc a:hover { text-decoration: underline; }
+        .section { margin: 30px 0; padding: 20px; border: 1px solid #ddd; border-radius: 5px; }
+        .section h3 { color: #e74c3c; margin-top: 0; }
+        .section-content { margin-top: 15px; }
+        .back-to-top { position: fixed; bottom: 20px; right: 20px; background: #3498db; color: white; padding: 10px 15px; border-radius: 5px; text-decoration: none; }
+        .back-to-top:hover { background: #2980b9; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>RimWorld_Combat - Combined API Documentation</h1>
+        <p>This page contains combined documentation for 99 related API classes and components.</p>
+        
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#section-0">RimWorld.BaseGen.SymbolResolver_EdgeDefense</a></li>
+                <li><a href="#section-1">RimWorld.CompBladelinkWeapon</a></li>
+                <li><a href="#section-2">RimWorld.CompInteractableFoamTurret</a></li>
+                <li><a href="#section-3">RimWorld.CompProperties_BladelinkWeapon</a></li>
+                <li><a href="#section-4">RimWorld.CompProperties_Nociosphere.AttackDetails</a></li>
+                <li><a href="#section-5">RimWorld.CompProperties_TurretGun</a></li>
+                <li><a href="#section-6">RimWorld.CompProperties_UniqueWeapon</a></li>
+                <li><a href="#section-7">RimWorld.CompTurretGun</a></li>
+                <li><a href="#section-8">RimWorld.CompUniqueWeapon</a></li>
+                <li><a href="#section-9">RimWorld.CorpseAttackTransition</a></li>
+                <li><a href="#section-10">RimWorld.CreepJoinerWorker_SightstealerAttack</a></li>
+                <li><a href="#section-11">RimWorld.FloatMenuOptionProvider_DraftedAttack</a></li>
+                <li><a href="#section-12">RimWorld.GenStep_ScatterAncientTurret</a></li>
+                <li><a href="#section-13">RimWorld.GenStep_Turrets</a></li>
+                <li><a href="#section-14">RimWorld.GoodwillSituationWorker_AttackingSettlement</a></li>
+                <li><a href="#section-15">RimWorld.Hediff_HeartAttack</a></li>
+                <li><a href="#section-16">RimWorld.HorrorCombatTransition</a></li>
+                <li><a href="#section-17">RimWorld.IdeoWeaponClassPair</a></li>
+                <li><a href="#section-18">RimWorld.IdeoWeaponDisposition</a></li>
+                <li><a href="#section-19">RimWorld.ILordAvoidTraps</a></li>
+                <li><a href="#section-20">RimWorld.IncidentWorker_FleshbeastAttack</a></li>
+                <li><a href="#section-21">RimWorld.IncidentWorker_GhoulAttack</a></li>
+                <li><a href="#section-22">RimWorld.Instruction_EquipWeapons</a></li>
+                <li><a href="#section-23">RimWorld.JobDriver_ChimeraSwitchToAttackMode</a></li>
+                <li><a href="#section-24">RimWorld.JobDriver_ManTurret</a></li>
+                <li><a href="#section-25">RimWorld.JobDriver_RevenantAttack</a></li>
+                <li><a href="#section-26">RimWorld.JobDriver_UnnaturalCorpseAttack</a></li>
+                <li><a href="#section-27">RimWorld.JobGiver_ChimeraAttackNearbyHumans</a></li>
+                <li><a href="#section-28">RimWorld.JobGiver_DropWeapon</a></li>
+                <li><a href="#section-29">RimWorld.JobGiver_DuelPickupWeapon</a></li>
+                <li><a href="#section-30">RimWorld.JobGiver_HiveDefense</a></li>
+                <li><a href="#section-31">RimWorld.JobGiver_ManTurrets</a></li>
+                <li><a href="#section-32">RimWorld.JobGiver_ManTurretsNearPoint</a></li>
+                <li><a href="#section-33">RimWorld.JobGiver_ManTurretsNearSelf</a></li>
+                <li><a href="#section-34">RimWorld.JobGiver_NPCCastNonCombatAbilities</a></li>
+                <li><a href="#section-35">RimWorld.JobGiver_PickUpOpportunisticWeapon</a></li>
+                <li><a href="#section-36">RimWorld.JobGiver_RevenantAttack</a></li>
+                <li><a href="#section-37">RimWorld.JobGiver_SightstealerAttack</a></li>
+                <li><a href="#section-38">RimWorld.JobGiver_TakeCombatEnhancingDrug</a></li>
+                <li><a href="#section-39">RimWorld.JobGiver_UnnaturalCorpseAttack</a></li>
+                <li><a href="#section-40">RimWorld.LordJob_DefendAttackedTraderCaravan</a></li>
+                <li><a href="#section-41">RimWorld.LordJob_ManTurrets</a></li>
+                <li><a href="#section-42">RimWorld.LordJob_StageThenAttack</a></li>
+                <li><a href="#section-43">RimWorld.LordToil_ChimeraAttack</a></li>
+                <li><a href="#section-44">RimWorld.LordToil_ManClosestTurrets</a></li>
+                <li><a href="#section-45">RimWorld.PawnAttackGizmoUtility</a></li>
+                <li><a href="#section-46">RimWorld.PawnWeaponGenerator</a></li>
+                <li><a href="#section-47">RimWorld.PlaceWorker_NeverAdjacentTrap</a></li>
+                <li><a href="#section-48">RimWorld.PlaceWorker_ShowTurretRadius</a></li>
+                <li><a href="#section-49">RimWorld.PlaceWorker_TurretTop</a></li>
+                <li><a href="#section-50">RimWorld.Planet.CaravanArrivalAction_AttackSettlement</a></li>
+                <li><a href="#section-51">RimWorld.Planet.TransportersArrivalAction_AttackSettlement</a></li>
+                <li><a href="#section-52">RimWorld.Precept_Weapon</a></li>
+                <li><a href="#section-53">RimWorld.QuestGen.QuestNode_BiocodeWeapons</a></li>
+                <li><a href="#section-54">RimWorld.QuestGen.QuestNode_GetPawnKindCombatPower</a></li>
+                <li><a href="#section-55">RimWorld.QuestPart_BiocodeWeapons</a></li>
+                <li><a href="#section-56">RimWorld.QuestPart_Filter_AnyPawnInCombatShape</a></li>
+                <li><a href="#section-57">RimWorld.RaidStrategyWorker_ImmediateAttack</a></li>
+                <li><a href="#section-58">RimWorld.RaidStrategyWorker_ImmediateAttackBreaching</a></li>
+                <li><a href="#section-59">RimWorld.RaidStrategyWorker_ImmediateAttackBreachingSmart</a></li>
+                <li><a href="#section-60">RimWorld.RaidStrategyWorker_ImmediateAttackFriendly</a></li>
+                <li><a href="#section-61">RimWorld.RaidStrategyWorker_ImmediateAttackSappers</a></li>
+                <li><a href="#section-62">RimWorld.RaidStrategyWorker_ImmediateAttackSmart</a></li>
+                <li><a href="#section-63">RimWorld.RaidStrategyWorker_StageThenAttack</a></li>
+                <li><a href="#section-64">RimWorld.RitualOutcomeComp_WeaponUsed</a></li>
+                <li><a href="#section-65">RimWorld.RoleEffect_NoMeleeWeapons</a></li>
+                <li><a href="#section-66">RimWorld.RoleEffect_NoRangedWeapons</a></li>
+                <li><a href="#section-67">RimWorld.RoomPart_AncientWeaponStorage</a></li>
+                <li><a href="#section-68">RimWorld.SelfDefenseUtility</a></li>
+                <li><a href="#section-69">RimWorld.SitePartWorker_Turrets</a></li>
+                <li><a href="#section-70">RimWorld.SpecialThingFilterWorker_BiocodedWeapons</a></li>
+                <li><a href="#section-71">RimWorld.SpecialThingFilterWorker_NonBiocodedWeapons</a></li>
+                <li><a href="#section-72">RimWorld.SpecialThingFilterWorker_NonBurnableWeapons</a></li>
+                <li><a href="#section-73">RimWorld.SpecialThingFilterWorker_NonSmeltableWeapons</a></li>
+                <li><a href="#section-74">RimWorld.StatPart_WeaponTraitsMarketValueOffset</a></li>
+                <li><a href="#section-75">RimWorld.StatWorker_MeleeDamageAmountTrap</a></li>
+                <li><a href="#section-76">RimWorld.ThingSetMaker_UniqueWeapon</a></li>
+                <li><a href="#section-77">RimWorld.ThinkNode_ConditionalUnderCombatPressure</a></li>
+                <li><a href="#section-78">RimWorld.Thought_WeaponTrait</a></li>
+                <li><a href="#section-79">RimWorld.Thought_WeaponTraitNotEquipped</a></li>
+                <li><a href="#section-80">RimWorld.ThoughtWorker_IsCarryingIncendiaryWeapon</a></li>
+                <li><a href="#section-81">RimWorld.ThoughtWorker_IsCarryingRangedWeapon</a></li>
+                <li><a href="#section-82">RimWorld.ThoughtWorker_Precept_HasAutomatedTurrets</a></li>
+                <li><a href="#section-83">RimWorld.ThoughtWorker_Precept_WieldingNobleOrDespisedWeapon</a></li>
+                <li><a href="#section-84">RimWorld.ThoughtWorker_WeaponTrait</a></li>
+                <li><a href="#section-85">RimWorld.ThoughtWorker_WeaponTraitBonded</a></li>
+                <li><a href="#section-86">RimWorld.ThoughtWorker_WeaponTraitKillNeed</a></li>
+                <li><a href="#section-87">RimWorld.TurretGunUtility</a></li>
+                <li><a href="#section-88">RimWorld.TurretTop</a></li>
+                <li><a href="#section-89">RimWorld.Verb_MeleeAttack</a></li>
+                <li><a href="#section-90">RimWorld.Verb_MeleeAttackDamage</a></li>
+                <li><a href="#section-91">RimWorld.WeaponCategoryDef</a></li>
+                <li><a href="#section-92">RimWorld.WeaponCategoryDefOf</a></li>
+                <li><a href="#section-93">RimWorld.WeaponTraitDef</a></li>
+                <li><a href="#section-94">RimWorld.WeaponTraitDefOf</a></li>
+                <li><a href="#section-95">RimWorld.WeaponTraitWorker</a></li>
+                <li><a href="#section-96">RimWorld.WeaponTraitWorker_Jealous</a></li>
+                <li><a href="#section-97">RimWorld.WeaponTraitWorker_PsyfocusOnKill</a></li>
+                <li><a href="#section-98">RimWorld.WorkGiver_Refuel_Turret</a></li>
+            </ul>
+        </div>
+
+        <div class="section" id="section-0">
+            <h3>RimWorld.BaseGen.SymbolResolver_EdgeDefense</h3>
+            <p><strong>Namespace:</strong> RimWorld.BaseGen.SymbolResolver_EdgeDefense</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.BaseGen.SymbolResolver_EdgeDefense</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-1">
+            <h3>RimWorld.CompBladelinkWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompBladelinkWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompBladelinkWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-2">
+            <h3>RimWorld.CompInteractableFoamTurret</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompInteractableFoamTurret</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompInteractableFoamTurret</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-3">
+            <h3>RimWorld.CompProperties_BladelinkWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_BladelinkWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_BladelinkWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-4">
+            <h3>RimWorld.CompProperties_Nociosphere.AttackDetails</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_Nociosphere.AttackDetails</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_Nociosphere.AttackDetails</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-5">
+            <h3>RimWorld.CompProperties_TurretGun</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_TurretGun</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_TurretGun</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-6">
+            <h3>RimWorld.CompProperties_UniqueWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompProperties_UniqueWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompProperties_UniqueWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-7">
+            <h3>RimWorld.CompTurretGun</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompTurretGun</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompTurretGun</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-8">
+            <h3>RimWorld.CompUniqueWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.CompUniqueWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CompUniqueWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-9">
+            <h3>RimWorld.CorpseAttackTransition</h3>
+            <p><strong>Namespace:</strong> RimWorld.CorpseAttackTransition</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CorpseAttackTransition</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-10">
+            <h3>RimWorld.CreepJoinerWorker_SightstealerAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.CreepJoinerWorker_SightstealerAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.CreepJoinerWorker_SightstealerAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-11">
+            <h3>RimWorld.FloatMenuOptionProvider_DraftedAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.FloatMenuOptionProvider_DraftedAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.FloatMenuOptionProvider_DraftedAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-12">
+            <h3>RimWorld.GenStep_ScatterAncientTurret</h3>
+            <p><strong>Namespace:</strong> RimWorld.GenStep_ScatterAncientTurret</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.GenStep_ScatterAncientTurret</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-13">
+            <h3>RimWorld.GenStep_Turrets</h3>
+            <p><strong>Namespace:</strong> RimWorld.GenStep_Turrets</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.GenStep_Turrets</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-14">
+            <h3>RimWorld.GoodwillSituationWorker_AttackingSettlement</h3>
+            <p><strong>Namespace:</strong> RimWorld.GoodwillSituationWorker_AttackingSettlement</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.GoodwillSituationWorker_AttackingSettlement</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-15">
+            <h3>RimWorld.Hediff_HeartAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.Hediff_HeartAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Hediff_HeartAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-16">
+            <h3>RimWorld.HorrorCombatTransition</h3>
+            <p><strong>Namespace:</strong> RimWorld.HorrorCombatTransition</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.HorrorCombatTransition</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-17">
+            <h3>RimWorld.IdeoWeaponClassPair</h3>
+            <p><strong>Namespace:</strong> RimWorld.IdeoWeaponClassPair</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IdeoWeaponClassPair</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-18">
+            <h3>RimWorld.IdeoWeaponDisposition</h3>
+            <p><strong>Namespace:</strong> RimWorld.IdeoWeaponDisposition</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IdeoWeaponDisposition</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-19">
+            <h3>RimWorld.ILordAvoidTraps</h3>
+            <p><strong>Namespace:</strong> RimWorld.ILordAvoidTraps</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ILordAvoidTraps</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-20">
+            <h3>RimWorld.IncidentWorker_FleshbeastAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.IncidentWorker_FleshbeastAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IncidentWorker_FleshbeastAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-21">
+            <h3>RimWorld.IncidentWorker_GhoulAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.IncidentWorker_GhoulAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.IncidentWorker_GhoulAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-22">
+            <h3>RimWorld.Instruction_EquipWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.Instruction_EquipWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Instruction_EquipWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-23">
+            <h3>RimWorld.JobDriver_ChimeraSwitchToAttackMode</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobDriver_ChimeraSwitchToAttackMode</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobDriver_ChimeraSwitchToAttackMode</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-24">
+            <h3>RimWorld.JobDriver_ManTurret</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobDriver_ManTurret</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobDriver_ManTurret</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-25">
+            <h3>RimWorld.JobDriver_RevenantAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobDriver_RevenantAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobDriver_RevenantAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-26">
+            <h3>RimWorld.JobDriver_UnnaturalCorpseAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobDriver_UnnaturalCorpseAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobDriver_UnnaturalCorpseAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-27">
+            <h3>RimWorld.JobGiver_ChimeraAttackNearbyHumans</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_ChimeraAttackNearbyHumans</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_ChimeraAttackNearbyHumans</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-28">
+            <h3>RimWorld.JobGiver_DropWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_DropWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_DropWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-29">
+            <h3>RimWorld.JobGiver_DuelPickupWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_DuelPickupWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_DuelPickupWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-30">
+            <h3>RimWorld.JobGiver_HiveDefense</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_HiveDefense</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_HiveDefense</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-31">
+            <h3>RimWorld.JobGiver_ManTurrets</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_ManTurrets</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_ManTurrets</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-32">
+            <h3>RimWorld.JobGiver_ManTurretsNearPoint</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_ManTurretsNearPoint</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_ManTurretsNearPoint</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-33">
+            <h3>RimWorld.JobGiver_ManTurretsNearSelf</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_ManTurretsNearSelf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_ManTurretsNearSelf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-34">
+            <h3>RimWorld.JobGiver_NPCCastNonCombatAbilities</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_NPCCastNonCombatAbilities</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_NPCCastNonCombatAbilities</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-35">
+            <h3>RimWorld.JobGiver_PickUpOpportunisticWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_PickUpOpportunisticWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_PickUpOpportunisticWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-36">
+            <h3>RimWorld.JobGiver_RevenantAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_RevenantAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_RevenantAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-37">
+            <h3>RimWorld.JobGiver_SightstealerAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_SightstealerAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_SightstealerAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-38">
+            <h3>RimWorld.JobGiver_TakeCombatEnhancingDrug</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_TakeCombatEnhancingDrug</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_TakeCombatEnhancingDrug</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-39">
+            <h3>RimWorld.JobGiver_UnnaturalCorpseAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.JobGiver_UnnaturalCorpseAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.JobGiver_UnnaturalCorpseAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-40">
+            <h3>RimWorld.LordJob_DefendAttackedTraderCaravan</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordJob_DefendAttackedTraderCaravan</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordJob_DefendAttackedTraderCaravan</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-41">
+            <h3>RimWorld.LordJob_ManTurrets</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordJob_ManTurrets</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordJob_ManTurrets</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-42">
+            <h3>RimWorld.LordJob_StageThenAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordJob_StageThenAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordJob_StageThenAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-43">
+            <h3>RimWorld.LordToil_ChimeraAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordToil_ChimeraAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordToil_ChimeraAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-44">
+            <h3>RimWorld.LordToil_ManClosestTurrets</h3>
+            <p><strong>Namespace:</strong> RimWorld.LordToil_ManClosestTurrets</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.LordToil_ManClosestTurrets</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-45">
+            <h3>RimWorld.PawnAttackGizmoUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.PawnAttackGizmoUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PawnAttackGizmoUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-46">
+            <h3>RimWorld.PawnWeaponGenerator</h3>
+            <p><strong>Namespace:</strong> RimWorld.PawnWeaponGenerator</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PawnWeaponGenerator</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-47">
+            <h3>RimWorld.PlaceWorker_NeverAdjacentTrap</h3>
+            <p><strong>Namespace:</strong> RimWorld.PlaceWorker_NeverAdjacentTrap</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PlaceWorker_NeverAdjacentTrap</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-48">
+            <h3>RimWorld.PlaceWorker_ShowTurretRadius</h3>
+            <p><strong>Namespace:</strong> RimWorld.PlaceWorker_ShowTurretRadius</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PlaceWorker_ShowTurretRadius</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-49">
+            <h3>RimWorld.PlaceWorker_TurretTop</h3>
+            <p><strong>Namespace:</strong> RimWorld.PlaceWorker_TurretTop</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.PlaceWorker_TurretTop</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-50">
+            <h3>RimWorld.Planet.CaravanArrivalAction_AttackSettlement</h3>
+            <p><strong>Namespace:</strong> RimWorld.Planet.CaravanArrivalAction_AttackSettlement</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Planet.CaravanArrivalAction_AttackSettlement</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-51">
+            <h3>RimWorld.Planet.TransportersArrivalAction_AttackSettlement</h3>
+            <p><strong>Namespace:</strong> RimWorld.Planet.TransportersArrivalAction_AttackSettlement</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Planet.TransportersArrivalAction_AttackSettlement</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-52">
+            <h3>RimWorld.Precept_Weapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.Precept_Weapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Precept_Weapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-53">
+            <h3>RimWorld.QuestGen.QuestNode_BiocodeWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_BiocodeWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_BiocodeWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-54">
+            <h3>RimWorld.QuestGen.QuestNode_GetPawnKindCombatPower</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestGen.QuestNode_GetPawnKindCombatPower</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestGen.QuestNode_GetPawnKindCombatPower</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-55">
+            <h3>RimWorld.QuestPart_BiocodeWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_BiocodeWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_BiocodeWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-56">
+            <h3>RimWorld.QuestPart_Filter_AnyPawnInCombatShape</h3>
+            <p><strong>Namespace:</strong> RimWorld.QuestPart_Filter_AnyPawnInCombatShape</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.QuestPart_Filter_AnyPawnInCombatShape</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-57">
+            <h3>RimWorld.RaidStrategyWorker_ImmediateAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.RaidStrategyWorker_ImmediateAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RaidStrategyWorker_ImmediateAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-58">
+            <h3>RimWorld.RaidStrategyWorker_ImmediateAttackBreaching</h3>
+            <p><strong>Namespace:</strong> RimWorld.RaidStrategyWorker_ImmediateAttackBreaching</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RaidStrategyWorker_ImmediateAttackBreaching</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-59">
+            <h3>RimWorld.RaidStrategyWorker_ImmediateAttackBreachingSmart</h3>
+            <p><strong>Namespace:</strong> RimWorld.RaidStrategyWorker_ImmediateAttackBreachingSmart</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RaidStrategyWorker_ImmediateAttackBreachingSmart</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-60">
+            <h3>RimWorld.RaidStrategyWorker_ImmediateAttackFriendly</h3>
+            <p><strong>Namespace:</strong> RimWorld.RaidStrategyWorker_ImmediateAttackFriendly</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RaidStrategyWorker_ImmediateAttackFriendly</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-61">
+            <h3>RimWorld.RaidStrategyWorker_ImmediateAttackSappers</h3>
+            <p><strong>Namespace:</strong> RimWorld.RaidStrategyWorker_ImmediateAttackSappers</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RaidStrategyWorker_ImmediateAttackSappers</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-62">
+            <h3>RimWorld.RaidStrategyWorker_ImmediateAttackSmart</h3>
+            <p><strong>Namespace:</strong> RimWorld.RaidStrategyWorker_ImmediateAttackSmart</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RaidStrategyWorker_ImmediateAttackSmart</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-63">
+            <h3>RimWorld.RaidStrategyWorker_StageThenAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.RaidStrategyWorker_StageThenAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RaidStrategyWorker_StageThenAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-64">
+            <h3>RimWorld.RitualOutcomeComp_WeaponUsed</h3>
+            <p><strong>Namespace:</strong> RimWorld.RitualOutcomeComp_WeaponUsed</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RitualOutcomeComp_WeaponUsed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-65">
+            <h3>RimWorld.RoleEffect_NoMeleeWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoleEffect_NoMeleeWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoleEffect_NoMeleeWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-66">
+            <h3>RimWorld.RoleEffect_NoRangedWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoleEffect_NoRangedWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoleEffect_NoRangedWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-67">
+            <h3>RimWorld.RoomPart_AncientWeaponStorage</h3>
+            <p><strong>Namespace:</strong> RimWorld.RoomPart_AncientWeaponStorage</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.RoomPart_AncientWeaponStorage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-68">
+            <h3>RimWorld.SelfDefenseUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.SelfDefenseUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SelfDefenseUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-69">
+            <h3>RimWorld.SitePartWorker_Turrets</h3>
+            <p><strong>Namespace:</strong> RimWorld.SitePartWorker_Turrets</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SitePartWorker_Turrets</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-70">
+            <h3>RimWorld.SpecialThingFilterWorker_BiocodedWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.SpecialThingFilterWorker_BiocodedWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SpecialThingFilterWorker_BiocodedWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-71">
+            <h3>RimWorld.SpecialThingFilterWorker_NonBiocodedWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.SpecialThingFilterWorker_NonBiocodedWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SpecialThingFilterWorker_NonBiocodedWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-72">
+            <h3>RimWorld.SpecialThingFilterWorker_NonBurnableWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.SpecialThingFilterWorker_NonBurnableWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SpecialThingFilterWorker_NonBurnableWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-73">
+            <h3>RimWorld.SpecialThingFilterWorker_NonSmeltableWeapons</h3>
+            <p><strong>Namespace:</strong> RimWorld.SpecialThingFilterWorker_NonSmeltableWeapons</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.SpecialThingFilterWorker_NonSmeltableWeapons</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-74">
+            <h3>RimWorld.StatPart_WeaponTraitsMarketValueOffset</h3>
+            <p><strong>Namespace:</strong> RimWorld.StatPart_WeaponTraitsMarketValueOffset</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StatPart_WeaponTraitsMarketValueOffset</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-75">
+            <h3>RimWorld.StatWorker_MeleeDamageAmountTrap</h3>
+            <p><strong>Namespace:</strong> RimWorld.StatWorker_MeleeDamageAmountTrap</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.StatWorker_MeleeDamageAmountTrap</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-76">
+            <h3>RimWorld.ThingSetMaker_UniqueWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThingSetMaker_UniqueWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThingSetMaker_UniqueWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-77">
+            <h3>RimWorld.ThinkNode_ConditionalUnderCombatPressure</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThinkNode_ConditionalUnderCombatPressure</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThinkNode_ConditionalUnderCombatPressure</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-78">
+            <h3>RimWorld.Thought_WeaponTrait</h3>
+            <p><strong>Namespace:</strong> RimWorld.Thought_WeaponTrait</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Thought_WeaponTrait</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-79">
+            <h3>RimWorld.Thought_WeaponTraitNotEquipped</h3>
+            <p><strong>Namespace:</strong> RimWorld.Thought_WeaponTraitNotEquipped</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Thought_WeaponTraitNotEquipped</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-80">
+            <h3>RimWorld.ThoughtWorker_IsCarryingIncendiaryWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThoughtWorker_IsCarryingIncendiaryWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThoughtWorker_IsCarryingIncendiaryWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-81">
+            <h3>RimWorld.ThoughtWorker_IsCarryingRangedWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThoughtWorker_IsCarryingRangedWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThoughtWorker_IsCarryingRangedWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-82">
+            <h3>RimWorld.ThoughtWorker_Precept_HasAutomatedTurrets</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThoughtWorker_Precept_HasAutomatedTurrets</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThoughtWorker_Precept_HasAutomatedTurrets</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-83">
+            <h3>RimWorld.ThoughtWorker_Precept_WieldingNobleOrDespisedWeapon</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThoughtWorker_Precept_WieldingNobleOrDespisedWeapon</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThoughtWorker_Precept_WieldingNobleOrDespisedWeapon</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-84">
+            <h3>RimWorld.ThoughtWorker_WeaponTrait</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThoughtWorker_WeaponTrait</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThoughtWorker_WeaponTrait</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-85">
+            <h3>RimWorld.ThoughtWorker_WeaponTraitBonded</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThoughtWorker_WeaponTraitBonded</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThoughtWorker_WeaponTraitBonded</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-86">
+            <h3>RimWorld.ThoughtWorker_WeaponTraitKillNeed</h3>
+            <p><strong>Namespace:</strong> RimWorld.ThoughtWorker_WeaponTraitKillNeed</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.ThoughtWorker_WeaponTraitKillNeed</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-87">
+            <h3>RimWorld.TurretGunUtility</h3>
+            <p><strong>Namespace:</strong> RimWorld.TurretGunUtility</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.TurretGunUtility</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-88">
+            <h3>RimWorld.TurretTop</h3>
+            <p><strong>Namespace:</strong> RimWorld.TurretTop</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.TurretTop</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-89">
+            <h3>RimWorld.Verb_MeleeAttack</h3>
+            <p><strong>Namespace:</strong> RimWorld.Verb_MeleeAttack</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Verb_MeleeAttack</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-90">
+            <h3>RimWorld.Verb_MeleeAttackDamage</h3>
+            <p><strong>Namespace:</strong> RimWorld.Verb_MeleeAttackDamage</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.Verb_MeleeAttackDamage</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-91">
+            <h3>RimWorld.WeaponCategoryDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.WeaponCategoryDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WeaponCategoryDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-92">
+            <h3>RimWorld.WeaponCategoryDefOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.WeaponCategoryDefOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WeaponCategoryDefOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-93">
+            <h3>RimWorld.WeaponTraitDef</h3>
+            <p><strong>Namespace:</strong> RimWorld.WeaponTraitDef</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WeaponTraitDef</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-94">
+            <h3>RimWorld.WeaponTraitDefOf</h3>
+            <p><strong>Namespace:</strong> RimWorld.WeaponTraitDefOf</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WeaponTraitDefOf</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-95">
+            <h3>RimWorld.WeaponTraitWorker</h3>
+            <p><strong>Namespace:</strong> RimWorld.WeaponTraitWorker</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WeaponTraitWorker</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-96">
+            <h3>RimWorld.WeaponTraitWorker_Jealous</h3>
+            <p><strong>Namespace:</strong> RimWorld.WeaponTraitWorker_Jealous</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WeaponTraitWorker_Jealous</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-97">
+            <h3>RimWorld.WeaponTraitWorker_PsyfocusOnKill</h3>
+            <p><strong>Namespace:</strong> RimWorld.WeaponTraitWorker_PsyfocusOnKill</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WeaponTraitWorker_PsyfocusOnKill</p>
+            </div>
+        </div>
+
+        <div class="section" id="section-98">
+            <h3>RimWorld.WorkGiver_Refuel_Turret</h3>
+            <p><strong>Namespace:</strong> RimWorld.WorkGiver_Refuel_Turret</p>
+            <div class="section-content">
+<p>Content not available for RimWorld.WorkGiver_Refuel_Turret</p>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" class="back-to-top">↑ Top</a>
+</body>
+</html>
