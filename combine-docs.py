@@ -27,8 +27,8 @@ def extract_content_from_html(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             soup = BeautifulSoup(f.read(), 'html.parser')
             
-        # Find the main content area (adjust selectors based on your HTML structure)
-        content = soup.find('div', class_='content') or soup.find('main') or soup.find('body')
+        # Find the main content area - look for the article with content class
+        content = soup.find('article', class_='content wrap')
         
         if content:
             # Remove navigation, headers, footers, etc.
@@ -162,7 +162,8 @@ def create_combined_html(category_name, files, output_path):
     for i, file_info in enumerate(files):
         name = file_info['name'].replace('.html', '')
         namespace = file_info.get('namespace', '')
-        original_path = API_DIR / file_info['path']
+        # The path in file_info already includes 'api/', so we need to construct it relative to the script location
+        original_path = Path(__file__).parent / file_info['path']
         
         html_content += f"""
         <div class="section" id="section-{i}">
