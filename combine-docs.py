@@ -25,8 +25,10 @@ def extract_content_from_html(file_path):
     """Extract the main content from an HTML file"""
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
-            soup = BeautifulSoup(f.read(), 'html.parser')
+            html_content = f.read()
             
+        soup = BeautifulSoup(html_content, 'html.parser')
+        
         # Find the main content area - look for the article with content class
         content = soup.find('article', class_='content wrap')
         
@@ -36,7 +38,8 @@ def extract_content_from_html(file_path):
                 unwanted.decompose()
             
             return str(content)
-        return ""
+        else:
+            return ""
     except Exception as e:
         print(f"Error reading {file_path}: {e}")
         return ""
